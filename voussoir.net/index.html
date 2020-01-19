@@ -7,39 +7,354 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <style>
+:root
+{
+    --color_text_primary: #ccc;
+    --color_text_highlight: #efcc2b;
+}
+
 *
 {
-    color: #efcc2b;
+    font-family: sans-serif;
+    color: var(--color_text_primary);
+    word-break: break-word;
 }
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+html { box-sizing: border-box; }
+
 body
 {
     background-color: #0e0e0d;
+    margin: 0;
 }
-#content_body
+
+h2
 {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    overflow-x: hidden !important;
+    font-size: 3.5em;
+    border-bottom: 2px solid var(--color_text_highlight);
+    color: var(--color_text_highlight);
 }
-span
+
+h3 { font-size: 2.5em; }
+
+code { font-family: monospace; }
+
+#headline
 {
+    margin-bottom: 75px;
+}
+#headline *
+{
+    color: var(--color_text_highlight);
+    font-family: serif;
+    margin-bottom: 0px;
+}
+#headline_l1 { font-size: 5.0em; }
+#headline_l2 { font-size: 3.5em; }
+#headline_l3 { font-size: 1.5em; }
+
+#headline .tilt_holder > *
+{
+    display: inline-block;
+    transform: rotate(-15deg);
+    font-style: italic;
+}
+
+.width_limited
+{
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cvitem
+{
+    width: 100%;
+    padding: 16px;
+}
+
+.cvitem:nth-of-type(even)
+{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.cvitem:nth-of-type(odd) > div
+{
+    display: grid;
+    grid-column-gap: 16px;
+    grid-template:
+        "logo title" auto
+        "logo details" 1fr
+        / 1fr 3fr;
+}
+
+.cvitem:nth-of-type(even) > div
+{
+    display: grid;
+    grid-column-gap: 16px;
+    grid-template:
+        "title logo" auto
+        "details logo" 1fr
+        / 3fr 1fr;
+}
+
+.cvitem_logo
+{
+    grid-area: logo;
     align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    background-color: var(--color_text_primary);
+    border-radius: 100%;
+}
+
+.cvitem_title
+{
+    grid-area: title;
+    align-self: center;
+    justify-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cvitem_details
+{
+    grid-area: details;
+}
+
+@media screen and (max-width: 500px)
+{
+    #headline_l1 { font-size: 3em; }
+    #headline_l2 { font-size: 2.5em; }
+    #headline_l3 { font-size: 1em; }
+
+    .cvitem:nth-of-type(odd) > div
+    {
+        grid-template:
+            "logo title" auto
+            "details details" 1fr
+            / 1fr 3fr;
+    }
+    .cvitem:nth-of-type(even) > div
+    {
+        grid-template:
+            "title logo" auto
+            "details details" 1fr
+            / 3fr 1fr;
+    }
+
+    .cvitem_logo
+    {
+        min-width: 30px;
+    }
 }
 </style>
 </head>
 
 
 <body>
-    <div id="content_body">
-        <span>Ethan Dalool</span>
-        <span><a href="https://github.com/voussoir">GitHub</a></span>
+    <section id="headline">
+        <div class="tilt_holder width_limited">
+            <h1 id="headline_l1">Ethan Dalool</h1>
+        </div>
+        <div class="tilt_holder width_limited">
+            <div id="headline_l2">does <b>Python</b></div>
+        </div>
+        <div class="tilt_holder width_limited">
+            <div id="headline_l3">(and a dozen different disciplines)</div>
+        </div>
+    </section>
+
+
+
+    <h2 class="width_limited">Projects</h2>
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title"><a href="https://github.com/voussoir/etiquette">Etiquette</a></h3>
+            <div class="cvitem_details">
+                <p>Etiquette is a tag-based file organization system with a web interface, built with Flask and SQLite3. Tag-based systems solve problems that a traditional folder hierarchy can't: <em>which folder should a file go in if it equally belongs in both?</em> and <em>how do I make my files searchable without littering the filenames themselves with keywords?</em></p>
+                <p>Etiquette is unique because the tags themselves are hierarchical. By tagging one of your vacation photos with the <code>family.parents.dad</code> tag, it will automatically appear in searches for <code>family.parents</code> and <code>family</code> as well. A traditional folder system, here called albums, is available to bundle files that always belong together without creating a bespoke tag to represent that bundle. Regardless, the files on disk are never modified.</p>
+                <p><a href="https://github.com/voussoir/etiquette">https://github.com/voussoir/etiquette</a></p>
+            </div>
+            <img class="cvitem_logo" src="./cv/etiquette.svg"/>
+        </div>
     </div>
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title"><a href="https://github.com/voussoir/timesearch">Timesearch</a></h3>
+            <div class="cvitem_details">
+                <p>Timesearch is a package of tools for archiving data from reddit.com. Subreddits, user posts, comments, CSS files, and community wiki files can be downloaded and easily updated.</p>
+                <p>Originally, it used the <code>timestamp</code> query parameter of reddit's elasticsearch, but since that feature's removal Timesearch instead queries the third-party pushshift.io database for preliminary data, then queries reddit for updated information about each item.</p>
+                <p><a href="https://github.com/voussoir/timesearch">https://github.com/voussoir/timesearch</a></p></div>
+            <img class="cvitem_logo" src="./cv/timesearch.svg"/>
+        </div>
+    </div>
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title"><a href="https://github.com/voussoir/voussoirkit">Voussoirkit</a></h3>
+            <div class="cvitem_details">
+                <p>The voussoirkit library contains code that I have found useful to include in my other projects. Everything from <code>bytestring</code> that converts integer numbers of bytes into "3.145 MiB" strings, to <code>pathclass</code> and <code>spinal</code> which provides object-oriented file and directory operations and copy routines. <a href="https://github.com/voussoir/voussoirkit/blob/master/voussoirkit/winglob.py">Some modules</a> boost cross-compatibility by smoothing over differences between Windows and Unix. This way I can easily deploy new features and bug fixes to all my programs.</p>
+                <p><a href="https://github.com/voussoir/voussoirkit">https://github.com/voussoir/voussoirkit</a></p>
+            </div>
+            <img class="cvitem_logo" src="./cv/voussoirkit.svg"/>
+        </div>
+    </div>
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title"><a href="https://github.com/voussoir/YoutubeChannelDownloader">YCDL</a></h3>
+            <div class="cvitem_details">
+                <p>YoutubeChannelDownloader was born out of a dissatisfaction with YouTube's own interface for keeping track of which videos I have already watched, as well as a desire to integrate with youtube-dl. YCDL makes it easy for me to watch through a channel's catalog of videos, picking which ones I'd like to download while ignoring the others. Plus, as it creates an offline database, it will retain metadata about videos even after they are removed or deleted from the original YouTube channel.</p>
+                <p><a href="https://github.com/voussoir/YoutubeChannelDownloader">https://github.com/voussoir/YoutubeChannelDownloader</a></a>
+            </div>
+            <img class="cvitem_logo" src="./cv/ycdl.svg"/>
+        </div>
+    </div>
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title"><a href="https://github.com/voussoir/epubfile">Epubfile</a> & <a href="https://github.com/voussoir/sigilplugins">Sigilplugins</a></h3>
+            <div class="cvitem_details">
+                <p>I use the wonderful program Sigil to edit epub files. Sigil has a python plugin system for which I have written a few modules. But, since the plugins can only operate on one book at a time while it is open in Sigil, I needed something a little different to edit epub files en masse.</p>
+                <p>Epubfile is a simple library for automatically processing epubs. It comes with a number of builtin routines for what I do most often: merging multiple epubs into a single file, normalizing the internal file structure, and renaming the cover image file to leverage CBXShell so I get thumbnails in Windows Explorer.</p>
+                <p><a href="https://github.com/voussoir/epubfile">https://github.com/voussoir/epubfile</a></p>
+                <p><a href="https://github.com/voussoir/sigilplugins">https://github.com/voussoir/sigilplugins</a></p>
+            </div>
+            <img class="cvitem_logo" src="./cv/epub.svg"/>
+        </div>
+    </div>
+
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title"><a href="https://github.com/voussoir/reddit">Reddit bots</a></h3>
+            <div class="cvitem_details">
+                <p>This repository is in archive status now and is rarely updated. From 2014 to 2016 I learned Python, SQL, and HTTP by writing bots for reddit and contributing to PRAW, the Python Reddit API Wrapper. I took requests on <a href="https://old.reddit.com/r/RequestABot">/r/RequestABot</a> and produced dozens of easily modifiable bots. The tasks ranged from "allow users to only make one post per day" to "allow moderators to write a post now and schedule it to appear later". With almost 400 stars now it is my most successful repository, though the code quality is not up to the same standards I have today.</p>
+                <p><a href="https://github.com/voussoir/reddit">https://github.com/voussoir/reddit</a></p>
+            </div>
+            <img class="cvitem_logo" src="./cv/subredditbirthdays.svg"/>
+        </div>
+    </div>
+
+
+
+    <h2 class="width_limited">Tech interests</h2>
+
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title">Python</h3>
+            <div class="cvitem_details">
+                <p>Python has been my language of choice since I began learning it in 2014. In addition to the projects already mentioned here, I have an entire <a href="https://github.com/voussoir/cmd">repository</a> dedicated to scripts / utilities that I use from the command line, and I have an even greater number of unpublished scripts for personal or bespoke use. I do file management, HTTP, image processing, task automation, and more.</p>
+            </div>
+            <img class="cvitem_logo" src="./cv/python.svg"/>
+        </div>
+    </div>
+
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title">HTML/CSS/JS</h3>
+            <div class="cvitem_details">
+                <blockquote><i>If you want to view paradise<br/>Simply press F12 and view it</i></blockquote>
+                <p>This page, like the those in Etiquette and YCDL, was written entirely by hand and without the use of any jQuery, Angular, React, etc. HTML5, CSS3, and especially CSS Grid, have brought many quality of life features to the native experience. With some concessions, and the fact that I don't need to target non-modern browsers, I feel that my grasp of the core systems is better than that of someone who relies on a framework from day one.</p>
+            </div>
+            <img class="cvitem_logo" src="./cv/html5.svg"/>
+        </div>
+    </div>
+
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title">SQLite</h3>
+            <div class="cvitem_details">
+                <p>Some people tease SQLite for not being as big and featureful as something like MySQL, but I for one think it's one of the greatest gifts to the database ecosystem. Thanks to its fast and easy deployment plus cross-platform compatibility, sqlite databases tend to be the best choice for storing structured data. SQLite3 has been my go-to database since 2014 and hasn't failed me yet. Absolutely a staple for my projects listed here.</p>
+            </div>
+            <img class="cvitem_logo" src="./cv/sqlite.svg"/>
+        </div>
+    </div>
+
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title">HTTP API Design & Use</h3>
+            <div class="cvitem_details">
+                <p>During my development of Etiquette, I have continuously aimed to make the API as accessible and automateable as possible. Getting a peek behind the scenes is as easy as adding <code>.json</code> to the URL. I owe much of my early learning to my work with the reddit API, and since then I've regularly automated web interactions and scraped web data with Python and <code>requests</code>. For sites without an actual API to speak of, I'm pretty good at reverse engineering from the Network panel and javascript source. Try me.</p>
+            </div>
+            <img class="cvitem_logo" src="./cv/api.svg"/>
+        </div>
+    </div>
+
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title">Graphics</h3>
+            <div class="cvitem_details">
+                <p>By now you've noticed that this page is overflowing with beautiful artwork... some of which is even mine! I enjoy using the free vector editor <a href="https://inkscape.org/">Inkscape</a> to create logos and icons for my projects, with the occasional program to <a href="https://github.com/voussoir/else/tree/master/Minecraft3DVector">auto-generate</a> vector files.</p>
+                <p>During my time working at the Cal Poly Pomona Learning Resource Center, I became very familiar with Google Slides to create attractive and innovative ways of sharing study tips with students.</p>
+            </div>
+            <img class="cvitem_logo" src="./cv/inkscape.svg"/>
+        </div>
+    </div>
+
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title">Digital media & FFmpeg</h3>
+            <div class="cvitem_details">
+                <p>I use FFmpeg practically on a daily basis to manage, convert, and analyze my media files. Although my educational background is in software development, my dream job would be something in digital media preservation, film & book scanning, archival, metadata management, etc. If you've got something going on in that field, let me know!</p>
+            </div>
+            <img class="cvitem_logo" src="./cv/ffmpeg.svg"/>
+        </div>
+    </div>
+
+
+
+    <h2 class="width_limited">Other interests</h2>
+
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title" lang="ko">한국어</h3>
+            <div class="cvitem_details">
+                <p lang="ko">2018년 10월부터 한국어를 공부하고 있습니다. 한국 영화를 많이 봤더니 어떤 아시아 언어를 배우면 한국어를 배우겠다고 결정했습니다. 진행이 조금 느리지만 일정하게 개선하고 있습니다. 매일매일 Anki를 쓰고 한국 전래동화 읽습니다. 다음 몇 년 이내 한국에 방문하면 좋겠습니다.</p>
+            </div>
+            <img class="cvitem_logo" src="./cv/korean.svg"/>
+        </div>
+    </div>
+
+
+
+    <h2 class="width_limited">Contact</h2>
+
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title">Hire</h3>
+            <div class="cvitem_details">
+                <p>If you like what you see here, and you've got something that you need an <strong><em>EXPERT</em></strong> to tackle, send an email to hire@voussoir.net.</p>
+            </div>
+            <img class="cvitem_logo" src="./cv/hire.svg"/>
+        </div>
+    </div>
+
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title">GitHub</h3>
+            <div class="cvitem_details">
+                <p>Is this redundant by now? Yes, I think so.</p>
+                <p><a href="https://github.com/voussoir">https://github.com/voussoir</a></p>
+            </div>
+            <img class="cvitem_logo" src="./cv/github.svg"/>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="https://commons.wikimedia.org/wiki/File:Epub_logo_color.svg">EPUB logo</a></p>
+        <p><a href="https://www.python.org/community/logos/">Python logo</a> under the PSF Trademark Usage Policy</p>
+        <p><a href="https://www.w3.org/html/logo/">HTML5 logo</a> under CC-BY-3.0</p>
+        <p><a href="https://commons.wikimedia.org/wiki/File:SQLite370.svg">SQLite logo</a> in the public domain</p>
+        <p><a href="https://inkscape.org/*board/galleries/inkscape-logos-and-branding/">Inkscape logo</a> under CC-BY-SA 3.0</p>
+        <p><a href="https://trac.ffmpeg.org/wiki/SubmitALogo">FFmpeg logo</a></p>
+        <p><a href="https://github.com/logos">GitHub logo</a></p>
+        <p>Derivative artwork based on <a href="https://www.redditinc.com/brand">Reddit's</a> classic Snoo mascot</p>
+    </footer>
 </body>
-
-
-<script type="text/javascript">
-</script>
 </html>

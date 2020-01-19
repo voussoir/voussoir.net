@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="640"
+   height="640"
+   viewBox="0 0 640 640"
+   id="svg2"
+   version="1.1">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g855"
+     transform="matrix(0.97610248,0,0,0.97373531,-14.720796,-20.24797)"
+     style="stroke-width:1.02572715">
+    <path
+       id="path848"
+       d="m 401.73253,345.65182 c 0,0 87.24978,41.22792 138.06559,80.53827 50.81581,39.31034 26.84609,87.24978 -30.68124,102.5904 -57.52733,15.34062 -138.06559,-47.93944 -211.89234,-7.67031"
+       style="fill:none;stroke:#0e0e0d;stroke-width:61.54362869;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="opacity:1;fill:#606060;fill-opacity:1;stroke:#0e0e0d;stroke-width:16.41163445;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 215.48865,249.77294 185.04623,-65.19765 81.41465,65.19765 V 451.03619 H 215.48865 L 132.074,387.83854 Z"
+       id="path841" />
+    <path
+       id="rect838"
+       d="M 132.074,184.57529 H 400.53488 V 387.83854 H 132.074 Z"
+       style="opacity:1;fill:#606060;fill-opacity:1;stroke:#0e0e0d;stroke-width:16.41163445;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       id="rect843"
+       d="m 98.516399,163.48194 106.425561,81.49705 v 84.37342 L 98.516399,247.85536 Z"
+       style="opacity:1;fill:#eeeeee;fill-opacity:1;stroke:#0e0e0d;stroke-width:20.51454163;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       style="opacity:1;fill:#eeeeee;fill-opacity:1;stroke:#0e0e0d;stroke-width:16.41163445;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 232.74685,163.48194 106.42555,81.49705 v 84.37342 L 232.74685,247.85536 Z"
+       id="path846" />
+  </g>
+</svg>
