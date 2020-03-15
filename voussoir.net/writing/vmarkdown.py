@@ -48,6 +48,7 @@ class SyntaxHighlighting:
     def _block_code(text, lang, inlinestyles=False, linenos=False):
         if not lang:
             text = text.strip()
+            text = re.sub(r'^((?: {4})*) {1,2}([^\s]|$)', r'\1\2', text, flags=re.MULTILINE)
             return f'<pre><code>{mistune.escape(text)}</code></pre>\n'
         try:
             lexer = pygments.lexers.get_lexer_by_name(lang.lower(), stripall=True)
@@ -62,8 +63,23 @@ class SyntaxHighlighting:
             #     )
             #     code = pygments.highlight(text, lexer, formatter).decode('utf-8')
             # ??
+            did_newline = True
             elements = []
             for (token, text) in lexer.get_tokens(text):
+                # print(token, repr(text))
+                # This replacement is meant to deal with the strange +1 or +2
+                # spaces that appear when a code block is inside a list.
+                # As far as I can tell at the moment, the origin of these extra
+                # spaces is somewhere beyond my control. So as long as I always
+                # indent with 4 spaces (which I will), it should be sufficient
+                # to truncate newline-then-whitespace to multiples of 4 spaces.
+                if did_newline or '\n' in text:
+                    # print('Replacing!!', re.findall(r'^((?: {4})*) {1,2}', text))
+                    text = re.sub(r'^((?: {4})*) {1,2}([^\s]|$)', r'\1\2', text, flags=re.MULTILINE)
+                    did_newline = False
+                # print(token, repr(text))
+                if '\n' in text:
+                    did_newline = True
                 if text.isspace():
                     elements.append(text)
                     continue
@@ -471,24 +487,6 @@ def fix_repl_classes(element):
         if del_styles:
             del child['class']
 
-def fix_leading_pre_spaces(element):
-    '''
-    I noticed this issue when using code blocks inside of a numbered list.
-    The first line would be okay but then the rest of the lines would be
-    +1 or +2 spaces indented.
-    So this looks for linebreaks inside code blocks, and removes additional
-    spaces that come after the linebreak.
-    '''
-    return
-    children = list(element.children)
-    for child in children:
-        if isinstance(child, bs4.element.NavigableString):
-            text = get_innertext(child)
-            text = text.split('\n')
-            text = [text[0]] + [t.lstrip() for t in text[1:]]
-            text = '\n'.join(text)
-            child.replace_with(text)
-
 def fix_classes(soup):
     '''
     Because pygments does not conform to my standards of beauty already!
@@ -507,7 +505,6 @@ def fix_classes(soup):
 
     for element in soup.find_all('pre'):
         fix_repl_classes(element)
-        fix_leading_pre_spaces(element)
 
     for element in soup.find_all('span', {'class': 'kd'}):
         if element.get_text() == 'def':
