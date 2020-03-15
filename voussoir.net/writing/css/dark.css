@@ -157,7 +157,7 @@ https://github.com/richleland/pygments-css
 .highlight .s { color: var(--color_monokai_yellow) } /* Literal.String */
 .highlight .na { color: var(--color_monokai_white) } /* Name.Attribute */
 .highlight .narg {color: var(--color_monokai_orange) } /* Custom Name.Argument */
-.highlight .nb { color: var(--color_monokai_white) } /* Name.Builtin */
+.highlight .nb { color: var(--color_monokai_blue) } /* Name.Builtin */
 .highlight .nc { color: var(--color_monokai_white) } /* Name.Class */
 .highlight .no { color: var(--color_monokai_blue) } /* Name.Constant */
 .highlight .nd { color: var(--color_monokai_green) } /* Name.Decorator */
