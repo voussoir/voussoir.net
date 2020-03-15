@@ -6,6 +6,7 @@
     --color_h1bg: #284142;
     --color_htmlbg: #1b1c18;
     --color_blockquotebg: rgba(0, 0, 0, 0.2);
+    --color_blockquoteedge: rgba(255, 255, 255, 0.2);
     --color_inlinecodebg: rgba(255, 255, 255, 0.1);
     --color_link: #ae81ff;
     --color_maintext: #ddd;
@@ -79,6 +80,7 @@ blockquote
     background-color: var(--color_blockquotebg);
     margin-inline-start: 0;
     margin-inline-end: 0;
+    border-left: 4px solid var(--color_blockquoteedge);
 
     padding: 8px;
     padding-inline-start: 40px;
