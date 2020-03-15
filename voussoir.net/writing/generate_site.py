@@ -204,7 +204,7 @@ def maketagpage(index, path):
     <ul>
     {% for article in index.articles %}
     <li>
-        <a href="/writing/{{article.web_path}}">{{article.md_file.parent.basename}}</a>
+        <a href="/writing/{{article.web_path}}">{{article.title}}</a>
     </li>
     {% endfor %}
     </ul>
