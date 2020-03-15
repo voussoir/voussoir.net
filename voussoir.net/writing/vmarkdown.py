@@ -195,6 +195,9 @@ def add_toc(soup, max_level=None):
         raise ValueError('max_level must be >= 1.')
 
     header_pattern = re.compile(rf'^h[1-{max_level}]$')
+    headers = soup.find_all(header_pattern)
+    if headers == [first_h1]:
+        return
 
     toc = new_list(root=True)
     toc.ol['id'] = 'table_of_contents'
@@ -202,7 +205,6 @@ def add_toc(soup, max_level=None):
     current_list = toc.ol
     current_list['level'] = None
 
-    headers = soup.find_all(header_pattern)
     for header in headers:
         if header == first_h1:
             continue
