@@ -141,7 +141,7 @@ fa0
 'hextools'
 ```
 
-Aha. So the `__name__` of my Python repl is `'__main__'`, but the `__name__` of an imported module is it's name.
+Aha. So the `__name__` of my Python repl is `'__main__'`, but the `__name__` of an imported module is its name.
 
 ```
 >>> import os
