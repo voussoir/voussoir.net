@@ -517,26 +517,16 @@ def fix_classes(soup):
 # FINAL MARKDOWNS
 ################################################################################
 def markdown(
-        filename,
+        md,
         *,
         css=None,
         do_embed_images=False,
         image_cache=None,
         return_soup=False,
-        templates=None,
     ):
-    body = cat_file(filename)
-
-    if templates:
-        if isinstance(templates, str):
-            templates = [templates]
-        for template in templates:
-            template = cat_file(template)
-            body = template.replace('{body}', body)
-
     css = cat_files(css)
 
-    body = VMARKDOWN(body)
+    body = VMARKDOWN(md)
     html = HTML_TEMPLATE.format(css=css, body=body)
 
     html = html_replacements(html)
@@ -599,7 +589,7 @@ def markdown_flask(core_filename, port, *args, **kwargs):
             return response
 
     def do_md_for(filename):
-        html = markdown(filename=filename, *args, **kwargs)
+        html = markdown(md=cat_file(filename), *args, **kwargs)
         refresh = request.args.get('refresh', None)
         if refresh is not None:
             refresh = max(float(refresh), 1)
@@ -629,16 +619,14 @@ def markdown_argparse(args):
             raise ValueError('md file and output file are the same!')
 
     kwargs = {
-        'filename': args.md_filename,
         'css': args.css,
         'do_embed_images': args.do_embed_images,
-        'templates': args.template,
     }
 
     if args.server:
-        return markdown_flask(core_filename=kwargs.pop('filename'), port=args.server, **kwargs)
+        return markdown_flask(core_filename=args.md_filename, port=args.server, **kwargs)
 
-    html = markdown(**kwargs)
+    html = markdown(cat_file(args.md_filename), **kwargs)
 
     if args.output_filename:
         f = open(args.output_filename, 'w', encoding='utf-8')
@@ -653,7 +641,6 @@ def main(argv):
 
     parser.add_argument('md_filename')
     parser.add_argument('--css', dest='css', action='append', default=None)
-    parser.add_argument('--template', dest='template', action='append', default=None)
     parser.add_argument('--embed_images', dest='do_embed_images', action='store_true')
     parser.add_argument('-o', '--output', dest='output_filename', default=None)
     parser.add_argument('--server', dest='server', type=int, default=None)

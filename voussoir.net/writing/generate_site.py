@@ -15,6 +15,12 @@ P.log.setLevel(100)
 
 writing_rootdir = pathclass.Path(__file__).parent
 
+ARTICLE_TEMPLATE = '''
+[Back to writing](/writing)
+
+{body}
+'''
+
 def write(path, content):
     path = pathclass.Path(path)
     if path not in writing_rootdir:
@@ -61,11 +67,14 @@ class Article:
         self.web_path = self.md_file.parent.relative_to(writing_rootdir, simple=True)
         self.date = git_file_date(self.md_file)
 
+        md = vmarkdown.cat_file(self.md_file.absolute_path)
+        md = ARTICLE_TEMPLATE.format(
+            body=md,
+        )
         self.soup = vmarkdown.markdown(
-            self.md_file.absolute_path,
+            md,
             css=writing_rootdir.with_child('css').with_child('dark.css').absolute_path,
             return_soup=True,
-            templates=writing_rootdir.with_child('headerfooter.md').absolute_path,
         )
         self.title = self.soup.head.title.get_text()
 
