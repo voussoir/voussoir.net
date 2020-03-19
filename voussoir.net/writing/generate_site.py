@@ -76,7 +76,10 @@ class Article:
             css=writing_rootdir.with_child('css').with_child('dark.css').absolute_path,
             return_soup=True,
         )
-        self.title = self.soup.head.title.get_text()
+        if self.soup.head.title:
+            self.title = self.soup.head.title.get_text()
+        else:
+            self.title = self.md_file.basename
 
         tag_links = self.soup.find_all('a', {'class': 'tag_link'})
         for tag_link in tag_links:
