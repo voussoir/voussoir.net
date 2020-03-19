@@ -19,6 +19,8 @@ ARTICLE_TEMPLATE = '''
 [Back to writing](/writing)
 
 {body}
+
+[View this document's history]({github_history})
 '''
 
 def write(path, content):
@@ -67,9 +69,14 @@ class Article:
         self.web_path = self.md_file.parent.relative_to(writing_rootdir, simple=True)
         self.date = git_file_date(self.md_file)
 
+        repo = git_repo_for_file(self.md_file)
+        relative_path = self.md_file.relative_to(repo, simple=True)
+        github_history = f'https://github.com/voussoir/voussoir.net/commits/master/{relative_path}'
+
         md = vmarkdown.cat_file(self.md_file.absolute_path)
         md = ARTICLE_TEMPLATE.format(
             body=md,
+            github_history=github_history,
         )
         self.soup = vmarkdown.markdown(
             md,
