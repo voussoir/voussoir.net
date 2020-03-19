@@ -98,7 +98,11 @@ class Article:
     def __str__(self):
         return f'Article({self.md_file.absolute_path})'
 
-ARTICLES = {file: Article(file) for file in spinal.walk_generator(writing_rootdir) if file.extension == 'md' and file.parent != writing_rootdir}
+ARTICLES = {
+    file: Article(file)
+    for file in spinal.walk_generator(writing_rootdir)
+    if file.extension == 'md' and file.parent != writing_rootdir
+}
 
 def write_articles():
     for article in ARTICLES.values():

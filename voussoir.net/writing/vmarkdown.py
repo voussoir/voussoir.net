@@ -541,7 +541,6 @@ def markdown(
     if do_embed_images:
         embed_images(soup, cache=image_cache)
 
-
     if return_soup:
         return soup
 
@@ -592,8 +591,8 @@ def markdown_flask(core_filename, port, *args, **kwargs):
         html = markdown(md=cat_file(filename), *args, **kwargs)
         refresh = request.args.get('refresh', None)
         if refresh is not None:
-            refresh = max(float(refresh), 1)
-            html += f'<script>setTimeout(function(){{window.location.reload()}}, {refresh * 1000})</script>'
+            refresh = 1000 * max(float(refresh), 1)
+            html += f'<script>setTimeout(function(){{window.location.reload()}}, {refresh})</script>'
         return html
 
     @site.route('/')
