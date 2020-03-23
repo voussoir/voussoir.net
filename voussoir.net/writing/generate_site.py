@@ -112,8 +112,8 @@ class Article:
         self.date = git_file_published_date(self.md_file)
         self.edited = git_file_edited_date(self.md_file)
 
-        repo = git_repo_for_file(self.md_file)
-        relative_path = self.md_file.relative_to(repo, simple=True)
+        repo_path = git_repo_for_file(self.md_file)
+        relative_path = self.md_file.relative_to(repo_path, simple=True)
         github_history = f'https://github.com/voussoir/voussoir.net/commits/master/{relative_path}'
 
         commits = git_file_commit_history(self.md_file)
