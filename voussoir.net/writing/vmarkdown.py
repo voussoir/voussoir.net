@@ -115,7 +115,12 @@ class VoussoirGrammar(mistune.InlineGrammar):
     rarr = re.compile(r'-->')
     mdash = re.compile(r'--')
     category_tag = re.compile(r'\[tag:([\w\.]+)\]')
-    text = re.compile(r'^[\s\S]+?(?=[\\<!\[_*`~\-]|https?:\/\/| {2,}\n|$)')
+    supers = re.compile(r'(?:(\^+)([^\s]+))|(?:(\^+)\((.+?)\))')
+    # This `text` override is based on this article:
+    # https://ana-balica.github.io/2015/12/21/mistune-custom-lexers-we-are-going-deeper/
+    # in which we have to keep adding characters to the recognized list every
+    # time we make a new rule. My additions so far are \- and \^.
+    text = re.compile(r'^[\s\S]+?(?=[\\<!\[_*`~\-\^]|https?:\/\/| {2,}\n|$)')
 
 class VoussoirLexer(mistune.InlineLexer):
     default_rules = copy.copy(mistune.InlineLexer.default_rules)
@@ -123,6 +128,7 @@ class VoussoirLexer(mistune.InlineLexer):
     default_rules.insert(0, 'larr')
     default_rules.insert(0, 'rarr')
     default_rules.insert(0, 'category_tag')
+    default_rules.insert(0, 'supers')
 
     def __init__(self, renderer, **kwargs):
         rules = VoussoirGrammar()
@@ -141,6 +147,13 @@ class VoussoirLexer(mistune.InlineLexer):
 
     def output_larr(self, m):
         return '&larr;'
+
+    def output_supers(self, m):
+        carets = len(m.group(1))
+        text = m.group(2)
+        text = self.output(text)
+        return f'{"<sup>" * carets}{text}{"</sup>" * carets}'
+
 
 renderer = VoussoirRenderer()
 inline = VoussoirLexer(renderer)
