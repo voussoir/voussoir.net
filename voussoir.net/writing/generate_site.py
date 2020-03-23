@@ -3,6 +3,7 @@ import etiquette
 import jinja2
 import os
 import pprint
+import re
 import subprocess
 import vmarkdown
 
@@ -20,7 +21,11 @@ ARTICLE_TEMPLATE = '''
 
 {body}
 
+---
+
 [View this document's history]({github_history})
+
+{commits}
 '''
 
 def write(path, content):
@@ -62,6 +67,25 @@ def git_file_edited_date(path):
     output = subprocess.check_output(command, stderr=subprocess.PIPE).decode('utf-8')
     return output
 
+def git_file_commit_history(path):
+    path = pathclass.Path(path)
+    repo = git_repo_for_file(path)
+    path = path.relative_to(repo, simple=True)
+    command = [
+        GIT,
+        '-C', repo.absolute_path,
+        'log',
+        '--pretty=format:%H %h %ad %s',
+        '--date=short',
+        '--',
+        path,
+    ]
+    output = subprocess.check_output(command, stderr=subprocess.PIPE).decode('utf-8')
+    lines = [line for line in output.splitlines() if line.strip()] #'*' in line]
+    lines = [re.sub(r'([\*\_\[\]\(\)\^])', r'\\\1', line) for line in lines]
+    lines = [line.split(' ', 1) for line in lines]
+    return lines
+
 def git_file_published_date(path):
     path = pathclass.Path(path)
     repo = git_repo_for_file(path)
@@ -92,10 +116,18 @@ class Article:
         relative_path = self.md_file.relative_to(repo, simple=True)
         github_history = f'https://github.com/voussoir/voussoir.net/commits/master/{relative_path}'
 
+        commits = git_file_commit_history(self.md_file)
+        commits = [
+            f'- [{line}](https://github.com/voussoir/voussoir.net/commit/{hash})'
+            for (hash, line) in commits
+        ]
+        commits = '\n'.join(commits)
+
         md = vmarkdown.cat_file(self.md_file.absolute_path)
         md = ARTICLE_TEMPLATE.format(
             body=md,
             github_history=github_history,
+            commits=commits,
         )
         self.soup = vmarkdown.markdown(
             md,
