@@ -272,11 +272,11 @@ def maketagpage(index, path):
     {% endif %}
     </section>
 
-    {% if index.articles %}
+    {% if articles %}
     <section style="grid-area:articles">
     <h1>{{path}}</h1>
     <ul>
-    {% for article in index.articles %}
+    {% for article in articles %}
     <li>
         <a href="/writing/{{article.web_path}}">{{article.title}}</a>
     </li>
@@ -306,6 +306,7 @@ def maketagpage(index, path):
     ''').render(
         parent=parent,
         index=index,
+        articles=sorted(index.articles, key=lambda a: a.date, reverse=True),
         path=path,
         children=sorted(tag.name for tag in index.children.keys()),
     )
