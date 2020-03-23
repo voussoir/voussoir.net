@@ -343,9 +343,19 @@ def write_writing_index():
         </li>
     {% endfor %}
     </ul>
+
+    <h2>Recently edited</h2>
+    <ul>
+    {% for article in articles_edited %}
+        <li>
+        <a href="{{article.web_path}}">{{article.date}} - {{article.title}}</a>
+        </li>
+    {% endfor %}
+    </ul>
     </body>
     ''').render(
         articles=sorted(ARTICLES.values(), key=lambda a: a.date, reverse=True),
+        articles_edited=sorted(ARTICLES.values(), key=lambda a: a.edited, reverse=True)
     )
     write(writing_rootdir.with_child('index.html'), page)
 
