@@ -14,8 +14,6 @@
 
 *
 {
-    font-family: Verdana, sans-serif;
-    font-size: 10pt;
     color: var(--color_maintext);
 }
 
@@ -49,6 +47,8 @@ html
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--color_htmlbg);
+    font-family: Verdana, sans-serif;
+    font-size: 10pt;
 }
 
 a
