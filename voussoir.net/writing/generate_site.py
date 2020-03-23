@@ -146,8 +146,8 @@ class Article:
 
         self.tags = [a['data-qualname'] for a in tag_links]
 
-    def __str__(self):
-        return f'Article({self.md_file.absolute_path})'
+    def __repr__(self):
+        return f'Article:{self.title}'
 
 ARTICLES = {
     file: Article(file)
