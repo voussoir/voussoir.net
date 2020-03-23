@@ -116,6 +116,8 @@ class VoussoirGrammar(mistune.InlineGrammar):
     mdash = re.compile(r'--')
     category_tag = re.compile(r'\[tag:([\w\.]+)\]')
     supers = re.compile(r'(?:(\^+)([^\s]+))|(?:(\^+)\((.+?)\))')
+    footnote_link = re.compile(r'\[footnote_link\]')
+    footnote_text = re.compile(r'\[footnote_text\]')
     # This `text` override is based on this article:
     # https://ana-balica.github.io/2015/12/21/mistune-custom-lexers-we-are-going-deeper/
     # in which we have to keep adding characters to the recognized list every
@@ -129,6 +131,8 @@ class VoussoirLexer(mistune.InlineLexer):
     default_rules.insert(0, 'rarr')
     default_rules.insert(0, 'category_tag')
     default_rules.insert(0, 'supers')
+    default_rules.insert(0, 'footnote_link')
+    default_rules.insert(0, 'footnote_text')
 
     def __init__(self, renderer, **kwargs):
         rules = VoussoirGrammar()
@@ -138,6 +142,18 @@ class VoussoirLexer(mistune.InlineLexer):
         qualname = m.group(1)
         tagname = qualname.split('.')[-1]
         return f'<a class="tag_link" data-qualname="{qualname}">[{tagname}]</a>'
+
+    def output_footnote_link(self, m):
+        global footnote_link_index
+        ret = f'[{footnote_link_index}]'
+        footnote_link_index += 1
+        return ret
+
+    def output_footnote_text(self, m):
+        global footnote_text_index
+        ret = f'[{footnote_text_index}]'
+        footnote_text_index += 1
+        return ret
 
     def output_mdash(self, m):
         return '&mdash;'
@@ -154,6 +170,8 @@ class VoussoirLexer(mistune.InlineLexer):
         text = self.output(text)
         return f'{"<sup>" * carets}{text}{"</sup>" * carets}'
 
+footnote_link_index = 1
+footnote_text_index = 1
 
 renderer = VoussoirRenderer()
 inline = VoussoirLexer(renderer)
@@ -537,6 +555,11 @@ def markdown(
         image_cache=None,
         return_soup=False,
     ):
+    global footnote_link_index
+    global footnote_text_index
+    footnote_link_index = 1
+    footnote_text_index = 1
+
     css = cat_files(css)
 
     body = VMARKDOWN(md)
