@@ -1,10 +1,10 @@
-import os
 import bs4
 import etiquette
-import pprint
-import vmarkdown
 import jinja2
+import os
+import pprint
 import subprocess
+import vmarkdown
 
 from voussoirkit import pathclass
 from voussoirkit import spinal
