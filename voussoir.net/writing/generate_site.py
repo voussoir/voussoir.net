@@ -113,6 +113,29 @@ def soup_set_tag_links(soup):
     tags = [a['data-qualname'] for a in tag_links]
     return tags
 
+def soup_adjust_relative_links(soup, md_file, repo_path):
+    '''
+    The markdown files are stored in article/article.md so if they contain a
+    relative link to some screenshot.png, naturally that file is
+    article/screenshot.png. But because of the nginx rules where we visit
+    /writing/article, the relative link thinks that it points to
+    /writing/screenshot.png which doesn't exist. So this function turns all
+    relative links into absolute links starting from /writing.
+    '''
+    folder = pathclass.Path(md_file.parent, force_sep='/')
+    links = soup.find_all('a')
+    for link in links:
+        href = link['href']
+        if '://' in href:
+            continue
+        if href.startswith('/'):
+            continue
+        href = folder.join(href)
+        href = '/' + href.relative_to(writing_rootdir.parent, simple=True)
+        if not href.startswith('/writing/'):
+            raise ValueError('Somethings wrong')
+        link['href'] = href
+
 class Article:
     def __init__(self, md_file):
         self.md_file = pathclass.Path(md_file)
@@ -149,6 +172,7 @@ class Article:
             self.title = self.md_file.basename
 
         self.tags = soup_set_tag_links(self.soup)
+        soup_adjust_relative_links(self.soup, self.md_file, repo_path)
 
     def __repr__(self):
         return f'Article:{self.title}'
