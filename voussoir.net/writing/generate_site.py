@@ -45,7 +45,7 @@ def git_repo_for_file(path):
         folder = folder.parent
     raise Exception('No Git repo.')
 
-def git_file_date(path):
+def git_file_edited_date(path):
     path = pathclass.Path(path)
     repo = git_repo_for_file(path)
     path = path.relative_to(repo, simple=True)
@@ -53,12 +53,30 @@ def git_file_date(path):
         GIT,
         '-C', repo.absolute_path,
         'log',
+        '-1',
+        '--pretty=format:%ad',
+        '--date=short',
+        '--',
+        path,
+    ]
+    output = subprocess.check_output(command, stderr=subprocess.PIPE).decode('utf-8')
+    return output
+
+def git_file_published_date(path):
+    path = pathclass.Path(path)
+    repo = git_repo_for_file(path)
+    path = path.relative_to(repo, simple=True)
+    command = [
+        GIT,
+        '-C', repo.absolute_path,
+        'log',
+        '--follow',
         '--diff-filter=A',
         '--pretty=format:%ad',
         '--date=short',
-        '--', path,
+        '--',
+        path,
     ]
-    # print(command)
     output = subprocess.check_output(command, stderr=subprocess.PIPE).decode('utf-8')
     return output
 
@@ -67,7 +85,8 @@ class Article:
         self.md_file = pathclass.Path(md_file)
         self.html_file = self.md_file.replace_extension('html')
         self.web_path = self.md_file.parent.relative_to(writing_rootdir, simple=True)
-        self.date = git_file_date(self.md_file)
+        self.date = git_file_published_date(self.md_file)
+        self.edited = git_file_edited_date(self.md_file)
 
         repo = git_repo_for_file(self.md_file)
         relative_path = self.md_file.relative_to(repo, simple=True)
