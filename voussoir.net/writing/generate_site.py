@@ -104,6 +104,15 @@ def git_file_published_date(path):
     output = subprocess.check_output(command, stderr=subprocess.PIPE).decode('utf-8')
     return output
 
+def soup_set_tag_links(soup):
+    tag_links = soup.find_all('a', {'class': 'tag_link'})
+    for tag_link in tag_links:
+        tagname = tag_link['data-qualname'].split('.')[-1]
+        tag_link['href'] = f'/writing/tags/{tagname}'
+
+    tags = [a['data-qualname'] for a in tag_links]
+    return tags
+
 class Article:
     def __init__(self, md_file):
         self.md_file = pathclass.Path(md_file)
@@ -139,12 +148,7 @@ class Article:
         else:
             self.title = self.md_file.basename
 
-        tag_links = self.soup.find_all('a', {'class': 'tag_link'})
-        for tag_link in tag_links:
-            tagname = tag_link['data-qualname'].split('.')[-1]
-            tag_link['href'] = f'/writing/tags/{tagname}'
-
-        self.tags = [a['data-qualname'] for a in tag_links]
+        self.tags = soup_set_tag_links(self.soup)
 
     def __repr__(self):
         return f'Article:{self.title}'
