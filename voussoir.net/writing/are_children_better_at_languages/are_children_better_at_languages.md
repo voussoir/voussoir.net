@@ -128,7 +128,7 @@ If you're keeping score, you may feel like overall the kids come out on top. Eve
 
 - **Endless free time and constant immersion** --> I know I can't say to just create more free time, but look for ways to increase the time you spend listening. Any time you are not speaking to someone, or doing audio-based work, or forbidden from wearing earbuds, you could be listening.
 
-  Remove the friction between you and the process of listening. On my phone I use [Musicolet](https://play.google.com/store/apps/details?id=in.krosbits.musicolet&hl=en_US) which lets me have one queue for music and one queue for Korean [footnote_link] so I can go from not-listening to listening very quickly.
+  Remove the [friction](/writing/friction) between you and the process of listening. On my phone I use [Musicolet](https://play.google.com/store/apps/details?id=in.krosbits.musicolet&hl=en_US) which lets me have one queue for music and one queue for Korean [footnote_link] so I can go from not-listening to listening very quickly.
 
   At the moment, my current source of friction is wearing earbuds. They tend to get caught on stuff if outside my shirt, I don't like wearing them inside my shirt, and it is too easy to take them out and not put them back in. I could increase my listening hours by playing Korean on speaker at all times, but I don't for fear of bothering people.
 
