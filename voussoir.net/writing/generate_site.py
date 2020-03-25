@@ -75,7 +75,7 @@ def git_file_commit_history(path):
         GIT,
         '-C', repo.absolute_path,
         'log',
-        '--pretty=format:%H %h %ad %s',
+        '--pretty=format:%H %ad %s',
         '--date=short',
         '--',
         path,
