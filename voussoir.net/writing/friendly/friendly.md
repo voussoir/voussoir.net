@@ -50,4 +50,4 @@ From David to Ethan
 
 ### Final thoughts
 
-You can view his [website](https://dtdata.io) and [channel](https://www.youtube.com/channel/UC-RdjX60HcOb-DtgU89AzXA/videos).
+You can view David's [website](https://dtdata.io) and [channel](https://www.youtube.com/channel/UC-RdjX60HcOb-DtgU89AzXA/videos).
