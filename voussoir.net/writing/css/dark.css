@@ -42,8 +42,6 @@ html
     height: 100vh;
     box-sizing: border-box;
 
-    padding-top: 30px;
-    padding-bottom: 30px;
     background-color: var(--color_htmlbg);
     color: var(--color_maintext);
 
@@ -64,12 +62,14 @@ a
 
 body
 {
-    width: 80%;
-    min-width: 30em;
+    width: 90%;
+    min-width: 10em;
     max-width: 70em;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
     padding: 16px;
-    padding-bottom: 64px;
     box-shadow: #000 0px 0px 40px -10px;
     background-color: var(--color_bodybg);
 }
