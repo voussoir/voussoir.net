@@ -39,12 +39,21 @@ h5:hover > .header_anchor_link {display: initial;}
 
 html
 {
+    height: 100vh;
+    box-sizing: border-box;
+
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--color_htmlbg);
     color: var(--color_maintext);
+
     font-family: Verdana, sans-serif;
     font-size: 10pt;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
 }
 
 a
