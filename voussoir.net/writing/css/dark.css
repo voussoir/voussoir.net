@@ -67,8 +67,8 @@ body
     max-width: 70em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 16px;
     box-shadow: #000 0px 0px 40px -10px;
     background-color: var(--color_bodybg);
