@@ -96,8 +96,8 @@ blockquote
     border-left: 4px solid var(--color_blockquoteedge);
 
     padding: 8px;
-    padding-inline-start: 40px;
-    padding-inline-end: 40px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
 }
 
 *:not(pre) > code
