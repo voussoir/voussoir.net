@@ -163,7 +163,7 @@ class Article:
         )
         self.soup = vmarkdown.markdown(
             md,
-            css=writing_rootdir.with_child('css').with_child('dark.css').absolute_path,
+            css=writing_rootdir.with_child('dark.css').absolute_path,
             return_soup=True,
         )
         if self.soup.head.title:
