@@ -199,6 +199,7 @@ def dump_file(path):
 
 # SOUP HELPERS
 ################################################################################
+PARAGRAPH_SYMBOL = chr(182)
 def add_header_anchors(soup):
     '''
     Give each <hX> an <a> to link to it.
@@ -215,8 +216,7 @@ def add_header_anchors(soup):
         new_a = soup.new_tag('a')
         new_a['href'] = '#' + slug
         new_a['class'] = 'header_anchor_link'
-        paragraph_symbol = chr(182)
-        new_a.append(f' ({paragraph_symbol})')
+        new_a.append(f' ({PARAGRAPH_SYMBOL})')
         header.append(new_a)
 
 def add_toc(soup, max_level=None):
@@ -261,7 +261,7 @@ def add_toc(soup, max_level=None):
         toc_line = toc.new_tag('li')
         toc_a = toc.new_tag('a')
 
-        toc_a.append(str(header.find(text=True)))
+        toc_a.append(get_innertext(header).replace(f' ({PARAGRAPH_SYMBOL})', ''))
         toc_a['href'] = f'#{header["id"]}'
         toc_line.append(toc_a)
 
