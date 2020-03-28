@@ -280,6 +280,11 @@ def maketagpage(index, path):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/writing/dark.css"/>
+    {% if path %}
+    <title>Articles tagged {{path}}</title>
+    {% else %}
+    <title>Articles by tag</title>
+    {% endif %}
     <style>
     body
     {
@@ -360,6 +365,7 @@ def write_writing_index():
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/writing/dark.css"/>
+    <title>Writing</title>
     </head>
 
     <body>
