@@ -573,8 +573,12 @@ def markdown(
     css = cat_files(css)
 
     body = VMARKDOWN(md)
-    html = HTML_TEMPLATE.format(css=css, body=body)
+    if footnote_link_index != footnote_text_index:
+        links = footnote_link_index-1
+        texts = footnote_text_index-1
+        warnings.warn(f'There are {links} footnote links, but {texts} texts.')
 
+    html = HTML_TEMPLATE.format(css=css, body=body)
     html = html_replacements(html)
 
     soup = bs4.BeautifulSoup(html, 'html.parser')
