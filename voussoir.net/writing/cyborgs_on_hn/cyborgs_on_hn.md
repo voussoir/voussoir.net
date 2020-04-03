@@ -3,6 +3,14 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, and cryptography in discussions that aren't about those things.
 
+> My response to picking up a number is to answer the call and say nothing. Auto-dial systems will route the call to a person when they get a "live" response. I don't know the criteria but I'm pretty sure it's them detecting noise on the call (which could be voicemail).
+
+> A human calling will wonder what is happening and fill the silence by saying something. A machine will not.
+
+> > I've encountered robots in the last 6 months that have started with "Hello?" when I didn't say anthing. It tripped up my Turing Test at first, but eventually hit an ALICEBot-like moment that crashed the whole thing down.
+
+-
+
 > Real wages haven't increased since 1970.
 
 > We only feel richer because:
