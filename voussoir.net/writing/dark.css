@@ -100,6 +100,11 @@ blockquote
     padding-inline-end: 20px;
 }
 
+ol ol, ul ul, ol ul, ul ol
+{
+    padding-inline-start: 20px;
+}
+
 *:not(pre) > code
 {
     background-color: var(--color_inlinecodebg);
