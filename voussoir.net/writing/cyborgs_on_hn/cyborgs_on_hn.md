@@ -3,6 +3,10 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, and cryptography in discussions that aren't about those things.
 
+> eg. go watch a SGM play 30 second hyperbullet chess, I don't think I have either the memory or raw processing speed to do what they do, ever. If those guys exist a lot of other people have way higher ceilings. Also realize that chess (and by extension must be a lot of other activities) rely on both a crazy cpu, an amazing memory and an insanely built-out internal database of positions and ideas, and since my cpu is good but not unbelievable, my memory is nothing special and my time is limited there must be a lot of activities I'll never really be good at. Also just getting older and staying unsuccessful relative to your ego, you just start to compromise I think.
+
+-
+
 > My response to picking up a number is to answer the call and say nothing. Auto-dial systems will route the call to a person when they get a "live" response. I don't know the criteria but I'm pretty sure it's them detecting noise on the call (which could be voicemail).
 
 > A human calling will wonder what is happening and fill the silence by saying something. A machine will not.
