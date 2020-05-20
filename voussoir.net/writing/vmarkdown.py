@@ -556,6 +556,12 @@ def fix_classes(soup):
         if get_innertext(element.nextSibling) == '(':
             fix_argument_call_classes(element)
 
+def fix_reddit_links(soup):
+    for a in soup.find_all('a'):
+        if not a.get('href'):
+            continue
+        a['href'] = re.sub(r'^(https?://)?(www\.)?reddit\.com', r'\1old.reddit.com', a['href'])
+
 # FINAL MARKDOWNS
 ################################################################################
 def markdown(
@@ -574,21 +580,28 @@ def markdown(
     css = cat_files(css)
 
     body = VMARKDOWN(md)
+
     if footnote_link_index != footnote_text_index:
         links = footnote_link_index-1
         texts = footnote_text_index-1
         warnings.warn(f'There are {links} footnote links, but {texts} texts.')
 
     html = HTML_TEMPLATE.format(css=css, body=body)
+
+    # HTML cleaning
     html = html_replacements(html)
 
     soup = bs4.BeautifulSoup(html, 'html.parser')
+
+    # Soup cleaning
     # Make sure to add_head_title before add_header_anchors so you don't get
     # the paragraph symbol in the <title>.
     add_head_title(soup)
     add_header_anchors(soup)
     add_toc(soup)
     fix_classes(soup)
+    fix_reddit_links(soup)
+
     if do_embed_images:
         embed_images(soup, cache=image_cache)
 
