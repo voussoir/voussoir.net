@@ -402,6 +402,7 @@ def slugify(text):
     text = text.replace(' ', '_')
     text = [c for c in text if c in SLUG_CHARACTERS]
     text = ''.join(text)
+    text = re.sub(r'_{2,}', '_', text)
     return text
 
 def uniqify_slug(slug, used_slugs):
