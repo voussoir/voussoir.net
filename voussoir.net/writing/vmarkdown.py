@@ -118,13 +118,13 @@ class VoussoirGrammar(mistune.InlineGrammar):
     supers = re.compile(r'(?:(\^+)([^\s]+))|(?:(\^+)\((.+?)\))')
     footnote_link = re.compile(r'\[footnote_link\]')
     footnote_text = re.compile(r'\[footnote_text\]')
-    subreddit = re.compile(r'/r/([^\s]+)')
-    redditor = re.compile(r'/u/([^\s]+)')
+    subreddit = re.compile(r'\/r\/[A-Za-z0-9_]+')
+    redditor = re.compile(r'\/u\/[A-Za-z0-9_]+')
     # This `text` override is based on this article:
     # https://ana-balica.github.io/2015/12/21/mistune-custom-lexers-we-are-going-deeper/
     # in which we have to keep adding characters to the recognized list every
     # time we make a new rule. My additions so far are \- and \^.
-    text = re.compile(r'^[\s\S]+?(?=[\\<!\[_*`~\-\^]|https?:\/\/| {2,}\n|$)')
+    text = re.compile(r'^[\s\S]+?(?=[\\<!\[_*`~\-\^\/]|https?:\/\/| {2,}\n|$)')
 
 class VoussoirLexer(mistune.InlineLexer):
     default_rules = copy.copy(mistune.InlineLexer.default_rules)
@@ -175,10 +175,10 @@ class VoussoirLexer(mistune.InlineLexer):
         return f'{"<sup>" * carets}{text}{"</sup>" * carets}'
 
     def output_subreddit(self, m):
-        return f'<a href="https://old.reddit.com{m.group(0)}">{m.group(1)}</a>'
+        return f'<a href="https://old.reddit.com{m.group(0)}">{m.group(0)}</a>'
 
     def output_redditor(self, m):
-        return f'<a href="https://old.reddit.com{m.group(0)}">{m.group(1)}</a>'
+        return f'<a href="https://old.reddit.com{m.group(0)}">{m.group(0)}</a>'
 
 footnote_link_index = 1
 footnote_text_index = 1
