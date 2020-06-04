@@ -123,18 +123,24 @@ def soup_adjust_relative_links(soup, md_file, repo_path):
     relative links into absolute links starting from /writing.
     '''
     folder = pathclass.Path(md_file.parent, force_sep='/')
-    links = soup.find_all('a')
-    for link in links:
-        href = link['href']
-        if '://' in href:
-            continue
-        if href.startswith('/'):
-            continue
-        href = folder.join(href)
-        href = '/' + href.relative_to(writing_rootdir.parent, simple=True)
-        if not href.startswith('/writing/'):
-            raise ValueError('Somethings wrong')
-        link['href'] = href
+    def fixby(tagname, attribute):
+        links = soup.find_all(tagname)
+        for link in links:
+            href = link[attribute]
+            if '://' in href:
+                continue
+            if href.startswith('/'):
+                continue
+            href = folder.join(href)
+            href = '/' + href.relative_to(writing_rootdir.parent, simple=True)
+            if not href.startswith('/writing/'):
+                raise ValueError('Somethings wrong')
+            link[attribute] = href
+    fixby('a', 'href')
+    fixby('img', 'src')
+    fixby('video', 'src')
+    fixby('audio', 'src')
+    fixby('source', 'src')
 
 class Article:
     def __init__(self, md_file):
