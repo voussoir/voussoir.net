@@ -18,28 +18,13 @@ More potently, I think we can expect that we will always pick the action which h
 
 Take homework for example. You're supposed to be doing homework, but getting distracted on the internet is sooo tempting. Let's make a chart:
 
-```
-.                   a little                   a lot
-┌──────────────────┬────────────────────────────────┐
-│ HOMEWORK         │                                │
-│            value ╞═══════════╣ grade              │
-│                  │                                │
-│         friction ╞════════════════════════════╣   │
-│                  │                                │
-├──────────────────┼────────────────────────────────┤
-│ INTERNET         │                                │
-│            value ╞═══╣ entertainment              │
-│                  │                                │
-│         friction ╞═╣                              │
-│                  │                                │
-└──────────────────┴────────────────────────────────┘
-```
+![](graph.svg)
 
-Sure, homework is important. It gives you value in the form of a grade which is important to the rest of your schooling. It's certainly much more important than lazily scrolling the internet. But boy does it have a lot of friction. It can be boring, difficult, maybe it's math homework with 50 of the same kind of problem, maybe it's an essay on a topic you don't care about and have nothing to write. Procrastinating on the other hand is easy, and in the age of notifications the internet is more than willing to come to you. The ratio of `value/friction` leans heavily in favor of the internet. I for one have always been a procrastinator.
+Sure, homework is important. It gives you value in the form of a grade which is important to the rest of your schooling. It's certainly much more important than lazily scrolling the internet. But boy does it have a lot of friction. Maybe it's boring and difficult. Maybe it's math homework with 50 of the same kind of problem that you're sick of doing. Maybe it's an essay on a topic you don't care about and you can't think of anything to write. Procrastinating on the other hand is easy, and in the age of notifications the internet is more than willing to come to you. The ratio of `value/friction` leans heavily in favor of the internet. I for one have always been a procrastinator.
 
 As the deadline approaches, the homework starts to gain more value -- on top of the grade you have "avoiding the shame of not turning anything in", "avoiding the embarrassment of being called on in class and not having an answer", "avoiding a slippery slope trend of not doing my work". If these are enough, the homework will finally get the better ratio and you'll do it. If they're not, well... I assume we've all skipped assignments before. Students who regularly skip homework either aren't finding it to be valuable enough or have too many alternatives with lower friction (or have extenuating circumstances at home, I apologize if that's the case).
 
-So what to do? Clearly I believe that the value of a task *can* change, but in my experience I don't have much control over it. Short of realizing some benefit that I genuinely didn't know was there, I find value to be generally outside of my control and impossible to give actionable advice for. *Just, like, think about how important it is, maaan. Just tell yourself to do it*. That leaves the other variable:
+So what to do? Clearly I believe that the value of a task *can* change, but in my experience I don't have much control over it. Short of realizing some benefit that I genuinely didn't know was there, I find value to be generally outside of my control and impossible to give actionable advice for. *Just, like, think about how important it is. Just tell yourself to do it*. Great thanks. That leaves the other variable: friction.
 
 If you want to build a habit, you should **reduce the friction of that habit** or **increase the friction of the alternatives**.
 
@@ -57,7 +42,7 @@ Brushing your teeth prevents you from losing them, and only takes a few minutes 
 
 Eating healthy is ideal, but unhealthy foods are numerous, cheap [footnote_link], and tasty [footnote_link].
 
-Those of you who drink coffee have probably reduced the friction for yourself by setting up automatic morning brews or writing [terminal programs](https://www.evilsocket.net/2016/10/09/IoCOFFEE-Reversing-the-Smarter-Coffee-IoT-machine-protocol-to-make-coffee-using-terminal/#.V_pNbpzrDZ8.reddit) to start the machine at a distance. Some people use Keurig-style machines at home, and I think the plastic waste is probably higher than necessary, but clearly the convenience is a draw.
+Those of you who drink coffee have probably reduced the friction for yourself by setting up automatic morning brews or writing [terminal programs](https://www.evilsocket.net/2016/10/09/IoCOFFEE-Reversing-the-Smarter-Coffee-IoT-machine-protocol-to-make-coffee-using-terminal/#.V_pNbpzrDZ8.reddit) to start the machine at a distance. Some people use Keurig-style machines at home, and I think the plastic waste is higher than necessary, but clearly they bring the friction way down.
 
 Programmers know that writing documentation tends to be low on the priority list. Conveniently, just today there were several posts on hackernews about writing documentation in Markdown ([one](https://news.ycombinator.com/item?id=22675165), [two](https://news.ycombinator.com/item?id=22677161), [three](https://news.ycombinator.com/item?id=22677970)). Some argue that other formats like AsciiDoc or rst are more powerful (higher value), which is hard to deny, but clearly the `value/friction` of Markdown has yet to be defeated.
 
@@ -80,6 +65,8 @@ I have been using [Anki](https://apps.ankiweb.net/) to keep up on Korean vocabul
 Learning Korean requires spending a lot of time listening to it. Certainly the long-term value of learning the language is very high for me, but on a day-to-day basis the value of any individual listening session is hard to measure. I can't *feel* my improvement on such a short timescale, so individual listenings are unfortunately of somewhat low value. Thus it's necessary to reduce my friction as much as possible. That means keeping the tracks on my phone, using [Musicolet](https://play.google.com/store/apps/details?id=in.krosbits.musicolet&hl=en_US) which gives me a queue (not playlist!) dedicated to Korean, and putting the Musicolet widget on my home screen so I've got a play button right there. I mentioned this in [Are children better at learning languages](/writing/are_children_better_at_languages/#this_isnt_a_defeatist_piece). My current source of friction is earbuds, I wish I could just have it beamed into my brain with no mortal coils to speak of. Those true-wireless bluetooth earbuds seem promising but then you've got the friction of charging them and my experience with bluetooth sound quality hasn't been great, though that might just be from low-quality devices. It would also be nice if Musicolet had widgets for playing particular queues, because the widget now only shows the current queue and you have to open the app to switch them. The next time I get a new phone I think I'll keep this one as a dedicated Korean device with 24/7 airplane mode to save battery and a play button right on the lock screen.
 
 I wrote [gitcheckup.py](https://github.com/voussoir/cmd/blob/master/gitcheckup.py) to check the number of changed files and unpushed commits in each of my important git repositories. The cwd doesn't matter, it always shows me a complete list. I have a tendency to make small or experimental changes that I forget about and go unpushed for a long time. gitcheckup helps me keep my repositories in a clean state by showing me empty checkboxes (the horror!) next to what needs attention [footnote_link].
+
+I have a [digitizer / drawing tablet](https://en.wikipedia.org/wiki/Graphics_tablet) that I like to use as a mouse even when I'm not doing any graphics work. It's fun to use and helps me prevent wrist strain from using a regular mouse too long. But when using the tablet, accurately double-clicking is a little harder, and switching from clicking to typing requires dropping the pen in its holder, so there is a bit more friction to using the tablet as a mouse replacement and I'll often instinctively reach for the regular mouse instead. So, I'll occasionally toss my regular mouse to the other side of my desk as a way of forcing the use of the tablet.
 
 [footnote_text] Originally I was using the built-in tasks app on my phone which is an LG, but it didn't sync with my computer. Currently I'm using Microsoft's [To Do](https://todo.microsoft.com/). I am relegating this to a footnote instead of inlining it because I don't actually think it's the greatest option in this space and it lacks many features I want. Like you can print, physically-on-paper print a list but can't export it to json or anything. I just picked it because it's free without ads or premium, isn't totally terrible, and isn't Google, criteria which I find difficult to satisfy on Android. It's made by MS though which isn't great either. Sorry for rambling, I'm battling between my feelings that I should share my current solutions in this article versus my disdain for advertising especially a non-open application by MS.
 
