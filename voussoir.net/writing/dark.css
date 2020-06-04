@@ -100,6 +100,19 @@ blockquote
     padding-inline-end: 20px;
 }
 
+table
+{
+    border-collapse: collapse;
+}
+table, table th, table td
+{
+    border: 1px solid var(--color_maintext);
+}
+table th, table td
+{
+    padding: 4px;
+}
+
 ol ol, ul ul, ol ul, ul ol
 {
     padding-inline-start: 20px;
