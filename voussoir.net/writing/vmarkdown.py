@@ -149,13 +149,13 @@ class VoussoirLexer(mistune.InlineLexer):
 
     def output_footnote_link(self, m):
         global footnote_link_index
-        ret = f'[{footnote_link_index}]'
+        ret = f'<a id="footnote_link_{footnote_link_index}" class="footnote_link" href="#footnote_text_{footnote_link_index}" data-index={footnote_link_index}>[{footnote_link_index}]</a>'
         footnote_link_index += 1
         return ret
 
     def output_footnote_text(self, m):
         global footnote_text_index
-        ret = f'[{footnote_text_index}]'
+        ret = f'<a id="footnote_text_{footnote_text_index}" class="footnote_text" href="#footnote_link_{footnote_text_index}" data-index={footnote_text_index}>[{footnote_text_index}]</a>'
         footnote_text_index += 1
         return ret
 
@@ -562,6 +562,13 @@ def fix_reddit_links(soup):
             continue
         a['href'] = re.sub(r'^(https?://)?(www\.)?reddit\.com', r'\1old.reddit.com', a['href'])
 
+def inject_footnotes(soup):
+    links = soup.find_all('a', {'class': 'footnote_link'})
+    texts = soup.find_all('a', {'class': 'footnote_text'})
+    texts = {text['data-index']: get_innertext(text.parent) for text in texts}
+    for link in links:
+        link['title'] = texts[link['data-index']]
+
 # FINAL MARKDOWNS
 ################################################################################
 def markdown(
@@ -601,6 +608,7 @@ def markdown(
     add_toc(soup)
     fix_classes(soup)
     fix_reddit_links(soup)
+    inject_footnotes(soup)
 
     if do_embed_images:
         embed_images(soup, cache=image_cache)
