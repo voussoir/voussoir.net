@@ -635,7 +635,18 @@ def markdown_flask(core_filename, port, *args, **kwargs):
                 print(relative)
                 a = f'<p><a href="/{relative}">{child.basename}</a></p>'
                 atags.append(a)
-            page = '\n'.join(atags)
+            atags = '\n'.join(atags)
+            page = f'''
+            <html>
+            <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            </head>
+            <body>
+            {atags}
+            </body>
+            </html>
+            '''.strip()
             return page
 
         try:
