@@ -664,7 +664,10 @@ def markdown_flask(core_filename, port, *args, **kwargs):
             return response
 
     def do_md_for(filename):
-        html = markdown(md=cat_file(filename), *args, **kwargs)
+        try:
+            html = markdown(md=cat_file(filename), *args, **kwargs)
+        except FileNotFoundError:
+            flask.abort(404)
         refresh = request.args.get('refresh', None)
         if refresh is not None:
             refresh = 1000 * max(float(refresh), 1)
