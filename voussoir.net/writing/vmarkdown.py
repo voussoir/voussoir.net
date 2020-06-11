@@ -30,7 +30,9 @@ HTML_TEMPLATE = '''
 </head>
 
 <body>
+<article>
 {body}
+</article>
 </body>
 </html>
 '''.strip()

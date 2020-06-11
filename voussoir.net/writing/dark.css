@@ -12,6 +12,42 @@
     --color_maintext: #ddd;
 }
 
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+html
+{
+    height: 100vh;
+    box-sizing: border-box;
+
+    background-color: var(--color_htmlbg);
+    color: var(--color_maintext);
+
+    font-family: Verdana, sans-serif;
+    font-size: 10pt;
+}
+
+body
+{
+    margin: 0;
+}
+
+article
+{
+    width: 90%;
+    min-width: 10em;
+    max-width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 16px;
+    box-shadow: #000 0px 0px 40px -10px;
+    background-color: var(--color_bodybg);
+}
+
 h1, h2, h3, h4, h5
 {
     padding: 8px;
@@ -36,45 +72,13 @@ h3:hover > .header_anchor_link {display: initial;}
 h4:hover > .header_anchor_link {display: initial;}
 h5:hover > .header_anchor_link {display: initial;}
 
-
-html
-{
-    height: 100vh;
-    box-sizing: border-box;
-
-    background-color: var(--color_htmlbg);
-    color: var(--color_maintext);
-
-    font-family: Verdana, sans-serif;
-    font-size: 10pt;
-}
-
-*, *:before, *:after
-{
-    box-sizing: inherit;
-}
-
 a
 {
     color: var(--color_link);
+    cursor: pointer;
 }
 
-
-body
-{
-    width: 90%;
-    min-width: 10em;
-    max-width: 70em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 16px;
-    box-shadow: #000 0px 0px 40px -10px;
-    background-color: var(--color_bodybg);
-}
-
-body *
+article *
 {
     max-width: 100%;
     word-wrap: break-word;
