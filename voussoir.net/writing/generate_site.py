@@ -284,6 +284,7 @@ def maketagpage(index, path):
     path = '/'.join(path)
 
     page = jinja2.Template('''
+    <html>
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -293,17 +294,9 @@ def maketagpage(index, path):
     {% else %}
     <title>Articles by tag</title>
     {% endif %}
-    <style>
-    body
-    {
-        display:grid;
-        grid-template:
-            "tagnav tagnav"
-            "articles refine";
-    }
-    </style>
     </head>
     <body>
+    <article>
     <section style="grid-area:tagnav">
     <p><a href="/writing">Back to writing</a></p>
     {% if parent %}
@@ -343,7 +336,9 @@ def maketagpage(index, path):
     </section>
     {% endif %}
 
+    </article>
     </body>
+    </html>
     ''').render(
         parent=parent,
         index=index,
@@ -369,6 +364,7 @@ def write_tag_pages():
 
 def write_writing_index():
     page = jinja2.Template('''
+    <html>
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -377,6 +373,7 @@ def write_writing_index():
     </head>
 
     <body>
+    <article>
     <h1>Writing</h1>
     <ul>
     {% for article in articles %}
@@ -396,7 +393,9 @@ def write_writing_index():
         {% endif %}
     {% endfor %}
     </ul>
+    </article>
     </body>
+    </html>
     ''').render(
         articles=sorted(ARTICLES.values(), key=lambda a: a.date, reverse=True),
         articles_edited=sorted(ARTICLES.values(), key=lambda a: a.edited, reverse=True)
