@@ -1,4 +1,4 @@
-[tag:meta]
+[tag:meta] [tag:introspection]
 
 My motivations for writing
 ==========================
