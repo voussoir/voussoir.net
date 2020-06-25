@@ -61,6 +61,8 @@ def git_file_edited_date(path):
         '-1',
         '--pretty=format:%ad',
         '--date=short',
+        r'--grep=\[minor\]',
+        '--invert-grep',
         '--',
         path,
     ]
