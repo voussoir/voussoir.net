@@ -1,5 +1,6 @@
 import bs4
 import etiquette
+import html
 import jinja2
 import os
 import pprint
@@ -158,7 +159,7 @@ class Article:
 
         commits = git_file_commit_history(self.md_file)
         commits = [
-            f'- [{line}](https://github.com/voussoir/voussoir.net/commit/{hash})'
+            f'- [{html.escape(line)}](https://github.com/voussoir/voussoir.net/commit/{hash})'
             for (hash, line) in commits
         ]
         commits = '\n'.join(commits)
