@@ -3,6 +3,26 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, and cryptography in discussions that aren't about those things.
 
+> What surprised me most is that he presented himself as the biographer of James Bond, as if he were real. I wasn't aware of that history.
+
+> > It's a writer's technique somewhat similar to method actors who take on the character's persona as their own for the duration of a play or filming. Pretty much as far from "kill your darlings" as one can get, tbh.
+
+> > > Forking your own thinking process to have a secondary personality execute in parallel sounds as close to "killing your darlings" as possible, given that personality would presumably have their own favorite expressions and tropes.
+
+-
+
+> Interesting: whoever edited that article miscorrected "cobble" to the likely more familiar but incorrect "cobblestone".
+
+> I've seen a huge increase in such errors over the past decade, both in terms and tense. I don't know how to explain it but it is discouraging. Sometimes the errors are quite confusing until you realize what happened; this one is quite minor.
+
+> > In Minecraft "cobble" is certainly understood to be short for cobblestone. A "cobblegen" is either an arrangement of materials (lava, water, something heat resistant) so as to cause the game to make and replace cobblestone blocks when you mine them out, so as to obtain unlimited amounts of this building material, or in modded Minecraft it's a more compact machine which makes this material, perhaps in very large quantities indeed, and maybe related materials like sand.
+
+-
+
+> Hey, just a head's up, I was reading your blog and noticed a typo: s/formally/formerly/
+
+-
+
 > eg. go watch a SGM play 30 second hyperbullet chess, I don't think I have either the memory or raw processing speed to do what they do, ever. If those guys exist a lot of other people have way higher ceilings. Also realize that chess (and by extension must be a lot of other activities) rely on both a crazy cpu, an amazing memory and an insanely built-out internal database of positions and ideas, and since my cpu is good but not unbelievable, my memory is nothing special and my time is limited there must be a lot of activities I'll never really be good at. Also just getting older and staying unsuccessful relative to your ego, you just start to compromise I think.
 
 -
