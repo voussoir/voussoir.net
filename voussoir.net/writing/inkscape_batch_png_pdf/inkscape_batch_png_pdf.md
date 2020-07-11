@@ -61,7 +61,7 @@ I used [Inkscape](https://inkscape.org/) and [PDFtk](https://www.pdflabs.com/too
 
     On Windows, a for-loop in the command line looks like this:
 
-    `for %x in (*.png) do inkscape --without-gui --export-pdf=%~nx.pdf %~nx.svg`
+    `for %x in (*.png) do (start /w inkscape --without-gui --export-pdf=%~nx.pdf %~nx.svg)`
 
 4. **Combine all pages into single pdf**
 
