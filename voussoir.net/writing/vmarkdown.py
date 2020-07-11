@@ -15,6 +15,7 @@ import requests
 import string
 import sys
 import traceback
+import warnings
 
 from voussoirkit import pathclass
 
