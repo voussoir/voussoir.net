@@ -3,6 +3,12 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, and cryptography in discussions that aren't about those things.
 
+> Blogging Is Not Dead (garron.blog)
+
+> > "X is alive / X is dead" is binary thinking and taking sides on this is pointless and divisive. Better to use a float rather than a boolean to model how popular something is.
+
+<p></p>
+
 > What surprised me most is that he presented himself as the biographer of James Bond, as if he were real. I wasn't aware of that history.
 
 > > It's a writer's technique somewhat similar to method actors who take on the character's persona as their own for the duration of a play or filming. Pretty much as far from "kill your darlings" as one can get, tbh.
