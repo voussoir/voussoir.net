@@ -343,7 +343,7 @@ def make_tag_page(index, path):
     <ul>
     {% for article in articles %}
     <li>
-        <a href="/writing/{{article.web_path}}">{{article.title}}</a>
+        <a href="/writing/{{article.web_path}}">{{article.title|e}}</a>
     </li>
     {% endfor %}
     </ul>
@@ -408,7 +408,7 @@ def write_writing_index():
     <ul>
     {% for article in articles %}
         <li>
-        <a href="{{article.web_path}}">{{article.date}} - {{article.title}}</a>
+        <a href="{{article.web_path}}">{{article.date}} - {{article.title|e}}</a>
         </li>
     {% endfor %}
     </ul>
@@ -420,7 +420,7 @@ def write_writing_index():
     {% for article in articles_edited %}
         {% if article.edited and article.edited != article.date %}
         <li>
-        <a href="{{article.web_path}}">{{article.date}} - {{article.title}} ({{article.edited}})</a>
+        <a href="{{article.web_path}}">{{article.date}} - {{article.title|e}} ({{article.edited}})</a>
         </li>
         {% endif %}
     {% endfor %}
@@ -444,7 +444,7 @@ def write_rss():
 
         {% for article in articles %}
         <item>
-            <title>{{article.title}}</title>
+            <title>{{article.title|e}}</title>
             <link>https://voussoir.net/writing/{{article.web_path}}</link>
             <pubDate>{{article.date}}</pubDate>
             <description>
