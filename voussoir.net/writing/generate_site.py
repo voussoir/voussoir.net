@@ -263,40 +263,36 @@ def remove_redundant(query):
         seen.update(tag.walk_parents())
     return newq
 
-def permute(query, pool):
+def permute(pool, query=tuple()):
     if query:
         query = remove_redundant(query)
         if complete_tag_index.get(query):
             return
+
         articles = list(P.search(tag_musts=query))
         if not articles:
             return
+
         articles = [ARTICLES[article.real_path] for article in articles]
 
+        # Only generate a page for this tag query if it contains different
+        # results from the previous query. For example, if an article has tags
+        # A, B, and C, but it is the only article with those tags, there's no
+        # reason to generate tag pages for /A, /A/B, /A/B/C, all of which have
+        # the same single result.
         if len(query) > 1:
             previous = query[:-1]
             prevarticles = complete_tag_index.get(previous)
-            # print(f'''
-            #     query={query},
-            #     docs={docs}
-            #     previous={previous},
-            #     prevdocs={prevdocs},
-            # ''')
             if set(articles) == set(prevarticles):
                 return
-        s = str(query)
-        if 'python' in s and 'java' in s:
-            print('BAD', query, articles)
+
         complete_tag_index.assign(query, articles)
-        # pprint.pprint(complete_tag_index)
-        # complete_tag_index[query] = docs
-        # print(query, pool, docs)
 
     for tag in pool:
         rest = pool.copy()
         rest.remove(tag)
         q = query + (tag,)
-        permute(q, rest)
+        permute(rest, q)
 
 # RENDER FILES
 ################################################################################
@@ -447,6 +443,6 @@ ARTICLES = {
 write_articles()
 complete_tag_index = Index()
 all_tags = set(P.get_tags())
-permute(tuple(), all_tags)
+permute(all_tags)
 write_tag_pages(complete_tag_index)
 write_writing_index()
