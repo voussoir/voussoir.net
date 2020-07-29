@@ -3,6 +3,20 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, and cryptography in discussions that aren't about those things.
 
+> Remote work has its perks, until you want a promotion (wired.com)
+
+> > Humans don't have emotional object permanence.
+
+> > > A perhaps more techie way of thinking of it is our relationships are in a mostly-LRU cache. The people we have interacted with most recently are the ones that matter most to us. If you aren't regularly resetting your place within that cache, you get bumped.
+
+> > > > The LRU cache analogy might be one of the best comments i have ever read.
+
+<p></p>
+
+> We probably wouldn't hesitate to say "I don't believe $NONHUMAN_ANIMAL parents love their children, and vice-versa...." about most animals.
+
+<p></p>
+
 > Blogging Is Not Dead (garron.blog)
 
 > > "X is alive / X is dead" is binary thinking and taking sides on this is pointless and divisive. Better to use a float rather than a boolean to model how popular something is.
