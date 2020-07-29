@@ -17,6 +17,8 @@ P.log.setLevel(100)
 
 writing_rootdir = pathclass.Path(__file__).parent
 
+GIT = winwhich.which('git')
+
 ARTICLE_TEMPLATE = '''
 [Back to writing](/writing)
 
@@ -29,7 +31,15 @@ ARTICLE_TEMPLATE = '''
 {commits}
 '''
 
+# HELPERS
+################################################################################
+def check_output(command):
+    return subprocess.check_output(command, stderr=subprocess.PIPE).decode('utf-8')
+
 def write(path, content):
+    '''
+    open() and write the file, with validation that it is in the writing dir.
+    '''
     path = pathclass.Path(path)
     if path not in writing_rootdir:
         raise ValueError(path)
@@ -38,8 +48,8 @@ def write(path, content):
     f.write(content)
     f.close()
 
-GIT = winwhich.which('git')
-
+# GIT
+################################################################################
 def git_repo_for_file(path):
     path = pathclass.Path(path)
     folder = path.parent
@@ -52,6 +62,10 @@ def git_repo_for_file(path):
     raise Exception('No Git repo.')
 
 def git_file_edited_date(path):
+    '''
+    Return the YYYY-MM-DD date of the most recent commit that touched this file,
+    ignoring commits marked as "[minor]".
+    '''
     path = pathclass.Path(path)
     repo = git_repo_for_file(path)
     path = path.relative_to(repo, simple=True)
@@ -67,10 +81,16 @@ def git_file_edited_date(path):
         '--',
         path,
     ]
-    output = subprocess.check_output(command, stderr=subprocess.PIPE).decode('utf-8')
+    output = check_output(command)
     return output
 
 def git_file_commit_history(path):
+    '''
+    Return tuples like (hash, 'YYYY-MM-DD commit message') for all commits that
+    touched this file, most recent first.
+
+    This is used for "view this document's history".
+    '''
     path = pathclass.Path(path)
     repo = git_repo_for_file(path)
     path = path.relative_to(repo, simple=True)
@@ -83,13 +103,16 @@ def git_file_commit_history(path):
         '--',
         path,
     ]
-    output = subprocess.check_output(command, stderr=subprocess.PIPE).decode('utf-8')
+    output = check_output(command)
     lines = [line for line in output.splitlines() if line.strip()] #'*' in line]
     lines = [re.sub(r'([\*\_\[\]\(\)\^])', r'\\\1', line) for line in lines]
     lines = [line.split(' ', 1) for line in lines]
     return lines
 
 def git_file_published_date(path):
+    '''
+    Return the YYYY-MM-DD date of the commit where this file first appeared.
+    '''
     path = pathclass.Path(path)
     repo = git_repo_for_file(path)
     path = path.relative_to(repo, simple=True)
@@ -104,10 +127,17 @@ def git_file_published_date(path):
         '--',
         path,
     ]
-    output = subprocess.check_output(command, stderr=subprocess.PIPE).decode('utf-8')
+    output = check_output(command)
     return output
 
+# SOUP
+################################################################################
 def soup_set_tag_links(soup):
+    '''
+    vmarkdown renders [tag:example] into
+    <a class="tag_link" data-qualname="example">, with no href. At this point,
+    let's add the href to voussoir.net.
+    '''
     tag_links = soup.find_all('a', {'class': 'tag_link'})
     for tag_link in tag_links:
         tagname = tag_link['data-qualname'].split('.')[-1]
@@ -147,6 +177,8 @@ def soup_adjust_relative_links(soup, md_file, repo_path):
     fixby('audio', 'src')
     fixby('source', 'src')
 
+# ARTICLE
+################################################################################
 class Article:
     def __init__(self, md_file):
         self.md_file = pathclass.Path(md_file)
@@ -188,28 +220,15 @@ class Article:
     def __repr__(self):
         return f'Article:{self.title}'
 
-ARTICLES = {
-    file: Article(file)
-    for file in spinal.walk_generator(writing_rootdir)
-    if file.extension == 'md' and file.parent != writing_rootdir
-}
-
-def write_articles():
-    for article in ARTICLES.values():
-        if article.md_file.replace_extension('').basename != article.md_file.parent.basename:
-            print(f'Warning: {article} does not match folder name.')
-
-        for qualname in article.tags:
-            P.easybake(qualname)
-
-        P.new_photo(article.md_file.absolute_path, tags=article.tags)
-        html = str(article.soup)
-        write(article.html_file.absolute_path, html)
-
+# TAG INDEX
+################################################################################
 class Index:
     def __init__(self):
         self.articles = []
         self.children = {}
+
+    def __str__(self):
+        return f'Index (articles={self.articles}) (children={self.children})'
 
     def navigate(self, query, create=False):
         dest = self
@@ -279,8 +298,21 @@ def permute(query, pool):
         q = query + (tag,)
         permute(q, rest)
 
+# RENDER FILES
+################################################################################
+def write_articles():
+    for article in ARTICLES.values():
+        if article.md_file.replace_extension('').basename != article.md_file.parent.basename:
+            print(f'Warning: {article} does not match folder name.')
 
-def maketagpage(index, path):
+        for qualname in article.tags:
+            P.easybake(qualname)
+
+        P.new_photo(article.md_file.absolute_path, tags=article.tags)
+        html = str(article.soup)
+        write(article.html_file.absolute_path, html)
+
+def make_tag_page(index, path):
     path = [tag.name for tag in path]
     parent = path[:-1]
     parent = '/'.join(parent)
@@ -351,19 +383,18 @@ def maketagpage(index, path):
     )
     return page
 
-def outs(index, path=[]):
-    filepath = ['tags'] + [tag.name for tag in path] + ['index.html']
+def write_tag_pages(index, path=[]):
     for (child_name, child_index) in index.children.items():
-        outs(child_index, path=path+[child_name])
-    page = maketagpage(index, path)
+        write_tag_pages(child_index, path=path+[child_name])
+
+    filepath = ['tags'] + [tag.name for tag in path] + ['index.html']
     filepath = os.sep.join(filepath)
     filepath = writing_rootdir.join(filepath)
     os.makedirs(filepath.parent.absolute_path, exist_ok=True)
+
+    page = make_tag_page(index, path)
+
     write(filepath, page)
-
-def write_tag_pages():
-    outs(complete_tag_index)
-
 
 def write_writing_index():
     page = jinja2.Template('''
@@ -405,9 +436,17 @@ def write_writing_index():
     )
     write(writing_rootdir.with_child('index.html'), page)
 
+# GO
+################################################################################
+ARTICLES = {
+    file: Article(file)
+    for file in spinal.walk_generator(writing_rootdir)
+    if file.extension == 'md' and file.parent != writing_rootdir
+}
+
 write_articles()
 complete_tag_index = Index()
 all_tags = set(P.get_tags())
 permute(tuple(), all_tags)
-write_tag_pages()
+write_tag_pages(complete_tag_index)
 write_writing_index()
