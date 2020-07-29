@@ -413,6 +413,8 @@ def write_writing_index():
     {% endfor %}
     </ul>
 
+    <p><a href="/writing/rss.xml">RSS</a></p>
+
     <h2>Recently edited</h2>
     <ul>
     {% for article in articles_edited %}
@@ -432,6 +434,31 @@ def write_writing_index():
     )
     write(writing_rootdir.with_child('index.html'), page)
 
+def write_rss():
+    rss = jinja2.Template('''
+    <rss version="2.0">
+    <channel>
+        <title>voussoir.net/writing</title>
+        <link>https://voussoir.net/writing</link>
+        <description>voussoir's writing</description>
+
+        {% for article in articles %}
+        <item>
+            <title>{{article.title}}</title>
+            <link>https://voussoir.net/writing/{{article.web_path}}</link>
+            <pubDate>{{article.date}}</pubDate>
+            <description>
+            <![CDATA[
+            {{article.soup.article}}
+            ]]>
+            </description>
+        </item>
+        {% endfor %}
+    </channel>
+    </rss>
+    '''.strip()).render(articles=sorted(ARTICLES.values(), key=lambda a: a.date, reverse=True))
+    write(writing_rootdir.with_child('rss.xml'), rss)
+
 # GO
 ################################################################################
 ARTICLES = {
@@ -446,3 +473,4 @@ all_tags = set(P.get_tags())
 permute(all_tags)
 write_tag_pages(complete_tag_index)
 write_writing_index()
+write_rss()
