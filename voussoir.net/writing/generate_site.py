@@ -134,6 +134,8 @@ def soup_adjust_relative_links(soup, md_file, repo_path):
                 continue
             if href.startswith('/'):
                 continue
+            if href.startswith('#'):
+                continue
             href = folder.join(href)
             href = '/' + href.relative_to(writing_rootdir.parent, simple=True)
             if not href.startswith('/writing/'):
