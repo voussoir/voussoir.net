@@ -3,6 +3,20 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, and cryptography in discussions that aren't about those things.
 
+> Why do you think this is specifically a 'western society' thing? Browse Japanese sites and online tools and there is just as much gamification and 'thrilling' graphics and animation - if not more. Github looks like a technical white-paper in comparison.
+
+> > Modern Japanese culture is considered to be part of "western society", for better or worse.
+
+> > > The converse statement is something like "Japan is not an eastern society" which just sounds... laughably incorrect.
+
+> > > > Of course it sounds ridiculous. Boolean algebra says the validity of a statement's converse is independent of the original. P → Q, tells us little about Q → P.
+
+<p></p>
+
+> I love a good font (and try to use one on my own blog), but part of me gets really giddy when I discover a site with very little styling. It's like I've found some secret oasis that's going to have a high signal-to-noise ratio, or at least some more "raw" writing than you'd find on ${popularNewsWebsite}.
+
+<p></p>
+
 > Remote work has its perks, until you want a promotion (wired.com)
 
 > > Humans don't have emotional object permanence.
