@@ -112,7 +112,7 @@ Forgive me if I don't provide too many other case studies of bad examples. I don
 
 [Bill Hammack aka The Engineer Guy](https://youtube.com/channel/UC2bkHVIDjXS7sgrgjFtzOXQ/videos) is a clear communicator who shows the fascinating internals and design of things we take for granted, often with a poetic bent. It's hard to pick a single best video, so check out [Nitinol](https://www.youtube.com/watch?v=wI-qAxKJoSU), [Plastic injection molding](https://www.youtube.com/watch?v=RMjtmsr3CqA) and [Aluminum cans](https://www.youtube.com/watch?v=hUhisi2FBuw).
 
-[Ian LaSpina aka Knyght Errant](https://youtube.com/channel/UC1T4KJG1L_kTrP9RcdU5Csw/videos) participates in Medieval Living History events and makes videos about medieval culture, arms, and armor. Although I never considered myself to be very interested in history, I was absolutely absorbed by his [Palazzo Ducale Bascinet video](https://www.youtube.com/watch?v=mSjmxMfEtvE) and quickly [binged](https://github.com/voussoir/YoutubeChannelDownloader#easily-watch-every-video-on-the-channel) his whole channel.
+[Ian LaSpina aka Knyght Errant](https://youtube.com/channel/UC1T4KJG1L_kTrP9RcdU5Csw/videos) participates in Medieval Living History events and makes videos about medieval culture, arms, and armor. Although I never considered myself to be very interested in history, I was absolutely absorbed by his [Palazzo Ducale Bascinet video](https://www.youtube.com/watch?v=mSjmxMfEtvE) and quickly [binged](https://github.com/voussoir/ycdl#easily-watch-every-video-on-the-channel) his whole channel.
 
 ## Escape the bubble
 
