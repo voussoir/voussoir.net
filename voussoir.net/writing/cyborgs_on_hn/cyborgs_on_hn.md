@@ -3,6 +3,10 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, and cryptography in discussions that aren't about those things.
 
+> I have a heuristic. A 'code smell' for social science articles,
+
+<p></p>
+
 > Why do you think this is specifically a 'western society' thing? Browse Japanese sites and online tools and there is just as much gamification and 'thrilling' graphics and animation - if not more. Github looks like a technical white-paper in comparison.
 
 > > Modern Japanese culture is considered to be part of "western society", for better or worse.
