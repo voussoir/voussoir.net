@@ -730,7 +730,7 @@ def main(argv):
 
     parser.add_argument('md_filename')
     parser.add_argument('--css', dest='css', action='append', default=None)
-    parser.add_argument('--embed_images', dest='do_embed_images', action='store_true')
+    parser.add_argument('--embed_images', '--embed-images', dest='do_embed_images', action='store_true')
     parser.add_argument('-o', '--output', dest='output_filename', default=None)
     parser.add_argument('--server', dest='server', type=int, default=None)
     parser.set_defaults(func=markdown_argparse)
