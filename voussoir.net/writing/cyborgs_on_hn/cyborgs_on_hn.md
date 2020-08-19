@@ -3,6 +3,22 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, and cryptography in discussions that aren't about those things.
 
+> My grandfather used to sit with me for an hour every morning and used to teach me maths.
+
+> He would focus on basics first. He would make sure I had the basics drilled in to me. Not just understood them, but mastered them. Then we would move on to the next topic.
+
+> It was a bit slow at first. But after a while, once the basics were done, I finished the whole year's math book in 2-3 months.
+
+> Drilling basics is basically like having the basics in O(1) look up with very reduced space complexity too. It reduces the amount of overhead your brain utilises.
+
+<p></p>
+
+> This reminds me of a story I once heard about shipbuilding during WW2. Supposedly, although designs and blueprints were made in great detail, following them today wouldn't give working ships, because the workers implementing them at the time saw where the designs wouldn't work and fixed them of their own initiative.
+
+> In a way, the opposite of today's optimizing compilers.
+
+<p></p>
+
 > I have a heuristic. A 'code smell' for social science articles,
 
 <p></p>
