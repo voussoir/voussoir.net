@@ -1,5 +1,5 @@
-Complicated topics
-==================
+Complicated topics: Insurance
+=============================
 
 ## Introduction
 
@@ -9,7 +9,7 @@ The phrase "standing on the shoulders of giants" gets thrown around a lot, to th
 
 It's one thing to stand on the giants, it's another to look down.
 
-This article is dedicated to those topics. Topics where the underlying, primordial elements sound reasonable but the current, evolved state of affairs is objectionable, and for the life of me I can't find the line in between. Topics where I'm supposed to pick the best course of action to help the most people but every path seems wrong for one reason or another.
+These articles are dedicated to those topics. Topics where the underlying, primordial elements sound reasonable but the current, evolved state of affairs is objectionable, and for the life of me I can't find the line in between. Topics where I'm supposed to pick the best course of action to help the most people but every path seems wrong for one reason or another.
 
 ## Health insurance & pre-existing conditions
 
