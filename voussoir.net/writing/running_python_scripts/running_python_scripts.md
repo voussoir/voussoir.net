@@ -43,7 +43,7 @@ In this level, you are specifying the exact location of the script, but do not m
 
 `/anywhere$ /code/myfile.py`
 
-## Level 2.5: `myfile.py` on the PATH
+## Level 3: `myfile.py` on the PATH
 
 In this level, you do not need to specify the exact path of the script ever.
 
@@ -51,7 +51,7 @@ Add the directory that contains the script, `C:\code`, to your PATH. Remember th
 
 `C:\anywhere> myfile.py`
 
-## Level 3: `myfile`
+## Level 4: `myfile`
 
 The final level is to run Python scripts without specifying Python, or the extension, or the file's location. At this level, Python scripts feel like native commands such as `dir`, `ls`, and `cd`.
 
