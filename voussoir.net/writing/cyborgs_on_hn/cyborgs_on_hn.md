@@ -3,6 +3,18 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, and cryptography in discussions that aren't about those things.
 
+> Many people assume their manager knows what the employee is doing. They often aren't, meaning they go by what they can see, which is lines of code. The smart thing to do is to regularly keep your manager updated on what you're doing, especially if they don't come by regularly and ask you.
+
+> > Rather than an integer number of lines of code, how about using a boolean : "it works" or "it does not work"?
+
+-
+
+> Not everyone has good managers.
+
+> $JOB-2, admittedly about 4 years ago now, the good manager with a background in software left for a better opportunity and was replaced by someone who's background was management.
+
+-
+
 > My grandfather used to sit with me for an hour every morning and used to teach me maths.
 
 > He would focus on basics first. He would make sure I had the basics drilled in to me. Not just understood them, but mastered them. Then we would move on to the next topic.
