@@ -113,7 +113,7 @@ class VoussoirRenderer(
     ):
     pass
 
-class VoussoirGrammar(mistune.InlineGrammar):
+class VoussoirInlineGrammar(mistune.InlineGrammar):
     larr = re.compile(r'<--')
     rarr = re.compile(r'-->')
     mdash = re.compile(r'--')
@@ -129,7 +129,7 @@ class VoussoirGrammar(mistune.InlineGrammar):
     # time we make a new rule. My additions so far are \- and \^.
     text = re.compile(r'^[\s\S]+?(?=[\\<!\[_*`~\-\^\/]|https?:\/\/| {2,}\n|$)')
 
-class VoussoirLexer(mistune.InlineLexer):
+class VoussoirInline(mistune.InlineLexer):
     default_rules = copy.copy(mistune.InlineLexer.default_rules)
     default_rules.insert(0, 'mdash')
     default_rules.insert(0, 'larr')
@@ -142,7 +142,7 @@ class VoussoirLexer(mistune.InlineLexer):
     default_rules.insert(0, 'redditor')
 
     def __init__(self, renderer, **kwargs):
-        rules = VoussoirGrammar()
+        rules = VoussoirInlineGrammar()
         super().__init__(renderer, rules, **kwargs)
 
     def output_category_tag(self, m):
@@ -183,12 +183,28 @@ class VoussoirLexer(mistune.InlineLexer):
     def output_redditor(self, m):
         return f'<a href="https://old.reddit.com{m.group(0)}">{m.group(0)}</a>'
 
+class VoussoirBlockGrammar(mistune.BlockGrammar):
+    dash_spacer = re.compile(r'^-$', re.MULTILINE)
+
+class VoussoirBlock(mistune.BlockLexer):
+    default_rules = copy.copy(mistune.BlockLexer.default_rules)
+    default_rules.insert(0, 'dash_spacer')
+
+    def __init__(self, **kwargs):
+        rules = VoussoirBlockGrammar()
+        print(help(super().__init__))
+        super().__init__(rules, **kwargs)
+
+    def parse_dash_spacer(self, m):
+        return ''
+
 footnote_link_index = 1
 footnote_text_index = 1
 
 renderer = VoussoirRenderer()
-inline = VoussoirLexer(renderer)
-VMARKDOWN = mistune.Markdown(renderer=renderer, inline=inline)
+inline = VoussoirInline(renderer)
+block = VoussoirBlock()
+VMARKDOWN = mistune.Markdown(renderer=renderer, inline=inline, block=block)
 
 # GENERIC HELPERS
 ################################################################################
