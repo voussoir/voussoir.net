@@ -344,7 +344,7 @@ def make_tag_page(index, path):
     <ul>
     {% for article in articles %}
     <li>
-        <a href="/writing/{{article.web_path}}">{{article.title|e}}</a>
+        <a href="/writing/{{article.web_path}}">{{article.date}} - {{article.title|e}}</a>
     </li>
     {% endfor %}
     </ul>
