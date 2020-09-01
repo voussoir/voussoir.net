@@ -421,7 +421,7 @@ def write_writing_index():
     {% for article in articles_edited %}
         {% if article.edited and article.edited != article.date %}
         <li>
-        <a href="{{article.web_path}}">{{article.date}} - {{article.title|e}} ({{article.edited}})</a>
+        <a href="{{article.web_path}}">{{article.edited}} - {{article.title|e}} ({{article.date}})</a>
         </li>
         {% endif %}
     {% endfor %}
