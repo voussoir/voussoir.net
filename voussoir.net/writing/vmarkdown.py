@@ -192,7 +192,6 @@ class VoussoirBlock(mistune.BlockLexer):
 
     def __init__(self, **kwargs):
         rules = VoussoirBlockGrammar()
-        print(help(super().__init__))
         super().__init__(rules, **kwargs)
 
     def parse_dash_spacer(self, m):
