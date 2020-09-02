@@ -152,6 +152,16 @@ pre,
     font-family: monospace;
 }
 
+.article_list
+{
+    list-style: none;
+    padding-inline-start: 0;
+}
+.article_list > li
+{
+    margin: 0.5em 0;
+}
+
 /*
 Thank yourichleland for pre-building this Monokai style.
 https://github.com/richleland/pygments-css

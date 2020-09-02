@@ -341,20 +341,20 @@ def make_tag_page(index, path):
     {% if articles %}
     <section style="grid-area:articles">
     <h1>{{path}}</h1>
-    <ul>
+    <ol class="article_list">
     {% for article in articles %}
     <li>
         <a href="/writing/{{article.web_path}}">{{article.date}} - {{article.title|e}}</a>
     </li>
     {% endfor %}
-    </ul>
+    </ol>
     </section>
     {% endif %}
 
     {% if index.children %}
     <section style="grid-area:refine">
     <h1>Refine your query</h1>
-    <ul>
+    <ul class="article_list">
     {% for refine in children %}
     <li>
     {% if path %}
@@ -406,18 +406,18 @@ def write_writing_index():
     <body>
     <article>
     <h1>Writing</h1>
-    <ul>
+    <ol class="article_list">
     {% for article in articles %}
         <li>
         <a href="{{article.web_path}}">{{article.date}} - {{article.title|e}}</a>
         </li>
     {% endfor %}
-    </ul>
+    </ol>
 
     <p><a href="/writing/rss.xml">RSS</a></p>
 
     <h2>Recently edited</h2>
-    <ul>
+    <ol class="article_list">
     {% for article in articles_edited %}
         {% if article.edited and article.edited != article.date %}
         <li>
@@ -425,7 +425,7 @@ def write_writing_index():
         </li>
         {% endif %}
     {% endfor %}
-    </ul>
+    </ol>
 
     <h2>The footer</h2>
     <p>I greatly appreciate the time you have taken to visit my page. If you
