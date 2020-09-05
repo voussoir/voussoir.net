@@ -11,6 +11,7 @@ import pygments.formatters
 import pygments.lexers
 import pygments.token
 import re
+import regex
 import requests
 import string
 import sys
@@ -118,7 +119,11 @@ class VoussoirInlineGrammar(mistune.InlineGrammar):
     rarr = re.compile(r'-->')
     mdash = re.compile(r'--')
     category_tag = re.compile(r'\[tag:([\w\.]+)\]')
-    supers = re.compile(r'(?:(\^+)([^\s]+))|(?:(\^+)\((.+?)\))')
+    supers_one = re.compile(r'(\^+)([^\s\(]+)')
+    _not_parens = r'[^()]+'
+    _paren_pair = r'\(.+?\)'
+    _supered = rf'(?:{_not_parens}|{_paren_pair}|(?1))'
+    supers_many = regex.compile(rf'(?V1)(\^+)\(({_supered}*)\)')
     footnote_link = re.compile(r'\[footnote_link\]')
     footnote_text = re.compile(r'\[footnote_text\]')
     subreddit = re.compile(r'\/r\/[A-Za-z0-9_]+')
@@ -135,7 +140,8 @@ class VoussoirInline(mistune.InlineLexer):
     default_rules.insert(0, 'larr')
     default_rules.insert(0, 'rarr')
     default_rules.insert(0, 'category_tag')
-    default_rules.insert(0, 'supers')
+    default_rules.insert(0, 'supers_one')
+    default_rules.insert(0, 'supers_many')
     default_rules.insert(0, 'footnote_link')
     default_rules.insert(0, 'footnote_text')
     default_rules.insert(0, 'subreddit')
@@ -176,6 +182,12 @@ class VoussoirInline(mistune.InlineLexer):
         text = m.group(2)
         text = self.output(text)
         return f'{"<sup>" * carets}{text}{"</sup>" * carets}'
+
+    def output_supers_one(self, m):
+        return self.output_supers(m)
+
+    def output_supers_many(self, m):
+        return self.output_supers(m)
 
     def output_subreddit(self, m):
         return f'<a href="https://old.reddit.com{m.group(0)}">{m.group(0)}</a>'

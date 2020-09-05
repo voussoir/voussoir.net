@@ -1,5 +1,6 @@
 bs4
 mistune
 pygments
+regex
 requests
 voussoirkit
