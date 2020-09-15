@@ -1,7 +1,108 @@
 Cyborgs on HN
 =============
 
-This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, and cryptography in discussions that aren't about those things.
+This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
+
+> Years ago for my sister's 30th birthday, I did a fun project involving the USPS.
+
+> I wanted to send her the message "Happy Belated Thirtieth Birthday!", which is 30 characters, via postcards, one character per postcard.
+
+> ...
+
+> > You've reinvented TCP using paper packets.
+
+-
+
+> Because Alibaba, and now Amazon require tracking numbers from sellers.
+
+> From time to time they take these tracking numbers, and check them with APIs of shipping companies, and postal services. If a seller has too many invalid tracking numbers, or shipments that don't match the address, they rm -rf him.
+
+-
+
+> If you are at $BigCorp there's probably only a rough correlation between what you are paid and what you are worth.
+
+-
+
+> "Ping me" really threw me for a loop the first time I heard a non-tech say it in an obvious non-tech way.
+It literally has no other meaning outside of the ICMP echo utility; and the onomatopoeia of hitting glass.
+
+> How did it enter the Business world?
+
+> > Ping comes from submarine sonar - not the networking world.
+
+-
+
+> Writing clearly is like playing Tetris. Sentences should be presented with clauses that drop down and slot together efficiently. At the earliest available opportunity you drop in a block that completes the line and points are won/made.
+
+> > Don't make your readers hold parts of the sentence in their head. Reorder or split sentences until it can be avoided. In other words, use a *really* small buffer.
+
+> > > Overflowing that buffer really does feel like a stack overflow, too. Your whole mental state just suddenly disappears in a puff of smoke.
+
+> > > This resplendent sentence in the Vulkan spec did it to me the other day:
+
+> > > The layout of subresources of images on other logical devices that are bound to VkDeviceMemory objects associated with the same underlying memory resources as external memory objects on the lost device becomes VK_IMAGE_LAYOUT_UNDEFINED.
+
+> > > I got about half way through and suddenly discovered I didn't know where I was, what year it was or my name.
+
+> > > > That's a lot of qualified noun phrases. This should just be an s-expression. It's already one, honestly, but without the right parenthesis.
+
+> > > > (becomes (qualified (layout of subresources of images on other logical devices) (bound . (same-memory-resources (VkDeviceMemory objects) (external memory objects on the lost device)))) VK_IMAGE_LAYOUT_UNDEFINED)
+
+> > > -
+
+> > > > This is how I felt while reading philosophy essays. I'm not even sure half of those are even saying anything.
+reply
+
+> > > > > A lot of philosophy essays are written as part of the writer being in the process of trying to figure things out for themselves, without quite having gotten there yet.
+reply
+
+> > > > > > It really shows, just like docs written by someone who hasn't actually understood what they're writing about yet.
+
+-
+
+> I don't know if it's just me, but I very much prefer easy to skim emails to more dense ones.
+At one point I got weekly project updates from a team I was working with, and one guy wrote dense, short, emails where I would have to read every sentence carefully to get a hang on what was going on. Another guy would write longer, fluffier emails but with bullet points and paragraphs in the same order:
+
+> Just by parsing the number of bulletpoints, and the length of each bullet point (and the first word) I would get a surprisingly good grasp on how things were going, and what was hard/complicated (longer bullet point -> more complex), and very easy to read about exactly I wanted to know.
+
+> > This is how the so called sutras are written: a page of text gets compressed into one short sentence, so you have to stop after each of them and spend an hour unpacking its meaning, but the entire book is often just 200 sentences.
+
+> > > .zip format in history.
+
+-
+
+> Spotify CEO: musicians can no longer release music only “once every 3-4 years” (thefader.com)
+
+> > "What's he going to record a song about?"  
+> > "Nothing."  
+> > "Spotify'll kill him."  
+> > "I guess they will."  
+> > "He must have got mixed up in something with the music industry."  
+> > "I guess so," said Nick.  
+> > "It's a hell of a thing."  
+> > "It's an awful thing," Nick said.  
+> > They did not say anything. George reached down for his mobile phone and wiped the screen.  
+> > "I wonder what he did?" Nick said.  
+> > "Failed to write enough songs fast enough to generate user engagement. That's what Spotify will kill them for."  
+> > "I'm going to cancel my Spotify subscription," Nick said.  
+> > "Yes," said George. "That's a good thing to do."  
+> > "I can't stand to think about him waiting in the recording room and knowing he's going to get it. It's too damned awful."  
+> > "Well," said George, "you better not think about it."  
+> > (with apologies to Hemingway!)
+
+> > > God help me, I can't tell if this is GPT-3 or not.
+
+> > > > "This writing looks computer-generated" as a compliment is kind of blowing my mind
+
+-
+
+> Roman numerals by and large were not used for calculating, but for recording calculations. Those calculations were done (as the very word “calculate” suggests) using pebbles or other tokens, on some kind of counting board.
+
+> The point of Roman numerals is to be as direct as possible a representation of the state of the counting board. They are a serialization format.
+
+> Think of it as the JSON (or s-expressions if you like) of the ancient world. You don’t run your algorithm by writing and rewriting JSON literals over and over with pen and paper. They are just a record; your computation is done using a different automatic tool.
+
+-
 
 > Many people assume their manager knows what the employee is doing. They often aren't, meaning they go by what they can see, which is lines of code. The smart thing to do is to regularly keep your manager updated on what you're doing, especially if they don't come by regularly and ask you.
 
