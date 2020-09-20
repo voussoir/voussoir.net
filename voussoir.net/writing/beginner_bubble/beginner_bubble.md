@@ -5,7 +5,9 @@ The Beginner Bubble
 
 The internet has made self-taught learning more accessible than ever before. I am a strong proponent of self-teaching and using the internet to learn about anything you're interested in. But, the nature of internet learning also has its drawbacks, one of which I'm deeming the beginner bubble.
 
-I think many people have had the experience of discovering a super niche website written by a single, passionate person with an educational quality that puts textbooks to shame. Those kinds of websites are great, but they're hard to come by when you're intentionally looking for them. Outreach is hard for creators, and sifting through SEO and blogspam is hard for learners. Instead, we tend to compromise and use a common arena like Youtube instead of specialized websites and webrings. I would say that Youtube has become the de-facto home of internet learning in many ways, but it suffers greatly from the beginner bubble.
+I think many people have had the experience of discovering a niche website written by a single, passionate person with an educational quality that puts textbooks to shame. Take for example [Bartosz Ciechanowski - Lights and Shadows](https://ciechanow.ski/lights-and-shadows/), a phenomenal rundown of the mechanics of light with beautiful interactive modules.
+
+These kinds of websites are great, but they're hard to come by when you're intentionally looking for them. You'll see comments like "I wish I had found this when I was in school!". Outreach is hard for creators, and sifting through SEO and blogspam is hard for learners. Instead, we tend to compromise and use a common arena like Youtube instead of specialized websites and webrings. I would say that Youtube has become the de-facto home of internet learning in many ways, but it suffers greatly from the beginner bubble.
 
 If I were to make a graph depicting the quantity of learning resources available to learners of different skill levels for a topic, which I have, then it would look like this, which it does:
 
@@ -16,7 +18,7 @@ There seems to be an endless supply of "for beginners", "intro to", and "how to 
 [git basics](https://www.youtube.com/results?search_query=git+basics), or
 [learn hangul](https://www.youtube.com/results?search_query=learn+hangul)
 and behold the open floodgates. Now, try again with
-[advanced Python](https://www.youtube.com/results?search_query=advanced+python) (the first things I see on the page are "Overview of Python & How it Works", "Advanced Python 01 - lists / 02 - tuples", ...),
+[advanced Python](https://www.youtube.com/results?search_query=advanced+python) (the first things I see on the page are decidedly still beginner-level: "Overview of Python & How it Works", "Advanced Python 01 - lists / 02 - tuples", ...),
 [advanced Korean grammar](https://www.youtube.com/results?search_query=advanced+korean+grammar) (notice, it's still mostly vocab lists or unhelpful vlogs).
 Higher level learning materials exist, but the number of beginner lessons is so totally dwarfing as to get my attention and provoke this article.
 
