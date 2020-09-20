@@ -3,6 +3,16 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> Never attribute to malice that which is adequately explained by stupidity"
+
+> -Hanlon's razor
+
+> > Advanced malicious actors often feign incompetence when caught, to take advantage of the naive and forgiving.
+
+> > > This is a basic part of the human OS.
+
+-
+
 > Years ago for my sister's 30th birthday, I did a fun project involving the USPS.
 
 > I wanted to send her the message "Happy Belated Thirtieth Birthday!", which is 30 characters, via postcards, one character per postcard.
