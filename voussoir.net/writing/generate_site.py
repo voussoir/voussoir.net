@@ -44,7 +44,7 @@ def write(path, content):
     if path not in writing_rootdir:
         raise ValueError(path)
     print(path.absolute_path)
-    f = open(path.absolute_path, 'w', encoding='utf-8')
+    f = path.open('w', encoding='utf-8')
     f.write(content)
     f.close()
 
