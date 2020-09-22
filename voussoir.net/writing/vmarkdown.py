@@ -659,7 +659,7 @@ def markdown_flask(core_filename, port, *args, **kwargs):
     if core_filename.is_dir:
         cwd = core_filename
     else:
-        cwd = pathclass.Path('.')
+        cwd = pathclass.cwd()
 
     def handle_path(path):
         if path.extension == '.md':
