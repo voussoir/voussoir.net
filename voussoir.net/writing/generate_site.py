@@ -387,7 +387,7 @@ def write_tag_pages(index, path=[]):
     filepath = ['tags'] + [tag.name for tag in path] + ['index.html']
     filepath = os.sep.join(filepath)
     filepath = writing_rootdir.join(filepath)
-    os.makedirs(filepath.parent.absolute_path, exist_ok=True)
+    filepath.parent.makedirs(exist_ok=True)
 
     page = make_tag_page(index, path)
 
