@@ -3,6 +3,50 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> Some reporter finds out that $government is doing $bad_thing. They pack up the evidence, rush out the door to talk to their editor. A slick, self-driving car pulls up as they exit the building, they enter and pull away.
+
+-
+
+> \> personally never understood why one would pick this over date/hour
+
+> Providing a timestamp gives you the same information with higher precision _provided you know when now is_. I can tell you what day of the week it is, but not what the day of the month it is. Sometimes day of the week even takes extra cycles.
+
+-
+
+> \> I am trying to be a good novelist, and hoping that people will forgive me for being a bad correspondent.
+
+> %s/novelist/coder
+
+> %s/a bad correspondent/unresponsive on slack
+
+-
+
+> Unacademy focuses on test prep and thier anthem while sappy and gung ho, doesn't really have any references to gaming the system. *Crack it* is in the same vein as *Cracking the Coding Interview*.
+
+> > Which is gaming the system, if you ask me.
+
+> > Cracking coding interviews would be considered "overfitting" in statistical learning parlance.
+
+-
+
+> I own a business. If I was to do a full inventory, I would probably find I'm in the possession of tens of thousands of items. I'm currently in the situation where something breaks daily. It has forced me into being very picky. I no longer buy things, if I can avoid it. Every thing I buy has the potential of being a problem down the line that will require time and attention. Even disposing of broken things can be a big hassle.
+
+> > This advice applies directly to software. Bring in more dependencies, bring in more custom tooling, and you're bringing in more maintenance burden. There will be bugs. Make sure you really need that shiny new framework.
+
+-
+
+> He wrote an OS project that runs all the infrastructure for your very own dictionary website.
+
+> > For the confused reader: s/OS/OSS/
+
+-
+
+> > Who else has an install base like Amazon in their Alexas and Rings?
+
+> a company like Arris that sells DOCSIS3/3.1 cablemodems and GPON end user CPEs to big ISPs like Shaw, Comcast, Charter, Wave/RCN, etc. The main problem with that concept is that if a manufacturer of residential CPEs such as Arris made a unilateral decision to incorporate the tech into their cablemodems and other devices, their $BIGISP customers might not be pleased about it and would buy elsewhere.
+
+-
+
 > Never attribute to malice that which is adequately explained by stupidity"
 
 > -Hanlon's razor
