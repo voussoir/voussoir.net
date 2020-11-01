@@ -417,7 +417,7 @@ def write_writing_index():
     {% endfor %}
     </ol>
 
-    <p><a href="/writing/rss.xml">RSS</a></p>
+    <p><a href="/writing/atom.xml">Atom</a> / <a href="/writing/rss.xml">RSS</a></p>
 
     <h2>Recently edited</h2>
     <ol class="article_list">
@@ -444,6 +444,36 @@ def write_writing_index():
         articles_edited=sorted(ARTICLES.values(), key=lambda a: a.edited, reverse=True)
     )
     write(WRITING_ROOTDIR.with_child('index.html'), page)
+
+def write_atom():
+    latest_date = max(article.date for article in ARTICLES_PUBLISHED.values())
+    atom = jinja2.Template('''
+    <?xml version="1.0" encoding="utf-8"?>
+    <feed xmlns="http://www.w3.org/2005/Atom">
+        <title>voussoir.net/writing</title>
+        <link href="https://voussoir.net/writing"/>
+        <id>voussoir.net/writing</id>
+        <updated>{{latest_date}}</updated>
+
+        {% for article in articles %}
+        <entry>
+            <id>{{article.publication_id}}</id>
+            <title>{{article.title|e}}</title>
+            <link rel="alternate" href="https://voussoir.net/writing/{{article.web_path}}"/>
+            <updated>{{article.date}}</updated>
+            <content type="html">
+            <![CDATA[
+            {{article.soup.article}}
+            ]]>
+            </content>
+        </entry>
+        {% endfor %}
+    </feed>
+    '''.strip()).render(
+        articles=sorted(ARTICLES_PUBLISHED.values(), key=lambda a: a.date, reverse=True),
+        latest_date=latest_date,
+    )
+    write(WRITING_ROOTDIR.with_child('atom.xml'), atom)
 
 def write_rss():
     rss = jinja2.Template('''
@@ -487,4 +517,5 @@ all_tags = set(P.get_tags())
 permute(all_tags)
 write_tag_pages(complete_tag_index)
 write_writing_index()
+write_atom()
 write_rss()
