@@ -194,6 +194,8 @@ class Article:
         github_history = f'https://github.com/voussoir/voussoir.net/commits/master/{relative_path}'
 
         commits = git_file_commit_history(self.md_file)
+        self.publication_id = f'{commits[-1][0]}/{self.web_path}' if commits else None
+
         commits = [
             f'- [{html.escape(line)}](https://github.com/voussoir/voussoir.net/commit/{hash})'
             for (hash, line) in commits
@@ -454,6 +456,7 @@ def write_rss():
         {% for article in articles %}
         <item>
             <title>{{article.title|e}}</title>
+            <guid isPermalink="false">{{article.publication_id}}</guid>
             <link>https://voussoir.net/writing/{{article.web_path}}</link>
             <pubDate>{{article.date}}</pubDate>
             <description>
@@ -465,7 +468,7 @@ def write_rss():
         {% endfor %}
     </channel>
     </rss>
-    '''.strip()).render(articles=sorted(ARTICLES.values(), key=lambda a: a.date, reverse=True))
+    '''.strip()).render(articles=sorted(ARTICLES_PUBLISHED.values(), key=lambda a: a.date, reverse=True))
     write(WRITING_ROOTDIR.with_child('rss.xml'), rss)
 
 # GO
@@ -475,6 +478,8 @@ ARTICLES = {
     for file in spinal.walk_generator(WRITING_ROOTDIR)
     if file.extension == 'md' and file.parent != WRITING_ROOTDIR
 }
+
+ARTICLES_PUBLISHED = {file: article for (file, article) in ARTICLES.items() if article.publication_id}
 
 write_articles()
 complete_tag_index = Index()
