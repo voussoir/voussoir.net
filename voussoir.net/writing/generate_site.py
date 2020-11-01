@@ -15,7 +15,7 @@ from voussoirkit import winwhich
 P = etiquette.photodb.PhotoDB(ephemeral=True)
 P.log.setLevel(100)
 
-writing_rootdir = pathclass.Path(__file__).parent
+WRITING_ROOTDIR = pathclass.Path(__file__).parent
 
 GIT = winwhich.which('git')
 
@@ -41,7 +41,7 @@ def write(path, content):
     open() and write the file, with validation that it is in the writing dir.
     '''
     path = pathclass.Path(path)
-    if path not in writing_rootdir:
+    if path not in WRITING_ROOTDIR:
         raise ValueError(path)
     print(path.absolute_path)
     f = path.open('w', encoding='utf-8')
@@ -168,7 +168,7 @@ def soup_adjust_relative_links(soup, md_file, repo_path):
             if href.startswith('#'):
                 continue
             href = folder.join(href)
-            href = '/' + href.relative_to(writing_rootdir.parent, simple=True)
+            href = '/' + href.relative_to(WRITING_ROOTDIR.parent, simple=True)
             if not href.startswith('/writing/'):
                 raise ValueError('Somethings wrong')
             link[attribute] = href
@@ -184,7 +184,7 @@ class Article:
     def __init__(self, md_file):
         self.md_file = pathclass.Path(md_file)
         self.html_file = self.md_file.replace_extension('html')
-        self.web_path = self.md_file.parent.relative_to(writing_rootdir, simple=True)
+        self.web_path = self.md_file.parent.relative_to(WRITING_ROOTDIR, simple=True)
         self.date = git_file_published_date(self.md_file)
         self.edited = git_file_edited_date(self.md_file)
 
@@ -207,7 +207,7 @@ class Article:
         )
         self.soup = vmarkdown.markdown(
             md,
-            css=writing_rootdir.with_child('dark.css').absolute_path,
+            css=WRITING_ROOTDIR.with_child('dark.css').absolute_path,
             return_soup=True,
         )
         if self.soup.head.title:
@@ -386,7 +386,7 @@ def write_tag_pages(index, path=[]):
 
     filepath = ['tags'] + [tag.name for tag in path] + ['index.html']
     filepath = os.sep.join(filepath)
-    filepath = writing_rootdir.join(filepath)
+    filepath = WRITING_ROOTDIR.join(filepath)
     filepath.parent.makedirs(exist_ok=True)
 
     page = make_tag_page(index, path)
@@ -440,7 +440,7 @@ def write_writing_index():
         articles=sorted(ARTICLES.values(), key=lambda a: a.date, reverse=True),
         articles_edited=sorted(ARTICLES.values(), key=lambda a: a.edited, reverse=True)
     )
-    write(writing_rootdir.with_child('index.html'), page)
+    write(WRITING_ROOTDIR.with_child('index.html'), page)
 
 def write_rss():
     rss = jinja2.Template('''
@@ -465,14 +465,14 @@ def write_rss():
     </channel>
     </rss>
     '''.strip()).render(articles=sorted(ARTICLES.values(), key=lambda a: a.date, reverse=True))
-    write(writing_rootdir.with_child('rss.xml'), rss)
+    write(WRITING_ROOTDIR.with_child('rss.xml'), rss)
 
 # GO
 ################################################################################
 ARTICLES = {
     file: Article(file)
-    for file in spinal.walk_generator(writing_rootdir)
-    if file.extension == 'md' and file.parent != writing_rootdir
+    for file in spinal.walk_generator(WRITING_ROOTDIR)
+    if file.extension == 'md' and file.parent != WRITING_ROOTDIR
 }
 
 write_articles()
