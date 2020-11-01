@@ -157,6 +157,7 @@ def soup_adjust_relative_links(soup, md_file, repo_path):
     relative links into absolute links starting from /writing.
     '''
     folder = pathclass.Path(md_file.parent, force_sep='/')
+    writing_rootdir = pathclass.Path(WRITING_ROOTDIR, force_sep='/')
     def fixby(tagname, attribute):
         links = soup.find_all(tagname)
         for link in links:
@@ -168,9 +169,9 @@ def soup_adjust_relative_links(soup, md_file, repo_path):
             if href.startswith('#'):
                 continue
             href = folder.join(href)
-            href = '/' + href.relative_to(WRITING_ROOTDIR.parent, simple=True)
+            href = '/' + href.relative_to(writing_rootdir.parent, simple=True)
             if not href.startswith('/writing/'):
-                raise ValueError('Somethings wrong')
+                raise ValueError('Somethings wrong with', href)
             link[attribute] = href
     fixby('a', 'href')
     fixby('img', 'src')
