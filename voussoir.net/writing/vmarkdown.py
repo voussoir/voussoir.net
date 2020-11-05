@@ -599,6 +599,11 @@ def inject_footnotes(soup):
     for link in links:
         link['title'] = texts[link['data-index']]
 
+def set_img_lazyload(soup):
+    imgs = soup.find_all('img')
+    for img in imgs:
+        img['loading'] = 'lazy'
+
 # FINAL MARKDOWNS
 ################################################################################
 def markdown(
@@ -639,6 +644,7 @@ def markdown(
     fix_classes(soup)
     fix_reddit_links(soup)
     inject_footnotes(soup)
+    set_img_lazyload(soup)
 
     if do_embed_images:
         embed_images(soup, cache=image_cache)
