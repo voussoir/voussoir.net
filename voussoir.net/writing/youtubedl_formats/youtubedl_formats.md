@@ -135,8 +135,8 @@ id | quality | codec | examples
 
 id | quality | codec | examples
 -: | -: | -: | :-
-22|720p30|AVC+m4a|`youtube-dl -F S8Zt6cB_NPU`
-18|360p30|AVC+m4a|`youtube-dl -F S8Zt6cB_NPU`
+22|720p30+128k|AVC+m4a|`youtube-dl -F S8Zt6cB_NPU`
+18|360p30+96k|AVC+m4a|`youtube-dl -F S8Zt6cB_NPU`
 
 This document is generated [programmatically](youtubedl_formats.sql).
 

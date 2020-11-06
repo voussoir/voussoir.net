@@ -1,7 +1,7 @@
 CREATE TABLE formats(id TEXT, kind TEXT, quality TEXT, codec TEXT, examples TEXT);
 INSERT INTO formats VALUES
-('18', 'Combined', '360p30', 'AVC+m4a', 'S8Zt6cB_NPU'),
-('22', 'Combined', '720p30', 'AVC+m4a', 'S8Zt6cB_NPU'),
+('18', 'Combined', '360p30+96k', 'AVC+m4a', 'S8Zt6cB_NPU'),
+('22', 'Combined', '720p30+128k', 'AVC+m4a', 'S8Zt6cB_NPU'),
 ('133', 'Video', '240p30', 'AVC', 'S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw'),
 ('134', 'Video', '360p30', 'AVC', 'S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw'),
 ('135', 'Video', '480p30', 'AVC', 'S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw'),
