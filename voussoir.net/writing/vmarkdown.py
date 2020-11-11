@@ -41,6 +41,8 @@ HTML_TEMPLATE = '''
 
 SLUG_CHARACTERS = string.ascii_lowercase + string.digits + '_'
 
+session = requests.Session()
+
 
 class SyntaxHighlighting:
     def block_code(self, text, lang):
@@ -376,7 +378,7 @@ def embed_images(soup, cache=None):
         if cache.get(src) is None:
             print('Fetching %s' % src)
             if src.startswith('https://') or src.startswith('http://'):
-                response = requests.get(src)
+                response = session.get(src)
                 response.raise_for_status()
                 data = response.content
             else:
