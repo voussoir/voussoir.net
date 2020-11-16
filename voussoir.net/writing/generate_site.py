@@ -403,6 +403,8 @@ def write_writing_index():
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/writing/dark.css"/>
+    <link rel="alternate" type="application/atom+xml" href="/writing/writing.atom"/>
+    <link rel="alternate" type="application/rss+xml" href="/writing/writing.rss"/>
     <title>Writing</title>
     </head>
 
@@ -417,7 +419,10 @@ def write_writing_index():
     {% endfor %}
     </ol>
 
-    <p><a href="/writing/atom.xml">Atom</a> / <a href="/writing/rss.xml">RSS</a></p>
+    <p>
+    <a rel="alternate" type="application/atom+xml" href="/writing/writing.atom">Atom</a> /
+    <a rel="alternate" type="application/rss+xml" href="/writing/writing.rss">RSS</a>
+    </p>
 
     <h2>Recently edited</h2>
     <ol class="article_list">
@@ -473,7 +478,7 @@ def write_atom():
         articles=sorted(ARTICLES_PUBLISHED.values(), key=lambda a: a.date, reverse=True),
         latest_date=latest_date,
     )
-    write(WRITING_ROOTDIR.with_child('atom.xml'), atom)
+    write(WRITING_ROOTDIR.with_child('writing.atom'), atom)
 
 def write_rss():
     rss = jinja2.Template('''
@@ -499,7 +504,7 @@ def write_rss():
     </channel>
     </rss>
     '''.strip()).render(articles=sorted(ARTICLES_PUBLISHED.values(), key=lambda a: a.date, reverse=True))
-    write(WRITING_ROOTDIR.with_child('rss.xml'), rss)
+    write(WRITING_ROOTDIR.with_child('writing.rss'), rss)
 
 # GO
 ################################################################################
