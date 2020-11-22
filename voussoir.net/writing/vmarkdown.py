@@ -678,7 +678,6 @@ def markdown_flask(core_filename, port, *args, **kwargs):
             children = sorted(path.listdir(), key=lambda p: (p.is_file, p.basename.lower()))
             for child in children:
                 relative = child.relative_to(cwd, simple=True)
-                print(relative)
                 a = f'<p><a href="/{relative}">{child.basename}</a></p>'
                 atags.append(a)
             atags = '\n'.join(atags)
