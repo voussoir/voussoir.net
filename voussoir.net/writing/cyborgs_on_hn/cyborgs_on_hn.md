@@ -3,6 +3,46 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> We refinanced during the pandemic with $MEGABANK, and they almost exclusively used third parties and email for the entire transaction.
+
+> I also called the office number I found at $MEGABANK's website to make sure they'd heard of me.
+
+> Beyond that, I had no reason to think $TOTALLY_LEGIT_ESCROW.com was not a phishing front.
+
+-
+
+> At $WORK, we run a lot of 1000s of php servers with 10-20 processes each using nginx.
+
+-
+
+> A 5-story building in China 'walks' to new location (cnn.com)
+
+> > City refactoring
+
+-
+
+> People intruding the private email? No problem. Politely refuse, and offer private consultancy at $very_high_price, with alternative, to open a bug in the bug tracker, making explicit that there is no commitment.
+
+-
+
+> Watch and listen to pilots as they complete checklists. They point and callout each item, switch setting, etc.
+
+> > Came here for this.
+
+> > A: "Passing control"
+
+> > B: "Taking control"
+
+> > A: "You have control"
+
+> > B: "I have control"
+
+> > This is how I remember it (6174, UH-1Y).
+
+> > >The TCP handshake IRL
+
+-
+
 > Some reporter finds out that $government is doing $bad_thing. They pack up the evidence, rush out the door to talk to their editor. A slick, self-driving car pulls up as they exit the building, they enter and pull away.
 
 -
