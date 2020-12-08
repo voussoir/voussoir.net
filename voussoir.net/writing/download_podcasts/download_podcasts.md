@@ -28,9 +28,15 @@ https://example.com/episode4.mp3 Podcastname 2018-05-05.mp3
 
 and calling `threaded_dl links.txt 3`.
 
-To be clear, I only do this for the initial download of the historical posts. After that, when new episodes are released, I just right-click & save file.
+![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/quiterss_feeds_db1.png "QuiteRSS db containing feeds.")
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/quiterss_feeds_db.png "QuiteRSS db containing published and enclosure_url fields.")
+![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/quiterss_feeds_db2.png "QuiteRSS db sql query to isolate dates and urls.")
+
+![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/quiterss_feeds_db3.png "QuiteRSS db copying results of query.")
+
+![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/quiterss_feeds_db4.png "QuiteRSS db pasting results into text editor for further manipulation.")
+
+To be clear, I only do this for the initial download of the historical posts. After that, when new episodes are released, I just right-click & save file.
 
 However, you'll find that many or most RSS feeds don't contain the entire history of the show. Squarespace, for example, only publishes the 300 most recent items in an RSS feed. Why? Because that's the number [Apple uses](https://support.squarespace.com/hc/en-us/articles/205814338-Podcasting-with-Squarespace-overview#:~:text=Squarespace%20podcast%20feeds%20display%20up,episodes%20that%20Apple%20Podcasts%20supports.) and apparently it's easier to follow Apple's lead than to realize that RSS is an open format for a variety of consumers. I have seen other feeds that show only 10 items, which surely must be a result of poor configuration [footnote_link].
 
@@ -44,7 +50,7 @@ One thing you can try is searching the [Wayback machine](https://web.archive.org
 
 ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/wayback_timetravel2.png "QuiteRSS pulled the local xml file and now has 149 items instead of 100.")
 
-But, in the worst case scenario, you'll find that Wayback doesn't have archives of the feed you want. At this point I write a web scraper in Python to find all the episode dates and links, or I just hit the CTRL+C, CTRL+V gym for twenty minutes and get it done manually. I figure it's an effort I'll only have to do once as long as RSS keeps getting new posts after that.
+But, in the worst case scenario, you'll find that Wayback doesn't have archives of the feed you want. At this point I write a web scraper in Python to find all the episode dates and links, or I just hit the CTRL+C, CTRL+V gym for twenty minutes, copying each link from the website manually. You may also try [Xenu's Link Sleuth](http://home.snafu.de/tilman/xenulink.html) or [HTTrack](https://www.httrack.com/) to see if they can find all of the MP3 urls automatically. I figure it's an effort I'll only have to do once as long as RSS keeps getting new posts after that.
 
 If the podcaster has already taken the Faustian bargain, you can try using [spotifeed.timdorr.com](https://spotifeed.timdorr.com/) to pull Spotify as RSS, but this will give very limited history and only serves to stem the bleeding.
 
