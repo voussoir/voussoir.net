@@ -11,7 +11,7 @@ If a software download page offers a choice between "portable"/.zip/.7z download
 
 As a result, a well-behaved portable program will:
 
-- Store configuration files in the same folder as the .exe, instead of computer's central registry or other paths.
+- Store configuration files in the same folder as the .exe, instead of the computer's central registry or other paths.
 - Not rely on files outside of the program's folder -- the whole thing is self-contained.
 - Not leave much, or anything, behind on the main computer -- usually just some log files in appdata.
 
