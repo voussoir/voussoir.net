@@ -46,6 +46,7 @@ code { font-family: monospace; }
 
 #headline
 {
+    line-height: 3.25em;
     margin-bottom: 75px;
 }
 #headline *
@@ -58,6 +59,11 @@ code { font-family: monospace; }
 #headline_l2 { font-size: 3.5em; }
 #headline_l3 { font-size: 1.5em; }
 
+#headline .tilt_holder
+{
+    display: grid;
+    justify-content: center;
+}
 #headline .tilt_holder > *
 {
     display: inline-block;
@@ -136,6 +142,7 @@ code { font-family: monospace; }
 
 @media screen and (max-width: 500px)
 {
+    #headline { line-height: 2.25em; }
     #headline_l1 { font-size: 3em; }
     #headline_l2 { font-size: 2.5em; }
     #headline_l3 { font-size: 1em; }
