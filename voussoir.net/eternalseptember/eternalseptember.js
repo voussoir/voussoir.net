@@ -46,6 +46,7 @@ function twelvehour(hour)
     }
     return hour;
 }
+
 eternalseptember.strftime =
 function strftime(date, format)
 {
