@@ -95,6 +95,7 @@ p > img
 {
     display: block;
     margin: auto;
+    max-height: 700px;
 }
 
 blockquote
