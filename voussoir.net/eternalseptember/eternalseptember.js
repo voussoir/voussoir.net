@@ -36,6 +36,15 @@ eternalseptember.MONTH_NAMES = [
     "December",
 ]
 
+eternalseptember.date_subtract =
+function date_subtract(now, then)
+{
+    now = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+    then = Date.UTC(then.getFullYear(), then.getMonth(), then.getDate());
+
+    return Math.floor((now - then) / (1000*60*60*24));
+}
+
 eternalseptember.twelvehour =
 function twelvehour(hour)
 {
@@ -51,7 +60,7 @@ eternalseptember.strftime =
 function strftime(date, format)
 {
     const diff = date - eternalseptember.EPOCH;
-    const diff_days = parseInt(diff / (1000*60*60*24));
+    const diff_days = eternalseptember.date_subtract(date, eternalseptember.EPOCH);
 
     const day_of_month = diff_days + 1
     const day_of_year = diff_days + 244
