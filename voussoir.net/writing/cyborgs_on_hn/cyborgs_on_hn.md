@@ -3,6 +3,78 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> Constantly shiny + new ~== a good App Store.
+
+> (~== Not necessarily equal to. Did I just invent that?)
+
+> > Instead of inventing new operators in your sentences, you can also just stick with plain English
+
+> > > On HN I occasionally see programming conventions used in otherwise normal writing. E.g. "at $big_corp we like to use $process".
+
+-
+
+> As always, “Stop doing $negativebehavior” is less useful than the actual advice:
+
+-
+
+> I can accept that they ran out of cash. It's just like a company running out of servers when traffic spiked.
+
+-
+
+> Sears didn't just "go bankrupt" - it was killed by CEO Eddie Lampert.
+
+> > s/killed/looted
+
+-
+
+> There's such thing in Russian too. My parents had friends and they would come to our apartment every once in a while. We would call them all "uncle $name"
+
+-
+
+> It's doubtful that any large bureaucracy can execute that decision quickly, though I do agree 3 years is way too long. I'd put 3 months as hard minimum even assuming every internal decision process went as smoothly as possible, and 6 months as a more realistic amount.
+
+> This largely has nothing to do with how grievous the transgression is or how sincerely the management wants to do the right thing. It has to do with red tape that is designed from first principles to permit zero exceptions or special cases that can cut through it quickly.
+
+> It's like choosing an O(n^2) algorithm, baking it in as a load-bearing centerpiece, then being upset something doesn't happen in O(1).
+
+-
+
+> https://notabug.org/ does eat its own Gogs fork#94;W#94;W dog food
+
+-
+
+> AT&T's home gateways have a maximum NAT translation table of 1024&#94;H&#94;H&#94;H&#94;H8192 connections.
+
+-
+
+> Last month on HN someone got £7500 from FB, but, everyone thought he should have got more
+
+> > s/everyone/someone
+
+-
+
+> Note that there are 297 hidden items in that issue so you have to click "Load more..." ceil(297/60) times to read all of the comments
+
+-
+
+> Ben Thompson tried to compare China with over 1.4 billion people with Taiwan with only 24 million people and vehemently arguing that the Taiwan's governance is better is very disingenuous at best. Imagine comparing the governance of large corporation vs. a small startup, it's just different.
+
+-
+
+> I want you to know that any downvotes might have less to do with 2020 or identity politics and more so your sloppy style of conversation. Throwing out a wildly undifferentiated blanket statement and ending on a passive aggressive "cue the downvotes" is bad content in my opinion.
+
+> It enjoy being subjected to different views. I hope we can uphold a certain standard for expressing them around here.
+
+> > Your meta comment is also boring and unoriginal. GPT-3 itself could've generated it
+
+-
+
+> I read somewhere (on HN?) that Italians speak faster than Germans because their words contain less information, so in the end they still communicate the same amount of information per minute. Italians and Germans were used in the example because they were the two extremes.
+
+> > Is this RISC vs CISC human language philosophy?
+
+-
+
 > We refinanced during the pandemic with $MEGABANK, and they almost exclusively used third parties and email for the entire transaction.
 
 > I also called the office number I found at $MEGABANK's website to make sure they'd heard of me.
@@ -145,10 +217,8 @@ It literally has no other meaning outside of the ICMP echo utility; and the onom
 > > > -
 
 > > > > This is how I felt while reading philosophy essays. I'm not even sure half of those are even saying anything.
-reply
 
 > > > > > A lot of philosophy essays are written as part of the writer being in the process of trying to figure things out for themselves, without quite having gotten there yet.
-reply
 
 > > > > > > It really shows, just like docs written by someone who hasn't actually understood what they're writing about yet.
 
@@ -194,7 +264,7 @@ At one point I got weekly project updates from a team I was working with, and on
 
 > The point of Roman numerals is to be as direct as possible a representation of the state of the counting board. They are a serialization format.
 
-> Think of it as the JSON (or s-expressions if you like) of the ancient world. You don’t run your algorithm by writing and rewriting JSON literals over and over with pen and paper. They are just a record; your computation is done using a different automatic tool.
+> Think of it as the JSON (or s-expressions if you like) of the ancient world. You don't run your algorithm by writing and rewriting JSON literals over and over with pen and paper. They are just a record; your computation is done using a different automatic tool.
 
 -
 
@@ -416,7 +486,7 @@ At one point I got weekly project updates from a team I was working with, and on
 
 > \> Watkins wanted her pen name to be spelled in lowercase to shift the attention from her identity to her ideas.
 
-> I’m sure what I’m about to say has been discussed before — but wouldn’t this accomplish the opposite effect? I feel her “unconventional” name makes me focus more on it, not less (especially when her name is used at the beginning of a sentence, where we are trained to expect a capital letter no matter what). Do other people with lowercase names have similar justifications?
+> I'm sure what I'm about to say has been discussed before — but wouldn't this accomplish the opposite effect? I feel her “unconventional” name makes me focus more on it, not less (especially when her name is used at the beginning of a sentence, where we are trained to expect a capital letter no matter what). Do other people with lowercase names have similar justifications?
 
 > > To me it's a small pattern breaking annoyance, like a linter warning I can't turn off that triggers every time I see it.
 
