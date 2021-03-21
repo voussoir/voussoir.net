@@ -75,6 +75,8 @@ Here's what I did:
 
 3. Set it as the homepage using either `file:///storage/emulated/0/<path>/homepage.html` or `file:///mnt/sdcard/<path>/homepage.html`. Despite the name `/sdcard/`, this path should correspond to internal storage.
 
-  **Note:** With Android 10's new scoped storage permissions, you may get a permission denied error while opening the page. I was able to bypass the scoped storage system altogether with this [ADB](https://developer.android.com/studio/command-line/adb) command: `adb shell sm set-isolated-storage off` which **rebooted the phone immediately**. I am not sure how it fares on Android 11.
+  **Note:** With Android 10's new scoped storage permissions, you may get a permission denied error while opening the page. Your first option is to place the file inside the `Android/data/com.android.chrome` folder. E.g., an absolute path of `file:///storage/emulated/0/Android/data/com.android.chrome/homepage.html`.
+
+  Alternatively, I was able to bypass the scoped storage system altogether with this [ADB](https://developer.android.com/studio/command-line/adb) command: `adb shell sm set-isolated-storage off` which **rebooted the phone immediately** and may have other consequences. I am not sure how it fares on Android 11.
 
 Recently, I have been trying to use Android Firefox more, since it has extension support and thus uBlock. Astonishingly, Mozilla has [removed the ability to set a homepage](https://old.reddit.com/r/firefox/comments/i5nom6/how_to_edit_homepage_on_android/), which I believe occurred as part of the [2020-08-25 update](https://blog.mozilla.org/blog/2020/08/25/introducing-a-new-firefox-for-android-experience/). And [their new tab page](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/mobile_homepage_html/firefox_ntp.png) has an even bigger thing that I won't ever ever ever click on. I'm not sure what's going on over there.
