@@ -465,7 +465,7 @@ def write_atom():
             <id>{{article.publication_id}}</id>
             <title>{{article.title|e}}</title>
             <link rel="alternate" href="https://voussoir.net/writing/{{article.web_path}}"/>
-            <updated>{{article.date}}</updated>
+            <updated>{{article.date}}T00:00:00Z</updated>
             <content type="html">
             <![CDATA[
             {{article.soup.article}}
@@ -493,7 +493,7 @@ def write_rss():
             <title>{{article.title|e}}</title>
             <guid isPermalink="false">{{article.publication_id}}</guid>
             <link>https://voussoir.net/writing/{{article.web_path}}</link>
-            <pubDate>{{article.date}}</pubDate>
+            <pubDate>{{article.date}}T00:00:00Z</pubDate>
             <description>
             <![CDATA[
             {{article.soup.article}}
