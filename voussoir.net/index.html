@@ -194,10 +194,10 @@ code { font-family: monospace; }
 
 
 
-    <h2 class="width_limited">Projects</h2>
+    <h2 class="width_limited" id="projects">Projects</h2>
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">Etiquette</h3>
+            <h3 class="cvitem_title" id="etiquette">Etiquette</h3>
             <div class="cvitem_details">
                 <p>Etiquette is a tag-based file organization system with a web interface, built with Flask and SQLite3. Tag-based systems solve problems that a traditional folder hierarchy can't: <em>which folder should a file go in if it equally belongs in both?</em> and <em>how do I make my files searchable without littering the filenames themselves with keywords?</em></p>
                 <p>Etiquette is unique because <em>the tags themselves are hierarchical</em>. By tagging one of your vacation photos with the <code>family.parents.dad</code> tag, it will automatically appear in searches for <code>family.parents</code> and <code>family</code> as well. A traditional folder system, here called albums, is available to bundle files that always belong together without creating a bespoke tag to represent that bundle. Regardless, the files on disk are never modified.</p>
@@ -208,7 +208,7 @@ code { font-family: monospace; }
     </div>
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">Timesearch</h3>
+            <h3 class="cvitem_title" id="timesearch">Timesearch</h3>
             <div class="cvitem_details">
                 <p>Timesearch is a package of tools for archiving data from reddit.com. Subreddits, user posts, comments, CSS files, and community wiki files can be downloaded and easily updated.</p>
                 <p>Originally, it used the <code>timestamp</code> query parameter of reddit's elasticsearch, but since that feature's removal Timesearch instead queries the third-party pushshift.io database for preliminary data, then queries reddit for updated information about each item.</p>
@@ -218,7 +218,7 @@ code { font-family: monospace; }
     </div>
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">Voussoirkit</h3>
+            <h3 class="cvitem_title" id="voussoirkit">Voussoirkit</h3>
             <div class="cvitem_details">
                 <p>The voussoirkit library contains code that I have found useful to include in my other projects. Everything from <code>bytestring</code> that converts integer numbers of bytes into "3.145 MiB" strings, to <code>pathclass</code> and <code>spinal</code> which provide object-oriented file and directory operations and copy routines. Some modules like <code>winglob</code> boost cross-compatibility by smoothing over differences between Windows and Unix. This way I can easily deploy new features and bug fixes to all my programs.</p>
                 <p><a href="https://github.com/voussoir/voussoirkit">https://github.com/voussoir/voussoirkit</a></p>
@@ -228,7 +228,7 @@ code { font-family: monospace; }
     </div>
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">YCDL</h3>
+            <h3 class="cvitem_title" id="ycdl">YCDL</h3>
             <div class="cvitem_details">
                 <p>YoutubeChannelDownloader was born out of a dissatisfaction with YouTube's own interface for keeping track of which videos I have already watched, as well as a desire to integrate with youtube-dl. YCDL makes it easy for me to watch through a channel's catalog of videos, picking which ones I'd like to download while ignoring the others. Plus, as it creates an offline database, it will retain metadata about videos even after they are removed or deleted from the original YouTube channel.</p>
                 <p><a href="https://github.com/voussoir/ycdl">https://github.com/voussoir/ycdl</a></a>
@@ -238,7 +238,7 @@ code { font-family: monospace; }
     </div>
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">Epubfile & Sigilplugins</h3>
+            <h3 class="cvitem_title" id="epubfile">Epubfile & Sigilplugins</h3>
             <div class="cvitem_details">
                 <p>I use the wonderful program Sigil to edit epub files. Sigil has a python plugin system for which I have written a few modules. But, since the plugins can only operate on one book at a time while it is open in Sigil, I needed something a little different to edit epub files en masse.</p>
                 <p>Epubfile is a simple library for automatically processing epubs. It comes with a number of builtin routines for what I do most often: merging multiple epubs into a single file, normalizing the internal file structure, and renaming the cover image file to leverage CBXShell so I get thumbnails in Windows Explorer.</p>
@@ -251,7 +251,7 @@ code { font-family: monospace; }
 
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">Reddit bots</h3>
+            <h3 class="cvitem_title" id="redditbots">Reddit bots</h3>
             <div class="cvitem_details">
                 <p>This repository is in archive status now and is rarely updated. From 2014 to 2016 I learned Python, SQL, and HTTP by writing bots for reddit and contributing to PRAW, the Python Reddit API Wrapper. I took requests on <a href="https://old.reddit.com/r/RequestABot">/r/RequestABot</a> and produced dozens of easily modifiable bots. The tasks ranged from "allow users to only make one post per day" to "allow moderators to write a post now and schedule it to appear later". With almost 400 stars now it is my most successful repository, though the code quality is not up to the same standards I have today.</p>
                 <p><a href="https://github.com/voussoir/reddit">https://github.com/voussoir/reddit</a></p>
@@ -262,11 +262,11 @@ code { font-family: monospace; }
 
 
 
-    <h2 class="width_limited">Tech interests</h2>
+    <h2 class="width_limited" id="techinterests">Tech interests</h2>
 
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">Python</h3>
+            <h3 class="cvitem_title" id="python">Python</h3>
             <div class="cvitem_details">
                 <p>Python has been my language of choice since I began learning it in 2014. In addition to the projects already mentioned here, I have an entire <a href="https://github.com/voussoir/cmd">repository</a> dedicated to scripts / utilities that I use from the command line, and I have an even greater number of unpublished scripts for personal or bespoke use. I do file management, HTTP, image processing, task automation, and more.</p>
             </div>
@@ -276,7 +276,7 @@ code { font-family: monospace; }
 
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">HTML/CSS/JS</h3>
+            <h3 class="cvitem_title" id="htmlcssjs">HTML/CSS/JS</h3>
             <div class="cvitem_details">
                 <blockquote><i>If you want to view paradise<br/>Simply press F12 and view it</i></blockquote>
                 <p>This page, like the those in Etiquette and YCDL, was written entirely by hand and without the use of any jQuery, Angular, React, etc. HTML5, CSS3, and especially CSS Grid, have brought many quality of life features to the native experience. With some concessions, and the fact that I don't need to target non-modern browsers, I feel that my grasp of the core systems is better than that of someone who relies on a framework from day one.</p>
@@ -287,7 +287,7 @@ code { font-family: monospace; }
 
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">SQLite</h3>
+            <h3 class="cvitem_title" id="sqlite">SQLite</h3>
             <div class="cvitem_details">
                 <p>Some people tease SQLite for not being as big and featureful as something like MySQL, but I for one think it's one of the greatest gifts to the database ecosystem. Thanks to its fast and easy deployment plus cross-platform compatibility, sqlite databases tend to be the best choice for storing structured data. SQLite3 has been my go-to database since 2014 and hasn't failed me yet. Absolutely a staple for my projects listed here.</p>
             </div>
@@ -297,7 +297,7 @@ code { font-family: monospace; }
 
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">HTTP API Design & Use</h3>
+            <h3 class="cvitem_title" id="http">HTTP API Design & Use</h3>
             <div class="cvitem_details">
                 <p>During my development of Etiquette, I have continuously aimed to make the API as accessible and automateable as possible. Getting a peek behind the scenes is as easy as adding <code>.json</code> to the URL. I owe much of my early learning to my work with the reddit API, and since then I've regularly automated web interactions and scraped web data with Python and <code>requests</code>. For sites without an actual API to speak of, I'm pretty good at reverse engineering from the Network panel and javascript source. Try me.</p>
             </div>
@@ -307,7 +307,7 @@ code { font-family: monospace; }
 
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">Graphics</h3>
+            <h3 class="cvitem_title" id="graphics">Graphics</h3>
             <div class="cvitem_details">
                 <p>By now you've noticed that this page is overflowing with beautiful artwork... some of which is even mine! I enjoy using the free vector editor <a href="https://inkscape.org/">Inkscape</a> to create logos and icons for my projects, with the occasional program to <a href="https://github.com/voussoir/else/tree/master/Minecraft3DVector">auto-generate</a> vector files.</p>
                 <p>During my time working at the Cal Poly Pomona Learning Resource Center, I became very familiar with Google Slides to create attractive and innovative ways of sharing study tips with students.</p>
@@ -318,7 +318,7 @@ code { font-family: monospace; }
 
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">Digital media & FFmpeg</h3>
+            <h3 class="cvitem_title" id="digitalmedia">Digital media & FFmpeg</h3>
             <div class="cvitem_details">
                 <p>I use FFmpeg practically on a daily basis to manage, convert, and analyze my media files. Although my educational background is in software development, my dream job would be something in digital media preservation, film & book scanning, archival, metadata management, etc. If you've got something going on in that field, let me know!</p>
             </div>
@@ -332,7 +332,7 @@ code { font-family: monospace; }
 
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title" lang="ko">한국어</h3>
+            <h3 class="cvitem_title" lang="ko" id="korean">한국어</h3>
             <div class="cvitem_details">
                 <p lang="ko">2018년 10월부터 한국어를 공부하고 있습니다. 한국 영화들이 많이 재미 있어서 만약 한 아시아 언어를 배우면 한국어를 배우겠다고 결정했습니다. 진행이 조금 느리지만 일정합니다. 매일매일 Anki를 하고 한국 전래동화 읽습니다. 몇 년 이내 한국을 방문하면 좋겠습니다.</p>
             </div>
@@ -342,7 +342,7 @@ code { font-family: monospace; }
 
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">Writing</h3>
+            <h3 class="cvitem_title" id="writing">Writing</h3>
             <div class="cvitem_details">
                 <p>I recently decided to start <a href="/writing">writing</a> from time to time. My thoughts are mostly about technology in culture, learning, and other <i>choses sérieuses</i>. I disable spellcheck because I'm a <a href="https://www.youtube.com/watch?v=7ov1DDjHt8c" title="Epic Rap Battle! - Rhett &amp; Link">stellar speller</a>.</p>
             </div>
@@ -352,7 +352,7 @@ code { font-family: monospace; }
 
 
 
-    <h2 class="width_limited">Contact</h2>
+    <h2 class="width_limited" id="contact">Contact</h2>
 
     <div class="cvitem">
         <div class="width_limited">
@@ -366,7 +366,7 @@ code { font-family: monospace; }
 
     <div class="cvitem">
         <div class="width_limited">
-            <h3 class="cvitem_title">Git mirrors</h3>
+            <h3 class="cvitem_title" id="gitmirrors">Git mirrors</h3>
             <div class="cvitem_details">
                 <p>Eggs. Baskets.</p>
                 <p><a href="https://github.com/voussoir">https://github.com/voussoir</a></p>
@@ -384,7 +384,7 @@ code { font-family: monospace; }
     </div>
 
     <footer class="width_limited">
-        <h2 class="width_limited">The footer</h2>
+        <h2 class="width_limited" id="thefooter">The footer</h2>
         <p><a href="https://commons.wikimedia.org/wiki/File:Epub_logo_color.svg">EPUB logo</a></p>
         <p><a href="https://www.python.org/community/logos/">Python logo</a> under the PSF Trademark Usage Policy</p>
         <p><a href="https://www.w3.org/html/logo/">HTML5 logo</a> under CC-BY-3.0</p>
