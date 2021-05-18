@@ -3,6 +3,114 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> s/LTE stack/mmWave stack ?
+
+-
+
+> Seems like the point? Add a bit of bias laund&#94;H&#94;H&#94;H&#94;H&#94;H&#94;H&#94;H&#94;H&#94;H&#94;Hmachine learning and you're good to go!
+
+-
+
+> \> HN is a great community
+
+> HN feels like white collar GPT-3.
+
+-
+
+> I've been watching a lot of bonsai YouTubers lately. The amazing thing about trees is how much abuse they will tolerate and still figure out some way to grow. You can find videos of somebody pruning all the leaf-bearing branches and half the roots off of a bonsai like it's nothing, fully expecting the tree to recover. Plants have a very flexible instruction set, something like a list of inner if-statements, which bonsai artists understand almost completely and use to dictate their growth. It seems like the default execution of this instruction set looks like "tree" when there are no particular challenges, but the plant would adapt to almost any trauma short of cutting it down to a 1ft high stump... and even then, you will find stumps growing branches.
+
+-
+
+> The difference is between hobbyist agriculture and commercial agriculture. In the latter, consistency, pests and disease become more complex issues to deal with. IMHO there are a lot of analogies to software engineering. Small projects can engage in practices that don't scale, like skipping QA, not adequately testing, inconsistent coding standards.
+
+-
+
+> Today in "GPT-3 ramblings or marketing spiel":
+
+> > that that kind of language long predated GPT-3. It learned from somewhere :)
+
+> -
+
+> > I've noticed a recent tendency to compare people's writing to GPT-3 output as a way of saying something like "I didn't understand that" or "I found the style hard to follow".
+
+-
+
+> For some reason this reminds me of the website kuro5hin and how trolling was perfected into a sort of discussion-malware there. With Holocaust denial, it's discussion-malware with a highly targeted purpose: recreating the societal situation where another Holocaust can occur.
+
+> > \> discussion-malware
+
+> > I've never heard this term and I like it. Relating software-of-mind to actual software can be a powerful intuition pump.
+
+-
+
+> I just hate that Sony can't be bothered to give an explicit send-off to the A-mount line. Coupled with their abysmal customer service reputation, this really makes Sony my textbook example of a faceless, uncaring $BIGCORP.
+
+-
+
+> Sounds like just the next calculated step.
+
+> 1. Introduce $badThing with claims about page load performance.
+
+> 2. tell sites they need to use $badThing to get into the “carousel”
+
+-
+
+> s/us/your phone, that we control the software for/
+
+-
+
+> In fact, at $work, I developed a very similar architecture and it is running flawlessly for 15 months or so.
+
+-
+
+> Earlier is better to expand something like this to $everything
+
+-
+
+> If I had a mental s/Daily Mail/Reputable Newspaper/g I'd be able to give this article a little more time.
+
+-
+
+> I have nothing nice to say about any Google-owned company but is this really all that different from $city’s Best $business or literally any other corporate “award” that’s nothing more than thinly-veiled advertising?
+
+-
+
+> This is why you ALWAYS use a Privacy.com (or similar) virtual credit card with limited access to your bank account. It's the same as creating a separation between your API layer and DB layer.
+
+-
+
+> A lot of people who I knew as sympathetic and calm before they took management roles turned into something I could code in one minute: namely a program that asks "how much is this going to take?" and if your answer is above N hours/days then they say "no, we're not doing it".
+
+-
+
+> As in, you're valuable at $COMPANY_X, but you're not challenged to better yourself beyond what you already are. Much of your value to $COMPANY_X derives from skills and knowledge that are specific to $COMPANY_X / $INDUSTRY.
+
+-
+
+> I’ve got the gift of the gab and so I see this differently. If I had no scruples or morals and chose to drive Uber, I could make an obscene hourly wage simply by picking up elderly people and engaging them in conversation. Most phone scams rely upon preying upon vulnerable, lonely people like this so sadly, it’s a public 0 day with no known fix.
+
+-
+
+> The money is there to drive things, pulling it out from one perspective is like looking at one weight in a neural network.
+
+-
+
+> Was this article written with GPT3? It sure reads like it....
+
+-
+
+> \> Wikipedia asks for money once a year
+
+> if once == "allYearLong" { clapYourHands() }
+
+> I don't think that I've opened a Wikipedia page in months, that didn't have a beg header.
+
+-
+
+> I learned somewhere that certain people that pass a certain "threshold" are not only fooled&#94;H&#94;H&#94;H&#94;H&#94;H&#94;Hconvinced by Nigerian prince scams, but utterly convinced that they are true.
+
+-
+
 > Constantly shiny + new ~== a good App Store.
 
 > (~== Not necessarily equal to. Did I just invent that?)
