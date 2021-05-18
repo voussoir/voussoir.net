@@ -510,7 +510,7 @@ def write_rss():
 ################################################################################
 ARTICLES = {
     file: Article(file)
-    for file in spinal.walk_generator(WRITING_ROOTDIR)
+    for file in spinal.walk(WRITING_ROOTDIR)
     if file.extension == 'md' and file.parent != WRITING_ROOTDIR
 }
 
