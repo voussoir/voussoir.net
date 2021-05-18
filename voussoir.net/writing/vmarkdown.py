@@ -130,10 +130,13 @@ class VoussoirInlineGrammar(mistune.InlineGrammar):
     footnote_text = re.compile(r'\[footnote_text\]')
     subreddit = re.compile(r'\/r\/[A-Za-z0-9_]+')
     redditor = re.compile(r'\/u\/[A-Za-z0-9_]+')
+    dash_spacer = re.compile(r'^\s*-$', re.MULTILINE)
     # This `text` override is based on this article:
     # https://ana-balica.github.io/2015/12/21/mistune-custom-lexers-we-are-going-deeper/
     # in which we have to keep adding characters to the recognized list every
-    # time we make a new rule. My additions so far are \- and \^.
+    # time we make a new rule. My additions so far are:
+    # \- for --
+    # \^ for superscript
     text = re.compile(r'^[\s\S]+?(?=[\\<!\[_*`~\-\^\/]|https?:\/\/| {2,}\n|$)')
 
 class VoussoirInline(mistune.InlineLexer):
@@ -148,6 +151,7 @@ class VoussoirInline(mistune.InlineLexer):
     default_rules.insert(0, 'footnote_text')
     default_rules.insert(0, 'subreddit')
     default_rules.insert(0, 'redditor')
+    default_rules.insert(0, 'dash_spacer')
 
     def __init__(self, renderer, **kwargs):
         rules = VoussoirInlineGrammar()
@@ -197,8 +201,13 @@ class VoussoirInline(mistune.InlineLexer):
     def output_redditor(self, m):
         return f'<a href="https://old.reddit.com{m.group(0)}">{m.group(0)}</a>'
 
+    def output_dash_spacer(self, m):
+        return ''
+
 class VoussoirBlockGrammar(mistune.BlockGrammar):
-    dash_spacer = re.compile(r'^-$', re.MULTILINE)
+    # The single hyphen is used to create a split between elements that
+    # would normally merge together, such as block quotes.
+    dash_spacer = re.compile(r'^\s*-$', re.MULTILINE)
 
 class VoussoirBlock(mistune.BlockLexer):
     default_rules = copy.copy(mistune.BlockLexer.default_rules)
