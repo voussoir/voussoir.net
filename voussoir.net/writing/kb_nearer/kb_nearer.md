@@ -392,7 +392,7 @@ This took a long time.
 
 [![](thumbs/wiring_rows_10.jpg)](wiring_rows_10.jpg)
 
-The downside of the duplex layout is that R1-R7 need to reach *allll* the way over the controller, so I tried to route the wires between the keys and keep it looking nice.
+The downside of the duplex layout is that R1-R7 need to reach *allll* the way over to the controller, so I tried to route the wires between the keys and keep it looking nice.
 
 [![](thumbs/wiring_rows_11.jpg)](wiring_rows_11.jpg)
 
