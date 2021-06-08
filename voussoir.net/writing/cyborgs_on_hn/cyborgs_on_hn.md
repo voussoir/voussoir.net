@@ -3,6 +3,40 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> "Log in to see 8 answers on Qu&#94;H&#94;HStack Overflow!"
+
+-
+
+> my bank has a section in their marketing email preferences where you need to check the box IF you don't want to receive any marketing&#94;Hspam email.
+
+-
+
+> If we chew on enough of these lozenges, will our teeth merge into one, curved megatooth?
+
+> > And why haven't we evolved to have that yet anyway?
+
+> > > Well, in software terms, you're describing a monolithic architecture.
+
+> > > There is also the matter of how evolvable the platform would be. As a species, we're in the process of losing our wisdom teeth, and I suspect that would be harder to do if the skull/jaw/gum/tooth platform was... more tightly coupled, less modular.
+
+-
+
+> Maybe selling a banana taped to a wall could be a way for people to make money, considering one of those sold for ${OUTRAGE}.
+
+-
+
+> But americans do get marketing though. I bet you know about a bunch of companies that were doing $thing in $country before, probably with better outcomes, but never got the recognition.
+
+-
+
+> On the other hand, $OTHER_COUNTRY has a history of $BAD_THING, so the only conscientious thing to do is boycott everything their workers produce too.
+
+-
+
+> However, unlike software engineering, policy shouldn't be made to cover all the corner cases.
+
+-
+
 > s/LTE stack/mmWave stack ?
 
 -
