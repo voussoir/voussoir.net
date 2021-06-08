@@ -78,9 +78,9 @@ When I download a new version of a program, I just delete that junction and make
 
 I don't like filling up my desktop or start menu with shortcuts, so I wrote [PGUI](https://github.com/voussoir/cmd/blob/master/PGUI.pyw) which acts as a launcher for any .lnk files located inside my PGUI folder. Each of these shortcuts actually point to the `__latest\program.exe` path. As a bonus, my PGUI folder is one of the few folders to enjoy the honor of being on my PATH, which means I can just start them from the command line or Win+R -- that's all possible without a gui launcher of course, but it's a great symbiosis.
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/master_of_my_domain/latest_junction_1.png)
+![](latest_junction_1.png)
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/master_of_my_domain/latest_junction_2.png)
+![](latest_junction_2.png)
 
 ## Reserve PATH for nobility only
 

@@ -28,13 +28,13 @@ https://example.com/episode4.mp3 Podcastname 2018-05-05.mp3
 
 and calling `threaded_dl links.txt 3`.
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/quiterss_feeds_db1.png "QuiteRSS db containing feeds.")
+![](quiterss_feeds_db1.png "QuiteRSS db containing feeds.")
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/quiterss_feeds_db2.png "QuiteRSS db sql query to isolate dates and urls.")
+![](quiterss_feeds_db2.png "QuiteRSS db sql query to isolate dates and urls.")
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/quiterss_feeds_db3.png "QuiteRSS db copying results of query.")
+![](quiterss_feeds_db3.png "QuiteRSS db copying results of query.")
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/quiterss_feeds_db4.png "QuiteRSS db pasting results into text editor for further manipulation.")
+![](quiterss_feeds_db4.png "QuiteRSS db pasting results into text editor for further manipulation.")
 
 To be clear, I only do this for the initial download of the historical posts. After that, when new episodes are released, I just right-click & save file.
 
@@ -42,13 +42,13 @@ However, you'll find that many or most RSS feeds don't contain the entire histor
 
 One thing you can try is searching the [Wayback machine](https://web.archive.org/) for the RSS url. If you're lucky, it will have been scraped in the past often enough so as to contain the entire history, though perhaps in piecemeal. You could download the snapshots, combine them into a single xml file, serve it out of a [webserver](https://github.com/voussoir/else/tree/master/SimpleServer), and temporarily point your RSS client at localhost so it ingests all those historical posts before pointing it back at the real url. Convoluted, perhaps, but I'd rather do this than inject the posts into the db myself. Then, you can pull the enclosures out of QuiteRSS's database (or from the xml file you just made).
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/wayback_archives.png "Finding archived RSS feeds on Wayback")
+![](wayback_archives.png "Finding archived RSS feeds on Wayback")
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/wayback_crossreference.png "Cross-referencing the last item on the web feed (right) with more items on the wayback archive (left) to construct a single xml file with all items.")
+![](wayback_crossreference.png "Cross-referencing the last item on the web feed (right) with more items on the wayback archive (left) to construct a single xml file with all items.")
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/wayback_timetravel1.png "Serving the xml file out of a local webserver and configuring QuiteRSS to pull the localhost url.")
+![](wayback_timetravel1.png "Serving the xml file out of a local webserver and configuring QuiteRSS to pull the localhost url.")
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/wayback_timetravel2.png "QuiteRSS pulled the local xml file and now has 149 items instead of 100.")
+![](wayback_timetravel2.png "QuiteRSS pulled the local xml file and now has 149 items instead of 100.")
 
 But, in the worst case scenario, you'll find that Wayback doesn't have archives of the feed you want. At this point I write a web scraper in Python to find all the episode dates and links, or I just hit the CTRL+C, CTRL+V gym for twenty minutes, copying each link from the website manually. You may also try [Xenu's Link Sleuth](http://home.snafu.de/tilman/xenulink.html) or [HTTrack](https://www.httrack.com/) to see if they can find all of the MP3 urls automatically. I figure it's an effort I'll only have to do once as long as RSS keeps getting new posts after that.
 
@@ -64,11 +64,11 @@ Tagging podcasts is a little different than tagging music. Firstly, podcasters s
 
 If the mp3 files don't have the `ALBUM` or `YEAR` field set, you can use MP3Tag's "filename to tag" feature to fix that.
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/filename_to_tag.png "filename to tag: album - year")
+![](filename_to_tag.png "filename to tag: album - year")
 
 MP3Tag is great for batch renaming. In your MP3Tag actions, create a `Format value` action with the parameters Field=`_FILENAME`, Format string=`%album% - %year%`.
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/mp3tag_rename_action.png "MP3Tag rename action.")
+![](mp3tag_rename_action.png "MP3Tag rename action.")
 
 Clean up all the files' tags to your heart's content, then select them and run your rename action.
 
@@ -78,7 +78,7 @@ I don't listen to ads. I recommend [mp3DirectCut](https://mpesch3.de/) for cutti
 
 It is important to use a tool that does lossless copying, which means it doesn't re-encode the audio when saving the new file. If you use Audacity, for example, you are loading the mp3 into a wave in memory at the beginning, then encoding that wave back to mp3 at the end. Re-encoding will cause a slight loss in quality, though I admit it will not usually be noticeable. mp3DC copies the mp3 data directly. This comes with the limitation that you can only cut at frame boundaries, but that's ok because mp3 frames are usually [~26ms](https://stackoverflow.com/a/12650386) long, unlike video formats where keyframes might be many seconds apart.
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/download_podcasts/mp3dc_demo.png "Turning the clock back to 2006 with this expertly annotated MSPaint job demonstrating the key features of mp3dc.")
+![](mp3dc_demo.png "Turning the clock back to 2006 with this expertly annotated MSPaint job demonstrating the key features of mp3dc.")
 
 ## Listen & enjoy
 

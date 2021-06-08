@@ -1,4 +1,4 @@
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/professionally_written_article/hero.jpg "I was told I needed a hero")
+![](hero.jpg "I was told I needed a hero")
 
 A professionally written article
 ================================
@@ -78,7 +78,7 @@ But our anonymous sources tell us otherwise.
 
 Just before the end of the debate, the CEO of YouTube was awarded the world's first "Free Expression Award" after a unanimous decision by a committe consisting of just the CEO.
 
-<center><a href="https://voussoir-net.s3-us-west-1.amazonaws.com/writing/professionally_written_article/photo_large.jpg"><img src="https://voussoir-net.s3-us-west-1.amazonaws.com/writing/professionally_written_article/photo_small.jpg"/></a><br/>Click to see full-size image.</center>
+[![](photo_small.jpg)](photo_large.jpg "Click to see full-size image")
 
 The rest of the interview was not very interesting so don't worry about it.
 
@@ -89,4 +89,4 @@ See also:
 - [Drinking coffee every morning is good for your health](#)
 - [Drinking coffee every morning is bad for your health](#)
 
-<center><img src="https://voussoir-net.s3-us-west-1.amazonaws.com/writing/professionally_written_article/guilt.png"/> <img src="https://voussoir-net.s3-us-west-1.amazonaws.com/writing/professionally_written_article/guilt.png"/> <img src="https://voussoir-net.s3-us-west-1.amazonaws.com/writing/professionally_written_article/guilt.png"/></center>
+<center><img src="guilt.png"/> <img src="guilt.png"/> <img src="guilt.png"/></center>

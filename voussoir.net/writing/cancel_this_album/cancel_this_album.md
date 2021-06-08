@@ -3,7 +3,7 @@ Cancel This Album!
 
 According to Google Trends, the term [cancel culture](https://trends.google.com/trends/explore?date=today%205-y&geo=US&q=cancel%20culture) started to appear in late 2019 and had its big heyday in mid-2020, so in internet years I'm rather late. I think the concept of cancel culture is plain stupid: a bunch of people who have willingly centralized themselves under a privately-owned social media site whose primary / only source of revenue is advertisements act surprised and indignant when they're kicked out because they're harming the company's image.
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/cancel_this_album/pikachu.jpg)
+![](pikachu.jpg)
 
 For the past couple of months, every time I've seen an article about cancel culture or someone getting "cancelled", I've gotten a spur of inspiration to write something about it, but I've always decided against it because my conclusion is just so trivial. Stupid games. Stupid prizes. That's about it. Maybe someday people will learn to stop investing their lives into social media giants. Right after they learn that fire is hot.
 
@@ -19,7 +19,7 @@ Let's use an analogy: if you go inside someone else's house, and say something t
 
 If, by chance, your web host does decide to stop hosting your pages, all you have to do is pick a different one and restore from a backup, because of course you're making regular backups of the things you care about and not just expecting the internet to keep everything for you forever. With the standardization of web protocols, every web host is functionally the same! It's totally commoditized, dudes!
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/cancel_this_album/guitar.jpg "Most excellent!")
+![](guitar.jpg "Most excellent!")
 
 For the videographically inclined among you, I'm sure you're thinking "But how would I ever host my videos without Youtube? I can't afford to do it myself!". Congratulations on discovering that hosting and distributing video is stinking expensive! People don't seem to have any trouble understanding that mansions are expensive, and that getting kicked out of one doesn't automatically grant you access to another. Sorry you got comfortable.
 
@@ -43,7 +43,7 @@ The difference is that the baskets of today are different from the baskets of a 
 
 It's okay to have a Twitter account, and a Youtube account, and a reddit account. Some may even say it's okay to have a Facebook account! But if you don't have a contingency plan for when you lose that account, for a good reason or bad, you're simply not prepared!
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/cancel_this_album/stonks.jpg)
+![](stonks.jpg)
 
 ---
 

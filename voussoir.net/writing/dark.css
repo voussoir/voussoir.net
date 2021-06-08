@@ -63,7 +63,6 @@ h3 {font-size: 1.5em;} h3 * {font-size: inherit;}
 h4 {font-size: 1.2em;} h4 * {font-size: inherit;}
 h5 {font-size: 1.0em;} h5 * {font-size: inherit;}
 
-
 .header_anchor_link {display: none; font-size: 1.0em; text-decoration: none}
 h1:hover > .header_anchor_link {display: initial;}
 h2:hover > .header_anchor_link {display: initial;}
@@ -165,7 +164,7 @@ pre,
 }
 
 /*
-Thank yourichleland for pre-building this Monokai style.
+Thank you richleland for pre-building this Monokai style.
 https://github.com/richleland/pygments-css
 */
 :root

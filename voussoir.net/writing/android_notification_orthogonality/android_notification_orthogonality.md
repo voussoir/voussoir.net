@@ -7,23 +7,23 @@ On modern Android, applications can register multiple channels / categories thro
 
 Here's what it looks like to configure an app's notification channel:
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/android_notification_orthogonality/ankidroid.png)
+![](ankidroid.png)
 
 For Medium and Low importance, notifications appear under a "Silent notifications" header on the dropdown:
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/android_notification_orthogonality/silenced_levels.png)
+![](silenced_levels.png)
 
 And although the channel menu has an on/off switch for badges, there is a totally separate menu for choosing whether badges are numbers or just dots, because this option applies system-wide:
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/android_notification_orthogonality/badges.png)
+![](badges.png)
 
 Similarly, if you want to disable status bar icons entirely, that's listed somewhere else:
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/android_notification_orthogonality/status_bar_toggle.png)
+![](status_bar_toggle.png)
 
 And finally, there is another option that only applies to incoming phone calls that gives you ringing and vibration together.
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/android_notification_orthogonality/ring_with_vibrate.png)
+![](ring_with_vibrate.png)
 
 So, if you want to modify all of the available options related to notifications, you'll have to make a Vernian journey through the operating system and hope you get it done in less than eighty days:
 
@@ -48,7 +48,7 @@ Additionally, I think some properties are controlled by the app itself, such as 
 
 My phone happens to be an LG, and their firmware has some bonus options that only apply to the lock screen, which is located in, you guessed it, a separate menu:
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/android_notification_orthogonality/lg_special.png)
+![](lg_special.png)
 
 ## What a mess!
 
@@ -99,7 +99,7 @@ Android's UI is a weird hybrid that uses style #1 for its Importance menu, with 
 
 **Orthogonality** means you can change one thing without changing anything else. The badge switch is on or off, and doesn't affect any other behaviors. It gets an orthogonal seal of approval and a handshake from the governor of Orthogon. The Importance menu has certain behaviors implying others, and makes some combinations of behaviors impossible. It gets a disappointed frown.
 
-![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/android_notification_orthogonality/giveemwhattheywant.png)
+![](giveemwhattheywant.png)
 
 To me, it is clear that the UI should make much, much heavier use of checkboxes / toggle switches:
 

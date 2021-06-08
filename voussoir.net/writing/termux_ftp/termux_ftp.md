@@ -37,21 +37,21 @@ At this point I am following the official Termux Wiki page on [Remote Access](ht
 
 4. You can run `ifconfig` within Termux to find your phone's local IP address, or, depending on your home router, you might be able to assign the phone a hostname from the admin panel.
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/lan_ip.png)
+  ![](lan_ip.png)
 
 5. Open an SSH client on your PC. I'll be using [Putty](https://www.putty.org/).
 
 6. Enter the phone's hostname or IP address, and choose 8022 for the port, and start the session.
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/putty_session.png)
+  ![](putty_session.png)
 
 7. Putty may warn you that it has never seen the server's fingerprint before, which is expected and you can accept it.
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/unfamiliar_fingerprint.png)
+  ![](unfamiliar_fingerprint.png)
 
 8. In Putty, the server will prompt you for a username. You may type anything your want, or even leave it blank and just hit Enter. Then it will ask you for the password you chose earlier.
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/ssh_success.png)
+  ![](ssh_success.png)
 
 9. Congratulations! Try running a command like `ls`.
 
@@ -59,9 +59,9 @@ At this point I am following the official Termux Wiki page on [Remote Access](ht
 
 11. Enter the phone's hostname/IP and port. When I typed 8022 into the port field, WinSCP automatically changed the protocol selection from SFTP to WebDAV, so change it back to SFTP. You may enter anything you want for the username, but if you leave it blank then WinSCP will prompt you during the login process, so maybe you'd like to make something up. Also enter your password, then log in.
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/winscp_session.png)
+  ![](winscp_session.png)
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/ftp_success.png)
+  ![](ftp_success.png)
 
 12. Congratulations! Try uploading some files to the phone.
 
@@ -73,7 +73,7 @@ I assume you won't be leaving your phone's server on very long, or giving it an 
 
 2. Leave the key type as RSA and press the Generate button to make a public/private keypair. You can use the comment field to give it a memorable name.
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/puttygen.png)
+  ![](puttygen.png)
 
 3. You may give the keypair a password, but you'll have to type this password every time you log in with Putty/WinSCP, which you may not want to do. So you can leave it blank. In a 'real-life' SSH situation, you can use a passworded keyfile to double your security; someone would have to steal your keyfile and know your password to log into your servers.
 
@@ -81,17 +81,17 @@ I assume you won't be leaving your phone's server on very long, or giving it an 
 
 5. We need to teach the server to trust the public key we've created. In Putty, use vim to create a file called `~/.ssh/authorized_keys`.
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/authorized_keys1.png)
+  ![](authorized_keys1.png)
 
 6. In the puttygen UI, the text box at the top has the text that needs to go into this file. You'll notice that the format of this text is `<key type> <base64> <comment>` where the key type is `ssh-rsa`, the base64 is the content of the publickey file you saved, and the comment is what you wrote earlier. To paste into vim over putty you may need to press Shift+Insert.
 
 7. Save and quit with Esc + `:wq`.
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/authorized_keys2.png)
+  ![](authorized_keys2.png)
 
 8. Also modify the `sshd_config` file to disable password authentication. `vim /data/data/com.termux/files/usr/etc/ssh/sshd_config`
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/sshd_config.png)
+  ![](sshd_config.png)
 
 9. Close Putty and WinSCP. Stop the server with `pkill sshd` and run it again with `sshd`.
 
@@ -99,11 +99,11 @@ I assume you won't be leaving your phone's server on very long, or giving it an 
 
 11. On the left menu, choose Connection > Data and put something in the username box so you won't get prompted during login.
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/putty_data.png)
+  ![](putty_data.png)
 
 12. Then choose Connection > SSH > Auth and browse for your private keyfile.
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/putty_auth.png)
+  ![](putty_auth.png)
 
 13. Before pressing the Open button, you may want to go back to the main Session screen and click the Save button to store the configuration. Then click Open.
 
@@ -113,7 +113,7 @@ I assume you won't be leaving your phone's server on very long, or giving it an 
 
 16. Click the Advanced button and select SSH > Authentication. Browse for your private keyfile.
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/winscp_auth.png)
+  ![](winscp_auth.png)
 
 17. You may want to save the session configuration. Then click Login.
 
@@ -139,6 +139,6 @@ Now we'll put a shortcut on the homescreen to launch the server in a single tap.
 
 4. On your phone's homescreen, create a new shortcut widget from the Termux:Widget section. It will show you the files inside `~/.shortcuts`.
 
-  ![](https://voussoir-net.s3-us-west-1.amazonaws.com/writing/termux_ftp/widget.png)
+  ![](widget.png)
 
 5. Congratulations!
