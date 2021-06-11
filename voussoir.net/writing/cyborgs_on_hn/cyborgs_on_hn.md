@@ -3,11 +3,11 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
-> "Log in to see 8 answers on Qu&#94;H&#94;HStack Overflow!"
+> "Log in to see 8 answers on Qu\^H\^HStack Overflow!"
 
 -
 
-> my bank has a section in their marketing email preferences where you need to check the box IF you don't want to receive any marketing&#94;Hspam email.
+> my bank has a section in their marketing email preferences where you need to check the box IF you don't want to receive any marketing\^Hspam email.
 
 -
 
@@ -41,7 +41,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> Seems like the point? Add a bit of bias laund&#94;H&#94;H&#94;H&#94;H&#94;H&#94;H&#94;H&#94;H&#94;H&#94;Hmachine learning and you're good to go!
+> Seems like the point? Add a bit of bias laund\^H\^H\^H\^H\^H\^H\^H\^H\^H\^Hmachine learning and you're good to go!
 
 -
 
@@ -141,7 +141,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> I learned somewhere that certain people that pass a certain "threshold" are not only fooled&#94;H&#94;H&#94;H&#94;H&#94;H&#94;Hconvinced by Nigerian prince scams, but utterly convinced that they are true.
+> I learned somewhere that certain people that pass a certain "threshold" are not only fooled\^H\^H\^H\^H\^H\^Hconvinced by Nigerian prince scams, but utterly convinced that they are true.
 
 -
 
@@ -185,7 +185,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> AT&T's home gateways have a maximum NAT translation table of 1024&#94;H&#94;H&#94;H&#94;H8192 connections.
+> AT&T's home gateways have a maximum NAT translation table of 1024\^H\^H\^H\^H8192 connections.
 
 -
 
