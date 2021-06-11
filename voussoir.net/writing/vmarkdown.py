@@ -138,6 +138,10 @@ class VoussoirInlineGrammar(mistune.InlineGrammar):
     # \- for --
     # \^ for superscript
     text = re.compile(r'^[\s\S]+?(?=[\\<!\[_*`~\-\^\/]|https?:\/\/| {2,}\n|$)')
+    # This `escape` override is first taken from the mistune source.
+    # My additions so far are:
+    # ^ for escaping supers
+    escape = re.compile(r'^\\([\\`*\^{}\[\]()#+\-.!_>~|])')
 
 class VoussoirInline(mistune.InlineLexer):
     default_rules = copy.copy(mistune.InlineLexer.default_rules)
