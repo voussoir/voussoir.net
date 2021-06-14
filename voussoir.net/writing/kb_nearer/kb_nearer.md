@@ -21,7 +21,7 @@ Assembling the Nearer keyboard
 
 [![](thumbs/glamour_9.jpg)](glamour_9.jpg)
 
-[![](thumbs/glamour_video.jpg)](https://www.youtube.com/watch?v=481tMDoXg5c)
+[youtube:481tMDoXg5c]
 
 ## Introduction
 
@@ -484,7 +484,7 @@ I argued with the vendor over the course of nine!! emails that a 6u stab should 
 
 On my previous, rubber dome keyboard, the stabilizer bars were fully accessible after simply removing the keycaps, so it didn't occur to me that Cherry stabilizers actually go underneath the plate, and are supposed to be installed before the switches are in place. But, I was able to add them retroactively, which I described in a video. This required cutting away some of my beautiful hot glue with a craft knife to make way for the bar.
 
-[![](thumbs/stab_video.jpg)](https://www.youtube.com/watch?v=nBLXsKbxWAo)
+[youtube:nBLXsKbxWAo]
 
 ## Conclusion
 
