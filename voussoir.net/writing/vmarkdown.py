@@ -130,6 +130,7 @@ class VoussoirInlineGrammar(mistune.InlineGrammar):
     footnote_text = re.compile(r'\[footnote_text\]')
     subreddit = re.compile(r'\/r\/[A-Za-z0-9_]+')
     redditor = re.compile(r'\/u\/[A-Za-z0-9_]+')
+    youtube_embed = re.compile(r'\[youtube:([A-Za-z0-9_\-]{11})\]')
     dash_spacer = re.compile(r'^\s*-$', re.MULTILINE)
     # This `text` override is based on this article:
     # https://ana-balica.github.io/2015/12/21/mistune-custom-lexers-we-are-going-deeper/
@@ -156,6 +157,7 @@ class VoussoirInline(mistune.InlineLexer):
     default_rules.insert(0, 'subreddit')
     default_rules.insert(0, 'redditor')
     default_rules.insert(0, 'dash_spacer')
+    default_rules.insert(0, 'youtube_embed')
 
     def __init__(self, renderer, **kwargs):
         rules = VoussoirInlineGrammar()
@@ -207,6 +209,15 @@ class VoussoirInline(mistune.InlineLexer):
 
     def output_dash_spacer(self, m):
         return ''
+
+    def output_youtube_embed(self, m):
+        video_id = m.group(1)
+        return f'''
+        <center>
+        <iframe width="711" height="400" frameborder="0" allow="encrypted-media"
+        allowfullscreen src="https://www.youtube.com/embed/{video_id}"></iframe>
+        </center>
+        '''
 
 class VoussoirBlockGrammar(mistune.BlockGrammar):
     # The single hyphen is used to create a split between elements that
