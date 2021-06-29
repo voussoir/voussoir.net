@@ -3,6 +3,84 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> I remember when win2k was "the last good windows" and then windows xp after it. I $CURRENT-2 is always going to be considered "the last good windows".
+
+-
+
+> Bureaucracy isn't that different from code. Some of it's dead legacy that needs to be removed, some of it's legacy that needs to be improved/replaced, some of it's legacy that's good enough, some of it's there for a damn good reason no matter how ugly it looks.
+
+> And when it comes to code, you probably trust devs who have specific insights into issues with code and promising replacements.
+
+-
+
+> At $OLDJOB we used to use nfs extensively, and a common desire was to run some command on the system where the files actually resided
+
+> > By using $OLDJOB are you saying at every old job you ever held this was the case or just the last one? Because if it's just the last one you should have used
+
+> >      const OLDJOB
+
+> > Not sure why you used a variable in a comment, maybe because this is hackernews and you want to resonate with other programmers?
+
+-
+
+> In my opinion, the code was very difficult to read and even harder to understand for !expert javascript devs and even for experts.
+
+-
+
+> Is it just me or do “markets” feel like a really dumb AI that is incapable of any sort of strategic planning?
+
+-
+
+> My email looks like ${firstname}@${some-german-word}.jetzt and I never had a problem with German speaking people.
+
+-
+
+> For the "memorable phrase" thing, you may have already figured this out, but I find it's better to generate random passphrases for those. A string of words is a _lot_ easier to say and verify.
+
+> > Yeah, he asked me for a new one as part of the reset (or just for his further amusement?!) - I just used my brain's PRNG for a few words for that.
+
+-
+
+> It would be tiring and a bit offensive to knowledgeable people, but maybe better then trying to debug the situation.
+
+-
+
+> I have a scheme to give addresses per service, but I do this with gmail on my domain. It goes like $ACCOUNT+$RANDOMLETTERS@$DOMAIN.$TLD
+
+-
+
+> If only. The amount of times people have tried to put mine down as $fistname.$lastname.$tld@gmail.com is genuinely sad.
+
+> did I ever say gmail.com \>\> no, but.. \> exactly, so let's try this again (goto 0)
+
+-
+
+> "We have to recalculate weight on airplanes" is just a proxy, a code smell.
+
+-
+
+> Hah. I regularly see patches whose review takes well over 100% the time it would have taken me to create the patch myself.
+
+> But then I'm employed by $MEGA_CORP and part of the job description is "helping to build and maintain the OSS community", so helping novices create their first patches is a big part of that.
+
+-
+
+> You need so few subway drivers/conductors that does it really matter if you need one per train?
+
+> Taxis are probably average a driver per 1.5 ish customers. Subway/train is hundreds.
+
+> This reminds me of optimisation of non critical code. Sure its nice, but the cost/benefit is just not there.
+
+-
+
+> I think that JavaScript and Python, from my experience, certainly increase speed... but that definitely != productivity.
+
+-
+
+> But they could! It's as easy as saying "I can consult on $topic, please contact me to discuss details."
+
+-
+
 > "Log in to see 8 answers on Qu\^H\^HStack Overflow!"
 
 -
@@ -151,8 +229,6 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 > > Instead of inventing new operators in your sentences, you can also just stick with plain English
 
-> > > On HN I occasionally see programming conventions used in otherwise normal writing. E.g. "at $big_corp we like to use $process".
-
 -
 
 > As always, “Stop doing $negativebehavior” is less useful than the actual advice:
@@ -181,7 +257,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> https://notabug.org/ does eat its own Gogs fork#94;W#94;W dog food
+> https://notabug.org/ does eat its own Gogs fork\^W\^W dog food
 
 -
 
