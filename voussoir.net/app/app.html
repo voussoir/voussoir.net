@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>voussoir.app</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root
+{
+    --color_background: #0e0e0d;
+    --color_text_primary: #ccc;
+    --color_text_highlight: #efcc2b;
+    --color_inlinecodebg: rgba(255, 255, 255, 0.15);
+}
+
+*
+{
+    font-family: Verdana, sans-serif;
+    color: var(--color_text_primary);
+    word-break: break-word;
+}
+
+html
+{
+    box-sizing: border-box;
+}
+*, *:before, *:after { box-sizing: inherit; }
+
+body
+{
+    background-color: var(--color_background);
+    margin: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-row-gap: 8px;
+    justify-content: center;
+    height: 450px;
+}
+
+#headline
+{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#headline *
+{
+    color: var(--color_text_highlight);
+    font-family: serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#headline_l1,
+#headline_splash
+{
+    display: inline-block;
+    font-style: italic;
+    transform: rotate(-15deg);
+    text-align: center;
+}
+#headline_l1
+{
+    font-size: 5em;
+}
+#headline_splash
+{
+    font-size: 1.5em;
+    animation-name: splash_pulsate;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#reviews
+{
+    position: fixed;
+    top: 250px;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+    height: 150px;
+}
+#dummy_to_help_centering,
+#reviews .review
+{
+    width: 300px;
+    min-width: 300px;
+}
+#reviews .review
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid var(--color_text_primary);
+    border-radius: 8px;
+    padding: 8px;
+    overflow: hidden;
+}
+#reviews p
+{
+    margin: 0;
+}
+#reviews .text
+{
+    flex: 1;
+}
+.review .rating
+{
+    color: var(--color_text_highlight);
+}
+#masks
+{
+    position: fixed;
+    top: 225px;
+    left: 0;
+    right: 0;
+    height: 200px;
+    display: grid;
+    grid-template:
+        "previous grad1 gap   grad2 upcoming" 1fr/
+        1fr       minmax(0, 50px) 350px  minmax(0, 50px) 1fr;
+}
+#masks
+{
+    pointer-events: none;
+}
+#previous_mask,
+#upcoming_mask
+{
+    background-color: var(--color_background);
+}
+#previous_grad
+{
+    background-image: linear-gradient(to right, var(--color_background), rgba(0, 0, 0, 0));
+}
+#upcoming_grad
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--color_background));
+}
+
+@keyframes splash_pulsate
+{
+    0% { transform: rotate(-15deg) scale(1.00); }
+    50% { transform: rotate(-15deg) scale(0.98); }
+    100% { transform: rotate(-15deg) scale(1.00); }
+}
+
+@keyframes review_slide
+{
+    from
+    {
+        transform: translate(0, 0);
+    }
+    to
+    {
+        /* Must be div width + flex gap */
+        transform: translate(-320px, 0);
+    }
+}
+
+@keyframes fade_in
+{
+    0%
+    {
+        opacity: 0%;
+    }
+    50%
+    {
+        opacity: 0%;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+}
+
+#reviews > *.review_slide
+{
+    animation-name: review_slide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+#reviews > *.fade_in
+{
+    animation-name: fade_in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@media screen and (min-width: 500px)
+{
+    :root
+    {
+        --wide: 1;
+    }
+
+    #headline { line-height: 3.25em; }
+    #headline_l1 { font-size: 5.0em; }
+    #headline_splash { font-size: 1.5em; }
+}
+
+@media screen and (max-width: 500px)
+{
+    :root
+    {
+        --narrow: 1;
+    }
+
+    #headline { line-height: 2.25em; }
+    #headline_l1 { font-size: 3em; }
+    #headline_splash { font-size: 1.25em; }
+}
+</style>
+</head>
+
+<body>
+    <section id="headline">
+        <h1 id="headline_l1">voussoir.app</h1>
+        <div id="headline_splash">the app you knew you never wanted</div>
+    </section>
+
+    <section id="reviews">
+        <div id="dummy_to_help_centering"></div>
+        <div id="previous_review" class="review"><p class="text"></p><p class="rating"></p><p class="author"></p></div>
+        <div id="current_review" class="review"><p class="text"></p><p class="rating"></p><p class="author"></p></div>
+        <div id="upcoming_review" class="review"><p class="text"></p><p class="rating"></p><p class="author"></p></div>
+        <div id="upcoming2_review" class="review"><p class="text"></p><p class="rating"></p><p class="author"></p></div>
+        <div id="masks">
+            <div id="previous_mask"></div>
+            <div id="previous_grad"></div>
+            <div id="mask_gap"></div>
+            <div id="upcoming_grad"></div>
+            <div id="upcoming_mask"></div>
+        </div>
+    </section>
+</body>
+
+<script type="text/javascript">
+const REVIEWS = [
+    {"author": "AAAAAAAAAAH", "rating": "AAAAH", "text": "ohmygodohmygodohmygodohmygodohmygodohmygodohmygodohmygodohmygodohmygodohmygodohmygodohmygodohmygodohmygodohmygodohmygodohmygod"},
+    {"author": "Bones", "rating": "★☆☆☆☆", "text": "I could have sworn my bones were intact before downloading this app."},
+    {"author": "bro_lol", "rating": "★★★☆☆", "text": "😂😂😂😂😂😂😂"},
+    {"author": "CameroonFive", "rating": "★★★☆☆", "text": "Didn't work at first, but after enabling camera, mic, location, calendar, contacts, and sms everything was o.k."},
+    {"author": "crypticpicnic", "rating": "★★★★☆", "text": "This app drains my battery SUPER fast. Something to do with the selfie camera being always on?"},
+    {"author": "cynthia", "rating": "★★★★☆", "text": "Good food! Lettuce didn't even taste funny"},
+    {"author": "dev12344", "rating": "★★★★★", "text": "pls accept my pull request i will get free t-shirt. PLsss request"},
+    {"author": "doubleplusbass", "rating": "★★★☆☆", "text": "I had no idea my speakers could get that loud. RIP Spotty."},
+    {"author": "fairuza_yass", "rating": "★☆☆☆☆", "text": "Tried to join the witchcraft &  potionmaking community but everyone there is just talking about drugs."},
+    {"author": "goody2shoe", "rating": "★☆☆☆☆", "text": "I wanted to write a letter to my congressperson but the app keeps replacing all my words with MEMEMEME like what even is this?"},
+    {"author": "greatlyindecent", "rating": "★★★☆☆", "text": "Looks like it was made by a five year old so by that metric it's pretty good."},
+    {"author": "hothothot", "rating": "★☆☆☆☆", "text": "For some reason this app turned on my phone's flashlight and wouldn't let me turn it off. Burned a hole in my couch."},
+    {"author": "itsyaboidaniel", "rating": "★☆☆☆☆", "text": "how to get vbucks"},
+    {"author": "jamesjoyceismydad", "rating": "★☆☆☆☆", "text": "The e-book reader seems to be inserting ads in between each paragraph??"},
+    {"author": "lassie", "rating": "★★☆☆☆", "text": "All the advertisements act like this is the best app ever but actually it kind of sucks. Misleading. Should be removed from the store."},
+    {"author": "lisamona", "rating": "★★★★★", "text": "I love voussoir.app! It does everything I could want. Painting, cooking, eating, drinking, dancing, singing, living, and even dying. So good!"},
+    {"author": "littlenewwave", "rating": "★★★☆☆", "text": "Better than tiktok but i guess that's not saying very much"},
+    {"author": "michael", "rating": "★★★★★", "text": "My parole officer says this is the closest I'm allowed to get to youth."},
+    {"author": "mightybonk", "rating": "★☆☆☆☆", "text": "This app physically broke my screen. If I could give zero stars I would."},
+    {"author": "robocop9000", "rating": "★★☆☆☆", "text": "this app requires 3.4 GB storage and does what with it? I can't find a single feature at all. It's just pulsating text. Did I get pranked?"},
+    {"author": "rodney1925", "rating": "★★☆☆☆", "text": "GRANDSON TELLS ME CAPITAL LETTERS ARE IMPOLITE... BUT CANT TURN OFF... OTHERWISE OK"},
+    {"author": "shipshopper", "rating": "★★☆☆☆", "text": "The search feature is consistently terrible. The 'promoted' items always appear on top even when they don't match my search."},
+    {"author": "slayerZ", "rating": "★☆☆☆☆", "text": "played for 1,497 hours and then got bored. needs better balance and more drops."},
+    {"author": "slimshadyy", "rating": "★☆☆☆☆", "text": "My antivirus reports over 50 trojans, 10 keyloggers, and a whole lot of poor taste."},
+    {"author": "smartphonedumbphone", "rating": "★★★★☆", "text": "I was able to use it but the top notch takes up like half the screen so it was kind of difficult"},
+    {"author": "smashmaster", "rating": "★★★★☆", "text": "I really wanted to love this app, but I think it might be the reason I'm so miserable. As a result I can only give it four stars."},
+    {"author": "sometimes_enlightened", "rating": "★★★★★", "text": "I have seen the future and it is yellow."},
+    {"author": "stingyjimmy", "rating": "★★☆☆☆", "text": "I know you're just trying to make a living and all but $87 a month is pretty steep."},
+    {"author": "techprowriter", "rating": "★★★★☆", "text": "Overall nice app. Read my full review at techprowriter.io."},
+    {"author": "TheKritik", "rating": "★★☆☆☆", "text": "You somehow took everything that's wrong with the world and put it all in one place. In a way, that's incredible."},
+    {"author": "timmy5", "rating": "★☆☆☆☆", "text": "My mom disowned me after I downloaded this app :("},
+    {"author": "timmy5mom", "rating": "★★★★★", "text": "Been trying to disown my son for years, but the courts were waiting for some sort of 'final straw'. This was it!! Bahamas here I come! Thanks :)"},
+    {"author": "vcmoney", "rating": "★★★★☆", "text": "voussoir.app could very well be the next Facebook! Get in touch with me if you want to increase your growth opportunities and add more telemetry."},
+    {"author": "very_smart_guy", "rating": "★★☆☆☆", "text": "pretty sure it's a bitcoin miner."},
+    {"author": "wall_eve", "rating": "★☆☆☆☆", "text": "This app crashed my phone so hard I had to microwave the battery to restart it."},
+    {"author": "xninjax", "rating": "★★★☆☆", "text": "Never in my life have I had the displeasure of using an app as bad as this one."},
+];
+let REVIEW_INDEX = 0;
+let CURRENT_REVIEW_LENGTH;
+
+function shuffle_reviews()
+{
+    let index = REVIEWS.length;
+    while (index > 0)
+    {
+        const random_index = Math.floor(Math.random() * index);
+        index -= 1;
+        [REVIEWS[index], REVIEWS[random_index]] = [REVIEWS[random_index], REVIEWS[index]];
+    }
+}
+
+const PREVIOUS_REVIEW = document.getElementById("previous_review");
+const CURRENT_REVIEW = document.getElementById("current_review");
+const UPCOMING_REVIEW = document.getElementById("upcoming_review");
+const UPCOMING2_REVIEW = document.getElementById("upcoming2_review");
+
+function next_cycle_length()
+{
+    return Math.max(CURRENT_REVIEW_LENGTH * 70, 4000);
+}
+function set_review(div, review)
+{
+    div.getElementsByClassName("author")[0].innerText = "―" + review.author;
+    div.getElementsByClassName("text")[0].innerText = review.text;
+    div.getElementsByClassName("rating")[0].innerText = review.rating;
+}
+function set_all_reviews()
+{
+    set_review(PREVIOUS_REVIEW, REVIEWS[(REVIEW_INDEX + REVIEWS.length-1) % REVIEWS.length]);
+    set_review(CURRENT_REVIEW, REVIEWS[REVIEW_INDEX]);
+    CURRENT_REVIEW_LENGTH = REVIEWS[REVIEW_INDEX].text.length;
+    set_review(UPCOMING_REVIEW, REVIEWS[(REVIEW_INDEX + 1) % REVIEWS.length]);
+    set_review(UPCOMING2_REVIEW, REVIEWS[(REVIEW_INDEX + 2) % REVIEWS.length]);
+    REVIEW_INDEX = (REVIEW_INDEX + 1) % REVIEWS.length;
+}
+function slide_out()
+{
+    PREVIOUS_REVIEW.classList.add("review_slide");
+    CURRENT_REVIEW.classList.add("review_slide");
+    UPCOMING_REVIEW.classList.add("review_slide");
+    UPCOMING2_REVIEW.classList.add("review_slide");
+    setTimeout(slide_end, 550);
+}
+function slide_end()
+{
+    set_all_reviews();
+
+    PREVIOUS_REVIEW.classList.remove("review_slide");
+    CURRENT_REVIEW.classList.remove("review_slide");
+    UPCOMING_REVIEW.classList.remove("review_slide");
+    UPCOMING2_REVIEW.classList.remove("review_slide");
+
+    setTimeout(cycle_reviews, next_cycle_length());
+}
+function fade_in()
+{
+    PREVIOUS_REVIEW.classList.add("fade_in");
+    CURRENT_REVIEW.classList.add("fade_in");
+    UPCOMING_REVIEW.classList.add("fade_in");
+    UPCOMING2_REVIEW.classList.add("fade_in");
+    setTimeout(fade_end, 1050);
+}
+function fade_end()
+{
+    PREVIOUS_REVIEW.classList.remove("fade_in");
+    CURRENT_REVIEW.classList.remove("fade_in");
+    UPCOMING_REVIEW.classList.remove("fade_in");
+    UPCOMING2_REVIEW.classList.remove("fade_in");
+}
+function cycle_reviews()
+{
+    slide_out();
+}
+
+function on_pageload()
+{
+    shuffle_reviews();
+    set_all_reviews();
+    fade_in();
+    setTimeout(cycle_reviews, next_cycle_length());
+}
+document.addEventListener("DOMContentLoaded", on_pageload);
+</script>
+</html>
