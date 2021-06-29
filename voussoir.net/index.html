@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
 <head>
     <title>voussoir.net</title>
@@ -11,31 +11,35 @@
 {
     --color_text_primary: #ccc;
     --color_text_highlight: #efcc2b;
+    --color_inlinecodebg: rgba(255, 255, 255, 0.15);
 }
 
 *
 {
-    font-family: sans-serif;
+    font-family: Verdana, sans-serif;
     color: var(--color_text_primary);
     word-break: break-word;
 }
 
-*, *:before, *:after
+html
 {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
-html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
 
 body
 {
     background-color: #0e0e0d;
     margin: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-row-gap: 8px;
 }
 
 h2
 {
-    font-size: 3.5em;
+    font-size: 3em;
     border-bottom: 2px solid var(--color_text_highlight);
     color: var(--color_text_highlight);
 }
@@ -44,32 +48,98 @@ h3 { font-size: 2.5em; }
 
 code { font-family: monospace; }
 
+*:not(pre) > code
+{
+    background-color: var(--color_inlinecodebg);
+    border-radius: 4px;
+    line-height: 1.5;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
 #headline
 {
-    line-height: 3.25em;
-    margin-top: 25px;
-    margin-bottom: 75px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #headline *
 {
     color: var(--color_text_highlight);
     font-family: serif;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
-#headline_l1 { font-size: 5.0em; }
-#headline_l2 { font-size: 3.5em; }
-#headline_l3 { font-size: 1.5em; }
-
 #headline .tilt_holder
 {
     display: grid;
     justify-content: center;
 }
-#headline .tilt_holder > *
+#headline_l1,
+#headline_splash
 {
     display: inline-block;
-    transform: rotate(-15deg);
     font-style: italic;
+    transform: rotate(-15deg);
+    text-align: center;
+}
+#headline_splash
+{
+    animation-name: splash_pulsate;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    /* Helps prevent line wrap changing height on narrow screens */
+    height: 2em;
+}
+
+@keyframes splash_pulsate
+{
+    0% { transform: rotate(-15deg) scale(1.00); }
+    50% { transform: rotate(-15deg) scale(0.98); }
+    100% { transform: rotate(-15deg) scale(1.00); }
+}
+
+@keyframes shrink_out
+{
+    from
+    {
+        opacity: 1;
+        transform: scale(1) rotate(-15deg);
+    }
+    to
+    {
+        opacity: 0;
+        transform: scale(0.75) rotate(-15deg);
+    }
+}
+@keyframes grow_in
+{
+    from
+    {
+        opacity: 0;
+        transform: scale(0.75) rotate(-15deg);
+    }
+    to
+    {
+        opacity: 1;
+        transform: scale(1) rotate(-15deg);
+    }
+}
+
+#headline_splash.shrink_out
+{
+    animation-name: shrink_out;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+#headline_splash.grow_in
+{
+    animation-name: grow_in;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
 
 .width_limited
@@ -85,7 +155,6 @@ code { font-family: monospace; }
     width: 100%;
     padding: 16px;
 }
-
 .cvitem:nth-of-type(even)
 {
     background-color: #1a1a1a;
@@ -94,27 +163,16 @@ code { font-family: monospace; }
     background-position-x: -30px;
     background-position-y: -30px;
 }
-
 .cvitem:nth-of-type(odd) > div
 {
     display: grid;
     grid-column-gap: 16px;
-    grid-template:
-        "logo title" auto
-        "logo details" 1fr
-        / 1fr 3fr;
 }
-
 .cvitem:nth-of-type(even) > div
 {
     display: grid;
     grid-column-gap: 16px;
-    grid-template:
-        "title logo" auto
-        "details logo" 1fr
-        / 3fr 1fr;
 }
-
 .cvitem_logo
 {
     grid-area: logo;
@@ -126,7 +184,6 @@ code { font-family: monospace; }
     background-color: var(--color_text_primary);
     border-radius: 100%;
 }
-
 .cvitem_title
 {
     grid-area: title;
@@ -135,18 +192,56 @@ code { font-family: monospace; }
     margin-top: 0;
     margin-bottom: 0;
 }
-
 .cvitem_details
 {
     grid-area: details;
 }
 
+#greatjob
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 8px;
+}
+
+@media screen and (min-width: 500px)
+{
+    :root
+    {
+        --wide: 1;
+    }
+
+    #headline { line-height: 3.25em; }
+    #headline_l1 { font-size: 5.0em; }
+    #headline_splash { font-size: 1.5em; }
+
+    .cvitem:nth-of-type(odd) > div
+    {
+        grid-template:
+            "logo title" auto
+            "logo details" 1fr
+            / 1fr 3fr;
+    }
+
+    .cvitem:nth-of-type(even) > div
+    {
+        grid-template:
+            "title logo" auto
+            "details logo" 1fr
+            / 3fr 1fr;
+    }
+}
+
 @media screen and (max-width: 500px)
 {
+    :root
+    {
+        --narrow: 1;
+    }
+
     #headline { line-height: 2.25em; }
     #headline_l1 { font-size: 3em; }
-    #headline_l2 { font-size: 2.5em; }
-    #headline_l3 { font-size: 1em; }
+    #headline_splash { font-size: 1.5em; }
 
     .cvitem:nth-of-type(odd) > div
     {
@@ -168,39 +263,27 @@ code { font-family: monospace; }
         min-width: 30px;
     }
 }
-
-#greatjob
-{
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    padding: 8px;
-}
 </style>
 </head>
-
 
 <body>
     <section id="headline">
         <div class="tilt_holder width_limited">
-            <h1 id="headline_l1">Ethan Dalool</h1>
+            <h1 id="headline_l1">voussoir.net</h1>
         </div>
         <div class="tilt_holder width_limited">
-            <div id="headline_l2">does <b>Python</b></div>
-        </div>
-        <div class="tilt_holder width_limited">
-            <div id="headline_l3">(and a dozen different disciplines)</div>
+            <div id="headline_splash">mostly new and partially improved</div>
         </div>
     </section>
 
-
-
+    <section id="cv">
     <h2 class="width_limited" id="projects">Projects</h2>
     <div class="cvitem">
         <div class="width_limited">
             <h3 class="cvitem_title" id="etiquette">Etiquette</h3>
             <div class="cvitem_details">
                 <p>Etiquette is a tag-based file organization system with a web interface, built with Flask and SQLite3. Tag-based systems solve problems that a traditional folder hierarchy can't: <em>which folder should a file go in if it equally belongs in both?</em> and <em>how do I make my files searchable without littering the filenames themselves with keywords?</em></p>
-                <p>Etiquette is unique because <em>the tags themselves are hierarchical</em>. By tagging one of your vacation photos with the <code>family.parents.dad</code> tag, it will automatically appear in searches for <code>family.parents</code> and <code>family</code> as well. A traditional folder system, here called albums, is available to bundle files that always belong together without creating a bespoke tag to represent that bundle. Regardless, the files on disk are never modified.</p>
+                <p>Etiquette is unique because the tags themselves are hierarchical. By tagging one of your vacation photos with the <code>family.parents.dad</code> tag, it will automatically appear in searches for <code>family.parents</code> and <code>family</code> as well. A traditional folder system, here called albums, is available to bundle files that always belong together without creating a bespoke tag to represent that bundle. Regardless, the files on disk are never modified.</p>
                 <p><a href="https://github.com/voussoir/etiquette">https://github.com/voussoir/etiquette</a></p>
             </div>
             <img class="cvitem_logo" src="./cv/etiquette.svg"/>
@@ -226,16 +309,18 @@ code { font-family: monospace; }
             <img class="cvitem_logo" src="./cv/voussoirkit.svg"/>
         </div>
     </div>
+
     <div class="cvitem">
         <div class="width_limited">
             <h3 class="cvitem_title" id="ycdl">YCDL</h3>
             <div class="cvitem_details">
                 <p>YoutubeChannelDownloader was born out of a dissatisfaction with YouTube's own interface for keeping track of which videos I have already watched, as well as a desire to integrate with youtube-dl. YCDL makes it easy for me to watch through a channel's catalog of videos, picking which ones I'd like to download while ignoring the others. Plus, as it creates an offline database, it will retain metadata about videos even after they are removed or deleted from the original YouTube channel.</p>
-                <p><a href="https://github.com/voussoir/ycdl">https://github.com/voussoir/ycdl</a></a>
+                <p><a href="https://github.com/voussoir/ycdl">https://github.com/voussoir/ycdl</a></p>
             </div>
             <img class="cvitem_logo" src="./cv/ycdl.svg"/>
         </div>
     </div>
+
     <div class="cvitem">
         <div class="width_limited">
             <h3 class="cvitem_title" id="epubfile">Epubfile & Sigilplugins</h3>
@@ -260,10 +345,7 @@ code { font-family: monospace; }
         </div>
     </div>
 
-
-
     <h2 class="width_limited" id="techinterests">Tech interests</h2>
-
     <div class="cvitem">
         <div class="width_limited">
             <h3 class="cvitem_title" id="python">Python</h3>
@@ -289,7 +371,7 @@ code { font-family: monospace; }
         <div class="width_limited">
             <h3 class="cvitem_title" id="sqlite">SQLite</h3>
             <div class="cvitem_details">
-                <p>Some people tease SQLite for not being as big and featureful as something like MySQL, but I for one think it's one of the greatest gifts to the database ecosystem. Thanks to its fast and easy deployment plus cross-platform compatibility, sqlite databases tend to be the best choice for storing structured data. SQLite3 has been my go-to database since 2014 and hasn't failed me yet. Absolutely a staple for my projects listed here.</p>
+                <p>Some people tease SQLite for not being as big and featureful as something like MySQL, but I for one think it's one of the greatest gifts to the database ecosystem. <a href="/writing/sqlite_what_a_hunk">I love it</a>. Thanks to its fast and easy deployment plus cross-platform compatibility, sqlite databases tend to be the best choice for storing structured data. SQLite3 has been my go-to database since 2014 and hasn't failed me yet. Absolutely a staple for my projects listed here.</p>
             </div>
             <img class="cvitem_logo" src="./cv/sqlite.svg"/>
         </div>
@@ -326,10 +408,7 @@ code { font-family: monospace; }
         </div>
     </div>
 
-
-
-    <h2 class="width_limited">Other interests</h2>
-
+    <h2 class="width_limited" id="otherinterests">Other interests</h2>
     <div class="cvitem">
         <div class="width_limited">
             <h3 class="cvitem_title" lang="ko" id="korean">한국어</h3>
@@ -350,18 +429,15 @@ code { font-family: monospace; }
         </div>
     </div>
 
-
-
     <h2 class="width_limited" id="contact">Contact</h2>
-
     <div class="cvitem">
         <div class="width_limited">
             <h3 class="cvitem_title" id="meansoftransmission">Means of transmission</h3>
             <div class="cvitem_details">
-                <p>If you'd like to get in touch, please email contact@voussoir.net. If you'd like to chat in real time, consider:</p>
+                <p>If you'd like to get in touch, please email <code>contact@voussoir.net</code>. If you'd like to chat in real time, consider:</p>
                 <ul>
-                <li>Element, my id is <a href="https://matrix.to/#/@voussoir:matrix.org">@voussoir:matrix.org</a> and my public room is <a href="https://matrix.to/#/!aOtSMPrYrQuRgWJwFd:matrix.org">#voussoircontact:matrix.org</a>.</li>
-                <li>Discord, my id is voussoir#7582.</li>
+                <li>Element, my id is <a href="https://matrix.to/#/@voussoir:matrix.org"><code>@voussoir:matrix.org</code></a> and my public room is <a href="https://matrix.to/#/!aOtSMPrYrQuRgWJwFd:matrix.org"><code>#voussoircontact:matrix.org</code></a>.</li>
+                <li>Discord, my id is <code>voussoir#7582</code>.</li>
                 </ul>
                 <p>Please email me first so we can coordinate.</p>
             </div>
@@ -381,8 +457,7 @@ code { font-family: monospace; }
             <img class="cvitem_logo" src="./cv/gits.svg"/>
         </div>
     </div>
-
-    <p><!-- spacer --></p>
+    </section>
 
     <div id="greatjob" class="width_limited">
         <p>It looks like you're using an ad blocker. Great job!</p>
@@ -401,5 +476,326 @@ code { font-family: monospace; }
         <center><span class="eternalseptember_clock" data-eternalseptember-strftime="%A, %B %d"></span>, <a href="/eternalseptember">1993</a></center>
         <script src="/eternalseptember/eternalseptember.js"></script>
     </footer>
+
+<script type="text/javascript">
+const SPLASHES = [
+    "a boat-stopping device of some kind",
+    "a little carbonation and i'll see you next time",
+    "a matrimonial warning not worth ignoring",
+    "a perfect translation does not exist",
+    "abduct me, vegans",
+    "activated my trap card",
+    "all that was lost is revealed",
+    "always lays down plastic first",
+    "always locks the front door",
+    "always looks both ways",
+    "always takes the third part last",
+    "answers to the name bruce",
+    "anyway, i love you",
+    "are you listening with all your heart and soul?",
+    "banana slips on man",
+    "barfed all over the benevolent order of antelopes",
+    "be a winner",
+    "be excellent to each other",
+    "be specific, bob",
+    "beacuase the voices where pretty good",
+    "bond with me, jimmy",
+    "brittle as an aged human being",
+    "but first you gotta tell me what it is you're hungry for",
+    "can be measured in kilobytes",
+    "can be read while underwater",
+    "can be viewed upside-down",
+    "can complain about almost anything",
+    "can i ask you kind of a weird question?",
+    "can point to the usa on a map",
+    "can't believe you've done this",
+    "cast vicariously as both victim and villain",
+    "chesthair upholstery and a beard in the glovebox",
+    "collapsation of that sensation of the mirror of the memories",
+    "conductor we have a problem",
+    "considers the lobster",
+    "consists of macroblocks and motion vectors",
+    "cool guy has a chill day",
+    "could have sworn it was a lovers' quarrel",
+    "dehumanize yourself and face to bloodshed",
+    "developers developers developers developers",
+    "do i get my four years back?",
+    "do i look like i know what a jpeg is?",
+    "do they still shoot tourists in florida?",
+    "do you identify this word: sanctuary?",
+    "doesn't afraid of anything",
+    "doesn't always write docstrings",
+    "doesn't like being in the chokey",
+    "doesn't need a cookie banner",
+    "doesn't really wanna do the work today",
+    "doesn't smoke beer",
+    "don't bernie me",
+    "don't push, the train is moving forward",
+    "don't start the story with sirens blaring",
+    "don't you want to become a cult leader?",
+    "doth protest too much, methinks",
+    "double-wrapped, vacuum-packed",
+    "en ai marre d'en avoir marre, aussi",
+    "endorses sponsorblock",
+    "endorses ublock origin",
+    "enjoys collecting unspent ordnance",
+    "est arrivé près de chez vous",
+    "even ezekial thinks that my mind is gone",
+    "evi: 11.1.89 22:30h",
+    "exploiting every loophole, dodging every obstacle",
+    "guided towards a more fantastic species of research",
+    "han shot first",
+    "has a tendency to misinterpret subtle social confrontations",
+    "has been modified from its original version to fit your screen",
+    "has not received any subpoenas",
+    "has that combination on my luggage",
+    "have you got anything that affects faces?",
+    "hello below there",
+    "hides intervals behind the medicine cabinet",
+    "holster it in the tilde fashion for your protection",
+    "i bind you nancy from doing harm",
+    "i embrace my weaknesses and call them uniquenesses",
+    "i suppose there's time for dessert",
+    "i'm afraid my beard has spoken. we have no choice",
+    "if dreams can't come true, then why not pretend?",
+    "if you don't watch yourself, who will?",
+    "is a little overbearing",
+    "is a little too new wave for my taste",
+    "is a philosophical statement and would take about ten minutes to read",
+    "is all bark and no bite",
+    "is all out of bubble gum",
+    "is allegedly waiting in dark space",
+    "is always faster than reloading",
+    "is an awkward thing to kill",
+    "is attuned to the passage of time",
+    "is available only in english",
+    "is culturally relevant",
+    "is currently not down for maintenance",
+    "is extremely dangerous to our democracy",
+    "is gnot a gnelf",
+    "is human like the rest of them",
+    "is just one stop on the information superhighway",
+    "is legal in most jurisdictions",
+    "is lined up to watch that movie, maid in manhattan",
+    "is never gonna run around and desert you",
+    "is not a crazed gunman, dad",
+    "is not a sense offender",
+    "is not a significant source of protein",
+    "is not afraid to get sand on my tuxedo",
+    "is not as good as zombocom",
+    "is not concealing any state or military secrets",
+    "is not obfuscated",
+    "is not sponsored",
+    "is not suitable for sad onions",
+    "is not what is said of that thing",
+    "is obviously biased",
+    "is on the fastest available route",
+    "is once again surrounded by a brilliant white light",
+    "is only as strong as the weakest link",
+    "is over our heads in a million pieces",
+    "is produced by the modial interaction of magnetoreluctance",
+    "is sitting in a room different from the one you are in now",
+    "is stimulating my thinker",
+    "is subject to the frequency illusion",
+    "is wasting your processor cycles",
+    "is worth a lot of money",
+    "it goes it goes it goes it goes",
+    "it is good day to be not dead",
+    "it's all right here at your fingertips",
+    "it's evident that speeds's tangential to that time-position curve",
+    "it's the perfect place for an accident",
+    "keikaku means plan",
+    "kept hidden for almost two decades and forced to bear children",
+    "klaatu barada nikto",
+    "knows the answer to A858",
+    "lackluster establishing shot of a significant location",
+    "lacks discipline",
+    "learned how to plow by reading books",
+    "leaves nothing but footsteps",
+    "like a crème caramel in an earthquake",
+    "like roses and clover",
+    "listen and you'll know",
+    "long live the new flesh",
+    "looks better in black and white",
+    "lucky for you i'm a dog lover",
+    "makes terrain with the carve tool",
+    "marry and reproduce",
+    "may be a figment of your imagination",
+    "means you no harm",
+    "might look better without this pulsating text",
+    "needs some shoes, manny",
+    "never pipes curl to bash",
+    "never transcodes lossy to lossy",
+    "no one can win the game but me. that's how the game works",
+    "normal tuesday night for shia labeouf",
+    "nuapurista kuulu se polokan tahti jalakani pohjii kutkutti",
+    "nur noch konkret reden, gib mir ein ja oder nein",
+    "obviously regressed to some quasi-simian creature",
+    "one long staircase just going up",
+    "only 47 bank accounts in my bank account account",
+    "only barely makes sense",
+    "oops, my anarchy symbol",
+    "open your eyes, nicholas",
+    "parle l'anglais plus fort",
+    "party on, dudes",
+    "picture you gettin' down in a picture tube",
+    "pioneers used to ride these babies for miles",
+    "plato, aristotle, socrates? morons",
+    "please exit through the manhole marked EXIT",
+    "please hold your questions until the end",
+    "praise be to zardoz",
+    "prefers drm-free software",
+    "prefers not to be DDoSed",
+    "prefers older movies",
+    "prefers portable zips over installers",
+    "prefers practical special effects",
+    "prefers subs over dubs",
+    "prefers the despecialized editions",
+    "prefers the director's cut",
+    "prefers to install from f-droid",
+    "put on these glasses or start eating that trash can",
+    "read it for yourself in this photostatic copy",
+    "recognizes taiwan's sovereignty",
+    "remembers a sled on the deathbed",
+    "repeatedly showing the killers face isn't news, it's rubbernecking",
+    "ring the 0x07 for concierge service",
+    "runs away in a straight line",
+    "seeks enlightenment and free lodging",
+    "sometimes behaves so strangely",
+    "spent way too much time on these splash texts",
+    "still uses rss",
+    "structurally unsound yeti tote-bag",
+    "take a stress pill and think things over",
+    "take mars, and spell it backwards, drop the s",
+    "takes nothing but pictures",
+    "takes the underpass because it's safer",
+    "that's a good wisdom",
+    "that's a ten",
+    "the blood brought me this far",
+    "the eye is the window of the soul",
+    "the last website you'll ever need",
+    "the menace must remain phantom",
+    "the water is extracted for use in rivers",
+    "the waves part and they engulf me and the water is warm",
+    "they have ordered you to die, gi",
+    "this ain't my first rodéo",
+    "this is the name that you never will guess",
+    "this mission is too important for me to allow you to jeopardize it",
+    "thrives on negative criticism, which is fun to write and to read",
+    "top ten juiced up coaches; top ten juiced up players",
+    "treats the gun as a total weapon",
+    "tries to be grammatically correct",
+    "tries to keep the boom out of frame",
+    "tries very hard to not forget",
+    "truly a feat of last year's engineering",
+    "two black dresses and no black shoes",
+    "unless it's a farm",
+    "US-DFPAD / 393-H-15A",
+    "very large number of nanoseconds",
+    "voice-activated and biodegradable",
+    "was pulled from 100,000 year old antarctic ice",
+    "watches for the plot",
+    "we can't really enforce the curfew as there is no light or sound",
+    "we're not savages, we're english",
+    "what do you burn apart from witches?",
+    "what was done to me was monstrous...",
+    "why build one when you can have two at twice the price?",
+    "will create a gooey interface using visual basic",
+    "will find your ip with tracer-t",
+    "will go to the moon and do the other things",
+    "will never ask you for your password",
+    "will never be very popular",
+    "will never threaten to stab you and, in fact, cannot speak",
+    "will not help you with your printer",
+    "will order you some gâteau aux poivres",
+    "withdraws some parts of physical form from consideration",
+    "without even a last desperate warning",
+    "works in mergers and acquisitions",
+    "would rather be on the moon",
+    "wouldn't copy that floppy",
+    "wouldn't have dropped dr holloway",
+    "yet another tragedy in a long string of misfortunes",
+    "you can drive all across the united states",
+    "you could stop at five or six stores, or just one",
+    "you know, for kids",
+    "you may recall sequential code: that's the code you can read",
+    "you need to vibrate higher",
+    "you'd better go to a seller that sells weaker potions",
+    "you're dereferencing a null pointer",
+    "you've got to press it on you",
+    "yowza, yowza, yowza",
+    "yubby dibby dibby dibby dibby dibby dibby dum",
+    "είναι φτιαγμένος 100% από «εκδρομή»",
+    "Я пришёл дать эту песню",
+    "ギミチョコ!!",
+    "四院点灯！",
+    "萬づ仕舞口が大事と也",
+    "閉",
+    "나는 잊지 못해요 잊을 수가 없어요",
+    "물고기와 개구리와 뱀은 지금 어떻겠느냐?",
+    "뭐든지 예쁜 게 좋아",
+    "장미꽃 밭 숨어들면 나는 빨간색 문어",
+];
+let SPLASH_INDEX = 0;
+const SPLASH_INTERVAL = 8000;
+
+function shuffle_splashes()
+{
+    /*
+    This algorithm does not prevent the last item from the last shuffle from
+    being the first item of the next shuffle, but it'll be okay with the number
+    of items we have.
+    */
+    let index = SPLASHES.length;
+    while (index > 0)
+    {
+        const random_index = Math.floor(Math.random() * index);
+        index -= 1;
+        [SPLASHES[index], SPLASHES[random_index]] = [SPLASHES[random_index], SPLASHES[index]];
+    }
+}
+
+function next_splash_text()
+{
+    const text = SPLASHES[SPLASH_INDEX];
+    SPLASH_INDEX += 1;
+    if (SPLASH_INDEX >= SPLASHES.length)
+    {
+        shuffle_splashes();
+        SPLASH_INDEX = 0;
+    }
+    return text;
+}
+
+const HEADLINE_SPLASH = document.getElementById("headline_splash");
+function fade_out()
+{
+    HEADLINE_SPLASH.classList.add("shrink_out");
+    setTimeout(fade_in, 250);
+}
+function fade_in()
+{
+    HEADLINE_SPLASH.classList.remove("shrink_out");
+    HEADLINE_SPLASH.innerText = next_splash_text();
+    HEADLINE_SPLASH.classList.add("grow_in");
+    setTimeout(fade_end, 250);
+}
+function fade_end()
+{
+    HEADLINE_SPLASH.classList.remove("grow_in");
+    setTimeout(cycle_splash, SPLASH_INTERVAL);
+}
+function cycle_splash()
+{
+    fade_out();
+}
+
+function on_pageload()
+{
+    shuffle_splashes();
+    setTimeout(cycle_splash, SPLASH_INTERVAL);
+}
+document.addEventListener("DOMContentLoaded", on_pageload);
+</script>
 </body>
 </html>

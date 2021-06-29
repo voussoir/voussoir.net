@@ -132,7 +132,7 @@ ol ol, ul ul, ol ul, ul ol
 *:not(pre) > code
 {
     background-color: var(--color_inlinecodebg);
-    border-radius: 3px;
+    border-radius: 4px;
     line-height: 1.5;
     padding-left: 4px;
     padding-right: 4px;
