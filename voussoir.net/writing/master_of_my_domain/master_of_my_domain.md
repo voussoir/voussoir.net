@@ -20,7 +20,8 @@ These properties are what I want from *all* software! The benefits even for non-
 - Easy to find and modify config files by hand -- no hunting for registry keys or configuration paths.
 - Easy uninstallation procedure -- just delete the folder.
 - Easy to run multiple simultaneous instances of the program, even of different versions.
-- Easy to back up with confidence -- just zip the folder. No worries about missing important files anywhere else.
+- Easy to sync with [Syncthing](https://syncthing.net/).
+- Easy to back up and restore -- just zip the folder. No need to worry about important files hiding anywhere else.
 
 There is even a website, [portableapps.com](https://portableapps.com/apps), dedicated to promoting portable software and preparing portable-ized versions of software that isn't normally available as portable. In the second case, however, you rely on portableapps being trustworthy.
 
