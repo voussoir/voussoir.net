@@ -3,6 +3,42 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> That's a result of mindset and approach. Japanese can't focus on 2 or more problems, neither they can assess influence of one issue against another and see an ecosystem.
+
+> > Yeah sort of lacking the concept of hierarchy and/or recursion. "We need Z to do Y to do X" - no no the operand can't be a pointer to executable address. That'll fault.
+
+-
+
+> It shouldn't take horrific accidents for us to suddenly decide to care about structural safety.
+
+> > The problem is the same as it is in IT.
+
+-
+
+> a few years ago at $dayjob we had a fleet of CoreOS hosts.
+
+-
+
+> While the topic is certainly interesting, the way that this article is written feels odd. It reads (to me) like GPT-generated text.
+
+-
+
+> s/for JS/on NPM/
+
+-
+
+> In the case above it wanted me to write out "That fly was sitting on something weird" - but I had written "That fly was sitting on something unusual" which is a perfectly valid interpretation of the sentence, but because they basically did a strcmp() I got it "wrong".
+
+-
+
+> I've written on HN before about relatively simple things I have found useful (keeping a diary in $language, or watching films with $language audio)
+
+-
+
+> Is this why I always get text messages from one of my friends that say \> Liked "{$ENTIRE_CONTENTS_OF_PREVIOUS_MESSAGE}"?
+
+-
+
 > I remember when win2k was "the last good windows" and then windows xp after it. I $CURRENT-2 is always going to be considered "the last good windows".
 
 -
@@ -27,7 +63,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> Is it just me or do “markets” feel like a really dumb AI that is incapable of any sort of strategic planning?
+> Is it just me or do "markets" feel like a really dumb AI that is incapable of any sort of strategic planning?
 
 -
 
@@ -163,7 +199,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 > 1. Introduce $badThing with claims about page load performance.
 
-> 2. tell sites they need to use $badThing to get into the “carousel”
+> 2. tell sites they need to use $badThing to get into the "carousel"
 
 -
 
@@ -183,7 +219,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> I have nothing nice to say about any Google-owned company but is this really all that different from $city’s Best $business or literally any other corporate “award” that’s nothing more than thinly-veiled advertising?
+> I have nothing nice to say about any Google-owned company but is this really all that different from $city's Best $business or literally any other corporate "award" that's nothing more than thinly-veiled advertising?
 
 -
 
@@ -199,7 +235,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> I’ve got the gift of the gab and so I see this differently. If I had no scruples or morals and chose to drive Uber, I could make an obscene hourly wage simply by picking up elderly people and engaging them in conversation. Most phone scams rely upon preying upon vulnerable, lonely people like this so sadly, it’s a public 0 day with no known fix.
+> I've got the gift of the gab and so I see this differently. If I had no scruples or morals and chose to drive Uber, I could make an obscene hourly wage simply by picking up elderly people and engaging them in conversation. Most phone scams rely upon preying upon vulnerable, lonely people like this so sadly, it's a public 0 day with no known fix.
 
 -
 
@@ -231,7 +267,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> As always, “Stop doing $negativebehavior” is less useful than the actual advice:
+> As always, "Stop doing $negativebehavior" is less useful than the actual advice:
 
 -
 
@@ -453,7 +489,7 @@ At one point I got weekly project updates from a team I was working with, and on
 
 -
 
-> Spotify CEO: musicians can no longer release music only “once every 3-4 years” (thefader.com)
+> Spotify CEO: musicians can no longer release music only "once every 3-4 years" (thefader.com)
 
 > > "What's he going to record a song about?"  
 > > "Nothing."  
@@ -478,7 +514,7 @@ At one point I got weekly project updates from a team I was working with, and on
 
 -
 
-> Roman numerals by and large were not used for calculating, but for recording calculations. Those calculations were done (as the very word “calculate” suggests) using pebbles or other tokens, on some kind of counting board.
+> Roman numerals by and large were not used for calculating, but for recording calculations. Those calculations were done (as the very word "calculate" suggests) using pebbles or other tokens, on some kind of counting board.
 
 > The point of Roman numerals is to be as direct as possible a representation of the state of the counting board. They are a serialization format.
 
@@ -704,7 +740,7 @@ At one point I got weekly project updates from a team I was working with, and on
 
 > \> Watkins wanted her pen name to be spelled in lowercase to shift the attention from her identity to her ideas.
 
-> I'm sure what I'm about to say has been discussed before — but wouldn't this accomplish the opposite effect? I feel her “unconventional” name makes me focus more on it, not less (especially when her name is used at the beginning of a sentence, where we are trained to expect a capital letter no matter what). Do other people with lowercase names have similar justifications?
+> I'm sure what I'm about to say has been discussed before — but wouldn't this accomplish the opposite effect? I feel her "unconventional" name makes me focus more on it, not less (especially when her name is used at the beginning of a sentence, where we are trained to expect a capital letter no matter what). Do other people with lowercase names have similar justifications?
 
 > > To me it's a small pattern breaking annoyance, like a linter warning I can't turn off that triggers every time I see it.
 
