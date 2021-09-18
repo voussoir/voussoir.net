@@ -22,7 +22,7 @@ The [stroads](https://www.youtube.com/watch?v=ORzNZUeUHAM&t=13s "The Ugly, Dange
 - [Cyclists are sent down the rain gutters to make space for cars](https://twitter.com/notjustbikes/status/1431260478303518724 "If the bike stencil won't fit, that should tell you something.").
 - [Buses get stuck in the same traffic as everyone else, ensuring they remain useless to all but the carless poor](https://www.youtube.com/watch?v=RQY6WGOoYis&t=1m43s "Do Your Buses Get Stuck in Traffic?").
 
-Because heaven forbid we impose something like a minor pause or slowdown upon the poor motorists inside their cushy, air conditioned, noise-proof boxes, with radio and navigation and heated seats, that require no physical effort to launch at speeds higher than humanity could have dreamed of just two hundred years ago. Don't make them wait at a crossing. Life is already so hard for them.
+Because heaven forbid we impose something like a minor pause or slowdown upon the helpless motorists inside their cushy, air conditioned, noise-proof boxes, with radio and navigation and heated seats, that require no physical effort to launch at speeds higher than humanity could have dreamed of just two hundred years ago. Don't make them wait at a crossing. Life is already so hard for them.
 
 My favorite quote:
 
@@ -42,8 +42,41 @@ We are hellbent on keeping our heads in the sand. We'd rather challenge ourselve
 
 NJB has made me ashamed to be American. I am ashamed that a country with this much flagrant disregard for sense touts itself as the best nation in the world. I am ashamed that the closest we can get to eco-friendliness is to make our cars run on massive batteries and steer themselves, because simply getting out of the car was never considered an option. I am ashamed that these are my surroundings and that I did not wake up from this Matrix sooner.
 
-I can also recommend [City Beautiful](https://www.youtube.com/channel/UCGc8ZVCsrR3dAuhvUbkbToQ/videos). In the meantime, try [breaking traffic waves](https://www.youtube.com/watch?v=iGFqfTCL2fs).
-
 ![](scissorhands.jpg)
 
+I know how easy it is to sit around pointing out problems without providing any solutions. I do it all the time. Here are some specific changes I'd like to see before I lose my mind entirely:
+
+The first thing that needs to change before anything else can happen is our zoning. American cities are designed with huge contiguous swaths of land zoned as residential, especially R1 which denotes single-family housing. This is the zoning that prevents you from walking to the shop because there are no shops. This is the zoning that requires you to exodus by car to do absolutely anything except admire your neighbors' yards. This is the zoning for which every American deserves forty lashes.
+
+With mixed-use zoning we can allow destinations to exist among the living space instead of being wholly separate. We should start with small shops, cafes, and restaurants. The kinds of things that are needed often by the residents and won't draw excessive traffic from far away because the people who live far away have their own. This will give the NIMBYs less room to complain, though they will try anyway.
+
+One of the other big problems with cars, which I don't think NJB has mentioned yet, is that they turn everyone into anonymous metal bubbles. Even without tinted windows, cars provide very little person-to-person visibility, communication, and most importantly, empathy. It is easy to become hateful towards a driver on the road in a way you'd never be towards a person you bumped into on foot, because they are nothing more than a big hotwheel that's sitting in your way.
+
+Tom Scott made a video about [Peachtree City, Georgia](https://www.youtube.com/watch?v=pcVGqtmd2wM).
+
+![](peachtrees.jpg)
+
+They have a network of asphalt paths designed specifically for travel by golf cart, which I think is really cool and sets a good example for the rest of the country to follow. Small vehicles provide an intermediate option between bicycles and 3,000 pound automobiles, ideal for many of the around-town trips we have to make where a bike might not be enough:
+
+- Travelling with a child or multiple children, or a person with limited mobility.
+- Travelling moderate distances in unpleasant weather.
+- Shopping for things that are too big or awkward to carry on a bike.
+- More things that I currently don't know about because I don't ride bikes.
+
+NJB has talked about [microcars](https://www.youtube.com/watch?v=B9ly7JjqEb0 "The Miniature Microcars of Amsterdam"), and while the video is still excellent, these don't strike my fancy the same way the golf carts did. Most of the microcars shown in his video follow too much in the design language of regular cars, with their high pillars and rectangulish porthole windows.
+
+If we were to adopt small vehicles in more areas, I'd like them to remain mostly open-air, or wrapped in clear glass only. Slower modes of travel allow everyone to be closer to each other, and this coupled with high person-to-person visibility will ease traffic interactions and lessen the visceral savage hate that leads to so many of our stupid, pointless crashes. A switch to small vehicles is an opportunity to solve multiple traffic problems at once -- let's not squander it by following the same old metal-bubble design. I don't expect actual golf carts to be what sweeps the nation, I just want small vehicles about that size, plus some comforts like weatherproofing and a sound system.
+
+Finally, we need more public transit and it needs to provide benefits that cars can't. Sometimes I'll pick a destination on Google maps and ask it to route by transit. For destinations that are within "day trip" distance, the results are usually three to five times as long as travel by car, blowing all possibility of making a day trip out of it. I tried sampling a few destinations from here to the other coast and transit never seems to break even, always 1.5× to 2.5× the travel time of the car.
+
+I have very little experience riding transit, so I'm not sure how much timing overhead is to be expected, or if these numbers are Americanly bad. Naturally, some time overhead is worth it in exchange for not having to do the driving, and transit routes can never be as direct as driving there yourself. But I really was expecting the trains to go just a little bit faster to make up for it. Notwithstanding that at these distances you're better off enjoying stops along the way rather than gunning for the finish.
+
+For day-to-day travel it is undeniable that transit is always significantly slower and less practical than driving and only exists for those who have no other options (except, again, in some of the densest urban centers). Transit can reasonably be twice as fuel efficient as individualized automobiles. Improved transit could be a great boon to our society and atmosphere [footnote_link], but only if it provides enough advantages to be desirable to a person who otherwise could drive a car.
+
+I won't detail the need for separated bike lanes and narrower, slower streets because those should be self-evident by now.
+
+I can also recommend [City Beautiful](https://www.youtube.com/channel/UCGc8ZVCsrR3dAuhvUbkbToQ/videos). In the meantime, try [breaking traffic waves](https://www.youtube.com/watch?v=iGFqfTCL2fs).
+
 [footnote_text] I look forward to EVs replacing ICEs, but they are still not as good as just [using fewer cars](https://www.youtube.com/watch?v=OObwqreAJ48&t=6 "You don't need to own a care if you don't drive to work - carsharing").
+
+[footnote_text] That's the place we keep our breathable air.
