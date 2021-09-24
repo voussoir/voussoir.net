@@ -553,6 +553,26 @@ def fix_argument_def_classes(element):
                 element['class'].remove('o')
                 element['class'].append('n')
 
+def fix_decorator_classes(element):
+    '''
+    Given the first element of a decorator expression, this gives the decorator
+    class to all the siblings for the rest of the line, because pygments stops
+    coloring after it finds a dot i.e. [@decorators].my_decorator.
+    '''
+    while True:
+        if get_innertext(element).endswith('\n'):
+            break
+
+        if isinstance(element, bs4.NavigableString):
+            element = element.nextSibling
+            continue
+
+        # print(element, element['class'])
+        if element['class'] == ['n']:
+            element['class'] = ['nd']
+
+        element = element.nextSibling
+
 def fix_repl_classes(element):
     '''
     Given a <pre> element, this function detects that this pre contains a REPL
@@ -583,7 +603,6 @@ def fix_repl_classes(element):
 
         if isinstance(child, bs4.NavigableString):
             continue
-
         if del_styles:
             del child['class']
 
@@ -613,6 +632,9 @@ def fix_classes(soup):
     for element in soup.find_all('span', {'class': 'n'}):
         if get_innertext(element.nextSibling) == '(':
             fix_argument_call_classes(element)
+
+    for element in soup.find_all('span', {'class': 'nd'}):
+        fix_decorator_classes(element)
 
 def fix_reddit_links(soup):
     for a in soup.find_all('a'):
