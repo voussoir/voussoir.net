@@ -498,6 +498,7 @@ def fix_argument_call_classes(element):
     '''
     # print('INPUT', repr(element))
     paren_depth = 0
+    last_known_candidate = None
     while True:
         element = next_element_sibling(element)
         # print(element, paren_depth)
@@ -512,9 +513,10 @@ def fix_argument_call_classes(element):
         if 'n' in element['class']:
             last_known_candidate = element
 
-        if 'o' in element['class'] and innertext == '=':
+        if last_known_candidate and 'o' in element['class'] and innertext == '=':
             last_known_candidate['class'].remove('n')
             last_known_candidate['class'].append('narg')
+            last_known_candidate = None
 
         if paren_depth == 0:
             break
