@@ -198,7 +198,7 @@ https://github.com/richleland/pygments-css
 .highlight .gi { color: var(--color_monokai_green) } /* Generic.Inserted */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #75715e } /* Generic.Subheading */
-.highlight .kc { color: var(--color_monokai_blue) } /* Keyword.Constant */
+.highlight .kc { color: var(--color_monokai_purple) } /* Keyword.Constant */
 .highlight .kd { color: var(--color_monokai_blue) } /* Keyword.Declaration */
 .highlight .kn { color: var(--color_monokai_pink) } /* Keyword.Namespace */
 .highlight .kp { color: var(--color_monokai_blue) } /* Keyword.Pseudo */
