@@ -15,13 +15,13 @@ As a result, a well-behaved portable program will:
 - Not rely on files outside of the program's folder -- the whole thing is self-contained.
 - Not leave much, or anything, behind on the main computer -- usually just some log files in appdata.
 
-These properties are what I want from *all* software! The benefits even for non-portable use are many:
+These properties are what I want from *all* software! The benefits even for non-portable use are many. Portable software makes it easy to:
 
-- Easy to find and modify config files by hand -- no hunting for registry keys or configuration paths.
-- Easy uninstallation procedure -- just delete the folder.
-- Easy to run multiple simultaneous instances of the program, even of different versions.
-- Easy to sync with [Syncthing](https://syncthing.net/).
-- Easy to back up and restore -- just zip the folder. No need to worry about important files hiding anywhere else.
+- find and modify config files by hand -- no hunting for registry keys or configuration paths.
+- uninstall -- just delete the folder.
+- run multiple simultaneous instances of the program, even of different versions or with different configurations.
+- sync with [Syncthing](https://syncthing.net/).
+- back up and restore -- just zip the folder. No need to worry about important files hiding anywhere else.
 
 There is even a website, [portableapps.com](https://portableapps.com/apps), dedicated to promoting portable software and preparing portable-ized versions of software that isn't normally available as portable. In the second case, however, you rely on portableapps being trustworthy.
 
