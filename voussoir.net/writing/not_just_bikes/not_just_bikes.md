@@ -11,7 +11,7 @@ NJB has shown me that American urban and road design took a nosedive into the ab
 
 And the parking lots. The parking lots are enormous because everybody's driving. They're so enormous, they push all the actual destinations farther and farther apart from each other, so that walking becomes even more useless and you have to do even more driving. Then the parking lots get bigger. 
 
-While visiting several small stores for a few items each is no big deal when on foot, nobody likes starting and parking their car all over the asphalt ocean. So, shopping trips are usually single-destination only, preferring the Walmarts and Targets over small, specialized, personalized, and/or informed grocers and boutiques.
+Although it's no big deal to visit several small stores for a few items each when on foot, nobody likes starting their car multiple times to visit stores across an asphalt ocean. So, shopping trips are usually single-destination only, preferring the Walmarts and Targets over small, specialized, personalized, and/or informed grocers and boutiques.
 
 The [stroads](https://www.youtube.com/watch?v=ORzNZUeUHAM&t=13s "The Ugly, Dangerous, and Inefficient Stroads found all over the US & Canada") are wide, straight, and multilaned, so that it's easy for us to go really really fast and [crash into buildings](https://www.youtube.com/watch?v=Ra_0DgnJ1uQ&t=58s "Why Cars Rarely Crash into Buildings in the Netherlands"), because those are our priorities. All other forms of transit infrastructure are designed first and foremost to avoid disrupting the [fragile egos](https://www.youtube.com/watch?v=vMed1qceJ_Q&t=8m33s "I am not a Cyclist") of the motorists:
 
