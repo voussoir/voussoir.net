@@ -154,10 +154,10 @@ class VoussoirInline(mistune.InlineLexer):
     default_rules.insert(0, 'supers_many')
     default_rules.insert(0, 'footnote_link')
     default_rules.insert(0, 'footnote_text')
-    default_rules.insert(0, 'subreddit')
-    default_rules.insert(0, 'redditor')
     default_rules.insert(0, 'dash_spacer')
     default_rules.insert(0, 'youtube_embed')
+    default_rules.append('subreddit')
+    default_rules.append('redditor')
 
     def __init__(self, renderer, **kwargs):
         rules = VoussoirInlineGrammar()
