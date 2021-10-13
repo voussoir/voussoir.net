@@ -29,9 +29,9 @@ Ostensibly, the benefits of installers over portables is they can set file assoc
 
 ## With installers, always choose your directory
 
-Some software isn't available as a portable download, so you've got to suffer through the installer. If it gives you the opportunity to change the install directory, always take that chance. Software installers on Windows have a nasty habit of scattering themselves throughout `C:\Program Files`, `C:\Program Files (x86)`, `C:\ProgramData`, and `%appdata%`. I'm king of this county and I hereby declare that I'm not gonna go on a wild goose chase looking for MY software on MY computer -- they'll go where I tell them to go.
+Some software isn't available as a portable download, so you've got to suffer through the installer. If it gives you the opportunity to change the install directory, always take that chance. Software installers on Windows have a nasty habit of scattering themselves throughout `C:\Program Files`, `C:\Program Files (x86)`, `C:\ProgramData`, and `%appdata%`. I'm king of this county and I hereby declare that I'm not gonna go on a wild goose chase looking for **my** software on **my** computer -- they'll go where I tell them to go.
 
-If I have to install a program from an installer, I'll usually try to zip up the resulting folder and keep that as my own portable copy for later. A lot of installers are nothing more than extractors, so as long as the program doesn't rely on some system changes during install, keeping the portable copy works fine (besides, system changes are often anti-user anyway). And I really don't need an installer acting as a glorified file extractor, I can do that myself from a zip.
+If I have to install a program from an installer, I'll usually try to zip up the resulting folder and keep that as my own portable copy for later. A lot of installers are nothing more than extractors, so as long as the program doesn't rely on some system changes during install, keeping the portable copy works fine (besides, system changes are often anti-user anyway). And I really don't need an installer acting as a glorified file extractor, I can do that myself from a zip. Unfortunately, some software doesn't work after re-extracting it, and I do have to keep the installer.
 
 Some software authors take this [Lèse-majesté](https://en.wikipedia.org/wiki/L%C3%A8se-majest%C3%A9) a step further by not even offering a chance to change the install directory. There is no justifiable reason for this. I operate on a two or three strikes policy depending on how important the software is: I expect simply moving the installed folder, possibly leaving a junction in its place, to work properly. But now that the program is on my bad side it takes a lot less for me to uninstall.
 
@@ -95,7 +95,7 @@ D:\git\cmd
 D:\git\cmd\PGUI
 ```
 
-Two folders for system executables, and three folders owned by ME, because this is a monarchy and I'll appoint whoever I want. No application, under any circumstance, gets to put its own install directory on the PATH. If I need global commandline access to that program, I'll put an .lnk or symlink in \cmd.
+Two folders for system executables, and three folders owned by **me**, because this is a monarchy and I'll appoint whoever I want. No application, under any circumstance, gets to put its own install directory on the PATH. If I need global commandline access to that program, I'll put an .lnk or symlink in \cmd.
 
 At one point, I had some issues with programs that I wanted to subprocess from Python. `subprocess.run(shutil.which('ffmpeg'))` was breaking because `subprocess.run` wants to receive executable files and of course the only thing on my path was an .lnk. So, I wrote [winwhich.py](https://github.com/voussoir/voussoirkit/blob/master/voussoirkit/winwhich.py) and now that problem is solved. The software bends to my will, not the other way around.
 
@@ -116,7 +116,7 @@ Now you are closer to portable enlightenment and can zip up the program folder w
 
 Although I run regular backups, I don't include my whole Software folder in the backup routine because I already keep all the portable zips and installers backed up separately. The only items of value in the install directory are config files, most of which are not highly personalized and I don't mind losing either.
 
-But, there are a few programs which I've heavily configured and I'd hate to start from scratch with them. Sublime, Putty, and WinSCP for example. For those I wrote a script [backup_folder.py](https://github.com/voussoir/cmd/blob/master/backup_folder.py) which uses [rarpar.py](https://github.com/voussoir/cmd/blob/master/rarpar.py) to create highly compressed archives with a datestamp in the filename. Because the `__latest` files will be included in duplicate, you might think it'd waste a lot of space, but with a Solid archive and a very high dictionary size, that duplication causes no extra disk usage.
+But, there are a few programs which I've heavily configured and I'd hate to start from scratch with them. Sublime, Putty, and WinSCP for example. For those I wrote a wrapper around WinRAR, [rarpar.py](https://github.com/voussoir/cmd/blob/master/rarpar.py), which I use to create highly compressed archives with a datestamp in the filename. Because the `__latest` files will be included in duplicate, you might think it'd waste a lot of space, but with a Solid archive and a very high dictionary size, that duplication causes no extra disk usage.
 
 ## Dealing with uncooperative software
 
