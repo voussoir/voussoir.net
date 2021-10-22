@@ -1,3 +1,5 @@
+[tag:electronics]
+
 Assembling the Nearer keyboard
 ==============================
 
