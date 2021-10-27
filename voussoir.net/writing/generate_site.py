@@ -13,7 +13,6 @@ from voussoirkit import spinal
 from voussoirkit import winwhich
 
 P = etiquette.photodb.PhotoDB(ephemeral=True)
-P.log.setLevel(100)
 
 WRITING_ROOTDIR = pathclass.Path(__file__).parent
 
