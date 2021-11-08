@@ -3,6 +3,118 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> If I have some solution that can solve some major $PROBLEM, but a side effect of that solution is that some small group of people "get paid to do nothing", I'm completely OK with that.
+
+-
+
+> Nginx is making the same mistakes that dethroned Apache. No one wants to fiddle with a web server. Default to $currentIndustryStandard, make it work, forward to my application.
+
+-
+
+> Messaging apps are more like postal services — "please deliver this message to $person" — you're describing driving across town to drop something in a mailbox directly.
+
+-
+
+> I suspect that you don't work at $BIG_CO and rather something more startup-y?
+
+-
+
+> \> Whales have the capability to far outstrip humans in intelligence (if you accept that neuron count and neuron connections are the raw inputs).
+
+> Understood normally, the raw input also includes the software installed in the whale's brain. This limits the potential capability of whales.
+
+> If you were to overwrite that with software of your own design, you'd have a robot in the body of a whale, but not an actual whale.
+
+-
+
+> Using it everyday too at $work, also used Slack and Gitter (and FreeNode/IRC FWIW).
+
+-
+
+> Literally everything you wrote applies exactly the same if you s/E.164 number/email address/g and s/SMS/email/g
+
+-
+
+> That's not really fair. You can want to have an "open enough" collaborative community without a trillion dollar company ($cloud_provider) steamrolling you and your work.
+
+-
+
+> I was having to compete with professional spammers\^H\^H\^H marketers for my friend's attention. It's gross.
+
+-
+
+> We use that gateway email address with our notification alert system at $WORK.
+
+-
+
+> Also, the page you were actually looking for is probably https://...
+
+> > I appreciate that you might think that, and thank you, but I was only interested in the 404 page.
+
+> > > ML fails again. They need better training data
+
+-
+
+> If you had to hazard a guess, what $EnterpriseVideoconferencingSuite would be most amenable to this sort of work?
+
+-
+
+> \> Which is of course a fairly hard problem to solve - if you aren't having 2.2 children per couple then your population is shrinking.
+
+> You can increase throughput with parallelization or speedups of single threaded performance.
+
+-
+
+> \> Anyone who really wants to stop a gaming addiction can stop it - it is only a question of will.
+
+> | sed "s/gaming/drug/"
+
+-
+
+> Continuing to support $x means continuing to defend attack surface that's implemented as $y year-old code, to deliver a feature that in $z the majority of people do not use
+
+-
+
+> Back when I worked at $HEALTHCARE_INUSRANCE_CO we were trying to solve this (more general problem) from the other side.
+
+-
+
+> s/make it impossible/make it prohibitively expensive/
+
+-
+
+> An interesting, short read is the difference between Emergency Use Authorization (EUA) and the full FDA approval.
+
+> Basically it is manufacturing, funding and red tape being the difference, nothing about safety or clinical trials differs.
+
+> In software terms, EUA is parallel tracked sprints for clinical trials and manufacturing at same time vs. regular approval is Waterfall where manufacturing occurs after approval.
+
+-
+
+> s/Carlie/Charlie/, I assume?
+
+-
+
+> If a NN is equivalent to $sophisticated_algorithm, that's a positive, not a negative.
+
+-
+
+> In general he thinks a lot about tool kits and I think what we're seeing here is the math equivalent to being great at debugging.
+
+-
+
+> Yep. I have a buddy who works at $BIG_US_RETAILER and he weekly has to go into the stock room with a box cutter and scissors to destroy unsold clothing.
+
+-
+
+> Also, at $WORK we have three separate but related products, each with separate version numbers that we jumped at some point to reach the same value across all 3.
+
+-
+
+> Ask HN: Which "old" programming language(s) you still use in your $DAYJOB?
+
+-
+
 > That's a result of mindset and approach. Japanese can't focus on 2 or more problems, neither they can assess influence of one issue against another and see an ecosystem.
 
 > > Yeah sort of lacking the concept of hierarchy and/or recursion. "We need Z to do Y to do X" - no no the operand can't be a pointer to executable address. That'll fault.
