@@ -13,16 +13,6 @@ Assembling the Nearer keyboard
 
 [![](thumbs/glamour_4.jpg)](glamour_4.jpg)
 
-[![](thumbs/glamour_5.jpg)](glamour_5.jpg)
-
-[![](thumbs/glamour_6.jpg)](glamour_6.jpg)
-
-[![](thumbs/glamour_7.jpg)](glamour_7.jpg)
-
-[![](thumbs/glamour_8.jpg)](glamour_8.jpg)
-
-[![](thumbs/glamour_9.jpg)](glamour_9.jpg)
-
 [youtube:481tMDoXg5c]
 
 ## Introduction
