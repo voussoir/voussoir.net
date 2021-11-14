@@ -129,7 +129,7 @@ class VoussoirInlineGrammar(mistune.InlineGrammar):
     footnote_link = re.compile(r'\[footnote_link\]')
     footnote_text = re.compile(r'\[footnote_text\]')
     subreddit = re.compile(r'\/r\/[A-Za-z0-9_]+')
-    redditor = re.compile(r'\/u\/[A-Za-z0-9_]+')
+    redditor = re.compile(r'\/u\/[A-Za-z0-9_\-]+')
     youtube_embed = re.compile(r'\[youtube:([A-Za-z0-9_\-]{11})\]')
     dash_spacer = re.compile(r'^\s*-$', re.MULTILINE)
     # This `text` override is based on this article:
@@ -146,6 +146,7 @@ class VoussoirInlineGrammar(mistune.InlineGrammar):
 
 class VoussoirInline(mistune.InlineLexer):
     default_rules = copy.copy(mistune.InlineLexer.default_rules)
+    default_rules.remove('text')
     default_rules.insert(0, 'mdash')
     default_rules.insert(0, 'larr')
     default_rules.insert(0, 'rarr')
@@ -158,6 +159,7 @@ class VoussoirInline(mistune.InlineLexer):
     default_rules.insert(0, 'youtube_embed')
     default_rules.append('subreddit')
     default_rules.append('redditor')
+    default_rules.append('text')
 
     def __init__(self, renderer, **kwargs):
         rules = VoussoirInlineGrammar()
