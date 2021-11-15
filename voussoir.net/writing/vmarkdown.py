@@ -755,6 +755,8 @@ def markdown_flask(core_filename, port, *args, **kwargs):
             mime = mimetypes.guess_type(path.absolute_path)[0]
             if mime:
                 response.headers['Content-Type'] = mime
+            else:
+                response.headers['Content-Type'] = None
 
             return response
 
