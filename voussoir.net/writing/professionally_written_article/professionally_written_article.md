@@ -3,14 +3,13 @@
 A professionally written article
 ================================
 
-
 By voussoir | April 24 2021 some time in the afternoon | 538 words | 505 spaces | 70 punctuation | 8 legs | 10 minute read for slow readers | 5 minute read for fast readers | 1 minute read for really fast readers | 0 minute read for readers who skip straight to the comments
 
 Share this article on [Facebook](#), [Twitter](#), [Reddit](#), [Hacker News](#), [TikTok](#), [Tumblr](#), [Vine](#), [Instagram](#), [Email](#), [Medium](#), [GitHub](#), [The Pirate Bay](#), [Steam Community](#), [Bodybuilding.com](#), [4chan](#), [Text message](#), [OpenStreetMap](#), [Thesaurus.com](#), [StackExchange](#), [YouTube](#), [Facebook](#), [Facebook](#), [Facebook](#), [Please I'm begging you to share it on Facebook](#)
 
 ---
 
-"<span class="dropcap" style="font-size: 14em">W</span>hat America needs today," said America's prime minister Mr. Minister McMinisterface, "is more professionally written articles," he continued, in an interview last Thursday. "The kind with great," he went on, "big pull quotes and," he shared exclusively with a voussoir.net journalist who was also there on Thursday, "enough share buttons," he uttered with much conviction, "for our childrens'" he almost concluded on Thursday, "children", he concluded, overwhelmed with emotion.
+"<span class="dropcap" style="font-size: 14em">W</span>hat America needs today," said America's prime minister Mr. Minister McMinisterface," is more professionally written articles," he continued, in an interview last Thursday. "The kind with great," he went on, "big pull quotes and," he shared exclusively with a voussoir.net journalist who was also there on Thursday, "enough share buttons," he uttered with much conviction, "for our childrens'" he almost concluded on Thursday, "children", he concluded, overwhelmed with emotion.
 
 - [How to finish an article instead of getting distracted after the first paragraph](#)
 - [Scientists warn sun moving closer to Earth, clock ticking to get beach bod in shape](#)
