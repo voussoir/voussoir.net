@@ -713,7 +713,7 @@ def markdown_flask(core_filename, port, *args, **kwargs):
     site = flask.Flask(__name__)
     image_cache = {}
     kwargs['image_cache'] = image_cache
-    core_filename = pathclass.Path(core_filename, force_sep='/')
+    core_filename = pathclass.Path(core_filename)
     if core_filename.is_dir:
         cwd = core_filename
     else:

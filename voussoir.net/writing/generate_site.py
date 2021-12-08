@@ -155,8 +155,8 @@ def soup_adjust_relative_links(soup, md_file, repo_path):
     /writing/screenshot.png which doesn't exist. So this function turns all
     relative links into absolute links starting from /writing.
     '''
-    folder = pathclass.Path(md_file.parent, force_sep='/')
-    writing_rootdir = pathclass.Path(WRITING_ROOTDIR, force_sep='/')
+    folder = pathclass.Path(md_file.parent)
+    writing_rootdir = pathclass.Path(WRITING_ROOTDIR)
     def fixby(tagname, attribute):
         links = soup.find_all(tagname)
         for link in links:
@@ -168,7 +168,7 @@ def soup_adjust_relative_links(soup, md_file, repo_path):
             if href.startswith('#'):
                 continue
             href = folder.join(href)
-            href = '/' + href.relative_to(writing_rootdir.parent, simple=True)
+            href = '/' + href.relative_to(writing_rootdir.parent, simple=True).replace('\\', '/')
             if not href.startswith('/writing/'):
                 raise ValueError('Somethings wrong with', href)
             link[attribute] = href
@@ -184,12 +184,12 @@ class Article:
     def __init__(self, md_file):
         self.md_file = pathclass.Path(md_file)
         self.html_file = self.md_file.replace_extension('html')
-        self.web_path = self.md_file.parent.relative_to(WRITING_ROOTDIR, simple=True)
+        self.web_path = self.md_file.parent.relative_to(WRITING_ROOTDIR, simple=True).replace('\\', '/')
         self.date = git_file_published_date(self.md_file)
         self.edited = git_file_edited_date(self.md_file)
 
         repo_path = git_repo_for_file(self.md_file)
-        relative_path = self.md_file.relative_to(repo_path, simple=True)
+        relative_path = self.md_file.relative_to(repo_path, simple=True).replace('\\', '/')
         github_history = f'https://github.com/voussoir/voussoir.net/commits/master/{relative_path}'
 
         commits = git_file_commit_history(self.md_file)
