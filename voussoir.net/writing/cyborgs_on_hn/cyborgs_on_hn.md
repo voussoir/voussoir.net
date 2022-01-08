@@ -3,6 +3,66 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> English is the javascript of languages: full of warts and enforcing a status quo that sucks but everyone has to learn it because this is the world we live in.
+
+> Esperanto would be like Haskell: beautifully pure and regular but no one uses it except for a passionate community of die-hard zealots.
+
+> Romance languages would be like scripting languages (Python, Ruby, lua, etc.): once you know one the others get really easy.
+
+> Greek would be like Lisp: had a lot of influence on current languages, dwindled a bit, but is still around.
+
+> Biology is what happens when you try to decompile code written in assembler into OO language.
+
+-
+
+> True statement. I lost a finger tip in a mandolin making potatoes lyonnaise. It mostly grew back. However, it has never felt the same. It's like the nerve endings in the finger tip throw unhandled exceptions.
+
+-
+
+> A lot of therapists have a two year degree.
+
+> > What's your point?
+
+> > > It's important to be careful about to whom you grant root access to your mind.
+
+-
+
+> For desktops HTTP2 is mostly ok, possibly an improvement. For Mobile it wasn't. I raised this when we were trailing in at $financial_media_company.
+
+-
+
+> Normally I have to rely on reddit posts or random blogs that I find with search terms like "$gameType game with no P2P/P2W" or "$gameType game with no IAP" but even that's not perfect.
+
+-
+
+> Sounds like Tamlin's 'assistant, a lawyer' is an id\^H\^H\^H\^H hasn't spent much time in the bush.
+
+-
+
+> Reads like it was written by GPT-3.
+
+-
+
+> At my $OLDJOB, I used ImageMagick to compare snapshots during some automated front-end testing on our public Drupal site.
+
+-
+
+> I'm perfectly happy to use my brain as an index instead of a data warehouse. As in, I don't bother committing to memory things that I can reach out and grab if they fall out of my "cache".
+
+> > The problem for me now is my mental index can suffer from link rot.
+
+-
+
+> s/Browser/Chrome/, please.
+
+-
+
+> Spaces in filenames were a mistake to begin with.
+
+> Spaces are used to separate parameters in the command line. There's also no real need for filenames to support spaces.
+
+-
+
 > If I have some solution that can solve some major $PROBLEM, but a side effect of that solution is that some small group of people "get paid to do nothing", I'm completely OK with that.
 
 -
