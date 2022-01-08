@@ -1,4 +1,4 @@
-[tag:languagelearning]
+[tag:languagelearning] [tag:life]
 
 Are children better at learning languages?
 ==========================================

@@ -1,3 +1,5 @@
+[tag:life]
+
 Not Just Bikes
 ==============
 

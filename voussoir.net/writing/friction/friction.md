@@ -1,4 +1,4 @@
-[tag:introspection]
+[tag:life] [tag:introspection]
 
 Friction
 ========

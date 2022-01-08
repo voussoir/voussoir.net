@@ -1,3 +1,5 @@
+[tag:life]
+
 Complicated topics: Insurance
 =============================
 
