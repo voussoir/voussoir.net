@@ -57,6 +57,11 @@ code { font-family: monospace; }
     padding-right: 4px;
 }
 
+.hidden
+{
+    display: none !important;
+}
+
 #headline
 {
     height: 250px;
@@ -91,6 +96,28 @@ code { font-family: monospace; }
     animation-iteration-count: infinite;
     /* Helps prevent line wrap changing height on narrow screens */
     height: 2em;
+}
+
+#fullscreen_button_holder
+{
+    height: 16px;
+    text-align: end;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#headline_fullscreen_button
+{
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: none;
+}
+#headline:hover #headline_fullscreen_button
+{
+    display: initial;
 }
 
 @keyframes splash_pulsate
@@ -272,7 +299,10 @@ code { font-family: monospace; }
             <h1 id="headline_l1">voussoir.net</h1>
         </div>
         <div class="tilt_holder width_limited">
-            <div id="headline_splash">mostly new and partially improved</div>
+            <div id="headline_splash"><noscript>somewhat new and hardly improved</noscript></div>
+        </div>
+        <div id="fullscreen_button_holder">
+            <button id="headline_fullscreen_button" onclick="return fullscreen_toggle();">⛶</button>
         </div>
     </section>
 
@@ -502,171 +532,212 @@ code { font-family: monospace; }
 
 <script type="text/javascript">
 const SPLASHES = [
-    "a boat-stopping device of some kind",
-    "a little carbonation and i'll see you next time",
-    "a matrimonial warning not worth ignoring",
-    "a perfect translation does not exist",
-    "abduct me, vegans",
-    "activated my trap card",
-    "all that was lost is revealed",
-    "all work and no play makes jack a dull boy",
-    "always lays down plastic first",
+    // This is what employers mean when they ask to see your references.
+    // Some of these might be generic or derivative phrases, but I will tell
+    // you where I first heard them or what I otherwise associate them with.
+    // Warning: install an adblocker before visiting knowyourmeme cause it's
+    // pretty jank nowadays.
+    "... johnson?", // The Big Lebowski (1998) https://youtu.be/xs3OWJ53rHE
+    "[object object]",
+    "a boat-stopping device of some kind", // Clarke and Dawe, Very Similar Buzzers (2011) https://youtu.be/qxoO3NR4ol4
+    "a bubbly, thick, stagnant sound", // Naked Lunch (1991)
+    "a faintly glimmering radio station", // Cake, Frank Sinatra (1996) https://youtu.be/GVpb4U08ksA
+    "a little carbonation and i'll see you next time", // Hot Dr Pepper https://youtu.be/bIRnM6s4GNo
+    "a matrimonial warning not worth ignoring", // Tim Minchin, Storm (2009) https://youtu.be/HhGuXCuDb1U
+    "a negative times a negative equals a positive", // Stand and Deliver (1988) https://youtu.be/2k_jS1zVLWw
+    "a perfect translation does not exist", // Tobuscus, DRAMATIC SONG (2012) https://youtu.be/WteF0j5gYGk
+    "a rare tree, a rattlin' tree", // The Irish Descendants https://youtu.be/WxgmAwoqr4E I discovered via https://youtu.be/qN3FIPzSfko
+    "abduct me, vegans", // Contact (1997) https://youtu.be/rYzc_H9cgqM?t=2m33s
+    "activated my trap card", // https://en.wikipedia.org/wiki/Yu-Gi-Oh!
+    "all of which are american dreams", // Rage Against the Machine, Know Your Enemy https://youtu.be/JukTvlrh-Wk
+    "all that was lost is revealed", // Over the Garden Wall (2014) https://youtu.be/WJeeA_O88Zw
+    "all work and no play makes jack a dull boy", // The Shining (1980) https://youtu.be/jeOevu4zC5o
+    "always lays down plastic first", // Vague reference to 친절한 금자씨 / Sympathy for Lady Vengeance (2005)
     "always locks the front door",
     "always looks both ways",
-    "always takes the third part last",
-    "and as always, thanks for watching",
-    "answers to the name bruce",
+    "always takes the third part last", // Quiz Show (1994)
+    "always waters the dog and feeds the plants",
+    "an unidentified frequency has been existing in the system", // Foremost Poets, Moonraker
+    "and as always, thanks for watching", // Vsauce, e.g. https://youtu.be/fCn8zs912OE&t=20m04s
+    "answers to the name bruce", // Κυνόδοντας / Dogtooth (2009)
     "anyway, i love you",
-    "are you listening with all your heart and soul?",
-    "banana slips on man",
-    "barfed all over the benevolent order of antelopes",
-    "be a winner",
-    "be excellent to each other",
-    "be specific, bob",
-    "beacuase the voices where pretty good",
-    "bond with me, jimmy",
-    "brittle as an aged human being",
-    "but first you gotta tell me what it is you're hungry for",
-    "by night one way, by day another",
+    "are you listening with all your heart and soul?", // Star Time (1992)
+    "around the world around the world around the world", // Daft Punk, Around the World (2007)
+    "array(16).join('wat' - 1) + ' batman!'", // Gary Bernhardt, Wat https://www.destroyallsoftware.com/talks/wat
+    "aziz, light!", // The Fifth Element (1997) https://youtu.be/CnvBpLWTQig
+    "banana slips on man", // Banana slips on man https://youtu.be/aKn0HddzuWM
+    "barfed all over the benevolent order of antelopes", // Stand By Me (1986)
+    "be a winner", // Star Time (1992)
+    "be excellent to each other", // Bill & Ted's Excellent Adventure (1989)
+    "be specific, bob", // The Incredibles (2004)
+    "beacuase the voices where pretty good", // Dot Dot Dot https://youtu.be/4Z2Z23SAFVA
+    "bond with me, jimmy", // Jimmy Neutron Happy Family Happy Hour https://youtu.be/LB871SVYMhI
+    "brittle as an aged human being", // King Gizzard and the Lizard Wizard, Crumbling Castle https://youtu.be/qZwr511qGoY
+    "buddy, you don't look hip", // Taxi Driver (1976)
+    "built a tower of stone with our flesh and bone", // Rainbow, Stargazer (1976)
+    "but stop noddin' your head unless you really agree", // Flobots, Free-Written (2001)
+    "by night one way, by day another", // Shrek (2001)
     "can be measured in kilobytes",
     "can be read while underwater",
     "can be spotted only from a distance",
     "can be viewed upside-down",
     "can complain about almost anything",
-    "can i ask you kind of a weird question?",
+    "can i ask you kind of a weird question?", // You could stop at five or six stores https://youtu.be/YCeQLeQiRP4
     "can point to the usa on a map",
-    "can we have your liver then?",
-    "can't believe you've done this",
-    "cast vicariously as both victim and villain",
-    "chesthair upholstery and a beard in the glovebox",
-    "collapsation of that sensation of the mirror of the memories",
-    "conductor we have a problem",
-    "considers the lobster",
-    "consists of macroblocks and motion vectors",
-    "contributes to openstreetmap",
-    "cool guy has a chill day",
-    "could have sworn it was a lovers' quarrel",
-    "dehumanize yourself and face to bloodshed",
-    "developers developers developers developers",
-    "did i mention the drive-thru?",
-    "do i get my four years back?",
-    "do i look like i know what a jpeg is?",
-    "do they still shoot tourists in florida?",
-    "do you identify this word: sanctuary?",
-    "doesn't afraid of anything",
+    "can we have your liver then?", // Monty Python, The Galaxy Song https://youtu.be/JWVshkVF0SY
+    "can't believe you've done this", // I Can't Believe You've Done This https://youtu.be/wKbU8B-QVZk
+    "can't really enforce the curfew as there is no light or sound", // The Lonely Island https://youtu.be/4TICjEsvC8o
+    "cast vicariously as both victim and villain", // V for Vendetta (2005) https://youtu.be/wKn1R6fekk4
+    "chesthair upholstery and a beard in the glovebox", // Ferd Fteenthousand https://youtu.be/F8P5vGcf-NU
+    "collapsation of that sensation of the mirror of the memories", // Reggie Watts, TED 2012 https://youtu.be/BdHK_r9RXTc
+    "conductor we have a problem", // CONDUCTOR WE HAVE A PROBLEM https://youtu.be/mko5Y8QUEjI
+    "considers the lobster", // David Foster Wallace, Consider the Lobster (2004) http://www.columbia.edu/~col8/lobsterarticle.pdf
+    "consists of macroblocks and motion vectors", // H.264 etc.
+    "contributes to openstreetmap", // https://openstreetmap.org
+    "cool guy has a chill day", // Cool Guy has a Chill Day https://youtu.be/4txVqr1eNwc
+    "could have sworn it was a lovers' quarrel", // The Whitest Kids U'Know, Happier and With Your Mouth More Open https://youtu.be/ABxH-NTF0SM R.I.P. Trevor
+    "d a b f# g d g a", // RobPRocks, Pachelbel Rant https://youtu.be/JdxkVQy7QLM
+    "dehumanize yourself and face to bloodshed", // https://knowyourmeme.com/memes/dehumanize-yourself-and-face-to-bloodshed
+    "developers developers developers developers", // Steve Ballmer https://youtu.be/Vhh_GeBPOhs
+    "did i mention the drive-thru?", // Weird Al Yankovic, Trapped in the Drive-Thru https://youtu.be/SHnTocdD7sk
+    "do i get my four years back?", // Logan's Run (1976)
+    "do i look like i know what a jpeg is?", // King of the Hill https://youtu.be/QEzhxP-pdos
+    "do it for the love and release it commercially", // edIT, Artsy Remix (2007)
+    "do they still shoot tourists in florida?", // Bruiser, Do you do poison? https://youtu.be/EEyUeCyXl1Q
+    "do you identify this word: sanctuary?", // Logan's Run (1976)
+    "doesn't afraid of anything", // https://knowyourmeme.com/memes/pretty-cool-guy
     "doesn't always write docstrings",
-    "doesn't like being in the chokey",
+    "doesn't like being in the chokey", // Matilda (1996)
     "doesn't live in the basement",
     "doesn't need a cookie banner",
-    "doesn't really wanna do the work today",
-    "doesn't smoke beer",
-    "doesn't start the story with sirens blaring",
+    "doesn't really wanna do the work today", // Firebringer (2016) https://youtu.be/B2EI65ZEqYQ
+    "doesn't smoke beer", // LA Turtle, hops https://youtu.be/_AT64AaB0aA
+    "doesn't start the story with sirens blaring", // Charlie Brooker's Newswipe 25/03/09 https://youtu.be/PezlFNTGWv4
     "doesn't watch sports",
     "doesn't wear cargo shorts",
-    "don't bernie me",
-    "don't push, the train is moving forward",
-    "don't you want to become a cult leader?",
-    "doth protest too much, methinks",
-    "double-wrapped, vacuum-packed",
-    "en ai marre d'en avoir marre, aussi",
-    "endorses sponsorblock",
-    "endorses ublock origin",
+    "don't be evil", // Since Google is done with this motto I guess I'll use it for a while
+    "don't bernie me", // The Incredibles (2004)
+    "don't even think about going out, coraline jones!", // Coraline (2009)
+    "don't push, the train is moving forward", // Proud https://youtu.be/CbAat-Zixw4
+    "don't you want to become a cult leader?", // Mind Control Made Easy https://youtu.be/C3wTtmrFQxI
+    "dormammu, i've come to bargain", // Doctor Strange (2016)
+    "doth protest too much, methinks", // Hamlet
+    "double-wrapped, vacuum-packed", // George Carlin, Modern Man https://youtu.be/hkCR-w3AYOE
+    "drive stick with that kung fu grip", // Bloodhound Gang, Uhn-Tiss Uhn-Tiss Uhn-Tiss (2005)
+    "en ai marre d'en avoir marre, aussi", // Alizée, J'en Ai Marre https://youtu.be/iCz8R25hlFI
+    "endorses sponsorblock", // https://sponsor.ajay.app/
+    "endorses ublock origin", // https://github.com/gorhill/uBlock
     "enjoys collecting unspent ordnance",
-    "est arrivé près de chez vous",
-    "even ezekial thinks that my mind is gone",
-    "evi: 11.1.89 22:30h",
+    "est arrivé près de chez vous", // C'est arrivé près de chez vous / Man Bites Dog (1992)
+    "even ezekial thinks that my mind is gone", // Weird Al Yankovic, Amish Paradise https://youtu.be/lOfZLb33uCg
+    "evi: 11.1.89 22:30h", // Der siebente Kontinent / The Seventh Continent (1989)
     "exists in three dimensions",
-    "exploiting every loophole, dodging every obstacle",
-    "guided towards a more fantastic species of research",
-    "han shot first",
-    "has a tendency to misinterpret subtle social confrontations",
+    "exploiting every loophole, dodging every obstacle", // The Incredibles (2004)
+    "fuel burning fast on an empty tank", // Cake, The Distance (1996) https://youtu.be/F_HoMkkRHv8
+    "fungal rot, bacterial formation", // Weird Al Yankovic, Foil (2014) https://youtu.be/urglg3WimHA
+    "gets a heck of a lot of parcels delivered to the 8-bit guy", // Techmoan won't leave the 8-Bit Guy alone https://youtu.be/cIXOH1tJJu4
+    "gonna revise your levis with physical harm", // The Lonely Island, Punch You in the Jeans (2009)
+    "guided towards a more fantastic species of research", // Crimes of the Future (1970)
+    "han shot first", // Star Wars (1977)
+    "has a tendency to misinterpret subtle social confrontations", // Crimes of the Future (1970)
     "has been modified from its original version to fit your screen",
     "has never pulled the fire alarm",
-    "has not received any subpoenas",
-    "has that combination on my luggage",
-    "have you got anything that affects faces?",
-    "hello below there",
-    "hides intervals behind the medicine cabinet",
-    "holster it in the tilde fashion for your protection",
-    "i bind you nancy from doing harm",
-    "i embrace my weaknesses and call them uniquenesses",
-    "i need some shoes, manny",
-    "i suppose there's time for dessert",
-    "i thought you said weast",
-    "i'm afraid my beard has spoken. we have no choice",
-    "i'm not afraid to get sand on my tuxedo",
-    "if dreams can't come true, then why not pretend?",
+    "has not received any subpoenas", // https://en.wikipedia.org/wiki/Warrant_canary
+    "has that combination on my luggage", // Spaceballs (1987) https://youtu.be/a6iW-8xPw3k
+    "have you got anything that affects faces?", // Bruiser, Do you do poison? https://youtu.be/EEyUeCyXl1Q
+    "hello below there", // The Signalman (1976)
+    "here is a tune that is different", // Cake, Thrills https://youtu.be/MizOftmSc7k
+    "hides intervals behind the medicine cabinet", //Equilibrium (2002)
+    "holster it in the tilde fashion for your protection", // Receiver https://en.wikipedia.org/wiki/Receiver_(video_game)
+    "i bind you nancy from doing harm", // The Craft (1996) https://youtu.be/sHFXRjwKOG8
+    "i embrace my weaknesses and call them uniquenesses", // Rhett & Link, Epic Rap Battle https://youtu.be/7ov1DDjHt8c
+    "i need some shoes, manny", // Runaway Train (1985)
+    "i suppose there's time for dessert", // The Emperor's New Groove (2000)
+    "i thought you said weast", // SpongeBob S01E34 Arrgh! (2000)
+    "i'd buy that for a dollar", // RoboCop (1984)
+    "i'm afraid my beard has spoken. we have no choice", // Ross's Game Dungeon, Revenant https://youtu.be/sxESGanJxhM?t=6m25s
+    "i'm as mad as hell and i'm not going to take this anymore", // Network (1976) https://youtu.be/ZwMVMbmQBug
+    "i'm not afraid to get sand on my tuxedo", // Are You That Woman? https://youtu.be/DwgiE5tX1BM
+    "i'm sorry i'm thinking about cats again", // Schmoyoho, Can't hug every cat https://youtu.be/sP4NMoJcFd4
+    "i.e. e.g., etc. et al.",
+    "if dreams can't come true, then why not pretend?", // Over the Garden Wall (2014) https://youtu.be/WJeeA_O88Zw
     "if you don't watch yourself, who will?",
     "is a little overbearing",
-    "is a little too new wave for my taste",
-    "is a philosophical statement and would take about ten minutes to read",
+    "is a little too new wave for my taste", // American Psycho (2000) https://youtu.be/vzN3qO-qc8U
+    "is a philosophical statement and would take about ten minutes to read", // Fred Rogers, 1969 https://youtu.be/fKy7ljRr0AA
     "is all bark and no bite",
-    "is all out of bubble gum",
-    "is allegedly waiting in dark space",
-    "is always faster than reloading",
-    "is an awkward thing to kill",
-    "is attuned to the passage of time",
+    "is all out of bubble gum", // They Live (1988)
+    "is allegedly waiting in dark space", // Mass Effect, Ah Yes, Reapers https://youtu.be/Z7Oc-pstqpc
+    "is always faster than reloading", // Call of Duty, "Switching to your pistol is always faster than reloading"
+    "is an awkward thing to kill", // You're Human Like the Rest of Them (1967)
+    "is attuned to the passage of time", // Learn to speak body tape 5 https://youtu.be/x9YTxff3pHU
     "is available only in english",
     "is culturally relevant",
     "is currently not down for maintenance",
-    "is extremely dangerous to our democracy",
-    "is gnot a gnelf",
-    "is human like the rest of them",
+    "is extremely dangerous to our democracy", // https://youtu.be/ksb3KD6DfSI
+    "is finally available in fullscreen",
+    "is gnot a gnelf", // You've been gnomed https://youtu.be/6n3pFFPSlW4
+    "is human like the rest of them", // You're Human Like the Rest of Them (1967)
     "is just as the prophecy foretold",
     "is just one stop on the information superhighway",
     "is legal in most jurisdictions",
     "is less resilient than a tardigrade",
-    "is lined up to watch that movie, maid in manhattan",
-    "is never gonna run around and desert you",
-    "is not a crazed gunman, dad",
-    "is not a pod person from the planet mars",
-    "is not a sense offender",
+    "is lined up to watch that movie, maid in manhattan", // Flight of the Conchords, Hurt Feelings https://youtu.be/9zI3_pnUU3k
+    "is mayonnaise an instrument?", // SpongeBob S02E27 Band Geeks (2001)
+    "is never gonna run around and desert you", // Rick Astley, Never Gonna Give You Up https://youtu.be/dQw4w9WgXcQ
+    "is not a crazed gunman, dad", // Team Fortress 2, Meet the Sniper https://youtu.be/9NZDwZbyDus
+    "is not a pod person from the planet mars", // Troll (1986)
+    "is not a sense offender", // Equilibrium (2002)
     "is not a significant source of protein",
-    "is not as good as sqlite",
-    "is not as good as zombocom",
+    "is not as good as sqlite", // https://voussoir.net/writing/sqlite_what_a_hunk
+    "is not as good as zombocom", // https://zombo.com/
     "is not concealing any state or military secrets",
     "is not entirely divinely inspired",
     "is not obfuscated",
-    "is not questioning your powers of observation",
+    "is not questioning your powers of observation", // V for Vendetta (2005)
     "is not sponsored",
-    "is not suitable for 0-3 sad onions",
-    "is not the spawn of satan",
-    "is not what is said of that thing",
+    "is not suitable for 0-3 sad onions", // https://youtu.be/JhHOaMXYXU4?t=1m35s
+    "is not the spawn of satan", // Vague reference to Rosemary's Baby (1968)
+    "is not what is said of that thing", // Birdman (2014)
     "is obviously biased",
-    "is on the fastest available route",
-    "is once again surrounded by a brilliant white light",
+    "is on the fastest available route", // Local 58 https://youtu.be/jh09uIN6tl0
+    "is once again surrounded by a brilliant white light", // Dream Theater, Metropolis Pt. 2 Scenes From a Memory, Finally Free
     "is only as strong as the weakest link",
-    "is over our heads in a million pieces",
-    "is produced by the modial interaction of magnetoreluctance",
-    "is sick of car dependency",
-    "is sitting in a room different from the one you are in now",
-    "is stimulating my thinker",
-    "is subject to the frequency illusion",
+    "is over our heads in a million pieces", // Willy Wonka and the Chocolate Factory (1971), Wonkavision https://youtu.be/pvS3j8VtanM
+    "is produced by the modial interaction of magnetoreluctance", // Rockwell Retro Encabulator https://youtu.be/RXJKdh1KZ0w
+    "is sick of car dependency", // https://voussoir.net/writing/not_just_bikes
+    "is sitting in a room different from the one you are in now", // Alvin Lucier, I Am Sitting in a Room https://youtu.be/fAxHlLK3Oyk
+    "is stimulating my thinker", // Learn to speak body tape 5 https://youtu.be/x9YTxff3pHU
+    "is subject to the frequency illusion", // https://en.wikipedia.org/wiki/Frequency_illusion
     "is the product of several minutes of hard work",
     "is wasting your processor cycles",
     "is worth a lot of money",
-    "it goes it goes it goes it goes",
-    "it is good day to be not dead",
-    "it's all right here at your fingertips",
-    "it's evident that speed's tangential to that time-position curve",
-    "it's the perfect place for an accident",
+    "it goes it goes it goes it goes", // Death Grips, Guillotine (2011) https://youtu.be/s4l7bmTJ7j8
+    "it is good day to be not dead", // Heavy is Dead https://youtu.be/oiuyhxp4w9I
+    "it's all right here at your fingertips", // The Kids Guide to the Internet https://youtu.be/mfMrVKnGzwg
+    "it's evident that speed's tangential to that time-position curve", // MindofMatthew, I Will Derive https://youtu.be/P9dpTTpjymE
+    "it's only a model", // Monty Python and the Holy Grail (1974)
+    "it's the perfect place for an accident", // The Spirit of Dark and Lonely Water https://youtu.be/XNPMYRlvySY
+    "it's where i spend the vast majority of my time", // Tim Minchin, Not Perfect (2005) https://youtu.be/dg3PberzvXo
     "keeps windows update permanently disabled",
-    "keikaku means plan",
-    "kept hidden for almost two decades and forced to bear children",
-    "klaatu barada nikto",
-    "knows the answer to A858",
-    "lackluster establishing shot of a significant location",
+    "keikaku means plan", // https://knowyourmeme.com/memes/just-according-to-keikaku
+    "kept hidden for almost two decades and forced to bear children", // BBC anchor reads teleprompter https://youtu.be/loWFypHb48k
+    "klaatu barada nikto", // The Day the Earth Stood Still (1951)
+    "knows that the dice are loaded", // Leonard Cohen, Everybody Knows (1988)
+    "knows the answer to A858", // /r/Solving_A858/
+    "lackluster establishing shot of a significant location", // Charlie Brooker, How to report the news https://youtu.be/aHun58mz3vI
     "lacks discipline",
-    "learned how to plow by reading books",
+    "learned how to plow by reading books", // It's Impossible to Learn to Plow by Reading Books (1988)
     "leaves nothing but footsteps",
-    "like a crème caramel in an earthquake",
-    "like roses and clover",
-    "listen and you'll know",
-    "long live the new flesh",
+    "like a crème caramel in an earthquake", // Crème Caramel https://vimeo.com/97232050
+    "like roses and clover", // The Chordettes, Mr. Sandman (1954)
+    "listen and you'll know", // You're Human Like the Rest of Them (1967)
+    "long live the new flesh", // Videodrome (1983)
     "looks better in black and white",
-    "lucky for you i'm a dog lover",
-    "makes terrain with the carve tool",
-    "marry and reproduce",
+    "lucky for you i'm a dog lover", // The Misadventures of Skooks https://youtu.be/BWlKr4seJ-0?t=1m25s
+    "made a doing-word out of a thing-word", // Stephen Fry, Language https://youtu.be/J7E-aoXLZGY
+    "makes terrain with the carve tool", // https://youtu.be/xh9Kr2iO4XI
+    "marry and reproduce", // They Live (1988)
     "may be a figment of your imagination",
     "means you no harm",
     "might look better without this pulsating text",
@@ -674,129 +745,160 @@ const SPLASHES = [
     "might overstay its welcome",
     "never pipes curl to bash",
     "never transcodes lossy to lossy",
-    "no one can win the game but me. that's how the game works",
-    "normal tuesday night for shia labeouf",
-    "nuapurista kuulu se polokan tahti jalakani pohjii kutkutti",
-    "nur noch konkret reden, gib mir ein ja oder nein",
-    "obviously regressed to some quasi-simian creature",
-    "one long staircase just going up",
-    "only 47 bank accounts in my bank account account",
+    "no banana make you go insane", // Tally Hall, Banana Man (2005)
+    "no one can win the game but me. that's how the game works", // YooGee's undying love for portable consoles https://youtu.be/aBsEo0w4-Hg?t=2m (original kP_EGSOEGAE)
+    "normal tuesday night for shia labeouf", // Actual Cannibal Shia LaBeouf https://youtu.be/o0u4M6vppCI
+    "nuapurista kuulu se polokan tahti jalakani pohjii kutkutti", // Ievan Polkka https://youtu.be/7yh9i0PAjck
+    "null",
+    "nur noch konkret reden, gib mir ein ja oder nein", // Peter Fox, Alles Neu https://youtu.be/DD0A2plMSVA
+    "obviously regressed to some quasi-simian creature", // Altered States (1980)
+    "one long staircase just going up", // Fiddler on the Roof, If I Were a Rich Man https://youtu.be/RBHZFYpQ6nc
+    "only 47 bank accounts in my bank account account", // DROPOUTOFCOLLEGE.wmv https://youtu.be/UWH5Yz5P76Y
     "only barely makes sense",
-    "oops, my anarchy symbol",
-    "open your eyes, nicholas",
-    "parle l'anglais plus fort",
-    "party on, dudes",
-    "picture you gettin' down in a picture tube",
-    "pioneers used to ride these babies for miles",
-    "plato, aristotle, socrates? morons",
+    "oops, my anarchy symbol", // https://youtu.be/Ry5URU-Py2Q
+    "open your eyes, nicholas", // Dream Theater, Metropolis Pt. 2 Scenes From a Memory, Finally Free
+    "pants with stripes and cutaway coat", // Taco, Puttin' on the Ritz (1982)
+    "parle l'anglais plus fort", // Orlando (1992)
+    "party on, dudes", // Bill & Ted's Excellent Adventure (1989)
+    "pasta, water, getting hotter", // Adventure Time S03E10 What Was Missing? (2011)
+    "picture you gettin' down in a picture tube", // Gorillaz, Clint Eastwood
+    "pioneers used to ride these babies for miles", // SpongeBob S01E10 Pizza Delivery (1999)
+    "plato, aristotle, socrates? morons", // The Princess Bride (1987) https://youtu.be/BUg2cp23rGE
     "please exit through the manhole marked EXIT",
     "please hold your questions until the end",
-    "praise be to zardoz",
+    "plug it, play it, burn it, rip it, drag it, drop it, zip, unzip it", // Daft Punk, Technologic (2005)
+    "praise be to zardoz", // Zardoz (1974)
     "prefers drm-free software",
     "prefers not to be DDoSed",
     "prefers older movies",
-    "prefers portable zips over installers",
+    "prefers portable zips over installers", // https://voussoir.net/writing/master_of_my_domain
     "prefers practical special effects",
     "prefers subs over dubs",
-    "prefers the despecialized editions",
+    "prefers the despecialized editions", // https://en.wikipedia.org/wiki/Harmy%27s_Despecialized_Edition
     "prefers the director's cut",
     "prefers to breathe air",
-    "prefers to install from f-droid",
-    "presses wm1",
-    "put on these glasses or start eating that trash can",
-    "read it for yourself in this photostatic copy",
+    "prefers to install from f-droid", // f-droid.org
+    "presses wm1", // TF2 Pyro
+    "put on these glasses or start eating that trash can", // They Live (1988)
+    "read it for yourself in this photostatic copy", // Willy Wonka and the Chocolate Factory (1971)
     "recognizes taiwan's sovereignty",
-    "remembers a sled on the deathbed",
-    "repeatedly showing the killer's face isn't news, it's rubbernecking",
+    "remembers a sled on the deathbed", // Citizen Kane (1941)
+    "repeatedly showing the killer's face isn't news, it's rubbernecking", // Charlie Brooker's Newswipe 25/03/09 https://youtu.be/PezlFNTGWv4
+    "respects the source material",
     "ring the 0x07 for concierge service",
-    "runs away in a straight line",
+    "runs away in a straight line", // Prometheus (2012) et al.
     "seeks enlightenment and free lodging",
-    "selling knives and insurance from door to door",
-    "sometimes behaves so strangely",
+    "selling knives and insurance from door to door", // Rhett & Link, Epic Rap Battle https://youtu.be/7ov1DDjHt8c
+    "simplified and dumbed down",
+    "sometimes behaves so strangely", // RadioLab, Musical Language (2006)
+    "somewhat new and hardly improved",
     "spent way too much time on these splash texts",
+    "splashtext'; drop table users;--",
+    "steady watch me navigate", // Gorillaz, Feel Good Inc. (2005)
     "still uses rss",
-    "structurally unsound yeti tote-bag",
-    "take a stress pill and think things over",
-    "take mars, and spell it backwards, drop the s",
+    "structurally unsound yeti tote-bag", // James Mickens, This World of Ours https://www.usenix.org/system/files/1401_08-12_mickens.pdf
+    "take a stress pill and think things over", // 2001 A Space Odyssey (1968)
+    "take mars, and spell it backwards, drop the s", // Black Dynamite (2009) https://youtu.be/2PSueHOY-Jk
     "takes nothing but pictures",
-    "takes the underpass because it's safer",
-    "that's a good wisdom",
-    "that's a ten",
-    "the blood brought me this far",
-    "the eye is the window of the soul",
+    "takes the underpass because it's safer", // Irréversible (2002)
+    "that means you do care (at least a little)", // Weird Al Yankovic, Word Crimes (2014) https://youtu.be/8Gv0H-vPoDc
+    "that's a good wisdom", // Dog of Wisdom https://youtu.be/D-UmfqFjpl0
+    "that's a ten", // That's a Ten https://youtu.be/SLP9mbCuhJc
+    "the blood brought me this far", // Hellraiser (1987)
+    "the eye is the window of the soul", // Obviously a general phrase but I'll attribute it to Videodrome (1983)
     "the last website you'll ever need",
-    "the menace must remain phantom",
-    "the water is extracted for use in rivers",
-    "the waves part and they engulf me and the water is warm",
-    "the word itself makes some men uncomfortable",
-    "they have ordered you to die, gi",
+    "the menace must remain phantom", // The (Totally) Phantom Menace https://youtu.be/J0mUVY9fLlw
+    "the moment you've all been waiting for",
+    "the water is extracted for use in rivers", // How it's Unmade - Oreo Cookies https://youtu.be/cJyGoGPXTj4
+    "the waves part and they engulf me and the water is warm", // You could stop at five or six stores https://youtu.be/YCeQLeQiRP4
+    "the word itself makes some men uncomfortable", // The Big Lebowski (1998) https://youtu.be/xs3OWJ53rHE
+    "they have ordered you to die, gi", // Hanoi Hannah https://youtu.be/w3VeKnW9cNo
     "think less",
-    "this ain't my first rodéo",
-    "this is the name that you never will guess",
-    "this mission is too important for me to allow you to jeopardize it",
+    "this ain't my first rodéo", // AvE, Whitening Old Plastic https://youtu.be/fu0v3yFcVn4
+    "this is the name that you never will guess", // T.S. Elliot, The Naming of Cats
+    "this mission is too important for me to allow you to jeopardize it", // 2001 A Space Odyssey (1968)
     "this too shall pass",
-    "thrives on negative criticism, which is fun to write and to read",
-    "top ten juiced up coaches; top ten juiced up players",
-    "treats the gun as a total weapon",
+    "thrives on negative criticism, which is fun to write and to read", // Ratatouille (2007)
+    "today we had fifteen homocides and sixty-three violent crimes", // Network (1976) https://youtu.be/ZwMVMbmQBug
+    "top ten juiced up coaches, top ten juiced up players", // Dilbert 2 https://youtu.be/G9xfqMtkmN0
+    "tragically cool and totally hip interrogative tone?", // Taylor Mali, Like youknow https://youtu.be/SCNIBV87wV4
+    "treats the gun as a total weapon", //Equilibrium (2002)
     "tries to be grammatically correct",
     "tries to keep the boom out of frame",
     "tries very hard to not forget",
     "truly a feat of last year's engineering",
-    "two black dresses and no black shoes",
-    "unless it's a farm",
-    "US-DFPAD / 393-H-15A",
+    "two black dresses and no black shoes", // Five or six stores part 2 https://youtu.be/cqIjUXH7mtI
+    "unless it's a farm", // Team Fortress 2 - Meet the Soldier https://youtu.be/h42d0WHRSck
+    "US-DFPAD / 393-H-15A", // Local58, Contingency https://youtu.be/3c66w6fVqOI
     "uses git push --force",
-    "very large number of nanoseconds",
-    "voice-activated and biodegradable",
-    "was pulled from 100,000 year old antarctic ice",
+    "very large number of nanoseconds", // Grace Hopper explains the nanosecond https://youtu.be/9eyFDBPk4Yw
+    "vibrate your uvula by dampening and undampening your larynx", // Adventure Time S03E10 What Was Missing? (2011)
+    "view the source, luke",
+    "voice-activated and biodegradable", // George Carlin, Modern Man https://youtu.be/hkCR-w3AYOE
+    "was pulled from 100,000 year old antarctic ice", // The Thing (1982)
     "watches for the plot",
-    "we can't really enforce the curfew as there is no light or sound",
-    "we're not bop-bipping the boop-beeps here, just boppin'",
-    "we're not savages, we're english",
-    "what do you burn apart from witches?",
-    "what was done to me was monstrous...",
-    "what's up with all the sauerkraut?",
-    "why build one when you can have two at twice the price?",
+    "we're not bop-bipping the boop-beeps here, just boppin'", // Ross's Game Dungeon, Boppin' https://youtu.be/YPygM9cBGY0
+    "we're not savages, we're english", // Lord of the Flies (1954)
+    "we've forgotten the crackers", // Wallace and Gromit, A Grand Day Out (1989)
+    "what do you burn apart from witches?", // Monty Python and the Holy Grail (1974)
+    "what kind of dad eats his daughter's fries", // Adventure Time S02E01 It Came from the Nightosphere (2010)
+    "what the hell is water?", // David Foster Wallace, This is Water
+    "what was done to me was monstrous...", // V for Vendetta (2005)
+    "what's up with all the sauerkraut?", // Weird Al Yankovic, Albuquerque (1999)
+    "when the air becomes uraneous we will all go simultaneous", // Tom Lehrer, We Will All Go Together When We Go
+    "whether you're a boy or a girl or a super computer", // Kero Kero Bonito, Sick Beat (2013)
+    "why build one when you can have two at twice the price?", // Contact (1997)
     "will accept your donations",
-    "will create a gooey interface using visual basic",
-    "will find your ip with tracer-t",
-    "will go to the moon and do the other things",
+    "will create a gooey interface using visual basic", // CSI tracks a killer's IP address https://youtu.be/hkDD03yeLnU
+    "will find your ip with tracer-t", // NextGenHacker101, How to view someone's IP address https://youtu.be/SXmv8quf_xM
+    "will go to the moon and do the other things", // John F. Kennedy, 1962
     "will never ask you for your password",
     "will never be very popular",
-    "will never threaten to stab you and, in fact, cannot speak",
+    "will never threaten to stab you and, in fact, cannot speak", // Portal (2007)
     "will not help you with your printer",
-    "will order you some gâteau aux poivres",
-    "withdraws some parts of physical form from consideration",
-    "without even a last desperate warning",
-    "won't scan your computer for pictures of children",
+    "will order you some gâteau aux poivres", // The Cook, the Thief, His Wife & Her Lover (1989)
+    "will ride eternal, shiny and chrome", // Mad Max Fury Road (2015) https://youtu.be/wWq02VnC26s
+    "will self-destruct in thirty seconds",
+    "with great vengeance and furious anger", // Ezekial 25:17, Pulp Fiction https://www.youtube.com/watch?v=T-K8qi_AoXI
+    "withdraws some parts of physical form from consideration", // Learn to speak body tape 5 https://youtu.be/x9YTxff3pHU
+    "without even a last desperate warning", // America, The Last Unicorn (1982)
+    "won't scan your computer for pictures of children", // https://www.apple.com/child-safety/
     "won't send you spam",
     "won't steal packages off your doorstep",
-    "works in mergers and acquisitions",
+    "works in mergers and acquisitions", // American Psycho (2001)
+    "would like a small man's wetsuit, please", // Flight of the Conchords, Hurt Feelings https://youtu.be/9zI3_pnUU3k
     "would rather be on the moon",
-    "would you prefer a lie or the truth?",
+    "would you prefer a lie or the truth?", // V for Vendetta (2005)
     "wouldn't copy that floppy",
-    "wouldn't have dropped dr holloway",
-    "yet another tragedy in a long string of misfortunes",
-    "you can drive all across the united states",
-    "you could stop at five or six stores, or just one",
-    "you know, for kids",
-    "you may recall sequential code: that's the code you can read",
-    "you need to vibrate higher",
-    "you'd better go to a seller that sells weaker potions",
-    "you're dereferencing a null pointer",
-    "you've got to press it on you",
-    "yowza, yowza, yowza",
-    "yubby dibby dibby dibby dibby dibby dibby dum",
-    "είναι φτιαγμένος 100% από «εκδρομή»",
-    "Я пришёл дать эту песню",
-    "ギミチョコ!!",
-    "四院点灯！",
-    "萬づ仕舞口が大事と也",
-    "閉",
-    "나는 잊지 못해요 잊을 수가 없어요",
-    "물고기와 개구리와 뱀은 지금 어떻겠느냐?",
-    "뭐든지 예쁜 게 좋아",
-    "장미꽃 밭 숨어들면 나는 빨간색 문어",
+    "wouldn't have dropped dr holloway", // Cube (1997)
+    "yeah boyyyyyyyyyyyyyyyyyyyyyyyyyyyyy", // My longest yeah boy ever https://youtu.be/fvtQYsckLxk
+    "yet another tragedy in a long string of misfortunes", // Dream Theater, Metropolis Pt. 2 Scenes From a Memory, Finally Free
+    "yo, ding dong man, ding dong, ding dong yo", // Weird Al Yankovic, Fat (1988)
+    "you and me and sister ain't got nothin' to hide", // Scatman John, Scatman's World https://youtu.be/Ic2Cjw7kydI
+    "you can drive all across the united states", // Ross's Game Dungeon, The Crew https://youtu.be/8KZwcHOSRgQ
+    "you can't understand it it's going so loud", // Cake, Thrills https://youtu.be/MizOftmSc7k
+    "you could be drinking whole if you wanted to", // Napoleon Dynamite (2004) https://youtu.be/2-d1oGcTc4w
+    "you could stop at five or six stores, or just one", // You could stop at five or six stores 
+    "you know, for kids", // The Hudsucker Proxy (1994)
+    "you may recall sequential code: that's the code you can read", // Node.js is badass rockstar tech https://youtu.be/bzkRVzciAZg
+    "you need to vibrate higher", // Death Grips, Culture Shock (2011)
+    "you'd better go to a seller that sells weaker potions", // Potion Seller https://youtu.be/R_FQU4KzN7A
+    "you're dereferencing a null pointer", // Making of WrestleMania https://youtu.be/EfdIGG36GgU
+    "you've got to press it on you", // Gorillaz, DARE (2005) https://youtu.be/uAOR6ib95kQ
+    "yowza, yowza, yowza", // They Shoot Horses, Don't They? (1969)
+    "yubby dibby dibby dibby dibby dibby dibby dum", // Fiddler on the Roof, If I Were a Rich Man https://youtu.be/RBHZFYpQ6nc
+    "είναι φτιαγμένος 100% από «εκδρομή»", // Κυνόδοντας / Dogtooth (2009)
+    "Я пришёл дать эту песню", // Витас, 7 Элемент / Vitas, 7th Element (2001)
+    "ギミチョコ!!", // BABYMETAL, ギミチョコ!! / Gimme Chocolate!! (2014)
+    "四院点灯！", // 大红灯笼高高挂 / Raise the Red Lantern (1991) translation "Light the lanterns at the fourth house!"
+    "萬づ仕舞口が大事と也", // 葉隠 / Hagakure (~1716) "The end is important in all things", see Ghost Dog: Way of the Samurai (1999)
+    "閉", // 봄 여름 가을 겨울 그리고 봄 / Spring, Summer, Fall, Winter... and Spring (2003)
+    "나는 잊지 못해요 잊을 수가 없어요", // 김상희, 참사랑 / Kim Sang-hee, True Love (1971)
+    "누구나 할 수 있는 일 행복한 삶을 원한다면", // J-Rabbit, Happy Things (2012) https://youtu.be/fhs55HEl-Gc
+    "물고기와 개구리와 뱀은 지금 어떻겠느냐?", // 봄 여름 가을 겨울 그리고 봄 / Spring, Summer, Fall, Winter... and Spring (2003)
+    "뭐든지 예쁜 게 좋아", // 친절한 금자씨 / Sympathy for Lady Vengeance (2005)
+    "이산 가야 뻐꾹 저산 가야 뻐꾹 뻑뻑꾹", // 이동백, 새타령 as seen in 청출어람 (2013), https://youtu.be/oABvDIFpAwM?t=9m45s, https://youtu.be/X-AAtRxiZmY
+    "장미꽃 밭 숨어들면 나는 빨간색 문어", // 안예은, 문어의 꿈 / Octopus' Dream (2020) https://youtu.be/dfWx2vGwZu0
 ];
 let SPLASH_INDEX = 0;
 const SPLASH_INTERVAL = 8000;
@@ -852,10 +954,65 @@ function cycle_splash()
     fade_out();
 }
 
+function fullscreen_toggle()
+{
+    const headline = document.getElementById("headline");
+    if (document.fullscreenElement)
+    {
+        document.exitFullscreen();
+        fullscreen_showmouse();
+    }
+    else
+    {
+        headline.requestFullscreen();
+        fullscreen_showmouse();
+        console.log("Let's hide the mouse");
+        HIDE_MOUSE_TIMEOUT = setTimeout(fullscreen_hidemouse, 2000);
+    }
+}
+
+let HIDE_MOUSE_TIMEOUT = null;
+function fullscreen_mousehandler()
+{
+    fullscreen_showmouse();
+    HIDE_MOUSE_TIMEOUT = setTimeout(fullscreen_hidemouse, 2000);
+}
+
+function fullscreen_showmouse()
+{
+    document.getElementById("headline").style.cursor = "";
+    document.getElementById("headline_fullscreen_button").classList.remove("hidden");
+    clearTimeout(HIDE_MOUSE_TIMEOUT);
+}
+
+function fullscreen_hidemouse()
+{
+    if (document.fullscreenElement)
+    {
+        document.getElementById("headline").style.cursor = "none";
+        document.getElementById("headline_fullscreen_button").classList.add("hidden");
+    }
+}
+function fullscreenchange_handler()
+{
+    /*
+    When the user exits fullscreen via F11 or escape, this will catch it.
+    If they exit by clicking the button it'll be fullscreen_toggle.
+    */
+    const button = document.getElementById("headline_fullscreen_button");
+    if (! document.fullscreenElement)
+    {
+        fullscreen_showmouse();
+    }
+}
+
 function on_pageload()
 {
     shuffle_splashes();
-    setTimeout(cycle_splash, SPLASH_INTERVAL);
+    setTimeout(cycle_splash, 0);
+    const headline = document.getElementById("headline");
+    headline.addEventListener("mousemove", fullscreen_mousehandler);
+    document.addEventListener("fullscreenchange", fullscreenchange_handler);
 }
 document.addEventListener("DOMContentLoaded", on_pageload);
 </script>
