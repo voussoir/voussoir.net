@@ -61,6 +61,10 @@ code { font-family: monospace; }
 {
     display: none !important;
 }
+.hidden_opacity
+{
+    opacity: 0 !important;
+}
 
 #headline
 {
@@ -98,26 +102,27 @@ code { font-family: monospace; }
     height: 2em;
 }
 
-#fullscreen_button_holder
-{
-    height: 16px;
-    text-align: end;
-    width: 100%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
 #headline_fullscreen_button
 {
-    display: none;
-    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 16px;
+    width: 16px;
+    margin-left: auto;
+    margin-right: 25%;
+
+    /* Remove default button appearance */
     background-color: transparent;
+    padding: 0;
     border: none;
+
+    opacity: 0;
 }
 #headline:hover #headline_fullscreen_button
 {
-    display: initial;
+    opacity: 1;
 }
 
 @keyframes splash_pulsate
@@ -301,9 +306,7 @@ code { font-family: monospace; }
         <div class="tilt_holder width_limited">
             <div id="headline_splash"><noscript>somewhat new and hardly improved</noscript></div>
         </div>
-        <div id="fullscreen_button_holder">
-            <button id="headline_fullscreen_button" onclick="return fullscreen_toggle();">⛶</button>
-        </div>
+        <button id="headline_fullscreen_button" onclick="return fullscreen_toggle();">⛶</button>
     </section>
 
     <section id="cv">
@@ -986,7 +989,7 @@ function fullscreen_mousehandler()
 function fullscreen_showmouse()
 {
     document.getElementById("headline").style.cursor = "";
-    document.getElementById("headline_fullscreen_button").classList.remove("hidden");
+    document.getElementById("headline_fullscreen_button").classList.remove("hidden_opacity");
     clearTimeout(HIDE_MOUSE_TIMEOUT);
 }
 
@@ -995,7 +998,7 @@ function fullscreen_hidemouse()
     if (document.fullscreenElement)
     {
         document.getElementById("headline").style.cursor = "none";
-        document.getElementById("headline_fullscreen_button").classList.add("hidden");
+        document.getElementById("headline_fullscreen_button").classList.add("hidden_opacity");
     }
 }
 function fullscreenchange_handler()
