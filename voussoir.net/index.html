@@ -23,6 +23,7 @@
 
 html
 {
+    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -30,11 +31,17 @@ html
 
 body
 {
+    min-height: 100%;
     background-color: #0e0e0d;
     margin: 0;
     display: grid;
     grid-auto-rows: max-content;
     grid-row-gap: 8px;
+}
+body.justthesplash
+{
+    grid-auto-rows: initial;
+    align-items: center;
 }
 
 h2
@@ -962,55 +969,38 @@ function cycle_splash()
     fade_out();
 }
 
+function fullscreen_on()
+{
+    const elements = Array.from(document.body.children);
+    for (const element of elements)
+    {
+        if (element.id !== "headline")
+        {
+            element.classList.add("hidden");
+        }
+    }
+    document.body.classList.add("justthesplash");
+}
+
+function fullscreen_off()
+{
+    const elements = Array.from(document.body.children);
+    for (const element of elements)
+    {
+        element.classList.remove("hidden");
+    }
+    document.body.classList.remove("justthesplash");
+}
+
 function fullscreen_toggle()
 {
-    const headline = document.getElementById("headline");
-    if (document.fullscreenElement)
+    if (document.body.classList.contains("justthesplash"))
     {
-        document.exitFullscreen();
-        fullscreen_showmouse();
+        fullscreen_off();
     }
     else
     {
-        headline.requestFullscreen();
-        fullscreen_showmouse();
-        console.log("Let's hide the mouse");
-        HIDE_MOUSE_TIMEOUT = setTimeout(fullscreen_hidemouse, 2000);
-    }
-}
-
-let HIDE_MOUSE_TIMEOUT = null;
-function fullscreen_mousehandler()
-{
-    fullscreen_showmouse();
-    HIDE_MOUSE_TIMEOUT = setTimeout(fullscreen_hidemouse, 2000);
-}
-
-function fullscreen_showmouse()
-{
-    document.getElementById("headline").style.cursor = "";
-    document.getElementById("headline_fullscreen_button").classList.remove("hidden_opacity");
-    clearTimeout(HIDE_MOUSE_TIMEOUT);
-}
-
-function fullscreen_hidemouse()
-{
-    if (document.fullscreenElement)
-    {
-        document.getElementById("headline").style.cursor = "none";
-        document.getElementById("headline_fullscreen_button").classList.add("hidden_opacity");
-    }
-}
-function fullscreenchange_handler()
-{
-    /*
-    When the user exits fullscreen via F11 or escape, this will catch it.
-    If they exit by clicking the button it'll be fullscreen_toggle.
-    */
-    const button = document.getElementById("headline_fullscreen_button");
-    if (! document.fullscreenElement)
-    {
-        fullscreen_showmouse();
+        fullscreen_on();
     }
 }
 
@@ -1019,8 +1009,12 @@ function on_pageload()
     shuffle_splashes();
     setTimeout(cycle_splash, 0);
     const headline = document.getElementById("headline");
-    headline.addEventListener("mousemove", fullscreen_mousehandler);
-    document.addEventListener("fullscreenchange", fullscreenchange_handler);
+
+    const url_params = new URLSearchParams(window.location.search);
+    if (url_params.get("justthesplash") !== null)
+    {
+        fullscreen_on();
+    }
 }
 document.addEventListener("DOMContentLoaded", on_pageload);
 </script>
