@@ -3,6 +3,52 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> I immediately came home, tried logging into my online banking accounts, but couldn't due to 2FA. Of course, I won't be able to log in until a replacement phone arrives.
+
+> > It's the same failure mode if you s/phone/token/.
+
+-
+
+> There is nothing in any dishwasher, fridge, vacuum cleaner, washing machine, ${you_name_the_home_appliance} that would require to be smarter than they are without those (actually far from smart) hardware and software that is being installed and imposed on customers.
+
+-
+
+> Typo in the headline: s/DNA/NDA/
+
+-
+
+> I distro hop with my home laptops and use Windows at $JOB
+
+-
+
+> \> If we assume that both groups visit government websites equally often
+
+> My pattern matching experience from real life tells me that this is unlikely....
+
+-
+
+> The blog post misunderstand that many people that do that are simply using "hello" as a "ping" to see if someone's really there for immediate synchronous communication. They want to type just 1 word first ... and then wait for a human-style-TCP-ACKnowledgement
+
+-
+
+> Some grouping or merging of URLs for major news would be nice, though hard to implement. For example Apple releases a new product, new version of Firefox, new S1 filing of $unicorn.
+
+-
+
+> Yes, crows use poke, dig, find, free, head, tail, touch, more, mount, make. And if they don’t like you, they use kill. Sometimes even killall.
+
+> crows are unable to use git, but then even I was unable to use git right after onboarding.
+
+-
+
+> Unbounded extensibility is a great way to get adoption of a standard, in the sense that a lot of products will say "Fully $standard Compatible!" in their marketing materials. It is a bad way to ensure that the standard actually means anything outside the marketing materials.
+
+-
+
+> Then again, I've used mailing lists since UUCP and VMS, so maybe I'm just exp\^Wold.
+
+-
+
 > English is the javascript of languages: full of warts and enforcing a status quo that sucks but everyone has to learn it because this is the world we live in.
 
 > Esperanto would be like Haskell: beautifully pure and regular but no one uses it except for a passionate community of die-hard zealots.
