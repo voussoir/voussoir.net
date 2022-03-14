@@ -3,6 +3,59 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> I don't think people do this because they want to be polite. The 'hello' is basically the start of what is the human equivalent of the TCP three way handshake.
+
+> \- Hello (SYN)
+
+> \> Hi (ACK)
+
+> \- How are you doing ? (SYN, ACK)
+
+> Basically, they are trying to set up a synchronous channel over what is essentially an asynchronous medium. This is even more annoying than just slowing down the answer, they are demanding your undivided attention during the conversation.
+
+> > You know you are on HN when hello/hi is explained in terms of SYN/ACK and not the other way around
+
+-
+
+> I tried their "Best toaster" query and one thing I want to say is just how hilarious it is that "best x"-of-anything webpage HAS to have $CURRENT_YEAR in the title. Yelp does something similar to its Google search results.
+
+> As if nothing good or the best in its breed ever came out from $PREVIOUS_YEAR or any previous years before that!
+
+> Tell me you're a garbage SEO website without telling me, just slap on "in $CURRENT_YEAR" or use some capital letters, I love how easy it is to tell the wheat from the chaff!
+
+> > Best $PRODUCT $CURRENT_YEAR can include products that were manufactured in $PREVIOUS_YEAR or $LONG_TIME_AGO. The $CURRENT_YEAR is saying that the list is up to date, not that all the items in the list were made in $CURRENT_YEAR.
+
+-
+
+> There is a joke I love that illustrates the concept:
+"Ladies and gentlemen of the jury, my client was nowhere near the scene of the murder, he didn't mean to pull the trigger, and that son-of-a-bitch had it coming!"
+
+> > What would that be in programmer speak?
+
+> > The intern had no write access to the production database, he didn't mean to do the commit, and our network engineers had it coming?
+
+-
+
+> A new version with s/Stalin/Putin/ would be good, and perhaps given oligarchs etc. even funnier.
+
+-
+
+> When I'm tired and out of time instead of ordering an unhealthy meal from $FOODDELIVERYAPP$ I can (and very frequently do) buy something relatively healthier from such a site.
+
+-
+
+> But, every $BIG_CORP out there has on their roadmap a long-term plan to either drastically reduce their spend on Oracle products, or more often, eliminate it entirely.
+
+-
+
+> It's kind of terrible that you can use extensions XOR your own browser on iOS
+
+-
+
+> I'm currently job hunting, and a bit tired of sending out 3 - 5 apps a day via indeed or $COMPANY_SITE. Actually talking to someone would be nice.
+
+-
+
 > I immediately came home, tried logging into my online banking accounts, but couldn't due to 2FA. Of course, I won't be able to log in until a replacement phone arrives.
 
 > > It's the same failure mode if you s/phone/token/.
@@ -35,7 +88,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> Yes, crows use poke, dig, find, free, head, tail, touch, more, mount, make. And if they don’t like you, they use kill. Sometimes even killall.
+> Yes, crows use poke, dig, find, free, head, tail, touch, more, mount, make. And if they don't like you, they use kill. Sometimes even killall.
 
 > crows are unable to use git, but then even I was unable to use git right after onboarding.
 
