@@ -320,6 +320,7 @@ def make_tag_page(index, path):
     page = jinja2.Template('''
     <html>
     <head>
+    <link rel="icon" href="/favicon.png" type="image/png"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/writing/dark.css"/>
