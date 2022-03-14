@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>voussoir.net/donate</title>
+    <link rel="icon" href="/favicon.png" type="image/png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root
+{
+    --color_text_primary: #ccc;
+    --color_text_highlight: #efcc2b;
+    --color_inlinecodebg: rgba(255, 255, 255, 0.15);
+}
+
+*
+{
+    font-family: Verdana, sans-serif;
+    color: var(--color_text_primary);
+    word-break: break-word;
+}
+
+html
+{
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body
+{
+    min-height: 100%;
+    background-color: #0e0e0d;
+    margin: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-row-gap: 8px;
+}
+
+#headline
+{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#headline *
+{
+    color: var(--color_text_highlight);
+    font-family: serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#headline .tilt_holder
+{
+    display: grid;
+    justify-content: center;
+}
+#headline_l1,
+#headline_splash
+{
+    display: inline-block;
+    font-style: italic;
+    transform: rotate(-15deg);
+    text-align: center;
+}
+#headline_splash
+{
+    animation-name: splash_pulsate;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    /* Helps prevent line wrap changing height on narrow screens */
+    height: 2em;
+}
+
+@keyframes splash_pulsate
+{
+    0% { transform: rotate(-15deg) scale(1.00); }
+    50% { transform: rotate(-15deg) scale(0.98); }
+    100% { transform: rotate(-15deg) scale(1.00); }
+}
+
+.width_limited
+{
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 500px)
+{
+    :root
+    {
+        --wide: 1;
+    }
+
+    #headline { line-height: 3.25em; }
+    #headline_l1 { font-size: 5.0em; }
+    #headline_splash { font-size: 1.5em; }
+}
+
+@media screen and (max-width: 500px)
+{
+    :root
+    {
+        --narrow: 1;
+    }
+
+    #headline { line-height: 2.25em; }
+    #headline_l1 { font-size: 3em; }
+    #headline_splash { font-size: 1.5em; }
+}
+</style>
+</head>
+
+<body>
+    <section id="headline">
+        <div class="tilt_holder width_limited">
+            <h1 id="headline_l1">voussoir.net</h1>
+        </div>
+        <div class="tilt_holder width_limited">
+            <div id="headline_splash">will accept your donations</div>
+        </div>
+    </section>
+
+    <section class="width_limited">
+        <p>I believe that free and open source software is the best kind of software. I don't really like to charge for my work, and I wouldn't know how much to charge anyway. I find it difficult to ask for money when I consider how much excellent software I get for free.</p>
+
+        <p>Nevertheless, if you've found my work to be helpful or interesting, you can send me a small gift.</p>
+
+        <p><a href="https://www.buymeacoffee.com/voussoir">buymeacoffee.com/voussoir</a></p>
+
+        <p><a href="https://www.liberapay.com/voussoir">liberapay.com/voussoir</a></p>
+
+        <p><a href="https://www.patreon.com/voussoir">patreon.com/voussoir</a></p>
+    </section>
+</body>
+</html>
