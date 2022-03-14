@@ -42,8 +42,14 @@ article
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 16px;
-    box-shadow: #000 0px 0px 40px -10px;
     background-color: var(--color_bodybg);
+}
+@media not print
+{
+    article
+    {
+        box-shadow: #000 0px 0px 40px -10px;
+    }
 }
 
 @media screen and (min-width: 600px)
