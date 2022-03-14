@@ -463,7 +463,7 @@ def write_atom():
         <entry>
             <id>{{article.publication_id}}</id>
             <title>{{article.title|e}}</title>
-            <link rel="alternate" href="https://voussoir.net/writing/{{article.web_path}}"/>
+            <link rel="alternate" type="text/html" href="https://voussoir.net/writing/{{article.web_path}}"/>
             <updated>{{article.date}}T00:00:00Z</updated>
             <content type="html">
             <![CDATA[
@@ -481,6 +481,7 @@ def write_atom():
 
 def write_rss():
     rss = jinja2.Template('''
+    <?xml version="1.0" encoding="utf-8"?>
     <rss version="2.0">
     <channel>
         <title>voussoir.net/writing</title>
