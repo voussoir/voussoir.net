@@ -1034,6 +1034,33 @@ function fullscreen_off()
     document.body.classList.remove("justthesplash");
 }
 
+let HIDE_MOUSE_TIMEOUT = null;
+function fullscreen_mousemove_handler()
+{
+    fullscreen_showmouse();
+    HIDE_MOUSE_TIMEOUT = setTimeout(fullscreen_hidemouse, 2000);
+}
+
+function fullscreen_showmouse()
+{
+    document.body.style.cursor = "";
+    document.getElementById("headline_fullscreen_button").classList.remove("hidden_opacity");
+    clearTimeout(HIDE_MOUSE_TIMEOUT);
+}
+
+function fullscreen_hidemouse()
+{
+    if (document.body.classList.contains("justthesplash"))
+    {
+        document.body.style.cursor = "none";
+        document.getElementById("headline_fullscreen_button").classList.add("hidden_opacity");
+    }
+    else
+    {
+        fullscreen_showmouse();
+    }
+}
+
 function fullscreen_toggle()
 {
     if (document.body.classList.contains("justthesplash"))
@@ -1044,6 +1071,7 @@ function fullscreen_toggle()
     {
         fullscreen_on();
     }
+    fullscreen_mousemove_handler();
 }
 
 function on_pageload()
@@ -1057,6 +1085,9 @@ function on_pageload()
     {
         fullscreen_on();
     }
+
+    document.body.addEventListener("mousemove", fullscreen_mousemove_handler);
+    fullscreen_mousemove_handler();
 }
 document.addEventListener("DOMContentLoaded", on_pageload);
 </script>
