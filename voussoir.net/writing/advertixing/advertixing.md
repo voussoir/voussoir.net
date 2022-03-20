@@ -726,6 +726,10 @@ Retail IRL:
 
     ![](urinals.jpg)
 
+    The subway stations in Toronto, Canada [show advertisements](https://www.youtube.com/watch?v=tXcmyUtCmCo "Designing Better Next Train Arrival Screens - RMTransit") on the signs that are supposed to help you find your train. The vestigial timing clock is relegated to a third of the screen.
+
+    [![](toronto_subway.jpg)](https://www.youtube.com/watch?v=tXcmyUtCmCo)
+
 [footnote_text] You might think that reddit gold and their other newfangled abominations don't belong on an article about advertising, since it's a form of direct monetization for the site, essentially a donation. That's partially true, but the important difference between reddit gold and just donating money to reddit is the visibility of that golden badge. When you see someone else's post with a nice shiny gold on it, that's a prominent reminder that regular people, just like you!, can make a post so cool or funny that it earns a gold star from a total stranger. Gee whiz, if only I were that cool or funny! I'd better stay on reddit and keep trying until I get one too! Many young people will get sucked into the trap of striving for this pseudonymous congratulations and fame, and making ad impressions the whole while. As if the upvotes weren't bad enough.
 
 ## Enacting change
