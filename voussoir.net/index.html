@@ -1114,6 +1114,7 @@ function fullscreen_on()
             element.classList.add("hidden");
         }
     }
+    history.replaceState(null, "", `${window.location.pathname}?justthesplash`);
     document.body.classList.add("justthesplash");
 }
 
@@ -1124,6 +1125,7 @@ function fullscreen_off()
     {
         element.classList.remove("hidden");
     }
+    history.replaceState(null, "", `${window.location.pathname}`);
     document.body.classList.remove("justthesplash");
 }
 
