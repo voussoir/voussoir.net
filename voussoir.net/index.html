@@ -43,6 +43,14 @@ body.justthesplash
     grid-auto-rows: initial;
     align-items: center;
 }
+body.start_eating_that_trashcan
+{
+    animation-name: start_eating_that_trashcan;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
 
 h2
 {
@@ -218,10 +226,20 @@ code { font-family: monospace; }
     align-self: center;
     justify-self: center;
     max-width: 100%;
-    width: 300px;
-    height: auto;
+    width: 100%;
+    aspect-ratio: 1;
     background-color: var(--color_text_primary);
     border-radius: 100%;
+}
+body.start_eating_that_trashcan .cvitem_logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 125%;
 }
 .cvitem_title
 {
@@ -234,6 +252,13 @@ code { font-family: monospace; }
 .cvitem_details
 {
     grid-area: details;
+}
+body.start_eating_that_trashcan .cvitem_details
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #greatjob
@@ -302,6 +327,50 @@ code { font-family: monospace; }
         min-width: 30px;
     }
 }
+
+@keyframes sunglasses_reveal
+{
+    from
+    {
+        right: -32px;
+        transform: rotate(45deg);
+        bottom: -100px;
+    }
+    to
+    {
+        transform: rotate(380deg);
+        right: 64px;
+        bottom: 64px;
+    }
+}
+@keyframes start_eating_that_trashcan
+{
+    from
+    {
+        filter: grayscale(0);
+    }
+    to
+    {
+        filter: grayscale(1);
+    }
+}
+#sunglasses
+{
+    display: none;
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    right: 32px;
+}
+#sunglasses.revealed
+{
+    display: block;
+    animation-name: sunglasses_reveal;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
 </style>
 </head>
 
@@ -329,6 +398,18 @@ code { font-family: monospace; }
             <img class="cvitem_logo" src="./cv/etiquette.svg"/>
         </div>
     </div>
+
+    <div class="cvitem">
+        <div class="width_limited">
+            <h3 class="cvitem_title" id="ycdl">YCDL</h3>
+            <div class="cvitem_details">
+                <p>YoutubeChannelDownloader was born out of a dissatisfaction with YouTube's own interface for keeping track of which videos I have already watched, as well as a desire to integrate with youtube-dl. YCDL makes it easy for me to watch through a channel's catalog of videos, picking which ones I'd like to download while ignoring the others. Plus, as it creates an offline database, it will retain metadata about videos even after they are removed or deleted from the original YouTube channel.</p>
+                <p><a href="https://github.com/voussoir/ycdl">https://github.com/voussoir/ycdl</a></p>
+            </div>
+            <img class="cvitem_logo" src="./cv/ycdl.svg"/>
+        </div>
+    </div>
+
     <div class="cvitem">
         <div class="width_limited">
             <h3 class="cvitem_title" id="timesearch">Timesearch</h3>
@@ -339,6 +420,7 @@ code { font-family: monospace; }
             <img class="cvitem_logo" src="./cv/timesearch.svg"/>
         </div>
     </div>
+
     <div class="cvitem">
         <div class="width_limited">
             <h3 class="cvitem_title" id="voussoirkit">Voussoirkit</h3>
@@ -347,17 +429,6 @@ code { font-family: monospace; }
                 <p><a href="https://github.com/voussoir/voussoirkit">https://github.com/voussoir/voussoirkit</a></p>
             </div>
             <img class="cvitem_logo" src="./cv/voussoirkit.svg"/>
-        </div>
-    </div>
-
-    <div class="cvitem">
-        <div class="width_limited">
-            <h3 class="cvitem_title" id="ycdl">YCDL</h3>
-            <div class="cvitem_details">
-                <p>YoutubeChannelDownloader was born out of a dissatisfaction with YouTube's own interface for keeping track of which videos I have already watched, as well as a desire to integrate with youtube-dl. YCDL makes it easy for me to watch through a channel's catalog of videos, picking which ones I'd like to download while ignoring the others. Plus, as it creates an offline database, it will retain metadata about videos even after they are removed or deleted from the original YouTube channel.</p>
-                <p><a href="https://github.com/voussoir/ycdl">https://github.com/voussoir/ycdl</a></p>
-            </div>
-            <img class="cvitem_logo" src="./cv/ycdl.svg"/>
         </div>
     </div>
 
@@ -525,18 +596,20 @@ code { font-family: monospace; }
         <p>It looks like you're using an ad blocker. Great job!</p>
     </div>
 
+    <img id="sunglasses" src="./cv/sunglasses.svg" title="Put on these glasses or start eating that trash can" onclick="return start_eating_that_trashcan();"/>
+
     <footer class="width_limited">
         <h2 class="width_limited" id="thefooter">The footer</h2>
-        <p><a href="https://commons.wikimedia.org/wiki/File:Epub_logo_color.svg">EPUB logo</a></p>
-        <p><a href="https://www.python.org/community/logos/">Python logo</a> under the PSF Trademark Usage Policy</p>
-        <p><a href="https://www.w3.org/html/logo/">HTML5 logo</a> under CC-BY-3.0</p>
-        <p><a href="https://commons.wikimedia.org/wiki/File:SQLite370.svg">SQLite logo</a> in the public domain</p>
-        <p><a href="https://inkscape.org/*board/galleries/inkscape-logos-and-branding/">Inkscape logo</a> under CC-BY-SA 3.0</p>
-        <p><a href="https://trac.ffmpeg.org/wiki/SubmitALogo">FFmpeg logo</a></p>
-        <p><a href="https://git-scm.com/downloads/logos">Git logo</a></p>
-        <p><a href="https://wiki.openstreetmap.org/wiki/Logos#Official_logos">OpenStreetMap logo</a></p>
-        <p><a href="https://www.ycombinator.com/press/">YCombinator logo</a></p>
-        <p>Derivative artwork based on <a href="https://www.redditinc.com/brand">Reddit's</a> classic Snoo mascot</p>
+        <p class="image_credit"><a href="https://commons.wikimedia.org/wiki/File:Epub_logo_color.svg">EPUB logo</a></p>
+        <p class="image_credit"><a href="https://www.python.org/community/logos/">Python logo</a> under the PSF Trademark Usage Policy</p>
+        <p class="image_credit"><a href="https://www.w3.org/html/logo/">HTML5 logo</a> under CC-BY-3.0</p>
+        <p class="image_credit"><a href="https://commons.wikimedia.org/wiki/File:SQLite370.svg">SQLite logo</a> in the public domain</p>
+        <p class="image_credit"><a href="https://inkscape.org/*board/galleries/inkscape-logos-and-branding/">Inkscape logo</a> under CC-BY-SA 3.0</p>
+        <p class="image_credit"><a href="https://trac.ffmpeg.org/wiki/SubmitALogo">FFmpeg logo</a></p>
+        <p class="image_credit"><a href="https://git-scm.com/downloads/logos">Git logo</a></p>
+        <p class="image_credit"><a href="https://wiki.openstreetmap.org/wiki/Logos#Official_logos">OpenStreetMap logo</a></p>
+        <p class="image_credit"><a href="https://www.ycombinator.com/press/">YCombinator logo</a></p>
+        <p class="image_credit">Derivative artwork based on <a href="https://www.redditinc.com/brand">Reddit's</a> classic Snoo mascot</p>
         <center><span class="eternalseptember_clock" data-eternalseptember-strftime="%A, %B %d"></span>, <a href="/eternalseptember">1993</a></center>
         <script src="/eternalseptember/eternalseptember.js"></script>
     </footer>
@@ -702,7 +775,6 @@ const SPLASHES = [
     "is a little too new wave for my taste", // American Psycho (2000) https://youtu.be/vzN3qO-qc8U
     "is a philosophical statement and would take about ten minutes to read", // Fred Rogers, 1969 https://youtu.be/fKy7ljRr0AA
     "is all bark and no bite",
-    "is all out of bubble gum", // They Live (1988)
     "is allegedly waiting in dark space", // Mass Effect, Ah Yes, Reapers https://youtu.be/Z7Oc-pstqpc
     "is always faster than reloading", // Call of Duty, "Switching to your pistol is always faster than reloading"
     "is an awkward thing to kill", // You're Human Like the Rest of Them (1967)
@@ -765,7 +837,7 @@ const SPLASHES = [
     "kept hidden for almost two decades and forced to bear children", // BBC anchor reads teleprompter https://youtu.be/loWFypHb48k
     "klaatu barada nikto", // The Day the Earth Stood Still (1951)
     "knows that the dice are loaded", // Leonard Cohen, Everybody Knows (1988)
-    "knows the answer to A858", // /r/Solving_A858/
+    "knows the answer to a858", // /r/Solving_A858/
     "lackluster establishing shot of a significant location", // Charlie Brooker, How to report the news https://youtu.be/aHun58mz3vI
     "lacks discipline",
     "learned how to plow by reading books", // It's Impossible to Learn to Plow by Reading Books (1988)
@@ -781,17 +853,16 @@ const SPLASHES = [
     "made a doing-word out of a thing-word", // Stephen Fry, Language https://youtu.be/J7E-aoXLZGY
     "makes terrain with the carve tool", // https://youtu.be/xh9Kr2iO4XI
     "making a literal difference metaphorically", // Bo Burnham, Comedy https://youtu.be/0GR6QuCf-Ww
-    "marry and reproduce", // They Live (1988)
     "may be a figment of your imagination",
     "means you no harm",
     "might look better without this pulsating text",
     "might not fit on a floppy disk",
+    "rejects your reality and substitutes my own", // The Dungeonmaster (1984) https://youtu.be/-2J3EjYBYuU
     "might overstay its welcome",
     "never pipes curl to bash",
     "never transcodes lossy to lossy",
     "no banana make you go insane", // Tally Hall, Banana Man (2005)
     "no crack for you today, my friend", // Self Defense https://youtu.be/2REG3-Wb5gM
-    "no independent thought", // They Live (1988)
     "no one can win the game but me. that's how the game works", // YooGee's undying love for portable consoles https://youtu.be/aBsEo0w4-Hg?t=2m (original kP_EGSOEGAE)
     "no soliciting",
     "normal tuesday night for shia labeouf", // Actual Cannibal Shia LaBeouf https://youtu.be/o0u4M6vppCI
@@ -827,7 +898,6 @@ const SPLASHES = [
     "prefers to breathe air",
     "prefers to install from f-droid", // f-droid.org
     "presses wm1", // TF2 Pyro
-    "put on these glasses or start eating that trash can", // They Live (1988)
     "read it for yourself in this photostatic copy", // Willy Wonka and the Chocolate Factory (1971)
     "recognizes taiwan's sovereignty",
     "remembers a sled on the deathbed", // Citizen Kane (1941)
@@ -963,6 +1033,13 @@ const SPLASHES = [
     "이산 가야 뻐꾹 저산 가야 뻐꾹 뻑뻑꾹", // 이동백, 새타령 as seen in 청출어람 (2013), https://youtu.be/oABvDIFpAwM?t=9m45s, https://youtu.be/X-AAtRxiZmY
     "장미꽃 밭 숨어들면 나는 빨간색 문어", // 안예은, 문어의 꿈 / Octopus' Dream (2020) https://youtu.be/dfWx2vGwZu0
 ];
+const SUNGLASSES_SPLASHES = [
+    "is all out of bubble gum", // They Live (1988)
+    "marry and reproduce", // They Live (1988)
+    "no independent thought", // They Live (1988)
+    "put on these glasses or start eating that trash can", // They Live (1988)
+];
+SPLASHES.push(...SUNGLASSES_SPLASHES);
 SPLASHES.push(`${SPLASHES.length + 1} splash texts? that's a lot!`);
 let SPLASH_INDEX = 0;
 const SPLASH_INTERVAL = 8000;
@@ -985,38 +1062,47 @@ function shuffle_splashes()
 
 function next_splash_text()
 {
-    const text = SPLASHES[SPLASH_INDEX];
-    SPLASH_INDEX += 1;
     if (SPLASH_INDEX >= SPLASHES.length)
     {
         shuffle_splashes();
         SPLASH_INDEX = 0;
     }
+    const text = SPLASHES[SPLASH_INDEX];
+    SPLASH_INDEX += 1;
     return text;
 }
 
+let splash_anim_timeout;
 const HEADLINE_SPLASH = document.getElementById("headline_splash");
-function fade_out()
+function splash_fade_out()
 {
     HEADLINE_SPLASH.classList.add("shrink_out");
-    setTimeout(fade_in, 250);
+    splash_anim_timeout = setTimeout(splash_fade_in, 250);
 }
-function fade_in()
+function splash_fade_in()
 {
     HEADLINE_SPLASH.classList.remove("shrink_out");
-    HEADLINE_SPLASH.innerText = next_splash_text();
+    const new_text = next_splash_text();
+    if (SUNGLASSES_SPLASHES.indexOf(new_text) > -1)
+    {
+        reveal_sunglasses();
+    }
+    HEADLINE_SPLASH.innerText = new_text;
     HEADLINE_SPLASH.classList.add("grow_in");
-    setTimeout(fade_end, 250);
+    splash_anim_timeout = setTimeout(splash_fade_end, 250);
 }
-function fade_end()
+function splash_fade_end()
 {
     HEADLINE_SPLASH.classList.remove("grow_in");
-    setTimeout(cycle_splash, SPLASH_INTERVAL);
+    splash_anim_timeout = setTimeout(cycle_splash, SPLASH_INTERVAL);
 }
 function cycle_splash()
 {
-    fade_out();
+    clearTimeout(splash_anim_timeout);
+    splash_fade_out();
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function fullscreen_on()
 {
@@ -1080,6 +1166,81 @@ function fullscreen_toggle()
     }
     fullscreen_mousemove_handler();
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const SUBLIMINAL_MESSAGES = [
+    "OBEY",
+    "MARRY AND REPRODUCE",
+    "NO INDEPENDENT THOUGHT",
+    "CONSUME",
+    "WORK 8 HOURS",
+    "SLEEP 8 HOURS",
+    "PLAY 8 HOURS",
+    "CONFORM",
+    "STAY ASLEEP",
+    "SUBMIT",
+    "WATCH TV",
+    "BUY",
+    "NO THOUGHT",
+    "SLEEP",
+    "BUY",
+    "HONOR APATHY",
+    "DOUBT HUMANITY",
+    "OBEY AUTHORITY",
+    "NO IDEAS",
+    "FOLLOW",
+    "COOPERATE",
+    "SURRENDER",
+    "DO NOT QUESTION AUTHORITY",
+    "REWARD INDIFFERENCE",
+    "OBEY AND CONFORM",
+];
+
+function random_choice(list)
+{
+    return list[Math.floor(Math.random() * list.length)];
+}
+
+function reveal_sunglasses()
+{
+    const sunglasses = document.getElementById("sunglasses");
+    sunglasses.classList.add("revealed");
+}
+
+function start_eating_that_trashcan()
+{
+    function subliminize(element)
+    {
+        element.innerText = random_choice(SUBLIMINAL_MESSAGES);
+    }
+    function replace_image(img)
+    {
+        const div = document.createElement("div");
+        div.classList.add("cvitem_logo");
+        img.parentElement.insertBefore(div, img);
+        img.parentElement.removeChild(img);
+        subliminize(div);
+    }
+    document.body.classList.add("start_eating_that_trashcan");
+    Array.from(document.getElementsByTagName("h2")).forEach(subliminize);
+    Array.from(document.getElementsByClassName("cvitem_title")).forEach(subliminize);
+    Array.from(document.getElementsByClassName("cvitem_details")).forEach(subliminize);
+    Array.from(document.getElementsByClassName("image_credit")).forEach(subliminize);
+    Array.from(document.getElementsByClassName("cvitem_logo")).forEach(replace_image);
+    subliminize(document.getElementById("greatjob").children[0]);
+
+    const sunglasses = document.getElementById("sunglasses");
+    sunglasses.parentElement.removeChild(sunglasses);
+
+    SPLASHES.length = 0;
+    SPLASHES.push(...SUBLIMINAL_MESSAGES);
+    SPLASH_INDEX = 0;
+    shuffle_splashes();
+    cycle_splash();
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function on_pageload()
 {
