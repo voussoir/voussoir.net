@@ -157,6 +157,11 @@ def soup_adjust_relative_links(soup, md_file, repo_path):
     '''
     folder = pathclass.Path(md_file.parent)
     writing_rootdir = pathclass.Path(WRITING_ROOTDIR)
+
+    base = soup.new_tag('base')
+    base['href'] = f'https://voussoir.net/writing/{folder.basename}/'
+    soup.find('head').append(base)
+
     def fixby(tagname, attribute):
         links = soup.find_all(tagname)
         for link in links:
