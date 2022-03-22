@@ -118,7 +118,10 @@ body.canvas_active .hide_when_dark { display: none; }
     left: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    /* On android chrome, scrolling the page causes the nav bar to recede,
+    and that creates visible space below the canvas before the resize event
+    is called. We intentionally oversize it to keep everything hidden. */
+    height: 150%;
 }
 
 /******************************************************************************/
