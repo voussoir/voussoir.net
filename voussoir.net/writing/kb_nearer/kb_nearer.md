@@ -162,7 +162,7 @@ Because this layout would be totally new to me, I knew I needed to be comfortabl
 
 [![](thumbs/prototype_09.jpg)](prototype_09.jpg)
 
-I'm sure you're wondering about the gray spacebar. This was in fact the result of spantaneous inspiration, an experience not much different from true enlightenment, which came to me after an intense bout of deeply personal meditation and was fully crystalized when the keycap vendor said "We don't have 6u space in black, only in gray".
+I'm sure you're wondering about the gray spacebar. This was in fact the result of spontaneous inspiration, an experience not much different from true enlightenment, which came to me after an intense bout of deeply personal meditation and was fully crystalized when the keycap vendor said "We don't have 6u space in black, only in gray".
 
 [![](thumbs/prototype_10.jpg)](prototype_10.jpg)
 
@@ -206,11 +206,13 @@ If you've seen other keyboard builds, you'll know that the wiring matrix require
 
 [![](thumbs/diodes.jpg)](diodes.jpg)
 
-I know what diodes do -- they allow electricity to only flow in one direction -- but it took me a bit of studying to figure out how that applies to keyboards. I put together this drawing to illustrate my findings. Remember that the controller only lights up one column at a time, so here's the first column:
+I know what diodes do -- they allow electricity to only flow in one direction -- but it took me a bit of studying to figure out how that applies to keyboards. I put together this drawing to illustrate my findings. In this picture, the black keys are the ones being pressed. Remember that the controller sends a signal out through one column at a time and listens to the rows, so here's C7 being lit up:
 
 ![](why_diodes.svg)
 
-The black keys are the ones being pressed, and thus the signal from the column wire is transfered through the switch and diode to the row wire, telling the controller the row coordinate of the pressed keys in the C7 column. If your keyboard doesn't have diodes, certain combinations of keypresses can carry the signal to places that trick the controller into believing some other keys are being pressed when they actually aren't. Notice how the signal is flowing through the 9 key in the "wrong" direction, from a row to a column, which leads to a phantom keypress of the 4 key because 6 is on the same row as 4.
+The signal from the column wire is transfered through the switch and diode to the row wire, telling the controller the row coordinate of the pressed keys in the C7 column. The controller sees R11 and R14, so the pressed keys are C7+R11 and C7+R14, 7 and 0.
+
+If your keyboard doesn't have diodes, certain combinations of keypresses can carry the signal to places that trick the controller into believing some other keys are being pressed when they actually aren't. Notice how the signal is flowing through the 9 key in the wrong direction, from a row to a column, which lights up the C9 column. Even though 6's actual coordinate is C9+R12, the controller only knows that it sent a signal on C7 and got a response back on R12, so it thinks C7+R12 is pressed, which is 4.
 
 ![](why_diodes_anim.gif)
 
