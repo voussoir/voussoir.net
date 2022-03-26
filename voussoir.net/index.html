@@ -364,7 +364,7 @@ body.start_eating_that_trashcan .cvitem_details
     position: fixed;
     right: 32px;
 }
-#sunglasses.revealed
+#sunglasses.reveal_anim
 {
     display: block;
     animation-name: sunglasses_reveal;
@@ -372,6 +372,13 @@ body.start_eating_that_trashcan .cvitem_details
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+}
+#sunglasses.revealed
+{
+    display: block;
+    transform: rotate(380deg);
+    right: 64px;
+    bottom: 64px;
 }
 </style>
 </head>
@@ -1244,8 +1251,14 @@ function random_choice(list)
 
 function reveal_sunglasses()
 {
+    function finish()
+    {
+        sunglasses.classList.remove("reveal_anim");
+        sunglasses.classList.add("revealed");
+    }
     const sunglasses = document.getElementById("sunglasses");
-    sunglasses.classList.add("revealed");
+    sunglasses.classList.add("reveal_anim");
+    setTimeout(finish, 1000);
 }
 
 function start_eating_that_trashcan()
