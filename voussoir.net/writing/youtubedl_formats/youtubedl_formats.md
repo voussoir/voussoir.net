@@ -1,8 +1,9 @@
 Youtube-dl format code cheatsheet
 =================================
 
-Here are all the youtube-dl format codes I can find.
-Please let me know if there are more.
+Here are all the youtube format codes I'm aware of.
+Please let me know if there are more, or if something here is outdated.
+contact@voussoir.net
 
 You can pass them to youtube-dl as `--format a+b/c+d/e`,
 where a+b is your preferred video+audio pair, c+d is your second-best
@@ -118,6 +119,149 @@ id | quality | codec | examples
 397|480p30|AV1|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ`
 396|360p30|AV1|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ`
 395|240p30|AV1|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ`
+394|144p30|AV1|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ`
+
+### 4320p only
+
+id | quality | codec | examples
+-: | -: | -: | :-
+571|4320p60|AV1|`youtube-dl -F kFz9afj8lu0 1La4QzGeaaQ`
+272|4320p30|VP9|`youtube-dl -F i6fWG4FxDZw`
+
+### 2160p only
+
+id | quality | codec | examples
+-: | -: | -: | :-
+337|2160p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+305|2160p60|AVC|`youtube-dl -F -xNN-bJQ4vI`
+315|2160p60|VP9|`youtube-dl -F 1La4QzGeaaQ -xNN-bJQ4vI`
+401|2160p60|AV1|`youtube-dl -F kFz9afj8lu0 1La4QzGeaaQ`
+266|2160p30|AVC|`youtube-dl -F -xNN-bJQ4vI i6fWG4FxDZw`
+313|2160p30|VP9|`youtube-dl -F kFz9afj8lu0 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+
+### 1440p only
+
+id | quality | codec | examples
+-: | -: | -: | :-
+336|1440p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+304|1440p60|AVC|`youtube-dl -F -xNN-bJQ4vI`
+308|1440p60|VP9|`youtube-dl -F 1La4QzGeaaQ -xNN-bJQ4vI`
+400|1440p60|AV1|`youtube-dl -F kFz9afj8lu0 1La4QzGeaaQ`
+264|1440p30|AVC|`youtube-dl -F -xNN-bJQ4vI i6fWG4FxDZw`
+271|1440p30|VP9|`youtube-dl -F kFz9afj8lu0 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+
+### 1080p only
+
+id | quality | codec | examples
+-: | -: | -: | :-
+335|1080p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+299|1080p60|AVC|`youtube-dl -F 1La4QzGeaaQ -xNN-bJQ4vI`
+303|1080p60|VP9|`youtube-dl -F 1La4QzGeaaQ -xNN-bJQ4vI`
+399|1080p60|AV1|`youtube-dl -F 1La4QzGeaaQ`
+137|1080p30|AVC|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+248|1080p30|VP9|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+
+### 720p only
+
+id | quality | codec | examples
+-: | -: | -: | :-
+334|720p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+298|720p60|AVC|`youtube-dl -F 1La4QzGeaaQ -xNN-bJQ4vI`
+302|720p60|VP9|`youtube-dl -F 1La4QzGeaaQ -xNN-bJQ4vI`
+398|720p60|AV1|`youtube-dl -F 1La4QzGeaaQ`
+22|720p30+128k|AVC+m4a|`youtube-dl -F S8Zt6cB_NPU`
+136|720p30|AVC|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+247|720p30|VP9|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+
+### 480p only
+
+id | quality | codec | examples
+-: | -: | -: | :-
+333|480p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+135|480p30|AVC|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+244|480p30|VP9|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+397|480p30|AV1|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ`
+
+### 360p only
+
+id | quality | codec | examples
+-: | -: | -: | :-
+332|360p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+18|360p30+96k|AVC+m4a|`youtube-dl -F S8Zt6cB_NPU`
+134|360p30|AVC|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+243|360p30|VP9|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+396|360p30|AV1|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ`
+
+### 240p only
+
+id | quality | codec | examples
+-: | -: | -: | :-
+331|240p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+133|240p30|AVC|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+242|240p30|VP9|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+395|240p30|AV1|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ`
+
+### 144p only
+
+id | quality | codec | examples
+-: | -: | -: | :-
+330|144p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+160|144p30|AVC|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+278|144p30|VP9|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+394|144p30|AV1|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ`
+
+### 60fps only
+
+id | quality | codec | examples
+-: | -: | -: | :-
+571|4320p60|AV1|`youtube-dl -F kFz9afj8lu0 1La4QzGeaaQ`
+337|2160p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+305|2160p60|AVC|`youtube-dl -F -xNN-bJQ4vI`
+315|2160p60|VP9|`youtube-dl -F 1La4QzGeaaQ -xNN-bJQ4vI`
+401|2160p60|AV1|`youtube-dl -F kFz9afj8lu0 1La4QzGeaaQ`
+336|1440p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+304|1440p60|AVC|`youtube-dl -F -xNN-bJQ4vI`
+308|1440p60|VP9|`youtube-dl -F 1La4QzGeaaQ -xNN-bJQ4vI`
+400|1440p60|AV1|`youtube-dl -F kFz9afj8lu0 1La4QzGeaaQ`
+335|1080p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+299|1080p60|AVC|`youtube-dl -F 1La4QzGeaaQ -xNN-bJQ4vI`
+303|1080p60|VP9|`youtube-dl -F 1La4QzGeaaQ -xNN-bJQ4vI`
+399|1080p60|AV1|`youtube-dl -F 1La4QzGeaaQ`
+334|720p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+298|720p60|AVC|`youtube-dl -F 1La4QzGeaaQ -xNN-bJQ4vI`
+302|720p60|VP9|`youtube-dl -F 1La4QzGeaaQ -xNN-bJQ4vI`
+398|720p60|AV1|`youtube-dl -F 1La4QzGeaaQ`
+333|480p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+332|360p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+331|240p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+330|144p60 HDR|VP9|`youtube-dl -F 1La4QzGeaaQ`
+
+### 30fps only
+
+id | quality | codec | examples
+-: | -: | -: | :-
+272|4320p30|VP9|`youtube-dl -F i6fWG4FxDZw`
+266|2160p30|AVC|`youtube-dl -F -xNN-bJQ4vI i6fWG4FxDZw`
+313|2160p30|VP9|`youtube-dl -F kFz9afj8lu0 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+264|1440p30|AVC|`youtube-dl -F -xNN-bJQ4vI i6fWG4FxDZw`
+271|1440p30|VP9|`youtube-dl -F kFz9afj8lu0 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+137|1080p30|AVC|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+248|1080p30|VP9|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+22|720p30+128k|AVC+m4a|`youtube-dl -F S8Zt6cB_NPU`
+136|720p30|AVC|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+247|720p30|VP9|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+135|480p30|AVC|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+244|480p30|VP9|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+397|480p30|AV1|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ`
+18|360p30+96k|AVC+m4a|`youtube-dl -F S8Zt6cB_NPU`
+134|360p30|AVC|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+243|360p30|VP9|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+396|360p30|AV1|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ`
+133|240p30|AVC|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+242|240p30|VP9|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+395|240p30|AV1|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ`
+160|144p30|AVC|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
+278|144p30|VP9|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ -xNN-bJQ4vI i6fWG4FxDZw`
 394|144p30|AV1|`youtube-dl -F S8Zt6cB_NPU 1La4QzGeaaQ`
 
 ## Audio formats

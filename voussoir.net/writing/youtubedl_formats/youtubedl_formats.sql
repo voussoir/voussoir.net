@@ -57,8 +57,9 @@ INSERT INTO formats VALUES
 .print =================================
 
 .print
-.print Here are all the youtube-dl format codes I can find.
-.print Please let me know if there are more.
+.print Here are all the youtube format codes I'm aware of.
+.print Please let me know if there are more, or if something here is outdated.
+.print contact@voussoir.net
 .print
 .print You can pass them to youtube-dl as `--format a+b/c+d/e`,
 .print where a+b is your preferred video+audio pair, c+d is your second-best
@@ -99,6 +100,83 @@ SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE c
 .print id | quality | codec | examples
 .print -: |      -: |    -: | :-
 SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE codec == "AV1" ORDER BY CAST(quality AS DECIMAL) DESC, quality DESC;
+
+.print
+.print ### 4320p only
+.print
+.print id | quality | codec | examples
+.print -: |      -: |    -: | :-
+SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE quality LIKE "4320p%" ORDER BY CAST(quality AS DECIMAL) DESC, quality DESC;
+
+.print
+.print ### 2160p only
+.print
+.print id | quality | codec | examples
+.print -: |      -: |    -: | :-
+SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE quality LIKE "2160p%" ORDER BY CAST(quality AS DECIMAL) DESC, quality DESC;
+
+.print
+.print ### 1440p only
+.print
+.print id | quality | codec | examples
+.print -: |      -: |    -: | :-
+SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE quality LIKE "1440p%" ORDER BY CAST(quality AS DECIMAL) DESC, quality DESC;
+
+.print
+.print ### 1080p only
+.print
+.print id | quality | codec | examples
+.print -: |      -: |    -: | :-
+SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE quality LIKE "1080p%" ORDER BY CAST(quality AS DECIMAL) DESC, quality DESC;
+
+.print
+.print ### 720p only
+.print
+.print id | quality | codec | examples
+.print -: |      -: |    -: | :-
+SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE quality LIKE "720p%" ORDER BY CAST(quality AS DECIMAL) DESC, quality DESC;
+
+.print
+.print ### 480p only
+.print
+.print id | quality | codec | examples
+.print -: |      -: |    -: | :-
+SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE quality LIKE "480p%" ORDER BY CAST(quality AS DECIMAL) DESC, quality DESC;
+
+.print
+.print ### 360p only
+.print
+.print id | quality | codec | examples
+.print -: |      -: |    -: | :-
+SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE quality LIKE "360p%" ORDER BY CAST(quality AS DECIMAL) DESC, quality DESC;
+
+.print
+.print ### 240p only
+.print
+.print id | quality | codec | examples
+.print -: |      -: |    -: | :-
+SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE quality LIKE "240p%" ORDER BY CAST(quality AS DECIMAL) DESC, quality DESC;
+
+.print
+.print ### 144p only
+.print
+.print id | quality | codec | examples
+.print -: |      -: |    -: | :-
+SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE quality LIKE "144p%" ORDER BY CAST(quality AS DECIMAL) DESC, quality DESC;
+
+.print
+.print ### 60fps only
+.print
+.print id | quality | codec | examples
+.print -: |      -: |    -: | :-
+SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE quality LIKE "%p60%" ORDER BY CAST(quality AS DECIMAL) DESC, quality DESC;
+
+.print
+.print ### 30fps only
+.print
+.print id | quality | codec | examples
+.print -: |      -: |    -: | :-
+SELECT id, quality, codec, "`youtube-dl -F "||examples||"`" FROM formats WHERE quality LIKE "%p30%" ORDER BY CAST(quality AS DECIMAL) DESC, quality DESC;
 
 .print
 .print ## Audio formats
