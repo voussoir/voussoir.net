@@ -28,6 +28,8 @@ ARTICLE_TEMPLATE = '''
 [View this document's history]({github_history})
 
 {commits}
+
+Contact me: writing@voussoir.net
 '''
 
 # HELPERS
