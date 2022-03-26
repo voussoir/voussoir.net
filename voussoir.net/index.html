@@ -1128,7 +1128,7 @@ function splash_fade_in()
 {
     HEADLINE_SPLASH.classList.remove("shrink_out");
     const new_text = next_splash_text();
-    if (SUNGLASSES_SPLASHES.indexOf(new_text) > -1)
+    if (SUNGLASSES_SPLASHES.indexOf(new_text) > -1 && document.hasFocus() && (! document.body.classList.contains("justthesplash")))
     {
         reveal_sunglasses();
     }
