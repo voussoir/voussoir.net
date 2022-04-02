@@ -61,7 +61,7 @@ As such, of these three kinds of advertisements, sponsorships are the ones that 
 - Publisher: Websites, TV channels, radio stations, newspapers, app developers, storefront owners, social media creators et al. who create media or own a space. For my purposes this will also include performers, racecar drivers, and other personalities who promote a brand, even though we wouldn't normally call them publishers. The space they are selling is their body, image, and reputation.
 - Sponsor: A product seller who pays a publisher to show ads for their product in the publisher's space.
 
-[footnote_text] This paragraph applies to the majority of hot-topic reviewers, I just don't watch very many of them.
+[footnote_text] This paragraph applies to the majority of hot-topic reviewers, I just don't watch very many of them. Also, the only reason I'm able to criticize his work is because I still watch what he makes. I like that he does get into [industry critique](https://www.youtube.com/watch?v=a6zvvlrd-jw "The Electric Car Pre-Order Problem") and [Youtube critique](https://youtu.be/1Cw-vODp-8Y "YouTube comment impersonation spam") from time to time, but I'm sure the chump videos are better at paying the bills.
 
 ## The damage of advertisements
 
@@ -307,7 +307,7 @@ If you slapped someone in the face a hundred million times, I think you'd go to 
 
 > -- Banksy
 
-We've talked about the media industry competing to reach more eyeballs, and much of this competition takes place in public. "Visit Farmer John's farm" doesn't cut it. Advertisements must get bigger, brighter, flashier, and more animated all the time in order for advertisers to continue out-competing each other. You may have noticed how many advertisements show people dancing these days, because watching people dance is naturally hypnotic. Roadside billboards, in all their awful 672 square foot glory, have been electrified so they can show a rotation of animated advertisements instead of a single static photo, and they can be bright enough to signal incoming spacecraft.
+We've talked about the media industry competing to reach more eyeballs, and much of this competition takes place in public. "Visit Farmer John's farm" doesn't cut it. Advertisements must get bigger, brighter, flashier, and more animated all the time in order for advertisers to continue out-competing each other. You may have noticed how many advertisements show people dancing, because watching people dance is naturally hypnotic. Roadside billboards, in all their awful 672 square foot glory, have been electrified so they can show a rotation of animated advertisements instead of a single static photo, and they can be bright enough to signal incoming spacecraft.
 
 [![](billboard.jpg)](https://www.reddit.com/r/LosAngeles/comments/m4o2v4 "Does anyone know what that insanely bright billboard just outside of downtown LA is all about?")
 
@@ -406,13 +406,15 @@ The product manager eyeballed the quarterly report and saw that these figures we
 
 Hulu is one of the more notorious examples that comes to mind. You can find lots of people wondering why they [still see ads](https://www.google.com/search?q=hulu+ads+on+paid+site:reddit.com) after upgrading to the plan called "Hulu (No Ads)". Hulu's help center has [an answer to this question](https://help.hulu.com/s/article/ads-on-hulu): their service provides both on-demand media and live television, but "No Ads" only refers to the on-demand media because the live television is, well, live from another broadcaster that controls the stream. That answer is pretty reasonable in my opinion but, gee, maybe they shouldn't call it "No Ads", huh? A reasonable consumer might be misled into thinking they're paying for a plan that will not include any advertising. Perhaps Hulu is only targeting the unreasonable consumers.
 
-The current state of so-called smart televisions is a horrifying glimpse of this future. There are endless reports of [Samsung televisions showing ads in the UI](https://www.google.com/search?q=samsung+smart+tv+showing+ads+site:reddit.com). And when you see the option to "turn off personalized ads", that doesn't mean you get to turn off the ads, just that they won't be personalized any more. I'm waiting patiently for some evidence of manufacturers delaying the showing of ads until a 90-day return period has expired.
+The current state of so-called smart televisions is a horrifying glimpse of this future. There are endless reports of [Samsung televisions showing ads in the UI](https://www.google.com/search?q=samsung+smart+tv+showing+ads+site:reddit.com). And when you see the option to "turn off personalized ads", that doesn't mean you get to turn off the ads, just that they won't be personalized any more. Probably. I'm waiting patiently for some [evidence](https://old.reddit.com/r/assholedesign/comments/dm8vv9/my_2500_tv_has_sponsored_content_built_into_the/f4ytbn8/ "I've had a Samsung TV for about 2 years, and the ads just showed up recently after an update") of manufacturers delaying the showing of ads until a 90-day return period has expired.
 
-The tech-savvy TV buyers know that you should never, ever give your TV your wifi password, because it will use it to advertise to you. But get your tin foil [footnote_link] ready because soon that won't be good enough -- cellular providers offer [IoT data plans](https://marketplace.att.com/products/att-iot-dataplans-lte-north-america) for around $1.00 per month, or less when arranged in bulk. Your next TV could very well come with a cellular modem and a SIM card inside, essentially all the important guts of a cell phone, so that it can connect to the internet all by itself. The TV manufacturer would pay the monthly cost of the SIM and you'd never know it's there.
+The tech-savvy TV buyers know that you should never, ever give your TV your wifi password, because it will use it to advertise to you. But get your tin foil [footnote_link] ready because soon that won't be good enough -- cellular providers offer [IoT data plans](att_iot.html) for around $1.00 per month, [or less](hologram_iot.html) when arranged in bulk. Your next TV could very well come with a cellular modem and a SIM card inside, essentially all the important guts of a cell phone, so that it can connect to the internet all by itself. The TV manufacturer would pay the monthly cost of the SIM and you'd never know it's there.
 
 "But the advertisements subsidize the TV and make it cheaper for the consumer", you'll hear. Firstly, I think this is basically hogwash. If it's true at all, it will only be a temporary effect. The manufacturers picking up money on advertising can afford to drop the sticker price and take a loss on the TV itself to undercut the competitors. But once all the competitors follow suit and every television at your local big box store has advertising built in, we'll be back to square one in a new fresh layer of hell. Secondly, the whole [Moore's law](https://en.wikipedia.org/wiki/Moore%27s_law) thing took place from the 1960s to the 2000s and demonstrated within one lifetime that electronics technology can become better and cheaper without every single transistor sending you spam mail. To say that letting your TV advertise to you has opened up new doors for affordable technology is myopic. This isn't the only way forward.
 
-![](say_mcdonalds.png)
+[![](make_it_your_way.png)](US8246454B2.pdf "SYSTEM FOR CONVERTING TELEVISION COMMERCIALS INTO INTERACTIVE NETWORKED VIDEO GAMES, Sony Computer Entertainment America LLC")
+
+[![](say_mcdonalds.png)](US8246454B2.pdf "SYSTEM FOR CONVERTING TELEVISION COMMERCIALS INTO INTERACTIVE NETWORKED VIDEO GAMES, Sony Computer Entertainment America LLC")
 
 The TV is one thing. It's a media device anyway. Next up is your refrigerator, dishwasher, clothes washer, dryer, air conditioner, heater, stove, oven. Looks like you're running low on detergent, why not pick up some Tide™? Looks like you've been running the AC pretty often, you should ask Home Depot™ about installing some double-paned windows to improve your home's insulation. You've started cooking more recently -- new hobby? -- you might like a fresh set of Lodge™ cast iron skillets. The manufacturers will not put a screen on your appliance that tells you these things, but they'll collect the data and use it to decide what you see on the web tomorrow [footnote_link].
 
@@ -422,7 +424,9 @@ And every time you see a "smart" version of a product that you didn't know neede
 
 ![](please_drink_verification_can.png)
 
-There's another point that I was only recently enlightened to. One way that appliance manufacturers are able to get these anti-user products into users' homes is by making deals with home builders and landlords, and having their appliances installed before the would-be home buyer has any say in the matter. After all, the home builders aren't the ones that have to actually use it. This is okay though, because as we all know, the free market will sort itself out. You as a home buyer will simply have to do comprehensive research on every single electronic device that is included in the home and be ready to drop the deal at a moment's notice. In this economy. Good luck!
+There's another point that I was only recently enlightened to. One way that appliance manufacturers are able to get these anti-user products into users' homes is by making deals with home builders and landlords, and having their appliances installed before the would-be home buyer has any say in the matter. After all, the home builders aren't the ones that have to actually use it. This is another example of advertising subverting the foundations of capitalism: the manufacturer doesn't need to win over the customer with a good product, they just need to find novel ways of getting in your face.
+
+This is okay though, because as we all know, the free market will sort itself out. You as a home buyer will simply have to do comprehensive research on every single electronic device that is included in the home and be ready to drop the entire deal at a moment's notice. In this economy. Good luck!
 
 [footnote_text] Reynolds Wrap™ is perfect for making faraday cages and also [hats](https://www.youtube.com/watch?v=urglg3WimHA "Weird Al Yankovic, Foil")!
 
@@ -713,6 +717,26 @@ Reddit:
 - Moderators begged site staff for multiple *weeks* to have more control over the kinds of awards that can be put on posts, because some awards are being used to troll sensitive topics ([one](https://old.reddit.com/r/ModSupport/comments/fut93p/please_consider_giving_subs_the_ability_to/), [two](https://old.reddit.com/r/ModSupport/comments/ghn9be/inappropriate_reddit_community_awards_used_for/), [three](https://old.reddit.com/r/ModSupport/comments/gj3h05/now_getting_harassing_message_sent_through_reddit/), [four](https://old.reddit.com/r/ModSupport/comments/gve2id/can_the_admins_please_disable_certain_awards/), [five](https://old.reddit.com/r/ModSupport/comments/hc4efv/reddit_community_awards_continue_to_be_used_for/), [you get the point](https://old.reddit.com/r/ModSupport/search?q=awards&restrict_sr=on&include_over_18=on&sort=relevance&t=all)). After hemming and hawing and espousing continued "support" and "appreciation" and "we hear you"s, staff have finally put the Yikes award [on pause](https://old.reddit.com/r/ModSupport/comments/gwlvtq/put_your_money_where_your_mouth_is_remove_the/). Just that one, and not the others. It only took them an unjust death and nationwide protesting and rioting to finally lift their finger towards disabling a single source of income [footnote_link].
 
 - In [2020](https://old.reddit.com/r/modnews/comments/hmd17x/karma_experiment/), site staff started an experiment that adds "award karma" as a separate karma category. "Our goals with this change are to recognize awarding as a key part of the Reddit community and to drive more of it, ... Awarding is an important part of our direct-to-consumer revenue; it complements advertising revenue and gives us a strong footing to pursue our mission into the future. By giving awards, users not only recognize others but also help Reddit in its mission to bring more community and belonging to the world". Oh, so that's what the awards system developers have been working on while ignoring all the other issues. Got it.
+
+Smart appliances:
+
+- ["At Samsung, life runs through us. Your advertising should too."](https://www.youtube.com/watch?v=N9kiSEhbLXs "Samsung Ads Life Runs Through Us Web")
+
+    ![](samsung_advertising_1.jpg)
+
+    ![](samsung_advertising_2.jpg)
+
+    [No one knows the Samsung household better](https://www.samsung.com/us/business/samsungads/). Not even the families that live there.
+
+    ![](samsung_advertising_3.png)
+
+- [Android TV's homescreen ads are rolling out](https://9to5google.com/2020/08/18/android-tv-homescreen-ads-turn-off-staff-picks/)
+
+    ![](android_tv.png)
+
+- [Vizio TVs are now showing banner ads over live TV]()
+
+    ![](vizio_jump_ads.png)
 
 Retail IRL:
 
