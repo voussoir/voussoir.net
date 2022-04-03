@@ -3,6 +3,30 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> My $DAYJOB task this week is beginning the process of splitting up a 14554 line C++ file.
+
+-
+
+> At $prevjob we had the ability to do things like this at the push of a button, and generally would have within 90min of incident onset to help systems heal.
+
+-
+
+> Correct. "Not doing $X anymore" doesn't mean you aren't an addict. "Being able to turn on/turn off doing $X" means you aren't an addict.
+
+-
+
+> Note this is amending existing law, so think of it as a legal diff.
+
+-
+
+> This native English speaker is with you, I thought RacquetNext was some new-fangled racquetball racket that was banned because it has carbon fiber plates that…do $SOMETHING, ala the Nike Vaporfly/Alphafly running shoes.
+
+-
+
+> At this point, the onus is to prove thing $x is not used for Google analytics.
+
+-
+
 > I don't think people do this because they want to be polite. The 'hello' is basically the start of what is the human equivalent of the TCP three way handshake.
 
 > \- Hello (SYN)
