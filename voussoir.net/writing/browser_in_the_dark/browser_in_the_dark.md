@@ -158,15 +158,15 @@ body.canvas_active .hide_when_dark { display: none; }
 
 #nightlight_bedroom_dom
 {
-    aspect-ratio: 1412/1065;
+    aspect-ratio: 512/344;
 }
 #nightlight_bedroom_dom .layer1
 {
-    background-image: url("nightlight_1.jpg");
+    background-image: url("nightlight_1.png");
 }
 #nightlight_bedroom_dom .layer2
 {
-    background-image: url("nightlight_2.jpg");
+    background-image: url("nightlight_2.png");
     height: 30%;
 }
 
@@ -208,7 +208,7 @@ body.canvas_active .hide_when_dark { display: none; }
 }
 #nightlight_bedroom_canvas
 {
-    aspect-ratio: 1412/1065;
+    aspect-ratio: 512/344;
 }
 #nightlight_theylive_obey_canvas
 {
@@ -293,7 +293,13 @@ Go back up and look at the images again!
 
 ## Night Light with CSS
 
-I also wanted to try making a Night Light game effect. I tried to approach it with mix-blend-mode, but I don't think you can use those effects to produce arbitrary image masks. I got it done with a more traditional method of translating a background-image property. The only jank fix I'm not really happy about is the background-size property for the flashlight layer, which I had to set using px values in javascript to match the rendered size of the parent. All the other background-size options created ill effects when I wanted to change the size of the flashlight to anything other than 100%. But I'm not that good with CSS and there might be a better answer.
+I also wanted to try making a Night Light game effect. The player who recorded the above video also uploaded the game .iso to the Internet Archive. Thank you Vulnerose!
+
+https://archive.org/details/NightLight_201809
+
+I was able to open the iso in 7-zip and extract the level artwork as bmp files and produce the toy below. I will continue experimenting with these files. Stay tuned.
+
+I tried to approach it with mix-blend-mode, but I don't think you can use those effects to produce arbitrary image masks. I got it done with a more traditional method of translating a background-image property. The only jank fix I'm not really happy about is the background-size property for the flashlight layer, which I had to set using px values in javascript to match the rendered size of the parent. All the other background-size options created ill effects when I wanted to change the size of the flashlight to anything other than 100%. But I'm not that good with CSS and there might be a better answer.
 
 Please turn off your flashlight first. Or don't, and enjoy the two effects together!
 
@@ -316,8 +322,6 @@ Please turn off your flashlight first. Or don't, and enjoy the two effects toget
     <div class="layer1"></div>
     <div class="layer2"></div>
 </div>
-
-Sorry for the missing patches, I stitched this together from the above video. I might try to get the game working for myself soon.
 
 And, I couldn't help it:
 
@@ -499,9 +503,9 @@ function resize_nightlight(event)
 
 const nightlight_bedroom_canvas = document.getElementById("nightlight_bedroom_canvas");
 nightlight_bedroom_canvas.image_dark = new Image();
-nightlight_bedroom_canvas.image_dark.src = "nightlight_1.jpg";
+nightlight_bedroom_canvas.image_dark.src = "nightlight_1.png";
 nightlight_bedroom_canvas.image_light = new Image();
-nightlight_bedroom_canvas.image_light.src = "nightlight_2.jpg";
+nightlight_bedroom_canvas.image_light.src = "nightlight_2.png";
 
 const nightlight_theylive_obey_canvas = document.getElementById("nightlight_theylive_obey_canvas");
 nightlight_theylive_obey_canvas.image_dark = new Image();
