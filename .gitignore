@@ -1,8 +1,10 @@
 voussoir.net/writing/**/*.fcstd
+voussoir.net/writing/**/*.flac
 voussoir.net/writing/**/*.gif
 voussoir.net/writing/**/*.html
 voussoir.net/writing/**/*.ino
 voussoir.net/writing/**/*.jpg
+voussoir.net/writing/**/*.mp4
 voussoir.net/writing/**/*.pdf
 voussoir.net/writing/**/*.png
 voussoir.net/writing/**/*.scad
