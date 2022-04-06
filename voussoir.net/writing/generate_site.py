@@ -173,7 +173,9 @@ def soup_adjust_relative_links(soup, md_file, repo_path):
     def fixby(tagname, attribute):
         links = soup.find_all(tagname)
         for link in links:
-            href = link[attribute]
+            href = link.get(attribute)
+            if not href:
+                continue
             if '://' in href:
                 continue
             if href.startswith('/'):
