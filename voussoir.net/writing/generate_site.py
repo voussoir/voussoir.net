@@ -64,7 +64,7 @@ def git_repo_for_file(path):
         folder = folder.parent
     raise Exception('No Git repo.')
 
-def git_file_edited_date(path) -> str:
+def git_file_edited_date(path) -> datetime.datetime:
     '''
     Return the ISO formatted date of the most recent commit that touched this
     file, ignoring commits marked as "[minor]".
@@ -87,7 +87,7 @@ def git_file_edited_date(path) -> str:
     date = check_output(command)
     date = dateutil.parser.parse(date)
     date = date.astimezone(datetime.timezone.utc)
-    return date.isoformat()
+    return date
 
 def git_file_commit_history(path):
     '''
@@ -115,7 +115,7 @@ def git_file_commit_history(path):
     lines = [line.split(' ', 1) for line in lines]
     return lines
 
-def git_file_published_date(path) -> str:
+def git_file_published_date(path) -> datetime.datetime:
     '''
     Return the ISO formatted date of the commit where this file first appeared.
     '''
@@ -136,7 +136,7 @@ def git_file_published_date(path) -> str:
     date = check_output(command)
     date = dateutil.parser.parse(date)
     date = date.astimezone(datetime.timezone.utc)
-    return date.isoformat()
+    return date
 
 # SOUP
 ################################################################################
@@ -200,8 +200,14 @@ class Article:
         self.md_file = pathclass.Path(md_file)
         self.html_file = self.md_file.replace_extension('html')
         self.web_path = self.md_file.parent.relative_to(WRITING_ROOTDIR, simple=True).replace('\\', '/')
-        self.date = git_file_published_date(self.md_file)
+
+        self.published = git_file_published_date(self.md_file)
+        self.published_iso = self.published.isoformat()
+        self.published_date = self.published.strftime('%Y-%m-%d')
+
         self.edited = git_file_edited_date(self.md_file)
+        self.edited_iso = self.edited.isoformat()
+        self.edited_date = self.edited.strftime('%Y-%m-%d')
 
         repo_path = git_repo_for_file(self.md_file)
         relative_path = self.md_file.relative_to(repo_path, simple=True).replace('\\', '/')
@@ -362,7 +368,7 @@ def make_tag_page(index, path):
     <ol class="article_list">
     {% for article in articles %}
     <li>
-        <a href="/writing/{{article.web_path}}">{{article.date}} - {{article.title|e}}</a>
+        <a href="/writing/{{article.web_path}}">{{article.published_date}} - {{article.title|e}}</a>
     </li>
     {% endfor %}
     </ol>
@@ -392,7 +398,7 @@ def make_tag_page(index, path):
     ''').render(
         parent=parent,
         index=index,
-        articles=sorted(index.articles, key=lambda a: a.date, reverse=True),
+        articles=sorted(index.articles, key=lambda a: a.published, reverse=True),
         path=path,
         children=sorted(tag.name for tag in index.children.keys()),
     )
@@ -429,7 +435,7 @@ def write_writing_index():
     <ol class="article_list">
     {% for article in articles %}
         <li>
-        <a href="{{article.web_path}}">{{article.date}} - {{article.title|e}}</a>
+        <a href="{{article.web_path}}">{{article.published_date}} - {{article.title|e}}</a>
         </li>
     {% endfor %}
     </ol>
@@ -442,9 +448,9 @@ def write_writing_index():
     <h2>Recently edited</h2>
     <ol class="article_list">
     {% for article in articles_edited %}
-        {% if article.edited and article.edited != article.date %}
+        {% if article.edited and article.edited != article.published %}
         <li>
-        <a href="{{article.web_path}}">{{article.edited}} - {{article.title|e}} ({{article.date}})</a>
+        <a href="{{article.web_path}}">{{article.edited_date}} - {{article.title|e}} ({{article.published_date}})</a>
         </li>
         {% endif %}
     {% endfor %}
@@ -460,13 +466,13 @@ def write_writing_index():
     </body>
     </html>
     ''').render(
-        articles=sorted(ARTICLES.values(), key=lambda a: a.date, reverse=True),
+        articles=sorted(ARTICLES.values(), key=lambda a: a.published, reverse=True),
         articles_edited=sorted(ARTICLES.values(), key=lambda a: a.edited, reverse=True)
     )
     write(WRITING_ROOTDIR.with_child('index.html'), page)
 
 def write_atom():
-    latest_date = max(article.date for article in ARTICLES_PUBLISHED.values())
+    latest_date = max(article.published for article in ARTICLES_PUBLISHED.values())
     atom = jinja2.Template('''
     <?xml version="1.0" encoding="utf-8"?>
     <feed xmlns="http://www.w3.org/2005/Atom">
@@ -480,7 +486,7 @@ def write_atom():
             <id>{{article.publication_id}}</id>
             <title>{{article.title|e}}</title>
             <link rel="alternate" type="text/html" href="https://voussoir.net/writing/{{article.web_path}}"/>
-            <updated>{{article.date}}</updated>
+            <updated>{{article.published_iso}}</updated>
             <content type="html">
             <![CDATA[
             {{article.soup.article}}
@@ -490,7 +496,7 @@ def write_atom():
         {% endfor %}
     </feed>
     '''.strip()).render(
-        articles=sorted(ARTICLES_PUBLISHED.values(), key=lambda a: a.date, reverse=True),
+        articles=sorted(ARTICLES_PUBLISHED.values(), key=lambda a: a.published, reverse=True),
         latest_date=latest_date,
     )
     write(WRITING_ROOTDIR.with_child('writing.atom'), atom)
@@ -509,7 +515,7 @@ def write_rss():
             <title>{{article.title|e}}</title>
             <guid isPermalink="false">{{article.publication_id}}</guid>
             <link>https://voussoir.net/writing/{{article.web_path}}</link>
-            <pubDate>{{article.date}}</pubDate>
+            <pubDate>{{article.published_iso}}</pubDate>
             <description>
             <![CDATA[
             {{article.soup.article}}
@@ -519,7 +525,7 @@ def write_rss():
         {% endfor %}
     </channel>
     </rss>
-    '''.strip()).render(articles=sorted(ARTICLES_PUBLISHED.values(), key=lambda a: a.date, reverse=True))
+    '''.strip()).render(articles=sorted(ARTICLES_PUBLISHED.values(), key=lambda a: a.published, reverse=True))
     write(WRITING_ROOTDIR.with_child('writing.rss'), rss)
 
 # GO
