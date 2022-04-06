@@ -1,4 +1,6 @@
 import bs4
+import datetime
+import dateutil.parser
 import etiquette
 import html
 import jinja2
@@ -62,10 +64,10 @@ def git_repo_for_file(path):
         folder = folder.parent
     raise Exception('No Git repo.')
 
-def git_file_edited_date(path):
+def git_file_edited_date(path) -> str:
     '''
-    Return the YYYY-MM-DD date of the most recent commit that touched this file,
-    ignoring commits marked as "[minor]".
+    Return the ISO formatted date of the most recent commit that touched this
+    file, ignoring commits marked as "[minor]".
     '''
     path = pathclass.Path(path)
     repo = git_repo_for_file(path)
@@ -76,14 +78,16 @@ def git_file_edited_date(path):
         'log',
         '-1',
         '--pretty=format:%ad',
-        '--date=short',
+        '--date=iso',
         r'--grep=\[minor\]',
         '--invert-grep',
         '--',
         path,
     ]
-    output = check_output(command)
-    return output
+    date = check_output(command)
+    date = dateutil.parser.parse(date)
+    date = date.astimezone(datetime.timezone.utc)
+    return date.isoformat()
 
 def git_file_commit_history(path):
     '''
@@ -111,9 +115,9 @@ def git_file_commit_history(path):
     lines = [line.split(' ', 1) for line in lines]
     return lines
 
-def git_file_published_date(path):
+def git_file_published_date(path) -> str:
     '''
-    Return the YYYY-MM-DD date of the commit where this file first appeared.
+    Return the ISO formatted date of the commit where this file first appeared.
     '''
     path = pathclass.Path(path)
     repo = git_repo_for_file(path)
@@ -125,12 +129,14 @@ def git_file_published_date(path):
         '--follow',
         '--diff-filter=A',
         '--pretty=format:%ad',
-        '--date=short',
+        '--date=iso',
         '--',
         path,
     ]
-    output = check_output(command)
-    return output
+    date = check_output(command)
+    date = dateutil.parser.parse(date)
+    date = date.astimezone(datetime.timezone.utc)
+    return date.isoformat()
 
 # SOUP
 ################################################################################
@@ -472,7 +478,7 @@ def write_atom():
             <id>{{article.publication_id}}</id>
             <title>{{article.title|e}}</title>
             <link rel="alternate" type="text/html" href="https://voussoir.net/writing/{{article.web_path}}"/>
-            <updated>{{article.date}}T00:00:00Z</updated>
+            <updated>{{article.date}}</updated>
             <content type="html">
             <![CDATA[
             {{article.soup.article}}
@@ -501,7 +507,7 @@ def write_rss():
             <title>{{article.title|e}}</title>
             <guid isPermalink="false">{{article.publication_id}}</guid>
             <link>https://voussoir.net/writing/{{article.web_path}}</link>
-            <pubDate>{{article.date}}T00:00:00Z</pubDate>
+            <pubDate>{{article.date}}</pubDate>
             <description>
             <![CDATA[
             {{article.soup.article}}
