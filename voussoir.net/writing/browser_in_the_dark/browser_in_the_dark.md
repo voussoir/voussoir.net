@@ -364,7 +364,7 @@ This was a good opportunity for me to get practice with canvas, and I find the r
 
 Have fun!
 
-[footnote_text] [Archived here](https://web.archive.org/web/20220314193025/https://tonsky.me/) in case it gets changed.
+[footnote_text] [Archived here](tonsky_me.html) in case it gets changed.
 
 [footnote_text] A little vanity goes a long way!
 
