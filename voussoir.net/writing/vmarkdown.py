@@ -204,9 +204,22 @@ class VoussoirInline(mistune.InlineLexer):
         return self.output_supers(m)
 
     def output_subreddit(self, m):
+        # Hotfix. I'd like to be able to include /r/ and /u/ inside links
+        # without having to escape it. But since these rules are processed after
+        # the link rules, the m object doesn't contain anything that would help
+        # us know we're inside a link. Need to think about this problem but for
+        # now here's a stopgap solution.
+        import inspect
+        for x in inspect.stack():
+            if x.function == '_process_link':
+                return m.group(0)
         return f'<a href="https://old.reddit.com{m.group(0)}">{m.group(0)}</a>'
 
     def output_redditor(self, m):
+        import inspect
+        for x in inspect.stack():
+            if x.function == '_process_link':
+                return m.group(0)
         return f'<a href="https://old.reddit.com{m.group(0)}">{m.group(0)}</a>'
 
     def output_dash_spacer(self, m):
