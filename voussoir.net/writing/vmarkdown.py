@@ -654,7 +654,8 @@ def inject_footnotes(soup):
 def set_img_lazyload(soup):
     imgs = soup.find_all('img')
     for img in imgs:
-        img['loading'] = 'lazy'
+        if not img.get('loading'):
+            img['loading'] = 'lazy'
 
 # FINAL MARKDOWNS
 ################################################################################
