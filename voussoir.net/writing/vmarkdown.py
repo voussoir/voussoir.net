@@ -18,6 +18,7 @@ import sys
 import traceback
 import warnings
 
+from voussoirkit import betterhelp
 from voussoirkit import pathclass
 
 HTML_TEMPLATE = '''
@@ -827,16 +828,32 @@ def markdown_argparse(args):
 
 def main(argv):
     parser = argparse.ArgumentParser()
-
     parser.add_argument('md_filename')
-    parser.add_argument('--css', dest='css', action='append', default=None)
-    parser.add_argument('--embed_images', '--embed-images', dest='do_embed_images', action='store_true')
-    parser.add_argument('-o', '--output', dest='output_filename', default=None)
-    parser.add_argument('--server', dest='server', type=int, default=None)
+    parser.add_argument(
+        '--css',
+        action='append',
+        default=None,
+    )
+    parser.add_argument(
+        '--embed_images',
+        '--embed-images',
+        dest='do_embed_images',
+        action='store_true',
+    )
+    parser.add_argument(
+        '-o',
+        '--output',
+        dest='output_filename',
+        default=None,
+    )
+    parser.add_argument(
+        '--server',
+        type=int,
+        default=None,
+    )
     parser.set_defaults(func=markdown_argparse)
 
-    args = parser.parse_args(argv)
-    return args.func(args)
+    return betterhelp.go(parser, argv)
 
 if __name__ == '__main__':
     raise SystemExit(main(sys.argv[1:]))
