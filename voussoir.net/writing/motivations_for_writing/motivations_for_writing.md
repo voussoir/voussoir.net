@@ -47,7 +47,7 @@ Making texture replacement skins for TF2 is pretty easy, but for a bigger challe
 
 Future ideas:
 
-A little more than a year ago I discovered the world of fan-made film commentaries. The first one I saw was [David Taylor's Birdman commentary](/writing/friendly/#david_taylor__prooffreader), then I discovered [Tysto](http://www.tysto.com/) and [popcornpoops](http://www.popcornpoops.com/) and a few others. I think this is an awesome idea and I've wanted to make some ever since, but I haven't gotten around to it yet. You have to find enough interesting things to talk about to make it worthwhile.
+A little more than a year ago I discovered the world of fan-made film commentaries. The first one I saw was [David Taylor's Birdman commentary](https://drive.google.com/file/d/11KK4tKOtzTHbADB8DIq3eATGWQ1cVxRz/view), then I discovered [Tysto](http://www.tysto.com/) and [popcornpoops](http://www.popcornpoops.com/) and a few others. I think this is an awesome idea and I've wanted to make some ever since, but I haven't gotten around to it yet. You have to find enough interesting things to talk about to make it worthwhile.
 
 ## Influences
 
