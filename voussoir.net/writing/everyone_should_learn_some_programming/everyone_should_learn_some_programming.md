@@ -108,9 +108,9 @@ Although text editors and IDEs may let you run Python code within the editor, yo
 
 ### AutoHotkey
 
-[AutoHotkey](https://autohotkey.com) is in a different category than most programming languages, but I think it's excellent for programming learners to play around with because it's quite exciting to watch your mouse cursor fly around and do things by itself. For example, I once made [an AHK script](https://github.com/voussoir/else/blob/master/AHK/clickerheroes.ahk) that would automatically click on the bonus items in Clicker Heroes, and a similar one for emptying my entire backpack into a chest in Minecraft.
+[AutoHotkey](https://autohotkey.com) is in a different category than most programming languages, but I think it's excellent for programming learners to play around with because it's quite exciting to watch your mouse cursor fly around and do things by itself. For example, I once made [an AHK script](https://github.com/voussoir/ahk/blob/master/clickerheroes.ahk) that would automatically click on the bonus items in Clicker Heroes, and a similar one for emptying my entire backpack into a chest in Minecraft.
 
-The ability to create custom hotkeys really puts the Personal in Personal Computer. I have [custom volume buttons](https://github.com/voussoir/else/blob/master/AHK/volumecontrol.ahk), custom [English/Korean keyboard swap buttons](https://github.com/voussoir/else/blob/master/AHK/custom%20hangul.ahk), and a button for keeping the current window [always on top](https://github.com/voussoir/else/blob/master/AHK/current%20alwaysontop.ahk), which makes me feel like a wizard.
+The ability to create custom hotkeys really puts the Personal in Personal Computer. I have [custom volume buttons](https://github.com/voussoir/ahk/blob/master/volumecontrol.ahk), custom [English/Korean keyboard swap buttons](https://github.com/voussoir/ahk/blob/master/custom_hangul.ahk), and a button for keeping the current window [always on top](https://github.com/voussoir/ahk/blob/master/alwaysontop.ahk), which makes me feel like a wizard.
 
 Also, AHK scripts tend to be short and sweet, so you don't get stuck on a particular project for too long, which is a good thing for learners. You can learn something, enjoy it, and move on.
 
