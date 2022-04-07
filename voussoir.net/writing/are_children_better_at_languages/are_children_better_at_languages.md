@@ -71,9 +71,11 @@ Compare that with adult learners who
 - read and listen to native-level material at native-level speed [footnote_link].
 - read and listen to material that isn't actually interesting to them simply for the sake of practicing comprehension.
 
-[MotivateKorean](http://youtube.com/channel/UCBpRNdkIp4LSUCgXOcp1NSQ) often says that when you're learning vocabulary, there is an important moment where you "make it yours". Discovering an opportunity to use a new word, and succesfully using it, and hearing it come out of your own mouth contributes much more to your learning than just doing flashcards. For children this will occur naturally and frequently in their daily life. For adults, especially those learning on their own in their home country, it won't.
+MotivateKorean [footnote_link] often said that when you're learning vocabulary, there is an important moment where you "make it yours". Discovering an opportunity to use a new word, and succesfully using it, and hearing it come out of your own mouth contributes much more to your learning than just doing flashcards. For children this will occur naturally and frequently in their daily life. For adults, especially those learning on their own in their home country, it won't.
 
 [footnote_text] You've probably seen Stephen Krashen demonstrate [comprehensible input](https://www.youtube.com/watch?v=fnUc_W3xE1w&t=3m20s). It's a good lesson, for sure, but in practicality it's extremely difficult to find material that matches your `i+1`. Partly because it's hard to define your current `i` in the first place. The parent-child relationship excels at this in a way that a language teacher or tutor or internet material simply can not. My advice is to not worry about `i+1` too too much. I have been listening to TTMIK's Iyagi since nearly the beginning, and although it is still above my skill level, I can feel that my comprehension has been going up. Don't get stuck in an endless search for the perfect `i+1` material, just find *something* that isn't impossible and get started.
+
+[footnote_text] The [channel](https://youtube.com/channel/UCBpRNdkIp4LSUCgXOcp1NSQ) still exists but he has removed videos of himself and handed the channel over to someone else.
 
 ### Not afraid to make mistakes
 
@@ -105,7 +107,7 @@ I want to restate this point: It seems to me that learning the second language i
 
 > Grey: I guess I don't derive feelings of superiority by surrounding myself with uselesness.
 
-> [Hello Internet #29](http://www.hellointernet.fm/podcast/29), around the 1:00:00 mark.
+> [Hello Internet #29](https://www.hellointernet.fm/podcast/29), around the 1:00:00 mark.
 
 ### Ability to actively seek what we want
 
