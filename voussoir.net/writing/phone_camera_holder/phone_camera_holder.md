@@ -21,9 +21,9 @@ If you search the internet for "diy camera stabilizer", you'll find various devi
 
 This is what I came up with:
 
-[![](thumbs/model.png)](model.png)
+![](model.png)
 
-[![](thumbs/slicer.png)](slicer.png)
+![](slicer.png)
 
 [![](thumbs/holder_1.jpg)](holder_1.jpg)
 
@@ -61,7 +61,7 @@ And here are some of the bad:
 
 It might also be fun to make a holder that looks more like a traditional camera. The phone could slide in from the top and wedge between some fabric to get a gentle, tight grip.
 
-[![](thumbs/idea.png)](idea.png)
+![](idea.png)
 
 Though this is surely pointless skeumorphism, and is the opposite of what I just said about not wrapping the phone in plastic.
 
