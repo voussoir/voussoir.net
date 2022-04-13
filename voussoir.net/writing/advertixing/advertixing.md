@@ -782,6 +782,12 @@ In discussions of politics, you will sometimes hear people say "if you don't lik
 
 Are ads truly necessary for our survival? If everyone followed these steps, would the world grind to a halt, burst into flames, go up in smoke, go down the drain? There's only one way to find out! Follow your heart. Don't waste your time thinking about whether you have some moral obligation to watch an advertisement in order to keep the world functioning properly. If you don't want to see ads, then stop seeing ads. Let the rest of the world figure out for themselves how they're going to keep their heart pumping. Their income is not your responsibility.
 
+Here's a message from Jackie Chan, [speaking to filmmakers](https://www.youtube.com/watch?v=Z1PCtIaM_GQ&t=8m16s "Every Frame a Painting - Jackie Chan - How to Do Action Comedy"):
+
+> Whatever you do, do the best you can, because the film lives forever. "No, because, that day was raining, and the actor didn't have time...". Would you go to every theater to tell the audience? No! The audience sees in the theater good movie, bad movie, that's all.
+
+I think about this quote very often because it applies to every kind of published work and, indeed, our whole economy. As agents in a free market, we do not need to contort ourselves into sympathizing with whatever decisions led to the inclusion of advertisements in a product; we just need to say "bad movie" and pick something else. It is the seller's responsibility to make good work and earn our favor.
+
 ## My virtues
 
 Here are my promises to you, reader.
