@@ -219,6 +219,30 @@ When two different websites use the same advertising package -- take Google AdSe
 
 The vague concept of web tracking has become widely known in the past few years, but I think the specifics of how it works have not. Let's make this perfectly clear: the only reason advertisers are able to follow you around the internet is because all of the websites you visit are inviting them in. You are on a daily basis being betrayed by almost everyone who has even the slightest financial incentive to betray you. They will sell you off for a single cent, because $0.01 is bigger than $0.00. Why do you tolerate this? When Google tracks you, you must blame more than just Google, you must blame every single webpage that invited Google into the session.
 
+It's time for a pop quiz! Ready?
+
+![](mcdonalds_cookies.png)
+
+Question: How can McDonalds make the above cookie menu a better experience for the end user?
+
+A) Allow the user to dismiss the modal by clicking the background area, instead of just the X.
+
+B) Add a one-click "Accept all" button so the user doesn't have to think about what they're reading.
+
+C) Remind the user that this is all the GDPR's fault and we really wish we didn't have to do this.
+
+D) Stop using trackers and eliminate the entire thing.
+
+The correct answer is D! The GDPR does not require companies to obtain cookie consent if the only cookies used are completely necessary for the website to function:
+
+> Strictly necessary cookies — These cookies are essential for you to browse the website and use its features, such as accessing secure areas of the site. Cookies that allow web shops to hold your items in your cart while you are shopping online are an example of strictly necessary cookies. These cookies will generally be first-party session cookies. While it is not required to obtain consent for these cookies, what they do and why they are necessary should be explained to the user.
+
+> https://gdpr.eu/cookies/
+
+Whenever you see a cookie banner that starts with the phrase "Because we respect your right to privacy, ...", just remember that they don't actually respect you enough to stop sending you trackers. They'd rather moan and whine about how the GDPR forced their hand into adding this big annoying cookie banner and there was just no other way, we're so sorry you have to deal with it. Indeed, many cookie banners can be considered a form of [malicious compliance](https://en.wikipedia.org/wiki/Malicious_compliance) -- if the website can convince you that a banner is required for all forms of cookies and that the law is to blame, they can sway public opinion against the legislature. The big bad government is the one ruining your web browsing experience, not us. Contact your representatives and get them to repeal GDPR so we can go back to sending you all of our trackers without telling you, the way it used to be.
+
+If the user declines the tracking cookies, you can punish them by showing them the banner every time they come back, until they give up and accept (or block the element with their adblocker). If you wanted the "don't show me the banner again" cookie to persist, you should have enabled cookies! Bwahahahahaha.
+
 If you're interested in this topic, you've probably already heard the apocryphal story about Target [inadvertently outing a young pregnant girl](nyt_target_story.html) by sending maternity-related coupons to the family:
 
 > "My daughter got this in the mail!" he said. "She's still in high school, and you're sending her coupons for baby clothes and cribs? Are you trying to encourage her to get pregnant?"
