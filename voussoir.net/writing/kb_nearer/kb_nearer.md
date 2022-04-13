@@ -13,7 +13,7 @@ Assembling the Nearer keyboard
 
 [![](thumbs/glamour_4.jpg)](glamour_4.jpg)
 
-[youtube:481tMDoXg5c]
+[youtube:cZAqB7i1tpg]
 
 ## Introduction
 
