@@ -230,7 +230,7 @@ You can read the source code for this document [here](https://github.com/voussoi
 
 <div id="flashlight"></div>
 
-I really like the "dark mode" switch on https://tonsky.me [footnote_link]. It's a fun subversion of expectations and reminds me of [Night Light (1995)](https://www.youtube.com/watch?v=KYDoBcFcGM8), a PC game for kids about using a flashlight in the dark.
+I really like the "dark mode" switch on https://tonsky.me [footnote_link]. It's a fun subversion of expectations and reminds me of [Night Light (1995)](/writing/night_light_1995), a PC game for kids about using a flashlight in the dark.
 
 One of the splash texts I put on [my homepage](/?justthesplash) a while back says "looks better in black and white". Yesterday, while hypnotized by my own pulsating creation [footnote_link], I had the idea to put the two together and create a grayscale "flashlight", or perhaps a lens. I learned that the CSS property `mix-blend-mode` allows me to make a div that turns everything below it gray. The other mix-blend-mode options are cool too.
 
@@ -297,9 +297,9 @@ I also wanted to try making a Night Light game effect. The player who recorded t
 
 https://archive.org/details/NightLight_201809
 
-I was able to open the iso in 7-zip and extract the level artwork as bmp files and produce the toy below. I will continue experimenting with these files. Stay tuned.
+I was able to open the iso in 7-zip, extract the level artwork as bmp files, produce the toy below. I've made a [followup article](/writing/night_light_1995) with the other assets.
 
-I tried to approach it with mix-blend-mode, but I don't think you can use those effects to produce arbitrary image masks. I got it done with a more traditional method of translating a background-image property. The only jank fix I'm not really happy about is the background-size property for the flashlight layer, which I had to set using px values in javascript to match the rendered size of the parent. All the other background-size options created ill effects when I wanted to change the size of the flashlight to anything other than 100%. But I'm not that good with CSS and there might be a better answer.
+I first tried to approach it with mix-blend-mode, but I don't think you can use those effects to produce arbitrary image masks. I got it done with a more traditional method of translating a background-image property. The only jank fix I'm not really happy about is the background-size property for the flashlight layer, which I had to set using px values in javascript to match the rendered size of the parent. All the other background-size options created ill effects when I wanted to change the size of the flashlight to anything other than 100%. But I'm not that good with CSS and there might be a better answer.
 
 Please turn off your flashlight first. Or don't, and enjoy the two effects together!
 
