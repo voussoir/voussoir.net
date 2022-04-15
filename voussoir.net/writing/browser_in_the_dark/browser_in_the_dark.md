@@ -266,9 +266,9 @@ The results don't look exactly like a light source, but it's a nice toy. Here ar
 
 <canvas id="fullpage_canvas"></canvas>
 
-I think those effects are fun, but they don't really give you the feeling of being in the dark like tonsky's flashlight switch. His works by setting the background color to black, so all the black text "disappears" even though it's still there. I wanted to come up with a flashlight that really works for all elements on the page, but I don't think any combination of DOM elements and mix-blend-modes would do it.
+I think those effects are fun, but they don't really give you the feeling of being in the dark like tonsky's flashlight switch. His works by setting the background color to black, so all the black text "disappears" even though it's still there. I wanted to come up with a flashlight that really works for all elements on the page, but I couldn't figure it out with CSS.
 
-I've never used HTML canvas before, but I realized that would be the correct solution. I was able to get a basic flashlight effect working by covering the entire screen in a black rectangle, and punching a hole in it.
+Instead, I was able to get a basic flashlight effect working with canvas by covering the entire screen in a black rectangle, and punching a hole in it.
 
 <p>
 <button onclick="return enable_fullpage_canvas(event);">Canvas on</button>
@@ -290,6 +290,30 @@ This works great in conjunction with the mix-blend-mode lights:
 </p>
 
 Go back up and look at the images again!
+
+After [posting](https://news.ycombinator.com/item?id=31029845) this article to Hacker News, I got some great suggestions for solving this problem with CSS:
+
+```CSS
+body
+{
+    clip-path: circle(80px at var(--lightx) var(--lighty));
+}
+```
+
+alternatively:
+
+```CSS
+#blackout
+{
+    position: fixed;
+    z-index: 1;
+    inset: -5px;
+    background: radial-gradient(circle at var(--lightx) var(--lighty), transparent 0, transparent 100px, black 110px);
+    pointer-events: none;
+}
+```
+
+where lightx and lighty are set by a mousemove handler. I haven't assessed the performance impact of the Canvas solution versus these CSS solutions, but if I need to do this again in the future I think I will preferentially reach for the CSS version since it fits well with my usual way of doing things.
 
 ## Night Light with CSS
 
