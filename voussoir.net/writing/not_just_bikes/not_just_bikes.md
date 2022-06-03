@@ -42,7 +42,7 @@ There is a freeway near me that is currently undergoing expansion, which is prov
 
 We are hellbent on keeping our heads in the sand. We'd rather challenge ourselves with the invention self-driving cars and the manufacture of unspeakable quantities of batteries for EVs [footnote_link] than consider the possibility that maybe spending thousands of hours in traffic isn't an inherent part of life around which all else must bow down.
 
-NJB has made me ashamed to be American. I am ashamed that a country with this much flagrant disregard for sense touts itself as the best nation in the world. I am ashamed that the closest we can get to eco-friendliness is to make our cars run on massive batteries and steer themselves, because simply getting out of the car was never considered an option. I am ashamed that these are my surroundings and that I did not wake up from this Matrix sooner.
+NJB has made me ashamed to be American. I am ashamed that a country with this much flagrant disregard for sense touts itself as the best nation in the world. I am ashamed that the closest we can get to eco-friendliness is to make our cars run on massive batteries and steer themselves, because simply getting out of the car was never considered an option. I am ashamed that these are my surroundings and that I did not wake up from this [Matrix](https://www.youtube.com/watch?v=OQE_5MFCekg "The Orange Pill") sooner.
 
 ![](scissorhands.jpg)
 
