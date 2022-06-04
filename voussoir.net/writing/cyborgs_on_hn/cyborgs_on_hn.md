@@ -3,6 +3,66 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> Telling X and doing !X is not a recent invention.
+
+-
+
+> Forgive me if I'm wrong but I suspect this comment is GPT3 generated. Regardless, it was hilariously absurd.
+
+-
+
+> I'm sure this is good, like, really really good, but I'm struck by the feeling that it wants to baby talk me the same way Godel, Escher, Bach did.
+
+> I mean, it reads like a Homestuck pesterlog.
+
+> > Perhaps it's written by GPT-3..
+
+-
+
+> If I see someone is typing in a Slack channel, or typing to me privately, it takes all my focus away until it is complete.
+
+> > that means a person can DOS you by typing and erasing text but never sending you a message?
+
+-
+
+> Identifying this usage would require the compiler to be aware of the version control system, and still wouldn't correctly identify that the version sent from $COWORKER via email for some weird reason isn't a gradual change.
+
+-
+
+> Is this a GPT-3 generated post? It reads like an answer to a completely different different question that just happens to hit the same keywords (e.g. "pay", "smart", "comfort", "social class"...)
+
+-
+
+> I couldn't download .exe files at some $CORPORATION. They had to be whitelisted or something, and the download just wouldn't work otherwise.
+
+-
+
+> I'm quite sure similar services can also be used by the average person. You simply google for these magical words '産廃業者 $CITY'.
+
+-
+
+> \> It might sound silly but I'm always amazed at the fresh perspectives I'm able to obtain when I ask "someone smarter" for advice in my imagination.
+
+> > That sounds eerily like asking GPT3 to pretend to be someone else.
+
+-
+
+> But we're all living in the same system, and to put it in HN terms, we need to wipe and reinstall the OS.
+
+-
+
+> The only switch type where actuation == tactile feedback that I know of is buckling-spring, as in the IBM model M.
+
+-
+
+> I've always said it's not the Tree of Life, but rather the DAG of Life.
+
+-
+
+> I still don't understand why this is a website thing and not an user-agent^W^W webbrowser thing.
+
+-
+
 > My $DAYJOB task this week is beginning the process of splitting up a 14554 line C++ file.
 
 -
