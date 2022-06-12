@@ -778,6 +778,18 @@ Retail IRL:
 
     [![](toronto_subway.jpg)](https://www.youtube.com/watch?v=tXcmyUtCmCo)
 
+Here's a fun comment from Hacker News user skizm that I wasn't sure where else in this article to quote:
+
+> I really do feel like there are two versions of the internet. One for people who aggressively use ad-blockers, pay for premium (non-ad) versions of things, manage their inboxes well, and generally are tech savvy enough to avoid 95% of unwanted advertising. Then there's everyone else who just accept the hundreds of ads washing over them at all times, that 60% of their screen real-estate is for ads, are completely comfortable with auto-playing videos, that are okay sitting through 30-second ads before watching a random funny video on youtube, etc. The second category can be sub-divided by motivations (some don't know there's a better way, some don't think it's worth the effort, etc.), but the resulting experience is the same no matter where you fall in group 2.
+
+> Here's the (a?) kicker: advertisers are willing to pay orders of magnitude more to get ads in front of group 1. They'll pour so many resources into it that they'll make everything "worse" for group 2. Group 1 adjusts their filters (both technical and mental), get back to neutral, but the rest of the internet is just a little worse off going forward because advertisers and publishers saw a very slight up tick in clicks after their scorched earth campaign to reach group 1. Rinse and repeat until we find ourselves where we are now.
+
+> I used to think that over time group 2 members would trickle into group 1, sort of like how programmers and hackers were using Google before it was cool and slowly the world followed, but that doesn't seem to be happening. Personally I'm seeing the groups continuing to divide. Group 2 really just doesn't see the problems, doesn't care, or isn't willing to put in the slightest effort to improve their interactions with technology and the internet.
+
+> My "favorite" outcome of all this is when a member of group 1 is forced to use a device owned by someone in group 2 and are horrified at what they see (favorite because it is equal parts sad and funny).
+
+> https://news.ycombinator.com/item?id=31070801
+
 [footnote_text] You might think that reddit gold and their other newfangled abominations don't belong on an article about advertising, since it's a form of direct monetization for the site, essentially a donation. That's partially true, but the important difference between reddit gold and just donating money to reddit is the visibility of that golden badge. When you see someone else's post with a nice shiny gold on it, that's a prominent reminder that regular people, just like you!, can make a post so cool or funny that it earns a gold star from a total stranger. Gee whiz, if only I were that cool or funny! I'd better stay on reddit and keep trying until I get one too! Many young people will get sucked into the trap of striving for this pseudonymous congratulations and fame, and making ad impressions the whole while. As if the upvotes weren't bad enough.
 
 ## Enacting change
