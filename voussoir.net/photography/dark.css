@@ -1,0 +1,302 @@
+:root
+{
+    --color_bodybg: #272822;
+    --color_codebg: rgba(255, 255, 255, 0.05);
+    --color_codeborder: rgba(255, 255, 255, 0.2);
+    --color_h1bg: #284142;
+    --color_htmlbg: #1b1c18;
+    --color_blockquotebg: rgba(0, 0, 0, 0.2);
+    --color_blockquoteedge: rgba(255, 255, 255, 0.2);
+    --color_inlinecodebg: rgba(255, 255, 255, 0.1);
+    --color_link: #ae81ff;
+    --color_maintext: #ddd;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+html
+{
+    box-sizing: border-box;
+
+    background-color: var(--color_htmlbg);
+    color: var(--color_maintext);
+
+    font-family: Verdana, sans-serif;
+    font-size: 10pt;
+    margin: 0;
+}
+
+body
+{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header
+{
+    width: 100%;
+    max-width: 120em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: end;
+}
+header > *
+{
+    padding: 16px;
+    background-color: var(--color_bodybg);
+}
+.photograph
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 16px;
+    background-color: var(--color_bodybg);
+}
+article .photograph:first-of-type
+{
+    margin-top: 0;
+}
+article .photograph:last-of-type
+{
+    margin-bottom: 0;
+}
+.photograph img
+{
+    max-height: 92vh;
+}
+article .morelink
+{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0;
+}
+@media not print
+{
+    .photograph
+    {
+        box-shadow: #000 0px 0px 40px -10px;
+    }
+}
+
+@media screen and (min-width: 600px)
+{
+    article
+    {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .photograph
+    {
+        box-shadow: none;
+    }
+}
+
+h1, h2, h3, h4, h5
+{
+    margin-bottom: 0;
+    padding: 8px;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child
+{
+    margin-top: 0;
+}
+h2, h3, h4, h5
+{
+    border-bottom: 1px solid var(--color_maintext);
+    /*background-color: var(--color_h1bg);*/
+}
+h1 + p
+{
+    margin-top: 0;
+}
+p:last-child
+{
+    margin-bottom: 0;
+}
+h1 {font-size: 2.5em;} h1 * {font-size: inherit;}
+h2 {font-size: 2.0em;} h2 * {font-size: inherit;}
+h3 {font-size: 1.5em;} h3 * {font-size: inherit;}
+h4 {font-size: 1.2em;} h4 * {font-size: inherit;}
+h5 {font-size: 1.0em;} h5 * {font-size: inherit;}
+
+.header_anchor_link {display: none; font-size: 1.0em; text-decoration: none}
+h1:hover > .header_anchor_link {display: initial;}
+h2:hover > .header_anchor_link {display: initial;}
+h3:hover > .header_anchor_link {display: initial;}
+h4:hover > .header_anchor_link {display: initial;}
+h5:hover > .header_anchor_link {display: initial;}
+
+a
+{
+    color: var(--color_link);
+    cursor: pointer;
+}
+
+article *
+{
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+#table_of_contents
+{
+    border: 1px solid var(--color_blockquoteedge);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+}
+
+blockquote
+{
+    background-color: var(--color_blockquotebg);
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    border-left: 4px solid var(--color_blockquoteedge);
+
+    padding: 8px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+}
+
+table
+{
+    border-collapse: collapse;
+    font-size: 1em;
+}
+table, table th, table td
+{
+    border: 1px solid var(--color_maintext);
+}
+table th, table td
+{
+    padding: 4px;
+}
+
+ol ol, ul ul, ol ul, ul ol
+{
+    padding-inline-start: 20px;
+}
+
+*:not(pre) > code
+{
+    background-color: var(--color_inlinecodebg);
+    border-radius: 4px;
+    line-height: 1.5;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+pre
+{
+    padding: 8px;
+    border: 1px solid var(--color_codeborder);
+    background-color: var(--color_codebg);
+    overflow-x: auto;
+}
+
+code,
+pre,
+.highlight *
+{
+    font-family: monospace;
+}
+
+/*
+Thank you richleland for pre-building this Monokai style.
+https://github.com/richleland/pygments-css
+*/
+:root
+{
+    --color_monokai_bg: #272822;
+    --color_monokai_purple: #ae81ff;
+    --color_monokai_green: #a6e22e;
+    --color_monokai_pink: #f92672;
+    --color_monokai_white: #f8f8f2;
+    --color_monokai_orange: #fd971f;
+    --color_monokai_yellow: #e6db74;
+    --color_monokai_blue: #66d9ef;
+}
+.highlight .hll { background-color: #49483e }
+.highlight  { background-color: var(--color_monokai_bg); color: var(--color_monokai_white) }
+.highlight .c { color: #75715e } /* Comment */
+.highlight .err { color: #960050; background-color: #1e0010 } /* Error */
+.highlight .k { color: var(--color_monokai_pink) } /* Keyword */
+.highlight .l { color: var(--color_monokai_purple) } /* Literal */
+.highlight .n { color: var(--color_monokai_white) } /* Name */
+.highlight .o { color: var(--color_monokai_pink) } /* Operator */
+.highlight .p { color: var(--color_monokai_white) } /* Punctuation */
+.highlight .ch { color: #75715e } /* Comment.Hashbang */
+.highlight .cm { color: #75715e } /* Comment.Multiline */
+.highlight .cp { color: #75715e } /* Comment.Preproc */
+.highlight .cpf { color: #75715e } /* Comment.PreprocFile */
+.highlight .c1 { color: #75715e } /* Comment.Single */
+.highlight .cs { color: #75715e } /* Comment.Special */
+.highlight .gd { color: var(--color_monokai_pink) } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gi { color: var(--color_monokai_green) } /* Generic.Inserted */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #75715e } /* Generic.Subheading */
+.highlight .kc { color: var(--color_monokai_purple) } /* Keyword.Constant */
+.highlight .kd { color: var(--color_monokai_blue) } /* Keyword.Declaration */
+.highlight .kn { color: var(--color_monokai_pink) } /* Keyword.Namespace */
+.highlight .kp { color: var(--color_monokai_blue) } /* Keyword.Pseudo */
+.highlight .kr { color: var(--color_monokai_blue) } /* Keyword.Reserved */
+.highlight .kt { color: var(--color_monokai_blue) } /* Keyword.Type */
+.highlight .ld { color: var(--color_monokai_yellow) } /* Literal.Date */
+.highlight .m { color: var(--color_monokai_purple) } /* Literal.Number */
+.highlight .s { color: var(--color_monokai_yellow) } /* Literal.String */
+.highlight .na { color: var(--color_monokai_white) } /* Name.Attribute */
+.highlight .narg {color: var(--color_monokai_orange) } /* Custom Name.Argument */
+.highlight .nb { color: var(--color_monokai_blue) } /* Name.Builtin */
+.highlight .nc { color: var(--color_monokai_white) } /* Name.Class */
+.highlight .no { color: var(--color_monokai_blue) } /* Name.Constant */
+.highlight .nd { color: var(--color_monokai_green) } /* Name.Decorator */
+.highlight .ni { color: var(--color_monokai_white) } /* Name.Entity */
+.highlight .ne { color: var(--color_monokai_blue) } /* Name.Exception */
+.highlight .nf { color: var(--color_monokai_green) } /* Name.Function */
+.highlight .nl { color: var(--color_monokai_white) } /* Name.Label */
+.highlight .nn { color: var(--color_monokai_white) } /* Name.Namespace */
+.highlight .nx { color: var(--color_monokai_green) } /* Name.Other */
+.highlight .py { color: var(--color_monokai_white) } /* Name.Property */
+.highlight .nt { color: var(--color_monokai_pink) } /* Name.Tag */
+.highlight .nv { color: var(--color_monokai_white) } /* Name.Variable */
+.highlight .ow { color: var(--color_monokai_pink) } /* Operator.Word */
+.highlight .w { color: var(--color_monokai_white) } /* Text.Whitespace */
+.highlight .mb { color: var(--color_monokai_purple) } /* Literal.Number.Bin */
+.highlight .mf { color: var(--color_monokai_purple) } /* Literal.Number.Float */
+.highlight .mh { color: var(--color_monokai_purple) } /* Literal.Number.Hex */
+.highlight .mi { color: var(--color_monokai_purple) } /* Literal.Number.Integer */
+.highlight .mo { color: var(--color_monokai_purple) } /* Literal.Number.Oct */
+.highlight .sa { color: var(--color_monokai_white) } /* Literal.String.Affix */
+.highlight .sb { color: var(--color_monokai_yellow) } /* Literal.String.Backtick */
+.highlight .sc { color: var(--color_monokai_yellow) } /* Literal.String.Char */
+.highlight .dl { color: var(--color_monokai_yellow) } /* Literal.String.Delimiter */
+.highlight .sd { color: var(--color_monokai_yellow) } /* Literal.String.Doc */
+.highlight .s2 { color: var(--color_monokai_yellow) } /* Literal.String.Double */
+.highlight .se { color: var(--color_monokai_purple) } /* Literal.String.Escape */
+.highlight .sh { color: var(--color_monokai_yellow) } /* Literal.String.Heredoc */
+.highlight .si { color: var(--color_monokai_yellow) } /* Literal.String.Interpol */
+.highlight .sx { color: var(--color_monokai_yellow) } /* Literal.String.Other */
+.highlight .sr { color: var(--color_monokai_yellow) } /* Literal.String.Regex */
+.highlight .s1 { color: var(--color_monokai_yellow) } /* Literal.String.Single */
+.highlight .ss { color: var(--color_monokai_yellow) } /* Literal.String.Symbol */
+.highlight .bp { color: var(--color_monokai_white) } /* Name.Builtin.Pseudo */
+.highlight .fm { color: var(--color_monokai_blue) } /* Name.Function.Magic */
+.highlight .vc { color: var(--color_monokai_white) } /* Name.Variable.Class */
+.highlight .vg { color: var(--color_monokai_white) } /* Name.Variable.Global */
+.highlight .vi { color: var(--color_monokai_white) } /* Name.Variable.Instance */
+.highlight .vm { color: var(--color_monokai_white) } /* Name.Variable.Magic */
+.highlight .il { color: var(--color_monokai_purple) } /* Literal.Number.Integer.Long */
