@@ -22,14 +22,14 @@ def write(path, content):
     f.write(content)
     f.close()
 
-def render_photo(photo, d):
+def render_photo(photo, relative_directory):
     small_name = make_thumbnail(photo)
-    basename = '/' + photo.relative_to(DOMAIN_ROOTDIR, simple=True)
-    thumb = '/' + small_name.relative_to(DOMAIN_ROOTDIR, simple=True)
+    basename = photo.relative_to(relative_directory, simple=True)
+    thumb = small_name.relative_to(relative_directory, simple=True)
     article_id = photo.replace_extension('').basename
 
     return f'''
-    <article class="photograph" id="{article_id}">
+    <article id="{article_id}" class="photograph">
     <a href="{basename}"><img src="{thumb}" loading="lazy"/></a>
     </article>
     '''
@@ -50,10 +50,10 @@ def render_album_preview(directory):
         next_after_more = remaining[0].replace_extension('').basename
     else:
         next_after_more = None
-    firsts = [render_photo(photo, pathclass.cwd()) for photo in firsts]
+    firsts = [render_photo(photo, directory.parent) for photo in firsts]
 
     return jinja2.Template('''
-    <article id="{{article_id}}">
+    <article id="{{article_id}}" class="album">
     <h1><a href="{{album_path}}">{{directory.basename}}</a></h1>
     {% for photo in firsts %}
     {{photo}}
@@ -66,7 +66,7 @@ def render_album_preview(directory):
     ''').render(
         article_id=article_id,
         directory=directory,
-        album_path='/photography/' + directory.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True),
+        album_path=directory.basename,
         next_after_more=next_after_more,
         firsts=firsts,
         remaining=len(remaining),
@@ -123,9 +123,9 @@ def write_directory_index(directory):
 
     <body>
     <header>
-    <span>hint: <kbd>←</kbd> / <kbd>→</kbd></span>
+    <div>hint: <kbd>←</kbd> / <kbd>→</kbd></div>
     {% if do_rss %}
-    <a href="/photography/photography.atom">Atom</a>
+    <div><a href="/photography/photography.atom">Atom</a></div>
     {% endif %}
 
     {% if do_back %}
@@ -185,7 +185,8 @@ def write_directory_index(directory):
         const jump = (distance * 0.25) + (document.body.scrollTop < desired_scroll_position ? 1 : -1);
         document.body.scrollTop = document.body.scrollTop + jump;
         console.log(`${document.body.scrollTop} ${desired_scroll_position}`);
-        if (document.body.scrollTop !== desired_scroll_position)
+        const new_distance = desired_scroll_position - document.body.scrollTop;
+        if (Math.abs(new_distance / distance) < 0.97)
         {
             window.requestAnimationFrame(scroll_step);
         }
@@ -269,7 +270,7 @@ def make_thumbnail(photo):
     (image_width, image_height) = image.size
     (width, height) = imagetools.fit_into_bounds(image_width, image_height, 1440, 1440)
     image = image.resize((width, height), PIL.Image.ANTIALIAS)
-    image.save(small_name.absolute_path, quality=90)
+    image.save(small_name.absolute_path, quality=85)
     print(small_name)
     return small_name
 
