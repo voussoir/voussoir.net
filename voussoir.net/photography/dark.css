@@ -66,7 +66,7 @@ header > *
 
 .photograph
 {
-    padding: 16px;
+    padding: 2vh;
     background-color: var(--color_bodybg);
 }
 article .photograph:first-of-type
