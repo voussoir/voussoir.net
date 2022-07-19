@@ -123,7 +123,7 @@ def write_directory_index(directory):
 
     <body>
     <header>
-    <div>hint: <kbd>←</kbd> / <kbd>→</kbd></div>
+    <div id="keyboardhint">hint: <kbd>←</kbd> / <kbd>→</kbd></div>
     {% if do_rss %}
     <div><a href="/photography/photography.atom">Atom</a></div>
     {% endif %}
