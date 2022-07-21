@@ -15,3 +15,5 @@ voussoir.net/writing/**/*.svg
 voussoir.net/writing/_unpublished/*
 voussoir.net/writing/writing.atom
 voussoir.net/writing/writing.rss
+voussoir.net/photography/**/*.jpg
+voussoir.net/photography/**/*.atom

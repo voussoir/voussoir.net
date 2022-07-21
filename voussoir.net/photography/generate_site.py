@@ -10,6 +10,107 @@ PHOTOGRAPHY_ROOTDIR = pathclass.Path(__file__).parent
 DOMAIN_ROOTDIR = PHOTOGRAPHY_ROOTDIR.parent
 CSS_CONTENT = PHOTOGRAPHY_ROOTDIR.with_child('dark.css').read('r', encoding='utf-8')
 
+class Photo:
+    def __init__(self, filepath):
+        self.filepath = filepath
+        self.thumbnail = make_thumbnail(filepath)
+        self.article_id = filepath.replace_extension('').basename
+        self.link = f'#{self.article_id}'
+        self.published = imagetools.get_exif_datetime(filepath)
+
+    def render_web(self, relative_directory=None):
+        if relative_directory is None:
+            basename = self.filepath.basename
+            thumb = self.thumbnail.basename
+        else:
+            basename = self.filepath.relative_to(relative_directory, simple=True).replace('\\', '/')
+            thumb = self.thumbnail.relative_to(relative_directory, simple=True).replace('\\', '/')
+        return f'''
+        <article id="{self.article_id}" class="photograph">
+        <a href="{basename}" target="_blank"><img src="{thumb}" loading="lazy"/></a>
+        </article>
+        '''
+
+    def render_atom(self):
+        href = f'https://voussoir.net/photography{self.link}'
+        imgsrc = 'https://voussoir.net/photography/' + self.thumbnail.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True)
+        return f'''
+        <id>{self.article_id}</id>
+        <title>{self.article_id}</title>
+        <link rel="alternate" type="text/html" href="https://voussoir.net/photography{self.link}"/>
+        <updated>{self.published.isoformat()}</updated>
+        <content type="html">
+        <![CDATA[
+        <a href="{href}"><img src="{imgsrc}"/></a>
+        ]]>
+        </content>
+        '''
+
+class Album:
+    def __init__(self, path):
+        self.path = path
+        self.article_id = path.basename
+        self.link = f'/{self.article_id}'
+        self.published = imagetools.get_exif_datetime(sorted(path.glob_files('*.jpg'))[0])
+        self.photos = list(spinal.walk(
+            self.path,
+            glob_filenames={'*.jpg'},
+            exclude_filenames={'*_small*'},
+            recurse=False,
+            yield_directories=False,
+        ))
+        self.photos.sort(key=lambda file: file.basename)
+        self.photos = [Photo(file) for file in self.photos]
+
+    def render_web(self):
+        firsts = self.photos[:5]
+        remaining = self.photos[5:]
+        if remaining:
+            next_after_more = remaining[0]
+        else:
+            next_after_more = None
+
+        return jinja2.Template('''
+        <article id="{{article_id}}" class="album">
+        <h1><a href="{{album_path}}">{{directory.basename}}</a></h1>
+        {% for photo in firsts %}
+        {{photo.render_web(relative_directory=directory.parent)}}
+        {% endfor %}
+
+        {% if remaining > 0 %}
+        <p class="morelink"><a href="{{album_path}}{{next_after_more.link}}">{{remaining}} more</a></p>
+        {% endif %}
+        </article>
+        ''').render(
+            article_id=self.article_id,
+            directory=self.path,
+            album_path=self.path.basename,
+            next_after_more=next_after_more,
+            firsts=firsts,
+            remaining=len(remaining),
+        )
+
+    def render_atom(self):
+        photos = []
+        for photo in self.photos:
+            href = 'https://voussoir.net/photography/' + photo.filepath.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True)
+            imgsrc = 'https://voussoir.net/photography/' + photo.thumbnail.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True)
+            line = f'<article><a href="{href}"><img src="{imgsrc}"/></a>'.replace('\\', '/')
+            photos.append(line)
+        photos = '\n'.join(photos)
+
+        return f'''
+        <id>{self.article_id}</id>
+        <title>{self.article_id}</title>
+        <link rel="alternate" type="text/html" href="https://voussoir.net/photography{self.link}"/>
+        <updated>{self.published.isoformat()}</updated>
+        <content type="html">
+        <![CDATA[
+        {photos}
+        ]]>
+        </content>
+        '''
+
 def write(path, content):
     '''
     open() and write the file, with validation that it is in the writing dir.
@@ -21,56 +122,6 @@ def write(path, content):
     f = path.open('w', encoding='utf-8')
     f.write(content)
     f.close()
-
-def render_photo(photo, relative_directory):
-    small_name = make_thumbnail(photo)
-    basename = photo.relative_to(relative_directory, simple=True)
-    thumb = small_name.relative_to(relative_directory, simple=True)
-    article_id = photo.replace_extension('').basename
-
-    return f'''
-    <article id="{article_id}" class="photograph">
-    <a href="{basename}"><img src="{thumb}" loading="lazy"/></a>
-    </article>
-    '''
-
-def render_album_preview(directory):
-    photos = list(spinal.walk(
-        directory,
-        glob_filenames={'*.jpg'},
-        exclude_filenames={'*_small*'},
-        recurse=False,
-        yield_directories=False,
-    ))
-    article_id = directory.basename
-    photos.sort(key=lambda file: file.basename)
-    firsts = photos[:5]
-    remaining = photos[5:]
-    if remaining:
-        next_after_more = remaining[0].replace_extension('').basename
-    else:
-        next_after_more = None
-    firsts = [render_photo(photo, directory.parent) for photo in firsts]
-
-    return jinja2.Template('''
-    <article id="{{article_id}}" class="album">
-    <h1><a href="{{album_path}}">{{directory.basename}}</a></h1>
-    {% for photo in firsts %}
-    {{photo}}
-    {% endfor %}
-
-    {% if remaining > 0 %}
-    <p class="morelink"><a href="{{album_path}}#{{next_after_more}}">{{remaining}} more</a></p>
-    {% endif %}
-    </article>
-    ''').render(
-        article_id=article_id,
-        directory=directory,
-        album_path=directory.basename,
-        next_after_more=next_after_more,
-        firsts=firsts,
-        remaining=len(remaining),
-    )
 
 def write_directory_index(directory):
     do_rss = directory == PHOTOGRAPHY_ROOTDIR
@@ -84,29 +135,16 @@ def write_directory_index(directory):
         recurse=False,
         yield_directories=False,
     )) + list(directory.listdir_directories())
-    items.sort(key=lambda p: p.basename, reverse=sort_reverse)
 
     items2 = []
     for item in items:
-        article_id = item.replace_extension('').basename
         if item.is_file:
-            ren = render_photo(item, directory)
-            link = f'#{article_id}'
-            published = imagetools.get_exif_datetime(item)
+            items2.append(Photo(item))
         else:
-            ren = render_album_preview(item)
-            link = f'/{article_id}'
-            published = imagetools.get_exif_datetime(sorted(item.listdir_files())[0])
-        if published is None:
-            print(f'{item} lacks exif date')
-        item = dotdict.DotDict(
-            article_id=article_id,
-            rendered=ren,
-            link=link,
-            published=published.isoformat(),
-        )
-        items2.append(item)
+            items2.append(Album(item))
+
     items = items2
+    items.sort(key=lambda item: item.published, reverse=sort_reverse)
 
     page = jinja2.Template('''
     <html>
@@ -125,7 +163,7 @@ def write_directory_index(directory):
     <header>
     <div id="keyboardhint">hint: <kbd>←</kbd> / <kbd>→</kbd></div>
     {% if do_rss %}
-    <div><a href="/photography/photography.atom">Atom</a></div>
+    <a href="/photography/photography.atom">Atom</a>
     {% endif %}
 
     {% if do_back %}
@@ -134,7 +172,7 @@ def write_directory_index(directory):
     </header>
 
     {% for item in items %}
-    {{item.rendered}}
+    {{item.render_web()}}
     {% endfor %}
     </body>
 
@@ -217,9 +255,27 @@ def write_directory_index(directory):
             scroll_to_next_img();
         }
     }
+
+    let hide_cursor_timeout = null;
+    function hide_cursor()
+    {
+        document.documentElement.style.cursor = "none";
+    }
+    function show_cursor()
+    {
+        document.documentElement.style.cursor = "";
+    }
+    function mousemove_handler()
+    {
+        show_cursor();
+        clearTimeout(hide_cursor_timeout);
+        hide_cursor_timeout = setTimeout(hide_cursor, 5000);
+    }
     function on_pageload()
     {
         document.documentElement.addEventListener("keydown", arrowkey_listener);
+        document.documentElement.addEventListener("mousemove", mousemove_handler);
+        mousemove_handler();
     }
     document.addEventListener("DOMContentLoaded", on_pageload);
     </script>
@@ -246,15 +302,7 @@ def write_atom(items):
 
         {% for item in items %}
         <entry>
-            <id>{{item.article_id}}</id>
-            <title>{{item.article_id|e}}</title>
-            <link rel="alternate" type="text/html" href="https://voussoir.net/photography{{item.link}}"/>
-            <updated>{{item.published}}</updated>
-            <content type="html">
-            <![CDATA[
-            {{item.rendered}}
-            ]]>
-            </content>
+            {{item.render_atom()}}
         </entry>
         {% endfor %}
     </feed>
