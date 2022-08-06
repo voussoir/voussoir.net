@@ -9,9 +9,11 @@ When I was a kid, one of the computer games I played was Night Light, by GTE Ent
 
 This game stuck in my memory in the way that only a formative childhood game can. There is something about the game mechanic of using the mouse as a flashlight that's very appealing to me, though of course I don't know if this is cause or effect.
 
-For the past several years, I have occasionally been reminded of the game and tried to search for it online, only to come up empty handed. Finally, in 2018, a youtuber named Vulnerose Plays [did a playthrough](https://www.youtube.com/watch?v=KYDoBcFcGM8) and also [uploaded the ISO](https://archive.org/details/NightLight_201809) to the Internet Archive. The majority of comments on that video are from other people saying they'd been searching high and low for the game, too.
+For the past several years, I have occasionally been reminded of the game and tried to search for it online, only to come up empty handed. Finally, in 2018, a youtuber named Vulnerose Plays [did a playthrough](https://www.youtube.com/watch?v=KYDoBcFcGM8) and also [uploaded the ISO](https://archive.org/details/NightLight_201809) to the Internet Archive. The majority of comments on that video are from other people saying they'd been searching high and low for the game, too [footnote_link].
 
 At the time of this writing, I have not actually played the game using the provided iso, as it would require me to emulate an older version of Windows and I haven't gotten around to doing it yet. But, I [recently](/writing/browser_in_the_dark) had the inspiration to reproduce the basic mechanic using javascript canvas, and that brings us to today.
+
+[footnote_text] spoiler alert, but there's a better copy here: https://archive.org/details/night-light_202208
 
 ## Extracting the assets
 
@@ -43,11 +45,27 @@ I also extracted the audio clues and converted them to flac. Unfortunately, lots
 
 ![](hxd.png)
 
-I wrote [ffdecodetest.py](https://github.com/voussoir/cmd/blob/master/ffdecodetest.py) to help me with this sort of task. The backyard and living room levels got particularly rekt, with only three and one clue passing the test, respectively. If by some very lucky chance you have a copy of this CD, perhaps you could try re-ripping it for us.
+I wrote [ffdecodetest.py](https://github.com/voussoir/cmd/blob/master/ffdecodetest.py) to help me with this sort of task. The backyard and living room levels got particularly rekt, with only three and one clue passing the test, respectively.
 
-![](ffdecodetest.png)
+![](ffdecodetest1.png)
 
-So, all I had to do next was copy the canvas code I wrote [last time](/writing/browser_in_the_dark) and start shedding some light on things!
+## A second copy
+
+When I originally published this article in April, the next sentence was:
+
+> If by some very lucky chance you have a copy of this CD, perhaps you could try re-ripping it for us.
+
+And that's what happened!
+
+I got an email from Josh Henderson who also has a CD of the game. He kindly extracted the ISO and uploaded it to archive.org: https://archive.org/details/night-light_202208
+
+Thank you again Josh!
+
+I popped this one open with 7-zip and got all 471 clues in mint condition.
+
+![](ffdecodetest2.png)
+
+So, all I had to do next was copy the canvas code I wrote [last time](/writing/browser_in_the_dark) and start shedding some light on things.
 
 ## Turn on your night light
 
@@ -87,19 +105,27 @@ Your browser might prevent the clue audios from playing if you haven't clicked o
 
 ## The missing menu files
 
-I'm glad that the level images were easy to extract, since those were the most important parts for me. However, I really would like to get the main menu images and the staff credit portraits out as well.
+I'm glad that the level images were easy to extract, since those were the most important parts for me. I'm also glad we recovered all of the clues. However, I really would like to get the main menu images and the staff credit portraits out as well.
 
-I looked through all the files with 7z, expecting to find a .bmp or a tiled .mov representing the menu, and I'm simply stumped. I don't see them anywhere. The closest thing I could find was MMCHOICE.MOV, where Pixel and Pandora discuss the level options.
+![](mainmenu_screenshot.png)
+
+I looked through all the files with 7z, expecting to find a .bmp or a tiled .mov representing the menu, and I'm simply stumped. I don't see them anywhere. The closest thing I could find was MMCHOICE.MOV, where Pixel and Pandora discuss the level options, but it's cropped in on them.
 
 <center><video controls src="mmchoice.mp4"/></center>
 
-The game has several of these overlays for each of the levels too, so this file isn't unique in that regard. What I mean is, it's tempting to think mmchoice.mov would contain the full menu art if only we could zoom out somehow, and the other pixels are hiding just out of frame, but I don't think that's the case. The background art should be a separate file like the levels.
+The game uses this kind of video file as an overlay whenever it needs to put the talking characters in front of the game. If you look through the QTPUZZLE folder you'll find many more of these.
 
-Perhaps I simply missed something, or perhaps they are embedded somewhere else. The game's NIGHTMPC.EXE is 7.7 MB, which seems big enough to hold some secrets. I searched through the binary to find any BMP or MOV headers but didn't have any luck. My understanding is that the game is supposed to work on both Windows and Mac: many of the game resources are provided in duplicate (BMP/PIC, WAV/AIF), but as far as binaries go I only see exe. Is there more somewhere that I'm not seeing? Are some files missing, and would that include the menu art?
+<center><video controls src="attc_01.mp4"/></center>
+
+So, it's not like mmchoice.mov is damaged, or cropped accidentally. But, like the puzzles, I expect to find the loading screen, the main menu art, and the credits photos in their own files. I just don't see any more tiled movs or bitmaps. There are 18 .pic files, but those are just BACKMASK.PIC, FOREMASK.PIC, and a set of LIGHT.PIC and DARK.PIC for each of the eight levels.
+
+Perhaps I simply missed something, or perhaps they are embedded somewhere else, though I don't know why that would be. The game's NIGHTMPC.EXE is 7.7 MB, which seems big enough to hold some secrets. I searched through the binary for BMP and MOV headers but didn't have any luck, and 7-zip doesn't open it the way it does with some executables.
+
+My understanding is that the game is supposed to work on both Windows and Mac: many of the game resources are provided in duplicate (BMP/PIC, WAV/AIF), but as far as binaries go I only see exe. What's up with that?
 
 If you discover anything, send me an email!
 
-Along the way, I also found these image masks which give a hint as to how some of the click detection was done, which I think is very clever.
+Along the way, I also found these image masks which give a hint as to how some of the click detection was done, which I think is very clever. Each of these cells has a unique RGB color -- so the programmers could make each color represent a choice for the user to click on.
 
 <center><img src="menu_mask.png"/> <img src="credits_mask.png"/></center>
 
@@ -112,6 +138,8 @@ If you watch Tom Scott, you may have seen his video about [Need for Speed](https
 A kind thank you to all of these people:
 
 <audio id="credits_audio" controls src="credits.flac" style="width: 100%"/>
+
+![](credits_screenshot.png)
 
 Have fun!
 
@@ -161,39 +189,102 @@ clues["BEDR"] = [
 "BEDR_CA04WTCH.flac", "BEDR_CA05PMAN.flac", "BEDR_CA06PLNE.flac", "BEDR_CA07ZSUB.flac",
 "BEDR_CA08MSTR.flac", "BEDR_CA09MSTR.flac", "BEDR_CA10MSTR.flac", "BEDR_CA11MSTR.flac",
 "BEDR_CA12TRAN.flac", "BEDR_CA13HPPO.flac", "BEDR_CA14MUMY.flac", "BEDR_CA15RCKT.flac",
+"BEDR_CA16DRGN.flac", "BEDR_CA17ELPH.flac", "BEDR_CA18HAND.flac", "BEDR_CA19TERY.flac",
+"BEDR_CA20MSTR.flac", "BEDR_CA21ZASP.flac", "BEDR_CA22HOSE.flac", "BEDR_CA23FLWR.flac",
+"BEDR_CA24TPEE.flac", "BEDR_CA25SNKE.flac", "BEDR_CB01RABT.flac", "BEDR_CB02LAMB.flac",
+"BEDR_CB03TRIC.flac", "BEDR_CB04RIBN.flac", "BEDR_CB05SMCP.flac", "BEDR_CB06CLWN.flac",
+"BEDR_CB07HSTK.flac", "BEDR_CB08BLDZ.flac", "BEDR_CB09ROBT.flac", "BEDR_CB10PLNE.flac",
+"BEDR_CB11ZCAR.flac", "BEDR_CB12BANK.flac", "BEDR_CB13BRON.flac", "BEDR_CB14TREX.flac",
+"BEDR_CB15TRUK.flac", "BEDR_CB16SOCK.flac", "BEDR_CB17VITC.flac", "BEDR_CB18CLDS.flac",
+"BEDR_CB19BOOK.flac", "BEDR_CB20GLBZ.flac", "BEDR_CB21SHRT.flac", "BEDR_CB22DRWR.flac",
 "BEDR_CB23BBAL.flac", "BEDR_CB24ZBAT.flac", "BEDR_CB25PLNE.flac", "BEDR_CB26ZCAP.flac",
 "BEDR_CB27TBER.flac", "BEDR_CB28TCAN.flac", "BEDR_CB29HORS.flac", "BEDR_CB30FBAL.flac",
-"BEDR_CB31SNKR.flac", "BEDR_CB32PILO.flac"
+"BEDR_CB31SNKR.flac", "BEDR_CB32PILO.flac", "BEDR_CB33LADR.flac", "BEDR_CB34GMBD.flac",
+"BEDR_CB35DLMP.flac", "BEDR_CB36BRSH.flac", "BEDR_CB37NKTY.flac", "BEDR_CB38SOCK.flac"
 ]
 clues["BKYD"] = [
-"BKYD_GB12FINN.flac", "BKYD_GB13BIGW.flac", "BKYD_GB16STCK.flac"
+"BKYD_GA01DINO.flac", "BKYD_GA02DINO.flac", "BKYD_GA03DINO.flac", "BKYD_GA04DINO.flac",
+"BKYD_GA05DINO.flac", "BKYD_GA06DINO.flac", "BKYD_GA07DINO.flac", "BKYD_GA08DINO.flac",
+"BKYD_GA09DINO.flac", "BKYD_GA10DINO.flac", "BKYD_GA11DINO.flac", "BKYD_GA12DINO.flac",
+"BKYD_GA13DINO.flac", "BKYD_GA14CRAK.flac", "BKYD_GA15EGGS.flac", "BKYD_GA16DUDE.flac",
+"BKYD_GB01SQRL.flac", "BKYD_GB02TIRE.flac", "BKYD_GB03SCCR.flac", "BKYD_GB05BALL.flac",
+"BKYD_GB06SAIL.flac", "BKYD_GB07FOAT.flac", "BKYD_GB08DUCK.flac", "BKYD_GB09BBAL.flac",
+"BKYD_GB10GOFR.flac", "BKYD_GB10MASK.flac", "BKYD_GB11TRTL.flac", "BKYD_GB12FINN.flac",
+"BKYD_GB13BIGW.flac", "BKYD_GB14ZCAP.flac", "BKYD_GB15FBAL.flac", "BKYD_GB16STCK.flac",
+"BKYD_GB17APPL.flac", "BKYD_GB18BALL.flac", "BKYD_GB20SHVL.flac", "BKYD_GB21FLAG.flac",
+"BKYD_GB22HOSE.flac", "BKYD_GB23ZHOW.flac", "BKYD_GB24RAKE.flac", "BKYD_GB25TRWL.flac"
 ]
 clues["GARG"] = [
-"GARG_EA04GRFF.flac", "GARG_EA05FISH.flac", "GARG_EA06JAIL.flac", "GARG_EA07DRVR.flac",
-"GARG_EA08KROO.flac", "GARG_EA09MUMY.flac", "GARG_EA10MSTR.flac", "GARG_EA11ROBT.flac",
-"GARG_EA12BRED.flac", "GARG_EA13ZJAR.flac", "GARG_EA14FFLY.flac", "GARG_EA15SNKE.flac",
-"GARG_EA16CPLR.flac", "GARG_EA17ZBAT.flac", "GARG_EA18BRNG.flac", "GARG_EA19ELPH.flac",
-"GARG_EA20MSTR.flac", "GARG_EA21DUDE.flac", "GARG_EA22ZCAR.flac", "GARG_EA23APPL.flac",
-"GARG_EA24SNKE.flac", "GARG_EA25MSTR.flac", "GARG_EA26CNON.flac", "GARG_EA27ZEYE.flac",
-"GARG_EA28DNUT.flac", "GARG_EA29CLWN.flac", "GARG_EA30HSTK.flac", "GARG_EA31LIPS.flac",
-"GARG_EB01BTTL.flac", "GARG_EB02NOTE.flac", "GARG_EB03ZSAW.flac", "GARG_EB04ZSAW.flac",
-"GARG_EB05HMMR.flac", "GARG_EB07SDRV.flac", "GARG_EB08CHSL.flac", "GARG_EB09SCSR.flac",
-"GARG_EB10WRCH.flac", "GARG_EB11SCKT.flac", "GARG_EB12DRVR.flac", "GARG_EB13VENT.flac",
-"GARG_EB14SOAP.flac", "GARG_EB15KNOB.flac", "GARG_EB16BSKT.flac", "GARG_EB17BALL.flac",
-"GARG_EB18BEAR.flac", "GARG_EB19GRSE.flac", "GARG_EB20BBAT.flac", "GARG_EB21BBAL.flac",
-"GARG_EB22TIRE.flac", "GARG_EB23MOUS.flac", "GARG_EB24ZHAT.flac", "GARG_EB25SEAT.flac",
-"GARG_EB26RLLR.flac", "GARG_EB27PCAN.flac", "GARG_EB28BRSH.flac", "GARG_EB29BUCT.flac"
+"GARG_EA01EYEZ.flac", "GARG_EA03BRD2.flac", "GARG_EA04GRFF.flac", "GARG_EA05FISH.flac",
+"GARG_EA06JAIL.flac", "GARG_EA07DRVR.flac", "GARG_EA08KROO.flac", "GARG_EA09MUMY.flac",
+"GARG_EA10MSTR.flac", "GARG_EA11ROBT.flac", "GARG_EA12BRED.flac", "GARG_EA13ZJAR.flac",
+"GARG_EA14FFLY.flac", "GARG_EA15SNKE.flac", "GARG_EA16CPLR.flac", "GARG_EA17ZBAT.flac",
+"GARG_EA18BRNG.flac", "GARG_EA19ELPH.flac", "GARG_EA20MSTR.flac", "GARG_EA21DUDE.flac",
+"GARG_EA22ZCAR.flac", "GARG_EA23APPL.flac", "GARG_EA24SNKE.flac", "GARG_EA25MSTR.flac",
+"GARG_EA26CNON.flac", "GARG_EA27ZEYE.flac", "GARG_EA28DNUT.flac", "GARG_EA29CLWN.flac",
+"GARG_EA30HSTK.flac", "GARG_EA31LIPS.flac", "GARG_EB01BTTL.flac", "GARG_EB02NOTE.flac",
+"GARG_EB03ZSAW.flac", "GARG_EB04ZSAW.flac", "GARG_EB05HMMR.flac", "GARG_EB07SDRV.flac",
+"GARG_EB08CHSL.flac", "GARG_EB09SCSR.flac", "GARG_EB10WRCH.flac", "GARG_EB11SCKT.flac",
+"GARG_EB12DRVR.flac", "GARG_EB13VENT.flac", "GARG_EB14SOAP.flac", "GARG_EB15KNOB.flac",
+"GARG_EB16BSKT.flac", "GARG_EB17BALL.flac", "GARG_EB18BEAR.flac", "GARG_EB19GRSE.flac",
+"GARG_EB20BBAT.flac", "GARG_EB21BBAL.flac", "GARG_EB22TIRE.flac", "GARG_EB23MOUS.flac",
+"GARG_EB24ZHAT.flac", "GARG_EB25SEAT.flac", "GARG_EB26RLLR.flac", "GARG_EB27PCAN.flac",
+"GARG_EB28BRSH.flac", "GARG_EB29BUCT.flac"
 ]
 clues["KITC"] = [
 "KITC_BA01EYEZ.flac", "KITC_BA02EYEZ.flac", "KITC_BA03OWLI.flac", "KITC_BA04MSTR.flac",
 "KITC_BA05EYEZ.flac", "KITC_BA06FORT.flac", "KITC_BA07MSTR.flac", "KITC_BA08OCTO.flac",
-"KITC_BA09DILO.flac", "KITC_BA10SNKE.flac", "KITC_BA11MAN1.flac"
+"KITC_BA09DILE.flac", "KITC_BA09DILO.flac", "KITC_BA10SNKE.flac", "KITC_BA11MAN1.flac",
+"KITC_BA12MAN2.flac", "KITC_BA13MAN3.flac", "KITC_BA14PRNA.flac", "KITC_BA15SNKE.flac",
+"KITC_BA16BFLY.flac", "KITC_BA17SCER.flac", "KITC_BA17SCSR.flac", "KITC_BA18ZHAT.flac",
+"KITC_BA19FRTH.flac", "KITC_BA20ANT1.flac", "KITC_BA21MSTR.flac", "KITC_BA22ANTZ.flac",
+"KITC_BA23ZPAW.flac", "KITC_BA24NITE.flac", "KITC_BA25HARY.flac", "KITC_BA26SPDR.flac",
+"KITC_BA27SHRK.flac", "KITC_BB01BBAL.flac", "KITC_BB02GRPZ.flac", "KITC_BB03RBBT.flac",
+"KITC_BB04ZBAT.flac", "KITC_BB05CHOW.flac", "KITC_BB06FDG1.flac", "KITC_BB07FDG2.flac",
+"KITC_BB08FDG3.flac", "KITC_BB09FDG4.flac", "KITC_BB10FDG5.flac", "KITC_BB11ZCUP.flac",
+"KITC_BB12OUCH.flac", "KITC_BB13BITE.flac", "KITC_BB14NOTE.flac", "KITC_BB15FORK.flac",
+"KITC_BB16GLOV.flac", "KITC_BB17P.flac", "KITC_BB17TSTR.flac", "KITC_BB18APPL.flac",
+"KITC_BB19PEPR.flac", "KITC_BB20SALT.flac", "KITC_BB21PBTR.flac", "KITC_BB22WATR.flac",
+"KITC_BB23TSSL.flac", "KITC_BB24SPTL.flac", "KITC_BB25DUCK.flac", "KITC_BB26TULP.flac",
+"KITC_BB27ZOWL.flac", "KITC_BB28RATL.flac", "KITC_BB29BNAS.flac", "KITC_BB30ZRAG.flac"
 ]
 clues["LIVR"] = [
-"LIVR_DA18DEER.flac"
+"LIVR_DA01NARK.flac", "LIVR_DA02LAMP.flac", "LIVR_DA02SQRL.flac", "LIVR_DA03LAMB.flac",
+"LIVR_DA04FISH.flac", "LIVR_DA04PRNA.flac", "LIVR_DA05BEAR.flac", "LIVR_DA06PRQU.flac",
+"LIVR_DA06TBA2.flac", "LIVR_DA07DRUM.flac", "LIVR_DA07TBA3.flac", "LIVR_DA08TELE.flac",
+"LIVR_DA08TRT1.flac", "LIVR_DA08TRTL.flac", "LIVR_DA09MOUS.flac", "LIVR_DA10PICT.flac",
+"LIVR_DA10PNGN.flac", "LIVR_DA11MUSH.flac", "LIVR_DA12YARN.flac", "LIVR_DA12ZUFO.flac",
+"LIVR_DA13BRED.flac", "LIVR_DA14COON.flac", "LIVR_DA14PCCN.flac", "LIVR_DA15MUSH.flac",
+"LIVR_DA16BTIE.flac", "LIVR_DA16QULT.flac", "LIVR_DA17SEAL.flac", "LIVR_DA18BONE.flac",
+"LIVR_DA18DEER.flac", "LIVR_DA19RCKT.flac", "LIVR_DA20BOOK.flac", "LIVR_DA20DRGN.flac",
+"LIVR_DA21FACE.flac", "LIVR_DA22GLAS.flac", "LIVR_DA22ZFOX.flac", "LIVR_DA23SQRL.flac",
+"LIVR_DA24FACE.flac", "LIVR_DA25CBAR.flac", "LIVR_DA26TANR.flac", "LIVR_DA27TRAN.flac",
+"LIVR_DA28FRRY.flac", "LIVR_DA28MAGZ.flac", "LIVR_DA30BALL.flac", "LIVR_DA32ZRED.flac",
+"LIVR_DA34COKI.flac", "LIVR_DB01HOME.flac", "LIVR_DB02LAMP.flac", "LIVR_DB03PICT.flac",
+"LIVR_DB04FISH.flac", "LIVR_DB05TBA1.flac", "LIVR_DB06TBA2.flac", "LIVR_DB07TBA3.flac",
+"LIVR_DB08TELE.flac", "LIVR_DB09ZVCR.flac", "LIVR_DB10PICT.flac", "LIVR_DB11BEAR.flac",
+"LIVR_DB12YARN.flac", "LIVR_DB13FONE.flac", "LIVR_DB14PCCN.flac", "LIVR_DB15JCKT.flac",
+"LIVR_DB16QULT.flac", "LIVR_DB17SODA.flac", "LIVR_DB18BONE.flac", "LIVR_DB19SHOZ.flac",
+"LIVR_DB20BOOK.flac", "LIVR_DB21SHOE.flac", "LIVR_DB22GLAS.flac", "LIVR_DB23DOLL.flac",
+"LIVR_DB25REMT.flac", "LIVR_DB27BLUE.flac", "LIVR_DB28MAGZ.flac", "LIVR_DB29BOOK.flac",
+"LIVR_DB30BALL.flac", "LIVR_DB31GAME.flac", "LIVR_DB32ZRED.flac", "LIVR_DB33GLAS.flac",
+"LIVR_DB34COKI.flac"
 ]
 clues["NURS"] = [
-"NURS_HA12CHST.flac", "NURS_HA16TRIO.flac", "NURS_HB17ZFOX.flac", "NURS_HB20BALL.flac"
+"NURS_HA01CTHZ.flac", "NURS_HA02JELY.flac", "NURS_HA03VLAG.flac", "NURS_HA04LAVA.flac",
+"NURS_HA05CHCK.flac", "NURS_HA06STAR.flac", "NURS_HA07FACE.flac", "NURS_HA08BABE.flac",
+"NURS_HA09FROG.flac", "NURS_HA10BIRD.flac", "NURS_HA11HRSE.flac", "NURS_HA12CHST.flac",
+"NURS_HA13TREE.flac", "NURS_HA14JWEL.flac", "NURS_HA15CHMP.flac", "NURS_HA16TRIO.flac",
+"NURS_HA17WOLF.flac", "NURS_HA18BOKZ.flac", "NURS_HA19SKLZ.flac", "NURS_HA20CROK.flac",
+"NURS_HA21EEGG.flac", "NURS_HA22LION.flac", "NURS_HA23ELPH.flac", "NURS_HA24THNG.flac",
+"NURS_HA25ZBUG.flac", "NURS_HA27FLWR.flac", "NURS_HA28FROG.flac", "NURS_HA29SWRD.flac",
+"NURS_HA30CUPL.flac", "NURS_HA31ZSUB.flac", "NURS_HA32ZBRA.flac", "NURS_HB01LAMP.flac",
+"NURS_HB02PICT.flac", "NURS_HB04ZCAT.flac", "NURS_HB05PICT.flac", "NURS_HB06DUCK.flac",
+"NURS_HB07BUNY.flac", "NURS_HB08BUNY.flac", "NURS_HB10ZCOW.flac", "NURS_HB11MOON.flac",
+"NURS_HB12QULT.flac", "NURS_HB13LAMB.flac", "NURS_HB14SHEZ.flac", "NURS_HB15BEAR.flac",
+"NURS_HB16BUNY.flac", "NURS_HB17ZFOX.flac", "NURS_HB18PASS.flac", "NURS_HB19SOCK.flac",
+"NURS_HB20BALL.flac", "NURS_HB21CRRT.flac", "NURS_HB22ZBRA.flac", "NURS_HB23BTTL.flac",
+"NURS_HB24BBAL.flac", "NURS_HB25CLCK.flac"
 ]
 const theme_audio = document.getElementById("theme_audio");
 const clue_audio = document.getElementById("clue_audio");
