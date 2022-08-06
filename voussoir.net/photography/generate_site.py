@@ -317,7 +317,7 @@ def make_thumbnail(photo):
     image = PIL.Image.open(photo.absolute_path)
     (image_width, image_height) = image.size
     (width, height) = imagetools.fit_into_bounds(image_width, image_height, 1440, 1440)
-    image = image.resize((width, height), PIL.Image.ANTIALIAS)
+    image = image.resize((width, height), PIL.Image.LANCZOS)
     image.save(small_name.absolute_path, quality=85)
     print(small_name)
     return small_name
