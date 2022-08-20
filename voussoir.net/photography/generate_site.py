@@ -162,6 +162,7 @@ def write_directory_index(directory):
     <body>
     <header>
     <div id="keyboardhint">hint: <kbd>←</kbd> / <kbd>→</kbd></div>
+    <a id="scrollbartoggle" onclick="return toggle_scrollbar();">scrollbar on/off</a>
     {% if do_rss %}
     <a href="/photography/photography.atom">Atom</a>
     {% endif %}
@@ -179,6 +180,17 @@ def write_directory_index(directory):
     <script type="text/javascript">
     let desired_scroll_position = null;
 
+    function toggle_scrollbar()
+    {
+        if (document.body.classList.contains("noscrollbar"))
+        {
+            document.body.classList.remove("noscrollbar");
+        }
+        else
+        {
+            document.body.classList.add("noscrollbar");
+        }
+    }
     function get_center_img()
     {
         let center_x = window.innerWidth / 2;
@@ -269,7 +281,7 @@ def write_directory_index(directory):
     {
         show_cursor();
         clearTimeout(hide_cursor_timeout);
-        hide_cursor_timeout = setTimeout(hide_cursor, 5000);
+        hide_cursor_timeout = setTimeout(hide_cursor, 3000);
     }
     function on_pageload()
     {

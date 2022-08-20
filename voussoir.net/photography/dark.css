@@ -40,6 +40,14 @@ body
     margin-bottom: 0;
     padding: 8px;
 }
+body.noscrollbar::-webkit-scrollbar
+{
+    display: none;
+}
+body.noscrollbar
+{
+    scrollbar-width: none;
+}
 
 header
 {
@@ -113,7 +121,8 @@ article .morelink
 
 @media not all and (pointer: fine)
 {
-    #keyboardhint
+    #keyboardhint,
+    #scrollbartoggle
     {
         display: none;
     }
