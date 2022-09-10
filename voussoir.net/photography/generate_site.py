@@ -15,29 +15,25 @@ class Photo:
         self.filepath = filepath
         self.thumbnail = make_thumbnail(filepath)
         self.article_id = filepath.replace_extension('').basename
-        self.link = f'#{self.article_id}'
+        self.anchor = f'#{self.article_id}'
         self.published = imagetools.get_exif_datetime(filepath)
 
     def render_web(self, relative_directory=None):
-        if relative_directory is None:
-            basename = self.filepath.basename
-            thumb = self.thumbnail.basename
-        else:
-            basename = self.filepath.relative_to(relative_directory, simple=True).replace('\\', '/')
-            thumb = self.thumbnail.relative_to(relative_directory, simple=True).replace('\\', '/')
+        href = self.filepath.relative_to(DOMAIN_ROOTDIR, simple=True).replace('\\', '/')
+        thumb = self.thumbnail.relative_to(DOMAIN_ROOTDIR, simple=True).replace('\\', '/')
         return f'''
         <article id="{self.article_id}" class="photograph">
-        <a href="{basename}" target="_blank"><img src="{thumb}" loading="lazy"/></a>
+        <a href="https://voussoir.net/{href}" target="_blank"><img src="/{thumb}" loading="lazy"/></a>
         </article>
         '''
 
     def render_atom(self):
-        href = f'https://voussoir.net/photography{self.link}'
-        imgsrc = 'https://voussoir.net/photography/' + self.thumbnail.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True)
+        href = f'https://voussoir.net/photography{self.anchor}'
+        imgsrc = 'https://voussoir.net/' + self.thumbnail.relative_to(DOMAIN_ROOTDIR, simple=True)
         return f'''
         <id>{self.article_id}</id>
         <title>{self.article_id}</title>
-        <link rel="alternate" type="text/html" href="https://voussoir.net/photography{self.link}"/>
+        <link rel="alternate" type="text/html" href="https://voussoir.net/photography{self.anchor}"/>
         <updated>{self.published.isoformat()}</updated>
         <content type="html">
         <![CDATA[
@@ -50,7 +46,7 @@ class Album:
     def __init__(self, path):
         self.path = path
         self.article_id = path.basename
-        self.link = f'/{self.article_id}'
+        self.link = '/' + path.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True).replace('\\', '/')
         self.published = imagetools.get_exif_datetime(sorted(path.glob_files('*.jpg'))[0])
         self.photos = list(spinal.walk(
             self.path,
@@ -72,9 +68,9 @@ class Album:
 
         return jinja2.Template('''
         <article id="{{article_id}}" class="album">
-        <h1><a href="{{album_path}}">{{directory.basename}}</a></h1>
+        <h1><a href="/{{album_path}}">{{directory.basename}}</a></h1>
         {% for photo in firsts %}
-        {{photo.render_web(relative_directory=directory.parent)}}
+        {{photo.render_web()}}
         {% endfor %}
 
         {% if remaining > 0 %}
@@ -84,7 +80,7 @@ class Album:
         ''').render(
             article_id=self.article_id,
             directory=self.path,
-            album_path=self.path.basename,
+            album_path=self.path.relative_to(DOMAIN_ROOTDIR, simple=True).replace('\\', '/'),
             next_after_more=next_after_more,
             firsts=firsts,
             remaining=len(remaining),
@@ -119,9 +115,7 @@ def write(path, content):
     if path not in PHOTOGRAPHY_ROOTDIR:
         raise ValueError(path)
     print(path.absolute_path)
-    f = path.open('w', encoding='utf-8')
-    f.write(content)
-    f.close()
+    path.write('w', content, encoding='utf-8')
 
 def write_directory_index(directory):
     do_rss = directory == PHOTOGRAPHY_ROOTDIR
@@ -185,12 +179,27 @@ def write_directory_index(directory):
         if (document.body.classList.contains("noscrollbar"))
         {
             document.body.classList.remove("noscrollbar");
+            localStorage.setItem("show_scrollbar", "yes");
         }
         else
         {
             document.body.classList.add("noscrollbar");
+            localStorage.setItem("show_scrollbar", "no");
         }
     }
+
+    function load_scrollbar_setting()
+    {
+        if (localStorage.getItem("show_scrollbar") === "no")
+        {
+            document.body.classList.add("noscrollbar");
+        }
+        else
+        {
+            document.body.classList.remove("noscrollbar");
+        }
+    }
+
     function get_center_img()
     {
         let center_x = window.innerWidth / 2;
@@ -288,6 +297,7 @@ def write_directory_index(directory):
         document.documentElement.addEventListener("keydown", arrowkey_listener);
         document.documentElement.addEventListener("mousemove", mousemove_handler);
         mousemove_handler();
+        load_scrollbar_setting();
     }
     document.addEventListener("DOMContentLoaded", on_pageload);
     </script>
@@ -330,7 +340,7 @@ def make_thumbnail(photo):
     (image_width, image_height) = image.size
     (width, height) = imagetools.fit_into_bounds(image_width, image_height, 1440, 1440)
     image = image.resize((width, height), PIL.Image.LANCZOS)
-    image.save(small_name.absolute_path, quality=85)
+    image.save(small_name.absolute_path, quality=75)
     print(small_name)
     return small_name
 

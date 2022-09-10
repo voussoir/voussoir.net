@@ -64,18 +64,20 @@ header > *
     background-color: var(--color_bodybg);
 }
 
-.photograph, .album
+.album,
+.photograph
 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
 }
 
 .photograph
 {
     padding: 2vh;
     background-color: var(--color_bodybg);
+    border-radius: 16px;
 }
 article .photograph:first-of-type
 {
@@ -88,6 +90,7 @@ article .photograph:last-of-type
 .photograph img
 {
     max-height: 92vh;
+    border-radius: 8px;
 }
 article .morelink
 {
