@@ -200,6 +200,7 @@ class Article:
         self.md_file = pathclass.Path(md_file)
         self.html_file = self.md_file.replace_extension('html')
         self.web_path = self.md_file.parent.relative_to(WRITING_ROOTDIR, simple=True).replace('\\', '/')
+        self.web_path = f'https://voussoir.net/writing/{self.web_path}'
 
         self.published = git_file_published_date(self.md_file)
         self.published_iso = self.published.isoformat()
@@ -214,7 +215,7 @@ class Article:
         github_history = f'https://github.com/voussoir/voussoir.net/commits/master/{relative_path}'
 
         commits = git_file_commit_history(self.md_file)
-        self.publication_id = f'{commits[-1][0]}/{self.web_path}' if commits else None
+        self.publication_id = f'{commits[-1][0]}/{self.md_file.parent.basename}' if commits else None
 
         commits = [
             f'- [{html.escape(line)}](https://github.com/voussoir/voussoir.net/commit/{hash})'
@@ -485,7 +486,7 @@ def write_atom():
         <entry>
             <id>{{article.publication_id}}</id>
             <title>{{article.title|e}}</title>
-            <link rel="alternate" type="text/html" href="https://voussoir.net/writing/{{article.web_path}}"/>
+            <link rel="alternate" type="text/html" href="{{article.web_path}}"/>
             <updated>{{article.published_iso}}</updated>
             <content type="html">
             <![CDATA[
@@ -514,7 +515,7 @@ def write_rss():
         <item>
             <title>{{article.title|e}}</title>
             <guid isPermalink="false">{{article.publication_id}}</guid>
-            <link>https://voussoir.net/writing/{{article.web_path}}</link>
+            <link>{{article.web_path}}</link>
             <pubDate>{{article.published_iso}}</pubDate>
             <description>
             <![CDATA[
