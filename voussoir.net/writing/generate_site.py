@@ -460,9 +460,7 @@ def write_writing_index():
     <h2>The footer</h2>
     <p>I greatly appreciate the time you have taken to visit my page. If you
     have feedback, corrections, or tales of harrowing adventure, send an email
-    to writing@voussoir.net. If you want me to hold on to some of your dollars
-    for permanent safekeeping,
-    <a href="/donate">click here</a>.</p>
+    to writing@voussoir.net.
     </article>
     </body>
     </html>
