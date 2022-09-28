@@ -23,6 +23,7 @@ The [stroads](https://www.youtube.com/watch?v=ORzNZUeUHAM&t=13s "The Ugly, Dange
 - [Traffic calming is only added as an absolute last resort after enough people die](https://www.youtube.com/watch?v=bAxRYrpbnuA&t=34s "Traffic Calming is Everywhere in the Netherlands").
 - [Cyclists are sent down the rain gutters to make space for cars](https://twitter.com/notjustbikes/status/1431260478303518724 "If the bike stencil won't fit, that should tell you something.").
 - [Buses get stuck in the same traffic as everyone else, ensuring they remain useless to all but the carless poor](https://www.youtube.com/watch?v=RQY6WGOoYis&t=1m43s "Do Your Buses Get Stuck in Traffic?").
+- [Traffic signals are placed at the far end of the intersection so that motorists can comfortably encroach into and through the crosswalk without affecting their own line of sight](https://youtu.be/_ByEBjf9ktY?t=10m38s "Crossing the Street Shouldn't be Deadly (but it is)").
 
 Because heaven forbid we impose something like a minor pause or slowdown upon the helpless motorists inside their cushy, air conditioned, noise-proof boxes, with radio and navigation and heated seats, that require no physical effort to launch at speeds higher than humanity could have dreamed of just two hundred years ago. Don't make them wait at a crossing. Life is already so hard for them.
 
