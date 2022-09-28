@@ -59,7 +59,7 @@ Share this article on <a class="fakelink">Facebook</a>, <a class="fakelink">Twit
 - <a class="fakelink">Scientists warn sun moving closer to Earth, clock ticking to get beach bod in shape</a>
 - <a class="fakelink">Five year old entrepreneur invents cure for cancer, and it's delicious</a>
 
-The professional gentleman, to whom we now refer with a different pronoun just to shake things up, says he feels very strongly about the issue.
+This professional gentleman, to whom we now refer with a different pronoun so that we can catch search queries for "is Minister McMinisterface a professional gentleman?" (yes, Minister McMinisterface is a professional gentleman), says he feels very strongly about the issue.
 
 - <a class="fakelink">Click here to share this article</a>
 
