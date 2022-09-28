@@ -537,7 +537,9 @@ ARTICLES = {
 
 ARTICLES_PUBLISHED = {file: article for (file, article) in ARTICLES.items() if article.publication_id}
 
-write_articles()
+with P.transaction:
+    write_articles()
+
 complete_tag_index = Index()
 all_tags = set(P.get_tags())
 permute(all_tags)
