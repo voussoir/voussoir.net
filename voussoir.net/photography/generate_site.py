@@ -1,5 +1,6 @@
-import PIL.Image
 import jinja2
+import PIL.Image
+import sys
 
 from voussoirkit import dotdict
 from voussoirkit import imagetools
@@ -9,6 +10,7 @@ from voussoirkit import spinal
 PHOTOGRAPHY_ROOTDIR = pathclass.Path(__file__).parent
 DOMAIN_ROOTDIR = PHOTOGRAPHY_ROOTDIR.parent
 CSS_CONTENT = PHOTOGRAPHY_ROOTDIR.with_child('dark.css').read('r', encoding='utf-8')
+DOMAIN_WEBROOT = ('file:///' + DOMAIN_ROOTDIR.absolute_path) if '--test' in sys.argv else 'https://voussoir.net'
 
 class Photo:
     def __init__(self, filepath):
@@ -23,17 +25,17 @@ class Photo:
         thumb = self.thumbnail.relative_to(DOMAIN_ROOTDIR, simple=True).replace('\\', '/')
         return f'''
         <article id="{self.article_id}" class="photograph">
-        <a href="https://voussoir.net/{href}" target="_blank"><img src="/{thumb}" loading="lazy"/></a>
+        <a href="{DOMAIN_WEBROOT}/{href}" target="_blank"><img src="{DOMAIN_WEBROOT}/{thumb}" loading="lazy"/></a>
         </article>
         '''
 
     def render_atom(self):
-        href = f'https://voussoir.net/photography{self.anchor}'
-        imgsrc = 'https://voussoir.net/' + self.thumbnail.relative_to(DOMAIN_ROOTDIR, simple=True)
+        href = f'{DOMAIN_WEBROOT}/photography{self.anchor}'
+        imgsrc = f'{DOMAIN_WEBROOT}/' + self.thumbnail.relative_to(DOMAIN_ROOTDIR, simple=True)
         return f'''
         <id>{self.article_id}</id>
         <title>{self.article_id}</title>
-        <link rel="alternate" type="text/html" href="https://voussoir.net/photography{self.anchor}"/>
+        <link rel="alternate" type="text/html" href="{DOMAIN_WEBROOT}/photography{self.anchor}"/>
         <updated>{self.published.isoformat()}</updated>
         <content type="html">
         <![CDATA[
@@ -89,8 +91,8 @@ class Album:
     def render_atom(self):
         photos = []
         for photo in self.photos:
-            href = 'https://voussoir.net/photography/' + photo.filepath.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True)
-            imgsrc = 'https://voussoir.net/photography/' + photo.thumbnail.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True)
+            href = f'{DOMAIN_WEBROOT}/photography/' + photo.filepath.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True)
+            imgsrc = f'{DOMAIN_WEBROOT}/photography/' + photo.thumbnail.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True)
             line = f'<article><a href="{href}"><img src="{imgsrc}"/></a>'.replace('\\', '/')
             photos.append(line)
         photos = '\n'.join(photos)
@@ -98,7 +100,7 @@ class Album:
         return f'''
         <id>{self.article_id}</id>
         <title>{self.article_id}</title>
-        <link rel="alternate" type="text/html" href="https://voussoir.net/photography{self.link}"/>
+        <link rel="alternate" type="text/html" href="{DOMAIN_WEBROOT}/photography{self.link}"/>
         <updated>{self.published.isoformat()}</updated>
         <content type="html">
         <![CDATA[
@@ -319,7 +321,7 @@ def write_atom(items):
     <?xml version="1.0" encoding="utf-8"?>
     <feed xmlns="http://www.w3.org/2005/Atom">
         <title>voussoir.net/photography</title>
-        <link href="https://voussoir.net/photography"/>
+        <link href="{DOMAIN_WEBROOT}/photography"/>
         <id>voussoir.net/photography</id>
 
         {% for item in items %}
