@@ -76,7 +76,7 @@ class Album:
         {% endfor %}
 
         {% if remaining > 0 %}
-        <p class="morelink"><a href="{{album_path}}{{next_after_more.link}}">{{remaining}} more</a></p>
+        <p class="morelink"><a href="{{album_path}}{{next_after_more.anchor}}">{{remaining}} more</a></p>
         {% endif %}
         </article>
         ''').render(
