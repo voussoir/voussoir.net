@@ -104,7 +104,7 @@ def linkchecker(do_external=True):
                 response = session.get(url)
                 soup = bs4.BeautifulSoup(response.text, 'html.parser')
                 if result.url_parts.fragment:
-                    if not soup.select(f'#{result.url_parts.fragment}'):
+                    if not soup.find(id=result.url_parts.fragment):
                         result.exc = BrokenAnchor(f'Broken anchor: #{result.url_parts.fragment}')
                 links = extract_links(url, soup)
                 for link in links:
