@@ -1,5 +1,8 @@
 voussoir.net/cv/*.jpg
 voussoir.net/cv/*.png
+voussoir.net/photography/**/*.atom
+voussoir.net/photography/**/*.html
+voussoir.net/photography/**/*.jpg
 voussoir.net/writing/**/*.fcstd
 voussoir.net/writing/**/*.flac
 voussoir.net/writing/**/*.gif
@@ -15,5 +18,3 @@ voussoir.net/writing/**/*.svg
 voussoir.net/writing/_unpublished/*
 voussoir.net/writing/writing.atom
 voussoir.net/writing/writing.rss
-voussoir.net/photography/**/*.jpg
-voussoir.net/photography/**/*.atom
