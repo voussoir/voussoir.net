@@ -8,9 +8,18 @@ from voussoirkit import pathclass
 from voussoirkit import spinal
 
 PHOTOGRAPHY_ROOTDIR = pathclass.Path(__file__).parent
+ATOM_FILE = PHOTOGRAPHY_ROOTDIR.with_child('photography.atom')
 DOMAIN_ROOTDIR = PHOTOGRAPHY_ROOTDIR.parent
 CSS_CONTENT = PHOTOGRAPHY_ROOTDIR.with_child('dark.css').read('r', encoding='utf-8')
 DOMAIN_WEBROOT = ('file:///' + DOMAIN_ROOTDIR.absolute_path) if '--test' in sys.argv else 'https://voussoir.net'
+DOMAIN_WEBROOT = DOMAIN_WEBROOT.replace('\\', '/')
+
+def webpath(path, anchor=None):
+    path = path.relative_to(DOMAIN_ROOTDIR, simple=True).replace('\\', '/').lstrip('/')
+    path = DOMAIN_WEBROOT.rstrip('/') + '/' + path
+    if anchor is not None:
+        path += '#' + anchor.lstrip('#')
+    return path
 
 class Photo:
     def __init__(self, filepath):
@@ -21,21 +30,19 @@ class Photo:
         self.published = imagetools.get_exif_datetime(filepath)
 
     def render_web(self, relative_directory=None):
-        href = self.filepath.relative_to(DOMAIN_ROOTDIR, simple=True).replace('\\', '/')
-        thumb = self.thumbnail.relative_to(DOMAIN_ROOTDIR, simple=True).replace('\\', '/')
         return f'''
         <article id="{self.article_id}" class="photograph">
-        <a href="{DOMAIN_WEBROOT}/{href}" target="_blank"><img src="{DOMAIN_WEBROOT}/{thumb}" loading="lazy"/></a>
+        <a href="{webpath(self.filepath)}" target="_blank"><img src="{webpath(self.thumbnail)}" loading="lazy"/></a>
         </article>
         '''
 
     def render_atom(self):
-        href = f'{DOMAIN_WEBROOT}/photography{self.anchor}'
-        imgsrc = f'{DOMAIN_WEBROOT}/' + self.thumbnail.relative_to(DOMAIN_ROOTDIR, simple=True)
+        href = webpath(PHOTOGRAPHY_ROOTDIR, anchor=self.anchor)
+        imgsrc = webpath(self.thumbnail)
         return f'''
         <id>{self.article_id}</id>
         <title>{self.article_id}</title>
-        <link rel="alternate" type="text/html" href="{DOMAIN_WEBROOT}/photography{self.anchor}"/>
+        <link rel="alternate" type="text/html" href="{href}"/>
         <updated>{self.published.isoformat()}</updated>
         <content type="html">
         <![CDATA[
@@ -48,7 +55,7 @@ class Album:
     def __init__(self, path):
         self.path = path
         self.article_id = path.basename
-        self.link = '/' + path.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True).replace('\\', '/')
+        self.link = webpath(path)
         self.published = imagetools.get_exif_datetime(sorted(path.glob_files('*.jpg'))[0])
         self.photos = list(spinal.walk(
             self.path,
@@ -70,7 +77,7 @@ class Album:
 
         return jinja2.Template('''
         <article id="{{article_id}}" class="album">
-        <h1><a href="/{{album_path}}">{{directory.basename}}</a></h1>
+        <h1><a href="{{album_path}}">{{directory.basename}}</a></h1>
         {% for photo in firsts %}
         {{photo.render_web()}}
         {% endfor %}
@@ -82,7 +89,7 @@ class Album:
         ''').render(
             article_id=self.article_id,
             directory=self.path,
-            album_path=self.path.relative_to(DOMAIN_ROOTDIR, simple=True).replace('\\', '/'),
+            album_path=webpath(self.path),
             next_after_more=next_after_more,
             firsts=firsts,
             remaining=len(remaining),
@@ -91,8 +98,8 @@ class Album:
     def render_atom(self):
         photos = []
         for photo in self.photos:
-            href = f'{DOMAIN_WEBROOT}/photography/' + photo.filepath.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True)
-            imgsrc = f'{DOMAIN_WEBROOT}/photography/' + photo.thumbnail.relative_to(PHOTOGRAPHY_ROOTDIR, simple=True)
+            href = webpath(photo.filepath)
+            imgsrc = webpath(photo.thumbnail)
             line = f'<article><a href="{href}"><img src="{imgsrc}"/></a>'.replace('\\', '/')
             photos.append(line)
         photos = '\n'.join(photos)
@@ -100,7 +107,7 @@ class Album:
         return f'''
         <id>{self.article_id}</id>
         <title>{self.article_id}</title>
-        <link rel="alternate" type="text/html" href="{DOMAIN_WEBROOT}/photography{self.link}"/>
+        <link rel="alternate" type="text/html" href="{self.link}"/>
         <updated>{self.published.isoformat()}</updated>
         <content type="html">
         <![CDATA[
@@ -120,8 +127,8 @@ def write(path, content):
     path.write('w', content, encoding='utf-8')
 
 def write_directory_index(directory):
-    do_rss = directory == PHOTOGRAPHY_ROOTDIR
-    do_back = directory != PHOTOGRAPHY_ROOTDIR
+    rss_link = webpath(ATOM_FILE) if directory == PHOTOGRAPHY_ROOTDIR else None
+    back_link = webpath(PHOTOGRAPHY_ROOTDIR) if directory != PHOTOGRAPHY_ROOTDIR else None
     sort_reverse = directory == PHOTOGRAPHY_ROOTDIR
 
     items = list(spinal.walk(
@@ -147,7 +154,9 @@ def write_directory_index(directory):
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="alternate" type="application/atom+xml" href="/photography/photography.atom"/>
+    {% if rss_link %}
+    <link rel="alternate" type="application/atom+xml" href="{{rss_link}}"/>
+    {% endif %}
     <title>{{directory.basename}}</title>
 
     <style>
@@ -159,13 +168,13 @@ def write_directory_index(directory):
     <header>
     <div id="keyboardhint">hint: <kbd>←</kbd> / <kbd>→</kbd></div>
     <a id="scrollbartoggle" onclick="return toggle_scrollbar();">scrollbar on/off</a>
-    {% if do_rss %}
-    <a href="/photography/photography.atom">Atom</a>
+    {% if rss_link %}
+    <a href="{{rss_link}}">Atom</a>
     {% endif %}
 
-    {% if do_back %}
-    <a href="/photography">Back</a>
-    {% endif %}
+    {%- if back_link -%}
+    <a href="{{back_link}}">Back</a>
+    {%- endif -%}
     </header>
 
     {% for item in items %}
@@ -307,13 +316,13 @@ def write_directory_index(directory):
     ''').render(
         css_content=CSS_CONTENT,
         directory=directory,
-        do_rss=do_rss,
-        do_back=do_back,
+        rss_link=rss_link,
+        back_link=back_link,
         items=items,
     )
     write(directory.with_child('index.html'), page)
 
-    if do_rss:
+    if rss_link:
         write_atom(items)
 
 def write_atom(items):
@@ -321,7 +330,7 @@ def write_atom(items):
     <?xml version="1.0" encoding="utf-8"?>
     <feed xmlns="http://www.w3.org/2005/Atom">
         <title>voussoir.net/photography</title>
-        <link href="{DOMAIN_WEBROOT}/photography"/>
+        <link href="webpath(PHOTOGRAPHY_ROOTDIR)}"/>
         <id>voussoir.net/photography</id>
 
         {% for item in items %}
@@ -331,7 +340,7 @@ def write_atom(items):
         {% endfor %}
     </feed>
     '''.strip()).render(items=items)
-    write(PHOTOGRAPHY_ROOTDIR.with_child('photography.atom'), atom)
+    write(ATOM_FILE, atom)
 
 def make_thumbnail(photo):
     small_name = photo.replace_extension('').basename + '_small'
@@ -340,9 +349,10 @@ def make_thumbnail(photo):
         return small_name
     image = PIL.Image.open(photo.absolute_path)
     (image_width, image_height) = image.size
+    exif = image.getexif()
     (width, height) = imagetools.fit_into_bounds(image_width, image_height, 1440, 1440)
     image = image.resize((width, height), PIL.Image.LANCZOS)
-    image.save(small_name.absolute_path, quality=75)
+    image.save(small_name.absolute_path, quality=75, exif=exif)
     print(small_name)
     return small_name
 
