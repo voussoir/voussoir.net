@@ -1,3 +1,5 @@
+[tag:photography]
+
 Sharing photos with friends and strangers
 =========================================
 
