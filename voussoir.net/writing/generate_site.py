@@ -369,7 +369,7 @@ def make_tag_page(index, path):
     <ol class="article_list">
     {% for article in articles %}
     <li>
-        <a href="/writing/{{article.web_path}}">{{article.published_date}} - {{article.title|e}}</a>
+        <a href="{{article.web_path}}">{{article.published_date}} - {{article.title|e}}</a>
     </li>
     {% endfor %}
     </ol>
