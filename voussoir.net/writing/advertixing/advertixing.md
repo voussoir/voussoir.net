@@ -742,6 +742,10 @@ Reddit:
 
 - In [2020](https://old.reddit.com/r/modnews/comments/hmd17x/karma_experiment/), site staff started an experiment that adds "award karma" as a separate karma category. "Our goals with this change are to recognize awarding as a key part of the Reddit community and to drive more of it, ... Awarding is an important part of our direct-to-consumer revenue; it complements advertising revenue and gives us a strong footing to pursue our mission into the future. By giving awards, users not only recognize others but also help Reddit in its mission to bring more community and belonging to the world". Oh, so that's what the awards system developers have been working on while ignoring all the other issues. Got it.
 
+Video games:
+
+- Nakey Jakey put together a video on [ads in games](https://www.youtube.com/watch?v=q7PBNHyaoDc) featuring games that are nothing but ads as well as PP in ordinary games.
+
 Smart appliances:
 
 - ["At Samsung, life runs through us. Your advertising should too."](https://www.youtube.com/watch?v=N9kiSEhbLXs "Samsung Ads Life Runs Through Us Web")
