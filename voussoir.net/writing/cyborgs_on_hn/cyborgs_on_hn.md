@@ -3,6 +3,61 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> Wow, now that's a case of paint\^W checkering oneself into a corner.
+
+-
+
+> s/popular/common/
+> I sometimes wish portrait oriented 4:3 monitors had become the dominant form.
+
+-
+
+> I couldn't supply enough work for the contractors (we had to rush into it because ${life reasons}, so not everything was specced out when the work started)
+
+-
+
+> IIUC this is what iMessage does (at least when Messages in iCloud or whatever it's called is disabled), except s/people/devices:
+
+-
+
+> I work at $LARGE_CORPORATION and our product a11y team's most recent major ship was a new palette of colors with improved contrast ratios.
+
+-
+
+> Welp, looks like that tweet got censored\^Wdeleted.
+
+-
+
+> s/tiktok/uber/g
+
+-
+
+> The comments on the site have become predictable enough to be GPT generated.
+
+-
+
+> My personal experience with devs who don't want to GPL their code or contribute to GPL projects is that they're under the impression that having a permissive license on their own project will get $corp to use it and, somehow, they'll profit from $corp using it.
+
+-
+
+> s/Android/Windows/ and s/Europe/USA/ and it could be Microsoft at the end of the antitrust case in the 90s.
+
+-
+
+> Large vehicles are safer for vehicle-on-vehicle or vehicle-on-object crashes, and vehicle-on-pedestrian crashes are a very small fraction of total fatal crashes. The core objection of this blog post\^H\^H\^H\^H\^H\^H\^H\^H paper is nonsense.
+
+-
+
+> I love stories of little quirky & fable-like people who are known as "that X person", and they seem to be a master at whatever X is. Creates a real charming atmosphere wherever these people exist.
+
+> > I imagine some of us are those kind of X persons in other peoples lives, where X ∈ {Computer, Science, Internet}.
+
+-
+
+> \#upvotes !~ effort put into comment
+
+-
+
 > Telling X and doing !X is not a recent invention.
 
 -
@@ -59,7 +114,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> I still don't understand why this is a website thing and not an user-agent^W^W webbrowser thing.
+> I still don't understand why this is a website thing and not an user-agent\^W\^W webbrowser thing.
 
 -
 
