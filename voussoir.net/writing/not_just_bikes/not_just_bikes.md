@@ -84,6 +84,30 @@ I won't detail the need for separated bike lanes and narrower, slower streets be
 
 I can also recommend [City Beautiful](https://www.youtube.com/channel/UCGc8ZVCsrR3dAuhvUbkbToQ/videos). In the meantime, try [breaking traffic waves](https://www.youtube.com/watch?v=iGFqfTCL2fs).
 
+Here's an exchange from [How to Get Ahead in Advertising](https://en.wikipedia.org/wiki/How_to_Get_Ahead_in_Advertising), a movie I'm surprised I hadn't heard of earlier:
+
+> \- [Dennis, to his boil] I'd like to see you suffer.
+
+> \- [Boil] A typically communist statement.
+
+> \- I'm not a communist!
+
+> \- Yes, you are. You want to take everyone's car away.
+
+> \- I do not want to take anything from anyone. I want to give them the choice of something better.
+
+> \- Oh, yes? What?
+
+> \- Trains.
+
+> \- Trains? Trains are no good. They're old-fashioned. I hate trains. They're rotten.
+
+> \- Only because they don't consume. Only because they're already there and don't eat up more and more and more. That's why you hate them. That's why government hates them. That's why they're old-fashioned and rotten.
+
+> \- You commies don't half talk a lot of shit.
+
+> \- Shut up! I'm not a communist!
+
 [footnote_text] I look forward to EVs replacing ICEs, but they are still not as good as just [using fewer cars](https://www.youtube.com/watch?v=OObwqreAJ48&t=6 "You don't need to own a care if you don't drive to work - carsharing").
 
 [footnote_text] That's the place we keep our breathable air.
