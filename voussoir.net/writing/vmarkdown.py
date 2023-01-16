@@ -44,7 +44,6 @@ SLUG_CHARACTERS = string.ascii_lowercase + string.digits + '_'
 
 session = requests.Session()
 
-
 class SyntaxHighlighting:
     def block_code(self, text, lang):
         inlinestyles = self.options.get('inlinestyles') or False
@@ -132,6 +131,8 @@ class VoussoirInlineGrammar(mistune.InlineGrammar):
     subreddit = re.compile(r'\/r\/[A-Za-z0-9_]+')
     redditor = re.compile(r'\/u\/[A-Za-z0-9_\-]+')
     youtube_embed = re.compile(r'\[youtube:([A-Za-z0-9_\-]{11})\]')
+    checkbox_checked = re.compile(r'\[x\]')
+    checkbox_unchecked = re.compile(r'\[ \]')
     dash_spacer = re.compile(r'^\s*-$', re.MULTILINE)
     # This `text` override is based on this article:
     # https://ana-balica.github.io/2015/12/21/mistune-custom-lexers-we-are-going-deeper/
@@ -148,6 +149,8 @@ class VoussoirInlineGrammar(mistune.InlineGrammar):
 class VoussoirInline(mistune.InlineLexer):
     default_rules = copy.copy(mistune.InlineLexer.default_rules)
     default_rules.remove('text')
+    default_rules.insert(0, 'checkbox_checked')
+    default_rules.insert(0, 'checkbox_unchecked')
     default_rules.insert(0, 'mdash')
     default_rules.insert(0, 'larr')
     default_rules.insert(0, 'rarr')
@@ -170,6 +173,12 @@ class VoussoirInline(mistune.InlineLexer):
         qualname = m.group(1)
         tagname = qualname.split('.')[-1]
         return f'<a class="tag_link" data-qualname="{qualname}">[{tagname}]</a>'
+
+    def output_checkbox_checked(self, m):
+        return '<input type="checkbox" checked/>'
+
+    def output_checkbox_unchecked(self, m):
+        return '<input type="checkbox"/>'
 
     def output_footnote_link(self, m):
         global footnote_link_index
@@ -281,7 +290,8 @@ def dump_file(path):
 
 # SOUP HELPERS
 ################################################################################
-PARAGRAPH_SYMBOL = chr(182)
+SECTION_SYMBOL = '§'
+
 def add_header_anchors(soup):
     '''
     Give each <hX> an <a> to link to it.
@@ -298,7 +308,7 @@ def add_header_anchors(soup):
         new_a = soup.new_tag('a')
         new_a['href'] = '#' + slug
         new_a['class'] = 'header_anchor_link'
-        new_a.append(f' ({PARAGRAPH_SYMBOL})')
+        new_a.append(f' ({SECTION_SYMBOL})')
         header.append(new_a)
 
 def add_toc(soup, max_level=None):
@@ -343,7 +353,7 @@ def add_toc(soup, max_level=None):
         toc_line = toc.new_tag('li')
         toc_a = toc.new_tag('a')
 
-        toc_a.append(get_innertext(header).replace(f' ({PARAGRAPH_SYMBOL})', ''))
+        toc_a.append(get_innertext(header).replace(f' ({SECTION_SYMBOL})', ''))
         toc_a['href'] = f'#{header["id"]}'
         toc_line.append(toc_a)
 
