@@ -1,6 +1,8 @@
 Squirrel on the road
 ====================
 
+<audio src="squirrel_on_the_road.flac" controls/>
+
 The road is not a squirrel's natural environment. The road is hostile to the squirrel, his life threatened whenever he steps onto it. It is a recent development, a recent intrusion into space that was previously green. The squirrel's ancestors were hunted by dogs and hawks, not cars. But he does not know this. Squirrels don't study history. They don't talk to each other about the past. They don't share recipes. A french fry might be traditional cuisine.
 
 The timescale on which a road is built is incomprehensible to the squirrel. A road that opened the day before the squirrel was born is the same as a road aged fifty years; they're both part of the present environment and for the squirrel the present is all there is. They are as old as mountains. The age, size, and condition of the road do not affect the squirrel's priorities: food, water, shelter, mate. The road is only terrain.
