@@ -284,10 +284,6 @@ def cat_files(paths):
     content = [cat_file(path) for path in paths]
     return '\n\n'.join(content)
 
-def dump_file(path):
-    with open(path, 'rb') as f:
-        return f.read()
-
 # SOUP HELPERS
 ################################################################################
 SECTION_SYMBOL = '§'
@@ -432,7 +428,7 @@ def embed_images(soup, cache=None):
                 response.raise_for_status()
                 data = response.content
             else:
-                data = dump_file(src)
+                data = pathclass.Path(src).read('rb')
             data = base64.b64encode(data).decode('ascii')
             mime = mimetypes.guess_type(src)[0]
             mime = mime if mime is not None else ''
