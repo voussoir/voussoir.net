@@ -83,6 +83,10 @@ It is partially economical. Video files are stinking huge and I feel burdened wi
 
 That's a lot of excuses. I am left with the fact that I produce work in mediums I don't consume from anybody else, and I consume work from everybody else in mediums I don't produce. I am not sure how to feel about that yet.
 
+See also: https://internetkhole.com
+
+See also: https://www.chronophoto.app/game.html
+
 ## how
 
 Here are a couple of technical details, and the techniques I'm currently using. This is being kept separate from the rest of the article because talking at great length about gear and settings is very easy for the author (me) and not very interesting for the reader (you, and future me).
