@@ -3,6 +3,20 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> \> It really cannot be overstated enough the wealth divide that pandemic QE created.
+
+> :s/\\\<created\\\>\.$/exacerbated./
+
+-
+
+> At $oldjob, taking care of a busy and successful web estate that is now close to 25 years old, one of the ugliest and longest-standing warts was the "image store". That was a simple, flat directory on a single node, shared over NFS, which had accumulated more than 1.2 million (yes, 1_200_000) inodes/files in a single directory.
+
+-
+
+> Also s/produce/release/g
+
+-
+
 > Wow, now that's a case of paint\^W checkering oneself into a corner.
 
 -
