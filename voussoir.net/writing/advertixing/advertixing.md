@@ -3,6 +3,10 @@
 Advertising
 ===========
 
+You can listen to this article. FLAC, about 325 MiB:
+
+<audio src="https://files.voussoir.net/writing/advertixing/advertixing.flac" controls/>
+
 ## Introduction
 
 Every once in a while, someone will ask me "have you seen that commercial about..." and my response is almost always "no". I haven't seen that commercial. I do my best to not see any commercials.
@@ -27,9 +31,9 @@ I find that advertisements can be separated into three broad categories by their
 
     Sponsorship advertisements might be explicitly labeled, or they might be hidden amongst regular content so that you don't realize you're being advertised to. The second is more lucrative though FTC regulations against them exist.
 
-    ![](sponsorship.png)
+    ![Illustrated diagram depicts a person reading an article. Following the arrows in the diagram, we see the article is composed of a draft from a Publisher with a blank space in it, and an advertisement from the Advertiser that goes into the space. The Advertiser gives money to the Publisher.](sponsorship.png)
 
-2. **Spam**, in which a product seller self-publishes ads for their product in spaces where ads don't belong and without getting permission from the owner of the space.
+2. **Spam**, in which a product seller self-publishes ads for their product in spaces where ads don't belong [footnote_link] and without getting permission from the owner of the space.
 
     This includes uninvited email and phone calls and private messages, self-promotional forum posts, SEO keyword abuse, fliers stuck under your windshield wipers, door-to-door salesmen, and solicitors outside grocery stores.
 
@@ -37,31 +41,37 @@ I find that advertisements can be separated into three broad categories by their
 
     Most spammers are cowards. They won't own up to their actions. They'll say "I'm not spamming, I'm just letting you know about this cool new thing".
 
-    ![](spam.png)
+    ![Illustrated diagram depicts a person receiving emails from several other people. But, they also receive a spam email from an Advertiser.](spam.png)
 
 3. **Chumps**, publishers who discuss a product and give it ad-like publicity without compensation from the seller because they think they can use it to attract an audience of their own, usually because the product is currently a hot topic. This is different from word of mouth because the chump isn't actually passionate about the product, and may not even have it. The chump probably gets their income from other sponsors unrelated to the product in question, or by selling their own product.
 
-    This includes bloggers, reviewers, and opinionators discussing new products, press releases, scandals, speculation, leaks, and hype. Product sellers can intentionally create scandals or leaks to get free advertising from chumps. Chumps will often regurgitate basic product information instead of forming their own opinions. Also keep an eye out for product reviews released too quickly after the product's launch, which indicates it was a sponsored job or the reviewer simply spent no time with it. Check out [this MKBHD video](https://www.youtube.com/watch?v=Ns8ydpZ5-4o&t=8m03s "Escobar Responds! A PSA (2020-05-29)") where he calls out chump media outlets giving free attention to a certain scandalous device, which I am now ironically propagating by showing it to you. inb4 [MKBHD also speculates](https://www.youtube.com/watch?v=bATUW8G2ONE "iPhone 12: What to Expect! (2020-07-07)").
+    This includes bloggers, reviewers, and opinionators discussing new products, press releases, scandals, speculation, leaks, and hype. Product sellers can intentionally create scandals or leaks to get free advertising from chumps. Check out [this MKBHD video](https://www.youtube.com/watch?v=Ns8ydpZ5-4o&t=8m03s "Escobar Responds! A PSA (2020-05-29)") where he calls out chump media outlets giving free attention to a certain scandalous device, which I am now ironically propagating by showing it to you. inb4 [MKBHD also speculates](https://www.youtube.com/watch?v=bATUW8G2ONE "iPhone 12: What to Expect! (2020-07-07)"). Chumps will often regurgitate basic product information instead of forming their own opinions. Also keep an eye out for product reviews released too quickly after the product's launch, which indicates it was an embargoed job or the reviewer simply spent no time with it.
 
-    ![](chumps.png)
+    ![Illustrated diagram depicts a person curious about a brand or product. The Publisher has lots to say about that brand as well as others, and adds some advertisements into the mix. The Advertiser gives money to the Publisher.](chumps.png)
 
-    I feel that I need to give a concrete example of chumping to make my definition clear, so I'll continue with MKBHD though normally I don't want to speak ill of individuals [footnote_link]. He releases lots of videos after spending only a week with a product, and the release of the video is often clearly aligned with an embargo, i.e. the companies are using him as part of their scheduled marketing. These products attract viewers to his channel because they are new and hot, but he isn't getting paid cash by the likes of Samsung (probably) -- he performs ad segments for [other sponsors](https://www.youtube.com/watch?v=vax8FCuQUsE&t=2m46s "Galaxy S22 Impressions / sponsored by Morning Brew"). The end result is that the viewer is being double-advertised to: they get to hear the product's basic specsheet read aloud to them with only superficial opinionation, then hear from another sponsor on top of that.
+    I feel that I need to give a concrete example of chumping to make my definition clear, so I'll continue with MKBHD because I can still positively say that I respect his work and I watch what he makes [footnote_link]. He releases lots of videos after spending only a week with a product, and the release of the video is often clearly aligned with an embargo. This means the company has sent its products to many different reviewers and told them not to publish their reviews until a certain date. So, the review doesn't come from a place of genuine personal interest in the product; the companies are using him as part of their scheduled marketing. These products attract viewers to his channel because they are new and hot, but he isn't getting paid cash by the likes of Samsung (probably) -- he performs ad segments for [other sponsors](https://www.youtube.com/watch?v=vax8FCuQUsE&t=2m46s "Galaxy S22 Impressions / sponsored by Morning Brew"). The end result is that the viewer is being double-advertised to: they get to hear the product's basic specsheet read aloud to them with only superficial opinionation, then hear from another sponsor on top of that.
+
+    Sellers are incentivized to put chumps on embargoes because a single, big wave of marketing that gets everybody talking is more effective than the slow trickle that would come from reviewers finishing their work over weeks and months. Chumps are incentivized to participate in embargoes because if they miss the wave, the audience will have already had their fill of hearing about that product.
+
+    Rushing a review to meet the embargo deadline is one thing, but the chumps who do "breakdowns" of press releases, advertisements, and marketing copy are undoubtedly on an even lower rung.
 
 The majority of this article deals with sponsorship advertisements because they are the most systemically accepted of the three. Consider:
 
-- **There's as not much to say about spam**. Everybody already hates spam. This article is about systemic problems with advertisements and spam is built upon the abuse of systems by definition. Discussing the problems with spam is like discussing the problems with homicide. It's not systemically accepted but occurs anyway. Spam will exist as long as ~~[there's two people left on the planet](https://www.youtube.com/watch?v=9NZDwZbyDus "Meet the Sniper")~~ popular systems and spaces exist. Spam can only be countered with diligent policing by the owner of the space, or by convincing the spammer to repent. Good luck with that. Sponsorship, on the other hand, exists comfortably within the system. I dedicate [one section](#the_problem_with_spam_your_life_as_an_arms_race) to spam but otherwise I don't have much to say about spam except that I hate it too.
+- **There's as not much to say about spam**. Everybody already hates spam. This article is about systemic problems with advertisements and spam is built upon the abuse of systems by definition. Discussing the problems with spam is like discussing the problems with homicide. It's not systemically accepted but occurs anyway. Spam will exist as long as ~~[there's two people left on the planet](https://www.youtube.com/watch?v=9NZDwZbyDus "Meet the Sniper")~~ popular systems and spaces exist. Spam can only be countered with diligent policing by the owner of the space, or by convincing the spammer to repent. Good luck with that. Sponsorship, on the other hand, exists comfortably within the system. I dedicate [one section of this article](#the_problem_with_spam_your_life_as_an_arms_race) to spam but otherwise I don't have much to say about spam except that I hate it too.
 
-- **Chumps usually rely on sponsorships to do what they do**. There is not much need for me to discuss chumps because if we could eliminate sponsorships, we'd bring the majority of chumps down at the same time. By my definition, chumps are not actually interested in the product, they only talk about it to get attention. Without sponsorships to make chumping worthwhile, most chumps would quit. Only those who sell their own product would continue, and I believe that to be a minority.
+- **Chumps usually rely on sponsorships to do what they do**. There is not much need for me to discuss chumps because if we could eliminate sponsorships, we'd bring the majority of chumps down at the same time. By my definition, chumps are not actually interested in the product, they only talk about it to get attention, clicks, and ad views. Without sponsorships to make chumping worthwhile, most chumps would quit. Only those who sell their own product would continue, and I believe that to be a minority.
 
 As such, of these three kinds of advertisements, sponsorships are the ones that I find most worth writing about.
 
 **Glossary**:
 
-- Product seller, advertiser: People who make and sell some product or service to customers as their main source of income.
-- Publisher: Websites, TV channels, radio stations, newspapers, app developers, storefront owners, social media creators et al. who create media or own a space. For my purposes this will also include performers, racecar drivers, and other personalities who promote a brand, even though we wouldn't normally call them publishers. The space they are selling is their body, image, and reputation.
-- Sponsor: A product seller who pays a publisher to show ads for their product in the publisher's space.
+- Product seller: People who make and sell some product or service to customers as their main source of income.
+- Publisher: Websites, TV channels, radio stations, newspapers, app developers, storefront owners, social media creators et al. who create media or own a space. For my purposes this would also include performers, racecar drivers, and other personalities who promote a brand, even though we wouldn't normally call them publishers. The space they are selling is their body, image, and reputation.
+- Sponsor, advertiser: A product seller who pays a publisher to show ads for their product in the publisher's space.
 
-[footnote_text] This paragraph applies to the majority of hot-topic reviewers, I just don't watch very many of them. Also, the only reason I'm able to criticize his work is because I still watch what he makes. I like that he does get into [industry critique](https://www.youtube.com/watch?v=a6zvvlrd-jw "The Electric Car Pre-Order Problem") and [Youtube critique](https://youtu.be/1Cw-vODp-8Y "YouTube comment impersonation spam") from time to time, but I'm sure the chump videos are better at paying the bills.
+[footnote_text] as if they belong anywhere amirite
+
+[footnote_text] This paragraph applies to the majority of hot-topic reviewers, I just don't watch very many of them. I like that MKBHD does get into [industry critique](https://www.youtube.com/watch?v=a6zvvlrd-jw "The Electric Car Pre-Order Problem") and [Youtube critique](https://www.youtube.com/watch?v=1Cw-vODp-8Y "YouTube comment impersonation spam") from time to time, but I'm sure the chump videos are better at paying the bills.
 
 ## The damage of advertisements
 
@@ -75,15 +85,15 @@ When a person decides to start selling products, they start from a position wher
 
 If I lived in the era where advertisements were barely more than hand-painted signs like "Visit Farmer John's farm for some tasty corn", I wouldn't mind them very much. It's fair to say that if Farmer John didn't make the sign, I might not know I could buy corn from him. His corn may in fact be the best in town, so I'll be glad to have learned of it. When I watch movies or see pictures of the wild west, with towns popping up along unpaved roads, I am sometimes jealous of how simple their economy seems. They weren't blasted with advertisements over radio and television and the internet, they heard from their neighbors and whoever came through town.
 
-![](buck_and_the_preacher.jpg)
+![Still frame from a Western film. A horse-drawn wagon rides along a dirt road that stretches to the horizon. On one side of the road there are four small wooden buildings and two covered tents. The other side of the road is empty land.](buck_and_the_preacher.jpg)
 
 Then again, this is exactly when [snake oil](https://en.wikipedia.org/wiki/Snake_oil) entered our vernacular, so now I'm doubting myself about that!
 
-Indeed, it seems that these basics of capitalism do "work", in the sense that right now I can buy a computerized internet-connected device with only a day's wage, which is truly a feat of humanity. Products improve and prices drop. So although I hate advertisements as they exist today, it's hard for me to say that the deepest, fundamental notion of advertising is inherently malicious. It is not wrong for a furniture maker to want to sell his furniture.
+Indeed, it seems that these basics of capitalism do "work", in the sense that right now I can buy a computerized internet-connected device with only a day's wage, which is truly a feat of humanity. Products improve and prices drop. So although I hate advertisements as they exist today, it's hard for me to say that the deepest, fundamental notion of advertising is inherently malicious. It is not wrong for a furniture maker to want to sell his furniture, I don't think.
 
 You can consider this article to be a Capitalism sequel to my [Insurance](/writing/complicated_topics_insurance) article: the primordial elements of Capitalism seem reasonable, but the current state of affairs is objectionable. Maybe there is a level at which advertising can be called a force for good. But things change when we reach the scale of multi-billion dollar global companies and their ads, and they've ruined it for everyone.
 
-![](sonic.jpg)
+![Sonic the Hedgehog helpfully reminds us that there is no such thing as ethical consumption under capitalism.](sonic.jpg)
 
 ### Breakdown of conventional incentives & distortion of metrics (& clickbait)
 
@@ -99,9 +109,9 @@ You might be thinking that the quality of the product still comes into play beca
 
 There are some cases where this doesn't work at all because of network effects or surrounding ecosystems. Users don't want to join the most technically superior social network, because their friends are on the old one. Users don't want to switch to the most technically superior spreadsheet tool, because there are lots of video tutorials about the old one.
 
-There are other cases where it does work -- but only briefly -- because the better product is coming from a young and idealistic company that hasn't fully realized the consequences of their recent pivot into the media production industry. Young companies, especially those with angel investors, can undercut the incumbents because they're willing to operate at a loss in an attempt to fast-track their market share. But when it comes time for them to start returning on their investments, they realize they need to start recouping their costs via sponsorships and they become just like the incumbents they destroyed. See how imgur.com took over the image hosting space with their easy UI and straightforward hotlinking. Now, they are "Your upload will resume after this ad, or press ESC", impossible to visit hotlinks without getting redirected to the webpage, pushing you to download the app. Like ImageShack before it, Imgur has gone downhill and is ready to be replaced by a new starry-eyed image host destined to repeat the process. Some day, Imgur will die, and its in wake will be millions of image links that no longer work. Free-with-ads products live on a treadmill and the entire internet suffers for it.
+There are other cases where it does work -- but only briefly -- because the better product is coming from a young and idealistic company that hasn't fully realized the consequences of their recent pivot into the media production industry. Young companies, especially those with angel investors, can undercut the incumbents because they're willing to operate at a loss in an attempt to fast-track their market share. But when it comes time for them to start returning on their investments, they realize they need to start recouping their costs via sponsorships and they become just like the incumbents they destroyed. See how imgur.com took over the image hosting space with their easy UI and straightforward hotlinking. Now, they are "Your upload will resume after this ad, or press ESC", impossible to visit hotlinks without getting redirected to the webpage, pushing you to download the app. Like ImageShack before it, Imgur has gone downhill and is ready to be replaced by a new starry-eyed image host destined to repeat the process. Some day, Imgur will die, and its in wake will be millions of image links that no longer work. Free-with-ads products live on a treadmill and the entire internet suffers for it. If there's anything on the internet that you might want to access again in ten years, I'd suggest you buy a nice big hard drive and start downloading it now while you can.
 
-[Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) says "When a measure becomes a target, it ceases to be a good measure". We've all seen this: students who change the font size on their essay to 12.5 pt so they can hit the minimum page requirement more easily; programmers [closing issue discussions](https://news.ycombinator.com/item?id=28998374) to keep the issue count low; Youtubers who fluff up empty ideas into 10+ minute videos for algorithm [favorance](https://www.youtube.com/watch?v=Gi6FcI2wFrw); entrepreneurs who cash in on [dead-cobra bounties](https://en.wikipedia.org/wiki/Cobra_effect) by breeding more cobras to kill. People in general are very adept at exploiting these kinds of opportunities and, as [game theory](https://en.wikipedia.org/wiki/Game_theory) will tell you, it'd be silly not to.
+[Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) says "When a measure becomes a target, it ceases to be a good measure". We've all seen this: people who split one task into many small ones so they can say they did many tasks; students who increase the font size on their essay so they can hit the minimum page requirement more easily; programmers who [close bug reports](https://news.ycombinator.com/item?id=28998374) without fixing them to keep the issue count low; Youtubers who fluff up empty ideas into 10+ minute videos for algorithm [favorance](https://www.youtube.com/watch?v=Gi6FcI2wFrw "RubberNinja - Does Independent Animation Have a Future on YouTube?"); entrepreneurs who cash in on [dead-cobra bounties](https://en.wikipedia.org/wiki/Cobra_effect) by breeding more cobras to kill, or, rather, [3D-printing gun parts to sell at buybacks](guardian_3d_gun_buyback.html). People in general are very adept at exploiting these kinds of opportunities and, as [game theory](https://en.wikipedia.org/wiki/Game_theory) will tell you, it'd be silly not to.
 
 See [cost per impression](https://en.wikipedia.org/wiki/Cost_per_impression) (CPI). An Impression is when a person sees an advertisement, and the CPI is the dollar amount the sponsor pays the publisher for those. And you better believe that for the publishers, increasing impressions can easily become the top -- or only -- priority. Every day, the publisher has to choose between improving its product or finding new ways to reach eyeballs for its sponsors. One of these has direct financial incentive and the other doesn't. In order to increase the number of impressions, the publisher must increase page visits, video views, minutes spent on site, density of advertisement amongst regular content, etc. Attention is turned towards questions like:
 
@@ -117,7 +127,7 @@ The answers to these questions are usually along the lines of:
 - Promote harmless, easy, cute, emotional, sexy, and, above all, Like-able content over serious, contemplative, or deep reading.
 - Cater to the lowest common denominator so that every piece of content can reach a maximum number of eyeballs instead of wasting time on small audiences.
 - Outrage, scandals, and exposés are all good too, as long as they are easy and shallow and free of nuance, because people [click on more things when they're fired up](https://www.youtube.com/watch?v=rE3j_RHkqJc "This Video Will Make You Angry - CGP Grey").
-- Hide advertisements within the real content as much as possible.
+- Hide advertisements within the real content through product placement and so-called [native advertising](https://en.wikipedia.org/wiki/Native_advertising) as much as possible.
 
 It doesn't matter if you're enjoying yourself or hating every minute of it, just as long as it's a lot of minutes. This is the origin of clickbait.
 
@@ -138,7 +148,7 @@ The software industry is notable for its focus on metrics since it's so much eas
 
 We would all like to think that we're immune to the manipulative effects of advertising. That we make our buying decisions only after comparing our options and coming to the best conclusions. That we can see right through the doctored footage, fake food, irrelevant celebrity endorsements, industry buzzwords, and [hopelessly incompetent baboon actors](https://old.reddit.com/r/wheredidthesodago).
 
-What's the longest you've ever spent thinking about a purchase before making it? Try to remember a time when you wanted to buy the most perfect option that would match your needs exactly. Maybe it was a cell phone, or vehicle, or pair of hiking boots. Remember how many searches you did, how many alternatives you compared, how you divided the price by your hourly wage to get a feel for how many work-hours you were about to trade for that item. How many hours of research did you do? One or two? Five? You could answer 100, and I'd believe you.
+What's the longest you've ever spent thinking about a purchase before making it? Try to remember a time when you wanted to buy the most perfect option that would match your needs exactly. Maybe it was a cell phone, or vehicle, or mirrorless camera, or pair of hiking boots. Remember how many searches you did, how many alternatives you compared, how you divided the price by your hourly wage to get a feel for how many work-hours you were about to trade for that item. How many hours of research did you do? One or two? Five or ten? You could answer 100, and I'd believe you.
 
 It doesn't matter, because every single marketer and salesperson who works for the company that sold you the item puts in 8 hours a day, every single day, trying to sell it. Buying products is what you do in your time off. Selling products is what they do for a living. Multiply that by the number of staff on their marketing department and immediately it's clear you're up against quite a force. And this was the exceptional example -- what about the other 99% of purchases that you make in life which don't receive even a fraction of that research time? This imbalance of effort is a good first hint that individuals can't expect their buying decisions to ever be perfectly well-informed.
 
@@ -155,13 +165,13 @@ Is 4k *always* better than 1080p?
 How do I know this hard drive isn't secretly [SMR](https://old.reddit.com/r/DataHoarder/comments/gagori/are_there_any_ethical_companies_that_are/)?
 My buying energy is spread graphene-thin, but a company's marketing department can focus entirely on selling their product.
 
-Some people are rich enough to have a personal butler wherever they go. But how about a personal psychologist-butler, who can tell you about all the ways the people you interact with are taking advantage of your natural thought processes? Your psychobutler could say Pardon me, Sir/Madam, may I inform you that the small, medium, and large sodas are so close in price so that you [focus on the relative deal](<https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)>) and not realize it's a total racket no matter what you pick? If I may interrupt, Sir/Madam, the colors used in ads are [carefully chosen](https://en.wikipedia.org/wiki/Color_psychology) to push you in the right direction based on research correlating color with emotional response [footnote_link]. Salesmen encourage feelings of urgency with their buy now! last chance! one day only! messaging to prevent you from calmly measuring the sale. Items are priced as $XX.99 so that you mentally round it to $XX.00 instead of $XY.00. The [milk is at the back of the store](https://en.wikipedia.org/wiki/Loss_leader) so that you pass by everything else on your way there. Thumbnails with faces, and especially surprised expressions, pique the most interest and clicks. Ads show crowds of people to help induce [FOMO](https://en.wikipedia.org/wiki/Fear_of_missing_out) and peer pressure. The free continental breakfast is paid for by the cost of your room. Businesses sell coupon packets where the savings is greater than the cost of the coupons, but they make you feel obligated to visit more often to use them up, spending more money than you would have without them [footnote_link].
+Some people are rich enough to have a personal butler wherever they go. But how about a personal psychologist-butler, who can tell you about all the ways the people you interact with are taking advantage of your natural thought processes? Your psychobutler could say Pardon me, Sir/Madam, may I inform you that the small, medium, and large sodas are so close in price so that you [focus on the relative deal](<https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)>) and not realize it's a total racket no matter what you pick? If I may interrupt, Sir/Madam, the colors used in ads are [carefully chosen](https://en.wikipedia.org/wiki/Color_psychology) to push you in the right direction based on research correlating color with emotional response [footnote_link]. Salesmen encourage feelings of urgency with their buy now! last chance! one day only! messaging to prevent you from calmly measuring the sale. Items are priced as $XX.99 so that you mentally round it to $XX.00 instead of $XY.00. The [milk is at the back of the store](https://en.wikipedia.org/wiki/Loss_leader) so that you pass by everything else on your way there. Thumbnails with faces, and especially surprised expressions, pique the most interest and clicks. Ads show crowds of people to help induce [FOMO](https://en.wikipedia.org/wiki/Fear_of_missing_out) and peer pressure. The free continental breakfast is paid for by the cost of your room. Businesses sell coupon packets where the savings is greater than the cost of the packet, but they make you feel obligated to visit more often to use them up, spending more money than you would have without them [footnote_link].
 
 Do you have a personal psychobutler? The advertisers do. Teams of them. All working around the clock to find the optimal way to disrespect your decision-making autonomy, because you're an ape with an ape brain and you can be tricked.
 
 I've reached the point that I no longer question business decisions any more. Sometimes I'll see a product that looks stupid, and in the past I would have said "that's stupid, why would they do it like that?". Now, I think "that's stupid, but I guess they think it'll make more money", because that's always the answer. I certainly still spend a lot of time criticizing business decisions, but not questioning them.
 
-That's not to say all companies are perfectly rational, for they too are made of apes. There's quite a bit of cargo-culting and trend-following. Apple removed the headphone jack? Oh my god, we'll look so behind if we don't remove it too! I've given up on thinking that big companies ever intentionally make anything good [footnote_link]. That's just a byproduct when quality accidentally coincides with profit.
+That's not to say all companies are perfectly rational, for they too are made of apes. There's quite a bit of cargo-culting and trend-following. Apple removed the headphone jack? Oh my god, we'll look so behind if we don't remove it too! [footnote_link] I've given up on thinking that big companies ever intentionally make anything good [footnote_link]. That's just a byproduct when quality accidentally coincides with profit.
 
 As they say, you need to know your limits. I for one recognize that no matter how smart I think I am [footnote_link], I do not have the capacity to compete with the behemoth that is modern marketing. I recognize that advertising can influence me even if I don't feel it and can't articulate how. I cannot understand the intricate details of every product well enough to counteract the positive spin that advertisements will always try to place on them.
 
@@ -193,7 +203,7 @@ David Foster Wallace comments on advertisements that make fun of advertisements:
 
 > Isuzu Inc. hit pay dirt with its series of "Joe Isuzu" spots, featuring an oily, Satanic-looking salesman who told whoppers about Isuzus' genuine llama-skin upholstery and ability to run on tap water. Though the ads rarely said much of anything about why Isuzus are in fact good cars, sales and awards accrued. The ads succeeded as parodies of how oily and Satanic car commercials are. They invited viewers to congratulate Isuzu ads for being ironic, to congratulate themselves for getting the joke, and to congratulate Isuzu Inc. for being "fearless" and "irreverent" enough to acknowledge that car ads are ridiculous and that the Audience is dumb to believe them. The ads invite the lone viewer to drive an Isuzu as some sort of anti-advertising statement. The ads successfully associate Isuzu-purchase with fearlessness and irreverence and the capacity to see through deception.
 
-> [E unibus pluram (1993)](https://jsomers.net/DFW_TV.pdf)
+> [E unibus pluram (1993)](e_unibus_pluram.epub)
 
 > https://www.youtube.com/watch?v=nJMq_7alQpU [footnote_link]
 
@@ -202,6 +212,8 @@ Please do yourself a favor and read E unibus pluram in its entirety!
 [footnote_text] Don't forget to enable grayscale mode on your phone or computer. Look for something along the lines of Settings > Accessibility > Vision > Grayscale, or Settings > Ease of Access > Color Filters > Grayscale.
 
 [footnote_text] Some of you are probably shaking your head at my exasperated presentation of this paragraph. This is Marketing 101 level stuff, everyone knows it, stop sounding so dramatic. So why does it still work on people!
+
+[footnote_text] For posterity, here's [Samsung's ad mocking Apple for removing the headphone jack](https://www.youtube.com/watch?v=wQ4ys-R1B_8), shortly before they removed theirs too.
 
 [footnote_text] I realize this is a No True Scotsman. Any company that does make anything good is simply "not big enough yet".
 
@@ -215,13 +227,13 @@ When a publisher puts ads on their website, how should they get paid? Is it enou
 
 When two different websites use the same advertising package -- take Google AdSense for example -- then the advertiser Google will know that you visited both sites. So although each individual website cannot follow you around the internet on their own, they can aid Google in doing so by linking AdSense to their page. The more websites that use AdSense, the more eyes Google will have into your life, your browsing habits, your interests, your race and gender and sexuality, your purchases, your political affiliations. Like if every time you went to visit a friend's house, you found that some other dude with a clipboard had also been invited.
 
-![](advertiser_tracking.png)
+![Illustrated diagram depicts a person visiting two different websites. Arrows drawn from the person to the website represent the HTTP requests. Along the way, the arrows branch off, so that both arrows are also redirected to the Advertiser in addition to their original destination.](advertiser_tracking.png)
 
 The vague concept of web tracking has become widely known in the past few years, but I think the specifics of how it works have not. Let's make this perfectly clear: the only reason advertisers are able to follow you around the internet is because all of the websites you visit are inviting them in. You are on a daily basis being betrayed by almost everyone who has even the slightest financial incentive to betray you. They will sell you off for a single cent, because $0.01 is bigger than $0.00. Why do you tolerate this? When Google tracks you, you must blame more than just Google, you must blame every single webpage that invited Google into the session.
 
 It's time for a pop quiz! Ready?
 
-![](mcdonalds_cookies.png)
+![Screenshot from mcdonalds.com shows their "Privacy Preference Center" with settings for targeting cookies. Targeting cookies are enabled by default. The dialog reads "These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising".](mcdonalds_cookies.png)
 
 Question: How can McDonalds make the above cookie menu a better experience for the end user?
 
@@ -251,21 +263,21 @@ If you're interested in this topic, you've probably already heard the apocryphal
 
 > On the phone, though, the father was somewhat abashed. "I had a talk with my daughter," he said. "It turns out there's been some activities in my house I haven't been completely aware of. She's due in August. I owe you an apology."
 
-Like an Aesop fable for the ethically bankrupt, the moral of the story is:
+Like an Aesop fable for the ethically bankrupt, the moral of the story is given here:
 
 > We started mixing in all these ads for things we knew pregnant women would never buy, so the baby ads looked random.
 
 > As long as a pregnant woman thinks she hasn't been spied on, she'll use the coupons.
 
-Whether the Target story is true or not, it has become extremely well known and has surely sparked the imagination of many an advertiser and thus contributes to the advertising landscape today. Any competent advertiser who is accurately tracking you will be sure to recover their plausible deniability by adding noise, thanks in part to this story.
+I think the Target story is fake, or greatly enhanced, but nevertheless it has become extremely well known. It has surely sparked the imagination of many an advertiser and thus contributes to the advertising landscape today. Any competent advertiser who is accurately tracking you will be sure to recover their plausible deniability by adding noise, thanks in part to this story.
 
 Why do I think the Target story may be false?
 
-1. The article cites "an employee who participated in the conversation", so nobody was willing to put their name on these quotes, giving the author free reign to embellish. The father's last quote sounds like it was written by an author, though oddly they forgot to mention that he received a [round of applause and $100](https://old.reddit.com/r/thathappened) for his humility.
+1. The article cites "an employee who participated in the conversation", so nobody was willing to put their name on these quotes, giving the author free reign to embellish. The tidy plotline and the father's eloquence sound like the conceit of an author, though oddly they forgot to mention that he received a [round of applause and $100](https://old.reddit.com/r/thathappened) for his humility.
 
 2. Even if the coupon packets were distributed at random, they're bound to hit this kind of situation at least once with an audience of Target's size. This is a typical statistical "surprise" [footnote_link].
 
-3. Despite the nonstop development of advertising and machine learning in the years since, this story from 2012 still comes up as the first and often only example of eerily-accurate targeted ads. That would lead me to believe that either the intelligent ads industry hasn't advanced very far since then, or else has advanced so far as to become undetectable with no intermediary standout headlines -- every other advertiser instantly skipped to a higher level of competence. The whole ["cat food"](https://www.reddit.com/r/privacy/comments/79jenh/facebook_iphone_listening_into_our_conversations/dp2fm1q/) thing came close but I don't think the evidence was very good. Here's a comment by Hacker News user segfaultbuserr:
+3. Despite the nonstop development of advertising and machine learning in the years since, this story from 2012 still comes up as the first and often only example of eerily-accurate targeted ads. That would lead me to believe that either the intelligent ads industry hasn't advanced very far since then, or else has advanced so far as to become undetectable with no intermediary standout headlines -- every other advertiser instantly skipped to a higher level of competence. The whole ["cat food"](https://old.reddit.com/r/privacy/comments/79jenh/facebook_iphone_listening_into_our_conversations/dp2fm1q/) thing came close but I don't think the evidence was very good. Here's a comment by Hacker News user segfaultbuserr:
 
     > Amazon is a $250 billion dollar company that reacts to you buying a vacuum by going THIS GUY LOVES BUYING VACUUMS HERE ARE SOME MORE VACUUMS
 
@@ -285,13 +297,37 @@ Why do I think the Target story may be false?
 
 In data science, it is common wisdom to collect as much data as you can while you have the chance and filter it down later, because if you don't collect it now you might regret it. A political surveyor could ask you what state you live in so that they can make state-by-state comparisons, but it makes more sense for them to also ask about your city, so they can make intra-state comparisons from the same survey data instead of having to go out and do another survey.
 
-This principle of data collection should not be considered slimy in and of itself. It is simply pragmatic, and applies to all areas: professional photographers tell their cameras to store [raw photo data](https://en.wikipedia.org/wiki/Raw_image_format) instead of jpegs because their editing software can make better changes when it has the raw light and color information, and they can't go back in time to capture that moment again.
+This principle of data collection should not be considered slimy in and of itself. It is simply pragmatic, and applies to all areas: professional photographers tell their cameras to store [raw sensor data](https://en.wikipedia.org/wiki/Raw_image_format) instead of jpegs because their editing software can make better changes when it has the raw light and color information, and they can't go back in time to capture that moment again.
 
 The problem is that advertisers haven't really figured out how to deliver on the whole well-targeted ads premise yet, but they're storing absolutely everything they can so they'll be ready for the algorithmic breakthrough if and when it comes. They're like pathological hoarders who keep every single paperclip because "it might come in handy someday", except the paperclip is your mother's maiden name and place of birth.
 
 So if you think targeted advertisements are already accurate beyond detection and advertisers are [magic-bulletting](https://en.wikipedia.org/wiki/Hypodermic_needle_model) the population, you have cause for upset. And if you think targeted advertisements are still "buy more vacuums"-level useless, then that means that despite collecting the private details of billions of peoples' lives over several years, the advertising industry is too pathetically incompetent to make anything of it and is clearly unfit for the responsibility of handling such data in the first place, and you have cause for upset. [Get upset!](https://www.youtube.com/watch?v=ZwMVMbmQBug&t=1m09s "I'm as mad as hell and I'm not going to take this any more!")
 
 [footnote_text] When you pick a random number between one and one million, do you think it feels lucky?
+
+### Jevons paradox
+
+The [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) is when an increase of efficiency leads to an increase of consumption that outweighs the savings. Jevons's original description was of coal: as coal-fired steam engines became more efficient, producing more useful power per weight of coal burned, more people began using the engines and the total consumption of coal went up instead of down. Of course, those engines were used to perform work, so the Jevons paradox does not imply that the consumption is not productive in some way -- each individual engine owner would say that the new engines had saved them coal -- but the fact remains that the total usage of coal was higher than before.
+
+One of the things we learn from the Jevons paradox is that we are restless creatures, and we are not satisfied with our consumption until we find ourselves bumping into limits. There is much to say about this topic both economically and ecologically, but let's get on to the part about ads.
+
+When the internet was young, data rates were [slow](https://en.wikipedia.org/wiki/Internet_access#Speed). It took minutes to send a megabyte. Most people won't wait minutes to read a webpage, so webpages had to be kilobytes. As internet speeds have gotten faster and faster, the efficiency of bytes transferred per second has increased, and so too has our consumption. Maciej Cegłowski gave a talk called [The Website Obesity Crisis](https://idlewords.com/talks/website_obesity.htm) which you can refer to, so I will not belabor this point except to say that even now, in the year of our web 2023, it is all too common for pages on big-name websites to take multiple seconds to fully load and become functional.
+
+Text is quick to download. Pictures are quick to download. By today's standards, even 1080p video is quick to download. We find ourselves bathed in technology that is too efficient for our feeble minds, so we find new ways to slow it down.
+
+One effective technique is to connect the website to a dozen different advertising and tracking services, each of which will launch a series of network requests to separate domains over separate connections, downloading and parsing more and more javascript, adding more and more click handlers and scroll watchers and background processes and over time shooting out countless telemetrics about how engaged you are. That'll do it.
+
+![](washington_post_requests.png)
+
+People don't want to wait a whole minute for a news article to load, that's much too long. Three seconds is slow, but tolerable to most. One second is better, and it's pretty excellent when a page finishes in under a fifth.
+
+![](hackernews_requests.png)
+
+But publishers do not strive for excellence. They strive for maximum engagement while maintaining minimally tolerable speed. If they can spend 200 milliseconds sending you meaningful content and 2800 milliseconds sending you ads, they'll do it. All further efficiency gains lead only to more consumption.
+
+I remember when watching videos on the internet meant letting them buffer for thirty seconds since the download was slower than the playback. Now, watching videos on the internet means letting the thirty-second ad play before you can start. Funny how we instinctively hinder ourselves from progress.
+
+As computers have developed over the decades, we've come to expect higher resolution screens, higher fidelity audio and video, and larger storage capacities, but for some reason our tolerance for slow pageloads doesn't seem to crack through this barrier of one to five seconds. There's a level below which people just don't care about an increase in speed, so the publishers are free to use the excess capacity for advertising. You've probably even heard of software that has [fake loading bars](atlantic_fake_progressbars.html) added because it gives people confidence that the computer is working. Hardware designers keep producing faster computers, and we are all too happy to squander them.
 
 ### Slapping everyone once
 
@@ -307,9 +343,9 @@ And comment by Hacker News user WalterBright:
 
 > https://news.ycombinator.com/item?id=23253296
 
-What the 1960s documentary didn't anticipate was the advent of the internet, which gives the product an effectively endless supply of new potential customers. So even a product that "only seeks to sell you once" has significantly more opportunity now than it did in the 60s. And it's not that easy to get a bearing on a company's reputation when they only exist as Amazon brand pages with product reviews of questionable veracity, especially when all they have to do to get a clean slate is take down their Amazon page and put up a new one with the exact same poorly photoshopped pictures.
+What the 1960s documentary didn't anticipate was the advent of the internet, which gives the product an effectively endless supply of new potential customers. So even a product that "only seeks to sell you once" has significantly more opportunity now than it did in the 60s. It's not easy to get a bearing on a company's reputation when they only exist as an Amazon brand page with product reviews of questionable veracity, especially when all they have to do to get a clean slate is take down their Amazon page and put up a new one with the exact same poorly photoshopped pictures.
 
-![](poorly_photoshopped.jpg)
+![A stock photo of a man smiling and giving a thumbs up has been poorly edited so that there is a cell phone in his hand and headphones on his head. A misspelled caption reads "wireles headpohnes". The stock photo site watermarks are still present.](poorly_photoshopped.jpg)
 
 This tactic of slapping everyone once isn't the most lucrative in terms of absolute dollar figures, but is sufficiently low effort and low cost that some product sellers would rather play this way than just make a legitimately better product. To continue the theme of advertising subverting the principles of capitalism, try to imagine how any of these scam-and-spam pieces of junk would get even two feet off the ground without the ability to advertise to fresh gullible eyes all day long. [footnote_link]
 
@@ -333,19 +369,21 @@ If you slapped someone in the face a hundred million times, I think you'd go to 
 
 We've talked about the media industry competing to reach more eyeballs, and much of this competition takes place in public. "Visit Farmer John's farm" doesn't cut it. Advertisements must get bigger, brighter, flashier, and more animated all the time in order for advertisers to continue out-competing each other. You may have noticed how many advertisements show people dancing, because watching people dance is naturally hypnotic. Roadside billboards, in all their awful 672 square foot glory, have been electrified so they can show a rotation of animated advertisements instead of a single static photo, and they can be bright enough to signal incoming spacecraft.
 
-[![](billboard.jpg)](https://www.reddit.com/r/LosAngeles/comments/m4o2v4 "Does anyone know what that insanely bright billboard just outside of downtown LA is all about?")
+[![A photo taken at night over Los Angeles with many illuminated buildings. In the distance, an extraordinarily bright light overpowers the scene. It is an advertising billboard.](billboard.jpg)](https://old.reddit.com/r/LosAngeles/comments/m4o2v4 "Does anyone know what that insanely bright billboard just outside of downtown LA is all about?")
 
 It is hardly possible to step outside without being advertised to, unless you recede all the way out into the woods. As I prepared to write this paragraph, I had to ask myself, what would the alternative even be? What kind of cityscape am I imagining that would allow me to be out in a public space and not be advertised to? It is such a foreign notion that it is difficult to even answer. Buildings in a public space are either homes or businesses, and the businesses will want advertise on their space, right?
 
 Well, if you're interested in foreign notions, look to [São Paulo, Brazil](https://en.wikipedia.org/wiki/Cidade_Limpa), which enacted a "clean city" law in 2006.
 
-![](sao_paulo_1.jpg)
+![A before-and-after comparison of several two-story shops on a street. In the before photo, the buildings have advertising, branding, and signage on their facades and canopies. In the after photo, the advertisements are gone, the signs are smaller, and one building has been freshly painted a deep green.](sao_paulo_1.jpg)
 
-![](sao_paulo_2.jpg)
+![A before-and-after comparison of several high-rise apartments and commercial buildings. In the before photo, large billboards sit both on ground level and on top of some of the buildings. One building has a large advertisement stretched over the entire face of one wall. In the after photo, all of this is removed.](sao_paulo_2.jpg)
+
+Admire also the interior of [Amsterdam's central station](https://www.youtube.com/watch?v=EqwasBTzZS8&t=11m47s "Not Just Bikes - Amsterdam Just Got Awesomer"), which decorates itself from floor to ceiling with centuries-old artwork and heritage instead of advertising. Because when a city knows what the hell it's doing with its funds, it can spare some for art and atmosphere instead of pimping out the very walls to advertisers. Who knew!
 
 I think it's not wrong for a business to have their name on a sign, but our cities are just totally soaked in advertising that isn't necessary. Billboards, windows, telephones, train stations, bus stops, hell, even the buses themselves are wrapped in advertising reminding you who you should thank for sponsoring the continued existence of the public sphere, as if it would otherwise collapse. Sixteen years later, São Paulo hasn't collapsed.
 
-![](mcdonalds_crosswalk.jpg)
+![A photo taken from a very high angle looks down at the street, showing that a pedestrian crosswalk has been turned into a mcdonalds advertisement. The ordinary yellow crosswalk lines now represent french fries, coming out of a large red mcdonalds fry cup.](mcdonalds_crosswalk.jpg)
 
 In 2019 a company called StartRocket wanted to [launch logos into space](startrocket.html) [footnote_link].
 
@@ -359,23 +397,23 @@ In 2019 a company called StartRocket wanted to [launch logos into space](startro
 
 > "If you ask about advertising and entertainment in general — haters gonna hate," Skorupsky said. "We are developing a new medium. At the advent of television no one loved ads at all."
 
-![](startrocket.jpg)
+![A still frame from StartRocket's promotional video shows Mount Fuji, with the brightly illuminated name Simple Cola suspended in the night sky.](startrocket.jpg)
 
-![](they_live_1.jpg)
+![A still frame from the film They Live shows John Nada wearing the sunglasses that let him see the truth behind advertisements. His head is angled slightly upward to give the impression he is looking at the StartRocket image above.](they_live_1.jpg)
 
-![](they_live_2.jpg)
+![A still frame from the film They Live shows the world in black and white, with all advertising billboards replaced with subliminal messages: "CONSUME", "OBEY", "WATCH TV", "BUY".](they_live_2.jpg)
 
 If you're in the mood to deface some advertisements, here's a design you could print out on sticker paper and fill in with marker:
 
-![](warning_sticker.svg "THIS AD PROMISES 𝓫𝓮𝓪𝓾𝓽𝔂, BUT ONLY SELLS 𝓶𝓪𝓴𝓮𝓾𝓹")
+![A business card-sized sticker template reads "WARNING: This ad promises blank, but only sells blank", where you can write on the blank lines.](warning_sticker.svg "THIS AD PROMISES 𝓫𝓮𝓪𝓾𝓽𝔂, BUT ONLY SELLS 𝓶𝓪𝓴𝓮𝓾𝓹")
 
 [footnote_text] The next step in [cola's domination of the universe](https://www.youtube.com/watch?v=Cry7kbpPlDA&t=4m14s "Ross's Game Dungeon: The Journeyman Project").
 
 ### Stifling of expression and choice to match the sponsor's
 
-It is no secret that people who receive things from sponsors feel pressured to keep the sponsor happy by [censoring themselves](https://en.wikipedia.org/wiki/Chilling_effect). For example, a product reviewer who receives free samples from manufacturers might choose to temper their criticisms so they don't risk the chance of not receiving the next free product. I can respect reviewers like [Mr. Mobile](https://www.youtube.com/channel/UCSOpcUkE-is7u7c4AkLgqTw/videos) who end every review by denying any editorial input from the manufacturer, but I also think that his criticisms are usually quite lightweight. Even if he's not being told what to say, he's either self-censoring or just not as discerning as I would be in his position. Better yet are the likes of [Project Farm](https://www.youtube.com/channel/UC2rzsm1Qi6N1X-wuOg_p0Ng/videos) who always purchases everything he tests -- when he says "very impressive!" it actually means something.
+It is no secret that people who receive things from sponsors feel pressured to keep the sponsor happy by [censoring themselves](https://en.wikipedia.org/wiki/Chilling_effect). For example, a product reviewer who receives free samples from manufacturers might choose to temper their criticisms so they don't risk the chance of not receiving the next free product. I can respect reviewers like [Mr. Mobile](https://www.youtube.com/channel/UCSOpcUkE-is7u7c4AkLgqTw/videos) who end every review by explicitly denying any editorial input from the manufacturer, but I also think that his criticisms are usually quite lightweight. Even if he's not being told what to say, I can tell that he's either self-censoring or just not as discerning as I would be in his position. Better yet are the likes of [Project Farm](https://www.youtube.com/channel/UC2rzsm1Qi6N1X-wuOg_p0Ng/videos) who always purchases everything he tests -- when he says "very impressive!" it actually means something.
 
-Self-censorship also includes not talking about particular topics deemed taboo by the sponsor. The [Youtube Adpocalypse](https://youtube.fandom.com/wiki/YouTube_Adpocalypse) and Youtube's [COPPA agreement](https://www.youtube.com/watch?v=LuScIN4emyo) are both great example of a mass chilling effect that left video creators unsure of what they can and can not say or show. Superstition like "you can say the f-word, but only after 30 seconds" became [officially encouraged](https://www.youtube.com/watch?v=VWAdzMmNLy0&t=1m02s "What the &$!#^%!!! 🤬 Profanity in YOUR YouTube videos and how it affects the MONETIZATION icon 🤑 - Creator Insider (actual youtube staff members)") for a while. People became worried that everything they do has to be family-friendly or else they'll get banned. Youtube's continued decline into artificial incompetence and automated decisionmaking have only made things worse. Even now, many are superstitious that saying the words "covid" or "Ukraine conflict" out loud will weight the video towards being demonetized.
+Self-censorship also includes not talking about particular topics deemed taboo by the sponsor. The [Youtube Adpocalypse](youtube_adpocalypse.html) and Youtube's [COPPA agreement](https://www.youtube.com/watch?v=LuScIN4emyo) are both great example of a mass chilling effect that left video creators unsure of what they can and can not say or show. Superstition like "you can say the f-word, but only after 30 seconds" became [officially encouraged](https://www.youtube.com/watch?v=VWAdzMmNLy0&t=1m02s "What the &$!#^%!!! 🤬 Profanity in YOUR YouTube videos and how it affects the MONETIZATION icon 🤑 - Creator Insider (actual youtube staff members)") for a while. People became worried that everything they do has to be family-friendly or else they'll get banned. Youtube's continued decline into artificial incompetence and automated decisionmaking have only made things worse. Even now, many are superstitious that saying the words "covid" or "Ukraine conflict" out loud will weight the video towards being demonetized.
 
 I already feel that basing your income and internet presence on a free website is [risky](/writing/cancel_this_album) at best, but in a basic sense I don't mind platforms having rules and people abiding by them. As time goes on, though, we've seen more and more people consolidate themselves under a shrinking number of platform brands, so the rules that apply to creators of today are ever more monochromatic. If you pay the creators that you want to see succeed, and they diversify or even self-host their publications, and we all come to our senses and start using RSS again, we'd see a lot more color.
 
@@ -395,28 +433,36 @@ That's fairly straightforward, but there are some situations where the "you're t
 
 > If Google/Youtube were NOT a monopoly, they would have invested significant amount of money in customer support. However, there is zero. They are saving hundreds of millions in support costs by not delivering any support. Unlike more overt monopolistic actions like raising prices, etc, what they do instead is increase their profits by taking away functionality that their customers should be receiving.
 
+> https://news.ycombinator.com/item?id=24575131
+
 > > They do have support infrastructure for their customers. Youtube content creators are not customers, they're more akin to contractors (when paid) and volunteers (when not). In fact, google is the customer in this relationship, and they are within their rights to stop buying the product without having to explain why.
 
 > > It is on content creators to diversify their business. If a contractor has only a single customer because that customer is the most profitable, would you pity them when they are fired by that customer? Or would you call them bad at business for failing to diversify?
+
+> > https://news.ycombinator.com/item?id=24575307
 
 We have a situation where simultaneously:
 
 1. The advertiser is the customer and the viewer's attention is the product.
 2. Google is the customer and the video is the product.
 
-![](youtube_youretheproduct_1.png)
+![Illustrated diagram depicts the relationship between the Viewer, the Publisher, the Advertiser, and Google. The Publisher sends a video to Google in exchange for one dollar bill. The Advertiser sends an advertisement to Google along with three dollar bills. Google puts the advertisement on the video and sends it to the Viewer.](youtube_youretheproduct_1.png)
 
-But the thing that makes this relationship even more twisted is that even though video creators expect to get paid for their videos, they don't actually have any contract guaranteeing it. Officially, each video is offered up to Google for free, and Google may or may not decide to kick some revenue towards the creator. This lack of contract also means that the creator has no production quotas or deadlines, they publish as much or as little as they want. The difficulty of getting paid by Youtube has led many video creators to make deals directly with advertisers and perform the advertisement as part of the video. This leads to viewers seeing twice as many ads in the practical sense, except in the minority case where Google decides not to run their sponsors' ads on the video because the topic is too risqué for them.
+But the thing that makes this relationship even more twisted is that even though video creators expect to get paid for their videos, they don't actually have any contract guaranteeing it. Youtube has a system where videos may become "demonitized", meaning they are not eligible to receive advertisement money, if Google determines that the video is not suitable for their sponsors. Officially, each video is offered up to Google for free, and Google may or may not decide to kick some revenue towards the creator. Don't get me wrong, this lack of contract and casual business relationship works in favor of the creator too: they have no production quotas or deadlines, and they can publish as much or as little as they want. Lots of people try making videos for a while and then get bored of it, so we can't expect much in the way of contractual work. But the difficulty of getting paid by Youtube has led many video creators to make deals directly with advertisers and [perform the advertisement](https://www.youtube.com/watch?v=WVDQEoe6ZWY "Tom Scott - This Video is Sponsored by ███ VPN") as part of the video. This leads to viewers seeing twice as many ads in the practical sense, except in the minority case where Google decides not to run their sponsors' ads on the video because the topic is too risqué for them.
 
-![](youtube_youretheproduct_2.png "Note to future readers: the yellow dollar sign indicates limited or no advertising run by Google's sponsors")
+![Illustrated diagram expands upon the previous one as the relationship has become more complex. One Advertiser sends money to the Publisher, and the Publisher performs the advertisement as part of the video. The Publisher sends the video to Google, but they are not sure if they will get money back from Google because the video might become demonitized. Google puts their own Advertiser's advertisement on the video and sends it to the viewer. When the viewer watches the video, they will see Google's ad as well as the Publisher's ad.](youtube_youretheproduct_2.png "Note to future readers: the yellow dollar sign indicates limited or no advertising run by Google's sponsors")
 
 Collectively, creators have complete leverage over the site's ability to operate. Without new videos, Youtube would be in big trouble with the advertisers. But individually they are basically holding out their hats and hoping they'll catch some of the falling coins. The strongest threat that an individual creator can make is "I'm not gonna upload any more videos for you!", which measures at about 0.0001 on the Richter scale. Google is always prepared for individual creators to come and go, which is why they don't draft contracts or guarantee payment, so without significant collective action on the part of creators hurting the bottom line, Google has no incentive to change. Not to mention you'd be asking creators to sacrifice their own income by withdrawing their hat.
+
+I will take this opportunity to say that I agree with the perspective that full-time youtubers are like contractors relying on a single client with no contract, and if they don't diversify their income it's their own fault. It's bad business sense with little room to cry victim. This is similar to what I wrote in [Cancel This Album!](/writing/cancel_this_album). The situation with Youtube advertisements is not new. Every single person getting into Youtube with the goal of making money has had ample time to assess the system and decide if they're willing to try their hand with it anyway. The kind of people who get into Youtube with the goal of making money are not the kind of people I care about anyway, and I am more than happy for them to bail when it doesn't work out. The ones I care about are getting my patronage separately.
 
 One more good comment:
 
 > People could stop using Google today but most don't, because Google is just so much better than everyone else at searching.
 
 > Should Google/YouTube be regulated because people dislike what the company is doing, but just not enough to actually stop using their products?
+
+> https://news.ycombinator.com/item?id=24577153
 
 ### If you're paying, you're still the product
 
@@ -426,19 +472,23 @@ The product manager eyeballed the quarterly report and saw that these figures we
 
 "But if we show them the ads too, we could be making $11.50."
 
-![](stonks.jpg)
+![The Stonks meme shows a silly 3D rendering of a businessman in front of a chart of numbers and a upwardly rising arrow of profit.](stonks.jpg)
 
-Hulu is one of the more notorious examples that comes to mind. You can find lots of people wondering why they [still see ads](https://www.google.com/search?q=hulu+ads+on+paid+site:reddit.com) after upgrading to the plan called "Hulu (No Ads)". Hulu's help center has [an answer to this question](https://help.hulu.com/s/article/ads-on-hulu): their service provides both on-demand media and live television, but "No Ads" only refers to the on-demand media because the live television is, well, live from another broadcaster that controls the stream. That answer is pretty reasonable in my opinion but, gee, maybe they shouldn't call it "No Ads", huh? A reasonable consumer might be misled into thinking they're paying for a plan that will not include any advertising. Perhaps Hulu is only targeting the unreasonable consumers.
+Hulu is one of the more notorious examples that comes to mind. You can find lots of people wondering why they [still see ads](https://www.google.com/search?q=hulu+ads+on+paid+site:reddit.com) after upgrading to the plan called "Hulu (No Ads)". Hulu's help center has [an answer to this question](hulu_ads.html): their service provides both on-demand media and live television, but "No Ads" only refers to the on-demand media because the live television is, well, live from another broadcaster that controls the stream. That answer is pretty reasonable in my opinion but, gee, maybe they shouldn't call it "No Ads", huh? A reasonable consumer might be misled into thinking they're paying for a plan that will not include any advertising. Perhaps Hulu is only targeting the unreasonable consumers.
 
-The current state of so-called smart televisions is a horrifying glimpse of this future. There are endless reports of [Samsung televisions showing ads in the UI](https://www.google.com/search?q=samsung+smart+tv+showing+ads+site:reddit.com). And when you see the option to "turn off personalized ads", that doesn't mean you get to turn off the ads, just that they won't be personalized any more. Probably. I'm waiting patiently for some [evidence](https://old.reddit.com/r/assholedesign/comments/dm8vv9/my_2500_tv_has_sponsored_content_built_into_the/f4ytbn8/ "I've had a Samsung TV for about 2 years, and the ads just showed up recently after an update") of manufacturers delaying the showing of ads until a 90-day return period has expired.
+"That's fine", you say. "I don't use Hulu, I use Netflix. I pay for Netflix and it has no ads". [Well](netflix_pp1.html), [except](netflix_pp2.html).
+
+![Screenshot from Stranger Things. Eleven, wearing a medical gown and crown of brain activity monitors, sits at a desk with a can of Coke.](stranger_things.jpg)
+
+The current state of so-called smart televisions is a horrifying glimpse into this future of being advertised to after you've already paid. There are endless reports of [Samsung televisions showing ads in the UI](https://www.google.com/search?q=samsung+smart+tv+showing+ads+site:reddit.com). And when you see the option to "turn off personalized ads", that doesn't mean you get to turn off the ads, just that they won't be personalized any more. Probably. I'm waiting patiently for some [evidence](https://old.reddit.com/r/assholedesign/comments/dm8vv9/my_2500_tv_has_sponsored_content_built_into_the/f4ytbn8/ "I've had a Samsung TV for about 2 years, and the ads just showed up recently after an update") of manufacturers delaying the showing of ads until a 90-day return period has expired.
 
 The tech-savvy TV buyers know that you should never, ever give your TV your wifi password, because it will use it to advertise to you. But get your tin foil [footnote_link] ready because soon that won't be good enough -- cellular providers offer [IoT data plans](att_iot.html) for around $1.00 per month, [or less](hologram_iot.html) when arranged in bulk. Your next TV could very well come with a cellular modem and a SIM card inside, essentially all the important guts of a cell phone, so that it can connect to the internet all by itself. The TV manufacturer would pay the monthly cost of the SIM and you'd never know it's there.
 
 "But the advertisements subsidize the TV and make it cheaper for the consumer", you'll hear. Firstly, I think this is basically hogwash. If it's true at all, it will only be a temporary effect. The manufacturers picking up money on advertising can afford to drop the sticker price and take a loss on the TV itself to undercut the competitors. But once all the competitors follow suit and every television at your local big box store has advertising built in, we'll be back to square one in a new fresh layer of hell. Secondly, the whole [Moore's law](https://en.wikipedia.org/wiki/Moore%27s_law) thing took place from the 1960s to the 2000s and demonstrated within one lifetime that electronics technology can become better and cheaper without every single transistor sending you spam mail. To say that letting your TV advertise to you has opened up new doors for affordable technology is myopic. This isn't the only way forward.
 
-[![](make_it_your_way.png)](US8246454B2.pdf "SYSTEM FOR CONVERTING TELEVISION COMMERCIALS INTO INTERACTIVE NETWORKED VIDEO GAMES, Sony Computer Entertainment America LLC")
+[![Figure 8 from Sony's patent shows a man using a remote control to interact with an advertisement. The screen reads "throw pickle in burger to speed up commercial". After the man swings the remote to throw the pickle, the screen reads "make it your way".](make_it_your_way.png)](US8246454B2.pdf "SYSTEM FOR CONVERTING TELEVISION COMMERCIALS INTO INTERACTIVE NETWORKED VIDEO GAMES, Sony Computer Entertainment America LLC")
 
-[![](say_mcdonalds.png)](US8246454B2.pdf "SYSTEM FOR CONVERTING TELEVISION COMMERCIALS INTO INTERACTIVE NETWORKED VIDEO GAMES, Sony Computer Entertainment America LLC")
+[![Figure 9 from Sony's patent shows a man on a couch watching a tv show. An advertisement of a burger appears, and reads "say mcdonalds to end commercial". The man stands up, raises his hands into the air, and exclaims "mcdonalds!". He sits back down and the show resumes.](say_mcdonalds.png)](US8246454B2.pdf "SYSTEM FOR CONVERTING TELEVISION COMMERCIALS INTO INTERACTIVE NETWORKED VIDEO GAMES, Sony Computer Entertainment America LLC")
 
 The TV is one thing. It's a media device anyway. Next up is your refrigerator, dishwasher, clothes washer, dryer, air conditioner, heater, stove, oven. Looks like you're running low on detergent, why not pick up some Tide™? Looks like you've been running the AC pretty often, you should ask Home Depot™ about installing some double-paned windows to improve your home's insulation. You've started cooking more recently -- new hobby? -- you might like a fresh set of Lodge™ cast iron skillets. The manufacturers will not put a screen on your appliance that tells you these things, but they'll collect the data and use it to decide what you see on the web tomorrow [footnote_link].
 
@@ -446,7 +496,7 @@ The TV is one thing. It's a media device anyway. Next up is your refrigerator, d
 
 And every time you see a "smart" version of a product that you didn't know needed to be smart, you should be very suspicious. As soon as the manufacturer of your bed, your couch, your [pillow](https://www.youtube.com/watch?v=VkVGtQOko1A "JerryRigEverything - This Smart Pillow costs $300!?!"), your dresser, your cabinets can convince you to plug your furniture into the wall, you're taking the bait and they're going to use your [own electricity](https://www.youtube.com/watch?v=kTCmpYDzq3w "Two of my own pies!?") to advertise to you. It's a bad habit to get into.
 
-![](please_drink_verification_can.png)
+![A screenshot of a 4chan greentext post from 2013. The scene plays out as follows: 2018. Wake up feeling sick after a late night of playing vidya. Excited to play some halo 2k19. xbox on. dot dot dot. xbox on. Please verify that you are annon332 by saying Doritos TM Dew TM it right! Doritos TM Dew TM it right. ERROR! Please drink a verification can. Reach into my Doritos TM Mountain Dew TM Halo 2k19 TM War Chest. Only a few cans left, needed to verify 14 times last night. Still feeling sick from the 14. Force it down and grumble out "mmmm that really hit the spot". Xbox does nothing. I attempt to smile. Connecting to verification server. Dot dot dot. Verification complete! Finally. Boot up halo 2k19. Finding multiplayer match. ERROR! User attempting to steal online gameplay! My mother just walked into the room. Adding another user to your pass, this will be charged to your credit card. Do you accept? No! Console entering lock state! To unlock drink verification can. Last can. WARNING, OUT OF VERIFICATION CANS, an order has been shipped and charged to your credit card. Drink half the can, oh god im going to be sick. Pour the last half out the window. PIRACY DETECTED! PLEASE COMPLETE THE ADVERTISEMENT TO CONTINUE. The mountain dew ad plays. I have to dance for it. Feeling so sick. Makes me sing along. Dancing and singing. Mountain dew is for me and you. Throw up on myself. Throw up on my tv and entertainment system. Router shorts. ERROR NO CONNECTION! XBOX SHUTTING OFF. PLEASE DRINK VERIFICATION CAN TO CONTINUE](please_drink_verification_can.png)
 
 There's another point that I was only recently enlightened to. One way that appliance manufacturers are able to get these anti-user products into users' homes is by making deals with home builders and landlords, and having their appliances installed before the would-be home buyer has any say in the matter. After all, the home builders aren't the ones that have to actually use it. This is another example of advertising subverting the foundations of capitalism: the manufacturer doesn't need to win over the customer with a good product, they just need to find novel ways of getting in your face.
 
@@ -458,19 +508,19 @@ This is okay though, because as we all know, the free market will sort itself ou
 
 ### Spam: your life as an arms race
 
-Spam is built upon the abuse of systems by definition. Unlike sponsors, who make a deal with the publisher to show ads in their system in exchange for payment, spammers are people who try to slip between the cracks of the system and get their advertisements directly to you. Like bomb-carrying terrorists, spammers will target venues that:
+Spam is built upon the abuse of systems by definition. Unlike sponsors, who make a deal with the publisher to show ads in their space in exchange for payment, spammers are people who try to slip between the cracks of the system and get their advertisements directly to you. Like bomb-carrying terrorists, spammers will target spaces that:
 
 1. are pre-established, because spammers can't attract an audience on their own.
 2. are highly trafficked, because spammers need to hit as many people as possible before getting caught.
-3. provide otherwise legitimate value to your life, so that you will not simply leave the venue after the spammers invade.
+3. provide otherwise legitimate value to your life, so that you will not simply leave the space after the spammers invade.
 
-Your email inbox and your telephone are systems for communicating with people you know, and spammers abuse it to send you junk. Web forums are systems for conversation, and spammers abuse them by making fake posts. Grocery stores are systems for buying food, and spammers abuse the traffic flow to hand out fliers. [Parking lots](/writing/not_just_bikes) are part of our transit system, and spammers leave advertisements under your wipers because you're not there to stop them. The front door of your house is for yourself and your guests, and spammers abuse it by turning it into ad space.
+Your email inbox and your telephone are spaces for communicating with people you know, and spammers abuse it to send you junk. Web forums are spaces for conversation, and spammers abuse them by making fake posts. Grocery stores are spaces for buying food, and spammers abuse the traffic flow to hand out fliers. [Parking lots](/writing/not_just_bikes) are part of our transit system, and spammers leave advertisements under your wipers because you're not there to stop them. The front door of your house is for yourself and your guests, and spammers abuse it by turning it into ad space.
 
-The problem with spam is not just that it's annoying, but that it converts your entire life into an arms race. Spam is hostile. It is mean. Spam takes every aspect of your life and turns it into an opportunity to make a buck off of you. No matter how hard you work to avoid advertisements and carefully pick the publishers you want to pay for, spammers can override your decisions and advertise to you anyway. I am not kidding when I compare spam to terrorism, though I am exaggerating. Spam positions you against enemies you didn't know you had. Enemies who come from afar to your place of residence to disrespect your time, attention, and belongings, and sneak away. Unlike a TV which can be turned off or a magazine which can be closed, spam offers no means to opt-out. Spammers will hit you and run without showing their face. What are you going to do about it, not have an email address?
+The problem with spam is not just that it's annoying, but that it converts your entire life into an arms race. Spam is hostile. It is mean. Spam takes every aspect of your life and turns it into an opportunity to make a buck off of you. No matter how hard you work to avoid advertisements and carefully pick the publishers you want to pay for, spammers can override your decisions and advertise to you anyway. I am not kidding when I compare spam to terrorism, though I am exaggerating. Spam positions you against enemies you didn't know you had. Enemies who come from afar to your place of residence to disrespect your time, attention, and belongings, and sneak away. Unlike a TV which can be turned off or a magazine which can be closed, spam offers no means to opt-out. Spammers will hit you and run without showing their face. What are you going to do about it, not have an email address? Not have a phone number?
 
 People dump their ugly fliers on your doorstep, and for some reason the onus is on you to clean it up and hang a No Soliciting sign to stop it from happening again. Do we also need to hang a "Please don't throw eggs at my house" sign, just in case? How about "No Bombing"?
 
-Consider for a moment the extraordinary amount of resources that have been utterly wasted by spam. How many millions of square miles of paper are printed into pre-approved credit card offers so they can go straight to the shredder. How many talented software engineers have been relegated to writing spam filters, email blockers, abuse heuristics, shadowbanners, phishing protection, and anti-spoof measures just to stop worthless dirtbag spammers from polluting their website and the internet at large. All this effort could have been put to better use. As I write this I feel like I am describing police versus fraudsters.
+Consider for a moment the extraordinary amount of resources that have been utterly wasted by spam. How many millions of square miles of paper are printed into pre-approved credit card offers so they can go straight to the shredder. How many talented software engineers have been relegated to writing spam filters, email blockers, abuse heuristics, shadowbanners, phishing protection, and anti-spoof measures just to stop worthless dirtbag spammers from polluting their website and the internet at large. All this effort could have been put to better use.
 
 Spam is a crime against humanity and I'd like to see the worst offenders jailed.
 
@@ -488,21 +538,23 @@ Suppose someone decides they want to make a living selling bottlecaps, or refurb
 
 The situation becomes desperate as they realize their monetization scheme -- you know, exchanging their goods and services with customers for money -- isn't going to pan out. With the business failing and the market clearly not ready for their idea, they finally make the obvious choice... huh?... find another job? No, I mean they start yelling at passersby with a script someone else is paying them to say, and slipping tracking devices into their pockets as they go. And if any of them complain, it's the same old story: *I'm sorry you don't like the ads, but used napkin refurbishers need to eat, too!*
 
-Such is the current state of the software, web publishing, and mobile app industry.
+Such is the current state of the software, web publishing, and mobile app industries.
 
-I know that our society has got a pretty serious problem with undervaluing software. Why is it that I'm willing to spend $10 on a pizza that I'll get three meals out of, but I'm not willing to spend $10 on software I'll use hundreds of times over the course of years? I don't know. Partly because we have problems assigning value to intangibles, and partly because I've been conditioned by the plethora of great, free, no-ads software I've already [got](/writing/sqlite_what_a_hunk). And partly because of DRM which aims to strip control even from paying customers, but that's another matter. If I was getting free pizza regularly I'd surely stop paying for that, too, even if the paid ones were a little better.
+I know that our society has got a pretty serious problem with undervaluing software. Why is it that I'm willing to spend $10 on a pizza that I'll get three meals out of, but I'm not willing to spend $10 on software I'll use hundreds of times over the course of years? I don't know. Partly because we have problems assigning value to intangibles, and partly because I've been conditioned by the plethora of great, free, no-ads software I've already [got](/writing/sqlite_what_a_hunk). And partly because of [DRM](https://en.wikipedia.org/wiki/Digital_rights_management) which aims to strip control even from paying customers, but that's another matter. If I was getting free pizza regularly I'd surely stop paying for that, too, even if the paid ones were a little better.
 
 But that's not really the point. That's an [is/ought problem](https://en.wikipedia.org/wiki/Is%E2%80%93ought_problem). Consumers *ought* to be willing to pay for good software or web experiences or mobile apps, but the reality is they mostly *aren't*. The economy and the world in general is full of is/oughts, and when it comes to making a living and paying rent, I think most of us understand that we have to follow the is. What absolutely boggles my mind is that developers whose goal is to make money with their idea [footnote_link] can recognize the state of the industry, understand that the likelihood of making sales with it is near zero, and then **proceed anyway** before, oops!, needing ads to pay the bills. In fact, I'm being disingenuous here by implying that developers even intend to use honest sales in the first place; the situation today is that ads are the expected and planned business model for many or most. Look at how many websites and apps are launched with analytics, tracking, and ads baked in from day one.
 
 Can you imagine applying this line of reasoning to any other industry? Mom, when I grow up I'm going to become a napkin refurbisher. But darling, no one's going to pay for that, are you sure you can make a living? It's okay I'll run ads. Mom, I'm going to start a business decorating toilets. Will anyone pay for that? Maybe a few, and I'll run ads to earn the rest. Mom, I'm going to **enter a market in which there are not enough paying customers to make a living**, but it's ok I'll run ads. Does this not sound totally wild?
 
-My feelings here would be different if we were still in the exploratory phase of computers, back when we weren't really sure if money-for-goods style transactions could work here. But we're not in that phase. Those pioneers have come and gone, and they left a bunch of signposts saying "people don't pay for this stuff". Very occasionally, someone will realize a market opportunity that does work. Steam sells loads of games and does so because "it's easier than piracy". I don't use Spotify but I've heard they're in a similar position. Netflix captured the movie-streaming market first, and were worth paying for until the more recent fragmentation of everyone trying to start their own streaming service and pulling their licenses from Netflix. I just simply cannot sympathize with someone who knows that making websites or mobile games doesn't pay the bills without ads, then starts doing it anyway and complains that they can't pay the bills without ads, despite not having a remotely unique take on the problem. Likewise, I expect that you would not sympathize with me if I tried to start a napkin refurbishing business and found it to be unsustainable.
+My feelings here would be different if we were still in the exploratory phase of computers, back when we weren't really sure if goods-for-money style transactions could work here. But we're not in that phase. Those pioneers have come and gone, and they left a bunch of signposts saying "people don't pay for this stuff". Very occasionally, someone will realize a market opportunity that does work. Steam sells loads of games and does so because "it's easier than piracy". I don't use Spotify but I've heard they're in a similar position. Netflix captured the movie-streaming market first, and were worth paying for until the more recent fragmentation of everyone trying to start their own streaming service and pulling their licenses from Netflix. I just simply cannot sympathize with someone who knows that making websites or mobile games doesn't pay the bills without ads, then starts doing it anyway and complains that they can't pay the bills without ads, despite not having a remotely unique take on the problem. Likewise, I expect that you would not sympathize with me if I tried to start a napkin refurbishing business and found it to be unsustainable.
 
 Job titles are descriptive, not prescriptive. It's not like you are born an app developer and therefore you must make a living making apps. You're an app developer because that's what you chose to do. So when people say "app developers need to eat too!", all I can think of is "then why did they choose that job!?". This is not discrimination against something out of your control. *Everybody* needs to eat, so the fact that they become full-time app developers confounds me.
 
 I don't understand why we're so hell-bent on making apps and websites and social media networks. Our culture has become absolutely tunnel-visioned, barrelling along on the locomotive of PUBLISH MORE PUBLISH MORE, we've become incapable of considering that our hobbies weren't meant to be full-time jobs. All we can do is double down, insist with our dying breath that Twitter must go on!, injecting it with engagement-boosters whenever growth slows. Have ye no shame, corrupting your work like this? Didn't you begin the project out of passion?
 
-![](tetsuo.jpg)
+![A still frame from the film Akira shows Tetsuo becoming mutated. His body balloons and wires and hoses protrude from his skin.](tetsuo.jpg)
+
+I don't know why we've developed this "all business ventures must grow forever" mindset, especially when it leads to the corruption and rotting of the original business. If you're running a free web service and it's costing you too much to host, I'd have way more respect for you if you just said "hey everyone, I can't afford to keep doing this out of pocket, we'll have to cut back on the scope of our project unless the community would like to contribute some funds". It doesn't seem like that level of honesty should be so hard to come by, especially when speaking to the very people that are making your service successful, but most of the time it's straight to the advertisers for help instead.
 
 If this line of reasoning works for web/app developers, why haven't we seen the degenerative collapse of other industries in which people do unprofitable things but spin it off into an ad-slinging business to make ends meet? Why isn't every single auto mechanic, grocery store, and restaurant offering their primary service for free, and making up for it by showing advertisements for sponsors [footnote_link]? Well, first and foremost it's because there are actually customers willing to pay for those. But moreover, the technology industry is unique because it's the biggest force-multiplier the world has ever seen. Real-life businesses are going to be bound by the high costs of property and lights and inventory and staff. If Grocery Mart gives out groceries for free and hopes to make their money on third-party ads, they're gonna have to show a hell of a lot of ads and still will never achieve a big enough reach to make it pay off. Meanwhile, ads on the internet are highly passive from the point of view of the website owner or app developer, and they reach thousands of times more eyeballs, and the cost of hosting a website or distributing an app's worth of megabytes is dirt cheap compared to leasing store property and giving away real inventory.
 
@@ -520,29 +572,47 @@ It's all a bunch of is/ought/is/ought/is/oughts. I'm gonna go crazy over this st
 
 During the previous section, you may have been thinking that a developer slinging ads on a free site or app is more acceptable than a napkin refurbisher slinging ads, because websites and apps improve our lives in a way that refurbished napkins don't. This is also true for Youtubers who quit their day jobs to make videos, funded by ads.
 
-One facet I want to express is that the value, I mean benefit-to-the-world value, of ad-supported websites and services is almost universally overstated. And the value that is there can hardly overcome the damaging cost of ads. Humanity has survived for thousands of years without Instagram and can continue to do so. I don't know why we've developed this "all business ventures must survive forever" mindset, especially when it leads to the corruption and rotting of the original business. What's that, Snapchat wouldn't be able to continue operating if it weren't for ads? The History Channel, a shell of its former self and a disgrace to its name, would have to stop broadcasting? Hmmm, this is all sounding pretty good!
+One facet I want to express is that the value, I mean benefit-to-the-world value, of ad-supported websites and services is almost universally overstated, and the value that is there can hardly overcome the damaging cost of ads. After all, how valuable could it really be if nobody's willing to pay for it except the sponsors expecting a return on investment? Humanity survived for many thousands of years without Instagram and we can continue to do so. It's just not very important.
 
 But surely if I got my wish and ad-supported websites all shut down, there'd be nothing left, right?
 
-There would be less, that much is true. There'd be a **lot** less. But increasingly, and overwhelmingly as of late, that's sounding like a good thing to me. The internet used to be small, but most things you could find were interesting or at least made by someone who was genuinely interested in making it. Now the internet is enormous and nobody cares about anything except getting clicks. Browsing the internet now is like swimming in a polluted lake.
+There would be less, that much is true. There'd be a **lot** less. But increasingly, and overwhelmingly as of late, that's sounding like a good thing to me. I don't want *more*, I want *better*. Like, if you've got one gold nugget and a whole bunch of trash, and you throw away the trash, yeah that's the majority of your content. But it was trash content, and to be rid of it is good. Focus on the gold. What's that, Facebook wouldn't be able to continue operating if it weren't for ads? The History Channel, a shell of its former self and a disgrace to its name, would have to stop broadcasting? Okay, I'll take it!
 
-Veritasium gave a presentation about fake news and facts on the internet:
+The internet used to be small, but most things you could find were interesting or at least made by someone who was genuinely interested in making it. Now the internet is enormous and nobody cares about anything except getting clicks. Browsing the internet now is like swimming in a polluted lake. It's miserable and discouraging.
+
+Veritasium [footnote_link] gave a presentation about fake news and facts on the internet:
 
 > I was an optimist. Maybe I was naive about the internet. My thinking about having an international communication system whereby anyone anywhere can share anything -- regardless of their education background or their class standing -- and get access to real information through Wikipedia. My thinking was the internet was going to make everyone happier and more informed, more educated, and probably more tolerant of others around them.
 
 > [Post-Truth: Why Facts Don't Matter Anymore](https://www.youtube.com/watch?v=dvk2PQNcg8w)
 
-His thesis is about misinformation and intolerance [footnote_link], but I share his feelings of disappointed optimism. What was once called the information superhighway and touted as all of human knowledge [at your fingertips](https://www.youtube.com/watch?v=A81IwlDeV6c) is now sadistically impossible to navigate, with little tidbits of value hidden beneath mountains of SEO gamification, low-density listicles, promoted posts, and flat-out spam.
+His thesis is about misinformation and intolerance [footnote_link], not advertising, but I share his feelings of disappointed optimism. What was once called the information superhighway and touted as all of human knowledge [at your fingertips](https://www.youtube.com/watch?v=A81IwlDeV6c "The Kids' Guide to the Internet") is now sadistically impossible to navigate, with little tidbits of value hidden beneath mountains of SEO gamification, low-density listicles, promoted posts, and flat-out spam.
 
 When I say that I long for the internet to be small again, I'm not saying I want the clock to roll back in time -- that would mean there'd be fewer people connected and I certainly want the internet to be global. But I want it to be personal, and passionate. I want to find things that people made because they enjoyed making them, not because it was the most algorithmically optimal thing to make. I'm sick of communications platforms becoming walled silos because if they allow anyone else to access their data they'd lose their advantage over the analytics that feed their advertising. I'm sick of gmail being synonymous with email. I'm sick of everyone and everything being factored in to a monetization strategy writeup.
 
-I use adblock and I visit websites which are fueled by ads. I do not whitelist anybody. So I don't have a right to complain or fuss when they eventually shut down, since I was never helping them stay up. That's why I [download](/writing/download_podcasts) everything that I care about. Suppose I get my wish and ads disappear forever, and every website becomes either purely-free, or subscription-based, or shuts down entirely. Which ones would I pay for? Out of all the ad-supported websites and services that I use today, the only one with content that I consider worth paying for would be Youtube, because video is my favorite medium and I'm well aware that hosting video costs money. [footnote_link]. If reddit were to die I'd be 50/50 bummed and relieved. [Pushshift](https://pushshift.io/) has got it backed up anyway, so as far as historical knowledgebase goes we wouldn't be losing much. Hacker News is already free without ads, though subsidized by YC's business ventures.
+For some people, it is a shock that anybody would do anything without the motivator of profit, but this is actually normal. Musicians make music because they like doing it. Artists make art, photographers take photos, programmers make programs, cartographers make maps, linguists make languages, carpenters make furniture, chefs cook, animators animate, sculptors sculpt, and writers write... for fun, it turns out. If you look around in places that aren't ravaged by poverty, where people don't have to scrape by to survive, where people have leisure time to do the things they enjoy, you'll find that it's in human nature to share freely.
+
+The insider scoop around here is that I pay $12 per year for my domain name and $4 per month for web hosting. For email I pay about $0.40 per month [footnote_link]. For storing large quantities of files I pay $0.015 per gigabyte per month as seen [here](/writing/sharing_photos). I run this website for cheap and I pass the savings on to you. If you scoff at this feeble blog and dream of something more impactful, you should know that Hacker News, one of the best forums I know of today, still [runs on a single (good) box](https://news.ycombinator.com/item?id=28479595), as it has for 15 years. [Computers](https://news.ycombinator.com/item?id=32319147) are pretty [good](https://news.ycombinator.com/item?id=28449162) at what they [do](https://news.ycombinator.com/item?id=31000450), and excellent things can be made and shared on the internet without the help of advertisers. If only you choose to make it happen.
+
+I now reuse this quote, that I might not bungle it:
+
+> Writing for money and reservation of copyright are, at bottom, the ruin of literature. No one writes anything that is worth writing, unless he writes entirely for the sake of his subject. What an inestimable boon it would be, if in every branch of literature there were only a few books, but those excellent! This can never happen, as long as money is to be made by writing. It seems as though the money lay under a curse; for every author degenerates as soon as he begins to put pen to paper in any way for the sake of gain. The best works of the greatest men all come from the time when they had to write for nothing or for very little.
+
+> [Arthur Schopenhauer, "On Authorship"](https://en.wikisource.org/wiki/The_Art_of_Literature/On_Authorship)
+
+I use adblock and I visit websites which are fueled by ads. I don't whitelist anybody. So I don't have a right to complain or fuss when they eventually shut down, since I was never helping them stay up. That's fine. That's why I [download](/writing/download_podcasts) everything that I care about. Ad-supported services live on a treadmill, but I don't.
+
+Suppose I get my wish and ads disappear forever, and every website becomes either purely-free, or subscription-based, or shuts down entirely. Which ones would I pay for? Out of all the ad-supported websites and services that I use today, the only one with content that I consider worth paying for would be Youtube, because video is my favorite medium and I'm well aware that hosting video costs money [footnote_link]. If reddit were to die I'd be 50/50 bummed and relieved. [Pushshift](https://pushshift.io/) has got it backed up anyway, so as far as historical knowledgebase goes we wouldn't be losing much. Hacker News is already free without ads, though subsidized by YC's business ventures.
+
+[footnote_text] I like Veritasium's videos but [his descent into clickbait](https://www.youtube.com/watch?v=S2xHZPH5Sng "Veritasium - Clickbait is Unreasonably Effective") is a top 10 saddest anime moment for sure :(
 
 [footnote_text] I won't say that advertising and misinformation or intolerance are directly causally linked, but I will say that [stormfront.org has Google Analytics](stormfront.html).
 
-[footnote_text] If I were to pay Youtube, I'd want the money to be used only for hosting the videos, **not** for paying the creators. Youtube has gone through periods of prioritizing video length, or watch duration as a percentage, or publication frequency, etc. for controlling *the algorithm* and payout. Goodhart tells us that distributing the money based on any of these factors will make the creators change their behavior and poison the system. If I want to give the creators any money, I'd use Patreon to pay them directly, and I have done so. The cesspool channels that no one is willing to directly fund, unable to survive without advertisements, would go extinct. We'd also lose some genuinely good creators who can't devote their time to making free videos, and that's a bummer, but it's a sacrifice I'm willing to make in exchange for the higher median quality level.
+[footnote_text] Can you believe that it only costs forty cents to get off of gmail? What are you waiting for??
 
-![](someofyoumaydie.jpg)
+[footnote_text] If I were to pay for Youtube, I'd want the money to be used only for hosting the videos, **not** for paying the creators. Youtube has gone through [periods](https://www.youtube.com/watch?v=Gi6FcI2wFrw "RubberNinja - Does Independent Animation Have a Future on YouTube?") of prioritizing video length, or watch duration as a percentage, or publication frequency, etc. for controlling *the algorithm* and payout. Goodhart tells us that distributing the money based on any of these factors will make the creators change their behavior and poison the system. If I want to give the creators any money, I'd use Patreon to pay them directly, and I have done so. The cesspool channels that no one is willing to directly fund, unable to survive without advertisements, would go extinct. We'd also lose some genuinely good creators who can't devote their time to making free videos, and that's a bummer, but it's a sacrifice I'm willing to make in exchange for the higher median quality level.
+
+![A still frame from the film Shrek shows Farquad concluding his grand speech. This is the scene where he says "some of you may die, but that is a sacrifice I am willing to make."](someofyoumaydie.jpg)
 
 ### You paid for the ads
 
@@ -566,13 +636,13 @@ This comment left a big impact on me and I can't possibly discuss advertising wi
 
 [Investopedia says that Coca Cola spends $4 billion per year on advertising, out of their $35 billion revenue](investopedia_coke.html). Where did Coke get 4 billion dollars to spend on ads? From the customers' pockets, of course. That's a percentage of the cost of every single drink that winds up going to their marketing department so they can make advertisements that you don't want to see. The idea that "ads allow publishers to make things available for free" is cumulatively false because any time you buy a Coke, your money is going to all of the publishers they sponsor (even the ones you don't read) *and* all of the operational and staffing overhead involved in the advertising machine.
 
-![](nowthatswhaticallfree.png)
+![Illustrated diagram depicts the relationship between Readers, Websites, Companies, and Advertisers. The Reader buys a product from the Company in exchange for three dollar bills. The Company gives one dollar bill to the Advertiser as a salary. The Company gives another dollar bill to the Website as CPI. The Website sends an article to the Reader and the Advertiser sends an advertisement to the Reader. Bright red handwritten text is scrawled across the diagram, "Now that's what I call free".](nowthatswhaticallfree.png)
 
 Earlier in the article, I said "by displaying a sponsor's advertisement alongside your product, you can earn more money without having to make your product better". In that section I wanted to focus on the publisher's perspective, but there's an interesting dynamic here that we can evaluate from the sponsor's perspective. After all, both parties are hoping to increase their revenue, but they approach it in opposite ways: the publisher reduces the price of their product, possibly down to free, and "makes it up in volume" with the help of the sponsor; meanwhile the sponsor is dishing out money to the publisher, so they need to recoup that cost somehow. Isn't that a bit strange? What techniques are they using to earn that money back, and why couldn't the publisher apply those techniques to their own product in the first place, so they could earn their way without showing ads? Why are so many publishers unable to get enough money from customers' pockets to stay afloat, while Coke is pulling in enough money to support both themselves and the publishers?
 
 It is a brain-wrinkler for sure. I have not figured it out. Perhaps it is like the phrase "those who can, do; those who can't, teach". The alpha males who know how to sell a product become the sponsors, the beta males who can't sell their product take on sponsors. Of course, the sponsors are the ones coming up with disgusting, manipulative psychological tactics to do their selling, so it is not exactly an honorable title. Many of them wouldn't be able to survive without stooping to new lows every week [footnote_link], but I guess being abusive, uncaring, and ready to kill is what makes one an alpha. 
 
-Part of the problem, which I touched on earlier, is that people have been conditioned to not pay for software or websites, whereas we're already accustomed to paying for sodas. But I don't think that's the full answer, because the internet is young compared to the usual suspects of sponsorship advertisements: tv, radio, newspapers, magazines. Television and radio were uniquely dependent on sponsorship revenue because it's not really possible to charge someone for access to an RF frequency unless you encrypt the datastream and sell them the key, which wasn't developed at the time. But print media was, and still is, something that the reader paid for, yet it became swamped with ads quite a long time ago. Were they just too beta to compete the normal way? I don't know yet.
+Part of the problem, which I touched on earlier, is that people have been conditioned to not pay for software or websites, whereas we're already accustomed to paying for sodas. But I don't think that's the full answer, because the internet is young compared to the usual suspects of sponsorship advertisements: tv, radio, newspapers, magazines. Television and radio were uniquely dependent on sponsorship revenue because it's not really possible to charge someone for access to a radio frequency unless you encrypt the datastream and sell them the key, which wasn't developed at the time. But print media was, and still is, something that the reader paid for, yet it became swamped with ads quite a long time ago. Were they just too beta to compete the normal way? I don't know yet.
 
 Here is another take by bondarchuk,
 
@@ -592,13 +662,13 @@ If ads were eliminated from the world, everything could hypothetically be severa
 
 4. The publishers whose products are not good enough to pay for on their own would go extinct.
 
-5. New businesses would have a hard time getting their first customers.
+5. New businesses would have a hard time getting their first customers, I admit.
 
-![](extinct.jpg)
+![A colorful illustration from the National Science Foundation shows a dead dinosaur lying on its back, its mouth open and foaming green. The land is burnt and trees are reduced to charcoal. In the distance, multiple active volcanoes spew smoke, fire, and lava.](extinct.jpg)
 
 Could this really happen? If the marketing departments vanished overnight, would product sellers actually reduce the cost of their product to match their reduced expenditure? No. Customers have already demonstrated that they are willing to buy it at the current price. But São Paulo has shown that legislators can force the ads to come down. Once the brand is physically unable to buy ad space, they're going to have to redirect their marketing budget somewhere. Sure, they might just hoard the extra cash. But I do think that if a new generation of customers were to be raised in an ad-free world, and a new generation of brands were to be formed with no marketing expenditure, they would see the opportunity to undercut the incumbent brands who forgot to lower their prices, and a shift may occur.
 
-Regarding point 5, it may be reasonable to legislate a maximum advertising expenditure, instead of forcing it all the way down to zero. Suppose we allow business to have advertising budgets, but we clamp it down so low as to stay in the "Visit Farmer John's farm for some tasty corn" territory. That is to say, businesses would not be able to spread themselves thin trying to advertise to the whole nation or world, so they'd naturally have to stay more local, putting young businesses on more equal footing with larger brands and re-igniting a real sense of competition over the quality of the product instead of the psychoterroristic manipulation of the advertisement. I'm still glad to have a global internet, of course, but it would be word of mouth that spreads your product far and wide, not your advertisement.
+Regarding point 5, it may be reasonable to legislate a maximum advertising expenditure, instead of forcing it all the way down to zero. Suppose we allow businesses to have advertising budgets, but we clamp it down so low as to stay in the "Visit Farmer John's farm for some tasty corn" territory. That is to say, businesses would not be able to spread themselves thin trying to advertise to the whole nation or world, so they'd naturally have to stay more local, putting young businesses on more equal footing with larger brands and re-igniting a real sense of competition over the quality of the product instead of the psychoterroristic manipulation of the advertisement. I'm still glad to have a global internet, of course, but it would be word of mouth that spreads your product far and wide, not your advertisement.
 
 Making this change is like planting a tree: the best time to do it was 20 years ago, the second best time was 19 years ago, the... um... it's better today than never.
 
@@ -644,7 +714,7 @@ The phrase "act as advertisements" is key. Some outsiders visit the subreddit as
 
   You've probably heard about people who buy lottery tickets knowing full well they'll never net any money, but they do it because the price of the ticket is worth the small moment they can spend dreaming about winning. This really applies to other purchases too: spend $X00 on something online and enjoy the next 6-8 business days dreaming about all the cool stuff you'll do with it when it arrives... whether or not that actually pans out in the end. Buying is easy and doing is hard.
 
-2. All publicity is good publicity & Mindshare. Sometimes, a post will come up in HailCorporate where a brand name is juxtaposed with something lewd or offensive. Imagine that someone decides to mock a company by taking a picture of Nazis and replacing the swastikas with the company's logo. Of course it's not a real ad for the company. They didn't pay someone to draw them as Nazis. But it can *act as an ad* by bringing the brand into the viewer's mind.
+2. All publicity is good publicity & Mindshare. Sometimes, a post will come up in HailCorporate where a brand name is juxtaposed with something lewd or offensive. Imagine that someone decides to mock a company by taking a picture of Nazis [footnote_link] and replacing the swastikas with the company's logo. Of course it's not a real ad for the company. They didn't pay someone to draw them as Nazis. But it can *act as an ad* by bringing the brand into the viewer's mind.
 
   Perhaps you've heard of the [Streisand Effect](https://en.wikipedia.org/wiki/Streisand_effect), named after Barbra Streisand after she tried to prevent some photos of her house from being published, but in her efforts attracted more attention to them. Nowadays, the people who know the term Streisand Effect surely outnumber the people who knew or cared about the house. The context for the original publicity can be completely forgotten while the publicity itself remains, and people remember Streisand's name.
 
@@ -660,13 +730,15 @@ The phrase "act as advertisements" is key. Some outsiders visit the subreddit as
 
   I am reminded of Tom Scott's video about the [cooperative principle](https://www.youtube.com/watch?v=IJEaMtNN_dM) of language, which discusses the balance of explicit and implicit information in our words. Interesting that the shelf never gets proper attribution for its role in the event, right? Where are all the "My box of Toasty Bites fits perfectly in my Home&House pantry" posts? Ah, but the pantry doesn't have a logo on it [footnote_link]. We've been trained by advertisements to think that if a product is in frame, it ought to be turned to the camera and the name ought to be read out loud. Advertisers do it that way because they're paid to, but you're not. Feel free to shoot the back side of the cereal box next time.
 
-Once you've gotten past the "awareness" stage of HC, there's not much point visiting the subreddit any more. To do so is a little self-defeating: a bunch of anti-ad people gathered around to look at pictures of brands. In the act of collecting links for this article I've exposed myself to more radiation than I would have over a normal week. Besides, I personally am no longer interested in reddits-about-reddit. It's the kind of subreddit that you read for a little while and then leave, and that's okay because you'll be leaving with a new perspective on inadvertent advertising.
+Once you've gotten past the "awareness" stage of HC, there's not much point visiting the subreddit any more. To do so is a little self-defeating: a bunch of anti-ad people gathered around to look at pictures of brands. In the act of collecting links for this article I've exposed myself to more radiation than I would have received over a normal week. Besides, I personally am no longer interested in reddits-about-reddit. It's the kind of subreddit that you read for a little while and then leave, and that's okay because you'll be leaving with a new perspective on inadvertent advertising.
 
 These days I make a very conscious effort to de-brand my vocabulary. And by conscious I mean that it really does require me to slow down and think about what I say. I no longer use "Google" as a verb, I just say "search the internet" or "search for" or even just "look it up" [footnote_link]. Of course I'm aware of [brand genericization](https://en.wikipedia.org/wiki/Generic_trademark), so maybe I could help accelerate the effect by using the brand name more often, but, eh, no thanks. It does lead to an interesting dissonance where the genericizations that occurred before I knew them feel normal, but the ones which occur now or in the future feel gross. One of my current borderline examples is photoshop, which I hesitate to reduce to just "photo editing" because I want to distinguish between more sophisticated edits and what the average Joe can get out of [Kid Pix](https://en.wikipedia.org/wiki/Kid_Pix).
 
 [footnote_text] Well, it doesn't help that HC's current tab-title is "ads, ads, everywhere"...
 
 [footnote_text] For clarity, I'm not questioning the discussion of the stove itself. Home appliances are significant, meaningful purchases, and the whole point of the povertyfinance community is to do well with less. No, my criticism here is that OP could have taken a picture of themselves making a delicious home-cooked meal on their new stove, but they just couldn't wait for that and had to talk about the act of buying instead. This is something we should all learn from, and consider what it is we care about enough to share.
+
+[footnote_text] inb4 [Godwin's law](https://en.wikipedia.org/wiki/Godwin%27s_law).
 
 [footnote_text] One last note: advertisers don't expect ads to make you immediately jump out of your seat to buy something. People like to make fun of car commercials because "Wow, look how happy this family is! I should buy a car!". No, the point is that *when the time comes*, the first options that come to your mind will be the ones you've seen the most frequently. Unfortunately for the Nazi photo editor, bad exposures contribute to this frequency just as well as the good ones.
 
@@ -698,20 +770,22 @@ Microsoft:
 
 - Windows start menu advertisements:
 
-    ![](windows_start_menu.jpg)
+    ![A screenshot of the Windows start menu includes multiple advertisements for games and software under the labels "Explore" and "Play"](windows_start_menu.jpg)
 
 - [Outlook just asked me if I want to upgrade to bigger ads](https://news.ycombinator.com/item?id=30388788)
 
-    ![](outlook_inline_ads.jpg)
+    ![A screenshot of Microsoft Outlook. A dialog presents the user with a choice. "Choose the ads experience that is right for you on web and mobile." The option called "Maximum screen space" reads "This experience maximises screen space by showing ads in your mailbox. Outlook web will load faster". The option called "Bigger ads on web" reads "This experience will show multiple ads on the sides of the screen on web. Outlook web may load more slowly".](outlook_inline_ads.jpg)
 
 - [Microsoft is testing ads in the Windows 11 File Explorer
-](https://www.bleepingcomputer.com/news/microsoft/microsoft-is-testing-ads-in-the-windows-11-file-explorer/)
+](bleepingcomputer_windows_explorer.html)
 
-    ![](windows_explorer.png)
+    ![A screenshot of Windows Explorer. Above the list of files, an important-looking banner with a triangle exclamation mark alert symbol reads "Write with confidence across documents, email, and the web with advanced writing suggestions from Microsoft Editor".](windows_explorer.png)
 
 Youtube, the system:
 
 - "The algorithm" takes by [CGP Grey](https://www.youtube.com/watch?v=KW0eUrUiyxo), [Tom Scott](https://www.youtube.com/watch?v=BSpAWkQLlgM), [Folding Ideas](https://www.youtube.com/watch?v=LKp2gikIkD8).
+
+- [YouTubers have to declare ads. Why doesn't anyone else?](https://www.youtube.com/watch?v=L-x8DYTOv7w) by Tom Scott.
 
     I'd like to take this opportunity to ~~advertise~~ *tell you about* my own program, [YCDL](https://github.com/voussoir/ycdl), which presents me with a custom interface for subscribing to, watching, and downloading videos. Imagine watching youtube without a "recommendation" feed, autoplay, unrelated spam, or algorithmic determination of what does or doesn't show in the sub box. As long as you can tolerate the slower channel refresh cycle.
 
@@ -722,7 +796,7 @@ Youtubers, the people:
 - [Elsagate](https://en.wikipedia.org/wiki/Elsagate) ([Folding Ideas](https://www.youtube.com/watch?v=LKp2gikIkD8 "Weird Kids' Videos and Gaming the Algorithm")).
 - [Strange Asian Holes](https://www.youtube.com/watch?v=tSI-kj9A_pc "STOP DOING THIS - Strange Asian Holes - iDubbbz").
 - Five minute crafts ([How To Cook That](https://www.youtube.com/watch?v=pvqa8dsBtno "Debunking Fake Videos & WHO'S behind 5-min crafts?"), [Folding Ideas](https://www.youtube.com/watch?v=4EXVrzOACv4&t=15m42s "Cooking Food On The Internet For Fun And Profit")).
-- [Copycats](https://www.youtube.com/results?search_query=primitive+technology) riding on the coattails of [Primitive Technology](http://youtube.com/channel/UCAL3JXZSzSm8AlZyD3nQdBA). Notice their awkward titles creaking under the weight of SEO keywords, their clickbaity photoshopped thumbnails, and their "child holding item to camera with a Wow face" cheapshots. OG PT would never do this. ([JonTron](https://www.youtube.com/watch?v=RiGDwQy6eoE)). (Temporal note: youtube has reduced the search ranking of the copycats since I included this so you will have to scroll down a bit. Great!)
+- [Copycats](https://www.youtube.com/results?search_query=primitive+technology) riding on the coattails of [Primitive Technology](https://youtube.com/channel/UCAL3JXZSzSm8AlZyD3nQdBA). Notice their awkward titles creaking under the weight of SEO keywords, their clickbaity photoshopped thumbnails, and their "child holding item to camera with a Wow face" cheapshots. OG PT would never do this. ([JonTron](https://www.youtube.com/watch?v=RiGDwQy6eoE)). (Temporal note: youtube has reduced the search ranking of the copycats since I included this so you will have to scroll down a bit. Great!)
 
 Reddit:
 
@@ -736,7 +810,7 @@ Reddit:
 
 - Newreddit likes to show a measly two comments to logged-out users before suggesting that they redirect to another post, because dilly-dallying in the comments section doesn't make them money. This isn't on on some kind of overview page, this is on the actual /comments URL where you'd expect all 51 comments to be visible. This example gets bonus points for the fact that they're suggesting I leave a text post to see a fluff image post.
 
-    ![](newreddit_only_two_comments.png)
+    ![A screenshot from reddit.com shows a post. The interface says that there are 51 comments, but there are only two comments shown. A button at the bottom is available to load the rest. Below this, a different post from the subreddit is slightly visible. The design of the webpage encourages the reader to scroll down to the next post instead of reading the comments of the post they're already on.](newreddit_only_two_comments.png)
 
 - Moderators begged site staff for multiple *weeks* to have more control over the kinds of awards that can be put on posts, because some awards are being used to troll sensitive topics ([one](https://old.reddit.com/r/ModSupport/comments/fut93p/please_consider_giving_subs_the_ability_to/), [two](https://old.reddit.com/r/ModSupport/comments/ghn9be/inappropriate_reddit_community_awards_used_for/), [three](https://old.reddit.com/r/ModSupport/comments/gj3h05/now_getting_harassing_message_sent_through_reddit/), [four](https://old.reddit.com/r/ModSupport/comments/gve2id/can_the_admins_please_disable_certain_awards/), [five](https://old.reddit.com/r/ModSupport/comments/hc4efv/reddit_community_awards_continue_to_be_used_for/), [you get the point](https://old.reddit.com/r/ModSupport/search?q=awards&restrict_sr=on&include_over_18=on&sort=relevance&t=all)). After hemming and hawing and espousing continued "support" and "appreciation" and "we hear you"s, staff have finally put the Yikes award [on pause](https://old.reddit.com/r/ModSupport/comments/gwlvtq/put_your_money_where_your_mouth_is_remove_the/). Just that one, and not the others. It only took them an unjust death and nationwide protesting and rioting to finally lift their finger towards disabling a single source of income [footnote_link].
 
@@ -750,37 +824,37 @@ Smart appliances:
 
 - ["At Samsung, life runs through us. Your advertising should too."](https://www.youtube.com/watch?v=N9kiSEhbLXs "Samsung Ads Life Runs Through Us Web")
 
-    ![](samsung_advertising_1.jpg)
+    ![Still frame from Samsung's video. Four adults and three children are on the couch, excitedly smiling, jumping, and raising their hands in the air. Superimposed text reads "At Samsung, life runs through us".](samsung_advertising_1.jpg)
 
-    ![](samsung_advertising_2.jpg)
+    ![Still frame from Samsung's video. A television is shown. The television shows a skier on a mountain slope, but the lower half of the screen is obscured by large interface elements and an advertisement.](samsung_advertising_2.jpg)
 
-    [No one knows the Samsung household better](https://www.samsung.com/us/business/samsungads/). Not even the families that live there.
+    [No one knows the Samsung household better](samsungads.html). Not even the families that live there.
 
-    ![](samsung_advertising_3.png)
+    ![A screenshot from Samsung's business page. A man and his son are in the kitchen with a large television hanging on the wall. Beside the photo is a caption reading "Audience is Everything. The Samsung Ads audience has everything you need ... young families, millennials, auto intenders, and more — no one knows the Samsung household better."](samsung_advertising_3.png)
 
 - [Android TV's homescreen ads are rolling out](https://9to5google.com/2020/08/18/android-tv-homescreen-ads-turn-off-staff-picks/)
 
-    ![](android_tv.png)
+    ![A screenshot from 9to5google's article. A television shows a main menu for choosing channels and apps. The upper third of the screen is occupied by an ad for the film Moana.](android_tv.png)
 
-- [Vizio TVs are now showing banner ads over live TV]()
+- [Vizio TVs are now showing banner ads over live TV](vizio_jump_ads.html)
 
-    ![](vizio_jump_ads.png)
+    ![A screenshot of flatpanelhd's article showing so-called Jump Ads, a banner advertisement superimposed over a television show.](vizio_jump_ads.png)
 
 Retail IRL:
 
-- [Cooler Screens](https://www.coolerscreens.com/) creates giant display screens that cover up the refrigerators in grocery stores so they can ~~show advertisements instead of what's actually in the fridge~~ provide the retail experience consumers want and deserve.
+- [Cooler Screens](coolerscreens.html) creates giant display screens that cover up the refrigerators in grocery stores so they can ~~show advertisements instead of what's actually in the fridge~~ provide the retail experience consumers want and deserve.
 
-    ![](cooler_screens.png)
+    ![A screenshot of coolerscreens.com. A retail store refridgerator is shown with a large screen occupying the whole front of each refridgerator door. The screen shows idealized photos of products that are presumably inside the refridgerator. Some of the screens have banner ads at the top highlighting particular brands.](cooler_screens.png)
 
 - Other destruction of public space:
 
-    ![](mobil_gas.jpg)
+    ![A photo of a gas pump at a gas station. On top of the pump is a screen showing an ad for hot sauce.](mobil_gas.jpg)
 
-    ![](urinals.jpg)
+    ![A photo of four urinals in a public restroom. Each of the urinals has a digital screen integrated into the body of the urinal, angled upward towards the guest. The screens show products and branding.](urinals.jpg)
 
     The subway stations in Toronto, Canada [show advertisements](https://www.youtube.com/watch?v=tXcmyUtCmCo "Designing Better Next Train Arrival Screens - RMTransit") on the signs that are supposed to help you find your train. The vestigial timing clock is relegated to a third of the screen.
 
-    [![](toronto_subway.jpg)](https://www.youtube.com/watch?v=tXcmyUtCmCo)
+    [![A photo taken inside a subway station. A digital screen hangs from the ceiling. The left two thirds of the screen are an advertisement for a restaurant. The right one third of the screen shows the time of the next arriving train and the weather.](toronto_subway.jpg)](https://www.youtube.com/watch?v=tXcmyUtCmCo)
 
 Here's a fun comment from Hacker News user skizm that I wasn't sure where else in this article to quote:
 
@@ -806,7 +880,7 @@ Some will say that banning advertisements is impossible because we run into chal
 
 Outlawing advertisements, or at least clamping advertising expenditure, will not happen quickly. In the meantime, we as the public should block as many advertisements from our lives as we can, to reduce the amount of money the publishers and sponsors earn and drive them into the ground unless they get their act together. If they have any survival instincts, they'll come up with a new plan. If they don't, RIP.
 
-I have said much about banning advertisements, or legislating limitations against them. Indeed, it is easy to sit back and pray that an abstract force from on high will come and solve the problem for us. But I spent some time thinking about [politics](/writing/everything_is_politics) recently, and I want to say again here that there is no politics external from ourselves. We are the politics and we are the legislation. If you stop watching ads, and teach your children to not watch ads, and they teach their children to not watch ads, the next generations of politicians will be politicians against ads. Be a role model.
+I have said much about banning advertisements, or legislating limitations against them. Indeed, it is easy to sit back and pray that an abstract legislative force from on high will come and solve the problem for us. But I spent some time thinking about [politics](/writing/everything_is_politics) recently, and I want to say again here that there is no politics external from ourselves. We are the politics and we are the legislation. If you stop watching ads, and teach your children to not watch ads, and they teach their children to not watch ads, the next generations of politicians will be politicians against ads. Be a role model.
 
 Please,
 
@@ -818,13 +892,13 @@ Please,
 - Donate a few dollars to people who make things you like.
 - Encourage others to do the same.
 
-In discussions of politics, you will sometimes hear people say "if you don't like it, get out". This is a [small-minded position](https://en.wikipedia.org/wiki/Thought-terminating_clich%C3%A9), and if you've read the 19,000 words leading up to this point in the article, you probably don't say that. These people think that the past [twelve thousand years](https://en.wikipedia.org/wiki/Cradle_of_civilization) of tumultuous human history have come to a sudden stop, and the present situation will remain static from here on out. Unlikely. In a sense, installing an adblocker is one part of "getting out". It is removing myself from the environment where I see ads. I did not need to write this article. I could have sat down and shut up and turned off my computer and stopped going outside, and I'd be "out". But I'm not content with that. The world is not static, it is going to change, and I'd like to contribute to the way it changes.
+In discussions of politics, you will sometimes hear people say "if you don't like it, get out". This is a [small-minded position](https://en.wikipedia.org/wiki/Thought-terminating_clich%C3%A9), and if you've read the 23,000 words leading up to this point in the article, you probably don't say that. These people think that the past [twelve thousand years](https://en.wikipedia.org/wiki/Cradle_of_civilization) of tumultuous human history have come to a sudden stop, and the present situation will remain static from here on out. Unlikely. In a sense, installing an adblocker is one part of "getting out". It is removing myself from the environment where I see ads. I did not need to write this article. I could have sat down and shut up and turned off my computer and stopped going outside, and I'd be "out". But I'm not content with that. The world is not static, it is going to change, and I'd like to contribute to the way it changes.
 
 Are ads truly necessary for our survival? If everyone followed these steps, would the world grind to a halt, burst into flames, go up in smoke, go down the drain? There's only one way to find out! Follow your heart. Don't waste your time thinking about whether you have some moral obligation to watch an advertisement in order to keep the world functioning properly. If you don't want to see ads, then stop seeing ads. Let the rest of the world figure out for themselves how they're going to keep their heart pumping. Their income is not your responsibility.
 
 Here's a message from Jackie Chan, [speaking to filmmakers](https://www.youtube.com/watch?v=Z1PCtIaM_GQ&t=8m16s "Every Frame a Painting - Jackie Chan - How to Do Action Comedy"):
 
-> Whatever you do, do the best you can, because the film lives forever. "No, because, that day was raining, and the actor didn't have time...". Would you go to every theater to tell the audience? No! The audience sees in the theater good movie, bad movie, that's all.
+> Whatever you do, do the best you can, because the film lives forever. "No, because, that day was raining, and the actor didn't have time...". Would you go to every theater to tell the audience? No! The audience sees in the theater: good movie, bad movie, that's all.
 
 I think about this quote very often because it applies to every kind of published work and, indeed, our whole economy. As agents in a free market, we do not need to contort ourselves into sympathizing with whatever decisions led to the inclusion of advertisements in a product; we just need to say "bad movie" and pick something else. It is the seller's responsibility to make good work and earn our favor.
 
