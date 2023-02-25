@@ -294,7 +294,7 @@ def permute(pool, query=tuple()):
         if complete_tag_index.get(query):
             return
 
-        articles = list(P.search(tag_musts=query))
+        articles = list(P.search(tag_musts=query).results)
         if not articles:
             return
 
