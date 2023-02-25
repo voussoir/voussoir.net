@@ -119,6 +119,11 @@ article *
     border-radius: 8px;
 }
 
+article > audio
+{
+    width: 100%;
+}
+
 p > img,
 p > a > img
 {
