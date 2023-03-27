@@ -427,7 +427,7 @@ def write_writing_index():
     <link rel="stylesheet" href="/writing/dark.css"/>
     <link rel="alternate" type="application/atom+xml" href="/writing/writing.atom"/>
     <link rel="alternate" type="application/rss+xml" href="/writing/writing.rss"/>
-    <title>Writing</title>
+    <title>writing</title>
     </head>
 
     <body>
