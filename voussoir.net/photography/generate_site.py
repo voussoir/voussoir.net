@@ -263,7 +263,7 @@ def write_directory_index(directory):
     }
     function scroll_to_img(img)
     {
-        const img_centerline = img.offsetTop + (img.offsetHeight / 2);
+        const img_centerline = img.offsetParent.offsetTop + img.offsetTop + (img.offsetHeight / 2);
         // document.body.scrollTop = img_centerline - (window.innerHeight / 2);
         desired_scroll_position = Math.round(img_centerline - (window.innerHeight / 2));
         scroll_step();
@@ -348,11 +348,12 @@ def make_thumbnail(photo):
     if small_name.is_file:
         return small_name
     image = PIL.Image.open(photo.absolute_path)
+    icc = image.info.get('icc_profile')
     (image_width, image_height) = image.size
     exif = image.getexif()
     (width, height) = imagetools.fit_into_bounds(image_width, image_height, 1440, 1440)
     image = image.resize((width, height), PIL.Image.LANCZOS)
-    image.save(small_name.absolute_path, quality=75, exif=exif)
+    image.save(small_name.absolute_path, quality=75, exif=exif, icc_profile=icc)
     print(small_name)
     return small_name
 
