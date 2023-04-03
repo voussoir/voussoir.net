@@ -77,7 +77,7 @@ As such, of these three kinds of advertisements, sponsorships are the ones that 
 
 ### The basics of capitalism
 
-Capitalism is a complicated topic. The core principles are pretty simple and don't sound inherently malicious, at least to me. Sellers try to sell for the highest price they can, buyers try to buy for the lowest, and everybody either strikes a deal they're satisfied with or goes home empty-handed. Beyond the essentials of food, water, and shelter, the human as animal doesn't technically need very much, and the worst that can happen in most transactions is disappointment.
+Capitalism is a complicated topic. The core principles are pretty simple and don't sound inherently malicious, at least to me. Sellers try to sell for the highest price they can, buyers try to buy for the lowest, and everybody either strikes a deal they're satisfied with or goes home empty-handed. Beyond the essentials of [food, water, and shelter](https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs), the human as animal doesn't technically need very much, and the worst that can happen in most transactions is disappointment.
 
 Sellers do research to learn buying habits, buyers do research to learn of alternative sellers and price points. Sellers don't necessarily need to have the absolute highest quality product on the market, they just need to hit a good quality-per-price ratio, or value, to accommodate different segments of the market: some buyers are professionals who need the best quality tools and will pay a lot for them, other buyers just need something that works well enough.
 
