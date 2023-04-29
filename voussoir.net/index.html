@@ -112,7 +112,7 @@ code { font-family: monospace; }
 {
     animation-name: splash_pulsate;
     animation-duration: 0.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 16;
     /* Helps prevent line wrap changing height on narrow screens */
     height: 2em;
 }
@@ -1348,7 +1348,6 @@ const SUNGLASSES_SPLASHES = [
 SPLASHES.push(...SUNGLASSES_SPLASHES);
 SPLASHES.push(`${SPLASHES.length + 1} splash texts? that's a lot!`);
 let SPLASH_INDEX = 0;
-const SPLASH_INTERVAL = 8000;
 
 function shuffle_splashes()
 {
@@ -1378,35 +1377,34 @@ function next_splash_text()
     return text;
 }
 
-let splash_anim_timeout;
 const HEADLINE_SPLASH = document.getElementById("headline_splash");
-function splash_fade_out()
+function splash_animationend(event)
 {
-    HEADLINE_SPLASH.classList.add("shrink_out");
-    splash_anim_timeout = setTimeout(splash_fade_in, 250);
-}
-function splash_fade_in()
-{
-    HEADLINE_SPLASH.classList.remove("shrink_out");
-    const new_text = next_splash_text();
-    if (SUNGLASSES_SPLASHES.indexOf(new_text) > -1 && document.hasFocus() && (! document.body.classList.contains("justthesplash")))
+    if (HEADLINE_SPLASH.classList.contains("shrink_out"))
     {
-        reveal_sunglasses();
+        HEADLINE_SPLASH.classList.remove("shrink_out");
+        const new_text = next_splash_text();
+        if (SUNGLASSES_SPLASHES.indexOf(new_text) > -1 && document.hasFocus() && (! document.body.classList.contains("justthesplash")))
+        {
+            reveal_sunglasses();
+        }
+        HEADLINE_SPLASH.innerText = new_text;
+        HEADLINE_SPLASH.classList.add("grow_in");
     }
-    HEADLINE_SPLASH.innerText = new_text;
-    HEADLINE_SPLASH.classList.add("grow_in");
-    splash_anim_timeout = setTimeout(splash_fade_end, 250);
-}
-function splash_fade_end()
-{
-    HEADLINE_SPLASH.classList.remove("grow_in");
-    splash_anim_timeout = setTimeout(cycle_splash, SPLASH_INTERVAL);
+    else if (HEADLINE_SPLASH.classList.contains("grow_in"))
+    {
+        HEADLINE_SPLASH.classList.remove("grow_in");
+    }
+    else
+    {
+        HEADLINE_SPLASH.classList.add("shrink_out");
+    }
 }
 function cycle_splash()
 {
-    clearTimeout(splash_anim_timeout);
-    splash_fade_out();
+    HEADLINE_SPLASH.classList.add("shrink_out");
 }
+HEADLINE_SPLASH.addEventListener("animationend", splash_animationend);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
