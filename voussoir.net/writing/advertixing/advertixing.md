@@ -797,6 +797,9 @@ Youtubers, the people:
 - [Strange Asian Holes](https://www.youtube.com/watch?v=tSI-kj9A_pc "STOP DOING THIS - Strange Asian Holes - iDubbbz").
 - Five minute crafts ([How To Cook That](https://www.youtube.com/watch?v=pvqa8dsBtno "Debunking Fake Videos & WHO'S behind 5-min crafts?"), [Folding Ideas](https://www.youtube.com/watch?v=4EXVrzOACv4&t=15m42s "Cooking Food On The Internet For Fun And Profit")).
 - [Copycats](https://www.youtube.com/results?search_query=primitive+technology) riding on the coattails of [Primitive Technology](https://youtube.com/channel/UCAL3JXZSzSm8AlZyD3nQdBA). Notice their awkward titles creaking under the weight of SEO keywords, their clickbaity photoshopped thumbnails, and their "child holding item to camera with a Wow face" cheapshots. OG PT would never do this. ([JonTron](https://www.youtube.com/watch?v=RiGDwQy6eoE)). (Temporal note: youtube has reduced the search ranking of the copycats since I included this so you will have to scroll down a bit. Great!)
+- Linus Tech Tips descends into thumbnail hell.
+
+    ![](linustechtips.jpg)
 
 Reddit:
 
