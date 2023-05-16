@@ -203,7 +203,7 @@ David Foster Wallace comments on advertisements that make fun of advertisements:
 
 > Isuzu Inc. hit pay dirt with its series of "Joe Isuzu" spots, featuring an oily, Satanic-looking salesman who told whoppers about Isuzus' genuine llama-skin upholstery and ability to run on tap water. Though the ads rarely said much of anything about why Isuzus are in fact good cars, sales and awards accrued. The ads succeeded as parodies of how oily and Satanic car commercials are. They invited viewers to congratulate Isuzu ads for being ironic, to congratulate themselves for getting the joke, and to congratulate Isuzu Inc. for being "fearless" and "irreverent" enough to acknowledge that car ads are ridiculous and that the Audience is dumb to believe them. The ads invite the lone viewer to drive an Isuzu as some sort of anti-advertising statement. The ads successfully associate Isuzu-purchase with fearlessness and irreverence and the capacity to see through deception.
 
-> [E unibus pluram (1993)](e_unibus_pluram.epub)
+> [E unibus pluram (1993)](e_unibus_pluram.html)
 
 > https://www.youtube.com/watch?v=nJMq_7alQpU [footnote_link]
 
