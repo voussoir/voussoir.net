@@ -263,7 +263,7 @@ def write_directory_index(directory):
     }
     function scroll_to_img(img)
     {
-        const img_centerline = img.offsetParent.offsetTop + img.offsetTop + (img.offsetHeight / 2);
+        const img_centerline = img.getBoundingClientRect().top + img.ownerDocument.defaultView.pageYOffset + (img.offsetHeight / 2);
         // document.body.scrollTop = img_centerline - (window.innerHeight / 2);
         desired_scroll_position = Math.round(img_centerline - (window.innerHeight / 2));
         scroll_step();
