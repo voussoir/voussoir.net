@@ -292,7 +292,7 @@ def add_header_anchors(soup):
     '''
     Give each <hX> an <a> to link to it.
     '''
-    header_pattern = re.compile(rf'^h[1-6]$')
+    header_pattern = re.compile(rf'^h[2-6]$')
     used_slugs = set()
 
     for header in soup.find_all(header_pattern):
