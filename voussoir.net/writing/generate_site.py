@@ -85,9 +85,12 @@ def git_file_edited_date(path) -> datetime.datetime:
         path,
     ]
     date = check_output(command)
-    date = dateutil.parser.parse(date)
-    date = date.astimezone(datetime.timezone.utc)
-    return date
+    if date:
+        date = dateutil.parser.parse(date)
+        date = date.astimezone(datetime.timezone.utc)
+        return date
+    else:
+        return datetime.datetime.now(datetime.timezone.utc)
 
 def git_file_commit_history(path):
     '''
@@ -134,9 +137,12 @@ def git_file_published_date(path) -> datetime.datetime:
         path,
     ]
     date = check_output(command)
-    date = dateutil.parser.parse(date)
-    date = date.astimezone(datetime.timezone.utc)
-    return date
+    if date:
+        date = dateutil.parser.parse(date)
+        date = date.astimezone(datetime.timezone.utc)
+        return date
+    else:
+        return datetime.datetime.now(datetime.timezone.utc)
 
 # SOUP
 ################################################################################
