@@ -231,31 +231,42 @@ When two different websites use the same advertising package -- take Google AdSe
 
 The vague concept of web tracking has become widely known in the past few years, but I think the specifics of how it works have not. Let's make this perfectly clear: the only reason advertisers are able to follow you around the internet is because all of the websites you visit are inviting them in. You are on a daily basis being betrayed by almost everyone who has even the slightest financial incentive to betray you. They will sell you off for a single cent, because $0.01 is bigger than $0.00. Why do you tolerate this? When Google tracks you, you must blame more than just Google, you must blame every single webpage that invited Google into the session.
 
-It's time for a pop quiz! Ready?
+In 2018, the [GDPR](https://gdpr.eu/) went into effect. The General Data Protection Regulation, from the European Union, is a set of rules and regulations surrounding user privacy on the internet, and the storage of personally identifying information by website operators. Although the GDPR is an EU regulation, the effects are felt internationally since most companies want the opportunity to do business in as many markets as they can. Compliance with the GDPR means, for example:
 
-![Screenshot from mcdonalds.com shows their "Privacy Preference Center" with settings for targeting cookies. Targeting cookies are enabled by default. The dialog reads "These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising".](mcdonalds_cookies.png)
+- Users should be able to request a download of any personal information the website is storing about them.
+- Users should be able to request that the website delete any personal information about them -- that is, truly delete, not just hide from the public.
+- Users should be made aware, in advance, that their data is being collected and what it will be used for.
+- Users should be able to opt out of non-essential data collection.
 
-Question: How can McDonalds make the above cookie menu a better experience for the end user?
+And that brings us to cookies. Of the GDPR's effects, the rise of the "cookie banner" is certainly the most prominent and recognizable by the average person even if they don't know its background.
 
-A) Allow the user to dismiss the modal by clicking the background area, instead of just the X.
+Cookies are small pieces of information that the website sends to your computer, and asks your computer to hold on to, so that it can recognize you next time you come back. The cookie is your way of saying "hey, it's me again" and have [long been used](RFC2109.html) to maintain account logins, settings, and shopping carts. Cookies are very helpful.
 
-B) Add a one-click "Accept all" button so the user doesn't have to think about what they're reading.
+They have also been used for tracking and advertising. When a publisher invites an advertiser's javascript package onto their webpage, that javascript package will leave behind cookies so that when I leave website1.com and go to website2.com, the advertiser can see that I am the same person. By correlating my various interests with statistics from the rest of their tracked population, they can decide what type of advertisement is most likely to convince me to buy their product, and show me that one.
 
-C) Remind the user that this is all the GDPR's fault and we really wish we didn't have to do this.
+The GDPR did not invent the cookie, nor did it invent tracking, but by requiring websites to disclose the fact that the user is being tracked, it essentially invented the cookie banner. Six years down the road, I'm sick of cookie banners, [you're sick of cookie banners](i-dont-care-about-cookies.eu.html), and we're all sick of the cutesy cookie graphics they put on them.
 
-D) Stop using trackers and eliminate the entire thing.
+![By clicking 'accept all cookies', you agree Stack Exchange can store cookies on your device and disclose information in accordance with our cookie policy.](stackexchange_cookies.png)
 
-The correct answer is D! The GDPR does not require companies to obtain cookie consent if the only cookies used are completely necessary for the website to function:
+You will have noticed that a large percentage of cookie banners out there have one great big button for "accept all", because this is the advertiser's preferred choice; and another, smaller, less contrasty and less prominent button for "customize" or "configure". And that the even the customization menu is loaded with [dark patterns](https://en.wikipedia.org/wiki/Dark_pattern) and guilt-trip language like "we're using cookies to improve your experience".
+
+![When you click 'Accept all' cookies, Aarhus University can give you the best user experience.](aarhus_cookies.png "Notice how even when the user is in the configuration menu, the 'accept all' button has more prominence than the button that confirms the user's actual choices")
+
+Don't you wish cookie banners would just go away already? Oh, but wait, we never actually needed them in the first place:
 
 > Strictly necessary cookies — These cookies are essential for you to browse the website and use its features, such as accessing secure areas of the site. Cookies that allow web shops to hold your items in your cart while you are shopping online are an example of strictly necessary cookies. These cookies will generally be first-party session cookies. While it is not required to obtain consent for these cookies, what they do and why they are necessary should be explained to the user.
 
 > https://gdpr.eu/cookies/
 
-Whenever you see a cookie banner that starts with the phrase "Because we respect your right to privacy, ...", just remember that they don't actually respect you enough to stop sending you trackers. They'd rather moan and whine about how the GDPR forced their hand into adding this big annoying cookie banner and there was just no other way, we're so sorry you have to deal with it. Indeed, many cookie banners can be considered a form of [malicious compliance](https://en.wikipedia.org/wiki/Malicious_compliance) -- if the website can convince you that a banner is required for all forms of cookies and that the law is to blame, they can sway public opinion against the legislature. The big bad government is the one ruining your web browsing experience, not us. Contact your representatives and get them to repeal GDPR so we can go back to sending you all of our trackers without telling you, the way it used to be.
+The GDPR does not require the user to be prompted for cookies that are necessary for the website to work. Let that sink in for a moment. Every single cookie banner you've encountered since 2018 has been a self-admission of nonessential tracking and advertising by the operator, standing between you and the actual reason you went to the website in the first place, because their opportunity to make $0.01 was more important than producing a site or publication that is pleasant to read and use. Didn't you say you're doing this to [improve my experience](https://www.youtube.com/watch?v=YWdD206eSv0 "You really think someone would do that? Just go on the internet and tell lies?")?
+
+And whenever you see a cookie banner that starts with the phrase "Because we respect your right to privacy, ...", just remember that they don't actually respect you enough to stop sending you trackers. That would just be too easy. They'd rather moan and whine about how the GDPR forced their hand into adding this big annoying cookie banner and there was just no other way, we're so sorry you have to deal with it. Indeed, these kinds of cookie banners can be considered a form of [malicious compliance](https://en.wikipedia.org/wiki/Malicious_compliance) -- if the website can convince you that a banner is required for all forms of cookies and that the law is to blame, they can sway public opinion against the legislature. The big bad government is the one ruining your web browsing experience, not us. Contact your representatives and get them to repeal GDPR so we can go back to sending you all of our trackers without telling you, the way it used to be.
+
+![](becausewerespectyourrighttoprivacy.png)
 
 If the user declines the tracking cookies, you can punish them by showing them the banner every time they come back, until they give up and accept (or block the element with their adblocker). If you wanted the "don't show me the banner again" cookie to persist, you should have enabled cookies! Bwahahahahaha.
 
-If you're interested in this topic, you've probably already heard the apocryphal story about Target [inadvertently outing a young pregnant girl](nyt_target_story.html) by sending maternity-related coupons to the family:
+Ok, that's enough about cookies. If you're interested in the topic of targeted advertising, you've probably already heard the apocryphal story about, appropriately, Target [inadvertently outing a young pregnant girl](nyt_target_story.html) by sending maternity-related coupons to the family's home:
 
 > "My daughter got this in the mail!" he said. "She's still in high school, and you're sending her coupons for baby clothes and cribs? Are you trying to encourage her to get pregnant?"
 
@@ -273,7 +284,7 @@ I think the Target story is fake, or greatly enhanced, but nevertheless it has b
 
 Why do I think the Target story may be false?
 
-1. The article cites "an employee who participated in the conversation", so nobody was willing to put their name on these quotes, giving the author free reign to embellish. The tidy plotline and the father's eloquence sound like the conceit of an author, though oddly they forgot to mention that he received a [round of applause and $100](https://old.reddit.com/r/thathappened) for his humility.
+1. The article cites "an employee who participated in the conversation", so nobody was willing to put their name on these quotes, giving the author free reign to embellish. The tidy plotline and the father's eloquent speech sound like the conceit of an author, though oddly they forgot to mention that he received a [round of applause and $100](https://old.reddit.com/r/thathappened) for his humility.
 
 2. Even if the coupon packets were distributed at random, they're bound to hit this kind of situation at least once with an audience of Target's size. This is a typical statistical "surprise" [footnote_link].
 
@@ -301,7 +312,7 @@ This principle of data collection should not be considered slimy in and of itsel
 
 The problem is that advertisers haven't really figured out how to deliver on the whole well-targeted ads premise yet, but they're storing absolutely everything they can so they'll be ready for the algorithmic breakthrough if and when it comes. They're like pathological hoarders who keep every single paperclip because "it might come in handy someday", except the paperclip is your mother's maiden name and place of birth.
 
-So if you think targeted advertisements are already accurate beyond detection and advertisers are [magic-bulletting](https://en.wikipedia.org/wiki/Hypodermic_needle_model) the population, you have cause for upset. And if you think targeted advertisements are still "buy more vacuums"-level useless, then that means that despite collecting the private details of billions of peoples' lives over several years, the advertising industry is too pathetically incompetent to make anything of it and is clearly unfit for the responsibility of handling such data in the first place, and you have cause for upset. [Get upset!](https://www.youtube.com/watch?v=ZwMVMbmQBug&t=1m09s "I'm as mad as hell and I'm not going to take this any more!")
+So if you think targeted advertisements are already accurate beyond detection and advertisers are [magic-bulletting](https://en.wikipedia.org/wiki/Hypodermic_needle_model) the population, you have cause for upset. And if you think targeted advertisements are still "buy more vacuums"-level useless, then that means that despite collecting the private details of billions of people's lives over several years, the advertising industry is too pathetically incompetent to make anything of it and is clearly unfit for the responsibility of handling such data in the first place, and you have cause for upset. [Get upset!](https://www.youtube.com/watch?v=ZwMVMbmQBug&t=1m09s "I'm as mad as hell and I'm not going to take this any more!")
 
 [footnote_text] When you pick a random number between one and one million, do you think it feels lucky?
 
