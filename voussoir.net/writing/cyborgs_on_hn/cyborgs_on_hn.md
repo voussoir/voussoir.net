@@ -3,6 +3,160 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> "We switched to $BUZZWORD and reduced $LOOSELY_UNDERSTOOD_METRIC by $STIMULATING_NUMBER !"
+
+> Never tell them it's just because of all the technical debt you finally had organizational will to pay off.
+
+-
+
+> We've had great luck at $CURJOB with forum software.
+
+-
+
+> Why have a geofilter if the vast majority of people are logging into the site to see if anyone is talking shit about $COMPANY and the only way to make money is if $COMPANY pays you off to take those posts down?
+
+-
+
+> \> On a PC laptop it often is. Even on many all in ones now.
+
+> s/even/especially/
+
+-
+
+> Facebook\^W Meta is scum.
+
+-
+
+> People who don't own $valuable_asset believe that it should be regulated and there should be mechanisms in place so that everyone has some $valuable_asset.
+
+-
+
+> How does one go about getting such numbers? Do a web search for "$BANK_NAME virtual credit card number"?
+
+-
+
+> It's supposedly a mere slip slope from there to every restaurant and grocer in town refusing to sell food to members of $Disadvantaged_Group, causing them to die of starvation.
+
+-
+
+> But no, now that the market has been oligopolized, it's more profitable to show you what you don't want, and you'll have to be satisfied with whatever incidental successes you manage while wading through the output of the Search\^h\^h\^h\^h\^h Sell-You-Things Engine.
+
+-
+
+> If, when it really matters, the actual & on-hand operating staff for $SYSTEM cannot understand even basics of the controls for $SYSTEM - then you're control UI is a complete failure, and you'll end up f\*cked.
+
+-
+
+> I have also started looking at it, by $REAL_JOB doesn't leave that much time.
+
+-
+
+> Something I've always wondered is how people actually do the backwards alphabet test. I don't think I could efficiently do it sober, but I do have an O(n^(2)) algorithm for doing it; sing the ABCs in your head, and only say the letter before the one you've already said.
+
+-
+
+> So this means that /r/$FOO is not actually a subreddit about $FOO, moderated so that exactly any non-spam discussion about $FOO is allowed, but rather a dictatorship ran by whoever happened to grab the name first.
+
+> > if you don't like the actions of mods on a subreddit you can just make another subreddit (including in your company example, if the company does /r/$NEWPRODUCT and removes all negative opinions people can easily to /r/$NEWPRODUCT-community and run it as they wish instead)
+
+-
+
+> I was just thinking that this weekend in the Seattle area as we wandered the aisles for six for the wife. It's either an attempt to put the scariest-looking skull(s) on the label, or $SOMETHING $SEXUAL_REFERENCE $FARM_ANIMAL (e. g., Ass-Kickin' Horny Goat Stout).
+
+-
+
+> Legitimately seems like a GPT-tier confusion. Just put all the somewhat-relevant words in a syntactically correct configuration and call it done.
+
+-
+
+> Half a decade? Hasn't it been going on for well over 40 years by this point?
+
+> > s/decade/century/
+
+-
+
+> Please stop. These discussions never lead anywhere, and all they reveal in the end is that $SOME_AI_PROJECT doesn't meet $YOUR_IDIOSYNCRATIC_DEFINITION_OF_AI.
+
+-
+
+> Time to enjoy some sweet O_2 molecules.
+
+-
+
+> s/guy/woman
+
+-
+
+> s/West/USA/
+
+-
+
+> possible with the current deepf\^Wparody technology
+
+-
+
+> This Python dictionary could be useful for $HOBBYIST who is learning about $HOBBY and could help people familiar with $HOBBY to remember terms or use it for guidance in improving their skills at $HOBBY.
+
+-
+
+> Newspapers do the kind of in depth investigation as their bread in butter that other mediums rarely if ever participate in.
+
+> > s/do/did/
+
+-
+
+> Oh dear $deity. Why does it insist on capitalizing "and" in the middle of a sentence?
+
+-
+
+> Atheist as in "has replaced $god with some gnostic belief system", no thanks. 
+
+-
+
+> At $job-4 I had the following exchange with HR
+
+-
+
+> The form this argument always takes is:
+
+> 1) undesirable_outcome will not happen, and here's a rational argument why.
+
+> 2) ok, undesirable_outcome did happen but it wasn't undesirable in the first place and here's a rational argument why
+
+-
+
+> Adding a "if user lives in $city then he probably won't stay in a hotel in $city" would have a positive impact in all Google Maps users
+
+-
+
+> Maybe they're a LLM and got confused by the keyword "conspiracy theory" and the double negative in the statement.
+
+-
+
+> edit: s/meandering/rambling
+
+-
+
+> Or just today I saw "$PROJECT is used by these awesome projects"
+
+-
+
+> So complaints about rootkits\^W anti-cheat is a banned topic now?
+
+-
+
+> And he was really struck at first, like "Why would you write Hello World when we're building a $WHATEVER?"
+
+-
+
+> Then he should be a $POSITION at $BIGCORP.
+
+-
+
+> More realistically, you're more likely to hit "yes if there is compelling evidence that $choice is better than $status_quo with respect to $criteria".
+
+-
+
 > \> It really cannot be overstated enough the wealth divide that pandemic QE created.
 
 > :s/\\\<created\\\>\.$/exacerbated./
