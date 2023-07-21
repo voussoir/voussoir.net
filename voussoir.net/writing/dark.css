@@ -44,6 +44,10 @@ article
     padding: 16px;
     background-color: var(--color_bodybg);
 }
+article address
+{
+    font-style: normal;
+}
 @media not print
 {
     article
@@ -252,7 +256,7 @@ https://github.com/richleland/pygments-css
 .highlight .nf { color: var(--color_monokai_green) } /* Name.Function */
 .highlight .nl { color: var(--color_monokai_white) } /* Name.Label */
 .highlight .nn { color: var(--color_monokai_white) } /* Name.Namespace */
-.highlight .nx { color: var(--color_monokai_green) } /* Name.Other */
+.highlight .nx { color: var(--color_monokai_white) } /* Name.Other */
 .highlight .py { color: var(--color_monokai_white) } /* Name.Property */
 .highlight .nt { color: var(--color_monokai_pink) } /* Name.Tag */
 .highlight .nv { color: var(--color_monokai_white) } /* Name.Variable */

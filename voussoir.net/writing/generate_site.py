@@ -10,6 +10,7 @@ import re
 import subprocess
 import vmarkdown
 
+from voussoirkit import dotdict
 from voussoirkit import pathclass
 from voussoirkit import spinal
 from voussoirkit import winwhich
@@ -19,20 +20,6 @@ P = etiquette.photodb.PhotoDB(ephemeral=True)
 WRITING_ROOTDIR = pathclass.Path(__file__).parent
 
 GIT = winwhich.which('git')
-
-ARTICLE_TEMPLATE = '''
-[Back to writing](/writing)
-
-{body}
-
----
-
-[View this document's history]({github_history})
-
-{commits}
-
-Contact me: writing@voussoir.net
-'''
 
 # HELPERS
 ################################################################################
@@ -87,7 +74,7 @@ def git_file_edited_date(path) -> datetime.datetime:
     date = check_output(command)
     if date:
         date = dateutil.parser.parse(date)
-        date = date.astimezone(datetime.timezone.utc)
+        # date = date.astimezone(datetime.timezone.utc)
         return date
     else:
         return datetime.datetime.now(datetime.timezone.utc)
@@ -107,16 +94,24 @@ def git_file_commit_history(path):
         '-C', repo.absolute_path,
         'log',
         '--follow',
-        '--pretty=format:%H %ad %s',
-        '--date=short',
+        '--pretty=format:%H///%ad///%s',
+        '--date=iso',
         '--',
         path,
     ]
     output = check_output(command)
     lines = [line for line in output.splitlines() if line.strip()] #'*' in line]
-    lines = [re.sub(r'([\*\_\[\]\(\)\^])', r'\\\1', line) for line in lines]
-    lines = [line.split(' ', 1) for line in lines]
-    return lines
+    lines = [line.split('///', 2) for line in lines]
+    commits = []
+    for (commit_hash, date, title) in lines:
+        commit = dotdict.DotDict({
+            'hash': commit_hash,
+            'date': dateutil.parser.parse(date),
+            'title': title,
+        })
+        commits.append(commit)
+    commits.sort(key=lambda commit: commit.date, reverse=True)
+    return commits
 
 def git_file_published_date(path) -> datetime.datetime:
     '''
@@ -139,7 +134,7 @@ def git_file_published_date(path) -> datetime.datetime:
     date = check_output(command)
     if date:
         date = dateutil.parser.parse(date)
-        date = date.astimezone(datetime.timezone.utc)
+        # date = date.astimezone(datetime.timezone.utc)
         return date
     else:
         return datetime.datetime.now(datetime.timezone.utc)
@@ -221,25 +216,33 @@ class Article:
         github_history = f'https://github.com/voussoir/voussoir.net/commits/master/{relative_path}'
 
         commits = git_file_commit_history(self.md_file)
-        self.publication_id = f'{commits[-1][0]}/{self.md_file.parent.basename}' if commits else None
+        self.publication_id = f'{commits[-1].hash}/{self.md_file.parent.basename}' if commits else None
 
-        commits = [
-            f'- [{html.escape(line)}](https://github.com/voussoir/voussoir.net/commit/{hash})'
-            for (hash, line) in commits
-        ]
-        commits = '\n'.join(commits)
-
-        md = vmarkdown.cat_file(self.md_file.absolute_path)
-        md = ARTICLE_TEMPLATE.format(
-            body=md,
-            github_history=github_history,
-            commits=commits,
-        )
         self.soup = vmarkdown.markdown(
-            md,
+            self.md_file.read('r', encoding='utf-8'),
             css=WRITING_ROOTDIR.with_child('dark.css').absolute_path,
             return_soup=True,
         )
+        header = jinja2.Template('''
+        <p><a href="/writing">Back to writing</a></p>
+        ''').render()
+        footer = jinja2.Template('''
+        <hr/>
+        <p><a href="{{github_history}}">View this document's history</a></p>
+        <ul>
+            {% for commit in commits %}
+            <li><a href="https://github.com/voussoir/voussoir.net/commit/{{commit.hash}}"><time datetime="{{commit.date.isoformat()}}">{{commit.date.strftime('%Y-%m-%d')}}</time> {{commit.title}}</a></li>
+            {% endfor %}
+        </ul>
+
+        <address>Contact me: writing@voussoir.net</address>
+        ''').render(
+            github_history=github_history,
+            commits=commits,
+        )
+        self.soup.article.insert(0, bs4.BeautifulSoup(header, 'html.parser'))
+        self.soup.article.append(bs4.BeautifulSoup(footer, 'html.parser'))
+
         if self.soup.head.title:
             self.title = self.soup.head.title.get_text()
         else:
@@ -346,6 +349,7 @@ def make_tag_page(index, path):
     path = '/'.join(path)
 
     page = jinja2.Template('''
+    <!DOCTYPE html>
     <html>
     <head>
     <link rel="icon" href="/favicon.png" type="image/png"/>
@@ -375,7 +379,7 @@ def make_tag_page(index, path):
     <ol class="article_list">
     {% for article in articles %}
     <li>
-        <a href="{{article.web_path}}">{{article.published_date}} - {{article.title|e}}</a>
+        <a href="{{article.web_path}}"><time datetime="{{article.published_iso}}">{{article.published_date}}</time> - {{article.title|e}}</a>
     </li>
     {% endfor %}
     </ol>
@@ -442,7 +446,7 @@ def write_writing_index():
     <ol class="article_list">
     {% for article in articles %}
         <li>
-        <a href="{{article.web_path}}">{{article.published_date}} - {{article.title|e}}</a>
+        <a href="{{article.web_path}}"><time datetime="{{article.published_iso}}">{{article.published_date}}</time> - {{article.title|e}}</a>
         </li>
     {% endfor %}
     </ol>
@@ -457,7 +461,7 @@ def write_writing_index():
     {% for article in articles_edited %}
         {% if article.edited and article.edited != article.published %}
         <li>
-        <a href="{{article.web_path}}">{{article.edited_date}} - {{article.title|e}} ({{article.published_date}})</a>
+        <a href="{{article.web_path}}"><time datetime="{{article.edited_iso}}">{{article.edited_date}}</time> - {{article.title|e}} ({{article.published_date}})</a>
         </li>
         {% endif %}
     {% endfor %}
@@ -538,7 +542,7 @@ def write_rss():
 ARTICLES = {
     file: Article(file)
     for file in spinal.walk(WRITING_ROOTDIR)
-    if file.extension == 'md' and file.parent != WRITING_ROOTDIR
+    if file.extension == 'md' and file.parent != WRITING_ROOTDIR and '_unpublished' not in file.absolute_path
 }
 
 ARTICLES_PUBLISHED = {file: article for (file, article) in ARTICLES.items() if article.publication_id}
