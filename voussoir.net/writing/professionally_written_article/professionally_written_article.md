@@ -44,6 +44,8 @@
 
 ![](hero.jpg "I was told I needed a hero")
 
+[tag:journalism]
+
 A professionally written article
 ================================
 
@@ -119,7 +121,7 @@ Little Debbie assured the public she would continue to produce baked goods and t
 
 But our anonymous sources tell us otherwise.
 
-Just before the end of the debate, the CEO of YouTube was awarded the world's first "Free Expression Award" after a unanimous decision by a committe consisting of just the CEO.
+Just before the end of the debate, the CEO of YouTube was awarded the world's first "Free Expression Award" after a unanimous decision by a committee consisting of just the CEO.
 
 [![](photo_small.jpg)](photo_large.jpg "Click to see full-size image")
 
