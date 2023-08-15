@@ -150,6 +150,7 @@ def write_directory_index(directory):
     items.sort(key=lambda item: item.published, reverse=sort_reverse)
 
     page = jinja2.Template('''
+    <!DOCTYPE html>
     <html>
     <head>
     <meta charset="UTF-8">

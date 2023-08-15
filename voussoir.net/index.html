@@ -55,7 +55,6 @@ body.start_eating_that_trashcan
 h2
 {
     font-size: 3em;
-    border-bottom: 2px solid var(--color_text_highlight);
     color: var(--color_text_highlight);
 }
 
@@ -189,18 +188,20 @@ code { font-family: monospace; }
     animation-iteration-count: 1;
 }
 
-.width_limited
-{
-    width: 100%;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .cvitem
 {
     width: 100%;
     padding: 16px;
+    border-radius: 16px;
+    display: grid;
+    grid-column-gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: #1a1a1a;
+    box-shadow: #000 0px 0px 40px -10px;
+}
+.cvitem:nth-of-type(odd)
+{
 }
 .cvitem:nth-of-type(even)
 {
@@ -209,16 +210,6 @@ code { font-family: monospace; }
     background-size: 120px;
     background-position-x: -30px;
     background-position-y: -30px;
-}
-.cvitem:nth-of-type(odd) > div
-{
-    display: grid;
-    grid-column-gap: 16px;
-}
-.cvitem:nth-of-type(even) > div
-{
-    display: grid;
-    grid-column-gap: 16px;
 }
 .cvitem_logo
 {
@@ -277,24 +268,34 @@ body.start_eating_that_trashcan .cvitem_details
         --wide: 1;
     }
 
+    body
+    {
+        width: 100%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #headline { line-height: 3.25em; }
     #headline_l1 { font-size: 5.0em; }
     #headline_splash { font-size: 1.5em; }
 
-    .cvitem:nth-of-type(odd) > div
+    .cvitem:nth-of-type(odd)
     {
+        /*transform: translate(-96px, 0);*/
         grid-template:
             "logo title" auto
             "logo details" 1fr
-            / 1fr 3fr;
+            / 192px 3fr;
     }
 
-    .cvitem:nth-of-type(even) > div
+    .cvitem:nth-of-type(even)
     {
+        /*transform: translate(96px, 0);*/
         grid-template:
             "title logo" auto
             "details logo" 1fr
-            / 3fr 1fr;
+            / 3fr 192px;
     }
 }
 
@@ -305,18 +306,24 @@ body.start_eating_that_trashcan .cvitem_details
         --narrow: 1;
     }
 
+    body
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
     #headline { line-height: 2.25em; }
     #headline_l1 { font-size: 3em; }
     #headline_splash { font-size: 1.5em; }
 
-    .cvitem:nth-of-type(odd) > div
+    .cvitem:nth-of-type(odd)
     {
         grid-template:
             "logo title" auto
             "details details" 1fr
             / 1fr 3fr;
     }
-    .cvitem:nth-of-type(even) > div
+    .cvitem:nth-of-type(even)
     {
         grid-template:
             "title logo" auto
@@ -380,25 +387,43 @@ body.start_eating_that_trashcan .cvitem_details
     right: 64px;
     bottom: 64px;
 }
+
+@keyframes buffer_rotate
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+#buffer_rotate
+{
+    animation-name: buffer_rotate;
+    animation-duration: 1s;
+    animation-timing-function: steps(8, start);
+    animation-iteration-count: infinite;
+}
 </style>
 </head>
 
 <body>
     <section id="headline">
-        <div class="tilt_holder width_limited">
+        <div class="tilt_holder">
             <h1 id="headline_l1">voussoir.net</h1>
         </div>
-        <div class="tilt_holder width_limited">
+        <div class="tilt_holder">
             <div id="headline_splash"><noscript>somewhat new and hardly improved</noscript></div>
         </div>
         <button id="headline_fullscreen_button" onclick="return fullscreen_toggle();">⛶</button>
     </section>
 
     <section id="cv">
-    <h2 class="width_limited" id="software">Software</h2>
+        <h2 id="software">Software</h2>
 
-    <div class="cvitem">
-        <div class="width_limited">
+        <div class="cvitem">
             <h3 class="cvitem_title" id="trkpt">trkpt</h3>
             <div class="cvitem_details">
                 <p>trkpt is a 24/7 GPS recorder that shows me where I've been.</p>
@@ -407,10 +432,8 @@ body.start_eating_that_trashcan .cvitem_details
             </div>
             <img class="cvitem_logo" style='background-color: transparent !important' src="./cv/trkpt.png"/>
         </div>
-    </div>
 
-    <div class="cvitem">
-        <div class="width_limited">
+        <div class="cvitem">
             <h3 class="cvitem_title" id="bringrss">BringRSS</h3>
             <div class="cvitem_details">
                 <p>BringRSS is an RSS client and newsreader with a web interface, made with Flask and SQLite3. RSS is a great way to keep up with your favorite forums, bloggers, podcasts, and newspapers since all the new posts come straight to you in a single place. BringRSS can send news objects to your own Python scripts, allowing for powerful automation like podcast downloading, email notifications, and other more niche features that would be outside the scope of the BringRSS application itself.</p>
@@ -419,10 +442,8 @@ body.start_eating_that_trashcan .cvitem_details
             </div>
             <img class="cvitem_logo" src="./cv/bringrss.png"/>
         </div>
-    </div>
 
-    <div class="cvitem">
-        <div class="width_limited">
+        <div class="cvitem">
             <h3 class="cvitem_title" id="ycdl">YCDL</h3>
             <div class="cvitem_details">
                 <p>YoutubeChannelDownloader was born out of a dissatisfaction with YouTube's own interface for keeping track of which videos I have already watched, as well as a desire to integrate with youtube-dl. YCDL makes it easy for me to watch through a channel's catalog of videos, picking which ones I'd like to download while ignoring the others. Plus, as it creates an offline database, it will retain metadata about videos even after they are removed or deleted from the original YouTube channel.</p>
@@ -430,10 +451,8 @@ body.start_eating_that_trashcan .cvitem_details
             </div>
             <img class="cvitem_logo" src="./cv/ycdl.png"/>
         </div>
-    </div>
 
-    <div class="cvitem">
-        <div class="width_limited">
+        <div class="cvitem">
             <h3 class="cvitem_title" id="etiquette">Etiquette</h3>
             <div class="cvitem_details">
                 <p>Etiquette is a tag-based file organization system with a web interface, built with Flask and SQLite3. Tag-based systems solve problems that a traditional folder hierarchy can't: <em>which folder should a file go in if it equally belongs in both?</em> and <em>how do I make my files searchable without littering the filenames themselves with keywords?</em></p>
@@ -443,10 +462,8 @@ body.start_eating_that_trashcan .cvitem_details
             </div>
             <img class="cvitem_logo" src="./cv/etiquette.png"/>
         </div>
-    </div>
 
-    <div class="cvitem">
-        <div class="width_limited">
+        <div class="cvitem">
             <h3 class="cvitem_title" id="timesearch">Timesearch</h3>
             <div class="cvitem_details">
                 <p>Timesearch is a package of tools for archiving data from reddit.com. Subreddits, user posts, comments, CSS files, and community wiki files can be downloaded and easily updated.</p>
@@ -454,10 +471,8 @@ body.start_eating_that_trashcan .cvitem_details
                 <p><a href="https://github.com/voussoir/timesearch">https://github.com/voussoir/timesearch</a></p></div>
             <img class="cvitem_logo" src="./cv/timesearch.png"/>
         </div>
-    </div>
 
-    <div class="cvitem">
-        <div class="width_limited">
+        <div class="cvitem">
             <h3 class="cvitem_title" id="voussoirkit">voussoirkit</h3>
             <div class="cvitem_details">
                 <p>The voussoirkit library contains code that I have found useful to include in my other projects. Everything from <code>bytestring</code> that converts integer numbers of bytes into "3.145 MiB" strings, to <code>pathclass</code> and <code>spinal</code> which provide object-oriented file and directory operations and copy routines. Some modules like <code>winglob</code> boost cross-compatibility by smoothing over differences between Windows and Unix. This way I can easily deploy new features and bug fixes to all my programs.</p>
@@ -465,10 +480,8 @@ body.start_eating_that_trashcan .cvitem_details
             </div>
             <img class="cvitem_logo" src="./cv/voussoirkit.png"/>
         </div>
-    </div>
 
-    <div class="cvitem">
-        <div class="width_limited">
+        <div class="cvitem">
             <h3 class="cvitem_title" id="hnarchive">HN Archive</h3>
             <div class="cvitem_details">
                 <p>hnarchive is a tool that downloads all submissions and comments on <a href="https://news.ycombinator.com">Hacker News</a>. HN is a forum that is mostly focused on technology and entrepreneurship. Although I am not entirely sure if all participants are <a href="https://voussoir.net/writing/cyborgs_on_hn">human</a>, it is a knowledgebase of considerable quality and in my opinion worth preserving.</p>
@@ -476,10 +489,8 @@ body.start_eating_that_trashcan .cvitem_details
             </div>
             <img class="cvitem_logo" src="./cv/hnarchive.png"/>
         </div>
-    </div>
 
-    <div class="cvitem">
-        <div class="width_limited">
+        <div class="cvitem">
             <h3 class="cvitem_title" id="epubfile">Epubfile & Sigilplugins</h3>
             <div class="cvitem_details">
                 <p>I use the wonderful program Sigil to edit epub files. Sigil has a python plugin system for which I have written a few modules. But, since the plugins can only operate on one book at a time while it is open in Sigil, I needed something a little different to edit epub files en masse.</p>
@@ -489,10 +500,8 @@ body.start_eating_that_trashcan .cvitem_details
             </div>
             <img class="cvitem_logo" src="./cv/epub.png"/>
         </div>
-    </div>
 
-    <div class="cvitem">
-        <div class="width_limited">
+        <div class="cvitem">
             <h3 class="cvitem_title" id="redditbots">Reddit bots</h3>
             <div class="cvitem_details">
                 <p>This repository is in archive status now and is rarely updated. From 2014 to 2016 I learned Python, SQL, and HTTP by writing bots for reddit and contributing to PRAW, the Python Reddit API Wrapper. I took requests on <a href="https://old.reddit.com/r/RequestABot">/r/RequestABot</a> and produced dozens of easily modifiable bots. The tasks ranged from "allow users to only make one post per day" to "allow moderators to write a post now and schedule it to appear later". With almost 400 stars now it is my most successful repository, though the code quality is not up to the same standards I have today.</p>
@@ -500,105 +509,18 @@ body.start_eating_that_trashcan .cvitem_details
             </div>
             <img class="cvitem_logo" src="./cv/subredditbirthdays.png"/>
         </div>
-    </div>
 
-    <h2 class="width_limited" id="techinterests">Tech interests</h2>
-    <div class="cvitem">
-        <div class="width_limited">
-            <h3 class="cvitem_title" id="python">Python</h3>
-            <div class="cvitem_details">
-                <p>Python has been my language of choice since I began learning it in 2014. In addition to the projects already mentioned here, I have an entire <a href="https://github.com/voussoir/cmd">repository</a> dedicated to scripts / utilities that I use from the command line, and I have an even greater number of unpublished scripts for personal or bespoke use. I do file management, HTTP, image processing, task automation, and more.</p>
-            </div>
-            <img class="cvitem_logo" src="./cv/python.png"/>
-        </div>
-    </div>
-
-    <div class="cvitem">
-        <div class="width_limited">
-            <h3 class="cvitem_title" id="htmlcssjs">HTML/CSS/JS</h3>
-            <div class="cvitem_details">
-                <blockquote><i>If you want to view paradise<br/>Simply press F12 and view it</i></blockquote>
-                <p>This page, like the those in Etiquette and YCDL, was written entirely by hand and without the use of any jQuery, Angular, React, etc. HTML5, CSS3, and especially CSS Grid, have brought many quality of life features to the native experience. With some concessions, and the fact that I don't need to target non-modern browsers, I feel that my grasp of the core systems is better than that of someone who relies on a framework from day one.</p>
-            </div>
-            <img class="cvitem_logo" src="./cv/html5.png"/>
-        </div>
-    </div>
-
-    <div class="cvitem">
-        <div class="width_limited">
-            <h3 class="cvitem_title" id="sqlite">SQLite</h3>
-            <div class="cvitem_details">
-                <p>Some people tease SQLite for not being as big and featureful as something like MySQL, but I for one think it's one of the greatest gifts to the database ecosystem. <a href="/writing/sqlite_what_a_hunk">I love it</a>. Thanks to its fast and easy deployment plus cross-platform compatibility, sqlite databases tend to be the best choice for storing structured data. SQLite3 has been my go-to database since 2014 and hasn't failed me yet. Absolutely a staple for my projects listed here.</p>
-            </div>
-            <img class="cvitem_logo" src="./cv/sqlite.png"/>
-        </div>
-    </div>
-
-    <div class="cvitem">
-        <div class="width_limited">
-            <h3 class="cvitem_title" id="http">HTTP API Design & Use</h3>
-            <div class="cvitem_details">
-                <p>During my development of Etiquette, I have continuously aimed to make the API as accessible and automateable as possible. Getting a peek behind the scenes is as easy as adding <code>.json</code> to the URL. I owe much of my early learning to my work with the reddit API, and since then I've regularly automated web interactions and scraped web data with Python and <code>requests</code>. For sites without an actual API to speak of, I'm pretty good at reverse engineering from the Network panel and javascript source. Try me.</p>
-            </div>
-            <img class="cvitem_logo" src="./cv/api.png"/>
-        </div>
-    </div>
-
-    <div class="cvitem">
-        <div class="width_limited">
-            <h3 class="cvitem_title" id="graphics">Graphics</h3>
-            <div class="cvitem_details">
-                <p>By now you've noticed that this page is overflowing with beautiful artwork... some of which is even mine! I enjoy using the free vector editor <a href="https://inkscape.org/">Inkscape</a> to create logos and icons for my projects, with the occasional program to <a href="https://github.com/voussoir/else/tree/master/Minecraft3DVector">auto-generate</a> vector files.</p>
-                <p>During my time working at the Cal Poly Pomona Learning Resource Center, I became very familiar with Google Slides to create attractive and innovative ways of sharing study tips with students.</p>
-            </div>
-            <img class="cvitem_logo" src="./cv/inkscape.png"/>
-        </div>
-    </div>
-
-    <div class="cvitem">
-        <div class="width_limited">
-            <h3 class="cvitem_title" id="digitalmedia">Digital media & FFmpeg</h3>
-            <div class="cvitem_details">
-                <p>I use FFmpeg practically on a daily basis to manage, convert, and analyze my media files. Although my educational background is in software development, my dream job would be something in digital media preservation, film & book scanning, archival, metadata management, etc. If you've got something going on in that field, let me know!</p>
-            </div>
-            <img class="cvitem_logo" src="./cv/ffmpeg.png"/>
-        </div>
-    </div>
-
-    <div class="cvitem">
-        <div class="width_limited">
-            <h3 class="cvitem_title" id="openstreetmap">OpenStreetMap</h3>
-            <div class="cvitem_details">
-                <p>I contribute to OpenStreetMap, and you should too! I use <a href="https://f-droid.org/en/packages/net.osmand.plus/">OsmAnd</a> instead of Google Maps. I record GPX tracks with <a href="https://f-droid.org/en/packages/org.y20k.trackbook/">Trackbook</a>, edit at home with <a href="https://josm.openstreetmap.de/">JOSM</a>, and edit on the go with <a href="https://f-droid.org/en/packages/de.blau.android/">Vespucci</a> and <a href="https://f-droid.org/en/packages/de.westnordost.streetcomplete/">StreetComplete</a>.</p>
-            </div>
-            <img class="cvitem_logo" src="./cv/osm.png"/>
-        </div>
-    </div>
-
-    <h2 class="width_limited" id="otherinterests">Other interests</h2>
-    <div class="cvitem">
-        <div class="width_limited">
-            <h3 class="cvitem_title" lang="ko" id="korean">한국어</h3>
-            <div class="cvitem_details">
-                <p lang="ko">2018년 10월부터 한국어를 공부하고 있습니다. 한국 영화들이 많이 재미 있어서 만약 한 아시아 언어를 배우면 한국어를 배우겠다고 결정했습니다. 진행이 조금 느리지만 일정합니다. 매일매일 Anki를 하고 한국 전래동화 읽습니다. 몇 년 이내 한국을 방문하면 좋겠습니다.</p>
-            </div>
-            <img class="cvitem_logo" src="./cv/korean.png"/>
-        </div>
-    </div>
-
-    <div class="cvitem">
-        <div class="width_limited">
+        <h2 id="otherinterests">Other work</h2>
+        <div class="cvitem">
             <h3 class="cvitem_title" id="writing">Writing</h3>
             <div class="cvitem_details">
-                <p>I recently decided to start writing from time to time. My thoughts are mostly about technology in culture, learning, and other <i>choses sérieuses</i>. I disable spellcheck because I'm a <a href="https://www.youtube.com/watch?v=7ov1DDjHt8c" title="Epic Rap Battle! - Rhett &amp; Link">stellar speller</a>.</p>
+                <p>My thoughts are mostly about technology in culture, learning, and other <i>choses sérieuses</i>. I disable spellcheck because I'm a <a href="https://www.youtube.com/watch?v=7ov1DDjHt8c" title="Epic Rap Battle! - Rhett &amp; Link">stellar speller</a>.</p>
                 <p><a href="https://voussoir.net/writing">https://voussoir.net/writing</a></p>
             </div>
             <img class="cvitem_logo" src="./cv/writing.png"/>
         </div>
-    </div>
 
-    <div class="cvitem">
-        <div class="width_limited">
+        <div class="cvitem">
             <h3 class="cvitem_title" id="photography">Photography</h3>
             <div class="cvitem_details">
                 <p>To be administered by intravitreal injection.</p>
@@ -606,25 +528,27 @@ body.start_eating_that_trashcan .cvitem_details
             </div>
             <img class="cvitem_logo" style='background-color: transparent !important' src="./cv/photography.jpg"/>
         </div>
-    </div>
 
-    <h2 class="width_limited" id="contact">Contact</h2>
-    <div class="cvitem">
-        <div class="width_limited">
-            <h3 class="cvitem_title" id="meansoftransmission">Means of transmission</h3>
+        <div class="cvitem">
+            <h3 class="cvitem_title" id="video">Video</h3>
             <div class="cvitem_details">
-                <p>If you'd like to get in touch, please email <code>contact@voussoir.net</code>. If you'd like to chat in real time, consider:</p>
-                <ul>
-                <li>Matrix, my id is <a href="https://matrix.to/#/@voussoir:matrix.org"><code>@voussoir:matrix.org</code></a> and my public room is <a href="https://matrix.to/#/!aOtSMPrYrQuRgWJwFd:matrix.org"><code>#voussoircontact:matrix.org</code></a>.</li>
-                </ul>
-                <p>Please email me first so we can coordinate.</p>
+                <p>If I wanted to put it into words, I would have written it down.</p>
+                <p><a href="https://voussoir.net/video">https://voussoir.net/video</a></p>
+                <p>Also available on <a href="http://www.youtube.com/channel/UCpwYWdXmYgNV75Ak2-l0BQw">youtube</a></p>
+            </div>
+            <img id="buffer_rotate" class="cvitem_logo" src="./cv/video.png"/>
+        </div>
+
+        <h2 id="contact">Modes of transmission</h2>
+        <div class="cvitem">
+            <h3 class="cvitem_title" id="meansoftransmission">Contact by email</h3>
+            <div class="cvitem_details">
+                <p>If you'd like to get in touch, please email <code>contact@voussoir.net</code>.</p>
             </div>
             <img class="cvitem_logo" src="./cv/contact.png"/>
         </div>
-    </div>
 
-    <div class="cvitem">
-        <div class="width_limited">
+        <div class="cvitem">
             <h3 class="cvitem_title" id="gitmirrors">Git mirrors</h3>
             <div class="cvitem_details">
                 <p>Eggs. Baskets.</p>
@@ -634,25 +558,18 @@ body.start_eating_that_trashcan .cvitem_details
             </div>
             <img class="cvitem_logo" src="./cv/gits.png"/>
         </div>
-    </div>
     </section>
 
-    <div id="greatjob" class="width_limited">
+    <div id="greatjob">
         <p>It looks like you're using an ad blocker. Great job!</p>
     </div>
 
     <img id="sunglasses" src="./cv/sunglasses.svg" title="Put on these glasses or start eating that trash can" onclick="return start_eating_that_trashcan();"/>
 
-    <footer class="width_limited">
-        <h2 class="width_limited" id="thefooter">The footer</h2>
+    <footer>
+        <h2 id="thefooter">The footer</h2>
         <p class="image_credit"><a href="https://commons.wikimedia.org/wiki/File:Epub_logo_color.svg">EPUB logo</a></p>
-        <p class="image_credit"><a href="https://www.python.org/community/logos/">Python logo</a> under the PSF Trademark Usage Policy</p>
-        <p class="image_credit"><a href="https://www.w3.org/html/logo/">HTML5 logo</a> under CC-BY-3.0</p>
-        <p class="image_credit"><a href="https://commons.wikimedia.org/wiki/File:SQLite370.svg">SQLite logo</a> in the public domain</p>
-        <p class="image_credit"><a href="https://inkscape.org/about/branding/">Inkscape logo</a> under CC-BY-SA 3.0</p>
-        <p class="image_credit"><a href="https://trac.ffmpeg.org/wiki/SubmitALogo">FFmpeg logo</a></p>
         <p class="image_credit"><a href="https://git-scm.com/downloads/logos">Git logo</a></p>
-        <p class="image_credit"><a href="https://wiki.openstreetmap.org/wiki/Logos#Official_logos">OpenStreetMap logo</a></p>
         <p class="image_credit"><a href="https://www.ycombinator.com/press/">YCombinator logo</a></p>
         <p class="image_credit">Derivative artwork based on <a href="https://www.redditinc.com/brand">Reddit's</a> classic Snoo mascot</p>
         <center><span class="eternalseptember_clock" data-eternalseptember-strftime="%A, %B %d"></span>, <a href="/eternalseptember">1993</a></center>
@@ -862,7 +779,6 @@ const SPLASHES = [
     "error: low on mayonnaise", // Worst Computer Ever https://youtu.be/HFXsMfcExi4
     "est arrivé près de chez vous", // C'est arrivé près de chez vous / Man Bites Dog (1992)
     "even ezekial thinks that my mind is gone", // Weird Al Yankovic, Amish Paradise https://youtu.be/lOfZLb33uCg
-    "everywhere you go, there you are",
     "evi: 11.1.89 22:30h", // Der siebente Kontinent / The Seventh Continent (1989)
     "exists in three dimensions",
     "exists just below the surface",
@@ -960,6 +876,7 @@ const SPLASHES = [
     "if you build it, they will come", // Field of Dreams (1989)
     "if you don't watch yourself, who will?",
     "if you see something, say something",
+    "if you want to view paradise, simply press f12 and view it",
     "ignorance is bliss",
     "impulse 101", // https://developer.valvesoftware.com/wiki/Impulse
     "in this moment, i am euphoric", // aalewis https://knowyourmeme.com/memes/in-this-moment-i-am-euphoric
@@ -1304,6 +1221,7 @@ const SPLASHES = [
     "when the air becomes uraneous we will all go simultaneous", // Tom Lehrer, We Will All Go Together When We Go
     "when the devil is too busy and death's a bit too much", // Voltaire, When You're Evil https://youtu.be/tWYCS6k1IOA
     "where depression's just status quo", // Little Shop of Horrors, Skid Row https://youtu.be/z0kSBiu1IGk
+    "wherever you go, there you are",
     "whether you're a boy or a girl or a super computer", // Kero Kero Bonito, Sick Beat (2013)
     "who is but the form following the function of what", // V for Vendetta (2005)
     "why build one when you can have two at twice the price?", // Contact (1997)
