@@ -108,6 +108,14 @@ Here's an exchange from [How to Get Ahead in Advertising](https://en.wikipedia.o
 
 > \- Shut up! I'm not a communist!
 
+-
+
+And here's a fun comment from Hacker News user brailsafe:
+
+> The suburbs are ironically, but not so surprisingly filled with crazy assholes that feel like the world belongs to them, or otherwise have some absurd levels of entitlement. They feel like they own the sidewalks, or if there's no sidewalks, they own the street and everything on it or not on it in front of their house, they feel like they should control whether or not a marginally higher density building should be built down the street or whether a neighbor can paint their house a different colour. When there's no land left, they want more cul-de-sacs built for them because it's the suburban dream and fuck wetlands anyway, and when there's no social services left, they want new ones built for them at everyone else's expense and they don't really want to be part of a community; they want to be by themselves, on their fat asses, in front of their fucking TV, the only quality of which they understand is how big it is.
+
+> https://news.ycombinator.com/item?id=35106661
+
 [footnote_text] I look forward to EVs replacing ICEs, but they are still not as good as just [using fewer cars](https://www.youtube.com/watch?v=OObwqreAJ48&t=6 "You don't need to own a care if you don't drive to work - carsharing").
 
 [footnote_text] That's the place we keep our breathable air.
