@@ -3,6 +3,84 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> I'm scratching my head here. The old gas/diesel dispensing stations have solved this problem of restricting people taking all of the fuel in the pump with a disruptive financial technology called blo\^H\^H\^H credit card.
+
+-
+
+> With that said, it's been a reliable solution and does not need me or my friends to create $BIGTECH account.
+
+-
+
+> I am endlessly annoyed by slow interfaces. At $DAYJOB I have to use a web and desktop GUI for managing CheckPoint firewalls. These often will freeze for dozens of seconds, and generally make my computer crawl. I feel that this should not be acceptable in 2023.
+
+-
+
+> Quite. s/"thanks to abusive users"/"thanks to an abusive provider".
+
+-
+
+> So Dutch is little-endian?
+
+-
+
+> s/world/US
+
+-
+
+> God I hate the business models of $CURRENT_YEAR
+
+-
+
+> If you don't care about the notifications anyways....then turn them off/silence them. Switch from an event-based model to a polling one, since you're treating it that way anyways.
+
+-
+
+> I don't live in a country where it's as one-dimensional as: (public road) ⇒ ¬(privacy rights) and I value that.
+
+-
+
+> An "Architect" was pushing SMS 2FA for our application, and only SMS 2FA. Like you I pointed out all the issues. The response I got was "well if it's good enough for $BIGCORP it is good enough for us" and I didn't win. Cargo culting at it's finest.
+
+-
+
+> Imagine scraping by to pay rent from your minimum wage job, and you're told that you can't sign up for $SERVICE because you don't have a new enough phone or a yubikey.
+
+-
+
+> s/Unfortunately/Thankfully/ but a great point!
+
+-
+
+> Just FYI, discord.io !== discord.com the chat app, it's a related but separate service.
+
+-
+
+> s/receives/sentenced to/
+
+-
+
+> "Receives $X years" Is an idiomatic way of expressing prison terms.
+
+-
+
+> There are many websites that provide exactly that function. I suspect most of them are based yt-dl{,p}.
+
+-
+
+> Reading 3 books on $topic will give you a deeper understanding and appreciation for $topic than 99.9% of the population. Yet you are still at basically zero compared to the people who wrote those books.
+
+-
+
+> It was one of her tweets, it's on wikipedia and was widely "reported" at the time. It came in the context of her late conversion to Islam, and the blowback it generated (imagine being a high-profile personality in a deeply $religion-following country, and publicly abiuring that to become $aVeryDifferentReligion...).
+
+-
+
+> I don't think the author is trying to spur you to action. Like most articles, it's meant to make you think.
+
+> > s/think/click/.
+
+-
+
 > "We switched to $BUZZWORD and reduced $LOOSELY_UNDERSTOOD_METRIC by $STIMULATING_NUMBER !"
 
 > Never tell them it's just because of all the technical debt you finally had organizational will to pay off.
