@@ -1,0 +1,1800 @@
+<html>
+<head>
+    <title>spam</title>
+    <link rel="icon" href="/favicon.png" type="image/png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root
+{
+    --color_bodybg: #272822;
+    --color_codebg: rgba(255, 255, 255, 0.05);
+    --color_codeborder: rgba(255, 255, 255, 0.2);
+    --color_h1bg: #284142;
+    --color_htmlbg: #1b1c18;
+    --color_blockquotebg: rgba(0, 0, 0, 0.2);
+    --color_blockquoteedge: rgba(255, 255, 255, 0.2);
+    --color_inlinecodebg: rgba(255, 255, 255, 0.1);
+    --color_link: #ae81ff;
+    --color_maintext: #ddd;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+html
+{
+    box-sizing: border-box;
+
+    background-color: var(--color_htmlbg);
+    color: var(--color_maintext);
+
+    font-family: Verdana, sans-serif;
+    font-size: 10pt;
+}
+
+#curse_invisible
+{
+    opacity: 0 !important;
+}
+@keyframes particle_grow_fade
+{
+    0% { transform: scale(1.00); opacity: 1; }
+    100% { transform: scale(3.00); opacity: 0; }
+}
+.particle
+{
+    position: absolute;
+    animation: particle_grow_fade linear 2s;
+}
+
+body
+{
+    margin: 0;
+}
+
+article
+{
+    min-width: 10em;
+    max-width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 16px;
+    background-color: var(--color_bodybg);
+    width: 100%;
+}
+article p:first-child
+{
+    margin-top: 0;
+}
+article p:last-child
+{
+    margin-bottom: 0;
+}
+hr
+{
+    border-color:gray;
+}
+@media not print
+{
+    article
+    {
+        box-shadow: #000 0px 0px 40px -10px;
+    }
+}
+
+@media screen and (min-width: 600px)
+{
+    :root
+    {
+        --wide: 1;
+    }
+    body
+    {
+        width: 100%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    :root
+    {
+        --narrow: 1;
+    }
+    body
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+    body > article:first-of-type
+    {
+        margin-top: 0;
+    }
+    body > article:last-of-type
+    {
+        margin-bottom: 0;
+    }
+}
+
+h1, h2, h3, h4, h5
+{
+    padding: 8px;
+}
+
+a
+{
+    color: var(--color_link);
+    cursor: pointer;
+}
+
+article *
+{
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+#table_of_contents
+{
+    border: 1px solid var(--color_blockquoteedge);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+}
+
+ol ol, ul ul, ol ul, ul ol
+{
+    padding-inline-start: 20px;
+}
+
+*:not(pre) > code
+{
+    background-color: var(--color_inlinecodebg);
+    border-radius: 4px;
+    line-height: 1.5;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+pre
+{
+    padding: 8px;
+    border: 1px solid var(--color_codeborder);
+    background-color: var(--color_codebg);
+    overflow-x: auto;
+    font-family: monospace;
+}
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>spam</h1>
+        <p id="curse"><span id="curse_visible"></span><span id="curse_invisible">X</span></p>
+    </header>
+
+<!-- 
+    <article>
+
+        <details>
+        <summary>Headers</summary>
+        <pre>
+
+        </pre>
+        </details>
+
+        <hr/>
+
+
+    </article>
+ -->
+
+    <article>
+        <p><b>From</b>: Grant Polachek &lt;pola-grant@squadhelp.co&gt;</p>
+        <p><b>To</b>: contact@voussoir.net</p>
+        <p><b>Subject</b>: Want an exclusive guest article for voussoir.net?</p>
+        <p><b>Date</b>: Fri, 01 Sep 2023 10:41:06 +0000</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-1.69 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_IMAGE_ONLY_32,HTML_MESSAGE,RCVD_IN_MSPIKE_H3,RCVD_IN_MSPIKE_WL,SPF_HELO_NONE,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -1.59;EffectiveIp=209.85.160.53,SpamProbability=0.09
+Return-Path: &lt;pola-grant@squadhelp.co&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: contact@voussoir.net
+X-Pm-Original-To: contact@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of squadhelp.co designates 209.85.160.53 as permitted sender) smtp.mailfrom=squadhelp.co; dkim=pass header.i=squadhelp.co; dmarc=pass (p=quarantine) header.from=pola-grant@squadhelp.co
+Received: from mail-oa1-f53.google.com (EHLO mail-oa1-f53.google.com) ([209.85.160.53])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 1331912556
+          for &lt;contact@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Fri, 01 Sep 2023 10:41:08 +0000 (UTC)
+Received: by mail-oa1-f53.google.com with SMTP id 586e51a60fabf-1c50438636fso1094748fac.1
+        for &lt;contact@voussoir.net&gt;; Fri, 01 Sep 2023 03:41:08 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=squadhelp.co; s=google; t=1693564867; x=1694169667; darn=voussoir.net;
+        h=mime-version:date:subject:to:from:reply-to:message-id:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=Em2eWCq4p/E+F3AaIRlxFRzIhLr1Dv4bnoLcJBgWBwY=;
+        b=Y0s6ejuYYgUap4A1hh2kw5dib9/Dcr+k94ZszodeU7skvlh3AmKxJEtPxxXGqih38q
+         C7uGAgwi/AZT5Q9c8KvXzUUapodcUgJHhUD27Ci+f+nrIF2/1GzTqDPZc6a8Ho8Kl6Aq
+         X0PnzbQGZ6b7rjrMf151cTBLw2Zb5RemPyb4CRg2tHKnxnt9k3DBvcFXDxaUxnMOBDAj
+         3tAAYCTS1nVGvRQPOSnZvr6kZ07Alcbg/vCilVutnqTywEmfsX4mFGnamP07qnAG26aW
+         vGPgQFa39c4dQyKEvTutq5sYE9A9MLg+qsrM7q4E90OrvxUyjy0FKTPNl047aizFOc3l
+         ro7g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1693564867; x=1694169667;
+        h=mime-version:date:subject:to:from:reply-to:message-id
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=Em2eWCq4p/E+F3AaIRlxFRzIhLr1Dv4bnoLcJBgWBwY=;
+        b=GuRlKyJd2dD7Es86MQN+IUraQ5vmUv50YRfSF6L7gQr65AJ1M1aWL8Tb7QZg6Zw0DN
+         7jlYm3t8Y18Iaqqv9ydaZRFTZUXjpg3Iq+DhgG3xwtM6m0J06tXtwJuTUjIrIC+mIlXt
+         gs8Gx6gun0g8ymZMiux5C9N29kQEDaWorh7C8TgE2yNmQ+oOLXNRTyZn/g38zBgNJUpu
+         q3h+DRpZHBU+KmkH+sxTC0HlEqomZFj6Bs2jF5Cgm3t5KiqYre8LpuutIhLr+2sxnqOa
+         ygwnGXBqtlC8bzewaTO/SkQyYVEiKM0gfXDE1TeCwV/fjvAmG5Qdyt/XdL1vOVDUwb3C
+         qmHw==
+X-Gm-Message-State: AOJu0YzPxhkWmGRUjxx9Zxz4aN3nJOqdG0yZvHu/ciLEFRTqckpi/5ck
+    o8wCE3ZqGQuDpu59U3QDGLyZxdhYb/QKumneeCE=
+X-Google-Smtp-Source: AGHT+IHIZnCVs7JpW7CffVFczSeN3ZT35r2iJzCppqVlNvCH2Q1tN0abRbIBSM989y4IKFk5Kx37ww==
+X-Received: by 2002:a05:6870:350d:b0:1be:c7e2:fe1 with SMTP id k13-20020a056870350d00b001bec7e20fe1mr2447863oah.41.1693564867725;
+        Fri, 01 Sep 2023 03:41:07 -0700 (PDT)
+Received: from Mac-Pro.local (ec2-44-211-207-198.compute-1.amazonaws.com. [44.211.207.198])
+        by smtp.gmail.com with ESMTPSA id x30-20020a0cb21e000000b0063d252a141dsm1339167qvd.116.2023.09.01.03.41.07
+        for &lt;contact@voussoir.net&gt;
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 01 Sep 2023 03:41:07 -0700 (PDT)
+Content-Type: multipart/alternative;
+ boundary=&quot;--_NmP-418ccacc9f341eba-Part_1&quot;
+Message-ID: &lt;d56b6aac-263c-47fd-bcc3-2a2ac65d1e1e@squadhelp.co&gt;
+Reply-To: grant@squadhelp.co
+From: Grant Polachek &lt;pola-grant@squadhelp.co&gt;
+To: contact@voussoir.net
+Subject: Want an exclusive guest article for voussoir.net?
+Date: Fri, 01 Sep 2023 10:41:06 +0000
+MIME-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi there,</p>
+
+        <p>My name is Grant, and I’m the head of branding at Squadhelp.com, the world’s #1 naming and branding platform.</p>
+
+        <p>I stumbled across your site voussoir.net when researching startup resources. I don't see that you've covered brand naming (however, it's possible that I missed it).</p>
+
+        <p>As leading experts on naming, we'd love to help you fix this content gap, by contributing a guest piece that shares our learnings from more than 30,000 naming projects. Once published, we will promote the article to our community of over 40,000 followers across our social media platforms, to get the word out about your site.</p>
+
+        <p>We also have a startup toolkit that we make available to our 2M+ website visitors and promote to customers -- that we may be able to include you in.</p>
+
+        <p>I'd like to offer you a unique article that is exclusive to your website. Here are some of the topics I am currently thinking about:</p>
+        <ul>
+            <li>Create the Perfect Name for Your Brand</li>
+            <li>Mistakes to Avoid When Naming Your Business</li>
+            <li>How to Choose a Great Domain Name</li>
+            <li>Tips for Starting a Business in 2023</li>
+            <li>Crafting a Unique Brand in 2023: Tips and Strategies</li>
+            <li>How to Create an Unforgettable Tagline</li>
+            <li>Understanding the Value of Premium Domains: Why They Matter</li>
+        </ul>
+        
+        <p>However, I would be happy to customize the article for your specific audience (for example, by industry).</p>
+
+        <p>Our articles and expert commentary have previously been featured in AdWeek, Inc Magazine, Entrepreneur, and Hubspot. And I'm excited to share our thought leadership with your viewers as well!</p>
+
+        <p>For some background, Squadhelp was recently selected by Inc Magazine as one of the six most innovative companies. You can learn more about our unique vision at Squadhelp.com.</p>
+
+        <p>Let me know if you are interested. Looking forward to hearing back from you!</p>
+
+        <p>Best,<br/>
+        Grant Polachek<br/>
+        Head of Branding | Squadhelp.com<br/>
+        Phone: (443) 782-5272<br/>
+        2000 Center Drive, Suite East C221, Hoffman Estates, IL 60192 United States</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Boost of Sales&quot; &lt;vbavx@mp.tl&gt;</p>
+        <p><b>Sender</b>: vbavx@mp.tl</p>
+        <p><b>To</b>: friendsofackschools@gmail.com</p>
+        <p><b>Subject</b>: BOOST Your Sales Today!</p>
+        <p><b>Date</b>: Fri, 1 Sep 2023 14:31:26 -0300</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=6.66 required=5 tests=BIGNUM_EMAILS_MANY,GB_FREEMAIL_DISPTO,GB_FREEMAIL_DISPTO_NOTFREEM,LOTS_OF_MONEY,RCVD_IN_VALIDITY_RPBL,SPF_HELO_NONE,TVD_RCVD_IP,TVD_RCVD_IP4,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.36;EffectiveIp=103.30.114.122,SpamProbability=0.44
+Return-Path: &lt;vbavx@mp.tl&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Received: from 103.30.114.122 (EHLO mail.mp.tl) ([103.30.114.122])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id -650511472
+          for &lt;writing@voussoir.net&gt;;
+          Sat, 02 Sep 2023 02:43:10 +0000 (UTC)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+    by mail.mp.tl (Postfix) with ESMTP id 9CC6EC5B765;
+    Sat,  2 Sep 2023 02:16:43 +0900 (TLT)
+X-Virus-Scanned: by amavisd-new-2.7.1 (20120429) (Debian) at mp.tl
+Received: from mail.mp.tl ([127.0.0.1])
+    by localhost (mail.mp.tl [127.0.0.1]) (amavisd-new, port 10024)
+    with ESMTP id MXEhGpyIGwgC; Sat,  2 Sep 2023 02:16:42 +0900 (TLT)
+Received: from mail.mp.tl (unknown [10.50.134.2])
+    by mail.mp.tl (Postfix) with ESMTP id EFAECC5B6A6;
+    Sat,  2 Sep 2023 02:14:21 +0900 (TLT)
+From: &quot;Boost of Sales&quot; &lt;vbavx@mp.tl&gt;
+Subject: BOOST Your Sales Today!
+To: friendsofackschools@gmail.com
+Sender: vbavx@mp.tl
+Disposition-Notification-To: pamela_schulz@outlook.com
+Date: Fri, 1 Sep 2023 14:31:26 -0300
+Message-Id: &lt;20230901171643.9CC6EC5B765@mail.mp.tl&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Get the best email lists for your email marketing.</p>
+        <p>100% VALID email lists worldwide.</p>
+        <p>Contact us on WhatsApp:</p>
+        <p>+55 11 91264 6760</p>
+        <p>Or Skype:</p>
+        <p>jebpatini</p>
+        <p>Global Email Lists Available:</p>
+        <p>100,000 emails = $150<br/>
+        500,000 emails = $350<br/>
+        1 million emails = $500<br/>
+        5 million emails = $750<br/>
+        10 million emails = $1000</p>
+        <p>Segmented Email Lists by Country:</p>
+        <p>10,000 emails = $150<br/>
+        50,000 emails = $350<br/>
+        100,000 emails = $500<br/>
+        500,000 emails = $750<br/>
+        1 million emails = $1000</p>
+        <p>Don&#x27;t miss out on this opportunity!</p>
+        <p>Everyday we get new emails!!!</p>
+        <p>Best regards,</p>
+        <p>AMAZING LISTS</p>
+        <p>Unleashing the power of email marketing - since 2007</p>
+        <p>WhatsApp:</p>
+        <p>+55 11 91264 6760</p>
+        <p>Or Skype:</p>
+        <p>jebpatini</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Youporn&quot; &lt;info@youporn.com&gt;</p>
+        <p><b>To</b>: &lt;susan@voussoir.net&gt;</p>
+        <p><b>Subject</b>: Urgent: Uploaded content notification</p>
+        <p><b>Date</b>: 30 Aug 2023 08:42:17 +0600</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=9.81 required=5 tests=DATE_IN_FUTURE_06_12,FSL_HELO_BARE_IP_1,GB_BITCOIN_CP,GB_HASHBL_BTC,HTML_MESSAGE,MARKETING_PARTNERS,PDS_BTC_ID,RCVD_IN_BL_SPAMCOP_NET,TRACKER_ID,TVD_RCVD_IP,TVD_RCVD_IP4,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 3.81;EffectiveIp=114.125.76.120,SpamProbability=0.58
+Return-Path: &lt;info@youporn.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: susan@voussoir.net
+X-Pm-Original-To: susan@voussoir.net
+Authentication-Results: purelymail.com; spf=softfail (transitioning domain of youporn.com does not designate 114.125.76.120 as permitted sender) smtp.mailfrom=youporn.com
+Received: from 114.125.76.120 (EHLO [114.125.76.120]) ([114.125.76.120])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id -362759202
+          for &lt;susan@voussoir.net&gt;;
+          Tue, 29 Aug 2023 19:56:21 +0000 (UTC)
+From: &quot;Youporn&quot; &lt;info@youporn.com&gt;
+To: &lt;susan@voussoir.net&gt;
+Date: 30 Aug 2023 08:42:17 +0600
+MIME-Version: 1.0
+Subject: =?UTF-8?B?VXJnZW50OiBVcGxvYWRlZCBjb250ZW50IG5vdGlmaWNhdGlvbg==?=
+Message-ID: &lt;64EEAFD1.0304.538944@info.youporn.com&gt;
+Priority: normal
+X-mailer: Pegasus Mail for Windows (4.41)
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Youporn</p>
+        <p>Uploaded content: Feedback required </p>
+        <p>Greetings!</p>
+        <p>Our AI-powered tools have detected that you are featured in sexually explicit content that was uploaded to our platform.</p>
+        <p>At our company, we take the security and privacy of our users very seriously, and we use advanced technology to help detect and prevent the distribution of non-consensual intimate images and videos.</p>
+        <p>While our tools are powerful, we also rely on human oversight to ensure that our platform remains safe and secure for everyone.</p>
+        <p>If you have approved the upload of this content, you do not need to take any further action. The video will be published to our library within the next seven days, and you will have an opportunity to review the content after the grace period has passed.</p>
+        <p>However, if you did not approve the upload of this content, we kindly ask that you follow the instructions below to take immediate action.</p>
+        <p>Our platform boasts an extensive network of websites and partners, which means that ensuring the security of our content is a top priority.</p>
+        <p>To achieve this, all uploaded content is digitally fingerprinted using both the MediaWise® service from Vobile® and Safeguard, our own proprietary digital fingerprinting software.</p>
+        <p>This helps to prevent unauthorized distribution of content on our platform.</p>
+        <p>For our premium users who upload content, we offer monetary incentives. However, in some cases, uploaded content may be put on hold.</p>
+        <p>If this happens, we can initiate a quick automated removal process, but we would require an incentive refund to do so.</p>
+        <p>The basic express removal, blocking, and protection against re-uploading of content on our network of 20 websites costs $199 USD.   </p>
+        <p>As a digital company, we take great pride in our integrity and measures, which is why we offer additional options for protecting against unauthorized content uploads 24/7.</p>
+        <p>We have all our processes automated, including payment processing, for your convenience.</p>
+        <p>Our Plan A includes everything in the basic removal option, plus digitally fingerprinting of the content and automated removal and protection against re-uploading to our vast network of partner websites (300+) for one year, all for $699 USD.</p>
+        <p>If you require the best protection available, we recommend our</p>
+        <p>Plan B, which includes everything in Plan A plus digital protection by MediaWise® and Safeguard based on facial recognition data for three years. This ensures that any content with your biometrics will be blocked, and it costs $1399 USD.</p>
+        <p>Our system takes care of your request automatically and swiftly, so there&#x27;s no need to contact us.</p>
+        <p>The payment process is automated through a Bitcoin gateway, and the digital number you receive below is unique to your case and doesn&#x27;t require any extra confirmation.</p>
+        <p>1DzWf1Y9nDKPgmc2em37KRjYePPmWggRce</p>
+        <p>To transfer the amount corresponding to your chosen option, copy and paste this identifier into your preferred cryptocurrency wallet.</p>
+        <p>You can review the content uploaded after the seven-day grace period, either by checking our Youporn.com library or by contacting the member who uploaded the content.</p>
+        <p>We encourage users who feature in content and wish to prevent its upload to our platform to consider proactively digitally fingerprinting it.</p>
+        <p>Thank you for your attention to this matter.    </p>
+        <p>This email was sent to susan@voussoir.net from Youporn.com</p>
+        <p>To control which emails you receive from Youporn adjust your email preferences.</p>
+        <p>Unsubscribe to no longer receive this type of email from us.</p>
+        <p>Youporn Blog � Youporn on Twitter � Support � Privacy Policy</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Christina Bryan&quot; &lt;logoer@dinosaur-toys-collectors-guide.com&gt;</p>
+        <p><b>Reply-To</b>: christina@dsbzjx.net</p>
+        <p><b>To</b>: pypi@voussoir.net</p>
+        <p><b>Subject</b>: logo products apparel, T-shirts and other products</p>
+        <p><b>Date</b>: Mon, 28 Aug 2023 15:25:56 +0200</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=5.48 required=5 tests=RCVD_IN_MSPIKE_BL,RCVD_IN_MSPIKE_L4,RCVD_IN_PSBL,SPF_HELO_NEUTRAL,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 1.08;EffectiveIp=204.152.197.164,SpamProbability=0.31
+Return-Path: &lt;logoln@dinosaur-toys-collectors-guide.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: pypi@voussoir.net
+X-Pm-Original-To: pypi@voussoir.net
+Received: from tzsoso.com (EHLO tzsoso.com) ([204.152.197.164])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 126384173
+          for &lt;pypi@voussoir.net&gt;;
+          Mon, 28 Aug 2023 16:02:19 +0000 (UTC)
+To: pypi@voussoir.net
+Subject: logo products apparel, T-shirts and other products
+Message-ID: &lt;ff975b8b177a5aea9d47aabc66335383@dinosaur-toys-collectors-guide.com&gt;
+Date: Mon, 28 Aug 2023 15:25:56 +0200
+From: &quot;Christina Bryan&quot; &lt;logoer@dinosaur-toys-collectors-guide.com&gt;
+Reply-To: christina@dsbzjx.net
+MIME-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi,</p>
+        <p>I hope this email finds you well. I am reaching out today to explore the potential opportunities for logo products and apparel for your business.</p>
+        <p>I have a quick question: Who would be the most appropriate contact person to discuss your company&#x27;s logo products and apparel, including:</p>
+
+        <p>- T-shirts<br/>
+        - mugs<br/>
+        - water bottles<br/>
+        - USB flash drives<br/>
+        - pens<br/>
+        - and over 300,000 other products for your business?</p>
+
+        <p>We specialize in providing a diverse range of high-quality promotional products, offering T-shirts, mugs, water bottles, USB flash drives, pens, and a selection of over 300,000 other items to choose from.</p>
+        <p>With our extensive experience in the promotional products industry since 2003, we possess the knowledge and expertise to create custom-branded merchandise that can effectively promote your brand, enhance customer loyalty, and drive sales.</p>
+        <p>Whether you are interested in crafting a unique promotional item for a trade show, implementing an employee incentive program, or selecting a corporate gift, our team of promo product specialists is fully prepared to assist you at every stage. We will guide you in choosing the perfect items for your business, design and produce customized logos, and deliver top-quality finished products directly to your doorstep.</p>
+        <p>Therefore, I would like to inquire about the best contact person to discuss the wide range of products we offer for your business. We would be delighted to further discuss how our promotional products can contribute to increasing brand awareness and fostering the growth of your business.</p>
+        <p>Thank you for your valuable time, and we eagerly await your response.</p>
+        <p>Best regards,</p>
+        <p>Christina Bryan</p>
+        <p>Promo Product Specialist</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Louis Vuitton &lt;poqgyvzs@fullersharpening.com&gt;</p>
+        <p><b>To</b>: writing &lt;writing@voussoir.net&gt;</p>
+        <p><b>Subject</b>: Limited Stock Alert: Louis Vuitton Bags at Unbeatable Prices - Don&#x27;t Miss Out!</p>
+        <p><b>Date</b>: Sat, 26 Aug 2023 04:43:13 -0330</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=11.7 required=5 tests=HTML_MESSAGE,MIME_HTML_ONLY,RCVD_IN_MSPIKE_BL,RCVD_IN_MSPIKE_L4,RCVD_IN_PSBL,RCVD_IN_VALIDITY_RPBL,SPF_HELO_PASS,T_KAM_HTML_FONT_INVALID,URIBL_ABUSE_SURBL,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 3.9;EffectiveIp=162.19.224.217,SpamProbability=0.59
+Return-Path: &lt;poqgyvzs@fullersharpening.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of fullersharpening.com designates 162.19.224.217 as permitted sender) smtp.mailfrom=fullersharpening.com
+Received: from fullersharpening.com (EHLO fullersharpening.com) ([162.19.224.217])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 380795138
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.2 cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384);
+          Sat, 26 Aug 2023 07:13:30 +0000 (UTC)
+Message-ID: &lt;dtovujraeabpv.ikgfgytcoyojp.ldgalivciadyiefabsfopc@ofswkerjadtys.wnwjydaqmfxms&gt;
+From: Louis Vuitton &lt;poqgyvzs@fullersharpening.com&gt;
+To: writing &lt;writing@voussoir.net&gt;
+Subject: Limited Stock Alert: Louis Vuitton Bags at Unbeatable Prices - Don&#x27;t Miss Out!
+Date: Sat, 26 Aug 2023 04:43:13 -0330
+MIME-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>No images? View in browser</p>
+        <p>Once-in-a-Lifetime Offer: Louis Vuitton Bags at Only $150 - Shop Now!</p>
+        <p>Steal the Spotlight with Louis Vuitton Bags: Massive Discounts Available - Act Now!</p>
+        <p>Score Big Savings on Louis Vuitton Bags: Huge Discounts Available - Act Fast!</p>
+        <p>Score Big Savings on Louis Vuitton Bags: Huge Discounts Available - Act Fast!</p>
+        <p>Score Big Savings on Louis Vuitton Bags: Huge Discounts Available - Act Fast!</p>
+        <p>Score Big Savings on Louis Vuitton Bags: Huge Discounts Available - Act Fast!</p>
+        <p>COPYRIGHT 2000-2024</p>
+        <p>If you refuse to receive this email anymore, please click Unsubscribe.</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Melissa&quot; &lt;cnyiw@gmail.com&gt;</p>
+        <p><b>Reply-To</b>: email@email.com</p>
+        <p><b>To</b>: contact@freeclassicebooks.com</p>
+        <p><b>Subject</b>: Discover Alpine Elixir: Your Ultimate Weight Loss Solution</p>
+        <p><b>Date</b>: Thu, 24 Aug 2023 01:03:59 -0300</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=22.51 required=5 tests=DKIM_ADSP_CUSTOM_MED,FORGED_GMAIL_RCVD,FREEMAIL_FROM,FREEMAIL_REPLYTO,GB_FREEMAIL_DISPTO,HTML_MESSAGE,MIME_HTML_MOSTLY,MPART_ALT_DIFF,NML_ADSP_CUSTOM_MED,RCVD_IN_PSBL,RCVD_IN_SORBS_WEB,RCVD_IN_VALIDITY_RPBL,SPF_HELO_PASS,SPOOFED_FREEMAIL,SPOOFED_FREEM_REPTO,SPOOF_GMAIL_MID,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION,PM_DMARC autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PM-DMARC: 5;Gmail p=none policy exception
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 4.01;EffectiveIp=185.81.237.153,SpamProbability=0.6
+Return-Path: &lt;cnyiw@gmail.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=softfail (transitioning domain of _spf.google.com does not designate 185.81.237.153 as permitted sender) smtp.mailfrom=gmail.com; dmarc=fail (p=none) header.from=cnyiw@gmail.com
+Received: from server.gncsrv.com (EHLO server.gncsrv.com) ([185.81.237.153])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -1713060437
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Thu, 24 Aug 2023 04:04:03 +0000 (UTC)
+Received: from [5.34.182.157] (helo=mail.hartekproje.com)
+    by server.gncsrv.com with esmtp (Exim 4.96-58-g4e9ed49f8)
+    (envelope-from &lt;cnyiw@gmail.com&gt;)
+    id 1qZ1Ym-00BTe1-36;
+    Thu, 24 Aug 2023 07:03:05 +0300
+From: &quot;Melissa&quot; &lt;cnyiw@gmail.com&gt;
+Subject: Discover Alpine Elixir: Your Ultimate Weight Loss Solution
+To: contact@freeclassicebooks.com
+Content-Type: multipart/alternative; boundary=&quot;=_MoreStuf_2zzz1234sadvnqw3nerasdf&quot;
+MIME-Version: 1.0
+Reply-To: email@email.com
+Disposition-Notification-To: pamela_schulz@outlook.com
+Date: Thu, 24 Aug 2023 01:03:59 -0300
+Message-ID: &lt;GENERATED-WASMISSING-1qZ1Ym-00BTe1-36@server.gncsrv.com&gt;
+X-ACL-Warn: Adding Message-ID header because it is missing!
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi, how are you?</p>
+        <p>It&#x27;s Melissa here!</p>
+        <p>Are you tired of struggling with fad diets and ineffective weight loss products?</p>
+        <p>Look no further! I´m excited to introduce you to our groundbreaking weight loss supplement that will help you achieve your dream body in no time.</p>
+        <p>Our product is unlike anything on the market. really! It&#x27;s made with natural ingredients that work together to boost your metabolism, curb your appetite, and burn fat.</p>
+        <p>Plus, it has no known side effects, making it safe for anyone to use.</p>
+        <p>We believe in the quality of our product, and we&#x27;re confident that you&#x27;ll see results. In fact, we offer a 100% satisfaction guarantee.</p>
+        <p>If you&#x27;re not completely happy with your purchase, we&#x27;ll give you a full refund.</p>
+        <p>Don&#x27;t let another day go by feeling unhappy with your body.</p>
+        <p>Order our weight loss supplement today and start seeing the results you&#x27;ve been dreaming of.</p>
+        <p>Thank you for considering our product.</p>
+        <p>&gt;&gt;&gt;&gt;CLICK HERE TO KNOW OUR AMAZING PRODUCT&lt;&lt;&lt;&lt;</p>
+        <p>Best regards,</p>
+        <p>Melissa Smith</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Noel Dosi&quot; &lt;sales@mail-skills.asia&gt;</p>
+        <p><b>Reply-To</b>: NoellDosi@proton.me</p>
+        <p><b>To</b>: contact@voussoir.net</p>
+        <p><b>Subject</b>: Lucrative business proposal for contact@voussoir.net</p>
+        <p><b>Date</b>: 23 Aug 2023 08:50:33 +0000</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=7.14 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_MESSAGE,MIME_HTML_ONLY,SPF_HELO_PASS,URIBL_ABUSE_SURBL,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 5.24;EffectiveIp=185.81.128.180,SpamProbability=0.72
+Return-Path: &lt;sales@mail-skills.asia&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: contact@voussoir.net
+X-Pm-Original-To: contact@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of mail-skills.asia designates 185.81.128.180 as permitted sender) smtp.mailfrom=mail-skills.asia; dkim=pass header.i=mail-skills.asia; dmarc=pass (p=quarantine) header.from=sales@mail-skills.asia
+Received: from mail-skills.asia (EHLO mail-skills.asia) ([185.81.128.180])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 720898475
+          for &lt;contact@voussoir.net&gt;
+          (version=TLSv1.2 cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384);
+          Wed, 23 Aug 2023 08:50:35 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=mail-skills.asia;
+ h=Reply-To:From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding; i=sales@mail-skills.asia;
+ bh=2eU+U+28Z2KoR+YH/eFqkkGDlrA=;
+ b=cT7xyzg+32JqhBOLvm+IDWhbduHaCzuXd9OKRgeAS0okJjik5X5OOVWzKxfsscaVBj+B9fuPyE7k
+   dM9FLq4oL+TYDaNWLz+5eBGC9VLiUojKILO2EjA/f4WF9fa0Vqs2vMKjGmsnoYe70R06wGjNm4Nm
+   3CpR8cITryYG2hHuvUQ=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default; d=mail-skills.asia;
+ b=C2rJlFi/TrdT44tGcek1KmQ77gmoLT5jFkLxW5RI8/LEn2U1DE2VnDnsdobI8lBuMKMMta4wzgSj
+   FfB4bEURue2l/qsFSsCNCJNIQp919yzAmqiEVU5dupgxTZjXg7DXzWAoo4AVLA89+gGVeHbABVzs
+   WvPZ6YjLirADtBFez74=;
+Reply-To: NoellDosi@proton.me
+From: &quot;Noel Dosi&quot; &lt;sales@mail-skills.asia&gt;
+To: contact@voussoir.net
+Subject: Lucrative business proposal for contact@voussoir.net
+Date: 23 Aug 2023 08:50:33 +0000
+Message-ID: &lt;20230823085033.C67C9E80346183A6@mail-skills.asia&gt;
+MIME-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+
+<p>Good morning contact,</p>
+<p>I’m Noel Dosi, a research assistant working at one of the world class European Bio Pharmaceutical Companies. I must agree this is an unconventional way of reaching out but I hope I&#x27;m able to capture your attention because this is purposeful.</p>
+<p>The reason for this, is there is a business opportunity I&#x27;d like to introduce to you and I know it will be of interest to you and I believe an opportunity of a lifetime should be seized during the lifetime of the opportunity.</p>
+<p>Do feel free to get back to me if you wish to know more or kindly ignore me if you feel this is not for you.</p>
+<p>Appreciate your time thus far.</p>
+<p>Best regards,</p>
+<p>Noel Dosi</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Matthew Whittering&quot; &lt;litsey@qmii.uz&gt;</p>
+        <p><b>Reply-To</b>: whitteringm@gmail.com</p>
+        <p><b>To</b>: Recipients &lt;litsey@qmii.uz&gt;</p>
+        <p><b>Subject</b>: I Want To Inquire</p>
+        <p><b>Date</b>: Mon, 21 Aug 2023 18:14:23 -0700</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=8.58 required=5 tests=FREEMAIL_FORGED_REPLYTO,T_SPF_HELO_TEMPERROR,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 6.08;EffectiveIp=195.158.31.174,SpamProbability=0.81
+Return-Path: &lt;litsey@qmii.uz&gt;
+Delivered-To: ethan@dalool.net
+X-Pm-Known-Alias: info@dalool.net
+X-Pm-Original-To: info@dalool.net
+Received: from mail.qmii.uz (EHLO ns.qmii.uz) ([195.158.31.174])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 1845679581
+          for &lt;info@dalool.net&gt;;
+          Tue, 22 Aug 2023 07:35:12 +0000 (UTC)
+Received: from ns.qmii.uz (mail.qmii.uz [127.0.0.1])
+    by ns.qmii.uz (Postfix) with ESMTP id F15E62AC9D56
+    for &lt;info@dalool.net&gt;; Tue, 22 Aug 2023 12:28:45 +0500 (+05)
+Received: by ns.qmii.uz (Postfix, from userid 2005)
+    id C4E612AC8D07; Tue, 22 Aug 2023 12:28:45 +0500 (+05)
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on ns.qmii.uz
+X-Spam-Level: **
+X-Spam-Status: No, score=2.4 required=5.0 tests=ALL_TRUSTED,BAYES_50,
+    FREEMAIL_FORGED_REPLYTO,MISSING_MID autolearn=no autolearn_force=no
+    version=3.4.0
+Received: from [192.168.43.67] (unknown [197.211.53.124])
+    by ns.qmii.uz (Postfix) with ESMTPSA id 898962AC2745;
+    Tue, 22 Aug 2023 06:14:30 +0500 (+05)
+Content-Type: text/plain; charset=&quot;iso-8859-1&quot;
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+Subject: I Want To Inquire
+To: Recipients &lt;litsey@qmii.uz&gt;
+From: &quot;Matthew Whittering&quot; &lt;litsey@qmii.uz&gt;
+Date: Mon, 21 Aug 2023 18:14:23 -0700
+Reply-To: whitteringm@gmail.com
+Message-Id: &lt;20230822072845.C4E612AC8D07@ns.qmii.uz&gt;
+X-Virus-Scanned: ClamAV using ClamSMTP
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Top of the day to you. Due to the outbreak of the covid-19 pandemic, there is this New Potential Role (Arcno Alloy Industries) is offering in the USA/Canada and I think you will be interested in it. To know more about the job description, role and compensation, kindly indicate your interest.</p>
+        <p>Note: The job position will only take a few minutes of your time while you Earn Extra income while doing your normal Job/Business.</p>
+        <p>Best Regards,</p>
+        <p>Matthew Whittering</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Sales Booster&quot; &lt;sales_boost@outlook.com&gt;</p>
+        <p><b>To</b>: writing@voussoir.net</p>
+        <p><b>Subject</b>: Elevate Your Sales with High-Quality Lists to EmailMKT 🚀</p>
+        <p><b>Date</b>: 18 Aug 2023 11:41:56 -0300</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=14.91 required=5 tests=FREEMAIL_FROM,RCVD_IN_BL_SPAMCOP_NET,RCVD_IN_MSPIKE_BL,RCVD_IN_MSPIKE_L5,RCVD_IN_PSBL,RCVD_IN_VALIDITY_RPBL,SPF_HELO_SOFTFAIL,SPOOFED_FREEMAIL,TVD_RCVD_IP,TVD_RCVD_IP4,PURELYMAIL_IP_REPUTATION,PM_DMARC autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PM-DMARC: 0.3;
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 5.01;EffectiveIp=187.23.160.246,SpamProbability=0.7
+Return-Path: &lt;sales_boost@outlook.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=softfail (transitioning domain of outlook.com does not designate 187.23.160.246 as permitted sender) smtp.mailfrom=outlook.com; dmarc=fail (p=none) header.from=sales_boost@outlook.com
+Received: from 187.23.160.246 (EHLO outlook.com) ([187.23.160.246])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id -1571311081
+          for &lt;writing@voussoir.net&gt;;
+          Fri, 18 Aug 2023 14:41:56 +0000 (UTC)
+From: &quot;Sales Booster&quot; &lt;sales_boost@outlook.com&gt;
+To: writing@voussoir.net
+Subject: =?UTF-8?B?RWxldmF0ZSBZb3VyIFNhbGVzIHdpdGggSGlnaC1RdWFsaXR5IExpc3RzIHRvIEVtYWlsTUtUIPCfmoA=?=
+Date: 18 Aug 2023 11:41:56 -0300
+Message-ID: &lt;20230818114155.A55DE9EFFEF135F9@outlook.com&gt;
+MIME-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hello there,</p>
+        <p>Are you looking to supercharge your email marketing efforts? Look no further! We bring you the ultimate solution to reach your target audience effectively.</p>
+        <p>Introducing Amazing Lists - Your Gateway to Success!</p>
+
+        <p>** Global Email Lists:</p>
+
+        <p>- Reach worldwide prospects effortlessly.<br/>
+        - From 100,000 to 10 million emails, we&#x27;ve got you covered.<br/>
+        - Connect with us via WhatsApp or Skype to get started.</p>
+
+        <p>** Segmented Email Lists by Country:</p>
+
+        <p>- Target specific regions for maximum impact.<br/>
+        - Choose from 10,000 to 1 million emails at unbeatable prices.<br/>
+        - Don&#x27;t miss out on this golden opportunity to expand your reach and engagement.</p>
+
+        <p>Contact us today:<br/>
+        WhatsApp: +55 11 91264 6760<br/>
+        Skype: jebpatini</p>
+
+        <p>Stay ahead of the curve with Amazing Lists,<br/>
+        Empowering your email marketing since 2007.</p>
+
+        <p>Best regards,</p>
+
+        <p>AMAZING LISTS</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Cancer&quot; &lt;Cancer@brainsaviors.quest&gt;</p>
+        <p><b>Reply-To</b>: &quot;Cancer&quot; &lt;Cancer@brainsaviors.quest&gt;</p>
+        <p><b>To</b>: &lt;sales@voussoir.net&gt;</p>
+        <p><b>Subject</b>: 1600% stronger than chemo</p>
+        <p><b>Date</b>: Fri, 11 Aug 2023 15:16:45 +0200</p>
+
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=8.86 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_FONT_LOW_CONTRAST,HTML_MESSAGE,LONGLN_LOW_CONTRAST,PP_MIME_FAKE_ASCII_TEXT,RCVD_IN_PSBL,SPF_HELO_NONE,TVD_RCVD_IP,TVD_RCVD_IP4,URIBL_ABUSE_SURBL,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.26;EffectiveIp=193.149.2.181,SpamProbability=0.43
+Return-Path: &lt;67675-93788-64429-15123-sales=voussoir.net@mail.brainsaviors.quest&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: sales@voussoir.net
+X-Pm-Original-To: sales@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of mail.brainsaviors.quest designates 193.149.2.181 as permitted sender) smtp.mailfrom=mail.brainsaviors.quest; dkim=pass header.i=brainsaviors.quest; dmarc=pass (p=none) header.from=Cancer@brainsaviors.quest
+Received: from 193.149.2.181 (EHLO chula.brainsaviors.quest) ([193.149.2.181])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id -1157914674
+          for &lt;sales@voussoir.net&gt;;
+          Fri, 11 Aug 2023 14:21:24 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=brainsaviors.quest;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID; i=Cancer@brainsaviors.quest;
+ bh=qpSVADHdj7MoD6wPlKB4cFHXLEE=;
+ b=pyhGUYpIG1E1ZJiCDZIyh7m74A3cipmw2s6jn+dDlmgn0uHvIcNlTUff4TKd6WWag95bWj9mk6tV
+   dVbrtrS7byrlCTQa1N6HbMzg4npYVrmI2IMJ3RiifkVnIq/UlQYb2u2yZo53EnsXbz8Ip2YKgjVq
+   My6lpjyV9bZgKneYxR8=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=brainsaviors.quest;
+ b=cIq0S5zoQwx1Nx5TaCxkxDjnLg7P/KR7uo7G2b2zCcfgXL6eR+AwlV3d8WsY/EbRdCrZ3u3GZYMj
+   XvQSCsv10Y/uVSjFA2lULiOR5tktO9cHhR24YROGrIeNmLC8obUqEMozrcpuqN/dI2WXjvO2PZ1G
+   algn5E3r6skiLZE0Dy4=;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;f91b94a26b79a7bc30ecfc29906c0e69_16e5c_fbad&quot;
+Date: Fri, 11 Aug 2023 15:16:45 +0200
+From: &quot;Cancer&quot; &lt;Cancer@brainsaviors.quest&gt;
+Reply-To: &quot;Cancer&quot; &lt;Cancer@brainsaviors.quest&gt;
+Subject: 1600% stronger than chemo
+To: &lt;sales@voussoir.net&gt;
+Message-ID: &lt;y88w9uz3wtj6jiff-vdnbcnkphyfs99fu-16e5c-fbad@brainsaviors.quest&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+<p>Dear ,</p>
+<p>This common facial cleanser contains a natural compound…</p>
+<p>That drives out harmful, toxic, and deadly cancer cells safely from your body…</p>
+<p>WITHOUT any nasty side effects.</p>
+<p>In 1931, Nobel Prize winner Dr. Otto Warburg confirmed the lack of this “nature’s invisible healer” was the cause of cancer.</p>
+<p>And supplying your cells with it not only kills cancer cells…</p>
+<p>But also BLOCKS new cancer cells from forming.</p>
+<p>The question is… why didn’t we know about this?</p>
+<p>Could this be another secret government cover up they don’t want you to know…</p>
+<p>…so they can keep cashing in on your medical bills?</p>
+<p>I urge you to watch this presentation right now before it’s taken down:</p>
+<p>=&gt; Discover nature’s invisible healer to cancer-proof your body</p>
+<p>Sincerely,</p>
+<p>Biostar Nutrition</p>
+<p>P.S. By the way, the only place I know of to get this natural compound is right here.</p>
+<p>The earliest known human habitation in the Edinburgh area was at Cramond, where evidence was found of a Mesolithic camp site dated to c. 8500 BC. Traces of later Bronze Age and Iron Age settlements have been found on Castle Rock, Arthur&#x27;s Seat, Craiglockhart Hill and the Pentland Hills. When the Romans arrived in Lothian at the end of the 1st century AD, they found a Brittonic Celtic tribe whose name they recorded as the Votadini. The Votadini transitioned into the Gododdin kingdom in the Early Middle Ages, with Eidyn serving as one of the kingdom&#x27;s districts. During this period, the Castle Rock site, thought to have been the stronghold of Din Eidyn, emerged as the kingdom&#x27;s major centre. The medieval poem Y Gododdin describes a war band from across the Brittonic world who gathered in Eidyn before a fateful raid; this may describe a historical event around AD 600. In 638, the Gododdin stronghold was besieged by forces loyal to King Oswald of Northumbria, and around this time control of Lothian passed to the Angles. Their influence continued for the next three centuries until around 950, when, during the reign of Indulf, son of Constantine II, the &quot;burh&quot; (fortress), named in the 10th-century Pictish Chronicle as oppidum Eden, was abandoned to the Scots. It thenceforth remained, for the most part, under their jurisdiction. The royal burgh was founded by King David I in the early 12th century on land belonging to the Crown, though the date of its charter is unknown. The first documentary evidence of the medieval burgh is a royal charter, c. 1124–1127, by King David I granting a toft in burgo meo de Edenesburg to the Priory of Dunfermline. The shire of Edinburgh seems to have also been created in the reign of David I, possibly covering all of Lothian at first, but by 1305 the eastern and western parts of Lothian had become Haddingtonshire and Linlithgowshire, leaving Edinburgh as the county town of a shire covering the central part of Lothian, which was called Edinburghshire or Midlothian (the latter name being an informal, but commonly used, alternative until the county&#x27;s name was legally changed</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;New Piano For All&quot; &lt;Play-By-Ear@turntextspeech.best&gt;</p>
+        <p><b>Reply-To</b>: &quot;Play-By-Ear&quot; &lt;Play-By-Ear@turntextspeech.best&gt;</p>
+        <p><b>To</b>: &lt;sales@voussoir.net&gt;</p>
+        <p><b>Subject</b>: The Best (verifiable) Testimonials of ANY Online Piano Course!</p>
+        <p><b>Date</b>: Mon, 24 Jul 2023 15:00:27 +0200</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=8.8 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_FONT_LOW_CONTRAST,HTML_MESSAGE,LONGLN_LOW_CONTRAST,RCVD_IN_PSBL,SPF_HELO_NONE,TVD_RCVD_IP,TVD_RCVD_IP4,URIBL_ABUSE_SURBL,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 3.2;EffectiveIp=23.247.118.233,SpamProbability=0.52
+Return-Path: &lt;67012-75-346874-10183-sales=voussoir.net@mail.turntextspeech.best&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: sales@voussoir.net
+X-Pm-Original-To: sales@voussoir.net
+Authentication-Results: purelymail.com; dkim=pass header.i=turntextspeech.best; dmarc=pass (p=none) header.from=Play-By-Ear@turntextspeech.best
+Received: from 23.247.118.233 (EHLO app.turntextspeech.best) ([23.247.118.233])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 1852944664
+          for &lt;sales@voussoir.net&gt;;
+          Mon, 24 Jul 2023 13:07:56 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=turntextspeech.best;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID; i=Play-By-Ear@turntextspeech.best;
+ bh=d/SP26wJcCeUKJ1yy7KdjNYTRvQ=;
+ b=fx1GZ/K/VWQUIwwNBRTdcxYAQNe/FWowT8/3QQdpWDXFx4VuTtDiReczc3Iv+RuF3MAG0LQjTBFG
+   Fwfy8yHJA4M4RaZLBPTXuV/n8QBLZgqyYxRDWhCBwoKfqug9+eERoAKTFYiw0K/VnQBpHs8i0q2q
+   ryf4qCwA2/vA9nZ7EO4=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=turntextspeech.best;
+ b=pAhNQAnfxcK0BuEwT92wIOD4iL+UaAE56Y6C2GuTcsPbcr8w1fgQZCGCyHEQvjhgFyZ+nAsvzEi+
+   fwHCmx+FPXOObK7Df0/RoxUHCL5k/367ysfGEfJ7WUrz+UQOT+KEhaXeBWv4N0OmnlegV4ksLS8M
+   T/Q6TVuMwi3seruRCa4=;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;8bc6318e9e48a7a0d68ea43207f2c127_4b_54afa&quot;
+Date: Mon, 24 Jul 2023 15:00:27 +0200
+From: &quot;New Piano For All&quot; &lt;Play-By-Ear@turntextspeech.best&gt;
+Reply-To: &quot;Play-By-Ear&quot; &lt;Play-By-Ear@turntextspeech.best&gt;
+Subject: The Best (verifiable) Testimonials of ANY Online Piano Course!
+To: &lt;sales@voussoir.net&gt;
+Message-ID: &lt;ya9omlzyvnvmvojy-rrypld4h5ln334l9-4b-54afa@turntextspeech.best&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>All-in-one package. Ebooks, Videos and audios</p>
+        <p>Works with all devices – PC, Mac, iPad, iPhone, Android tablets and phones</p>
+        <p>All styles of piano covered – pop, blues, jazz, ballads, improvisation, classical.</p>
+        <p>Play-by-ear and learn to read music at the same time</p>
+        <p>Filled with tricks, tips and formulas to help people sound great right from the start</p>
+        <p>Easy to follow yet comprehensive</p>
+        <p>It Couldn't be Easier to Learn Piano</p>
+        <p>lised the fertile river flats for agriculture. Governor Phillip Gidley King began granting land in the area to settlers in 1804 with Captain Daniel Woodriff's 1,000 acres (4.0 km2) on the banks of the river the first land grant in the area. Urban development Bankstown Liverpool Liverpool Hospital was founded on a portion of land beside the Georges River, making it the second oldest hospital in Australia. Fairfield railway station was opened in 1856 and has the oldest surviving railway building in New South Wales. Quarrying in the Prospect area began in the 1820s and naturalist Charles Darwin visited Prospect Hill in January 1836, to observe the geology. Designed and constructed by the NSW Public Works Department, Prospect Reservoir was built as Sydney's main water supply in the 1880s. The Upper Nepean Scheme was commenced in 1880 after it was realised that the Botany Swamps scheme was insufficient to meet Sydney's water supply needs. By the latter part of the nineteenth century coarse-grained picrite, and other dolorite rock types were being extracted from William Lawson's estate on the west and north sides of Prospect Hill. Lansvale was a popular recreational site of the early 20th century due to its waterways and meadows. During World War II, Bankstown Airport was established as a key strategic air base to support the war effort and the control of Bankstown Airport was handed to US Forces. Campbelltown was designated in the early 1960s as a satellite city by the New South Wales Planning Authority, and a regional capital for the south west of Sydney. Until the 1950s, Liverpool was still a satellite town with an agricultural economy based on poultry farming and market gardening. However the urban sprawl of Sydney across the Cumberland Plain soon reached Liverpool, and it became an outer suburb of metropolitan Sydney with a strong working-class presence and manufacturing facilities. In the 1950s and 1960s, there was a large amount of suburban development both in the current suburb of Blacktown and the new suburbs that sprung up around it, which led to civic development in the town centre with the Blacktown Hospital open</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Sarah Johnson &lt;sarah@marketingman9.com&gt;</p>
+        <p><b>Reply-To</b>: &quot;DataList2023.com&quot; &lt;sarah@marketingman9.com&gt;</p>
+        <p><b>To</b>: writing@voussoir.net</p>
+        <p><b>Subject</b>: DataList2023.com Shutting Down</p>
+        <p><b>Date</b>: Thu, 6 Jul 2023 02:15:09 +0200</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=9.05 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FORGED_SPF_HELO,HTML_MESSAGE,HTML_MIME_NO_HTML_TAG,MIME_HTML_ONLY,RCVD_IN_MSPIKE_BL,RCVD_IN_MSPIKE_ZBI,SPF_HELO_PASS,TVD_RCVD_IP,TVD_RCVD_IP4,URIBL_ABUSE_SURBL,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.75;EffectiveIp=193.233.48.198,SpamProbability=0.48
+Return-Path: &lt;sarah@marketingman9.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of marketingman9.com designates 193.233.48.198 as permitted sender) smtp.mailfrom=marketingman9.com; dkim=pass header.i=marketingman9.com; dmarc=pass (p=quarantine) header.from=sarah@marketingman9.com
+Received: from 193.233.48.198 (EHLO marketingman9.com) ([193.233.48.198])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -978063209
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Thu, 06 Jul 2023 00:15:12 +0000 (UTC)
+Received: from authenticated-user (marketingman9.com [193.233.48.198])
+    (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits))
+    (No client certificate requested)
+    by marketingman9.com (Postfix) with ESMTPSA id 63E184BB0A
+    for &lt;writing@voussoir.net&gt;; Thu,  6 Jul 2023 03:15:10 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=marketingman9.com;
+    s=mail; t=1688602510;
+    bh=C9M6dUa5WnsDmVRPwC4YB8JcocKixRiK6pqEYK1weEY=;
+    h=Date:To:From:Reply-To:Subject:From;
+    b=fqbh8YPDZyGo/18T4OWc9FBi37MdVm38A2AngGtYV2AjW4YHUV09mV8HrZr1FLREx
+     RdnTUixWy4xWmy0m5m52ChztkSY8zmek3A/H19BBeR/8LYbwNg/H7z/VffW3eGZiE5
+     x/712fh/iwvPrqp1Q6uLKM1L4EaNqh5NIr0TYpB1po6jvDcld4KIg3kh4m6V6kt1FO
+     JOPWn1hxQhtplNx10ZgcdwglyFgzPGBbwN72kXFqCH+EIgjqjs2S3Bf1brLfQE4vtd
+     jGhZNeXuO0DNH38E7pLmT5iX+xhZqv3fb6owbMAsH/op/dFo69vXwM1A3SAjF/WmXY
+     sndrscaYXIMcQ==
+Date: Thu, 6 Jul 2023 02:15:09 +0200
+To: writing@voussoir.net
+From: Sarah Johnson &lt;sarah@marketingman9.com&gt;
+Reply-To: &quot;DataList2023.com&quot; &lt;sarah@marketingman9.com&gt;
+Subject: DataList2023.com Shutting Down
+Message-ID: &lt;nBTuosBsdWevyPTBvtiCUdRYUW2pBhDvCUsFlQ@localhost&gt;
+MIME-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi,</p>
+        <p>It is with sad regret to inform you DataList2023 is shutting down.</p>
+        <p>We have made all our data available at a one-time fee.</p>
+        <p>Please visit us on DataList2023.com to find our more.</p>
+        <p>Regards,</p>
+        <p>Sarah Johnson</p>
+        <p>Email ID: 2eaf14</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Derila Team&quot; &lt;MemoryFoam@instahardmaleenhancement.today&gt;</p>
+        <p><b>Reply-To</b>: &quot;Derila Team&quot; &lt;MemoryFoam@instahardmaleenhancement.today&gt;</p>
+        <p><b>To</b>: &lt;sales@voussoir.net&gt;</p>
+        <p><b>Subject</b>: Your cart is still waiting for you</p>
+        <p><b>Date</b>: Mon, 12 Jun 2023 14:27:45 +0200</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=7.75 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_FONT_LOW_CONTRAST,HTML_MESSAGE,LONGLN_LOW_CONTRAST,RCVD_IN_PSBL,SPF_HELO_NONE,TVD_RCVD_IP,TVD_RCVD_IP4,URIBL_ABUSE_SURBL,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.15;EffectiveIp=31.210.39.130,SpamProbability=0.42
+Return-Path: &lt;65495-93788-64429-14076-sales=voussoir.net@mail.instahardmaleenhancement.today&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: sales@voussoir.net
+X-Pm-Original-To: sales@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of mail.instahardmaleenhancement.today designates 31.210.39.130 as permitted sender) smtp.mailfrom=mail.instahardmaleenhancement.today; dkim=pass header.i=instahardmaleenhancement.today; dmarc=pass (p=none) header.from=MemoryFoam@instahardmaleenhancement.today
+Received: from 31.210.39.130 (EHLO rhea.instahardmaleenhancement.today) ([31.210.39.130])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id -1462782270
+          for &lt;sales@voussoir.net&gt;;
+          Mon, 12 Jun 2023 12:38:37 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=instahardmaleenhancement.today;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID; i=MemoryFoam@instahardmaleenhancement.today;
+ bh=uCTCC87IM409zoOi0ALPOEu19DQ=;
+ b=lUbCqxR6DIqs81N0jvPhHEtfuNdXVT+xLjLJIGYuK7QbEmpbIc8+Ki+p8Or1yqPW6LRiYlkIKBxV
+   GXdwXJ5QMV4G6kL5Wm6tKGdZNLsAlaX7R4za4AZVO6MktPruMDbn0yLza0BC3T/nLC5AoQ0Khb2u
+   uRr7TVYVbVJKnH+A8h4=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=instahardmaleenhancement.today;
+ b=n81v5maI+EvMuhS/ebPG1/vUvRS/RX9/nT33o5nl9GWk9/e6SnfspoK/tU4Loyo4ePbbpSItJPM1
+   bOWuboMo3orDCgoepc/fQ6GPbqeNL9TvAfnjfnTzwVsbDIp0MsU7FBTFuCxT4SF5pHjvf2czkTtZ
+   vfxyAv+XIbyQJN6W2cs=;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;bcdbdf7caa3a48dfdb7b02d83972ab2f_16e5c_fbad&quot;
+Date: Mon, 12 Jun 2023 14:27:45 +0200
+From: &quot;Derila Team&quot; &lt;MemoryFoam@instahardmaleenhancement.today&gt;
+Reply-To: &quot;Derila Team&quot; &lt;MemoryFoam@instahardmaleenhancement.today&gt;
+Subject: Your cart is still waiting for you
+To: &lt;sales@voussoir.net&gt;
+Message-ID: &lt;cc6rwg2o1isobquj-wkaf9brikge662ys-16e5c-fbad@instahardmaleenhancement.today&gt;
+        </pre>
+        </details>
+
+        <hr/>
+<p>GOOD NEWS! WE SAVED YOUR DERILA MEMORY FOAM PILLOW FOR YOU</p>
+<p>GO AHEAD AND COMPLETE YOUR ORDER NOW TO TAKE ADVANTAGE OF OUR SPECIAL SALE PRICE</p>
+<p>RETURN TO CART</p>
+<p>Unfortunately, our sale price won’t be around for much longer, so hurry!</p>
+<p>With premium memory foam and an ergonomic contour design, Derila will help you get that restful sleep you’re dreaming of.</p>
+<p>Perfect for every type of sleeper, this pillow is a no-brainer. Wake up feeling refreshed and ready to take on the day!</p>
+<p>Simply return to your cart through the link below and order now.</p>
+<p>ORDER DERILA NOW</p>
+<p>Click Here to Unsubscribe write to</p>
+<p>9900 Armbrester Drive Gardena, CA 90247</p>
+<p>In the early 1990s in North America, with New Kids on the Block&#x27;s continued success and Color Me Badd also having success, boy bands became a continued staple of the Billboard charts. Continuing this success in the mid-1990s, most prominent boy bands were African American and had R&amp;B and gospel elements, such as the groups All-4-One (formed in 1993) and Boyz II Men (formed in 1988). Boyz II Men are also the most successful boy band act on the U.S. Hot 100 as well as the Australian Singles Chart. Although they had success on the Billboard charts, they were not marketed towards youth but more towards adults. It was not until 1997 and the change to pop-oriented groups such as Backstreet Boys, 98 Degrees, NSYNC, the Moffatts, and Hanson that boy bands exploded commercially and dominated the market in the United States. This late 1990s marked the height of boy band popularity in North America, which has not been seen since. Arguably the most successful boy band manager from the U.S. was Lou Pearlman, who founded commercially successful acts such as the Backstreet Boys in 1993, NSYNC and LFO in 1995, O-Town in 2000, and US5 in 2005. Backstreet Boys and NSYNC became the two biggest boy bands in the late 1990s until the early 2000s, and Backstreet Boys went on to become the best-selling boy band in history with over 100 million records sold. In the late 1990s in the UK, producer Simon Cowell (noted in the U.S. for the American Idol/The X Factor franchise) is also known for having managed British boyband Five (formed in 1997) and Irish boyband Westlife (formed in 1998). Westlife was created by Irishman Louis Walsh as a replacement for Boyzone and was initially managed by a former member of the band Ronan Keating. Westlife would eventually overtake Take That in number one&#x27;s tally in the UK although Take That&#x27;s overall UK sales are still higher. In 2012, the Official Charts Company revealed the biggest selling singles artists in British music chart history with Take That placed 15th overall and the highest selling boyband act (9.3 million), followed by Boyzone at 29 (7.1 million) and Westlife at 34 (6.8 million). Even though Cowell is known to have managed several successful boy bands, he is also infamous for passing on signing two of the biggest boybands to emerge from the 1990s and 2000s, Take That and Busted</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: James Johnson &lt;james@marketingman9.com&gt;</p>
+        <p><b>Reply-To</b>: &quot;DirectoryRegistar.com&quot; &lt;james@marketingman9.com&gt;</p>
+        <p><b>To</b>: writing@voussoir.net</p>
+        <p><b>Subject</b>: voussoir.net on DirectoryRegistar.com</p>
+        <p><b>Date</b>: Tue, 9 May 2023 07:53:09 +0200</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=5.72 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_MESSAGE,HTML_MIME_NO_HTML_TAG,MIME_HTML_ONLY,RCVD_IN_BL_SPAMCOP_NET,RCVD_IN_MSPIKE_H2,RCVD_IN_PSBL,SPF_HELO_PASS,TXREP,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.22;EffectiveIp=91.217.80.152,SpamProbability=0.42
+Return-Path: &lt;james@marketingman9.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of marketingman9.com designates 91.217.80.152 as permitted sender) smtp.mailfrom=marketingman9.com; dkim=pass header.i=marketingman9.com; dmarc=pass (p=quarantine) header.from=james@marketingman9.com
+Received: from marketingman9.com (EHLO marketingman9.com) ([91.217.80.152])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -1987905419
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Tue, 09 May 2023 05:53:13 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=marketingman9.com;
+    s=mail; t=1683611592;
+    bh=8PxpZ7WxmGvilBQf+z20MS417q5FId+n+XiC4dhwWIY=;
+    h=Date:To:From:Reply-To:Subject:From;
+    b=IpzcUJVW5kGQ0XZzeFtVDOHEl1tKxKetD2LB/qb51tmhp+oCSPMmCy7M9yxTLp+6O
+     1vMyQHVvGh6CtHXvscV5QX2h9Exazc1ctbEhcvcn49/Et4tk+xz4hq1KSifUCWFU0L
+     oMxC7h9d1qin6ol+JwKugqvWc3xbRXm2VqdljbvSjA1OUstz757+uOG6l3KujhbTV8
+     a5rKkIPPSRRGYrTIeU0heSbKrOBJfL4OCnjJRPQ14mxe/Ak/ogt5WUmQJYba14zmaR
+     7O0prrnO5gPOfUb49rTdTfImkzFsIuUp3jlTb6Vc4Ihsj9gmbyzHOEoZYMsXWwTYxs
+     eYrEf2yB8HJ+w==
+Received: from authenticated-user (marketingman9.com [91.217.80.152])
+    (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+     key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256)
+    (No client certificate requested)
+    by marketingman9.com (Postfix) with ESMTPSA id 8EB2E642A8
+    for &lt;writing@voussoir.net&gt;; Tue,  9 May 2023 08:53:11 +0300 (MSK)
+Date: Tue, 9 May 2023 07:53:09 +0200
+To: writing@voussoir.net
+From: James Johnson &lt;james@marketingman9.com&gt;
+Reply-To: &quot;DirectoryRegistar.com&quot; &lt;james@marketingman9.com&gt;
+Subject: voussoir.net on DirectoryRegistar.com
+Message-ID: &lt;wJT5QBT4eR9WshP1pNsA7512ewdyuDi8bU5uYiZlI3M@localhost&gt;
+MIME-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+        <p>Hi,</p>
+        <p>Your website is only listed in 8 out of a possible 12,489 directories.</p>
+        <p>We are a service that lists your website in all these directories.</p>
+        <p>Please visit us on DirectoryRegistar.com to find our more.</p>
+        <p>Regards,</p>
+        <p>James Johnson</p>
+        <p>Email ID: 8b4651</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Alan Pan&quot; &lt;sales04@szzc.info&gt;</p>
+        <p><b>Reply-To</b>: alanpan688@gmail.com</p>
+        <p><b>To</b>: contact@voussoir.net</p>
+        <p><b>Subject</b>: Re:Custom cotton tote bag  2023/5/8 22:16:04</p>
+        <p><b>Date</b>: Mon, 8 May 2023 22:15:58 +0800</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=6.16 required=5 tests=FORGED_SPF_HELO,FREEMAIL_FORGED_REPLYTO,FREEMAIL_REPLYTO_END_DIGIT,HTML_FONT_LOW_CONTRAST,HTML_IMAGE_RATIO_02,HTML_MESSAGE,SPF_HELO_PASS,TVD_RCVD_IP,TVD_RCVD_IP4,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.36;EffectiveIp=103.45.98.213,SpamProbability=0.44
+Return-Path: &lt;sales04@szzc.info&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: contact@voussoir.net
+X-Pm-Original-To: contact@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of szzc.info designates 103.45.98.213 as permitted sender) smtp.mailfrom=szzc.info; dmarc=pass (p=none) header.from=sales04@szzc.info
+Received: from 103.45.98.213 (EHLO szzc.info) ([103.45.98.213])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 1334918857
+          for &lt;contact@voussoir.net&gt;
+          (version=TLSv1.2 cipher=TLS_DHE_RSA_WITH_AES_256_GCM_SHA384);
+          Mon, 08 May 2023 14:16:56 +0000 (UTC)
+Received: from lifsxam ([127.0.0.1])
+  by IltPXX395748 ([127.0.0.1]) with ESMTP
+  for &lt;contact@voussoir.net&gt;;
+  Mon, 8 May 2023 22:16:04 +0800
+Reply-To: &lt;alanpan688@gmail.com&gt;
+Date: Mon, 8 May 2023 22:15:58 +0800
+From: &quot;Alan Pan&quot; &lt;sales04@szzc.info&gt;
+To: &lt;contact@voussoir.net&gt;
+Subject: Re:Custom cotton tote bag  2023/5/8 22:16:04
+Message-ID: &lt;20230508221604380042@szzc.info&gt;
+X-Priority: 1 (Highest)
+X-mailer: Foxmail 6, 13, 102, 15 [cn]
+Mime-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Good day,</p>
+
+        <p>May I ask if you are interested in customized bags for your brand?</p>
+
+        <p>We are bag factory from China, mainly supply non-woven shopping bags, drawstring bags, jute bags, cotton bags and so on.</p>
+
+        <p>Here is cotton bag we did for your reference. If you are interested, please feel free to contact me.</p>
+
+        <p>Size: 34(w)*36(h) CM<br/>
+        Material: 8oz cotton fabric<br/>
+        Printing: Customized<br/>
+        MOQ: 3,000 pcs<p>
+
+        <p>Kind regards,</p>
+
+        <p>Alan Pan</p>
+
+        <p>---</p>
+
+        <p>Please reply "remove" if you do not our service.</p>
+
+        <p>" "And is she still as beautiful as you used to try to make us think she was?" asked Mr<br/>
+
+        Later, facts which came to light convinced her of her error, and she hastened to New York to seek Mr<br/>
+
+        “Aye,” said the lad; “but do not kill me<p>
+
+        <p>2023/5/8</p>
+
+        <p>22:16:04</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Sendra Giorgia&quot; &lt;contacton@ar-textil.cc&gt;</p>
+        <p><b>Reply-To</b>: contact@safewayinvestment.com</p>
+        <p><b>To</b>: contact@voussoir.net</p>
+        <p><b>Subject</b>: Proposal</p>
+        <p><b>Date</b>: 28 Apr 2023 04:16:24 +0200</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=5.05 required=5 tests=ADVANCE_FEE_2_NEW_MONEY,DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,DKIM_VALID_EF,HTML_MESSAGE,LOTS_OF_MONEY,MILLION_USD,MIME_HTML_ONLY,RCVD_IN_BL_SPAMCOP_NET,RCVD_IN_ZEN_BLOCKED_OPENDNS,SPF_HELO_NONE,SPF_PASS,URIBL_DBL_BLOCKED_OPENDNS,URIBL_ZEN_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=3.4.6
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 1.85;EffectiveIp=185.231.207.15,SpamProbability=0.39
+Return-Path: &lt;contacton@ar-textil.cc&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: contact@voussoir.net
+X-Pm-Original-To: contact@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of ar-textil.cc designates 185.231.207.15 as permitted sender) smtp.mailfrom=ar-textil.cc; dkim=pass header.i=ar-textil.cc; dmarc=pass (p=reject) header.from=contacton@ar-textil.cc
+Received: from voj0.ar-textil.cc (EHLO voj0.ar-textil.cc) ([185.231.207.15])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -1663527668
+          for &lt;contact@voussoir.net&gt;
+          (version=TLSv1.2 cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384);
+          Fri, 28 Apr 2023 02:16:26 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=ar-textil.cc;
+ h=Reply-To:From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=contacton@ar-textil.cc;
+ bh=O1pzkHToJhhFfNrGUoCGoxBgpWE=;
+ b=uI+4QcIbziHg7Gn+xG/L7kctBiuyVIKOIO1OQVwfhCLIGx/P2Qgc93YlKVgniWN98vh0p711XuvH
+   J50kytYITfk62UdJskg0RsIrL7KfL/2Ed29hefdTxLdIJJRgGJblbNuAtpzWANj/CQuTyq3xsVJz
+   AWMInwhQMg2AxOvlHJA=
+Reply-To: contact@safewayinvestment.com
+From: &quot;Sendra Giorgia&quot; &lt;contacton@ar-textil.cc&gt;
+To: contact@voussoir.net
+Subject: Proposal
+Date: 28 Apr 2023 04:16:24 +0200
+Message-ID: &lt;20230428041624.227B87749E41BC8F@ar-textil.cc&gt;
+MIME-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hello Dearest,</p>
+        <p>I was asked to contact you and Haven obtained your contact details from a reliable source as a potential partner. We are happy to introduce to you a woman with a Capital of 59.9 Million USD from Saudi Arabia searching for a good person to invest in your country.  We are a renowned investment-brokering agent in your country and we offer irresistible service investment providers from your country.  </p>
+        <p>We are by this email letter offering you an irresistible joint (Partnership), so as to allow us to have you as our representative and manager of investment funds partnership in your country within the time frame of the investment relationship.  Since we cannot determine if this email is functional or valid and also your willingness, we have kept this proposal brief.</p>
+        <p>We are in the hope to share this irresistible offer with you based on a partnership investment program within your country.  If you are interested in this partnership, please respond with your direct telephone and give us your full contact details plus your company profile if any, and in your response, we will send you an elaborate email with details of this kind of offer on how to see face to face then email:  contact@safewayinvestment.com  </p>
+        <p>Your expedient response will be appreciated.</p>
+        <p>Thank you.</p>
+        <p>Smith Michael</p>
+        <p>London, UK</p>
+        <p>Whatsapp: +(44) 74 52111868</p>
+        <p>https://safewayinvestment.com</p>
+        <p>London</p>
+        <p>UK</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Personal Branding Networking&quot; &lt;Youwereselected@themagicenergy.shop&gt;</p>
+        <p><b>Reply-To</b>: &quot;Personal Branding Networking&quot; &lt;Youwereselected@themagicenergy.shop&gt;</p>
+        <p><b>To</b>: &lt;sales@voussoir.net&gt;</p>
+        <p><b>Subject</b>: Congratulations! You have been selected</p>
+        <p><b>Date</b>: Mon, 24 Apr 2023 11:05:40 +0200</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=7.22 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,DKIM_VALID_EF,HTML_FONT_LOW_CONTRAST,HTML_MESSAGE,PP_MIME_FAKE_ASCII_TEXT,RCVD_IN_ZEN_BLOCKED_OPENDNS,SPF_HELO_NONE,TVD_RCVD_IP,TVD_RCVD_IP4,T_SPF_PERMERROR,URIBL_ABUSE_SURBL,URIBL_BLACK,URIBL_DBL_BLOCKED_OPENDNS,URIBL_ZEN_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=3.4.6
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.72;EffectiveIp=157.52.237.181,SpamProbability=0.47
+Return-Path: &lt;63657-93788-64429-13086-sales=voussoir.net@mail.themagicenergy.shop&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: sales@voussoir.net
+X-Pm-Original-To: sales@voussoir.net
+Authentication-Results: purelymail.com; dkim=pass header.i=themagicenergy.shop; dmarc=pass (p=none) header.from=Youwereselected@themagicenergy.shop
+Received: from 157.52.237.181 (EHLO paul.themagicenergy.shop) ([157.52.237.181])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 1456365170
+          for &lt;sales@voussoir.net&gt;;
+          Mon, 24 Apr 2023 09:05:59 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=themagicenergy.shop;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID; i=Youwereselected@themagicenergy.shop;
+ bh=JVxw+1NBf51xQcRVHBH53ieJ/7w=;
+ b=XHowAtVuTZViTNogFEG5imeIB6EMZKegxEBGNJvHRsFRVQFTc1uqCiQAFWwxU1iC0/4+ZzZjxxfE
+   E+MaV8iTsqzPivI1p3DrbXglbi6OgybMGFCZqaw31MlqQ4D+C+I6aMu5Zp6ZhlxdBriFlnQfiaXm
+   LVq2Qesxvif0dgbP/lU=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=themagicenergy.shop;
+ b=eUGOzGr9Iqj4DWO74JCVdxnkZLvOirePpXakf8yAAhIw5JBDZxxlpjq0i9kBspRXfi27O98YaxDy
+   pohJ0jGjO5UMRfTDOWGtLkSUpNLBh6qKaBDAtQOB3JG0kYzfLGRozMNP2j+pC5sm51sRe7kqG2Aj
+   Zife6l8O9mfOr6M5jNM=;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;3284703d5cb079f751e48d7f22049dbe_16e5c_fbad&quot;
+Date: Mon, 24 Apr 2023 11:05:40 +0200
+From: &quot;Personal Branding Networking&quot; &lt;Youwereselected@themagicenergy.shop&gt;
+Reply-To: &quot;Personal Branding Networking&quot; &lt;Youwereselected@themagicenergy.shop&gt;
+Subject: Congratulations! You have been selected
+To: &lt;sales@voussoir.net&gt;
+Message-ID: &lt;aolrnjgruc40slnz-tyx2o7ocl48r26y2-16e5c-fbad@themagicenergy.shop&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>You&#x27;ve Been Considered for Inclusion! Click Here</p>
+        <p>Congratulations,</p>
+        <p>This letter serves to inform you that you were recently nominated for inclusion in the 2022 Professional Who’s Who publication. America&#x27;s most trusted publication and community of top executives. Your prompt response is required to ensure your profile information is submitted accurately and within the allotted time period.</p>
+        <p>Click Here to Accept Your Nomination &gt;&gt;</p>
+        <p>Each candidate is selected individually based on your current position and previous acheivements, giving you the opportunity to represent your industry &amp; profession.</p>
+        <p>Once listed you will be featured among thousands of accomplished professionals. Being listing within Who&#x27;s Who will help build your brand and reputation online. Get the recognition you deserve and showcase your skills and achievements you worked so hard for.</p>
+        <p>There&#x27;s no cost to apply or be included</p>
+        <p>Click Here to Accept Your Nomination &gt;&gt;</p>
+        <p>Congratulations once again. Your achievements are truly impressive, and I congratulate you on the accomplishments that have brought your name to the attention and look forward to receiving your submission.</p>
+        <p>Get_Started_Button-300x150.png</p>
+        <p>Sincerely,</p>
+        <p>Joan Riley</p>
+        <p>Editor-in-Chief, Professional Who&#x27;s Who</p>
+        <p>Please note: Inclusion carries no cost nor obligation to you of any kind.</p>
+        <p>During the Ottoman invasion of Russian and Persian territory in late 1914, Ottoman paramilitaries massacred local Armenians. A few Ottoman Armenian soldiers defected to Russia—seized upon by both the CUP and later deniers as evidence of Armenian treachery—but the Armenian volunteers in the Russian army were mostly Russian Armenians. Massacres turned into genocide following the catastrophic Ottoman defeat by Russia in the Battle of Sarikamish (January 1915), which was blamed on Armenian treachery. Armenian soldiers and officers were removed from their posts pursuant to a 25 February order issued by Minister of War Enver Pasha. In the minds of the Ottoman leaders, isolated incidents of Armenian resistance were taken as evidence of a general insurrection. Bodies of dozens of Armenians in a field The corpses of Armenians beside a road, a common sight along deportation routes In mid-April, after Ottoman leaders had decided to commit genocide, Armenians barricaded themselves in the eastern city of Van. The defense of Van served as a pretext for anti-Armenian actions at the time and remains a crucial element in works that seek to deny or justify the genocide. On 24 April, hundreds of Armenian intellectuals were arrested in Constantinople. Systematic deportation of Armenians began, given a cover of legitimacy by the 27 May deportation law. The Special Organization guarded the deportation convoys consisting mostly of women, children, and the elderly who were subject to systematic rape and massacres. Their destination was the Syrian Desert, where those who survived the death marches were left to die of starvation or disease in makeshift camps. Deportation was only carried out in the areas away from active fighting; near the front lines, Armenians were massacred outright. The leaders of the CUP ordered the deportations, with interior minister Talat Pasha, aware that he was sending the Armenians to their deaths, taking a leading role. In a cable dated 13 July 1915, Talat stated that &quot;the aim of the Armenian deportations is the final solution of the Armenian Question.&quot; Historians estimate that 1.5 to 2 million Armenians lived in the Ottoman Empire in 1915, of whom 800,000 to 1.2 million were deported during the genocide. In</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Healthy Nutrition&quot; &lt;HighQualitySleep@antitarcigarette.za.com&gt;</p>
+        <p><b>Reply-To</b>: &quot;High Quality Sleep&quot; &lt;HealthyNutrition@antitarcigarette.za.com&gt;</p>
+        <p><b>To</b>: &lt;sales@voussoir.net&gt;</p>
+        <p><b>Subject</b>: Shocking truth about melatonin and sleep</p>
+        <p><b>Date</b>: Tue, 28 Mar 2023 16:46:32 +0200</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=9.83 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,DKIM_VALID_EF,HTML_FONT_LOW_CONTRAST,HTML_MESSAGE,LOTS_OF_MONEY,RCVD_IN_PSBL,RCVD_IN_ZEN_BLOCKED_OPENDNS,SPF_HELO_NONE,TVD_RCVD_IP,TVD_RCVD_IP4,T_SPF_PERMERROR,URIBL_ABUSE_SURBL,URIBL_BLACK,URIBL_DBL_BLOCKED_OPENDNS,URIBL_ZEN_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=3.4.6
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 3.63;EffectiveIp=174.139.160.226,SpamProbability=0.56
+Return-Path: &lt;62697-75-346874-14300-sales=voussoir.net@mail.antitarcigarette.za.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: sales@voussoir.net
+X-Pm-Original-To: sales@voussoir.net
+Authentication-Results: purelymail.com; dkim=pass header.i=antitarcigarette.za.com; dmarc=pass (p=none) header.from=HighQualitySleep@antitarcigarette.za.com
+Received: from 174.139.160.226 (EHLO mars.antitarcigarette.za.com) ([174.139.160.226])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 151785442
+          for &lt;sales@voussoir.net&gt;;
+          Tue, 28 Mar 2023 14:46:35 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=antitarcigarette.za.com;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID; i=HighQualitySleep@antitarcigarette.za.com;
+ bh=q2ctWjrg5sksrlz8pzKuMRmomdQ=;
+ b=fL1L5EoPMDac0UiiHCbsIJzAyS5g9Mg0lJpc4THK6DUhuPaiu0a49J5jz3kdLVjK2Mx83tFYVpPV
+   WVAU9hcMDxvTtu7ZqudC6wSwX3PxFwmZxKGVwNIFY5Q9Cwl524io7aMTaBMjX3u34MOu+FQHnllA
+   8bpdryQtV9IYvvdUzXw=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=antitarcigarette.za.com;
+ b=L+nD8pnpVtyG75aqbScRsYNGs75XrdxYVoB5rO3BATEp+WKTkSQUJrfXsN4tiTsVO2n688VyXChT
+   jxRUdA0//uk6jsQ/54Gn+NJrE3haB9iNxAEd5gwCmkUGxCCsQm5vzLCNspL3WpYXkFqc6WOgAHb3
+   JqI1SOMJamhcYCCJm4o=;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;eb98f8bb43023d0f83b0e5db44b1fdaf_4b_54afa&quot;
+Date: Tue, 28 Mar 2023 16:46:32 +0200
+From: &quot;Healthy Nutrition&quot; &lt;HighQualitySleep@antitarcigarette.za.com&gt;
+Reply-To: &quot;High Quality Sleep&quot; &lt;HealthyNutrition@antitarcigarette.za.com&gt;
+Subject: Shocking truth about melatonin and sleep
+To: &lt;sales@voussoir.net&gt;
+Message-ID: &lt;80dmug1vcwtjhtcj-pfxkrtyp7ws6axi6-4b-54afa@antitarcigarette.za.com&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>FACT: High quality sleep (or lack of) makes or breaks your day…</p>
+        <p>Do you ever wake up a few hours before your alarm goes off, and you’re unable to fall back asleep?</p>
+        <p>Are you a night-owl who struggles to fall asleep at night thus ruining your productivity the next day?</p>
+        <p>Wouldn’t it be nice if you could maximize your sleep quality and therefore increase your performance throughout the day?</p>
+        <p>If you answered YES to any of these questions… then continue reading, because I’m about to share how to stop the biggest sleep supplement mistake people are making and the ultimate solution for perfect sleep.</p>
+        <p>I crashed and burned in my 20s and again in my 30s due to poor sleep.</p>
+        <p>My deep sleep scores were 0 to 15 minutes per night.</p>
+        <p>My testosterone was in the low 200s, my bodyfat was at a record high and I felt horrible almost every day when I woke up.</p>
+        <p>I realized that investing in my sleep was the greatest investment I could make in my health, looks and performance.</p>
+        <p>I became obsessed and spent $45,000 on improving my sleep: from custom made mattresses to every sleep enhancing device on the market. A lot of it worked, some didn’t.</p>
+        <p>I spent tens of thousands on every sleep ingredient, peptide and molecule. I’ve been obsessed with creating the ultimate sleep formula.</p>
+        <p>One thing I learned was that melatonin was a massive mistake for me and for most people.</p>
+        <p>Many people who take melatonin (myself included) actually report that they wake up 3-5 hours later with the inability to fall back asleep.</p>
+        <p>Sleep disorder specialist Michael Breus, Ph.D warns: “Melatonin is a sleep regulator, NOT a sleep initiator.”</p>
+        <p>Melatonin is also completely unregulated. Most magnesium supplements that have been tested only contain about 15% of the amount listed on the bottle OR up to 400X the amount listed on the bottle. Many countries have even outlawed its use over-the-counter, “OTC melatonin has been banned for years in the United Kingdom (UK), European Union, Japan, Australia, and most recently Canada.”</p>
+        <p>INSTEAD, THE BEST APPROACH IS: give your body the building blocks to melatonin and the ingredients that help your body produce melatonin naturally…</p>
+        <p>So your body doesn&#x27;t downregulate…</p>
+        <p>You don’t become dependent on sleep supplements…</p>
+        <p>You get a full night’s sleep without waking up</p>
+        <p>Wake up feeling like your BEST SELF</p>
+        <p>After years of research and development and 55 prototypes, we have found the perfect mix of ingredients to give you the best sleep ever.</p>
+        <p>&gt;&gt;Go Here To Activate ALL 5 Sleep Pathways And Transform Your Sleep, Health And Performance ?</p>
+        <p>New drugs are the products of a long drug development process, the first step of which is often the discovery of a new enzyme inhibitor. There are two principle approaches of discovering these inhibitors. The first general method is rational drug design based on mimicking the transition state of the chemical reaction catalysed by the enzyme. The designed inhibitor often closely resembles the substrate, except that the portion of the substrate that undergoes chemical reaction is replaced a chemically stable functional group that resembles the transition state. Since the enzyme has evolved to stabilise the transition state, transition state analogues generally possess higher affinity for the enzyme compared to the substrate, and therefore are effective inhibitors. The second way of discovering new enzyme inhibitors is high-throughput screening of large libraries of structurally diverse compounds to identify hit molecules that bind to the enzyme. This method has been extended to include virtual screening of databases of diverse molecules using computers, which are then followed by experimental confirmation of binding of the virtual screening hits. Complementary approaches that can provide new starting points for inhibitors include fragment-based lead discovery and DNA Encoded Chemical Libraries (DEL). Hits from any of the above approaches can be optimised to high affinity binders that efficiently inhibit the enzyme. Computer-based methods for predicting the binding orientation and affinity of an inhibitor for an enzyme such as molecular docking and molecular mechanics can be used to assist in the optimisation process. New inhibitors are used to obtain</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Anti-Fungal Gel&quot; &lt;ClearNailFungus@samdeltasurvey.today&gt;</p>
+        <p><b>Reply-To</b>: &quot;Anti-Fungal Gel&quot; &lt;ClearNailFungus@samdeltasurvey.today&gt;</p>
+        <p><b>To</b>: &lt;sales@voussoir.net&gt;</p>
+        <p><b>Subject</b>: Want To Clear Fungus 3X Faster!? Try THIS Odd Technique</p>
+        <p><b>Date</b>: Fri, 24 Mar 2023 14:00:06 +0100</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=8.95 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,DKIM_VALID_EF,HTML_FONT_LOW_CONTRAST,HTML_MESSAGE,PLING_QUERY,PP_MIME_FAKE_ASCII_TEXT,RCVD_IN_PSBL,RCVD_IN_ZEN_BLOCKED_OPENDNS,SPF_HELO_NONE,TVD_RCVD_IP,TVD_RCVD_IP4,T_SPF_PERMERROR,URIBL_ABUSE_SURBL,URIBL_BLOCKED,URIBL_DBL_BLOCKED_OPENDNS,URIBL_ZEN_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=3.4.6
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 3.35;EffectiveIp=181.214.39.206,SpamProbability=0.53
+Return-Path: &lt;62569-92950-355747-14281-sales=voussoir.net@mail.samdeltasurvey.today&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: sales@voussoir.net
+X-Pm-Original-To: sales@voussoir.net
+Authentication-Results: purelymail.com; dkim=pass header.i=samdeltasurvey.today; dmarc=pass (p=none) header.from=ClearNailFungus@samdeltasurvey.today
+Received: from 181.214.39.206 (EHLO yoke.samdeltasurvey.today) ([181.214.39.206])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id -736564577
+          for &lt;sales@voussoir.net&gt;;
+          Fri, 24 Mar 2023 13:00:19 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=samdeltasurvey.today;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID; i=ClearNailFungus@samdeltasurvey.today;
+ bh=uYDNQMMx7mqZfqnur+2yUkmabWg=;
+ b=CaC/4U2aVG4ESL8zwQt1gb0L4VTBGRSIbztpW3SFw5ujgZLzRItNscennKqvTHqrPb5uXMy/Sf0c
+   Nd5tf3YAsn1+xblVRm8Xa+SifXtt4tLrhA+m49butm7tBQKd7hJOn3TucO5SzWtarej1hXkr8/+k
+   M0/vE6uQ+QG5O3aTs1Y=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=samdeltasurvey.today;
+ b=fAkfpr7ntVcBMm8uGKKol0EoiKIDleAJvrLHr2YMiHNMxE0TJfoE7yOGFoI8MJTiVgzynobuZLVf
+   hkvAo44i57pB4zufhIWd/lrHw0lyiGv+ZRKpw+FvDW7QmpqLaiDZMQPRGfQGPi6HHKSqPMl3f5qx
+   diII2ZHVOspQeXQ9Y/k=;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;1bd2e57186c93eff83abb84b5db08eed_16b16_56da3&quot;
+Date: Fri, 24 Mar 2023 14:00:06 +0100
+From: &quot;Anti-Fungal Gel&quot; &lt;ClearNailFungus@samdeltasurvey.today&gt;
+Reply-To: &quot;Anti-Fungal Gel&quot; &lt;ClearNailFungus@samdeltasurvey.today&gt;
+Subject: Want To Clear Fungus 3X Faster!? Try THIS Odd Technique
+To: &lt;sales@voussoir.net&gt;
+Message-ID: &lt;w0eukqpoad5htm15-57zrbkjzh0lgnl70-16b16-56da3@samdeltasurvey.today&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>And finally make your nails strong and your feet healthy for years to come.</p>
+        <p>It sounds weird, but thousands of men and women with severe fungus infections “IT WORKS WONDERS!”</p>
+        <p>It has an astonishing 98% success rate…</p>
+        <p>It’s 6X more powerful than any laser surgery…</p>
+        <p>And 7X more effective than any anti-fungal gel, supplement or pill currently on the market!</p>
+        <p>If you really want to get back your healthy nails starting today, you MUST see this now:</p>
+        <p>==&gt; Simple “NAIL SPICE” Ritual Clears Fungus 3X Faster.</p>
+        <p>On Easter Monday, 24 April 1916, units of the Irish Volunteers and the Irish Citizen Army seized several prominent buildings and streets in central Dublin, including the General Post Office (GPO) in Sackville Street, one of the buildings nearest the Pillar. They set up headquarters at the GPO where they declared an Irish Republic under a provisional government. One of the first recorded actions of the Easter Rising occurred near the Pillar when lancers from the nearby Marlborough Street barracks, sent to investigate the disturbance, were fired on from the GPO. They withdrew in confusion, leaving four soldiers and two horses dead. Black-and-white photograph of The Pillar surrounded by ruins of destroyed buildings Sackville Street after the Easter Rising, showing the burnt out shell of the General Post Office and the intact Pillar in the background During the days that followed, Sackville Street and particularly the area around the Pillar became a battleground. According to some histories, insurgents attempted to blow up the Pillar. The accounts are unconfirmed and were disputed by many that fought in the Rising, on the grounds that the Pillar&#x27;s large base provided them with useful cover as they moved to and from other rebel positions. By Thursday night, British artillery fire had set much of Sackville Street ablaze, but according to the writer Peter De Rosa&#x27;s account: &quot;On his pillar, Nelson surveyed it all serenely, as though he were lit up by a thousand lamps&quot;. The statue was visible against the fiery backdrop from as far as Killiney, 9 miles (14 km) away. By Saturday, when the provisional government finally surrendered, many of the Sackville Street buildings between the Pillar and the Liffey had been destroyed or badly damaged, including the Imperial Hotel that Thackeray had admired. Of the GPO, only the façade remained; against the tide of opinion Bernard Shaw said the demolition of the city&#x27;s classical architecture scarcely mattered: &quot;What does matter is the Liffey slums have not been dem</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: logistics77ken &lt;logistics77ken@163.com&gt;</p>
+        <p><b>Sender</b>: lkodhp &lt;lkodhp@bwt-group.com&gt;</p>
+        <p><b>To</b>: writing &lt;writing@voussoir.net&gt;</p>
+        <p><b>Subject</b>: RE: air shipping vs sea shipping from China</p>
+        <p><b>Date</b>: Mon, 20 Mar 2023 06:07:13 +0800 (CST)</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=11.8 required=5 tests=FREEMAIL_FORGED_FROMDOMAIN,FREEMAIL_FROM,HEADER_FROM_DIFFERENT_DOMAINS,HTML_FONT_LOW_CONTRAST,HTML_MESSAGE,HTML_MIME_NO_HTML_TAG,MIME_HTML_ONLY,NO_FM_NAME_IP_HOSTN,RCVD_IN_MSPIKE_BL,RCVD_IN_MSPIKE_ZBI,RCVD_IN_ZEN_BLOCKED_OPENDNS,SPF_FAIL,SPF_HELO_NONE,SPOOFED_FREEMAIL,TVD_RCVD_IP,TVD_RCVD_IP4,TXREP,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=3.4.6
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 4.1;EffectiveIp=111.45.22.29,SpamProbability=0.61
+Return-Path: &lt;lkodhp@bwt-group.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=hardfail (domain of bwt-group.com does not designate 111.45.22.29 as permitted sender) smtp.mailfrom=bwt-group.com; dmarc=fail (p=none) header.from=logistics77ken@163.com
+Received: from 111.45.22.29 (EHLO cluster2.eu.messagelabs.com) ([111.45.22.29])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 1804830125
+          for &lt;writing@voussoir.net&gt;;
+          Sun, 19 Mar 2023 21:48:36 +0000 (UTC)
+Date: Mon, 20 Mar 2023 06:07:13 +0800 (CST)
+From: logistics77ken &lt;logistics77ken@163.com&gt;
+Sender: lkodhp &lt;lkodhp@bwt-group.com&gt;
+To: writing &lt;writing@voussoir.net&gt;
+Message-ID: &lt;192009965.2633097.1679263633611@cluster2.eu.messagelabs.com&gt;
+Subject: RE: air shipping vs sea shipping from China
+MIME-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Dear writing</p>
+        <p>I am ken from China ,l am provide shipping services from China to worldwide. We are provide air shipping ,sea shipping ,railway shipping , courier shipping and door to door shipping services from China to your country .</p>
+        <p>Why choose and working with us ?</p>
+        <p>01 10 years focused on air exportHave over 10 years</p>
+        <p>02 The most professional customer service team</p>
+        <p>03 100% safe, zero risk</p>
+        <p>04 Cooperation with over 49 Airlines</p>
+        <p>05 Overseas (IATA) clearance are strong</p>
+        <p>06 One-step service</p>
+        <p>Air shipment and sea shipment Standard Operation Procedure</p>
+        <p>01 .Quotation</p>
+        <p>According to the our customer by consulting export goods information such as the weight, volume, destination, and the guest service requirements, provide the best freight quotation.</p>
+        <p>02 .Entrust us to order ; I need your or your supplier give me booking details when we fixed rates, then l can got this details and go to booked for you.</p>
+        <p>03 .Booking Space,After the rapid acceptance of entrust, according to the situation, the time of delivery, the client request, the first time from the airline booking air space, determine the air export flight information, and timely feedback the customers.</p>
+        <p>04. Make sure Air way bill (Check the information of the bill of lading</p>
+        <p>05.Delivery goods to the airport or sea port warehouse.According to the SO to transport address, number information such as the goods will be sent to designated warehouse, or arranged by entrusted , We door-to-door delivery transport; The warehouse will be confirmed according to the packages、 weight and volume final chargeable weight, air export bill of lading issued</p>
+        <p>06. Customs declaration</p>
+        <p>07. Payment ;</p>
+        <p>08 .Tracking we can provide AWB and BL for you and tracking it.</p>
+        <p>When you have shipment from China, contact me Mobile (WhatsApp/Wechat):  0086 15801639260</p>
+        <p>r6opr6opIf you would build for your happiness a sure foundation, let the stone for the corner be a good reputation</p>
+        <p>r6opr6opHe saw it first when it jumped in the air, true gold in the last of the sun and bending and flapping wildly in the air.</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Eric Young&quot; &lt;neonk@cjayarts.com&gt;</p>
+        <p><b>Reply-To</b>: eric@kmyswkj.com</p>
+        <p><b>To</b>: pypi@voussoir.net</p>
+        <p><b>Subject</b>: electric mountain bike</p>
+        <p><b>Date</b>: Thu, 02 Mar 2023 14:01:03 +0100</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=7.7 required=5 tests=HTML_IMAGE_RATIO_04,HTML_MESSAGE,MIME_HTML_ONLY,RCVD_IN_PSBL,RCVD_IN_ZEN_BLOCKED_OPENDNS,SPF_HELO_NEUTRAL,SPF_NEUTRAL,URIBL_ABUSE_SURBL,URIBL_BLACK,URIBL_DBL_BLOCKED_OPENDNS,URIBL_RED,URIBL_ZEN_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=3.4.6
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 0.6;EffectiveIp=158.51.124.50,SpamProbability=0.26
+Return-Path: &lt;neonk@cjayarts.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: pypi@voussoir.net
+X-Pm-Original-To: pypi@voussoir.net
+Received: from pa0tq.top (EHLO alaskagoldrush.info) ([158.51.124.50])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 1752256262
+          for &lt;pypi@voussoir.net&gt;;
+          Thu, 02 Mar 2023 15:29:13 +0000 (UTC)
+To: pypi@voussoir.net
+Subject: electric mountain bike
+Message-ID: &lt;12bd3af34f6f7b3d154227598ea8a0e9@bicyclewarehouse.com&gt;
+Date: Thu, 02 Mar 2023 14:01:03 +0100
+From: &quot;Eric Young&quot; &lt;neonk@cjayarts.com&gt;
+Reply-To: eric@kmyswkj.com
+MIME-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+        <p>Hi,</p>
+
+        <p>Here is our new electric bicycle With removable 374.4Wh battery, you can pedal assist to 40 miles per charge using the low pedal assist level.</p>
+        <p>350w brushless geared motor provides reliable support and 20MPH top speed. providing more than enough to power your daily commute, a cruise on the mountain, or a meander along your favorite trail.</p>
+        <p>You can easily handle most of the hillsides encountered.</p>
+        <p>We provide four levels for power assistance. You can choose to turn the thumb throttle or step on the pedal to activate the motor.</p>
+        <p>You can switch between pedal assist and thumb throttle at any time. The four-levels power output is sufficient to meet your daily commuting needs and outdoor climbing needs. You can add a burst of speed with the throttle, which is ideal for pulling away from traffic lights.</p>
+        <p>The fork is made of high strength carbon steel and the frame is made from aluminum alloy. This makes the bike lightweight yet very sturdy.</p>
+        <p>With the 21-speed transmission system, you can choose any speed according to your needs. The perfect front and rear disc brakes fully protect your safety.</p>
+        <p>Aluminum Alloy double-walled rims are for greater durability.</p>
+        <p>We have designed replacement connectors for all electrical accessories. If you need to replace the parts, you can replace it directly at the connector without opening the controller to find a complicated circuit. After-sales replacement of accessories is much more convenient.</p>
+        <p>Our bike is 85% pre-assembled and you only need to finish the assembly of main parts. we also have the assembly video for you at the seven window picture on the product page. With one-year service for the electric motor, battery and other main replaceable parts, you've no worry about using it.</p>
+        <p>The assembly service on this page is provided and charged by third-party company. If you can't finish by yourself, you can click and choose the service.</p>
+        <p>If you request samples of our electric bike. We can ship from US, Germany warehouses.</p>
+        <p>Please confirm your address as it affects the cost of shipping.</p>
+        <p>With the 36V 10.4Ah Lithium-Ion battery, you can reach a range of up to 22-40 miles per charge. Plenty for a day’s adventure or most trips to travel and back.</p>
+        <p>The range depends on the weight of the rider, the type of use, the gradient, outdoor temperature, etc.</p>
+        <p>For years, we have been not only dedicating to innovation, cutting-edge technology and high-quality materials, but also providing cost effective e-bikes, to satisfy riders' various needs of transportation and even desire of exploring sports and outdoors life.</p>
+
+        <p>Thanks,<br/>
+        Eric Young<br/>
+        The E-bike Factory</p>
+
+        <p>Is printing out this email really required? If you share the same concern for the environment that we do, we kindly ask that you avoid from printing off any emails.</p>
+        <p>It contributes to the maintenance of a forest-rich environment.</p>
+        <p>Before printing this email, I ask that you keep in mind its impact on the environment. If printing it isn't absolutely required, please refrain from doing so.</p>
+        <p>Every email that is not printed out is beneficial to the environment.</p>
+        <p>If you believe that you have got this message in error, please respond to it and then delete it so that we can avoid making the same mistake in the future. Thank you.</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &lt;villada@striker.ottawa.on.ca&gt;</p>
+        <p><b>To</b>: &lt;susan@voussoir.net&gt;</p>
+        <p><b>Subject</b>: Security Notice. susan@voussoir.net was hacked! Change your password now!</p>
+        <p><b>Date</b>: 26 Feb 2023 18:45:20 +0100</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=17.16 required=5 tests=BITCOIN_XPRIO,DOS_OE_TO_MX,HDR_ORDER_FTSDMCXX_DIRECT,HELO_DYNAMIC_IPADDR2,MALWARE_PASSWORD,MIMEOLE_DIRECT_TO_MX,NO_DNS_FOR_FROM,RCVD_IN_MSPIKE_H2,RCVD_IN_PSBL,RCVD_IN_VALIDITY_RPBL,RCVD_IN_ZEN_BLOCKED_OPENDNS,RDNS_DYNAMIC,SPF_HELO_NONE,SPF_NONE,TVD_RCVD_IP,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=3.4.6
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.46;EffectiveIp=37.55.132.213,SpamProbability=0.45
+Return-Path: &lt;villada@striker.ottawa.on.ca&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: susan@voussoir.net
+X-Pm-Original-To: susan@voussoir.net
+Received: from 213-132-55-37.pool.ukrtel.net (EHLO 213-132-55-37.pool.ukrtel.net) ([37.55.132.213])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id -1903733146
+          for &lt;susan@voussoir.net&gt;;
+          Sun, 26 Feb 2023 16:14:16 +0000 (UTC)
+Message-ID: &lt;E5DB7E7BA47F78A1A0A3A679A2A57C7D@FDSM1EB&gt;
+From: &lt;villada@striker.ottawa.on.ca&gt;
+To: &lt;susan@voussoir.net&gt;
+Subject: Security Notice. susan@voussoir.net was hacked! Change your password now!
+Date: 26 Feb 2023 18:45:20 +0100
+MIME-Version: 1.0
+Content-Type: text/plain;
+    charset=&quot;iso-8859-1&quot;
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.0552
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.0552
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Dear user of voussoir.net!</p>
+        <p>I am a spyware software developer.</p>
+        <p>Your account has been hacked by me couple months ago.</p>
+        <p>The hacking was carried out using a hardware vulnerability through which you went online (Cisco router, vulnerability CVE-2023-20026).</p>
+        <p>I went around the security system in the router, installed an exploit there.</p>
+        <p>When you went online, my exploit downloaded my malicious code (rootkit) to your device.</p>
+        <p>This is driver software, I constantly updated it, so your antivirus is silent all time.</p>
+        <p>Since then I have been following you (I can connect to your device via the VNC protocol).</p>
+        <p>That is, I can see absolutely everything that you do, view and download your files and any data to yourself.</p>
+        <p>I also have access to the camera on your device, and I periodically take photos and videos with you.</p>
+        <p>At the moment, I have harvested a solid dirt... on you...</p>
+        <p>I saved all your email and chats from your messangers. I also saved the entire history of the sites you visit.</p>
+        <p>I note that it is useless to change the passwords. My malware update passwords from your accounts every times.</p>
+        <p>I know what you like hard funs (adult sites).</p>
+        <p>Oh, yes .. I&#x27;m know your secret life, which you are hiding from everyone.</p>
+        <p>Oh my God, what are your like... I saw THIS ... Oh, you dirty naughty person ... :)</p>
+        <p>I took photos and videos of your most passionate funs with adult content, and synchronized them in real time with the image of your camera.</p>
+        <p>Believe it turned out very high quality!</p>
+        <p>So, to the business!</p>
+        <p>I&#x27;m sure you don&#x27;t want to show these files and visiting history to all your contacts.</p>
+        <p>Transfer $986 to my Bitcoin cryptocurrency wallet: 1A9A9LAo MRUu9xBMY WgutcKVWi ciuWkw6Z</p>
+        <p>Just copy and paste the wallet number when transferring.</p>
+        <p>An important notice: I have specified my Bitcoin wallet with spaces, hence once you carry out a transfer, please make sure that you key-in my bitcoin address without spaces to be sure that your funds successfully reach my wallet!</p>
+        <p>If you do not know how to do this - ask Google.</p>
+        <p>My system automatically recognizes the translation.</p>
+        <p>As soon as the specified amount is received, all your data will be destroyed from my server, and the rootkit will be automatically removed from your system.</p>
+        <p>Do not worry, I really will delete everything, since I am &#x27;working&#x27; with many people who have fallen into your position.</p>
+        <p>You will only have to inform your provider about the vulnerabilities in the router so that other hackers will not use it.</p>
+        <p>Since opening this letter you have 48 hours.</p>
+        <p>If funds not will be received, after the specified time has elapsed, the disk of your device will be formatted, and from my server will automatically send email and sms to all your contacts with compromising material.</p>
+        <p>P.S. Do not try to contact me (this is impossible, sender&#x27;s address was randomly generated).</p>
+        <p>I advise you to remain prudent and not engage in nonsense (all files on my server).</p>
+        <p>Good luck!</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Survival Life&quot; &lt;SurvivalLife@monstery.us&gt;</p>
+        <p><b>Reply-To</b>: &quot;Survival Life&quot; &lt;SurvivalLife@monstery.us&gt;</p>
+        <p><b>To</b>: &lt;sales@voussoir.net&gt;</p>
+        <p><b>Subject</b>: NASA: US To Face 100 Years Of Mega Drought!</p>
+        <p><b>Date</b>: Mon, 20 Feb 2023 11:23:36 +0100</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=5.45 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,DKIM_VALID_EF,HTML_FONT_LOW_CONTRAST,HTML_IMAGE_ONLY_32,HTML_MESSAGE,RCVD_IN_PSBL,RCVD_IN_ZEN_BLOCKED_OPENDNS,SPF_HELO_NONE,SPF_PASS,URIBL_BLACK,URIBL_DBL_BLOCKED_OPENDNS,URIBL_ZEN_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=3.4.6
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 1.25;EffectiveIp=134.73.175.112,SpamProbability=0.32
+Return-Path: &lt;61601-94420-30671-13376-sales=voussoir.net@mail.monstery.us&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: sales@voussoir.net
+X-Pm-Original-To: sales@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of mail.monstery.us designates 134.73.175.112 as permitted sender) smtp.mailfrom=mail.monstery.us; dkim=pass header.i=monstery.us; dmarc=pass (p=none) header.from=SurvivalLife@monstery.us
+Received: from neshen.unrhapsodic.com (EHLO tommy.monstery.us) ([134.73.175.112])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 407254767
+          for &lt;sales@voussoir.net&gt;;
+          Mon, 20 Feb 2023 10:55:27 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=monstery.us;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID; i=SurvivalLife@monstery.us;
+ bh=7Tj6uBaGOSYb4aU+p87snH542lY=;
+ b=nIFh8TfE/ykYMqzAJKeR7X0UzqOp7wSGFS/D9IhrtDlbZ8f82uxG//8wnTIqaH/L+69r/hxHgCc5
+   gcQnUK4UBHs0NjEkfaDPe0Irgg8SbANvOlQ5PGCM6oJIrV4Bt088xLFTQKtQlMescKXYnT56jdtD
+   VaOgaKpalQ5sXjAJq/w=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=monstery.us;
+ b=UvIMYuYNpDzukdlarG6L60NQzzRQcrp5ptdrg0mV18GJB9Z5ULeBFyeKjIoNbfozW3Qf7GisPQeu
+   H+PuQRkCoZlfUqaAGOziq+r3m7X76BclatrJeZaQrTFTfq4cSulphXbGzt347lApllh5+iZqo8Fg
+   E/TovGt9X+hQzL65ymA=;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;f22b8e198e65b234095e60939e13cd52_170d4_77cf&quot;
+Date: Mon, 20 Feb 2023 11:23:36 +0100
+From: &quot;Survival Life&quot; &lt;SurvivalLife@monstery.us&gt;
+Reply-To: &quot;Survival Life&quot; &lt;SurvivalLife@monstery.us&gt;
+Subject: NASA: US To Face 100 Years Of Mega Drought!
+To: &lt;sales@voussoir.net&gt;
+Message-ID: &lt;ul4c6huxodygij3w-a8bjk4hgbvgw7dlo-170d4-77cf@monstery.us&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Experts grimly warn us of an unprecedented disaster of biblical proportions.</p>
+        <p>Will you survive?</p>
+        <p>Grab This Life-Saving Report</p>
+        <p>THIS is no joke, you’ll find the REAL answers inside.</p>
+        <p>PLUS: You’ll also receive an extremely useful bonus that will become more valuable than gold in a crisis.</p>
+        <p>IMPORTANT: 3 little-known secrets any serious patriot must know to survive the upcoming disaster!</p>
+        <p>Check it out HERE</p>
+        <p>n April 1936, with the bill still before Congress, the Wisconsin Centennial Commission selected David Parsons, a local art student, to design the coin, dictating that the seal of Wisconsin Territory be used for one side, and a badger for the other. The models were poorly executed and in very high relief; they were rejected by the Bureau of the Mint. The Commission asked for the name of a suitable artist, and the Treasury Department referred the issue to the Commission of Fine Arts (CFA), which then recruited New York sculptor Benjamin Hawkins. The CFA was charged by a 1921 executive order by President Harding with rendering advisory opinions on public artworks, including coins. On May 14, 1936, the CFA chair, Charles Moore, wrote to Hawkins informing him of the Centennial Commission&#x27;s requirements and enclosing a copy of the territorial seal. He told Hawkins that the Centennial Commission expected the work to be done within three weeks. Hawkins submitted the finished models to the Mint on June 3, 1936, which were approved by the CFA two days later. The models were reduced to coin-size hubs by the Medallic Art Company of New York. Numismatic author Don Taxay felt it</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Garden Landscaping&quot; &lt;gardenlandscaping@bankofamerican.today&gt;</p>
+        <p><b>Reply-To</b>: &quot;Ideas4Landscaping&quot; &lt;dreamlandscapideas4landscaping@bankofamerican.today&gt;</p>
+        <p><b>To</b>: &lt;sales@voussoir.net&gt;</p>
+        <p><b>Subject</b>: The Ultimate Green Home Guide</p>
+        <p><b>Date</b>: Fri, 17 Feb 2023 15:11:39 +0100</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=13.21 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,DKIM_VALID_EF,HTML_FONT_LOW_CONTRAST,HTML_MESSAGE,PP_MIME_FAKE_ASCII_TEXT,RCVD_IN_BL_SPAMCOP_NET,RCVD_IN_PSBL,RCVD_IN_VALIDITY_RPBL,RCVD_IN_ZEN_BLOCKED_OPENDNS,SPF_HELO_NONE,SPF_PASS,TVD_RCVD_IP,TVD_RCVD_IP4,URIBL_ABUSE_SURBL,URIBL_BLACK,URIBL_DBL_BLOCKED_OPENDNS,URIBL_ZEN_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=3.4.6
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 3.51;EffectiveIp=157.52.235.210,SpamProbability=0.55
+Return-Path: &lt;61526-91958-32102-12867-sales=voussoir.net@mail.bankofamerican.today&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: sales@voussoir.net
+X-Pm-Original-To: sales@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of mail.bankofamerican.today designates 157.52.235.210 as permitted sender) smtp.mailfrom=mail.bankofamerican.today; dkim=pass header.i=bankofamerican.today; dmarc=pass (p=none) header.from=gardenlandscaping@bankofamerican.today
+Received: from 157.52.235.210 (EHLO fiber.bankofamerican.today) ([157.52.235.210])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id -709139213
+          for &lt;sales@voussoir.net&gt;;
+          Fri, 17 Feb 2023 15:15:53 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=bankofamerican.today;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID; i=gardenlandscaping@bankofamerican.today;
+ bh=5/Bt34h1ruZDHVAxokrQTVZlvJE=;
+ b=GvhUVgBdnUSx0VPQXE2cJutbdLOOjltpEdzUk724j/KWKSv5/Z3K9m2xF0ybHniP8SKn8VsfW9re
+   ptMNyqZge3w46ZbUiw77RjH1glEQj8+cddOgpYrN5sDWqErsCCpEnt/OqoPDUYVbXwvNRzL+q7Fb
+   XwUP2+DiEC+g7hxaWOQ=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=bankofamerican.today;
+ b=oLd4qXlQqUGJx+Q5PcQCriMZlYTzJ0RD5ZEz+OrTO2/CR9Jmr/DIZBDHL+AqsWEYWnxfn+L77D29
+   X+ljAKpY70gQmKadpxSQl+pX8i+DbaUnUF2Z1PtCyt/OT0KzPLL1t6v8xpORRixKeNiERsOHo/W5
+   FQ69nQEFduT8zPj5bbw=;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;e78982f563685b04eb3bc277a8898914_16736_7d66&quot;
+Date: Fri, 17 Feb 2023 15:11:39 +0100
+From: &quot;Garden Landscaping&quot; &lt;gardenlandscaping@bankofamerican.today&gt;
+Reply-To: &quot;Ideas4Landscaping&quot; &lt;dreamlandscapideas4landscaping@bankofamerican.today&gt;
+Subject: The Ultimate Green Home Guide
+To: &lt;sales@voussoir.net&gt;
+Message-ID: &lt;gyo349en38xzdsyz-p7rxnsnk6y6s60ba-16736-7d66@bankofamerican.today&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Transform Your Landscape In A Single Weekend!</p>
+        <p>Most of the landscaping ideas in Ideas4Landscaping™ can be completed in a weekend at a cost much lower than you would have paid otherwise!</p>
+        <p>These are simple, quick and easy tips to implement to create the ideal landscape to complement your home...</p>
+        <p>Get ideas for front yards that you only see on shows like HGTV and DIYNetwork - the landscaping that you&#x27;ve always wanted to see on your own lawn  </p>
+        <p>Thousands Of Designs - For Every Style &amp; Preference...</p>
+        <p>layer Bukayo Saka in place of Trippier, and switched to a 4–3–3 formation. After another Italian attack in the 73rd minute, which ended when Berardi failed to control the ball in the England penalty area having run behind the England defence, Southgate made a second switch, bringing on Henderson for Rice. Italy continued to dominate, almost all the play taking place in England&#x27;s half of the field. Chiesa ran down the left in the 80th minute, beating Walker and Saka, before being dispossessed by Phillips and falling to the ground. The referee deemed the challenge to have been a legal one; however, Chiesa was injured and limped off the field. He attempted to continue but eventually had to be replaced by Federico Bernardeschi in the 86th minute. Meanwhile, England had a chance when Mount dribbled into the Italy penalty area and passed to Saka, but he was unable to control the ball. Insigne was then booked for a foul on Phillips; England&#x27;s free kick was cleared by Italy as far as Shaw, whose shot was then fired over the crossbar. In the 87th minute, the match was briefly halted when a pitch invader ran onto the field. Sterling made a run down the left into the penalty area in the 89th minute, but the ball went behind for a goal kick under pressure from Bonucci and Chiellini. An England free kick in injury time reached Stones, but he was unable to score. After Italy had advanced down the right throu</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Work From Home Job Quiz&quot; &lt;SocialMediaJobQuiz@keragenics.shop&gt;</p>
+        <p><b>Reply-To</b>: &quot;Online Job Quiz&quot; &lt;WorkFromHomeJobQuiz@keragenics.shop&gt;</p>
+        <p><b>To</b>: &lt;sales@voussoir.net&gt;</p>
+        <p><b>Subject</b>: $1,000/week YouTube job match</p>
+        <p><b>Date</b>: Mon, 13 Feb 2023 17:03:51 +0100</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=11.25 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,DKIM_VALID_EF,HTML_FONT_LOW_CONTRAST,HTML_MESSAGE,PP_MIME_FAKE_ASCII_TEXT,RCVD_IN_BL_SPAMCOP_NET,RCVD_IN_PSBL,RCVD_IN_ZEN_BLOCKED_OPENDNS,SPF_HELO_NONE,SUBJ_DOLLARS,TVD_RCVD_IP,TVD_RCVD_IP4,T_SPF_PERMERROR,URIBL_ABUSE_SURBL,URIBL_BLOCKED,URIBL_DBL_BLOCKED_OPENDNS,URIBL_ZEN_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=3.4.6
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 4.45;EffectiveIp=37.0.13.184,SpamProbability=0.65
+Return-Path: &lt;61377-91958-32102-13286-sales=voussoir.net@mail.keragenics.shop&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: sales@voussoir.net
+X-Pm-Original-To: sales@voussoir.net
+Authentication-Results: purelymail.com; dkim=pass header.i=keragenics.shop; dmarc=pass (p=none) header.from=SocialMediaJobQuiz@keragenics.shop
+Received: from 37.0.13.184 (EHLO vince.keragenics.shop) ([37.0.13.184])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 590443137
+          for &lt;sales@voussoir.net&gt;;
+          Mon, 13 Feb 2023 16:51:37 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=keragenics.shop;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID; i=SocialMediaJobQuiz@keragenics.shop;
+ bh=ULcjBszgdgnhFa3C8ULH+Zl2d2o=;
+ b=L/PZ9dVuEuLazjRtqnoX1oga1h6PlCdnAr7x64G1xn3kKrblNV5c6hODaIrXtB99lqTxxCyc64U3
+   5NFlQMIl3jZnfmUWmsRM5gxgkDGYvfcHrPMWfoyl/JcnNq0zSCDyns8uRPliZ9AzWyyojl2XtP7d
+   gX9yyfsL4iQtc/80hyA=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=keragenics.shop;
+ b=JsWY+A8gGjer/0z+iwyLUpyV1z2If1DiOF96sQEhQAfM0sVB7kBRiSIVh/QMRZBjNv+UJbWHWZTc
+   2sCpJ9ce86i33rOjFDmiOre2DVpWNEpWVx/AQlLdEdDgW53RX/poe7KzvdUY+6QxrYKgExC9ytEz
+   hkUp0aGC4F5llBVkvEA=;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;e06016978929e0dc2b83ec6b05863a73_16736_7d66&quot;
+Date: Mon, 13 Feb 2023 17:03:51 +0100
+From: &quot;Work From Home Job Quiz&quot; &lt;SocialMediaJobQuiz@keragenics.shop&gt;
+Reply-To: &quot;Online Job Quiz&quot; &lt;WorkFromHomeJobQuiz@keragenics.shop&gt;
+Subject: $1,000/week YouTube job match
+To: &lt;sales@voussoir.net&gt;
+Message-ID: &lt;6hg7d8fovc68ceya-65nnhgtvyt0a2gvi-16736-7d66@keragenics.shop&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Great News!</p>
+        <p>Previously you entered your details into our online job database and you’ve just been matched with an online YouTube job.</p>
+        <p>The job pays $1,000+ per week.</p>
+        <p>Has flexible hours (minimum 5 per week).</p>
+        <p>And, according to our database, your skill set matches perfectly.</p>
+        <p>Click here to apply now.</p>
+        <p>Your main role will be uploading premade videos to YouTube on behalf of small digital companies.</p>
+        <p>Don’t worry if you’ve never uploaded a YouTube video before, it only takes a few minutes and is very easy. And we’ve even arranged a short 30-minute training course to help you get started in your new role.</p>
+        <p>Click here to apply now.</p>
+        <p>There’s just one catch…</p>
+        <p>The deadline for this job application is 12:00am.</p>
+        <p>That’s midnight tonight!</p>
+        <p>So, please apply ASAP, as you’re perfect for this role.</p>
+        <p>Click here to apply now.</p>
+        <p>Best wishes,</p>
+        <p>Ryan</p>
+        <p>n December 1942, concerned about the possibility of Allied forces landing in the Balkans, the Germans began planning an anti-Partisan offensive in Bosnia and Herzegovina codenamed &quot;Case White&quot;. The size of the planned offensive required the involvement of both the Croatian Home Guard and the Italians. Late in the planning, the Italians began to prepare and equip Chetnik detachments, including that of ?uriši?, for involvement in the operation. In early January 1943, the Chetnik Supreme Command ordered Montenegrin Chetnik units to carry out &quot;cleansing actions&quot; against Muslims in Bijelo Polje county in north-eastern Montenegro. On 10 January 1943, ?uriši? reported that Chetniks under his command had burned down 33 Muslim villages, killed 400 Muslim fighters—members of the Muslim self-protection militia also supported by the Italians—and had also killed about 1,000 Muslim women and children. As Italian auxiliaries, ?uriši?&#x27;s detachment was so dependent on the Italians</p>
+    </article>
+</body>
+
+<script>
+const CURSES = [
+    "be blamed for something you didn't do",
+    "be last in line",
+    "be late to your appointment",
+    "be mistaken for somebody else",
+    "be shortchanged by the cashier",
+    "be voted least likely to succeed",
+    "break the tip of your pencil",
+    "dial the wrong number",
+    "dine on wobbly tables",
+    "drive behind grandmothers",
+    "fart in a crowded room",
+    "feel as if you are being watched",
+    "find a hole in your pocket",
+    "find coal in your stocking",
+    "forget how to spell unnecessary",
+    "get a flat tire",
+    "get an uneven haircut",
+    "get stains on your favorite t-shirt",
+    "get swooped by an angry bird",
+    "greet a fistbump with a handshake",
+    "have a smudge on your glasses",
+    "have crumbs in your bed",
+    "have holes in your umbrella",
+    "have pebbles in your shoes",
+    "hear ringing in your ears",
+    "live in interesting times",
+    "lose track of time",
+    "miss the last bus",
+    "put your pants on backward",
+    "receive the wrong order",
+    "run out of batteries",
+    "run out of toilet paper",
+    "run out of toothpaste",
+    "sit behind the tallest person",
+    "sleep through your alarm clock",
+    "stumble over your words",
+    "wear clashing colors",
+    "wear white to a wedding",
+];
+const PARTICLES = ["💀", "🔥", "🌟", "✨", "☠️", "👹", "👁️", "⛧"];
+
+const CURSE_VISIBLE = document.getElementById("curse_visible");
+const CURSE_INVISIBLE = document.getElementById("curse_invisible");
+
+function random_choice(list)
+{
+    return list[Math.floor(Math.random() * list.length)];
+}
+
+function new_particle()
+{
+    const particle = document.createElement("div");
+    particle.classList.add("particle");
+    const rect = CURSE_INVISIBLE.getBoundingClientRect();
+    let position_x = rect.left;
+    let position_y = rect.top;
+    particle.style.left = position_x;
+    particle.style.top = position_y;
+    const velocity_x = (Math.random() * 2) - 1;
+    const velocity_y = (Math.random() * 2) - 1;
+    document.body.append(particle);
+    particle.innerText = random_choice(PARTICLES);
+    let dead = false;
+    function kill_particle()
+    {
+        particle.parentElement.removeChild(particle);
+        dead = true;
+    }
+    function particle_step()
+    {
+        if (dead)
+        {
+            return;
+        }
+        position_x += velocity_x;
+        position_y += velocity_y;
+        particle.style.left = position_x;
+        particle.style.top = position_y;
+        requestAnimationFrame(particle_step);
+    }
+    requestAnimationFrame(particle_step);
+    setTimeout(kill_particle, 1950);
+}
+
+function bewitch_step()
+{
+    if (CURSE_INVISIBLE.innerText.length === 0)
+    {
+        return;
+    }
+    const a = CURSE_VISIBLE.innerText + CURSE_INVISIBLE.innerText.charAt(0);
+    const b = CURSE_INVISIBLE.innerText.substr(1);
+    CURSE_VISIBLE.innerText = a;
+    CURSE_INVISIBLE.innerText = b;
+    setTimeout(bewitch_step, 50);
+    new_particle();
+}
+CURSE_INVISIBLE.innerText = "May you " + random_choice(CURSES) + ", today and always";
+setTimeout(bewitch_step, 33);
+</script>
+</html>
