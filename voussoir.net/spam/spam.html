@@ -45,6 +45,17 @@ html
     0% { transform: scale(1.00); opacity: 1; }
     100% { transform: scale(3.00); opacity: 0; }
 }
+
+#particle_holder
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    pointer-events: none;;
+}
 .particle
 {
     position: absolute;
@@ -141,14 +152,6 @@ article *
     word-wrap: break-word;
 }
 
-#table_of_contents
-{
-    border: 1px solid var(--color_blockquoteedge);
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 8px;
-}
-
 ol ol, ul ul, ol ul, ul ol
 {
     padding-inline-start: 20px;
@@ -177,8 +180,11 @@ pre
 <body>
     <header>
         <h1>spam</h1>
-        <p id="curse"><span id="curse_visible"></span><span id="curse_invisible">X</span></p>
+        <p id="curse"><span id="curse_visible"></span><span id="particle_spawnpoint"></span><span id="curse_invisible">X</span></p>
     </header>
+
+    <div id="particle_holder">
+    </div>
 
 <!-- 
     <article>
@@ -195,6 +201,148 @@ pre
 
     </article>
  -->
+
+    <article>
+        <p><b>From</b>: Grant Polachek &lt;pola-grant@squadhelp.co&gt;</p>
+        <p><b>Reply-To</b>: grant@squadhelp.co</p>
+        <p><b>To</b>: contact@voussoir.net</p>
+        <p><b>Subject</b>: Re: Want an exclusive guest article for voussoir.net?</p>
+        <p><b>Date</b>: Mon, 04 Sep 2023 17:20:35 +0000</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-3.7 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_MESSAGE,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -2.6;EffectiveIp=209.85.222.180,SpamProbability=0.03
+Return-Path: &lt;pola-grant@squadhelp.co&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: contact@voussoir.net
+X-Pm-Original-To: contact@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of squadhelp.co designates 209.85.222.180 as permitted sender) smtp.mailfrom=squadhelp.co; dkim=pass header.i=squadhelp.co; dmarc=pass (p=quarantine) header.from=pola-grant@squadhelp.co
+Received: from mail-qk1-f180.google.com (EHLO mail-qk1-f180.google.com) ([209.85.222.180])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 756461021
+          for &lt;contact@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Mon, 04 Sep 2023 17:20:37 +0000 (UTC)
+Received: by mail-qk1-f180.google.com with SMTP id af79cd13be357-76dbe263c68so63035085a.0
+        for &lt;contact@voussoir.net&gt;; Mon, 04 Sep 2023 10:20:37 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=squadhelp.co; s=google; t=1693848036; x=1694452836; darn=voussoir.net;
+        h=mime-version:date:subject:to:from:reply-to:references:in-reply-to
+         :message-id:from:to:cc:subject:date:message-id:reply-to;
+        bh=WQuC1wL4MGLnRayEIXmnpDu8DR4Yzn8OJFeGthIR4LI=;
+        b=Azs9deQvAN+Dvop6uVhEnCHocU7O61Y0KM2g6J7ehKCr+6kGTuhg2O9uACGeKpCg+6
+         XP3plmN7QUJ1CUev4upcd9xLXCX36YoR9/Bb1SoBnO3M+QeReFUZlcwmfpwjQtgSQkpk
+         9mvPrL7a0Vzu6UwXqB3NrRgW5edzbY/G695Oqn1IMrERq2JTs3GkPcWjKfXHrUbiueQ7
+         U00H6JIRwOdPyba8yg8LnTSlIXl30cZDIiE3Nm1hCg4afSu5IozWGJvKl/RL2O8UpyEL
+         0mgpV8hDFvUYRvq8O+gXxhtgCEH1y1IzoGBIRobPE9pSyTqflZUAzjiPgc9hMAwsoiMV
+         pRcA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1693848036; x=1694452836;
+        h=mime-version:date:subject:to:from:reply-to:references:in-reply-to
+         :message-id:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=WQuC1wL4MGLnRayEIXmnpDu8DR4Yzn8OJFeGthIR4LI=;
+        b=eFCkASc2LxPG/slP1gMt8tnpF/P1meyvHHwlOZntzeZ0cZKsI4hhXGyH5gfYATd1FE
+         vGrL6RSrTx8SjRLlQ9S2HReNz1Hs/UECaovjuV32V7XDi+kHxzNYUbApBmx0SUx84+KQ
+         RrtaCzZ/7V1d1V5hV5fVWNI79UkssVuB1y+0BOKA2Su65F4+MwWRMs020D4jKQXCvXX6
+         GiWjFB08oi4XO8nokQuYBqwm7xE532+7Z9d+PRjsz/gAMxoU9XmMKETtVkFKM9zZ4vYr
+         IRVRW8lHCCUWjGioQJTflxmkffmlJDLXu6HQ1gA5zI5DqXPLCE0QFShJljrZWb6c0315
+         v3Yg==
+X-Gm-Message-State: AOJu0Yx5LV/1qMluFveWmPsKd8R9KgDUadZ9Bvr/6ge+lOa1O+Ic6XGW
+    5IjEYGOcMlOkedJFrXvZh/RPpbQVXAyddIJJzyc=
+X-Google-Smtp-Source: AGHT+IG4o2Oui8NnbQ/gC+MRX8hIGdSw23rL3pBsFzylbzrDHx+njTYN8+W2MNukkRDwZ8m9G1qv5A==
+X-Received: by 2002:a05:620a:1a90:b0:765:6923:623e with SMTP id bl16-20020a05620a1a9000b007656923623emr14685360qkb.29.1693848036319;
+        Mon, 04 Sep 2023 10:20:36 -0700 (PDT)
+Received: from Mac-Pro.local (ec2-54-85-205-216.compute-1.amazonaws.com. [54.85.205.216])
+        by smtp.gmail.com with ESMTPSA id a8-20020a05620a16c800b0076db1caab16sm3473376qkn.22.2023.09.04.10.20.35
+        for &lt;contact@voussoir.net&gt;
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Mon, 04 Sep 2023 10:20:35 -0700 (PDT)
+Content-Type: multipart/alternative;
+ boundary=&quot;--_NmP-0569800012f0bd17-Part_1&quot;
+Message-ID: &lt;f8eadd95-4d82-4af1-b016-66cde58e79ca@squadhelp.co&gt;
+In-Reply-To: &lt;d56b6aac-263c-47fd-bcc3-2a2ac65d1e1e@squadhelp.co&gt;
+References: &lt;d56b6aac-263c-47fd-bcc3-2a2ac65d1e1e@squadhelp.co&gt;
+Reply-To: grant@squadhelp.co
+From: Grant Polachek &lt;pola-grant@squadhelp.co&gt;
+To: contact@voussoir.net
+Subject: Re: Want an exclusive guest article for voussoir.net?
+Date: Mon, 04 Sep 2023 17:20:35 +0000
+MIME-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi, </p>
+        <p>I hope my email finds you well. I was excitedly waiting for your response. I saw your website voussoir.net, and I think it would be a great opportunity to collaborate and share something really amazing with your readers.</p>
+        <p>Your thought? Can we move things ahead regarding a Guest Blog?</p>
+        <p>Looking forward to hearing from you.</p>
+        <p>Best,</p>
+        <p>Grant Polachek</p>
+        <p>Head of Branding | Squadhelp.com</p>
+        <p>Phone: (443) 782-5272</p>
+        <p>2000 Center Drive, Suite East C221, Hoffman Estates, IL 60192 United States</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Mashreq &lt;postmaster@contactsnxt.dealtracker.us&gt;</p>
+        <p><b>Sender</b>: postmaster@contactsnxt.dealtracker.us</p>
+        <p><b>To</b>: info@dalool.net</p>
+        <p><b>Subject</b>: Update Your documents  MOVE TO INBOX</p>
+        <p><b>Date</b>: Sun, 03 Sep 2023 20:44:16 +0000</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-1.46 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_MESSAGE,MIME_HTML_ONLY,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,UNICODE_OBFU_ASC,UNPARSEABLE_RELAY,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -1.46;EffectiveIp=143.55.232.13,SpamProbability=0.1
+Return-Path: &lt;bounce+9c97e4.bc99c3-info=dalool.net@contactsnxt.dealtracker.us&gt;
+Delivered-To: ethan@dalool.net
+X-Pm-Known-Alias: info@dalool.net
+X-Pm-Original-To: info@dalool.net
+Authentication-Results: purelymail.com; spf=pass (domain of contactsnxt.dealtracker.us designates 143.55.232.13 as permitted sender) smtp.mailfrom=contactsnxt.dealtracker.us; dkim=pass header.i=contactsnxt.dealtracker.us
+Received: from pc232-13.mailgun.net (EHLO pc232-13.mailgun.net) ([143.55.232.13])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -1423939372
+          for &lt;info@dalool.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Sun, 03 Sep 2023 20:44:16 +0000 (UTC)
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed;
+ d=contactsnxt.dealtracker.us; q=dns/txt; s=mx; t=1693773856; x=1693781056;
+ h=Content-Type: Content-Transfer-Encoding: Message-Id: To: To: From: From:
+ Subject: Subject: Mime-Version: Date: Sender: Sender;
+ bh=YgjK0ECobYq9mxPWkRpIsUTlEix4xAxKruW67W+ebBs=;
+ b=q2DIroTG4rMEUma/wX+jzyk2tLjnydNIIqzC670r1W3Isf2ae2MZaIFSo+tKYCzhz7r7KW+9RgUu8KVH9ERGg8iwRMYlV/hs8M0bGSsjw6M5zl3tYNy0BQ8AgGSWE93MAlvWUkRdqmUnqwUgAPWQpCrnH+4D/uwV7qTzElRy1b8=
+X-Mailgun-Sending-Ip: 143.55.232.13
+X-Mailgun-Sid: WyIyZGQyZiIsImluZm9AZGFsb29sLm5ldCIsImJjOTljMyJd
+Received: from &lt;unknown&gt; (&lt;unknown&gt; []) by 9588b99b980b with HTTP id
+ 64f4f020d80d2be47b6c3147; Sun, 03 Sep 2023 20:44:16 GMT
+Sender: postmaster@contactsnxt.dealtracker.us
+Date: Sun, 03 Sep 2023 20:44:16 +0000
+Mime-Version: 1.0
+Subject: Update Your documents  MOVE TO INBOX
+From: Mashreq &lt;postmaster@contactsnxt.dealtracker.us&gt;
+To: info@dalool.net
+Message-Id: &lt;20230903204416.e923eadc97d936d6@contactsnxt.dealtracker.us&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Update your ID documents</p>
+        <p>Please update ID document(s) of your Mashreq Account to ensure banking continuity</p>
+        <p>Dear Lоyаl Маshгеq Ваnk Сustоmег</p>
+        <p>This e-mail is to notify you that your Identification Document is due to expire in 1 day, you have 3 days to update your documents to ensure banking continuity.</p>
+        <p>For UAE Residents.</p>
+        <p>As per Central Bank regulations, customers are required to keep their Emirates ID updated with their respective bank at all times</p>
+        <p>How to update your ID documents?</p>
+        <p>You can conveniently update your ID documents as well as the joint account holder&#x27;s documents at any time using any of the below options:</p>
+        <p>Log into Mashreq Online www.mashreq.com/login &lt;https://www.residenciaslosangeles.com/wp-content/cache/lo.php&gt; and follow the steps to confirm your identity.</p>
+        <p>Best Regards,</p>
+        <p>Mashreq</p>
+        <p>Mashreqbank PSC is regulated by the Central Bank of the United Arab Emirates.</p>
+        <p>Do not reply to this email, this is a system generated email message. For any queries, please contact the Bank.</p>
+        <p>Copyright © 2023 Mashreq    </p>
+    </article>
 
     <article>
         <p><b>From</b>: Grant Polachek &lt;pola-grant@squadhelp.co&gt;</p>
@@ -1697,6 +1845,7 @@ Message-ID: &lt;6hg7d8fovc68ceya-65nnhgtvyt0a2gvi-16736-7d66@keragenics.shop&gt;
 
 <script>
 const CURSES = [
+    "be bitten by mosquitos",
     "be blamed for something you didn't do",
     "be last in line",
     "be late to your appointment",
@@ -1704,11 +1853,15 @@ const CURSES = [
     "be shortchanged by the cashier",
     "be voted least likely to succeed",
     "break the tip of your pencil",
+    "burn your morning toast",
     "dial the wrong number",
     "dine on wobbly tables",
     "drive behind grandmothers",
     "fart in a crowded room",
+    "feel an oncoming sneeze",
     "feel as if you are being watched",
+    "feel slightly off balance",
+    "find a hair in your soup",
     "find a hole in your pocket",
     "find coal in your stocking",
     "forget how to spell unnecessary",
@@ -1719,6 +1872,7 @@ const CURSES = [
     "greet a fistbump with a handshake",
     "have a smudge on your glasses",
     "have crumbs in your bed",
+    "have food between your teeth",
     "have holes in your umbrella",
     "have pebbles in your shoes",
     "hear ringing in your ears",
@@ -1730,6 +1884,7 @@ const CURSES = [
     "run out of batteries",
     "run out of toilet paper",
     "run out of toothpaste",
+    "sip from the wrong cup",
     "sit behind the tallest person",
     "sleep through your alarm clock",
     "stumble over your words",
@@ -1738,6 +1893,8 @@ const CURSES = [
 ];
 const PARTICLES = ["💀", "🔥", "🌟", "✨", "☠️", "👹", "👁️", "⛧"];
 
+const PARTICLE_HOLDER = document.getElementById("particle_holder");
+const PARTICLE_SPAWNPOINT = document.getElementById("particle_spawnpoint");
 const CURSE_VISIBLE = document.getElementById("curse_visible");
 const CURSE_INVISIBLE = document.getElementById("curse_invisible");
 
@@ -1750,14 +1907,14 @@ function new_particle()
 {
     const particle = document.createElement("div");
     particle.classList.add("particle");
-    const rect = CURSE_INVISIBLE.getBoundingClientRect();
+    const rect = PARTICLE_SPAWNPOINT.getBoundingClientRect();
     let position_x = rect.left;
     let position_y = rect.top;
     particle.style.left = position_x;
     particle.style.top = position_y;
     const velocity_x = (Math.random() * 2) - 1;
     const velocity_y = (Math.random() * 2) - 1;
-    document.body.append(particle);
+    PARTICLE_HOLDER.append(particle);
     particle.innerText = random_choice(PARTICLES);
     let dead = false;
     function kill_particle()
