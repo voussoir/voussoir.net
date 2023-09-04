@@ -61,6 +61,18 @@ When I first made my reddit account, I chose the name /u/GoldenSights instead of
 
 > [ChrisMarshallNY](https://news.ycombinator.com/item?id=31883896)
 
+-
+
+> In fact, only two or three decades ago it was standard for the telephone service to print everyone's name, address, and phone number in a big book, distribute it to every house and charge you $5 a month extra if you wanted to opt out of the list.
+
+> [13of40](https://news.ycombinator.com/item?id=37375010)
+
+> > In the past I've tracked down the names of people in old photo's with a viable house number by guessing the city and searching newspaper archives. Then confirm with a streetview. The archives will have articles mentioning people with their street address.
+
+> > My thought is Americans have become really paranoid compared to people 50 years ago. And people are often under the illusion that people can find out a lot about you with little effort isn't true.
+
+> > [Gibbon1](https://news.ycombinator.com/item?id=37375229)
+
 At the moment, [my github page](https://github.com/voussoir) already shows my real name. That cat is out. I added that because as a computer science student there is a cultural expectation to use one's github profile as a public portfolio and to include it on resumes. I mean, once again, it would be really weird to say "I've been writing code as a hobby for this many years but I can't show it to you". I guess the pressure for employment was enough for me to break the rule. For a few years I had a linkedin account with a real photo, but I deleted that because linkedin is gross.
 
 I am usually pretty good at resisting cultural expectations if I want to. I've never tasted alcohol, for example, and I don't swear. I never did use facebook or twitter or instagram or vine or tiktok. And while it'd be more noble to say that I am simply following my own beliefs and methods regardless of expectations, I know that I deliberately go out of my way to be contrarian. To not be a [normie](https://en.wiktionary.org/wiki/normie). But although I'm not harboring a secret desire to drink or to watch tiktok, and I am inwardly convinced of these choices, there's no doubt it is also very much an outward thing, a desire to be seen by others as the kind of person who does not follow the norm.
