@@ -203,6 +203,90 @@ pre
  -->
 
     <article>
+        <p><b>From</b>: Grant Polachek &lt;gpolachek@squadhelp.ai&gt;</p>
+        <p><b>Reply-To</b>: grant@squadhelp.co</p>
+        <p><b>To</b>: contact@voussoir.net</p>
+        <p><b>Subject</b>: You&#x27;ll want to read this!</p>
+        <p><b>Date</b>: Wed, 13 Sep 2023 09:29:57 +0000</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-2.99 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_IMAGE_ONLY_20,HTML_MESSAGE,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -2.59;EffectiveIp=209.85.222.177,SpamProbability=0.03
+Return-Path: &lt;gpolachek@squadhelp.ai&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: contact@voussoir.net
+X-Pm-Original-To: contact@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of squadhelp.ai designates 209.85.222.177 as permitted sender) smtp.mailfrom=squadhelp.ai; dkim=pass header.i=squadhelp.ai; dmarc=pass (p=none) header.from=gpolachek@squadhelp.ai
+Received: from mail-qk1-f177.google.com (EHLO mail-qk1-f177.google.com) ([209.85.222.177])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 1693596044
+          for &lt;contact@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Wed, 13 Sep 2023 09:29:59 +0000 (UTC)
+Received: by mail-qk1-f177.google.com with SMTP id af79cd13be357-7706cb6638cso31241785a.0
+        for &lt;contact@voussoir.net&gt;; Wed, 13 Sep 2023 02:29:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=squadhelp.ai; s=google; t=1694597398; x=1695202198; darn=voussoir.net;
+        h=mime-version:date:subject:to:from:reply-to:message-id:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=/HA0UzulJbtWxwIM4GkkC22WPiXty8cfT2UZbdHOnvI=;
+        b=jXSfmwu+y+Y7G0naBZP04lOcV7KmfD5Q+trMOOrKzeuJqmvjAu6JyXRb7MDkPSiIUo
+         CFNL1P7fyOVCFfIoHNuVEVV+bgEnT6B9AGKf1anlNLF9UYTx3UJEcDgEC48RxqHA9Rxo
+         NYAIMH+kvWsLuhkr++PjYe6XFc8RICLf3ytqZKceshNw4TPYSN6iQaZLened3uCHLVNi
+         xrsL1k5FYTAkuDAlPJSg+LsHjctnt23cWLEeG0A6qXzrSqHtA411FeZIHusbkruZnD2c
+         9OsG2gWm4ElZL2PmZ1heuiJALjMkmDZQFnJLN0i1RTOwkekz91rTAJdzWsdmmx+zqiCo
+         JjLg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1694597398; x=1695202198;
+        h=mime-version:date:subject:to:from:reply-to:message-id
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=/HA0UzulJbtWxwIM4GkkC22WPiXty8cfT2UZbdHOnvI=;
+        b=B6K0Youzc3wGCWfNcrCbcSTX++ZVPOVguKXNm6kH0hUG25bTZAifcdKqz8foL/OjDC
+         OmNMmysnGoHCziBV13RX2zhIVZ6kGTcSwDPPhyFg/W7vt+2rRqRt3QrvE1+8+glDlht+
+         OO+Cw5C/vJGpuHuu3kEClkYY2SkuzbaRqRSsZybAK71HKvpEGBbqp0fNaXD0fK8trCZX
+         neT10rUF323C1pelCycC2mCqG4gycWo0W9EK7yXA+UNxydRR9g8Wnz17OuFz+5TG7KsQ
+         y67g4/X1ka6DEDOeV6cBAmx+a59lH8jY3kR8EmcHIaMpQO7FTOaAmUJyfl5+CiTViKrW
+         d1xA==
+X-Gm-Message-State: AOJu0YydrNpP7KyzxeDJwHOqU5j7azVX/C1mPtxZFRbprAGlSou8Jkqe
+    XeKJHs4EdLuozUO/7KoUZiw8uDinUBSwLtAPlA8=
+X-Google-Smtp-Source: AGHT+IHNzFwkwFZlSnF2565AXuVSZw3ueHhQLHZ6Z+aAs2CSP2V8XHwejGKdMZuY+F8qFwtHGk24IA==
+X-Received: by 2002:ad4:5dca:0:b0:62d:ddeb:3770 with SMTP id m10-20020ad45dca000000b0062dddeb3770mr4394423qvh.0.1694597398396;
+        Wed, 13 Sep 2023 02:29:58 -0700 (PDT)
+Received: from Mac-Pro.local (ec2-18-233-10-128.compute-1.amazonaws.com. [18.233.10.128])
+        by smtp.gmail.com with ESMTPSA id t2-20020a0ce2c2000000b005dd8b9345b4sm4297236qvl.76.2023.09.13.02.29.57
+        for &lt;contact@voussoir.net&gt;
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 13 Sep 2023 02:29:57 -0700 (PDT)
+Content-Type: multipart/alternative;
+ boundary=&quot;--_NmP-6d030aebfa496c65-Part_1&quot;
+Message-ID: &lt;22d4f775-79a8-4309-b1c5-33e1a576c77f@squadhelp.ai&gt;
+Reply-To: grant@squadhelp.co
+From: Grant Polachek &lt;gpolachek@squadhelp.ai&gt;
+To: contact@voussoir.net
+Subject: You&#x27;ll want to read this!
+Date: Wed, 13 Sep 2023 09:29:57 +0000
+MIME-Version: 1.0
+        </pre>
+        </details>
+
+        <hr/>
+        <p>Hi there,</p>
+        <p>I was doing some research on entrepreneurship online and came across an article on voussoir.net . </p>
+        <p>There is some great content here! Many people who are reading articles like this one are struggling with a name (we know this from experience).</p>
+        <p>Just in case you&#x27;re interested, we just launched a super powerful free name generator revolutionizing the way entrepreneurs create brand names via a unique combination of crowdsourcing and AI. Squadhelp&#x27;s team has successfully integrated GPT-3 technology with our vast data on names gathered from analyzing 6 million name ideas over the last several years. </p>
+        <p>We know that free business name generators are a great resource for anyone starting a business, launching a brand, or struggling to find the perfect name!</p>
+        <p>I&#x27;m sure you have read some articles about OpenAI, and how useful this tool can be. We think that your website visitors would get a lot of value out of this disruptive generator &lt;https://www.squadhelp.com/business-name-generator&gt; . Would you be interested in including our generator in your article, on voussoir.net ?</p>
+        <p>We also have a startup toolkit &lt;https://www.squadhelp.com/startups&gt;  that we make available to our 2M+ website visitors and promote to customers -- that we may be able to include you in.</p>
+        <p>Thank you for your consideration, please let me know if you decide to add this to an article.</p>
+
+        <p>Best,<br/>
+        Grant Polachek<br/>
+        Head of Branding | Squadhelp.com<br/>
+        Phone: (443) 782-5272<br/>
+        2000 Center Drive, Suite East C221, Hoffman Estates, IL 60192 United States  &lt;https://track.squadhelp.co/tmid_a/wd1hQcUIK4F9YSV2nQjYs&gt;</p>
+    </article>
+
+    <article>
         <p><b>From</b>: Fiona Hill &lt;bettyraymond201@gmail.com&gt;</p>
         <p><b>Reply-To</b>: fionahill142@gmail.com</p>
         <p><b>To</b>: fionahill142@gmail.com</p>
