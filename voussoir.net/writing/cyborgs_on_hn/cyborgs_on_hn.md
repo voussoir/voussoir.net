@@ -3,6 +3,20 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> If you search "watch $MOVIE free" on google you're going to get netflix, Hulu, prime, Disney etc as the first results regardless of whether those sites even have it in their library.
+
+-
+
+> I hope these journalists are ashamed of themselves and I hope they are at least sacked, with their careers relegated to selling poutine all day.
+
+> > s/selling/eating/ ?
+
+-
+
+> There is always plenty wrong with each new release but the comments and jokes about ${"LATEST_RELEASE"} of ${"SOFTWARE"} being unilaterally bad just make me think the person can't deal with change instead of the software actually being bad.
+
+-
+
 > I'm scratching my head here. The old gas/diesel dispensing stations have solved this problem of restricting people taking all of the fuel in the pump with a disruptive financial technology called blo\^H\^H\^H credit card.
 
 -
