@@ -145,6 +145,10 @@ You're overthinking it!
 
 Feedback wanted.
 
+---
+
+**Update**: I have not received any feedback, and I've taken some more good pictures. [Scales tipped](https://voussoir.net/photography).
+
 ![](photo1.jpg)
 
 ![](photo2.jpg)
