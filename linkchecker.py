@@ -86,6 +86,8 @@ def linkchecker(do_external=True):
         url = queue.popleft()
         if url == 'https://voussoir.net/writing':
             url = 'https://voussoir.net/writing/'
+        if '/slamming_and_blasting' in url:
+            continue
         result = dotdict.DotDict()
         result.exc = None
         result.url = url
