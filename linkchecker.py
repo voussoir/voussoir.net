@@ -99,7 +99,7 @@ def linkchecker(do_external=True):
                 if link not in seen:
                     queue.append(link)
                 seen.add(link)
-            elif result.head.headers['content-type'] == 'text/html' and not url.endswith('.html'):
+            elif 'text/html' in result.head.headers['content-type'] and not url.endswith('.html'):
                 log.debug('GET %s', url)
                 response = session.get(url)
                 soup = bs4.BeautifulSoup(response.text, 'html.parser')
