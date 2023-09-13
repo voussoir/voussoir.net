@@ -162,6 +162,11 @@ table th, table td
     padding: 4px;
 }
 
+hr
+{
+    border-color: var(--color_codeborder);
+}
+
 ol ol, ul ul, ol ul, ul ol
 {
     padding-inline-start: 20px;
