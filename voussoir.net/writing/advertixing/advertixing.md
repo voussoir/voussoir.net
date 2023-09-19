@@ -771,6 +771,10 @@ General internet:
 
 - Low quality articles or listicles are often split over several pages so that you can get a fresh load of ads on each page and they can measure how far people are reading (then they can know which corners to cut next time). I'm already sick of pathetic holdovers from physical print in the digital era anyway, but paged online articles are egregiously useless.
 
+- Any website that dresses advertisement as user-submitted material:
+
+    ![A screenshot of The Leica Forum at l-camera-forum.com. A user named humerc asks the question "how to remove white lettering on M10-D?". Below this, an advertisement appears which looks like a reply. It says "Hi humerc, Take a look here How to remove white lettering on M10-D. I'm sure you'll find what you're looking for!" and it is a link to Amazon wtih an affiliate code. The advertisement says the word "Advertisement" in the place where the username would be, but otherwise looks exactly like a genuine comment, including a bogus post timestamp.](l_camera_forum.png)
+
 Google:
 
 - AMP pages are pages which Google has downloaded from the publishing website and saved in their own caches, so they can serve the content to the user via Google servers. The stated purpose is to make web browsing faster for the end user (because Google's servers are faster than yours). One way to make your website faster and more AMP-eligible is to use sanctioned ad distributors, say for example, oh how about Google Ads? And because the user is actually visiting Google's servers and not yours, Google gets first pickings on all the metrics they want to harvest from the user. Don't worry, publishers, no one's forcing you to use AMP, but oh don't forget that AMP pages will rank higher in search than non-AMP pages because Google owns the search too :-).
