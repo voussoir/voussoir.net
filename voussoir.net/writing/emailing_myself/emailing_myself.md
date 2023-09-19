@@ -1,7 +1,7 @@
 Sending emails to myself
 ========================
 
-In April, I wrote [operatornotify.py](https://github.com/voussoir/voussoirkit/blob/master/voussoirkit/operatornotify.py), a module which allows my programs to notify me of important information or errors. I was immediately very proud of it. It felt awesome to get so much impact out of a sub-100 line module as I went around hooking it up to my existing programs and getting the tracebacks from my horribly broken code delivered right to me.
+In April, I wrote [operatornotify.py](https://git.voussoir.net/voussoir/voussoirkit/src/branch/master/voussoirkit/operatornotify.py), a module which allows my programs to notify me of important information or errors. I was immediately very proud of it. It felt awesome to get so much impact out of a sub-100 line module as I went around hooking it up to my existing programs and getting the tracebacks from my horribly broken code delivered right to me.
 
 ![](ycdl_errors.png "there's more")
 

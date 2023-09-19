@@ -200,7 +200,7 @@ Regardless of the value of PATHEXT, you are always allowed to specify the full n
 
 And just like that, we've achieved the black box principle of executables. You can rewrite a .bat program in .py, or you can supercede a System32 exe with a script of your own. The only thing you can't do is supercede the shell builtins -- `dir` always does `dir` even if you have a candidate in the cwd or on the PATH -- you'll have to call those files by their extensioned names.
 
-Between my public [cmd](https://github.com/voussoir/cmd) repository and my non-public cmd folder, I've got more than 180 .py and .bat files making up my command line toolkit. Of course I'm not specifying the extensions when I run them, guys.
+Between my public [cmd](https://git.voussoir.net/voussoir/cmd) repository and my non-public cmd folder, I've got more than 180 .py and .bat files making up my command line toolkit. Of course I'm not specifying the extensions when I run them, guys.
 
 ## Hedges
 

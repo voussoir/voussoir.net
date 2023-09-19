@@ -395,7 +395,7 @@ Whereas by creating a main function, any variables in `main` are local variables
 
 I understand that the examples shown here are very simplistic. Here are some links to my other programs which use ifmain in a purposeful way.
 
-- [bytestring](https://github.com/voussoir/voussoirkit/blob/417c14a02338d10a34fdf4875761c9e4a92aef1c/voussoirkit/bytestring.py#L127) is imported by many of my other programs, but also is very useful on its own.
-- [epubfile](https://github.com/voussoir/epubfile/blob/4f44cd642f04f1dc94b1d65c5a52f5f639460276/epubfile.py#L1657) can be imported into any program that wants to modify epubs, but has a number of builtin utilities that run from ifmain.
+- [bytestring](https://git.voussoir.net/voussoir/voussoirkit/src/commit/417c14a02338d10a34fdf4875761c9e4a92aef1c/voussoirkit/bytestring.py#L127) is imported by many of my other programs, but also is very useful on its own.
+- [epubfile](https://git.voussoir.net/voussoir/epubfile/src/commit/4f44cd642f04f1dc94b1d65c5a52f5f639460276/epubfile.py#L1657) can be imported into any program that wants to modify epubs, but has a number of builtin utilities that run from ifmain.
 
 In a very large project with many files, it's more likely that you'll have a main launcher file, and none of the internals are very useful to run on their own. ifmain essentially bridges the gap to make single Python files useful as imports and standalone utilities.

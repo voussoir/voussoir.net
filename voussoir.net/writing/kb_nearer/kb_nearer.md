@@ -78,7 +78,7 @@ I always hate when I'm reaching for End or numpad-slash and accidentally hit Num
 
 **A/한**
 
-I gave myself a dedicated English/한글 toggle key so I could stop relying on my [Alt+Menu AHK script](https://github.com/voussoir/ahk/blob/master/custom_hangul.ahk). The AHK solution works perfectly fine, but I would occasionally blunder the Menu keypress and be left navigating the toolbar of the current application thanks to the Alt press. I put it next to Right Shift because why is that key so long in the first place.
+I gave myself a dedicated English/한글 toggle key so I could stop relying on my [Alt+Menu AHK script](https://git.voussoir.net/voussoir/ahk/src/branch/master/custom_hangul.ahk). The AHK solution works perfectly fine, but I would occasionally blunder the Menu keypress and be left navigating the toolbar of the current application thanks to the Alt press. I put it next to Right Shift because why is that key so long in the first place.
 
 ![](layout_2.png)
 

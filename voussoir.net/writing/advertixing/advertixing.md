@@ -798,7 +798,7 @@ Youtube, the system:
 
 - [YouTubers have to declare ads. Why doesn't anyone else?](https://www.youtube.com/watch?v=L-x8DYTOv7w) by Tom Scott.
 
-    I'd like to take this opportunity to ~~advertise~~ *tell you about* my own program, [YCDL](https://github.com/voussoir/ycdl), which presents me with a custom interface for subscribing to, watching, and downloading videos. Imagine watching youtube without a "recommendation" feed, autoplay, unrelated spam, or algorithmic determination of what does or doesn't show in the sub box. As long as you can tolerate the slower channel refresh cycle.
+    I'd like to take this opportunity to ~~advertise~~ *tell you about* my own program, [YCDL](https://git.voussoir.net/voussoir/ycdl), which presents me with a custom interface for subscribing to, watching, and downloading videos. Imagine watching youtube without a "recommendation" feed, autoplay, unrelated spam, or algorithmic determination of what does or doesn't show in the sub box. As long as you can tolerate the slower channel refresh cycle.
 
     I'd also like to ~~advertise~~ spread the word about [SponsorBlock](https://sponsor.ajay.app/), a browser extension which automatically skips in-video sponsorship segments based on crowdsourced reports. The database can be freely downloaded so you could hypothetically implement a system for sponsorblocking locally saved videos. This would be great, since I was just about ready to starting excising them with ffmpeg.
 
@@ -920,7 +920,7 @@ I think about this quote very often because it applies to every kind of publishe
 
 Here are my promises to you, reader.
 
-If I come up with a program or website that I think is a worthy venture to make money from, I'll do so via one-time purchases, well-justified subscriptions, or [donations](/donate), not advertisements. And as you know I publish plenty of what I make [for free](https://github.com/voussoir).
+If I come up with a program or website that I think is a worthy venture to make money from, I'll do so via one-time purchases, well-justified subscriptions, or [donations](/donate), not advertisements. And as you know I publish plenty of what I make [for free](https://git.voussoir.net/voussoir).
 
 The website you are reading now will always be free of third-party ads. If your adblocker ever reports more than 0 hits, it's probably due to URL patterns or CSS names, so please let me know and I will fix it. Obviously this is a website about myself so in a sense I'm generally advertising myself, but it's your choice to come here and read about me.
 

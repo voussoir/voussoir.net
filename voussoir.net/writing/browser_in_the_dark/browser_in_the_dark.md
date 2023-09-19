@@ -224,7 +224,7 @@ Note: this article will make more sense if you are using a mouse or other pointi
 
 Warning: things can get a little spooky in the dark!
 
-You can read the source code for this document [here](https://github.com/voussoir/voussoir.net/raw/master/voussoir.net/writing/browser_in_the_dark/browser_in_the_dark.md) (or by pressing Ctrl+U in chrome / firefox).
+You can read the source code for this document [here](https://git.voussoir.net/voussoir/voussoir.net/raw/branch/master/voussoir.net/writing/browser_in_the_dark/browser_in_the_dark.md) (or by pressing Ctrl+U in chrome / firefox).
 
 ## mix-blend-mode
 

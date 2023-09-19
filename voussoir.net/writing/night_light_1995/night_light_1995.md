@@ -35,7 +35,7 @@ These video files contain 80 frames, each a tile of a larger image. I used ffmpe
 
 The first 16 frames can be stitched together in a 4x4 grid to produce a 1024x688 image, and the last 64 frames can be stitched 8x8 to produce a 2048x1376 image. It's quite astonishing to see these levels in such high resolution after all these years.
 
-I deleted 01-16 from each folder, then updated my [stitch.py](https://github.com/voussoir/cmd/blob/master/stitch.py) to take a `--grid` argument, and stitched the remaining 64 images together for each level.
+I deleted 01-16 from each folder, then updated my [stitch.py](https://git.voussoir.net/voussoir/cmd/src/branch/master/stitch.py) to take a `--grid` argument, and stitched the remaining 64 images together for each level.
 
 ![](stitch_8x8.png)
 
@@ -45,7 +45,7 @@ I also extracted the audio clues and converted them to flac. Unfortunately, lots
 
 ![](hxd.png)
 
-I wrote [ffdecodetest.py](https://github.com/voussoir/cmd/blob/master/ffdecodetest.py) to help me with this sort of task. The backyard and living room levels got particularly rekt, with only three and one clue passing the test, respectively.
+I wrote [ffdecodetest.py](https://git.voussoir.net/voussoir/cmd/src/branch/master/ffdecodetest.py) to help me with this sort of task. The backyard and living room levels got particularly rekt, with only three and one clue passing the test, respectively.
 
 ![](ffdecodetest1.png)
 

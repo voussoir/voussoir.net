@@ -25,9 +25,9 @@ Initially, I was concerned that if I recorded too many tracks, the boring commut
 
 However, the data structure and user interface of Trackbook are not geared toward 24/7 recording. It is designed for recording outings with a distinct start and end, and this presented me with some [friction](/writing/friction) in using it the way I imagined.
 
-<p style="text-align:center;"><a style="display:inline-block;" href="https://github.com/voussoir/trkpt"><img src="trkpt_squircle_128x128.png"/></a></p>
+<p style="text-align:center;"><a style="display:inline-block;" href="https://git.voussoir.net/voussoir/trkpt"><img src="trkpt_squircle_128x128.png"/></a></p>
 
-I sat on the problem for a very long time, and then I finally decided to make a fork of Trackbook called [trkpt](https://github.com/voussoir/trkpt) that takes the data model in a direction more suited to my goal. This is my first time forking someone else's project and republishing it with a new name. It makes me feel somewhat guilty, or rude, but it's ok by the license and I'm enjoying the freedom to make this work just how I want it.
+I sat on the problem for a very long time, and then I finally decided to make a fork of Trackbook called [trkpt](https://git.voussoir.net/voussoir/trkpt) that takes the data model in a direction more suited to my goal. This is my first time forking someone else's project and republishing it with a new name. It makes me feel somewhat guilty, or rude, but it's ok by the license and I'm enjoying the freedom to make this work just how I want it.
 
 Basically, I swapped out the JSON-based file storage with an [SQLite](/writing/sqlite_what_a_hunk) database, and removed the entire concept of "Tracks" as a stored object. Instead, the database of trackpoints is queried on the fly to produce tracks with any start and end time you want, which you can export as GPX files. This also opens the door to JOSM-style megarenders and geospatial queries like "what day was I here?". I even made it pink.
 

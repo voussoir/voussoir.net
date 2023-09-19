@@ -77,7 +77,7 @@ Here's a fantastic trick I started using just recently. Since all my software is
 
 When I download a new version of a program, I just delete that junction and make it again with the new version number, and all linked paths work as normal, as long as the name of the .exe itself hasn't changed.
 
-I don't like filling up my desktop or start menu with shortcuts, so I wrote [PGUI](https://github.com/voussoir/cmd/blob/master/PGUI.pyw) which acts as a launcher for any .lnk files located inside my PGUI folder. Each of these shortcuts actually point to the `__latest\program.exe` path. As a bonus, my PGUI folder is one of the few folders to enjoy the honor of being on my PATH, which means I can just start them from the command line or Win+R -- that's all possible without a gui launcher of course, but it's a great symbiosis.
+I don't like filling up my desktop or start menu with shortcuts, so I wrote [PGUI](https://git.voussoir.net/voussoir/cmd/src/branch/master/PGUI.pyw) which acts as a launcher for any .lnk files located inside my PGUI folder. Each of these shortcuts actually point to the `__latest\program.exe` path. As a bonus, my PGUI folder is one of the few folders to enjoy the honor of being on my PATH, which means I can just start them from the command line or Win+R -- that's all possible without a gui launcher of course, but it's a great symbiosis.
 
 ![](latest_junction_1.png)
 
@@ -97,7 +97,7 @@ D:\git\cmd\PGUI
 
 Two folders for system executables, and three folders owned by **me**, because this is a monarchy and I'll appoint whoever I want. No application, under any circumstance, gets to put its own install directory on the PATH. If I need global commandline access to that program, I'll put an .lnk or symlink in \cmd.
 
-At one point, I had some issues with programs that I wanted to subprocess from Python. `subprocess.run(shutil.which('ffmpeg'))` was breaking because `subprocess.run` wants to receive executable files and of course the only thing on my path was an .lnk. So, I wrote [winwhich.py](https://github.com/voussoir/voussoirkit/blob/master/voussoirkit/winwhich.py) and now that problem is solved. The software bends to my will, not the other way around.
+At one point, I had some issues with programs that I wanted to subprocess from Python. `subprocess.run(shutil.which('ffmpeg'))` was breaking because `subprocess.run` wants to receive executable files and of course the only thing on my path was an .lnk. So, I wrote [winwhich.py](https://git.voussoir.net/voussoir/voussoirkit/src/branch/master/voussoirkit/winwhich.py) and now that problem is solved. The software bends to my will, not the other way around.
 
 
 ## Use junctions to reign in appdata
@@ -116,7 +116,7 @@ Now you are closer to portable enlightenment and can zip up the program folder w
 
 Although I run regular backups, I don't include my whole Software folder in the backup routine because I already keep all the portable zips and installers backed up separately. The only items of value in the install directory are config files, most of which are not highly personalized and I don't mind losing either.
 
-But, there are a few programs which I've heavily configured and I'd hate to start from scratch with them. Sublime, Putty, and WinSCP for example. For those I wrote a wrapper around WinRAR, [rarpar.py](https://github.com/voussoir/cmd/blob/master/rarpar.py), which I use to create highly compressed archives with a datestamp in the filename. Because the `__latest` files will be included in duplicate, you might think it'd waste a lot of space, but with a Solid archive and a very high dictionary size, that duplication causes no extra disk usage.
+But, there are a few programs which I've heavily configured and I'd hate to start from scratch with them. Sublime, Putty, and WinSCP for example. For those I wrote a wrapper around WinRAR, [rarpar.py](https://git.voussoir.net/voussoir/cmd/src/branch/master/rarpar.py), which I use to create highly compressed archives with a datestamp in the filename. Because the `__latest` files will be included in duplicate, you might think it'd waste a lot of space, but with a Solid archive and a very high dictionary size, that duplication causes no extra disk usage.
 
 ## Dealing with uncooperative software
 

@@ -213,7 +213,7 @@ class Article:
 
         repo_path = git_repo_for_file(self.md_file)
         relative_path = self.md_file.relative_to(repo_path, simple=True).replace('\\', '/')
-        github_history = f'https://github.com/voussoir/voussoir.net/commits/master/{relative_path}'
+        github_history = f'https://git.voussoir.net/voussoir/voussoir.net/commits/master/{relative_path}'
 
         commits = git_file_commit_history(self.md_file)
         self.publication_id = f'{commits[-1].hash}/{self.md_file.parent.basename}' if commits else None
@@ -231,7 +231,7 @@ class Article:
         <p><a href="{{github_history}}">View this document's history</a></p>
         <ul>
             {% for commit in commits %}
-            <li><a href="https://github.com/voussoir/voussoir.net/commit/{{commit.hash}}"><time datetime="{{commit.date.isoformat()}}">{{commit.date.strftime('%Y-%m-%d')}}</time> {{commit.title}}</a></li>
+            <li><a href="https://git.voussoir.net/voussoir/voussoir.net/commit/{{commit.hash}}"><time datetime="{{commit.date.isoformat()}}">{{commit.date.strftime('%Y-%m-%d')}}</time> {{commit.title}}</a></li>
             {% endfor %}
         </ul>
 
