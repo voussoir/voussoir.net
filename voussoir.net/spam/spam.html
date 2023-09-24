@@ -203,6 +203,86 @@ pre
  -->
 
     <article>
+        <p><b>From</b>: Timothy &lt;timothy@webtechresearch.com&gt;</p>
+        <p><b>Sender</b>: Timothy &lt;timothy@webtechresearch.com&gt;</p>
+        <p><b>To</b>: Contact &lt;contact@voussoir.net&gt;</p>
+        <p><b>Subject</b>: voussoir.net Errors</p>
+        <p><b>Date</b>: Tue, 19 Sep 2023 14:13:35 -0700</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=4.17 required=5 tests=DKIM_SIGNED,DKIM_VALID,HTML_IMAGE_ONLY_12,HTML_MESSAGE,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 3.57;EffectiveIp=209.85.167.65,SpamProbability=0.56
+Return-Path: &lt;timothy@webtechresearch.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: contact@voussoir.net
+X-Pm-Original-To: contact@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of webtechresearch.com designates 209.85.167.65 as permitted sender) smtp.mailfrom=webtechresearch.com; dkim=pass header.i=webtechresearch-com.20230601.gappssmtp.com
+Received: from mail-lf1-f65.google.com (EHLO mail-lf1-f65.google.com) ([209.85.167.65])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -2114017233
+          for &lt;contact@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Tue, 19 Sep 2023 21:13:36 +0000 (UTC)
+Received: by mail-lf1-f65.google.com with SMTP id 2adb3069b0e04-50308217223so5408522e87.3
+        for &lt;contact@voussoir.net&gt;; Tue, 19 Sep 2023 14:13:36 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=webtechresearch-com.20230601.gappssmtp.com; s=20230601; t=1695158015; x=1695762815; darn=voussoir.net;
+        h=to:subject:message-id:date:from:sender:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=obBBJpg0Fe4eyY8n4OBFtG8bS6yvVduuxOom6u67/18=;
+        b=ZhWml56TVWpoSO0t17GacB+VTfWqjAmm8zzxNRNbillak4T5R0M/mRYxd3WKckD2d0
+         8J/CZWPC/ByynPdQNUrPD1ycJEkfP2S9AyN756hayJ2MHzYY/zyZFbEOjAQnIUmFzEeh
+         8NQi20scQXkNN43rVi9qglRY7SEJZcI/vWI88ZPNuHK3DvRIAF1g22akUMTaRZQIUa/e
+         U8HgaiPWe5xJa9Kl8kJE1zRgEz7IVfl86VOTKeOJQIr1AkmvxlHXyViq/rRR0WjZYf5h
+         fwgX1Za7NJI9yHCgG3uEozOhOsDjJDPyKocz4FNFGwktvd3tu+HoKx5K3F1U8ApoqE/N
+         GK0Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1695158015; x=1695762815;
+        h=to:subject:message-id:date:from:sender:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=obBBJpg0Fe4eyY8n4OBFtG8bS6yvVduuxOom6u67/18=;
+        b=Sr8ORjySt5rDD8BR01W5xLU/7ce/bj1zbXnLtho2rqUhWffiYE9SMbpXQXMeQtT0kg
+         s9fSTLFDe1bRKYv5ERkUDonN0dxJTuFkS+ZIWdtYVOmn7sY3hdQ2CWAe/uNTpTYLAKD+
+         q8de4DIqa48kbebi7wRK7eKeam0CO+WvVsXUDD+zeLOoRiQO+HfZvDp2hAWY4h3s/n+y
+         9pqwZ5orCe72zdP+rzeJa2/valIemh8Q3NXzlAXsA9sGI6nAdJJ3Yb1CQqtVtE+b0mQe
+         j2ez2t8/iQWnoewN82N3CqQEH/IPp5qprcu6m/IC72kxnNlh4G08LpWgOn5a2ThfzvNO
+         7HLQ==
+X-Gm-Message-State: AOJu0YyAV63mQ1bL+kob94yKO7kjuUK3E0SJ1eS4PA6Ze0cEB0f6Rlvy
+    FyOISJtNwgkLmBDWEikapkhVF7cLpVc0HDaAZLeevS3h4U0syw3JRNs=
+X-Google-Smtp-Source: AGHT+IEF8Ys6hpzyT55c/FYtkZWZTP9Dl3xCd5FHH4zAVwK8ku1a5665MReBWrfKlpa0e6PJgJjvllrHQZ8bUNVedXY=
+X-Received: by 2002:a05:6512:2526:b0:503:a82:b371 with SMTP id
+ be38-20020a056512252600b005030a82b371mr774376lfb.4.1695158015429; Tue, 19 Sep
+ 2023 14:13:35 -0700 (PDT)
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Tue, 19 Sep 2023 14:13:35 -0700
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Tue, 19 Sep 2023 14:13:34 -0700
+MIME-Version: 1.0
+Sender: Timothy &lt;timothy@webtechresearch.com&gt;
+From: Timothy &lt;timothy@webtechresearch.com&gt;
+Date: Tue, 19 Sep 2023 14:13:35 -0700
+X-Google-Sender-Auth: va6BVRAkghgO-bZIL79UixwpbQU
+Message-ID: &lt;CAHOZ8h557FXbWFShjtm-79Jmfo7sZcFFCR+atNW0BkiGZRuJ0g@mail.gmail.com&gt;
+Subject: voussoir.net Errors
+To: Contact &lt;contact@voussoir.net&gt;
+Content-Type: multipart/alternative; boundary=&quot;0000000000005922790605bcbb45&quot;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi voussoir.net &lt;http://voussoir.net&gt; ,</p>
+        <p>Hope you are doing great!</p>
+        <p>This is Timothy, Business Analyst with WebTech Research(An age-old Digital Marketing Agency operating over 10 years in the global market having its main office in AZ, USA. We exist for such a long-only because we follow ethical business practices)</p>
+        <p>My team discovered a few issues on your website which are affecting your online presence, user experience, and ranking.</p>
+        <p>Do you want me to send a detailed analysis report with screenshots?</p>
+        <p>Awaiting your earliest response.</p>
+        <p>Regards,</p>
+        <p>Timothy</p>
+        <p>&lt;https://webtechresearch-dot-yamm-track.appspot.com/2nNOLQLIwzGktJDGZv9k0MJ3989iUMGvl9jeewQkJquoqkUqvigErg_Ku37DouDMb49HZNv56lpEK6t8nbnn8cbAa4gLNwlkCHa8mRMVHt0aTgDkScfnfsO7u_6fOpRbRHKvOt2oLEUIC9-fAe_L3i3zW2BxVEibyAi0&gt; </p>
+    </article>
+
+    <article>
         <p><b>From</b>: Grant Polachek &lt;gpolachek@squadhelp.ai&gt;</p>
         <p><b>Reply-To</b>: grant@squadhelp.co</p>
         <p><b>To</b>: contact@voussoir.net</p>
