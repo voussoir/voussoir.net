@@ -203,6 +203,84 @@ pre
  -->
 
     <article>
+<p><b>From</b>: Jatin Sahu &lt;zmnkjiyku@gmail.com&gt;</p>
+<p><b>Sender</b>: Jatin Sahu &lt;zmnkjiyku@gmail.com&gt;</p>
+<p><b>To</b>: Writing &lt;writing@voussoir.net&gt;</p>
+<p><b>Subject</b>: // writing@voussoir.net..----- ||</p>
+<p><b>Date</b>: Wed, 11 Oct 2023 07:15:39 +0000</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-1.23 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,HK_RANDOM_FROM,HTML_IMAGE_ONLY_12,HTML_MESSAGE,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,T_REMOTE_IMAGE,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -2.73;EffectiveIp=209.85.222.43,SpamProbability=0.02
+Return-Path: &lt;zmnkjiyku@gmail.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of _spf.google.com designates 209.85.222.43 as permitted sender) smtp.mailfrom=gmail.com; dkim=pass header.i=gmail.com; dmarc=pass (p=none) header.from=zmnkjiyku@gmail.com
+Received: from mail-ua1-f43.google.com (EHLO mail-ua1-f43.google.com) ([209.85.222.43])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -1905765170
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Wed, 11 Oct 2023 07:15:40 +0000 (UTC)
+Received: by mail-ua1-f43.google.com with SMTP id a1e0cc1a2514c-7b5fafed01aso697861241.0
+        for &lt;writing@voussoir.net&gt;; Wed, 11 Oct 2023 00:15:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1697008540; x=1697613340; darn=voussoir.net;
+        h=to:subject:message-id:date:from:sender:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=WgizEosEcAVoqPsnkQMypObGzNJ4S4714+G2W1l/5dw=;
+        b=VK1B9OZWT+YDM3uflVpPX13DlHnIpGdNmXJe5Em2mfgqktmQ7KpigI1vC36pQUnw0w
+         /DclfnydjfLWhL+nFsQ0Xta0uINOmvEq3PrXjK/16dcYs9bkKB02LX0xmnprfXzrOZYo
+         OTN6JCqmocRU6mSESKB+yXaa5KjaFI/AS659dguqFE+ARaxkfSgZEzA8lJcx7RaJ9u0C
+         54h/hmc285DHkWy/tZ+svPZ9QyaEaMC4yalffF0dePhuTwGyaFUvDQUPkXtapQZdntob
+         T0TRmi49wuHcEoUYimKvwUd1OHS9tkaQmAGZ//7+F9x/xBo9akO/4wxpvpe3fZkr6vqG
+         5DLQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1697008540; x=1697613340;
+        h=to:subject:message-id:date:from:sender:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=WgizEosEcAVoqPsnkQMypObGzNJ4S4714+G2W1l/5dw=;
+        b=FCZlMfF4nzG8qCMWdTsYWcwv0Ulmvrvvo2rj363FnIAgHQiuae0KOgKXRJSc2LI/Jp
+         SxSGAHyApTDBGqAsOnf89ozwMO41tivglFc9LnRWnMvIrWkXFWxqW2jkpFh5p/LUo5lt
+         T0Ola1tZQog0mCjazdfmh3f22BF7gO5sTl9lw75J391pXJ3a6rbr6+NX2yt38uFoymPH
+         u8yH0NCOgtIA6iMqPpnD3QVkMCKC7mPCyDDoxl1nQjocRNGgDDS5mFVVzcS1SSeH8Fci
+         O3tAt4csOAYHgust+X7sd5/M5JHlBrkUj5RwWRh1rVV/xxD2LPVfpxjhTOmJXHVDQtYU
+         h3RA==
+X-Gm-Message-State: AOJu0YwT3TgRltQG8yH3sPefDj6YfNmdJeqxgfWT9qGxGtZI483AMe/Y
+    VmS4VuKbyi5qAso6B3vhMDO4wNz7Qj99wu3p3zxE8FbW
+X-Google-Smtp-Source: AGHT+IE8ZNxR77ytXukO76Ay4xBPMSTmTKqsKLASBMirZ4t3O5qAB52IoZwMWpnMEkqjGP9qeLOehzpOeQDpsP3jxDo=
+X-Received: by 2002:a05:6102:344c:b0:457:4521:b69c with SMTP id
+ o12-20020a056102344c00b004574521b69cmr14574147vsj.11.1697008540101; Wed, 11
+ Oct 2023 00:15:40 -0700 (PDT)
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Wed, 11 Oct 2023 07:15:39 +0000
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Wed, 11 Oct 2023 07:15:39 +0000
+MIME-Version: 1.0
+Sender: Jatin Sahu &lt;zmnkjiyku@gmail.com&gt;
+From: Jatin Sahu &lt;zmnkjiyku@gmail.com&gt;
+Date: Wed, 11 Oct 2023 07:15:39 +0000
+X-Google-Sender-Auth: 22QpqEofS4gZ_O7k8BOs7qImvF0
+Message-ID: &lt;CAF0cciffQprO1w321hEzu0TjAvobU_-gbZccbqF+4sH6y5XEgw@mail.gmail.com&gt;
+Subject: // writing@voussoir.net..----- ||
+To: Writing &lt;writing@voussoir.net&gt;
+Content-Type: multipart/alternative; boundary=&quot;00000000000036b5d206076b97fe&quot;
+        </pre>
+        </details>
+
+        <hr/>
+
+<p>Hey,</p>
+<p>With your permission I would like to send you a SEO report with prices showing you a few things to greatly improve these search results for you. These things are not difficult, and my report will be very specific.</p>
+<p>We can place your website on Google&#x27;s 1st page. Yahoo, Facebook, LinkedIn, YouTube, Instagram, Pinterest etc.)</p>
+<p>Please let me know if you are interested. We will send you further details.</p>
+<p>Thanks &amp; Regards</p>
+<p>Jatin Sahu</p>
+<p>&lt;https://zmnkjiyku-dot-yamm-track.appspot.com/2mODjq4jOMYhXY5W3vR5PHMuHA2684tzDqYkSEWl3mlPDVpcdiwFZDq7k041rOualYfzSDScU54oUdY92QFBnHmE33jfjmm9WoGEyLNT3HyVERmIJGKgYC8lduFQrbnX4i5fnUA8HGrkm6LZwOixeP12WEFU&gt; </p>
+    </article>
+
+    <article>
         <p><b>From</b>: Helen Back &lt;backhb@haveahotdog.com&gt;</p>
         <p><b>Reply-To</b>: Helen Back &lt;backhb@haveahotdog.com&gt;</p>
         <p><b>To</b>: &quot;writing@voussoir.net&quot; &lt;writing@voussoir.net&gt;</p>
