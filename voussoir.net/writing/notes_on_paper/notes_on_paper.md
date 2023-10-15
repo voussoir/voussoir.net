@@ -40,10 +40,20 @@ Consider using graph paper, even for non-mathematics, non-engineering notes. Pre
 - Cordon off side-thoughts in [boxes](2016-04-03.png).
 - Draw pictures or diagrams of [consistent size and spacing](2017-02-02.png).
 
-Consider using plain, blank printer paper. At work, I am currently using blank printer paper for all my notetaking, and my "manuscript" is up to about 140 sheets. I don't think I would recommend this for structured school lectures, but it's good for unstructured meetings.
+Consider using plain, blank printer paper. At work, I am currently using blank printer paper for notetaking, and my "manuscript" is up to about 140 sheets. I don't think I would recommend this for structured school lectures, but it's good for unstructured meetings.
 
 - Very low cost per sheet.
 - Complete freedom to draw (beware, too much freedom = [wobbly, drifting text](2017-10-17.png)).
+
+As a result of writing this article, I have decided to try going back to graph paper for my work notes. This time, instead of using store-bought graph paper, I'm just printing my own. I created an [svg file](graphpaper_025_grid_240.svg) with a half-inch margin and a whisper-faint quarter-inch grid. This is working out great and I wish I had done it sooner.
+
+- Pattern, margin, lightness, and paper stock tailored exactly to your preferences.
+- Trying new patterns is completely free -- no commitment to a reamful of one pattern.
+- No dependence on brand or manufacturer. As long as you can find blank paper that suits you, you can make your graph paper.
+- Cost per sheet still extremely low when using laser printers.
+- Very consistent across pages -- cheap store-bought graph paper often has inconsistent grid offset from page to page.
+- Lightness of gridlines must be tuned per-printer by experimentation.
+- The paper may become slightly curled or wavy due to the heat and rollers -- the paper will need time and/or weight to flatten back out.
 
 Consider re-writing your notes after your class/meeting, so that you can:
 
