@@ -203,6 +203,138 @@ pre
  -->
 
     <article>
+        <p><b>From</b>: Helen Back &lt;backhb@haveahotdog.com&gt;</p>
+        <p><b>To</b>: &quot;writing@voussoir.net&quot; &lt;writing@voussoir.net&gt;</p>
+        <p><b>Subject</b>: Re: Hi there,  Really liked your article + a resource for Voussoir.net</p>
+        <p><b>Date</b>: Wed, 18 Oct 2023 14:15:32 +0000</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-1.77 required=5 tests=ARC_SIGNED,ARC_VALID,DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FORGED_SPF_HELO,HTML_MESSAGE,RCVD_IN_MSPIKE_H2,SPF_HELO_PASS,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -1.57;EffectiveIp=40.107.102.111,SpamProbability=0.1
+Return-Path: &lt;backhb@haveahotdog.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of haveahotdog.com designates 40.107.102.111 as permitted sender) smtp.mailfrom=haveahotdog.com; dkim=pass header.i=haveahotdog.com; dmarc=pass (p=quarantine) header.from=backhb@haveahotdog.com
+Received: from mail-dm6nam04on2111.outbound.protection.outlook.com (EHLO NAM04-DM6-obe.outbound.protection.outlook.com) ([40.107.102.111])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 1777717227
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.2 cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384);
+          Wed, 18 Oct 2023 14:15:34 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=IPPmlj9Wa9MgpkAUwbeX3bXjKMnrx2/qlI3VZYI/XkpDb4gPcRidTEcx4i4mC5CO5btJXjPJ+Y3oIxlCfrYnBAMdkyGMQkIxBLRCvFQcxOg5PFBNPJ+nxxu7j3HnGrt3OWp3LkMhX9sxp+GCYpTYtIRnD+/GESfgQWds59IBEGlpPMMPF0hh9tyUiy+cQaVgHHz0JFTarNhrJh693kCt6eeKE21SLm0voafzgxIDaT09tdms1+XWjxQwJFlFgthoDX45iaGYtSuwmQ/ZYiOCbUNea4Qy9lOvU/EbiZYgjCLgc6OYeQr8cH0/zXu95A/e1IBEykbF49Mbh3qzoDiqhg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=KCeJp8+JESSmPIuEWxi0SaSP5DvEuckN2jNJwwXfncM=;
+ b=ZWl/HzYML0Pdz5LscWQ2ZgFmzoMXRIoITnb6zuLH832Z71mq2953igcqHa0uaID1g3xIZ1uuSp3TyFPESLMUDblgAjm6/XCYJ6GvNAgRuU3/Io1NNj5TCuaueve4ojf5LH5Q67b6m58gYU2zczVEOhg9NH3pFxth/DzrFhUehqSissSi5w91G+1czpC4b1jzgXxu1+VymU/jIreAkKYxZH0wdn3Nh6m5NgadQBNJZh97oC5mtn1Q+M+gby++6UyCA9cTx6NMDGwfsqbpKQ3CcoeE72hYpt7lrq9EFZScswPqO6XU6EkFC3sy18dy6wpk/ylo+yPtSf4Sz2cUX67RPw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=haveahotdog.com; dmarc=pass action=none
+ header.from=haveahotdog.com; dkim=pass header.d=haveahotdog.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=haveahotdog.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=KCeJp8+JESSmPIuEWxi0SaSP5DvEuckN2jNJwwXfncM=;
+ b=ixB+Few28lvawzFltZ8iteuuhIg3CTQie3z1MwyMLqdYTOKxd0EWTt6s+HRu2ZmYZ9bon/PSTnsSL0lE3FneG9uXF3xOIdsjIAI0ZnZ1FWxpws4D7061BUcPURzm6iwpRZNZIZtgXzXYje95K3vO9rJVcB5iz1wiQu99Hak5Jd01JCVnSx6ciyB6bIPCPPqGocCgdx6Rv+s2t/V2STIyRW91NXXRRDAaTw3zBo9qXqcxStHEQLtHTZa6YRrF62n1FsJq9u8nHiZEP1wlET4yEvIJJt23cJusXbp+WeNfEzJP9qIPJHemZsHGYNQ3ZSCK1S0P5Joj2rbcY8EZvK/8Fw==
+Received: from PH0PR16MB4945.namprd16.prod.outlook.com (2603:10b6:510:120::7)
+ by SA2PR16MB4058.namprd16.prod.outlook.com (2603:10b6:806:134::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6886.34; Wed, 18 Oct
+ 2023 14:15:33 +0000
+Received: from PH0PR16MB4945.namprd16.prod.outlook.com
+ ([fe80::efc7:94ea:b1f2:9739]) by PH0PR16MB4945.namprd16.prod.outlook.com
+ ([fe80::efc7:94ea:b1f2:9739%5]) with mapi id 15.20.6886.034; Wed, 18 Oct 2023
+ 14:15:32 +0000
+From: Helen Back &lt;backhb@haveahotdog.com&gt;
+To: &quot;writing@voussoir.net&quot; &lt;writing@voussoir.net&gt;
+Subject: Re: Hi there,  Really liked your article + a resource for
+ Voussoir.net
+Thread-Topic: Hi there,  Really liked your article + a resource for
+ Voussoir.net
+Thread-Index: AQHaAc2OqSJXpfs9bUO1WXvnG9sSKw==
+Date: Wed, 18 Oct 2023 14:15:32 +0000
+Message-ID: &lt;113014987.or_mail@haveahotdog.com&gt;
+Reply-To: Helen Back &lt;backhb@haveahotdog.com&gt;
+Accept-Language: en-US, es-ES
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=haveahotdog.com;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: PH0PR16MB4945:EE_|SA2PR16MB4058:EE_
+x-ms-office365-filtering-correlation-id: 74eb843e-f8cd-4f36-ca8f-08dbcfe4b0d3
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ qJH+hnI4maCGfw7IDqIO3tar4n9Y3B5sZoM1YG5Fzid/xT9EJr39iy0FRcOCv8jSmw9MmBDL4I7+PwfZOWYApNeFXvYqSAUbCFDziI6mLW1UUqs1vVTj81WEVlKr4iMOG/i6IB3XwpafUUgSQsivnUdTUxlBkJPSJ66rQLiYk7rszBggJ7x9i8pjpMH2+ojRJgGXvwxoLR0z//w7F6cYDLExWX1oQRWfNUhu0LKZifzeio9QPz4GmTyd9xTYJS42Sh7uA99RfkTXRBufhVllrpJ8aVRygmhl+OrWGl/nsgSITiVxLYtZkuNMJTxCuyJz7z8zJmutdH8Z6QAx7QQ5HALSVudSbJOyqRkqQsgo6O39gIjacOj23M5jd8Efn0mcIShzG3jpRoAN5mvk/uUmbpMXbFix6r3mFqWEBdAT0rxIbVSy9UF5TKkbYSTpevD+BjHATQr5E+IZ/YazLGIHq1Zf/iBJB14ctTefDBWTh7lGLK0XEzDTlLXJLvWrSLtQW/aFdfFdQ66Fyr7l06C3RFDRwZ3E9OsWUpnF0tnehyM7b+Rllo1z8Ss0AcuRH+2ADJMgS1uMnj6Xc7485yZMcG3tnbmahf+IGKu4oTsowURPf4M6Gr080t4PnsEz0hdh
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:PH0PR16MB4945.namprd16.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230031)(396003)(346002)(39850400004)(136003)(366004)(376002)(230922051799003)(1800799009)(186009)(451199024)(64100799003)(6506007)(38070700005)(122000001)(2616005)(38100700002)(26005)(53546011)(6916009)(66446008)(64756008)(76116006)(316002)(66556008)(66946007)(66476007)(6486002)(966005)(6512007)(83380400001)(478600001)(66574015)(71200400001)(166002)(5660300002)(8936002)(41300700001)(2906002)(8676002)(66899024)(21615005)(36756003)(7066003)(86362001)(3450700001)(1406899027)(49910200006);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?Windows-1252?Q?AG6jMukFQDw49yFXL10pn3rc8Yt4Z/2nCtoCUZNpLAOgxNKyzOMNe/Ww?=
+ =?Windows-1252?Q?Dk6tAHC5EMVeQePaC2Isr9bDpqMgDQ043mFCX/Y0gzJCV7/j+fT/KE1W?=
+ =?Windows-1252?Q?yGGYcwz7XewsSJkVA0DF+mz1IgKeDcLyJrsJcEJwBTwaXv9vjKsphbfn?=
+ =?Windows-1252?Q?/SSl5pYCGdqGqPpaugIbOMz17BrELmToM8zwrDghAf6wj6J7j3ReIhdD?=
+ =?Windows-1252?Q?t2NrIK0PU0SiJrR/u5KemVVbZup5vW0971D81vHivkzlLyF/vKF79rnX?=
+ =?Windows-1252?Q?uGX1W8Aydh03d8KXXSLGg3k6AqR1tVGEQnx8TBc4v+ycbA1zsEkf9gZ+?=
+ =?Windows-1252?Q?B/uLvyj0nF9QvLsXvNHmkLZEZmFD4tmFJlC/HiOYN5goEoac6bOIdUkn?=
+ =?Windows-1252?Q?41Nn/YPkRSc79wPwqZd4X70qKPPCgwWtj19Nq5C+VRNYDysky47QSnxg?=
+ =?Windows-1252?Q?MpI23j5W1m5/KC3ZqLelzBczaFoOD38qDn/SLz4mk6BBXS+pZRWICOT3?=
+ =?Windows-1252?Q?IXk4eLrItVV/s9L/QQhmQ3LSYYOD9KvLyVh/aEjP8ovLWm11kowJsmED?=
+ =?Windows-1252?Q?tvC6mNNUi7DVehsynOH5KtMwCFys51ID0NSaVU+zGgMF/GQ7A58lvvBl?=
+ =?Windows-1252?Q?KmsyE9dw7LaXZpqgsEz/wKLpDEnotLxpdMcG5eXERl7bhqsObrcPcs3H?=
+ =?Windows-1252?Q?xFWMjc0T9B9Auwq+sX0Ovj93+SS8OeMOgJmw656VefnmG45IkktQXJxa?=
+ =?Windows-1252?Q?zAExBvwWgDOe96Z7MlW5gr/xZj6ncuS7/DdQVYd0LbHJgZn96VBsOJdz?=
+ =?Windows-1252?Q?So8KBt33ib/vIebr4SxhDTLfjxiOhzYPIKg9DGU5HmhKysFyPho+Ouo8?=
+ =?Windows-1252?Q?2I+xrBXUayQbkGMrsiZZFvlVXdIRGEaGtdWma1IsqgdWt2CRm4XsB3qX?=
+ =?Windows-1252?Q?/Rzc+WeirFYUJDS0Vq6l5fN09ddgOI+0mwG0kWbxjgj1WJrqM3A8wXTx?=
+ =?Windows-1252?Q?Qn9GJW8SafFgwaMGDTcVYjama5iQFqWGbzmuZDiTLMkDVwP82iHD6zwB?=
+ =?Windows-1252?Q?2OyRXTqRe66qZyo8u074niuGwZ6tFFc/COB+L2ISCyllEES5K7ATnYyn?=
+ =?Windows-1252?Q?9spZ4t2kqVP7Sm/o0gl+8OSeaosqQt1g+eE/ZrU71NO0XsrG4IlpyXYY?=
+ =?Windows-1252?Q?YDpEJoflnkrOGIKlMUiZJUiwePjVNePjU6O+Yr0keLymnmsm49AjdOAn?=
+ =?Windows-1252?Q?Us1xfWuO9mc9g8ZQoOGCNbACbEehvhtMypIsDAkF3e+52E15Ufn9z6PG?=
+ =?Windows-1252?Q?Q3YPvHxdsgYRZWjqZEC/OkovAcKltOMQhFuJjqsMwwPiTOxbRB49KbN7?=
+ =?Windows-1252?Q?lNVv8MkF5ysD5pHmfGXNn6sXO0JaJSptIWELhyekxe09uTv9HCeNKnuB?=
+ =?Windows-1252?Q?1+wVg0XA4JD8GXIDbge3Q+i4EwCvOGZv7WiWKiXO5lwXAJOQ9Nzg4E+d?=
+ =?Windows-1252?Q?68bL3/FMKt8NOmoGcsAnq6rLSNffmJ7OwRGouX7+pukR1uG0DrQRbe3n?=
+ =?Windows-1252?Q?MigSrTf+iMU8NvtSAF5YFf0Hie6L9vcsLMXmrVUZrYYwhkZLP7B+VoGa?=
+ =?Windows-1252?Q?IJfjN4aGFMK3+GnwWLmAIuD8vEz3AlQhtLMKQXcMhAnwKj7Y5cFnSQY2?=
+ =?Windows-1252?Q?LG4h/P4d5hWA1oKw8AkHhuxbYwtqRva5?=
+Content-Type: multipart/alternative;
+    boundary=&quot;_000_113014987ormailhaveahotdogcom_&quot;
+MIME-Version: 1.0
+X-OriginatorOrg: haveahotdog.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: PH0PR16MB4945.namprd16.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 74eb843e-f8cd-4f36-ca8f-08dbcfe4b0d3
+X-MS-Exchange-CrossTenant-originalarrivaltime: 18 Oct 2023 14:15:32.8879
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 5708bfba-2db8-4448-9543-b6a32c6d7113
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: 5JZLlF7OFWCBo8oBy2hJdQaj16M4Yo4RfjAozV3+b2Xid1gNncyNG9I/mnNoeNjBYRT4MmAHdbk385u/BF5G4Q==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA2PR16MB4058
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Dear Voussoir.net Team,</p>
+        <p>I hope you&#x27;re having a fantastic Wednesday.</p>
+        <p>Just touching base one last time to make sure we don&#x27;t get overlooked in your inbox. </p>
+        <p>Is there anything stopping you from recommending our guide &lt;http://hotdog.com/tv/stream/&gt;  to how to stream for less on Voussoir.net?</p>
+        <p>If you’re hesitating for any reason, I&#x27;m always interested in actionable feedback ;) Thank you!</p>
+        <p>Best wishes,</p>
+        <p>Helen</p>
+        <p>Helen Back</p>
+        <p>Community Manager</p>
+        <p>HotDog.com (formerly KillTheCableBill.com)</p>
+    </article>
+
+    <article>
         <p><b>From</b>: Grant Polachek &lt;grant_p@squadhelp.ai&gt;</p>
         <p><b>Reply-To</b>: grant@squadhelp.co</p>
         <p><b>To</b>: contact@voussoir.net</p>
