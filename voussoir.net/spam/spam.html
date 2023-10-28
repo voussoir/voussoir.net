@@ -203,6 +203,125 @@ pre
  -->
 
     <article>
+        <p><b>From</b>: &quot;Arjun&quot; &lt;arjunsharma.451@outlook.com&gt;</p>
+        <p><b>To</b>: &lt;writing@voussoir.net&gt;</p>
+        <p><b>Subject</b>: Re: Report...</p>
+        <p><b>Date</b>: Thu, 26 Oct 2023 23:02:38 +0530</p>
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-0.7 required=5 tests=ARC_SIGNED,ARC_VALID,DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FORGED_SPF_HELO,FREEMAIL_FROM,HTML_MESSAGE,RCVD_IN_MSPIKE_H2,SPF_HELO_PASS,PURELYMAIL_IP_REPUTATION autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -0.5;EffectiveIp=40.92.53.26,SpamProbability=0.17
+Return-Path: &lt;arjunsharma.451@outlook.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of outlook.com designates 40.92.53.26 as permitted sender) smtp.mailfrom=outlook.com; dkim=pass header.i=outlook.com; dmarc=pass (p=none) header.from=arjunsharma.451@outlook.com
+Received: from mail-sgaapc01olkn2026.outbound.protection.outlook.com (EHLO APC01-SG2-obe.outbound.protection.outlook.com) ([40.92.53.26])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -100418373
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.2 cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384);
+          Thu, 26 Oct 2023 17:37:20 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=MQy3u6nRAoCxLCaznzOkO6U7U7jBDR1NjN5gp1s/NZu9poa7JekeTPujVW/kKWCXk/D9rsyYWiy1KuALGkCl6H+jopUjTgwhZFvdtPglmK9rPiiZUB/68gi1hSI1eHNr6SCdOqsRU/hi1va3cM7hloogEebwSVHiA5EF8swox513XURZyaW8OOzz757v3+N4lFD8XXJuj9xHWnW5r98Hl7ogp5wF0amjFXELa38BSRB7esX0i8wLR5l9iVbSfn/qU/S606dIoWm6hgFtGJN2rwsBRI0a5evTztjYahbTVyh/qcfTIIXQoKH+iw13TD49dxyl+zKd5jzLXddYRyj4DQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=u1bx4nKq7ZbyX3fdt3dFBG0is0/c0FaqYzmpAezmo4Q=;
+ b=MixHBU3K1nTJdtriVYLMavPGxDj0SYRMnsuwM4FJtyX9vgV7C0yZgLDko1XBa3OfgGXVMnOIteyrpNPaf5RswUU1FqFAViOL64sdXDeHa7iDneMCny+/+nGCP59Ox619g0pgIVac0Wdkk+yg4O1ylDYoirTcP8emEYacve2TQobyB1oaksCn8TT6FW85r1pOoBJMR6Qn3/pBIMwyoysntx5tl3971P27Uro18yYOGJh2cuhfxvxk1lqEprrglen/zWMDmJXYL7+L0lkw7U1DjyHJ07G1azNuZYICzfKBbPOC4sIC8AGkwsiqgGHjbO7v91Zj4RPIfZ/rHOdULeEgCg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=outlook.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=u1bx4nKq7ZbyX3fdt3dFBG0is0/c0FaqYzmpAezmo4Q=;
+ b=Xw0hxp4q++1jDue06pV2fk2yDRzrU6mW09W5w4w7/SRL8nz3R3fjHkU0PDWNhAEKvM4dNbv/D3f8929+r+ftQxC2ZyGfTdbV6NONSATRLi1+gPab49+EuVLnvVmwYw8mEiFMMsRWZhYhTg36FVLXxFrjpqoEUWQWtFJ6GNok4Pum309qFdSOTyBCUyUvbXBsKqu0uiKF8rv9DBzSOQzTLpo2DFcACJ3qBds56gBH/o3lruORudUoRoqWyjZTiRtgQ6R13dvrx+O71SgSt8CCOHi1vBlYwyg3cYx05xp4XhW5dZ8iD/SxxEkzILNGhJJyUmiA5mG7P2bgr50teRZpeQ==
+Received: from TY2PR0101MB3216.apcprd01.prod.exchangelabs.com
+ (2603:1096:404:e9::15) by TY0PR01MB5790.apcprd01.prod.exchangelabs.com
+ (2603:1096:405:11::6) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6933.23; Thu, 26 Oct
+ 2023 17:37:16 +0000
+Received: from TY2PR0101MB3216.apcprd01.prod.exchangelabs.com
+ ([fe80::806b:e292:fb12:1069]) by
+ TY2PR0101MB3216.apcprd01.prod.exchangelabs.com
+ ([fe80::806b:e292:fb12:1069%4]) with mapi id 15.20.6933.019; Thu, 26 Oct 2023
+ 17:37:16 +0000
+From: &quot;Arjun&quot; &lt;arjunsharma.451@outlook.com&gt;
+To: &lt;writing@voussoir.net&gt;
+Subject: Re: Report...
+Date: Thu, 26 Oct 2023 23:02:38 +0530
+Message-ID:
+ &lt;TY2PR0101MB3216DD664BDDCD92CCB23583A4DDA@TY2PR0101MB3216.apcprd01.prod.exchangelabs.com&gt;
+Content-Type: multipart/alternative;
+    boundary=&quot;----=_NextPart_000_0A65_01DA0860.FC98B5C0&quot;
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AdoIMg84O2rFPIEhQuqXPIpc7YKxOA==
+Content-Language: en-in
+X-TMN: [OCB6NeyQOROXKIN4zt49Nat25D65OOQtdIoNudGz7R0=]
+X-ClientProxiedBy: PN2PR01CA0152.INDPRD01.PROD.OUTLOOK.COM
+ (2603:1096:c01:26::7) To TY2PR0101MB3216.apcprd01.prod.exchangelabs.com
+ (2603:1096:404:e9::15)
+X-Microsoft-Original-Message-ID:
+ &lt;0a6401da0832$e2e079c0$a8a16d40$@451@outlook.com&gt;
+MIME-Version: 1.0
+X-MS-Exchange-MessageSentRepresentingType: 1
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: TY2PR0101MB3216:EE_|TY0PR01MB5790:EE_
+X-MS-Office365-Filtering-Correlation-Id: ad1d46c3-e5c1-4fa5-7a94-08dbd64a0652
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+    C4ZS4Ve2/mQNSG9hi8o2u8c2/k8fKVaTp+QT9kpQeVxibohc4AEfNVVmaMFEl/3H+Ictm9sKUzPYMW6uHtOQWCOa+PRTrgvDRfAFWlfYWxWUwpzsW8VEZ6jrt4VALZK6QhPiJ5VR31XznP8fVAZyvJx5sT8g6dF36XzSmjTM8eskwOWNTLaQQLdQOKi2kkMdO6Uuowsshyhzn30WNEDJjS+856uvqM6BLJUCTwWaDnxCwoGRDmUUSgzY9+rdzHsfkzzbmySi6QEeS13gcX6pQ+97vdcUiRLGug65aHjMH5FsVZ0NUe1iCP8Tc2O0hVPCmbMCvZdqMMaziDbgWwHQlk4QrYcBeIPMa4VHPQIDoq7f66xQQNIDehkyRJA25x5LYC3PwRkoFd0BMrbklUOArxHyfDLmqvRgihRoS28CaN9a1tn06Oy1QLB4IFsPnQWFcZt8iLRDoOiu1Ej02vcxqYp5mqqV8LtKkHMOEHLNIHYoHwVp4slyrBGQCMz6Ec4jPsLpufP8bD0lGL7JfVFNtp5N6diMFvhNRBMSKrY/dywFXY9C0N5GSiiwS6Hkacxs
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0:
+    =?us-ascii?Q?vZWg2yJc80YIWWp3VhT+YpyZ0RhbNsEMEd52y6/VRqq6G/DcIZ2zMYxzyDOa?=
+ =?us-ascii?Q?amdLkOdGT5GgZNNmtDrcpFdrWcHCnbJ0n7ZXHuxt3E5Mc4f22LXfYPFMI33J?=
+ =?us-ascii?Q?N9mGVX7enO0q9SY6Y9vTO28NP8SQD8R8zxNXvA4YpWNqcPJ3CE9k2ZpqU+U3?=
+ =?us-ascii?Q?dzqID+3wBPr65PJbRJc7neXT/jpWawKCFC621OXrJspJVvfJVzckrKGsjjNm?=
+ =?us-ascii?Q?Sq3XtbZ5peI0/PBnqV+AL2h3rYHcBuOY2OkUlLbjRt90WYeIUX8ZoTYafRO+?=
+ =?us-ascii?Q?wwvjBNhkPihCnl6cZkMixgk7Xf/blk0bh/je4k367Y+Wq9UsVlo9ZC6py8Bu?=
+ =?us-ascii?Q?Ja4ndfR/IlF2AzME8IfGnECvyzLbCO5FSUjsfck/0K2O9U5EoOAnQBBVdrkH?=
+ =?us-ascii?Q?mV9afbXbYucJgMuwo+C2woGg0LJ7Zqb4d6b6sCUCagdDaJtbZSRt9U6o4WJN?=
+ =?us-ascii?Q?3/FLq93h7ZtRUajj6pyeYFcem+wlz3zJ7yX5fH0cfR7TpSoKWup9T8+Po3vt?=
+ =?us-ascii?Q?sA0Y8x6uWQpy4fwrc4jbvhYjag+8VeBFg4zci2qfiCDD/8vDAGahir8pr1lC?=
+ =?us-ascii?Q?i7enVRjmiOoubysaUWV6QBWWk28cdS5QZTbhZZq6vIAqtft/qQY1m92ZpwZn?=
+ =?us-ascii?Q?JKyOZtwgJcW0iShq9532ekrmHPGP6vmeGHUcyCzhG8yabFW9D3syQZ+xXYSh?=
+ =?us-ascii?Q?C0PXX8sTSQiaL9YBPVb7IL84irBGmIRuzpFT+JLna0xxL06Yj7JU9H4kZEv1?=
+ =?us-ascii?Q?FJYFweYwlX1UsLsztd6DXDN91GOvjeaKZbh5vQULwSRaWs0YIxNXCioEiyjH?=
+ =?us-ascii?Q?zdZnxYkxQ7KmmbGoSYvAY593Iv+WAGKrRZYyzOG280UKezQ1mUT0DlJd3CBf?=
+ =?us-ascii?Q?tWxNrNBsAKvcJ6TZQvQUhpL6s8LgQBeQekY42vkZYneOE0c2RNf9UYBjDNA8?=
+ =?us-ascii?Q?RbSeHR2s8wZoMIrTAh1xNXH/0UflXVCpeweF5zncwxO/z2agUdUPVZ9lRnmM?=
+ =?us-ascii?Q?z76GiQeaWnd5jkKABbgV3lZK1tkC+iTYSMSJAKXoknBk3MMfNXq3t8AnZzaN?=
+ =?us-ascii?Q?53gAzn9ogOTGQLJ+x6jEptHU9NNYgtCCcn6u9d5poTuK56fgHVml2yEiC+eE?=
+ =?us-ascii?Q?sSzELY7BEdNV4Q5zVDjEPCp39ayzkqv8VcRZIyhwRU8jsyC/M7jG0XxVqzLc?=
+ =?us-ascii?Q?f844NRLzhegn0xtF0v3VIRTeo14RUtYq+ZZcotU/gOsMLhMYWHwFhxlMDAE?=
+ =?us-ascii?Q?=3D?=
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: ad1d46c3-e5c1-4fa5-7a94-08dbd64a0652
+X-MS-Exchange-CrossTenant-AuthSource: TY2PR0101MB3216.apcprd01.prod.exchangelabs.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 26 Oct 2023 17:36:02.9631
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+    00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: TY0PR01MB5790
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi, writing@voussoir.net</p>
+        <p>I was going through your website &amp; I personally see a lot of potential in your website &amp; business.</p>
+        <p>With your permission I would like to send you an Audit report of your website with prices showing you a few things to greatly improve these search results for you. These things are not difficult, and my report will be very specific. It will show you exactly what needs to be done to move you up in the rankings dramatically.</p>
+        <p>We can place your website on Google&#x27;s 1st page (Yahoo, etc.).</p>
+        <p>May I send you quote and your website performance report? If interested.</p>
+        <p>Thanks in advance!</p>
+        <p>Arjun (SEO Manager)</p>
+        <p>Austin Texas USA</p>
+    </article>
+
+    <article>
         <p><b>From</b>: &quot;Martin Wang&quot; &lt;martin.wang@netmail23.net.cn&gt;</p>
         <p><b>Reply-To</b>:  &lt;martin.wang@tldschina.com&gt;</p>
         <p><b>To</b>:  &lt;writing@voussoir.net&gt;</p>
