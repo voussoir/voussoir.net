@@ -3,6 +3,52 @@
 Slamming and blasting
 =====================
 
+[Patent Community Slams USPTO's Rush to Retire Software Systems](https://ipwatchdog.com/2023/11/05/patent-community-slams-usptos-rush-retire-old-software-systems-despite-patent-center-problems/id=169221/)
+
+[Apple slams Android as a 'massive tracking device' in internal slides](https://www.theregister.com/2023/11/03/google_trial_apple/)
+
+[California Slams San Francisco for 'Egregious' Barriers to Housing Construction](https://www.nytimes.com/2023/10/25/us/san-francisco-housing.html)
+
+[NewsGuard and US Gov Sued by Consortium News; Musk Slams 'Scam'](https://web.archive.org/web/20231023213154/https://www.zerohedge.com/markets/newsguard-us-govt-sued-consortium-news-musk-slams-scam)
+
+[FBI boss slams 'unprecedented' Chinese cyberespionage and IP theft](https://www.scmagazine.com/news/fbi-boss-slams-unprecedented-chinese-cyberespionage-and-ip-theft)
+
+[SpaceX slams regulators for Starship delay, risk of China beating US to the moon](https://www.cnn.com/2023/10/18/world/spacex-testimony-senate-faa-regulations-scn/index.html)
+
+[Society of Authors slams 'lack of consultation' on Spotify audiobooks deals](https://www.thebookseller.com/news/society-of-authors-slams-lack-of-consultation-on-spotify-audiobooks-deals)
+
+[Twitter pays thousands to account blasted for 'mocking' child's suicide](https://www.dailydot.com/news/twitter-monetizes-account-mocked-childs-death/)
+
+[Israeli billionaire Idan Ofer quits Harvard's board, blasting the school](https://fortune.com/2023/10/13/israeli-billionaire-idan-ofer-batia-quit-harvard-board-students-statement-palestine-hamas/)
+
+[SpaceX slams FAA report on falling space debris danger](https://spacenews.com/spacex-slams-faa-report-on-falling-space-debris-danger/)
+
+[Pennsylvania University Slammed for Celebrating Nobel of Researcher It Demoted](https://www.independent.co.uk/news/science/nobel-prize-katalin-kariko-upenn-criticism-b2423517.html)
+
+[Robin Williams' daughter Zelda slams AI for recreating her father's voice](https://english.elpais.com/culture/2023-10-02/robin-williams-daughter-zelda-slams-ai-for-recreating-her-fathers-voice.html)
+
+['Get Help' - Elon Musk Blasted for Mocking Ukraine with Fake Zelensky Picture](https://www.kyivpost.com/post/22214)
+
+[Consciousness theory slammed as 'pseudoscience' - sparking uproar](https://www.nature.com/articles/d41586-023-02971-1)
+
+[Ali Partovi Blasted](https://twitter.com/mwseibel/status/1703158917801578907)
+
+[China slams EU over electric vehicle subsidy probe](https://www.politico.eu/article/china-warns-car-subsidy-probe-will-have-negative-impact-on-trade/)
+
+[Taiwan blasts Elon Musk for calling the island 'an integral part of China'](https://www.reuters.com/world/asia-pacific/taiwan-blasts-elon-musk-over-latest-china-comments-2023-09-14/)
+
+[Ancient-human fossils sent to space: researchers slam 'publicity stunt'](https://www.nature.com/articles/d41586-023-02882-1)
+
+[WGA Slams Studios' Latest Offer](https://deadline.com/2023/08/wga-strike-guild-regjects-latest-studio-offers-rips-ceos-1235525784/)
+
+[Gump's Store Owner Slams SF in Open Letter Complaining About Street Conditions](https://sfist.com/2023/08/15/gumps-department-store-owner-slams-sf-in-open-letter-complaining-about-street-conditions-remote-work/)
+
+[Founder of Tech Giant Yandex Slams 'Barbaric' Invasion of Ukraine](https://www.cnn.com/2023/08/10/tech/arkady-volozh-yandex-ukraine-war/index.html)
+
+[LK-99 slammed as 'not a superconductor at all'](https://www.theregister.com/2023/08/09/lk99_more_physicists_fail_reproduce/)
+
+[China slams Biden's order limiting U.S. overseas tech investment](https://www.cnbc.com/2023/08/10/china-slams-biden-order-limiting-us-overseas-technology-investment.html)
+
 [Google Tries to Defend Its Web Environment Integrity Critics Slam It as Danger](https://techreport.com/news/google-tries-to-defend-its-web-environment-integrity-as-critics-slam-it-as-dangerous/)
 
 [US senator blasts Microsoft for "negligent cybersecurity practices"](https://arstechnica.com/security/2023/07/us-senator-blasts-microsoft-for-negligent-cybersecurity-practices/)
@@ -2262,3 +2308,5 @@ Slamming and blasting
 [Om Malik slams the Oscars for their YouTube policy](http://gigaom.com/2007/02/28/oscars-vs-youtube/)
 
 <center><video src="iISlvGCrD5Y.mp4" controls></video></center>
+
+`sqlite3 hnarchive.db "select ('[' || title || '](' || url || ')') FROM items WHERE type='story' and (title LIKE '%blast%' or REPLACE(lower(title), 'islam', '') LIKE '%slam%') AND NOT title LIKE '%blaster%' AND NOT title LIKE '%blastoma%' ORDER BY time DESC"`
