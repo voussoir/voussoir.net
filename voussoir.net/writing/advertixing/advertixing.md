@@ -3,7 +3,7 @@
 Advertising
 ===========
 
-You can listen to this article. FLAC, about 325 MiB:
+You can listen to this article. FLAC, about 350 MiB. <a href="https://files.voussoir.net/writing/advertixing/advertixing.flac">Download</a>.
 
 <audio src="https://files.voussoir.net/writing/advertixing/advertixing.flac" controls/>
 
@@ -354,7 +354,7 @@ And comment by Hacker News user WalterBright:
 
 > https://news.ycombinator.com/item?id=23253296
 
-What the 1960s documentary didn't anticipate was the advent of the internet, which gives the product an effectively endless supply of new potential customers. So even a product that "only seeks to sell you once" has significantly more opportunity now than it did in the 60s. It's not easy to get a bearing on a company's reputation when they only exist as an Amazon brand page with product reviews of questionable veracity, especially when all they have to do to get a clean slate is take down their Amazon page and put up a new one with the exact same poorly photoshopped pictures.
+What the 1960s documentary didn't anticipate was the advent of the internet, which gives the product an effectively endless supply of new potential customers. So even a product that "only seeks to sell you once" has significantly more opportunity now than it did in the 60s. It's not easy to get a bearing on a company's reputation when they only exist as an [Amazon brand page](https://www.youtube.com/watch?v=nQpxAvjD_30 "Ryan George - What Shopping On Amazon Feels Like") with product reviews of questionable veracity, especially when all they have to do to get a clean slate is take down their Amazon page and put up a new one with the exact same poorly photoshopped pictures.
 
 ![A stock photo of a man smiling and giving a thumbs up has been poorly edited so that there is a cell phone in his hand and headphones on his head. A misspelled caption reads "wireles headpohnes". The stock photo site watermarks are still present.](poorly_photoshopped.jpg)
 
@@ -465,7 +465,7 @@ But the thing that makes this relationship even more twisted is that even though
 
 Collectively, creators have complete leverage over the site's ability to operate. Without new videos, Youtube would be in big trouble with the advertisers. But individually they are basically holding out their hats and hoping they'll catch some of the falling coins. The strongest threat that an individual creator can make is "I'm not gonna upload any more videos for you!", which measures at about 0.0001 on the Richter scale. Google is always prepared for individual creators to come and go, which is why they don't draft contracts or guarantee payment, so without significant collective action on the part of creators hurting the bottom line, Google has no incentive to change. Not to mention you'd be asking creators to sacrifice their own income by withdrawing their hat.
 
-I will take this opportunity to say that I agree with the perspective that full-time youtubers are like contractors relying on a single client with no contract, and if they don't diversify their income it's their own fault. It's bad business sense with little room to cry victim. This is similar to what I wrote in [Cancel This Album!](/writing/cancel_this_album). The situation with Youtube advertisements is not new. Every single person getting into Youtube with the goal of making money has had ample time to assess the system and decide if they're willing to try their hand with it anyway. The kind of people who get into Youtube with the goal of making money are not the kind of people I care about anyway, and I am more than happy for them to bail when it doesn't work out. The ones I care about are getting my patronage separately.
+I will take this opportunity to say that I agree with the perspective that full-time youtubers are like contractors relying on a single client with no contract, and if they don't diversify their income it's their own fault. It's bad business sense with little room to cry victim. This is similar to what I wrote in [Cancel This Album!](/writing/cancel_this_album). The situation with Youtube advertisements is not new. Every single person getting into Youtube with the goal of making money has had ample time to assess the system and decide if they're willing to try their hand with it anyway. Besides, the kind of people who get into Youtube with the goal of making money are not the kind of people I care about, and I am more than happy for them to bail when it doesn't work out. The ones I care about are getting my patronage separately.
 
 One more good comment:
 
@@ -617,7 +617,7 @@ Suppose I get my wish and ads disappear forever, and every website becomes eithe
 
 [footnote_text] I like Veritasium's videos but [his descent into clickbait](https://www.youtube.com/watch?v=S2xHZPH5Sng "Veritasium - Clickbait is Unreasonably Effective") is a top 10 saddest anime moment for sure :(
 
-[footnote_text] I won't say that advertising and misinformation or intolerance are directly causally linked, but I will say that [stormfront.org has Google Analytics](stormfront.html).
+[footnote_text] I won't say that advertising and intolerance are directly causally linked, but I will say that [stormfront.org has Google Analytics](stormfront.html).
 
 [footnote_text] Can you believe that it only costs forty cents to get off of gmail? What are you waiting for??
 
@@ -697,13 +697,13 @@ There are some proponents of adblock who will assert that they are in the right 
 
 **I think this is absolutely true**. It's my computer, it's my electricity, it's my processor cycles, and it's my eyeballs. Nobody should have the right to run unscrupulous code on my computer just because I visited them once. I am under no obligation to see that div if I don't want to. On that front, this argument is sound.
 
-**But**, this argument is only good for approximately a single visit before it runs out of steam. When I go to a website for the first time, I don't know how many `ads.js` they're going to try to hit me with, and I have every right to armor up before clicking the link. For every visit after that, though, the justification is all but lost. You've seen what they're sending you and you don't like it. Why do you keep coming back? You're not obligated to visit that website, you're freeloading. It is immensely obvious to me as a reader that the publisher is only allowing me to visit this page because they assume I will see the ads along with it. It is obvious to me that if they could physically prevent me from reading the page without ads, they would do so.
+**But**, this argument is only good for approximately a single visit before it runs out of steam. When I go to a website for the first time, I don't know how many `ads.js` they're going to try to hit me with, and I have every right to armor up before clicking the link. For every visit after that, though, the justification is all but lost. You've seen what they're sending you and you don't like it. Why do you keep coming back? You're not obligated to see that div, but you're not obligated to visit that website, either. You're freeloading. It is immensely obvious to me as a reader that the publisher is only allowing me to visit this page because they assume I will see the ads along with it. It is obvious to me that if they could [physically prevent me](https://news.ycombinator.com/item?id=37793375 "Ad blockers are not allowed on YouTube") from reading the page without ads, they would do so.
 
 This is not the same as a reader skipping over paragraphs that start with "But" because those paragraphs are probably not uniquely responsible for the author's income when compared with the other paragraphs. The divs marked `class="ad"` are uniquely responsible for their income when compared with the other divs. Where do you think the arms race of adblock-block-block-blockers comes from? It is obvious to me that they did not intend for me to read the page for free, and in doing so I am violating the trust they had in my readership.
 
 Notice that word, "trust". Anybody who perpetuates this "it's my computer" argument is being willfully disingenuous and approaching what is obviously a social problem, trust, with a purely technical solution, adblockers. "Your computer sent my computer a bunch of different bytes, and I had my computer filter out some particular bytes before showing it to me, because I prefer reading it that way. It's not my fault that those particular bytes are the ones that make you money. They're just ones and zeroes why do you care so much\~".
 
-Using a technological bypass around the social matter of trust does not put you in the moral right. You're not "getting back" at them for wronging you. You could achieve that by leaving, never to return. Even though I've always got my adblocker on, there is a growing list of sites that I simply do not click on, because I resent what they try to send me.
+Using a technological bypass around the social matter of trust does not put you in the moral right, even if you think a page containing ads deserves to be violated. You're not "getting back" at them for wronging you. You could achieve that by leaving, never to return. Even though I've always got my adblocker on, there is a growing list of sites that I simply do not click on, because I resent what they try to send me.
 
 I think there are some cyborgs out there who do not make the link to the social element of this problem, and only see it as a tech issue. These cyborgs are the ones who go around offering technical solutions to the publisher, like suggesting that they should either suck it up or put in a paywall if they want to keep out freeloaders so much. But that's like telling someone they should have locked their doors better after you've wandered around inside their house, and that they should have known someone would sneak in. It is logically accurate but not morally right.
 
@@ -912,7 +912,7 @@ Please,
 
 In discussions of politics, you will sometimes hear people say "if you don't like it, get out". This is a [small-minded position](https://en.wikipedia.org/wiki/Thought-terminating_clich%C3%A9), and if you've read the 23,000 words leading up to this point in the article, you probably don't say that. These people think that the past [twelve thousand years](https://en.wikipedia.org/wiki/Cradle_of_civilization) of tumultuous human history have come to a sudden stop, and the present situation will remain static from here on out. Unlikely. In a sense, installing an adblocker is one part of "getting out". It is removing myself from the environment where I see ads. I did not need to write this article. I could have sat down and shut up and turned off my computer and stopped going outside, and I'd be "out". But I'm not content with that. The world is not static, it is going to change, and I'd like to contribute to the way it changes.
 
-Are ads truly necessary for our survival? If everyone followed these steps, would the world grind to a halt, burst into flames, go up in smoke, go down the drain? There's only one way to find out! Follow your heart. Don't waste your time thinking about whether you have some moral obligation to watch an advertisement in order to keep the world functioning properly. If you don't want to see ads, then stop seeing ads. Let the rest of the world figure out for themselves how they're going to keep their heart pumping. Their income is not your responsibility.
+Are ads truly necessary for our survival? If everyone followed these steps, would the world grind to a halt, burst into flames, go up in smoke, go down the drain? There's only one way to find out! Follow your heart. Don't waste your time thinking about whether you have some moral obligation to watch an advertisement in order to keep the world functioning properly. If you don't want to see ads, then stop seeing ads. Let the rest of the world figure out for themselves how they're going to keep their blood pumping. Their income is not your responsibility.
 
 Here's a message from Jackie Chan, [speaking to filmmakers](https://www.youtube.com/watch?v=Z1PCtIaM_GQ&t=8m16s "Every Frame a Painting - Jackie Chan - How to Do Action Comedy"):
 
