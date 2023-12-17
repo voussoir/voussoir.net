@@ -3,6 +3,7 @@ import io
 import jinja2
 import PIL.Image
 import sys
+import textwrap
 import urllib.parse
 
 import etiquette
@@ -68,6 +69,7 @@ class Photo:
         self.tiny_url = f'{S3_WEBROOT}/{self.tiny_key}'
         self.anchor_url = f'{DOMAIN_WEBROOT}/{parent_key}#{self.article_id}'
         self.published = imagetools.get_exif_datetime(self.etq_photo.real_path)
+        self.exposure_time = imagetools.exifread(self.etq_photo.real_path)['EXIF ExposureTime'].values[0].decimal()
 
     def prepare(self):
         if not self.s3_exists:
@@ -129,6 +131,7 @@ class Album:
         # self.link = webpath(path)
         self.web_url = f'{PHOTOGRAPHY_WEBROOT}/{self.article_id}'
         self.published = self.photos[0].published
+        self.exposure_time = sum(p.exposure_time for p in self.photos)
 
     def prepare(self):
         for photo in self.photos:
@@ -141,15 +144,15 @@ class Album:
         <article id="{{article_id}}" class="album">
         <h1><a href="{{web_url}}">{{article_id}}</a></h1>
         <div class="albumphotos">
-        {% for photo in headliners %}
-        {{photo.render_web()}}
-        {% endfor %}
+            {% for photo in headliners %}
+            {{photo.render_web()}}
+            {% endfor %}
 
-        <div class="album_tinies">
-        {% for photo in photos %}
-        <a class="tiny_thumbnail {{photo.color_class}}" href="{{photo.anchor_url}}"><img src="{{photo.tiny_url}}" loading="lazy"/></a>
-        {% endfor %}
-        </div>
+            <div class="album_tinies">
+            {% for photo in photos %}
+            <a class="tiny_thumbnail {{photo.color_class}}" href="{{photo.anchor_url}}"><img src="{{photo.tiny_url}}" loading="lazy"/></a>
+            {% endfor %}
+            </div>
         </div>
         </article>
         ''').render(
@@ -258,6 +261,12 @@ def make_webpage(items, is_root, doctitle):
         display: grid;
         grid-auto-flow: row;
         grid-row-gap: 12vh;
+    }
+    footer
+    {
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 8px;
     }
     body.noscrollbar::-webkit-scrollbar
     {
@@ -449,13 +458,12 @@ def make_webpage(items, is_root, doctitle):
     {{item.render_web(index=loop.index, totalcount=none if is_root else (items|length))}}
     {% endfor %}
 
-
     <footer>
         <p>Ethan Dalool</p>
         <p>Contact me: photography@voussoir.net</p>
+        <p>These photos took {{items|sum(attribute='exposure_time')|round(4)}} seconds to make.</p>
+        <p><button id="new_perspective_button" onclick="return new_perspective_button_onclick(event);">👁️ Try a different perspective</button></p>
     </footer>
-
-    <p><button id="new_perspective_button" onclick="return new_perspective_button_onclick(event);">👁️ Try a different perspective</button></p>
 
     <form id="a_new_perspective" class="hidden">
         <div><label>Background color: <input type="color" value="#1b1c18" oninput="return backgroundcolor_onchange(event);"/></label></div>
@@ -717,6 +725,7 @@ def make_webpage(items, is_root, doctitle):
         back_link=back_link,
         items=items,
     )
+    html = textwrap.dedent(html)
     return html
 
 def write_atom(items):
@@ -734,6 +743,7 @@ def write_atom(items):
         {% endfor %}
     </feed>
     '''.strip()).render(items=items)
+    atom = textwrap.dedent(atom)
     write(ATOM_FILE, atom)
 
 # write_directory_index(PHOTOGRAPHY_ROOTDIR)

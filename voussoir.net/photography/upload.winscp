@@ -1,0 +1,4 @@
+open voussoir@ovh
+put *.html voussoir.net/voussoir.net/photography/
+put *.atom voussoir.net/voussoir.net/photography/
+exit
