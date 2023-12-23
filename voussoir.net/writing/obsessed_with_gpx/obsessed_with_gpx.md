@@ -1,6 +1,8 @@
 Slightly obsessed with GPX
 ==========================
 
+## Trackbook
+
 In December 2020, I downloaded an app called [Trackbook](https://codeberg.org/y20k/trackbook) by author y20k. This records your GPS position while you walk, hike, drive, or bike, so you can see where you went. [GPX](https://www.topografix.com/GPX/1/1/) is a standardized XML format for storing these tracks.
 
 ![](gpx_1.png)
@@ -25,6 +27,8 @@ Initially, I was concerned that if I recorded too many tracks, the boring commut
 
 However, the data structure and user interface of Trackbook are not geared toward 24/7 recording. It is designed for recording outings with a distinct start and end, and this presented me with some [friction](/writing/friction) in using it the way I imagined.
 
+## trkpt
+
 <p style="text-align:center;"><a style="display:inline-block;" href="https://git.voussoir.net/voussoir/trkpt"><img src="trkpt_squircle_128x128.png"/></a></p>
 
 I sat on the problem for a very long time, and then I finally decided to make a fork of Trackbook called [trkpt](https://git.voussoir.net/voussoir/trkpt) that takes the data model in a direction more suited to my goal. This is my first time forking someone else's project and republishing it with a new name. It makes me feel somewhat guilty, or rude, but it's ok by the license and I'm enjoying the freedom to make this work just how I want it.
@@ -48,3 +52,67 @@ When I am at work, my device struggles to acquire any GPS fixes at all, so trkpt
 Anyway, the code is the easy part. Now I have to do the hard part which is actually going out to interesting places more often and turning the world pink.
 
 Thank you y20k for making Trackbook!
+
+## Hardware upgrade
+
+I have been using trkpt to record every single day for the nine months since this article was first published -- a total of 265 tracks! On the whole I feel it has been very successful.
+
+I have been using a [Unihertz Jelly 2](https://www.unihertz.com/products/jelly-2) exclusively for trkpt. I had bought it for another reason in 2021 and repurposed it as a unitasker for this role.
+
+But, having experienced both the advantages and disadvantages of using a cell phone as a 24/7 logger for nine months, I decided it was time to buy some made-for-purpose hardware. After quite a bit of research and quite a lot of hemming and hawing, I finally bought the [Columbus P-10](https://cbgps.com/p10/index_en.htm).
+
+![](columbus_p10_1.jpg)
+
+It took me almost two months of indecision before I finally caved. The singular cause of this indecision was the fact that the Columbus uses Micro-USB instead of USB-C. In my opinion this is unforgiveable in 2023 at the price of $240, but I can still use it without forgiving it. A separate-beds kind of relationship. Now I need to keep an additional cable on my desk and in my car -- a cable I thought I was done with. There are simply no other competing products on the market in this form factor doing USB-C, the closest being the [Bad Elf Flex Mini](https://bad-elf.com/pages/bad-elf-flex-mini) which is a big chunky device for surveyors.
+
+![](columbus_p10_2.jpg "disgraceful")
+
+Here are the main problems I encountered with the phone that pushed me to upgrade:
+
+**Fighting the device**: Android has heavy eyelids. All it wants to do is doze. Doze most often leads to missed points during car trips that are longer than about 45 minutes. The phone's accelerometers keep the device out of doze while you are walking, but there are not enough g-forces for this in a car except in particular life-threatening circumstances. Battery-saving exemptions, foreground notification services, and wakelocks are not enough to convince Android that you *really do* want to keep trkpt running the whole time. I think what's possibly happening is the app itself is staying awake, but the location subsystem is going to sleep and so trkpt receives no data.
+
+Maybe if I rooted the device I could fully disable doze, but I'm afraid of bricking it and I don't want to go down that road. If the phone is plugged into a charger it will stay out of doze forever, but this option is not available when I am a passenger in someone else's car. I can also hold the device out with its screen on the whole time to prevent doze, but then I have to explain my weird interests to other people so I don't like doing that. It suffices to say that this anxiety / micromanaging around doze is not in line with my goal.
+
+Besides doze, I also encountered an occasional operating system crash with the phone. Maybe three or four times this year, I took the phone out of my pocket to find that it had reboot itself. That's still pretty impressive, all things considered, but the Jelly does a few other things that make me doubt its software stability. It's a cool device, but when a company as small as Unihertz makes as many different models as they do, you just know they're cutting corners, and software is definitely one of them.
+
+Cell phones don't really want to be unitaskers, and while it is possible to whip them into shape, I get tired of doing so much whipping. I'd rather have something that's not a fight.
+
+**User error**: From time to time, I have stopped the trkpt recording, either to do some database edits or to reboot the phone or whatever, and forgotten to start recording again. My biggest blunder was when I edited my trkpt database file on the computer without waiting for Syncthing to fully synchronize with the phone, which caused a Syncthing conflict. For five days, the phone continued recording to whatever file handle it still had open, but none of the data actually got saved, and I didn't notice until I wanted to do an export of the week. To help prevent this from happening again, I went ahead and [changed](https://git.voussoir.net/voussoir/trkpt/commit/33405cd063d8f8619e2b652ec546fed34dddb71d) the trkpt code to re-open the database handle when resuming a track.
+
+**Track accuracy**: One of the reasons I used the Jelly for trkpt instead of my primary LG phone is that the Jelly's positional accuracy is simply better, and I was always pretty satisfied with it. However, there was still room for improvement:
+
+![](columbus_jelly_bridge.png)
+
+The Columbus solves these problems because it is single-minded and never stops recording, and the flashing lights confirm it is working at a glance so I am unlikely to leave it off by accident.
+
+For what it's worth, I can confirm that battery life was never a problem with the phone thanks to the accelerometer-based sleep/wake system and homepoints.
+
+The manufacturer's claim of lane-level accuracy is well earned. Assuming that Bing's aerial imagery is aligned more accurately than my equipment, I can see that although my tracks don't always run straight down the middle of a car lane, they are within the lane, and lane changes are unambiguous.
+
+![](columbus_lane_change.png)
+
+Undeniably, the phone has some advantages which I am sacrificing here:
+
+**Syncthing**: On the phone, I have set Syncthing to run whenever it is plugged into power. So as soon as I get home and take my stuff out of my pockets, my trkpt database is synced to my computer. With the Columbus, I have to plug it into my computer and copy the data over (more on this below). I know this sounds the same, but to be more clear, I like to charge my phone using a desktop power adapter instead of plugging things into my computer, to keep my computer free of dangling wires and snag risks. And did I mention I have to use a Micro-USB cable?
+
+**Immediate review**: Because the Columbus does not have a screen, I can not look at my track until I get home. Besides the entertainment value of watching the line draw in real time, the immediate review was sometimes helpful if I wanted to ask "where did I start?" or "which path did I just take?". Of course I can still run trkpt on my normal phone if I really think I'll need to do that.
+
+**Customizability**: The great thing about open source code is you can just change it whenever you want. All that stuff about homepoints and sleep behavior can be customized for trkpt, but the Columbus is not open source and you have to make do with the options in the config file. Fortunately it is comprehensive enough, offering a minimum movement speed to reduce stationary point spam, and accelerometer-based move-to-wake.
+
+I've had the Columbus for two weeks now and so far I think the upgrade has been worth it.
+
+## NMEA ingest
+
+Earlier, I said that it's "better to collect as many trackpoints as possible and then make sense of it in post", and now I'm being held accountable for my words. The Columbus gives you the option of recording straight to GPX files, or to [NMEA sentences](https://en.wikipedia.org/wiki/NMEA_0183#NMEA_sentence_format). The NMEA format is as close to raw as the end user can get, and even disables some of the in-device filtering options. Naturally I picked that.
+
+The Columbus does not have anything like my "homepoint" feature, which is understandable, so every day I come home with huge clouds of point spam at my workplace (partly because it is better at capturing points indoors!), which I delete before exporting to GPX. I do not want to be in the habit of turning the device off when I arrive, because I'm certain I'll forget to turn it back on again from time to time. *Collect everything and make sense of it in post*.
+
+So, I'm on the hook for doing whatever kind of filtering or pruning I want to do as part of my intake process for the NMEA data.
+
+I started by writing a [Python program](columbus_ingest.py) that detects the mounted storage device, finds new NMEA files, and inserts the points into a trkpt-format SQLite database. This means the ingest is basically a one-click operation. It could maybe become zero-click if I detect the USB device with a scheduled task.
+
+I used [pynmea2](https://github.com/Knio/pynmea2) to parse the data, and had to combine the [GGA](https://aprs.gids.nl/nmea/#gga) sentences which contain number of satellites, altitude, and HDOP but no date (why?!); and the [RMC](https://aprs.gids.nl/nmea/#rmc) sentences which contain the date.
+
+During this import, I do some filtering to remove points I don't want, but I always keep a copy of the source NMEA file so I can go back if I ever change my mind. I could add a few more checks against homepoints, but I haven't yet. You see, one of the weaknesses of the homepoints is you have to give them a large enough radius to swallow up the stray, low-accuracy points that the device generates while you are indoors, but this radius winds up being so large that you lose the legitimate, high-accuracy points of your approach to the building and your movement in outdoor spaces near the building. I want to enjoy those for a while before I start filtering them out.
+
+Then, Syncthing syncs that database over to my normal phone, and that's where I use the trkpt app to delete any more points I don't want and export to GPX. I know that sounds kind of stupid, and I would like to make a PC program for doing this instead, but that kind of GUI with pannable/zoomable points is not something I know how to make at the moment. Someone made a [tkintermapview](https://github.com/TomSchimansky/TkinterMapView) widget, but the framerate is not very good and I don't think Python is the right tool for this job, unfortunately.
