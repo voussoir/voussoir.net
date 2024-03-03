@@ -3,6 +3,186 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> Agreed, but that's a two part issue.
+
+> \#1 - The modern web has a much lower ratio of citizenCreators : consumers than the early web.
+
+> \#2 - The utility of information is professionalUnbiased \> proHobbyist \> professionalBiased \> randomPerson \>\> SEO spam.
+
+> Google's current ranking is SEO spam \>\> professionalBiased \> professionalUnbiased \>\> proHobbyist \> randomPerson.
+
+> That's a clear misalignment.
+
+-
+
+> Sadly, due to being on the first floor\* I don't have a lawn.
+
+> I do keep considering balcony mounts for what would've been the lawn defence cannon though.
+
+> \* en_UK first floor, mind, I know en_US insists on 1-based indexing rather than 0-based for floors but I don't particularly like writing FORTRAN either.
+
+-
+
+> s/at the speed of light/no faster than the speed of light/
+
+-
+
+> Also, what is with this misconception: "When twins aren’t being regarded as carbon copies, they are slotted (or slot themselves) into opposing roles." Dude, any vector can be projected onto another one, with an orthogonal ("opposing") component left over.
+
+-
+
+> Layoffs in the WFH era are weird. Back in the day you had a pretty good idea of who got laid off because you saw them walking out the door with a box of their stuff. You could go up to them and say, "hey let's meet at $local_watering_hole and hang out". You could swap contact info if you didn't already have it.
+
+-
+
+> On far older hardware, we still used spinning rust for $deity sake...
+
+-
+
+> Once you understand the embryology, there are actually a variety of things like the appendix: they're just the ends of things that come together. The uvula is a great example: embryologically, the two sides of the face separate very early as an opening, then develop a lot of complicated anatomy and fuse back together. The uvula is where that fusion completes and the fusion process completes (returns 0) when the microenvironment variables get to a certain state.
+
+-
+
+> The ability to shutdown any persons the government doesn't like using any growing list of $Excuses is worrying.
+
+-
+
+> I have a couple of examples (of HN and high-ranking HNers natch ;) and found a fair number of bugs\^H\^H\^H\^H non-optimal choices in their feeds, probably because XML is not all that human-readable, even for devs.
+
+-
+
+> I will admit, I've often searched for $project_name github to get to their repositories. It shouldn't matter but it's just a force of habit now.
+
+-
+
+> Xiaomi is China's Apple, so what happened to the rumored Apple car? Haven't heard anything for a while, but Wikipedia claims it's still planned for 2024-25:
+
+> > Yeah, under the hood that date is {{Date().getFullYear() + 1}}
+
+> -
+
+> > Calling it: Apple will partner with an established automaker such as Goldman Sachs\^H\^H\^H\^H\^H\^H\^H\^H\^H\^H\^H\^H\^HPolestar and customize the infotainment OS.
+
+-
+
+> Inc actually does this sort of madlibs article all the time
+
+> "In $NUMBER (words/sentences), $FOO taught a masterclass in $BAR"
+
+-
+
+> You're positing that some significant portion of the victims decide to settle like this:
+
+> if (shame)
+
+> But it's almost certainly this:
+
+> if (bankruptcy_risk || shame)
+
+-
+
+> I actually don't benefit at all from you using my code; I did all the work to make the world a place where $PROBLEM has an accessible solution.
+
+-
+
+> At $DAY_JOB we recently scuttled most development efforts for a week for our teams. Our nightly backup job that sanitizes PHI ballooned overtime to, say, 20GB+1Byte and ran out of disk space. Because we are running Kubernetes on Fargate we don’t need a full time operations guy, right?
+
+-
+
+> I'm ashamed to admit I often wonder about this when playingˆHˆHˆHˆHˆHˆHˆH my daughter plays with myˆHˆH her Duplo train.
+
+-
+
+> I have no dog in this fight as I rarely deal with cash and do not run a retail business. However from a conceptual point of view I really have a viscerally negative reaction to not accepting cash. It is a societal acceptance of the rent seeking behavior of the credit processing networks. I already have to pay a sales tax to ${TAX_ENTITIES.length} different government entities, I don't love that I also have a 3% tax going to VISA/Mastercard/Amex/...
+
+-
+
+> Anyone who uses ChatGPT for a while will learn to take everything with a grain of salt.
+
+> > s/Grain/huge rock/
+
+-
+
+> Addendum: don’t rely on your git/wiki/document-system for tracking the timestamp. "This was accurate on $DATE" has a very different meaning than "this document was last edited on $DATE". It might be 2 years out of date but someone fixed a typo last week.
+
+-
+
+> or s/bottled water/water bottles
+
+-
+
+> Also, adding a charger for your swappable-battery car costs pennies, so lots of people won't even use their car's battery a swapping feature (which is really bad for battery swapping outlets). If most people only use the battery-swap at Christmas and $HOLIDAY, then the networks could be underprovisioned during those spikes and overprovisioned in the other 363 days of the year.
+
+-
+
+> Horrible edge cases to consider when dealing with music
+
+> > title += " publishing metadata"
+
+-
+
+> That video is wrong. Men who are actually friends don't tell each other "that's a nice tie", they tell each other "nice tie $SLUR".
+
+-
+
+> struggles with too many files. Last I looked, official Microsoft documentation says to not exceed 100k files. Yet, $WORK wants to dump basically every file I touch inside there. My Teams folder alone is \~20k files.
+
+-
+
+> Tuta became understandably a walled garden that my other tools couldn't easily work with. This wasted alot of my time.
+
+> Nowadays using $normalemailprovider with Thunderbird.
+
+-
+
+> But having a favourite release of Mac OSX means it's Snow Leopard. I've seen comparisons between $current and $current_minus_one, but never in regards to "That was my favourite" - likely because anyone invested enough in Mac OS releases to have a favourite, favours Snow Leopard.
+
+-
+
+> Sure. But the $CURRENT_MODEL's price never decreases. It stays steady - until the next price bump. E.g. $MID_RANGE_GPU, $HIGH_END_CPU - their price will decrease next year, when the new model comes out. The new model's price will not be lower than the current one.
+
+-
+
+> I now guess somebody wrote it up, published it and maybe linked to it on Twitter, some content-farming bots notice $ACTRESS_NAME trending on Twitter, and their algorithm realize there's audience eyeballs to be gained there, and found the freshest article about her, on Twitter I suppose?
+
+-
+
+> s/China's TikTok users/Users of China's TikTok/
+
+-
+
+> Also starting to realise that my "they can't stop me gaming when I'm 80!" attitude will be self-limited by joint pain at some point... probably in exactly the same way as previous generations, just s/gaming/popular activity of the era/
+
+-
+
+> Calm down satan. Until you manage to manufacture physical products for free (one time cost then get inf copies, as digital content) retail theft !== digital pirating
+
+-
+
+> From someone that occasionally visits YouTube, hearing people talk about YouTube this and YouTube that numerous times in one conversation let alone in a day is very noticeable. Same thing goes for Reddit. Or TikTok. Or any $socialMediaPlatform.
+
+-
+
+> It's been a while now since I used a self-checkout, but my general philosophy is "Sorry, $Employer pays me to fight with buggy, UI-from-hell computers at $Job. If you want me to fight with your self-checkout system, my rate is \$$Lots/hour".
+
+-
+
+> s/Spending/Stocking Up/
+
+-
+
+> I'd pinged HN mods about this, though dang ended up dong a wholesale replacement rather than s/She/Sabine Hossenfelder/.
+
+-
+
+> It really does sound weird. I already imagine trying to sell this at my $DAYJOB (I would likely have to "fork" it myself just to replace a few strings in the codebase that mention the original name).
+
+-
+
+> Ask HN: What programming languages are you using at $WORK?
+
+-
+
 > If you search "watch $MOVIE free" on google you're going to get netflix, Hulu, prime, Disney etc as the first results regardless of whether those sites even have it in their library.
 
 -
