@@ -292,6 +292,7 @@ article
 {
     width: 8.5in;
     height: 11in;
+    padding: 0.5in;
 }
 ```
 ![](margins_padding.png)
