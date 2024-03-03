@@ -293,6 +293,7 @@ https://github.com/richleland/pygments-css
 .highlight .vm { color: var(--color_monokai_white) } /* Name.Variable.Magic */
 .highlight .il { color: var(--color_monokai_purple) } /* Literal.Number.Integer.Long */
 
+.highlight.css .nc { color: var(--color_monokai_green) }
 .highlight.html .na { color: var(--color_monokai_green) } /* Name.Attribute */
 .highlight.html .nc { color: var(--color_monokai_green) } /* Name.Attribute */
 .highlight.html .o { color: var(--color_monokai_white) } /* Operator */
