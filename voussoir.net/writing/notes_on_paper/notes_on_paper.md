@@ -55,6 +55,8 @@ As a result of writing this article, I have decided to try going back to graph p
 - Lightness of gridlines must be tuned per-printer by experimentation.
 - The paper may become slightly curled or wavy due to the heat and rollers -- the paper will need time and/or weight to flatten back out.
 
+Treat yourself to heavier paper stock. The cheapest printer paper is usually [20lb or 75gsm](https://en.wikipedia.org/wiki/Grammage). Try something heavier like 28lb/105gsm or 32lb/120gsm. Heavier paper costs more, but it feels more pleasant to write on. If you enjoy it more, you'll do it more.
+
 Consider re-writing your notes after your class/meeting, so that you can:
 
 - Reorganize the information in a new order that you could not have foreseen when taking it down.
@@ -71,7 +73,7 @@ I have never used a digital tablet for notetaking, and I will not make the appea
 - Infinite paper and ink.
 - Undo button, layers, drag to rearrange.
 
-Advantages of paper:
+But paper has its own advantages:
 
 - Cheap.
 - Easier to lay out multiple sheets and review / cross-reference pages in any order -- not limited to real estate of one screen and scrolling / tab-switching.
