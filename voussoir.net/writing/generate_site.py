@@ -236,6 +236,8 @@ class Article:
         </ul>
 
         <address>Contact me: writing@voussoir.net</address>
+
+        <p>If you would like to subscribe for more, add this to your RSS reader: <a rel="alternate" type="application/atom+xml" href="/writing/writing.atom">https://voussoir.net/writing/writing.atom</a></p>
         ''').render(
             github_history=github_history,
             commits=commits,
@@ -451,11 +453,6 @@ def write_writing_index():
     {% endfor %}
     </ol>
 
-    <p>
-    <a rel="alternate" type="application/atom+xml" href="/writing/writing.atom">Atom</a> /
-    <a rel="alternate" type="application/rss+xml" href="/writing/writing.rss">RSS</a>
-    </p>
-
     <h2>Recently edited</h2>
     <ol class="article_list">
     {% for article in articles_edited %}
@@ -471,6 +468,9 @@ def write_writing_index():
     <p>I greatly appreciate the time you have taken to visit my page. If you
     have feedback, corrections, or tales of harrowing adventure, send an email
     to writing@voussoir.net.
+
+    <p>If you would like to subscribe for more, add this to your RSS reader: <a rel="alternate" type="application/atom+xml" href="/writing/writing.atom">https://voussoir.net/writing/writing.atom</a></p>
+
     </article>
     </body>
     </html>
