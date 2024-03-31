@@ -203,6 +203,2721 @@ pre
  -->
 
     <article>
+        <p><b>From</b>: Diristhi Singh &lt;sdiristhi@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;dirishti14mar+bncBCVLLH6YZ4CBBSMMU2YAMGQENZKARZQ@w4sol.co.in&gt;
+        <p><b>To</b>: undisclosed-recipients:;
+        <p><b>Bcc</b>: dirishti14mar@w4sol.co.in
+        <p><b>Subject</b>: Website and E-commerce Development....!
+        <p><b>Date</b>: Sun, 31 Mar 2024 21:20:19 +0530
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=0.69 required=5 tests=ARC_SIGNED,ARC_VALID,DKIM_ADSP_CUSTOM_MED,DKIM_SIGNED,DKIM_VALID,FREEMAIL_FROM,HTML_MESSAGE,MAILING_LIST_MULTI,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,PURELYMAIL_IP_REPUTATION,PM_DMARC autolearn=unavailable autolearn_force=no version=4.0.0
+X-Pm-Spam-PM-DMARC: 5;Gmail p=none policy exception
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -2.21;EffectiveIp=209.85.167.71,SpamProbability=0.05
+Return-Path: &lt;dirishti14mar+bncBCVLLH6YZ4CBBSMMU2YAMGQENZKARZQ@w4sol.co.in&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: ccontact@voussoir.net
+X-Pm-Original-To: ccontact@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of w4sol.co.in designates 209.85.167.71 as permitted sender) smtp.mailfrom=w4sol.co.in; dkim=pass header.i=w4sol-co-in.20230601.gappssmtp.com; dmarc=fail (p=none) header.from=sdiristhi@gmail.com
+Received: from mail-lf1-f71.google.com (EHLO mail-lf1-f71.google.com) ([209.85.167.71])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 1104591901
+          for &lt;ccontact@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Sun, 31 Mar 2024 15:51:02 +0000 (UTC)
+Received: by mail-lf1-f71.google.com with SMTP id 2adb3069b0e04-513e0c5f399sf2734266e87.3
+        for &lt;ccontact@voussoir.net&gt;; Sun, 31 Mar 2024 08:51:02 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1711900261; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=niuBGiBCbBk2gXKs8Died8699tZzpFFSo67hQWtFRZzdVqmm6Siqf1NUMN9CJ/9dnK
+         4IPGx+7AQ9la+4gS+E5aZdfjMjWmJhT9G8AJcJaNlKtOp9mvLq58LHJhZba/mDLRxOl9
+         FPrxGhlo6PdjOeo0kQV+wztM4kLxC2ZRm14bS4R+GuOUk4AyXXb0xiHwj3IZV1piWhjX
+         MZKX9Bn+oeeQUTwesoU7UwrGKtrdBae+lFokUefd57KZGxMSy4oH2QbLTcdQ91aiPFOg
+         6snFBRZBu2/LG+r8mqme2Evlw1fSmHYkE5t8HFFSWYUEoYnFcNKlbQDJd4RyxJDLVEw9
+         0WJA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=GmQIj4hsgDOmOvl2PfkANLNMKwhQUGXAIqCXGIKBbLY=;
+        fh=7QC6UoAWIT9+RHb1tPgJb5LUbEuSKePKfqy7PWvWvtQ=;
+        b=vGZa7tm6+uUGX/rmbYh3vPynsZqAa2BLXvsvT/erzYb6vnIAQb+pQ13cVa3UZHUqXz
+         G3m4IOXGBD38AQieAUbKeiInMmpi/0K8yFAM+spU0BrDulmeK3l0kIg85I0Zemoa1u7R
+         AR5dxDXW7u1a4R/QejYBIzB5IP9lSkteqD0ipw53MvrjZy0AzO66AqCrRcjJWweJkWxq
+         tvxr6/jU8LXtWtckfsen1kCWEHj9rzItpL1Y55VCq8fKKDpKnMGe9p+qLlov5ZElhvIX
+         AGZYSef3+gA75epdHcebefvV9hiZ9ROboqkvT6gg2nm4J4wCSl+pzhZndmBbgprXsgaM
+         lEtA==;
+        darn=voussoir.net
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=QMWsKE74;
+       spf=pass (google.com: domain of sdiristhi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sdiristhi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=w4sol-co-in.20230601.gappssmtp.com; s=20230601; t=1711900261; x=1712505061; darn=voussoir.net;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:x-original-authentication-results
+         :x-original-sender:to:subject:message-id:date:from:mime-version:from
+         :to:cc:subject:date:message-id:reply-to;
+        bh=GmQIj4hsgDOmOvl2PfkANLNMKwhQUGXAIqCXGIKBbLY=;
+        b=PjyM/tzzFGc0y1401q9BK0ewCwma8WY+idNIVhSQzxAQwbDiedcW23YcQx5iQo0Zxg
+         +Tvrfvwf8CX+kIFat6NJofyE4HUMfjd08LTQs4E/JKpmUUifbHyG1ZoOIXbmIsXjzhIy
+         GCXdSTOYm42Ort9BzTtMRBdKX3jxIScyDHEXdvUbxDSsyUmtBfG7BiCj2a/ETJQ9Zoir
+         aNuP0LEcr8pPvJ9KLE/NGnmJZ/DqdqexldEvdAKHXQ0twapCnymmtLJ/l2ihNS/g5hHB
+         0r18tDA+tkSmiLHyTq3R4kXgoirOBKI4f1fLLJe1VP3jk/E7PHECIVM3ok8yOu891Q7B
+         mJUg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1711900261; x=1712505061;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :x-spam-checked-in-group:list-id:mailing-list:precedence
+         :x-original-authentication-results:x-original-sender:to:subject
+         :message-id:date:from:mime-version:x-beenthere:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=GmQIj4hsgDOmOvl2PfkANLNMKwhQUGXAIqCXGIKBbLY=;
+        b=P4Mgwuaj2NQ6nS8lJRRTLaF5yanzqMLszJUi0pUwVC/Y5CQ2Qvrdt+11S9y+CsAtun
+         Ej+27nSSRFuQyfqQNSdQEXZx9T977crJTdd/trx67BYopdR+ffbD2TikfYWLD0abZ60x
+         DceV07VPZ1kiz07bpahkkzucJxZ4dPQXxRYWl5/asp6Q4oRs5zxtiG+DzUgZsOQfIzgp
+         A2jQTkQtwLIw/E/sV0vA/vDej3dJuSlX0TFrMUvftgXbAoSPiYPkNS5hmogDJO/3ORWg
+         zPahc9h7lfLcchEIqEMjhgrvP0PmZykHxOIXxRb8Y8pyAI0kHzrPxQQrkEnjxlfPF59Y
+         JQkw==
+X-Forwarded-Encrypted: i=2; AJvYcCX0ljZ1Ak8JZREMF56vn0IT1rJj40sNotcJmjm6FRy63XuwhbJXc6yw5lt8lXKtVKndra7OXmeEigXJ3rL4Jw7032WIVaM=
+X-Gm-Message-State: AOJu0YxSLUJBoVonkk8NTc+M7UqNa8vMLnkUhrPvqxaJVQyIFiimh5iU
+    7c2drfkgjBvCrkSASxvb2i1cHjqaGujNTMYi03SwucFjBccjDCNcye0TWjoqAKU=
+X-Google-Smtp-Source: AGHT+IGBgUY3ctvi+HGP2NIWwsChhZ9tREyBohyByjmxQk/9io0LWWr6sWdqBU2dNJ9Ek9M5Jq2kCQ==
+X-Received: by 2002:a05:6512:3c9a:b0:515:9aa9:ecb0 with SMTP id h26-20020a0565123c9a00b005159aa9ecb0mr7062310lfv.65.1711900260790;
+        Sun, 31 Mar 2024 08:51:00 -0700 (PDT)
+X-BeenThere: dirishti14mar@w4sol.co.in
+Received: by 2002:a05:6512:3b84:b0:515:dcb5:f12f with SMTP id
+ g4-20020a0565123b8400b00515dcb5f12fls647987lfv.2.-pod-prod-08-eu; Sun, 31 Mar
+ 2024 08:50:32 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCXORH/rAZI4t37yt0t3RtJsQmgiNqm1dqduVRwB9NtEC4y65BLJ8zG/lpXCjxQf7w7bTCwvAfg3nN0+n3X55PHLb3BdHCV1+1UO
+X-Received: by 2002:ac2:5d70:0:b0:515:c7c9:b150 with SMTP id h16-20020ac25d70000000b00515c7c9b150mr5686528lft.0.1711900232251;
+        Sun, 31 Mar 2024 08:50:32 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1711900232; cv=none;
+        d=google.com; s=arc-20160816;
+        b=EXI+xC0QAHILzJ7LGOBZsuYqtS/8wkctNmmCXwmFyPHDtNHlo03DhUoIiInO14L3XK
+         /RbQVvlElXOwc00fZXWpofnG0hRDbnGUHOxBidSjbjkTQiyQFAH4Kg5lFnyVOUjzbWF0
+         4/6gOYttLmf8N/K1/zKzhUFKrI3Cwt8YHPs9kFFE3ryDIvg4H6N8ePSscNvk4MzNKnai
+         mtt9tSET/cnadMxg2GYVhOatytaM0IjTBvWDaM4GYORLXr5WduTrJ96PxDCtQ++OgakS
+         4943Ay2F337rn0h7778oDqn0fyoDhlhu78dtPzB3GdoXvWQoUM/krJc2jRfRw9CGANj9
+         +wwg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=GmQIj4hsgDOmOvl2PfkANLNMKwhQUGXAIqCXGIKBbLY=;
+        fh=jvSP7MSFyjvNybIuS14W1zkhwqoAn/XHdRUPThuRN7A=;
+        b=wmWnrnpLFmHpdk+Qmbf4QKXtJmn4QFRG1fXy5pZKoSMcCoJN93RECJ7WDnKAtMZ6Cf
+         GJfWUCnKUFDnBd+sJBoJONi+Q8lRWHYyeZlmKx5UstL96DNct/5Ac1u/N5kC2LUUf6Ke
+         UAuO9Wz/WmBezgWnv6WqmxtTmsT1ScxTYSqo1LNVOxlzTPUxpa4qqWY1ZJPwhcpp3MAk
+         JafkE8pTYesVktOk1Dwx0az0I2MQSd8ne7NnyzMfzPmbA/7qwRDghIQvHY3F4EhOp7ws
+         HcYbrmtU69SXK+GBh5+pLrQGMFZTdrYsGojiEhXLOSbreXJfkTnP7sGw2u9uKSX1yAMT
+         SATw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=QMWsKE74;
+       spf=pass (google.com: domain of sdiristhi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sdiristhi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id k7-20020a1709061c0700b00a4e163715b4sor1863173ejg.19.2024.03.31.08.50.32
+        for &lt;dirishti14mar@w4sol.co.in&gt;
+        (Google Transport Security);
+        Sun, 31 Mar 2024 08:50:32 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sdiristhi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+X-Forwarded-Encrypted: i=1; AJvYcCVEDliCMcHEkMlrM/MfKHOH6+OlYTbA9TsbRM48AK8JUJc9qoI4dm0kgwvgIAFuuceHbYzfPmG9UCv3gJd/pul1UR4vEHSvsAKs
+X-Received: by 2002:a17:906:b211:b0:a4e:61c8:a744 with SMTP id
+ p17-20020a170906b21100b00a4e61c8a744mr1463892ejz.47.1711900231543; Sun, 31
+ Mar 2024 08:50:31 -0700 (PDT)
+MIME-Version: 1.0
+From: Diristhi Singh &lt;sdiristhi@gmail.com&gt;
+Date: Sun, 31 Mar 2024 21:20:19 +0530
+Message-ID: &lt;CAPCNT3PkDCWw7LtBW+Psxx_nE-ihidAeieWqDYByQaggn0hgHg@mail.gmail.com&gt;
+Subject: Website and E-commerce Development....!
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary=&quot;0000000000003132fa0614f6d5b1&quot;
+Bcc: dirishti14mar@w4sol.co.in
+X-Original-Sender: sdiristhi@gmail.com
+X-Original-Authentication-Results: mx.google.com;       dkim=pass
+ header.i=@gmail.com header.s=20230601 header.b=QMWsKE74;       spf=pass
+ (google.com: domain of sdiristhi@gmail.com designates 209.85.220.41 as
+ permitted sender) smtp.mailfrom=sdiristhi@gmail.com;       dmarc=pass (p=NONE
+ sp=QUARANTINE dis=NONE) header.from=gmail.com
+Precedence: list
+Mailing-list: list dirishti14mar@w4sol.co.in; contact dirishti14mar+owners@w4sol.co.in
+List-ID: &lt;dirishti14mar.w4sol.co.in&gt;
+X-Spam-Checked-In-Group: dirishti14mar@w4sol.co.in
+X-Google-Group-Id: 621968901109
+List-Post: &lt;https://groups.google.com/a/w4sol.co.in/group/dirishti14mar/post&gt;, &lt;mailto:dirishti14mar@w4sol.co.in&gt;
+List-Help: &lt;https://support.google.com/a/w4sol.co.in/bin/topic.py?topic=25838&gt;,
+ &lt;mailto:dirishti14mar+help@w4sol.co.in&gt;
+List-Archive: &lt;https://groups.google.com/a/w4sol.co.in/group/dirishti14mar/&gt;
+List-Subscribe: &lt;https://groups.google.com/a/w4sol.co.in/group/dirishti14mar/subscribe&gt;,
+ &lt;mailto:dirishti14mar+subscribe@w4sol.co.in&gt;
+List-Unsubscribe: &lt;mailto:googlegroups-manage+621968901109+unsubscribe@googlegroups.com&gt;,
+ &lt;https://groups.google.com/a/w4sol.co.in/group/dirishti14mar/subscribe&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi</p>
+        <p>We are offering services like</p>
+        <p>- Website and E-commerce Development</p>
+        <p>- Mobile Apps</p>
+        <p>- Resources outsourcing (react js, node js, laravel)</p>
+        <p>If there are any such requirements at your end or in your circle.</p>
+        <p>Let&#x27;s connect on a Quick call.</p>
+        <p>Thanks &amp; Regards</p>
+        <p>Diristhi</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;CitiGroup N.Y&quot; &lt;janefraser.personal@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;janefraser.personal@gmail.com&gt;
+        <p><b>To</b>: undisclosed-recipients:;
+        <p><b>Bcc</b>: writing@voussoir.net
+        <p><b>Subject</b>: Re : Hello
+        <p><b>Date</b>: Sun, 31 Mar 2024 07:33:36 -0700
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-0.78 required=5 tests=ADVANCE_FEE_2_NEW_MONEY,DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,HTML_MESSAGE,LOTS_OF_MONEY,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,UNDISC_MONEY,URIBL_DBL_BLOCKED_OPENDNS,XFER_LOTSA_MONEY,PURELYMAIL_IP_REPUTATION autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -2.68;EffectiveIp=209.85.208.43,SpamProbability=0.02
+Return-Path: &lt;janefraser.personal@gmail.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of _spf.google.com designates 209.85.208.43 as permitted sender) smtp.mailfrom=gmail.com; dkim=pass header.i=gmail.com; dmarc=pass (p=none) header.from=janefraser.personal@gmail.com
+Received: from mail-ed1-f43.google.com (EHLO mail-ed1-f43.google.com) ([209.85.208.43])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -733831916
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Sun, 31 Mar 2024 14:33:42 +0000 (UTC)
+Received: by mail-ed1-f43.google.com with SMTP id 4fb4d7f45d1cf-56c147205b9so5880031a12.0
+        for &lt;writing@voussoir.net&gt;; Sun, 31 Mar 2024 07:33:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1711895621; x=1712500421; darn=voussoir.net;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=TatNXi54JaDIsora7VjwdiI328Rkgwlw3OlupKryfcs=;
+        b=KeoXiroEF6Rfo74zQj06aJwYPknMv2RzyjvRwre3O09eAk2IQC3vL1eDoL42VmKE4U
+         1fVKFNqUkeACeTR36OvJV8c4m8jvywOPjPpt29asL1EESRKxoL0n7+d4NpDNOSoXGspg
+         JhTHi+PGvAgZdhrauYZn1bDdBK0ZXXS5inXUGTXBsgxdkWTt4jmfFZsw+lQQbsXg/N2R
+         YdQZ9kkGu+CEcd5EKtdjOLnqcK9al06tgvVFRIae53PzkAWQOJj+aRNoXxiZv/1f5M+W
+         ORXONXQYDHEpX+nBkfinC2ztDAEsFYmZMZEu6j8wevNXF9sAl6WmJs37DrpSsdUGQo7t
+         a9lg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1711895621; x=1712500421;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=TatNXi54JaDIsora7VjwdiI328Rkgwlw3OlupKryfcs=;
+        b=S+8rXYEXhi2qyI70CUJeWInQzO+OKFmsAr8XUtq6DEUNFVJC8GRsEPehOrUd9KtAhs
+         pdUHRZNHZlvgSZZvqzyXuk8YzHWrpEshDLdKv79wRUtkZwuCc0qoDxPFeFnWHyZwiee+
+         HBbcugQckBvIf1uvA91aFpmyo0LDnPFMeioOiHBTU6ENJ1leEvvNrMjku165kzBj3/HE
+         SVxOBp23Z4MnwwHUahhIKCif0goAUJ02nxiew6f4/jzqDhXxnfCTn/vH8WeIcABKzsNp
+         ge2tWF51P5YlQy7LfIRBotP8CxP4nMeZfJ08o4/DQ8toz8+OQh4XrvgLS6LsMD5DTNTw
+         imRg==
+X-Forwarded-Encrypted: i=1; AJvYcCWLePvbWnTbBysDxQzVhqOTFGrlBdjsCy5PjH0gXTFmiKfxF2yt3AuUY5DukohigTVnIleQjCKLXKehGNtZgVHE4ra1LA==
+X-Gm-Message-State: AOJu0YwFL3cThxScBWA1LNbVlGJ5GcnsDRtEtg/QEEBJV5z8+f/LLJ9m
+    aieBhd0gTuU9KGRKww50u6a9J43c+o0kfdLlxWAfqHrJ4YdaIwkJBgqPMCbCE3+82Qi39P4hsH3
+    T0t0xz4j0dv3uJsasoi0WKdMYVWg=
+X-Google-Smtp-Source: AGHT+IEEdCIrd2FoI9X/gB1GPj91xDkugsFL5FklWgZuukBEr/T0GbnXFmo1AO+vebM0AOe14OhLHgECnGlDqWzcKng=
+X-Received: by 2002:a50:c050:0:b0:568:aad2:f835 with SMTP id
+ u16-20020a50c050000000b00568aad2f835mr4816580edd.20.1711895620894; Sun, 31
+ Mar 2024 07:33:40 -0700 (PDT)
+MIME-Version: 1.0
+From: &quot;CitiGroup N.Y&quot; &lt;janefraser.personal@gmail.com&gt;
+Date: Sun, 31 Mar 2024 07:33:36 -0700
+Message-ID: &lt;CAD2xfNsXX_2XLACKmRHN3T5hy3b1HQRhLtc5qU0RmaUgD3TqBA@mail.gmail.com&gt;
+Subject: Re : Hello
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary=&quot;0000000000006049bb0614f5c2d5&quot;
+Bcc: writing@voussoir.net
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hello</p>
+        <p>We received a letter from your representative, Amanda Bauer, stating that</p>
+        <p>you authorized her to transfer your funds to another bank account in the</p>
+        <p>United Kingdom and that you were recently involved in an auto accident with</p>
+        <p>your family .</p>
+        <p>Could you please confirm immediately, your relationship with Amanda Bauer</p>
+        <p>and also, confirm if you authorized her to claim your funds.so that we can</p>
+        <p>proceed with the transfer of the US$66,600,000.00 to your correct bank</p>
+        <p>account as scheduled.</p>
+        <p>You must send your Reply within the next 48 hours otherwise we will release</p>
+        <p>the funds to her.</p>
+        <p>Regards,</p>
+        <p>Mrs. Jane Fraser</p>
+        <p>CEO of Citigroup</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: MASTERCARD INTERNATIONAL USERS PROMOTION &lt;muserspromotion@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;savadogomahama8@gmail.com&gt;
+        <p><b>To</b>: undisclosed-recipients:;
+        <p><b>Bcc</b>: writing@voussoir.net
+        <p><b>Subject</b>: You have been awarded
+        <p><b>Date</b>: Sat, 30 Mar 2024 14:55:11 +0000
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-0.63 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,HTML_MESSAGE,LOTS_OF_MONEY,MILLION_USD,RCVD_IN_MSPIKE_H3,RCVD_IN_MSPIKE_WL,SPF_HELO_NONE,TXREP,UNDISC_MONEY,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -2.53;EffectiveIp=209.85.216.52,SpamProbability=0.03
+Return-Path: &lt;savadogomahama8@gmail.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of _spf.google.com designates 209.85.216.52 as permitted sender) smtp.mailfrom=gmail.com; dkim=pass header.i=gmail.com; dmarc=pass (p=none) header.from=muserspromotion@gmail.com
+Received: from mail-pj1-f52.google.com (EHLO mail-pj1-f52.google.com) ([209.85.216.52])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -1557501504
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Sat, 30 Mar 2024 14:55:27 +0000 (UTC)
+Received: by mail-pj1-f52.google.com with SMTP id 98e67ed59e1d1-2a2317c8756so20549a91.2
+        for &lt;writing@voussoir.net&gt;; Sat, 30 Mar 2024 07:55:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1711810527; x=1712415327; darn=voussoir.net;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=FTSsxqNCmmCx9rsoYFTyCzSYSKH2x/B5qs/eLf8ETF4=;
+        b=jqLyEIt2GSnohg+qWPkz3oq/kpfU6XV1lftnff5S0K3/bUeq9t4i3bIC8B/Dn/7i1L
+         Z03oT3hI/iXSZ8FcSqZq+kH7CXekw/0uTXgw+lVIIXbu8qKtr6DTE+QDqqhWLR+F1X2j
+         FzDTG/jUg5QOGXBkjyWwh/KGZzwnFfGCxi6ZM4cOfi/vDOhJ8PIvln9dbWBZtDDn3Tka
+         9otv8iBWclRShW7K1tw/pcbJ9Hl79b3GzQ6420VWC26EQ6wwn81zCrPnZvLQTKFn2JFQ
+         JhkgH87hta5Updaq+DFXExDY3CFmXwlhxgK5qg0pb645kPccXNkncrhsjSIPc1CIgEEs
+         xEVA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1711810527; x=1712415327;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=FTSsxqNCmmCx9rsoYFTyCzSYSKH2x/B5qs/eLf8ETF4=;
+        b=gV8rLnG7wfx3WuwcAyRy6T4CCU8QflxKoiallSUMyv2UySyCPLHYrnk0rvWMkKKD7m
+         9qJkNEe4E3wksozJDMZc3OSLt69RYfw+FUlXxW+URXnAjBpgqYQdRotSgg+mTsZH+OGi
+         A7YPwC4DO6h/Oqmq8jAauAggD0yrOXvuPQRHDVrcK2+M4tRUBJYGsxSYJjPTMuHNY/mf
+         oCiQinjc2IcOyLiEa8skMLzIjbCOCcddkz8bAL7rRtwHlTLC1G2yDmreCG41tt+KOTLP
+         AB6iYqzJlGyqghzL/UjNdMdMHIJIT6O2Z0zU9yKu/tL8PHZnKg/j4vxiU5bqgWPKAIT5
+         h7IQ==
+X-Forwarded-Encrypted: i=1; AJvYcCVSNaWfpEKZh4W5qhJoPxteyTOB9oodoSUnQ7kq+IZkUdX1fMKywczMGZIqT0iYLWFgIECKpMJtXmL6dH3SZZ/ZgWnlBg==
+X-Gm-Message-State: AOJu0YwWaTNKIj++/43TlMrYe50Obhh25setyH0LRGvKnEwyzRQnWsLu
+    FFXxYtt3EOcDHy+e8p6rTMGMKTPQ5hnb06DvI5QJK3yWQoZl+46F76VX6jxxTa5weO+B9O9XwmN
+    N8SCR4IFF+uA6h4o6VdLe0dhVF4o=
+X-Google-Smtp-Source: AGHT+IEgXIhkv8wQH0Ki0qNgVUHw1mtPx54TduP5EErUyL01UHFba8WdtymG0jan0lLqUPn+6y7L5AiqcgPhyAGalVA=
+X-Received: by 2002:a17:90b:4f42:b0:2a2:17da:4526 with SMTP id
+ pj2-20020a17090b4f4200b002a217da4526mr3681073pjb.26.1711810526723; Sat, 30
+ Mar 2024 07:55:26 -0700 (PDT)
+MIME-Version: 1.0
+From: MASTERCARD INTERNATIONAL USERS PROMOTION &lt;muserspromotion@gmail.com&gt;
+Date: Sat, 30 Mar 2024 14:55:11 +0000
+Message-ID: &lt;CAA+fkKV=sV1d7iR-OEsdFT5sHR=f6_Hoc0yd5_w=VQ6oPOZiAg@mail.gmail.com&gt;
+Subject: You have been awarded
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary=&quot;0000000000005e4c280614e1f2a5&quot;
+Bcc: writing@voussoir.net
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>You have been awarded 1 million usd in the ongoing Mastercard International</p>
+        <p>Promotion kindly reply back for claims.</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;info@citigroup.com&quot; &lt;fedreserve26@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;fedreserve26@gmail.com&gt;
+        <p><b>To</b>: undisclosed-recipients:;
+        <p><b>Bcc</b>: writing@voussoir.net
+        <p><b>Subject</b>: I NEED YOUR URGENT ATTENTION
+        <p><b>Date</b>: Sat, 30 Mar 2024 03:28:30 -0700
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-0.21 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,HTML_MESSAGE,NAME_EMAIL_DIFF,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,SUBJ_ALL_CAPS,SUBJ_ATTENTION,UNDISC_MONEY,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -2.61;EffectiveIp=209.85.167.41,SpamProbability=0.03
+Return-Path: &lt;fedreserve26@gmail.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of _spf.google.com designates 209.85.167.41 as permitted sender) smtp.mailfrom=gmail.com; dkim=pass header.i=gmail.com; dmarc=pass (p=none) header.from=fedreserve26@gmail.com
+Received: from mail-lf1-f41.google.com (EHLO mail-lf1-f41.google.com) ([209.85.167.41])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 384593496
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Sat, 30 Mar 2024 10:28:41 +0000 (UTC)
+Received: by mail-lf1-f41.google.com with SMTP id 2adb3069b0e04-513e10a4083so3038011e87.1
+        for &lt;writing@voussoir.net&gt;; Sat, 30 Mar 2024 03:28:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1711794520; x=1712399320; darn=voussoir.net;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=AjWVyMlo/HV7wer6/7hPk9tfrZjcj9PMI++CfFAJy2Q=;
+        b=cQPLIWQxkmiwjzBN4IOJd3eqJpgWyjt2V4e04YC3HWWdFmXAeDWeJrM4ToRWIdd2p3
+         jnTMHGkiFetrksARi5iG3pxsdYD51f5a4/zPFmJpkJ80HyVY8E+cZd3+l845itIv6spP
+         ElrAwlZOR4UwdIL7R1uhaev6TI8e2i/gxU4Up7w4ig/OZLRLCnr/4Jr/F0VOADSjos+1
+         UjLWVjBmCpO/L+mbzedqXqL4l/Msl7h3sgX24VDQPj17BEM7H5yDVoD2G5FcZuncZ5M5
+         xErOi3rn1kXbD+iy3lI72n0cESkUlc5EKLVYhT3ZPDQaX+1IoXnh6naICiWjkMhGArLF
+         Sbiw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1711794520; x=1712399320;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=AjWVyMlo/HV7wer6/7hPk9tfrZjcj9PMI++CfFAJy2Q=;
+        b=eDLeCWfa55xB7ynhkhXn9NzVaVVarRK0a6UWvF2wxrNU7+khj3g2Nn31hV53cbUIhG
+         pa9DT4a8FYQKZvMkmHp/x6cEc584K0oI5dVbpyhWkfGn2bKXA4HyvGyi2sU4KYaeAIp3
+         II712p7OD1fIE/Ntx5zv1+tK2TgadynJbYaoV+23r46Of+G6q/OFXjs5Ohmys1TQmbQ2
+         6aJs1TzWVwS0Oc/K6RCEV/oxGtCWAqHHD/mCC5Vp9qnCP1MXPwAwDgMfIPyUiZpdWwo7
+         1sipsjpM4kY7bwSz3+9gFODeL6YBa0WXVJPFDX2b8LMAIUH4oFiammIjTAod1mL+zojq
+         U18g==
+X-Forwarded-Encrypted: i=1; AJvYcCXFRv0XIFT8ICJTvGKAQkRuyn8LyQSUzGCl4yxd4MJ674OwLPCWr+f4I3xAHBJf+TEgs/n68YpZzqqpmYYJ+60rHU06ZQ==
+X-Gm-Message-State: AOJu0YwEdsLwaI57feuKIUJglLRcYU02seL7A8xRw6bvclFng4sUzlAm
+    XWNWp/EKvtnxvEw24ctoCMmGFwSBujVTkevvP710QAC04ugLR9T85XiSdWxmO9rLuJ2C/yAIC3X
+    +HOVyfmLdZjQssmjqO37Kgzogw68=
+X-Google-Smtp-Source: AGHT+IGM9xk07RYQh65Q3+ZwXgQpgSZ4+LBy3RisoNXhLuR6iOJGkn1BiwOOu2ksLDjondFyYoijZ3O/wVxAPnd3lig=
+X-Received: by 2002:a19:2d06:0:b0:513:d8e3:fe3d with SMTP id
+ k6-20020a192d06000000b00513d8e3fe3dmr2869814lfj.26.1711794520117; Sat, 30 Mar
+ 2024 03:28:40 -0700 (PDT)
+MIME-Version: 1.0
+From: &quot;info@citigroup.com&quot; &lt;fedreserve26@gmail.com&gt;
+Date: Sat, 30 Mar 2024 03:28:30 -0700
+Message-ID: &lt;CAPfzOE8RoHwUm6r3HFCKCG1oY7Sy-HAqBbfiq15xBiUojW4wLQ@mail.gmail.com&gt;
+Subject: I NEED YOUR URGENT ATTENTION
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary=&quot;0000000000004cdf3a0614de3831&quot;
+Bcc: writing@voussoir.net
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>*Hello ,How are you doing today?  I hope this message finds you in good</p>
+        <p>health.I am Mrs. Jane Fraser, Group Chief Operating Officer at Citigroup</p>
+        <p>New-York.I&#x27;m here to seek a business partnership with you. Kindly get back</p>
+        <p>to me for more details.Regards,Mrs. Jane FraserCOO of Citigroup*</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Avni &lt;avnisharmaavsems@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;avnisharmaavsems@gmail.com&gt;
+        <p><b>To</b>: &lt;contact@voussoir.net&gt;
+        <p><b>Subject</b>: Complete SEO proposal.........
+        <p><b>Date</b>: Sat, 30 Mar 2024 06:37:50 +0530
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-3.76 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,HTML_MESSAGE,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,PURELYMAIL_IP_REPUTATION autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -2.66;EffectiveIp=209.85.210.171,SpamProbability=0.02
+Return-Path: &lt;avnisharmaavsems@gmail.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: contact@voussoir.net
+X-Pm-Original-To: contact@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of _spf.google.com designates 209.85.210.171 as permitted sender) smtp.mailfrom=gmail.com; dkim=pass header.i=gmail.com; dmarc=pass (p=none) header.from=avnisharmaavsems@gmail.com
+Received: from mail-pf1-f171.google.com (EHLO mail-pf1-f171.google.com) ([209.85.210.171])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -1520350840
+          for &lt;contact@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Sat, 30 Mar 2024 01:09:28 +0000 (UTC)
+Received: by mail-pf1-f171.google.com with SMTP id d2e1a72fcca58-6e6b5432439so2138746b3a.1
+        for &lt;contact@voussoir.net&gt;; Fri, 29 Mar 2024 18:09:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1711760967; x=1712365767; darn=voussoir.net;
+        h=content-language:thread-index:mime-version:message-id:date:subject
+         :to:from:from:to:cc:subject:date:message-id:reply-to;
+        bh=MQ3vvQ7ah7/zogn57zoB2z/1xgqJgXwH+6Q+TQm33fY=;
+        b=I9c5H8+3Faq4Al9sIVlUlaoHAUtsARpInsTH2+kGQQQO+rxcZB+MUa8oZegRcnHxXY
+         2Xh95NVrWr7f2huZrH6tVdo3sBTfLxqAVaowtLLgoiUZ9HrzLhbsyzg78Olg35dJf2up
+         gJiwztmhr+7Attgl91lJTlUM6lP1VwpIma5uq9bGuRQSATv+A4Fn4OO/UEswoLcXle2t
+         f0oTtfRG917v0HKfojkw90vcxlTh0FWUGAE0I0pFzHdw+BAdSE3IhO9aNTpZe8CM4w3N
+         sOtRr9RCbsDZJDxNqBW+GLkSm/uQdqXMRh+C70jguH/zWHyURIjIoq09DtfegyojeFCc
+         zodw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1711760967; x=1712365767;
+        h=content-language:thread-index:mime-version:message-id:date:subject
+         :to:from:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=MQ3vvQ7ah7/zogn57zoB2z/1xgqJgXwH+6Q+TQm33fY=;
+        b=K4i8G0WQBDea6RoJjTBZWWrH6+zdhIAh5PRR/IAF66Xw8Ud64JdfpsZ/YaXlc/LJ8H
+         FyuLfhRlGoCl2UITRpnQLl0qMhu1FNpCTMYKsltH23JzVPoqlrwEjt6MglETGptUvQDM
+         zm6VoJkgYR+8HpUDIC8FJWyON5u5S5rl+z5Aa4/4Cd/rycjeJ8wtZVwukgvLKl5RK6+L
+         Q1em+s4es15utgraUHXNEDR1owIQa8NmquYLXEp+6GG3bqb1AaQAowFcgYSybWku8AW7
+         3OK5pjd6gXitZDI/NNKbbXvpcq1OLIgIEmFfRWZjo+hzOZp7mLYbKiDNTET6yZPad2Nj
+         0sAQ==
+X-Gm-Message-State: AOJu0YwkCWXL1u5qTgb6sRuQezHyqmuFFU/RasyPbJVRPZ3M1H6Lqenb
+    MozOWfEVsODaMgzQ3bBmKkmCKazmXAQBKgUKH/ChwonOK9aRhDfxG69esB00
+X-Google-Smtp-Source: AGHT+IGdJs698awdF2jaG39Z1VZ32LD720F7wcPcfPH7J8rBTrtfyZAXO32Ir6/gARK6g+kQTAqx1A==
+X-Received: by 2002:a05:6a20:1589:b0:1a3:5d2a:4001 with SMTP id h9-20020a056a20158900b001a35d2a4001mr3780608pzj.44.1711760966801;
+        Fri, 29 Mar 2024 18:09:26 -0700 (PDT)
+Received: from LAPTOPGK9JBO3O ([2405:201:4028:f918:7cb7:1ec7:b9c1:3151])
+        by smtp.gmail.com with ESMTPSA id u14-20020a170903124e00b001e2086fddecsm4059528plh.139.2024.03.29.18.09.25
+        for &lt;contact@voussoir.net&gt;
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 29 Mar 2024 18:09:26 -0700 (PDT)
+From: Avni &lt;avnisharmaavsems@gmail.com&gt;
+X-Google-Original-From: &quot;Avni&quot; &lt;avnisharmaAVSEMS@gmail.com&gt;
+To: &lt;contact@voussoir.net&gt;
+Subject: Complete SEO proposal.........
+Date: Sat, 30 Mar 2024 06:37:50 +0530
+Message-ID: &lt;07c101da823e$e0d687b0$a2839710$@com&gt;
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+    boundary=&quot;----=_NextPart_000_07C2_01DA826C.FA8EC3B0&quot;
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AdqCPfKkbO5NGCcOTmOPFEzzo3ikYA==
+Content-Language: en-in
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi, contact@voussoir.net</p>
+        <p>I hope you are doing well.</p>
+        <p>Are you looking for SEO service to rank your Website organically in Top 10</p>
+        <p>positions of Google page?</p>
+        <p>Our Steps and the Activities:</p>
+        <p>ü  Complete SEO Packages</p>
+        <p>ü  100% Organic Search Engine Optimization</p>
+        <p>ü  Keyword Analysis</p>
+        <p>ü  Comprehensive Site Analysis and Audit</p>
+        <p>ü  Article Marketing</p>
+        <p>ü  Press Release Translation and Distribution</p>
+        <p>ü  Social Media Marketing</p>
+        <p>Please let us know in case you are interested.</p>
+        <p>Email us back to get a full proposal.</p>
+        <p>Regards!</p>
+        <p>Avni,</p>
+        <p>Marketing Executive</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Lila &lt;lilasinghems@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;lilasinghems@gmail.com&gt;
+        <p><b>To</b>: &lt;contact@voussoir.net&gt;
+        <p><b>Subject</b>: Implement on your website......
+        <p><b>Date</b>: Fri, 29 Mar 2024 05:05:53 +0530
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-3.74 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,HTML_MESSAGE,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,PURELYMAIL_IP_REPUTATION autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -2.64;EffectiveIp=209.85.215.176,SpamProbability=0.02
+Return-Path: &lt;lilasinghems@gmail.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: contact@voussoir.net
+X-Pm-Original-To: contact@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of _spf.google.com designates 209.85.215.176 as permitted sender) smtp.mailfrom=gmail.com; dkim=pass header.i=gmail.com; dmarc=pass (p=none) header.from=lilasinghems@gmail.com
+Received: from mail-pg1-f176.google.com (EHLO mail-pg1-f176.google.com) ([209.85.215.176])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -1945937206
+          for &lt;contact@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Thu, 28 Mar 2024 23:37:07 +0000 (UTC)
+Received: by mail-pg1-f176.google.com with SMTP id 41be03b00d2f7-5d3907ff128so1154900a12.3
+        for &lt;contact@voussoir.net&gt;; Thu, 28 Mar 2024 16:37:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1711669026; x=1712273826; darn=voussoir.net;
+        h=content-language:thread-index:mime-version:message-id:date:subject
+         :to:from:from:to:cc:subject:date:message-id:reply-to;
+        bh=3WT5eyEtCZl2F+nT7qMCqrGt053bNH1RQmecq6b7Kvs=;
+        b=HxpmMNZd2cAzoaUKN2lGdKhw9aa8NHu29/KAhI2nAtPo1wTCKSl4yPqRD0ITBCjXnP
+         puDe6klu+l9e9WSmKjo5braVFv5r4sFL7pw/PQuFH3rXaz7+lz1G9Zgy4rCMqZKfHzQh
+         036ocbKj2PSCd9j6qrHujYG70Xws3qtuj1TZ6ePq5gwFCrk4JWZOv9eje7I0TfD1OZPB
+         uNkzZKdKas2EKx7BTdy81dFdQjAsLtq5Vs9tLNVl8Pb8bi+SvyWEVvGwCMTM6V24+H3r
+         dUpUHa26P0COPpQfngYZ8qO/itFqkBDayBUOh9AXq6GacM/i2bEEP1QyU8k34mnlxHzU
+         VNDg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1711669026; x=1712273826;
+        h=content-language:thread-index:mime-version:message-id:date:subject
+         :to:from:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=3WT5eyEtCZl2F+nT7qMCqrGt053bNH1RQmecq6b7Kvs=;
+        b=slmIyjfOLJtX8buyMYS0yzxP7juQhcOZYXZEThPH3tXKqlpTLSbGCOAlIrzOLNzYhR
+         P229N5qAbzt7RW/Z1WU721Le0uO6zuzCTFdcYltM1uspFJx22ZzAnrl9XcnRNUDNLId/
+         LWhpTL7thARaikym+YSOoE870XuJ9TMc+hJ9iD78KFh1KBZ1YtUH9u62bgQbAteN4n/n
+         l6Ek2I8OoR25sNcWJlhp8ckpC1gkjIbXUJr0b/HsoGK2EW1B6LIKdni5vJoyWYPPQbcp
+         lEtpUF4WqE4lTuUZ53/WMvo+oMB62r+EiFqwrK0EAYLPrXJrpZ45pJCC/yXr4a1PCaP+
+         EesQ==
+X-Gm-Message-State: AOJu0YympxMalucN0bXfRsBtUvOu2f6WK5zoq9UdElFK3gttTaVd9vhe
+    Tac6tDhjfzM8zB2KYR1hhkLllpIpgLC+MYLugujbaQkaazJo8JatN9jGZGn+
+X-Google-Smtp-Source: AGHT+IH+DwNdcxfkroh4vsaHYCIdzyDJZJReTINEW9Q1PDgSN95pTFrZSZrEquAtU1JsZQxdlt1XHQ==
+X-Received: by 2002:a05:6a20:929e:b0:1a3:a99c:cd4d with SMTP id q30-20020a056a20929e00b001a3a99ccd4dmr555125pzg.48.1711669025932;
+        Thu, 28 Mar 2024 16:37:05 -0700 (PDT)
+Received: from LAPTOPGK9JBO3O ([2405:201:4028:f918:1131:f201:7420:b1e7])
+        by smtp.gmail.com with ESMTPSA id y9-20020a17090264c900b001c407fac227sm2248578pli.41.2024.03.28.16.37.04
+        for &lt;contact@voussoir.net&gt;
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 28 Mar 2024 16:37:05 -0700 (PDT)
+From: Lila &lt;lilasinghems@gmail.com&gt;
+X-Google-Original-From: &quot;Lila&quot; &lt;lilasinghEMS@gmail.com&gt;
+To: &lt;contact@voussoir.net&gt;
+Subject: Implement on your website......
+Date: Fri, 29 Mar 2024 05:05:53 +0530
+Message-ID: &lt;081b01da8168$d3457f60$79d07e20$@com&gt;
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+    boundary=&quot;----=_NextPart_000_081C_01DA8196.ECFDBB60&quot;
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AdqBZ3uXC+6eh29SSP2zhxwBo3v//Q==
+Content-Language: en-in
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi, contact@voussoir.net</p>
+        <p>Would you like to increase the lead / sales generation from your website?</p>
+        <p>The perfect blend of Social Media and SEO, SMO (or Social Media</p>
+        <p>Optimization) is the process of extending the improved organic search</p>
+        <p>rankings lead to improve traffic of your website.</p>
+        <p>Let me know if you are interested, so we can send your company a detailed</p>
+        <p>proposal for our services.</p>
+        <p>Best Regards,</p>
+        <p>Lila,</p>
+        <p>(Online SEO Consultant)</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Jorge Arturo Vergara Coloma &lt;jorgever@udec.cl&gt;
+        <p><b>Return-Path</b>: &lt;jorgever@udec.cl&gt;
+        <p><b>Subject</b>: BUSINESS PROPOSAL
+        <p><b>Date</b>: Wed, 27 Mar 2024 16:29:59 +0000
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=1.07 required=5 tests=ARC_SIGNED,ARC_VALID,DKIM_SIGNED,DKIM_VALID,FORGED_SPF_HELO,HTML_MESSAGE,MISSING_HEADERS,RCVD_IN_MSPIKE_H2,SPF_HELO_PASS,SUBJ_ALL_CAPS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -0.53;EffectiveIp=40.107.95.111,SpamProbability=0.16
+Return-Path: &lt;jorgever@udec.cl&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of udec.cl designates 40.107.95.111 as permitted sender) smtp.mailfrom=udec.cl; dkim=pass header.i=udeconce.onmicrosoft.com; dmarc=pass (p=none) header.from=jorgever@udec.cl
+Received: from mail-dm3nam02on2111.outbound.protection.outlook.com (EHLO NAM02-DM3-obe.outbound.protection.outlook.com) ([40.107.95.111])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -233991015
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.2 cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384);
+          Wed, 27 Mar 2024 16:30:02 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=UqjgMqVPhtgTkK69QlfV3zRSUSq1O34omdLmo6m1SaTrDsXtwcorl3NwYhtJDduBxs1q4H6MKWWToxKQmwu9QW1DGOw47dh9olnhpdv5Z38h/+peYHHm9PppeYj4EEq4oyxBG6X+5y10yBuLoRvWl3NRbVrGNggzmjnaYaZRtUNTIftWD1UfjXDVzgeQPn/SezruQe+0RHro+1LtNfNIk/XKK1SyG83zWHDNcQ7REuPd3r7mJo2TNcaqafKZ0DYqaP5lW9+XTGZjrCEzjeR4OefD6ujgJn8tw1nKQUnVkmobiPVyLzfcsA0SBpx89xgCgH1mPiWp62GNeRnaO5jEXg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=zRjb+kSfP+2KPwGQnoPpC/pjy2HBYrTF4aCaMQK4jGY=;
+ b=Ku5xyO4DSHFsl/vV1fEw3/o2H1gF1SOag5zWZjlELeeTsjLzVJRHXvGAyf+aHykN39d8Qxjmj2n5OSEeUu+zf2eObzBmqUMk2ik4IqPlvqCrORnQhjboh2dq8HrA4cS4F/jXO28lGrrHaE6mEdiYLjlBRQoA38ZHKWIHHfviKuqQPxDh93YjF4fKnt5KCtUhf1tq05P7h3KRTbEBgk03bawVB/+rJQ5dILy2BdoNO1CeEK+mwYt5qBGeW7KuLjrEzTzRqhud9Np5EoKPWPi/B3Q7c4A07ogIzFFqo8VPKgKLjdFyoshAKAPpisNubANparKGQz/2MO6NZXneYTHUhA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=udec.cl; dmarc=pass action=none header.from=udec.cl; dkim=pass
+ header.d=udec.cl; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=udeconce.onmicrosoft.com; s=selector2-udeconce-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=zRjb+kSfP+2KPwGQnoPpC/pjy2HBYrTF4aCaMQK4jGY=;
+ b=I4KGdId+0pGcIb+ABtchNllLARBfGSbSLYQdtZB/9sGL0NLHMakTihzpDauNbuNRsmLAEPQ6u8EQAGxa3Y8MQD42fTZ/PiLuDNSy3IDU6/zs5/qIMi3HoK8JGrBbmFY1dfdN8UWJs+8S69EHXx6F8588Qa3757o7VE2Ln5e3+4w=
+Received: from CPUP152MB8018.LAMP152.PROD.OUTLOOK.COM (2603:10d6:103:2b4::5)
+ by CPWP152MB5013.LAMP152.PROD.OUTLOOK.COM (2603:10d6:103:190::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7409.33; Wed, 27 Mar
+ 2024 16:29:59 +0000
+Received: from CPUP152MB8018.LAMP152.PROD.OUTLOOK.COM
+ ([fe80::f312:6f44:1841:7ab5]) by CPUP152MB8018.LAMP152.PROD.OUTLOOK.COM
+ ([fe80::f312:6f44:1841:7ab5%7]) with mapi id 15.20.7409.031; Wed, 27 Mar 2024
+ 16:29:59 +0000
+From: Jorge Arturo Vergara Coloma &lt;jorgever@udec.cl&gt;
+Subject: BUSINESS PROPOSAL
+Thread-Topic: BUSINESS PROPOSAL
+Thread-Index: AQHagGQC04XdQ2kTx02/eoPubRgLAA==
+Date: Wed, 27 Mar 2024 16:29:59 +0000
+Message-ID:
+ &lt;CPUP152MB8018F13F6E0A2EFBE2510833D8342@CPUP152MB8018.LAMP152.PROD.OUTLOOK.COM&gt;
+Accept-Language: es-ES, en-US
+Content-Language: es-ES
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=udec.cl;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: CPUP152MB8018:EE_|CPWP152MB5013:EE_
+x-ms-office365-filtering-correlation-id: d5c73f8c-202f-4ca9-9238-08dc4e7b254f
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ lnjQajKMMKRG+CEMvwT+JyVYlBAumFdgCAFzKwDEyga3Mnl2YJMIZIJcpIK823GZwWb/CY04cz5Z8lQUlq4e/lVaRMzXAae8CEHMawWsGDUAr3rbyfhUHveXt+K1Y6i9VqpGcwRicnqY+8+Q60vRYKh1C/V+uoLxzkRUGS3xPGrXCwJXcGncWvFCQ/uHaBPPNww+Z1vphKt1GrCAYdBKO8P+q0H1bNwHKrdAlhvNZfcMsWW7UinrSV+8s8W7chYhXoQJYfLwElPJsRBNl9qjsKHtmdBYEOsEwOrfm2+n9ew16WTinRF4A0ri7QvofXr2fW5dEIXzBr9fsXAfm28maH0zt+jKCsnVNBmpNZ11evqBb1t5kORf4GhFD/dkLGJvLzxY2n8LegG8ovauh6FCyTzU/8X6IVsWbQTPZMbYTN4DT0Uu8MrFtqv/xWcvt8MVO4qqEmBvwqHPxeXqpU4FHyXP2H3Ddm7XfSUbvASBegow/bAHCPFrL1Yukb1ZQ5YOw6jE9qBig6MWeJCnCoO+Q/VYkmNuMwTcxGYDdEmjuw1YzRbeJoAl8rzgLWpnP1/I2PNYIgvEJQn68Vc9ulHy2gSs5b4PypKMhRihoPpRdL325tSkL81V8tOv2YkPBfk9aFxdm25pP2Lg+3UNX+S/Bm5Z0+7YWU1kE8r8A5+Jx3Y6XStNcdcgNiwwC+m6EUZvyauCmQ3n1YqTyjGckWSa4neW62kqqE9ZynnvVq2s3rztaTHzLAeRdbPvsfYVUjSu
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CPUP152MB8018.LAMP152.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230031)(366007)(41320700004)(7416005)(376005)(1800799015)(38070700009)(3613699003);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?HlabNzZz7mDq6TEkeeV+h5tQ7nGJYL7oDM1sQmbnraRwOsuUvInuyNwb+Y?=
+ =?iso-8859-1?Q?NfwkpGC+0ax46XVccgwU9PEOO2D0Ysb3MvL4H3GTLUpLeY5Tmj+11GVjaA?=
+ =?iso-8859-1?Q?cFyNG2jEHVQivzNWso2HcnJ4JwG5a61kqPrSb1NeEr0JYsLNc7vuWTAxc6?=
+ =?iso-8859-1?Q?81D+R2AdSzqY4pLsgJjOO/p+cyug9o4Bdz4NvfzNn3335LThqYF21j5QkJ?=
+ =?iso-8859-1?Q?LOWuY7L+gKmPopNAsn6Q1RDLu5p+lGbA6ZRzfA3sB+0IF4ThnRrMDFoPXb?=
+ =?iso-8859-1?Q?mEdMNOKb2bbw0+Ud5bMYV/UqlKPkD2JDdL9S+wd1GH3W2fdIjG1fSgh9z0?=
+ =?iso-8859-1?Q?fhCsQPhTh6hufwhWCk7LAcn7oEY3w7WfIeZdCxc5hOTCr7I9JdllcXX7Sr?=
+ =?iso-8859-1?Q?HHGwAJ+PrRZ90THbYBOJxcPNSAV6NiNtgf83+vg2oyoJw4Q9YprodTXgwR?=
+ =?iso-8859-1?Q?JmeOSWr7L+GZ8gZoGN+V7yBKfAlgxxw/9rlxc8HOLICLwzBx4S/O3HScPh?=
+ =?iso-8859-1?Q?gums4vNPbXBoAtJd7OrwIK6MwfHJXvgl7THSqx6j+B/NLp7Cy+Iq8zZISV?=
+ =?iso-8859-1?Q?QpJm0YXSBxLhon1nXKfajLsLbzKYZh/T4uREHHAiInqjnVAnMfomD8U6U2?=
+ =?iso-8859-1?Q?QN7SwoJsE0SBQA8tAVmLZkpxmDdiNH5o9zx5OE47QyzelYDwGgpAQ/Z3Kd?=
+ =?iso-8859-1?Q?6ysbG8kY9113iIu3C8BkkpxBaXHgzbWtp9tfoTkZTrCuzVT8cJ/nTXixuU?=
+ =?iso-8859-1?Q?d8p05xx2iIfMlewHZBq/JqN7I35D6AY8e5p3USo/uZoxzomVp2/OFn0YEv?=
+ =?iso-8859-1?Q?3hbgRlVmPyTdrj7UcKdEtyp6L0kqhKUkYBVH6LA8yloCBLdOLUUxN+gtQN?=
+ =?iso-8859-1?Q?1I+zYNbHogfdbHQncY010+VfWHvVImUwB/gEsqqgTzhCqyu8TsC3KpZo0h?=
+ =?iso-8859-1?Q?4wCdZR4k507uROkDCgKsJ4HYXqs2myO0zhvnQVhhGgmn+bip/74E7wxgOO?=
+ =?iso-8859-1?Q?+cvLSssEgmsBtjHuA56+Aa4pR5toCM8AyeIqAiccMaqCsFHVcvPnERhC5Q?=
+ =?iso-8859-1?Q?0R9+8yY9gOKUL6QJxglGrlh6AHb+fIMz+6il+THiQUN2ZB616R6MqiiteX?=
+ =?iso-8859-1?Q?O6A4ViiXUWBIc/Aj/JAi3s7zYpmQdbj1WSJJhg54HMcQImBEBpDDdszPIr?=
+ =?iso-8859-1?Q?GVgWRe0uLE0erfXHnC+hltLe/2LmXm2e3w7nmzlVlPg7PET7NOakY6menr?=
+ =?iso-8859-1?Q?X5gC+UtlN6Ji0a/Efh/WMJ91Skc0JTnE45JaWtzigZ5C+A5C14aQ9/+bMh?=
+ =?iso-8859-1?Q?fidOXBj0slMpOOPvTIPk+NmToG0RkcWs4Dnl7me8R7u/gJ9ULTIWWKJ7Ug?=
+ =?iso-8859-1?Q?6l2ul83WtPSMtmBN5gE1gz7wtAMGQ6XHrPD3VrvEQ4bQf2onW+ETPI/mhX?=
+ =?iso-8859-1?Q?iF9xL8DxV9oXgfZVYkana2/+5AHb2KlcVoEHKqre00FXmBvhX0Y9DmBH44?=
+ =?iso-8859-1?Q?Sfh4o+hUZEctEL53vtpNelHtVSywsE+2wnEuWyZzd+kUhJrgBNp5r1r6pB?=
+ =?iso-8859-1?Q?WE3l4I678UIloQ+U4SwY69NzfyOEbv3zw3xvPX1uyyL5oseV1oXuQXpAdy?=
+ =?iso-8859-1?Q?4oeFOkSt3vjUY=3D?=
+Content-Type: multipart/alternative;
+    boundary=&quot;_000_CPUP152MB8018F13F6E0A2EFBE2510833D8342CPUP152MB8018LAMP_&quot;
+MIME-Version: 1.0
+X-OriginatorOrg: udec.cl
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CPUP152MB8018.LAMP152.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: d5c73f8c-202f-4ca9-9238-08dc4e7b254f
+X-MS-Exchange-CrossTenant-originalarrivaltime: 27 Mar 2024 16:29:59.3274
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 56582b9e-8824-49d0-a665-cd328c0e004a
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: HecxTskMZxczuoMcdWBLMNczMBH9MXJs6TZDfx0j+y5gkRj06+MNjX8DeEKdTGA3BxqPGWvNo2fM8gm8CmqRPw==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CPWP152MB5013
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Good Day,</p>
+        <p>We are currently interested in employing your service as a business</p>
+        <p>representative . We look forward to your reply if interested in this business idea.</p>
+        <p>Have a great day ahead.</p>
+        <p>Regards</p>
+        <p>Lee Shing</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Hanzla tahir &lt;hanzlatahir430@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;hanzlatahir430@gmail.com&gt;
+        <p><b>To</b>: Contact &lt;contact@voussoir.net&gt;
+        <p><b>Subject</b>: &quot;If they can do it to grow their sales, you can also&quot;
+        <p><b>Date</b>: Tue, 26 Mar 2024 12:37:45 -0700
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-3.55 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,HTML_MESSAGE,HTTPS_HTTP_MISMATCH,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,T_KAM_HTML_FONT_INVALID,URIBL_DBL_BLOCKED_OPENDNS,URI_HEX,PURELYMAIL_IP_REPUTATION autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -2.65;EffectiveIp=209.85.219.43,SpamProbability=0.02
+Return-Path: &lt;hanzlatahir430@gmail.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: contact@voussoir.net
+X-Pm-Original-To: contact@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of _spf.google.com designates 209.85.219.43 as permitted sender) smtp.mailfrom=gmail.com; dkim=pass header.i=gmail.com; dmarc=pass (p=none) header.from=hanzlatahir430@gmail.com
+Received: from mail-qv1-f43.google.com (EHLO mail-qv1-f43.google.com) ([209.85.219.43])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -478558354
+          for &lt;contact@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Tue, 26 Mar 2024 19:37:46 +0000 (UTC)
+Received: by mail-qv1-f43.google.com with SMTP id 6a1803df08f44-69185f093f5so41115826d6.3
+        for &lt;contact@voussoir.net&gt;; Tue, 26 Mar 2024 12:37:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1711481866; x=1712086666; darn=voussoir.net;
+        h=to:subject:message-id:date:from:sender:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=T1ip0iEXly5/rXCOaX5CPYmj4Ozl+MSC8glwDeOEz6A=;
+        b=hce/fLpNQOOaAYY5Bo3Weo2IoNCHCvJn4apCr/Ype4zD6+ps0WWb6MyMLey5xcrZLn
+         cwruU0I3Ab95M1m27nhRr11rHDqm0JWdcslfVKmvy+PRNZUcQhm/vOoP78XX2cF3N9nD
+         K75ASuqDIzrQJjWR6H1dwbDf18RXBG4RM7yliaGOS89t6gPaetbtyhMgca+idxi2yKUD
+         NBI0CaSYPQrAnBTmrsXeDsWbr7PHqwcYgVKWafQRooL2H9gRF/XRxCl3RpdE7KQZCkI2
+         4MfkS1GlSZ/GXDFyolx7F7Tu43hTB4hxZfODg2W5AVKrwSCGn6qrPRoA2aWwSoyzQjsP
+         +/0w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1711481866; x=1712086666;
+        h=to:subject:message-id:date:from:sender:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=T1ip0iEXly5/rXCOaX5CPYmj4Ozl+MSC8glwDeOEz6A=;
+        b=mHJ0O5eNlNa7KDRZu6ktIg02erMnWAW1ftzpYOWrg5FJMHtOTx6GUDXQdX3yHU96tp
+         5y0S51Nd6j0QJzEJDs2ePpLt/b0I2zwBTm0F4nZJ9dV3rZR/w8cJdslPxwTAM0uquKjT
+         0tvCsM8P3y45n3dcber2G7LNSuBJ+p5mMdK8m9ty9Y5UTAibNGpQy44SlsjXzZzOouTW
+         5Oqzwd0LQ9Hi91+0Zb+douuNPzwI5MEJLPcABcE9iYjpO0yANHeyRf2HickLdQDnK3TE
+         aN+VokGevy9ewE96IU0kdwroiotqofbmIifb4d/pmn3VCXiEPIUNqunYTn8VGFPuVIz+
+         kUUw==
+X-Gm-Message-State: AOJu0YyMpTOb4JYlneISep/2qQQIkbdE76VERHqNM+QzTycD3zsg329e
+    /nS183WWajMXW5mrFMTMDqKicK+T0sg+D8bj2HNeLO+27MxSceF3ij1BERYlwNQgFoBuZuuBbo1
+    HKfzGmT4rnJzdnsslZym+TOYOTf6OCT1v
+X-Google-Smtp-Source: AGHT+IGlF8rSnrI8t4mlXtDfxO81Y+jKdcXcOptcDh4sx1fi91e6kR5QzZhJXKK/ic0jm2/Ej5GIweGfrejH0wpvrXo=
+X-Received: by 2002:a05:6214:29ef:b0:691:8262:ec48 with SMTP id
+ jv15-20020a05621429ef00b006918262ec48mr589532qvb.35.1711481866119; Tue, 26
+ Mar 2024 12:37:46 -0700 (PDT)
+Received: from 91302273949 named unknown by gmailapi.google.com with HTTPREST;
+ Tue, 26 Mar 2024 12:37:45 -0700
+Received: from 91302273949 named unknown by gmailapi.google.com with HTTPREST;
+ Tue, 26 Mar 2024 12:37:45 -0700
+MIME-Version: 1.0
+Sender: Hanzla tahir &lt;hanzlatahir430@gmail.com&gt;
+From: Hanzla tahir &lt;hanzlatahir430@gmail.com&gt;
+Date: Tue, 26 Mar 2024 12:37:45 -0700
+X-Google-Sender-Auth: tLybHYgfgmiCWBYPGCiq7dPzh6k
+Message-ID: &lt;CAOdH3FAamvBM5xbB=zPSTAb=r1WD6VtVJckFQk8QjcPPNZXrJA@mail.gmail.com&gt;
+Subject: &quot;If they can do it to grow their sales, you can also&quot;
+To: Contact &lt;contact@voussoir.net&gt;
+Content-Type: multipart/alternative; boundary=&quot;000000000000ab73b30614956ca1&quot;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi Friend,</p>
+        <p>I hope you are well. I want to discuss some facts with you regarding</p>
+        <p>your website https://voussoir.net/</p>
+        <p>&lt;https://hanzlatahir430-dot-valid-gizmo-404515.uc.r.appspot.com/?c=1IxZ7AlPfQiACH1bqP3-7Hc4r8qoGM1lzCWVIy4F0CGk&amp;q=0&amp;r=18e7c44c599870d0&amp;z=1711481865533&amp;o=https%3A%2F%2Fvoussoir.net%2F&gt;.</p>
+        <p>I don&#x27;t take much of your valuable time. Today I visited your website after</p>
+        <p>reading one of your guest posts on a website.</p>
+        <p>I am pleased that you are using this method to grow your website. But only</p>
+        <p>increasing the quantity of guest posts doesn&#x27;t have much benefits. I want</p>
+        <p>to share a case study with you.</p>
+        <p>In the beginning, I also did the same thing for my clients but it did not</p>
+        <p>help them to reach their targeted audience. Then I stopped working for a</p>
+        <p>year and after doing observations and reading case studies I have come to</p>
+        <p>know that &quot;Google prefers quality over quantity of backlinks.&quot;</p>
+        <p>Then I focus on collaborating with only those blogs that have a specific</p>
+        <p>niche website, and all of their content is according to search engine</p>
+        <p>guidelines. Those who have good organic traffic and a high traffic value.</p>
+        <p>It is very difficult for me, but the results are fruitful.</p>
+        <p>Now, 1 guest from these blogs gives much greater benefit to my clients in</p>
+        <p>terms of finding new customers and increasing their sales than 10 guest</p>
+        <p>posts from those old general blogs.</p>
+        <p>I wish you could take a look at my website sheet. I guarantee you that you</p>
+        <p>will like my websites. And a few guest posts from my websites will give you</p>
+        <p>a better result and save your time and money.</p>
+        <p>Share with me what you think.</p>
+        <p>Kind Regards,</p>
+        <p>Hanzla Tahir</p>
+        <p>[image: Mailsuite] Sent with Mailsuite  ·  Unsubscribe</p>
+        <p>&lt;https://hanzlatahir430-dot-valid-gizmo-404515.uc.r.appspot.com/?c=1IxZ7AlPfQiACH1bqP3-7Hc4r8qoGM1lzCWVIy4F0CGk&amp;q=0&amp;r=18e7c44c599870d0&amp;z=1711481865533&amp;o=https%3A%2F%2Fmailtrack.io%2F%23%23mt_unsubscribe_link%23%23&gt;</p>
+        <p>03/26/24, 12:29:18 PM</p>
+        <p>Remove</p>
+        <p>[image: hanzlatahir430]hanzlatahir430</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: chief &lt;chief.investment.anz.co.nz@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;jonghappy206@gmail.com&gt;
+        <p><b>To</b>: writing@voussoir.net
+        <p><b>Subject</b>: offer
+        <p><b>Date</b>: Tue, 26 Mar 2024 00:07:08 +0000
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-1.44 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,HTML_MESSAGE,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,PURELYMAIL_IP_REPUTATION autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -0.34;EffectiveIp=209.85.217.65,SpamProbability=0.18
+Return-Path: &lt;jonghappy206@gmail.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of _spf.google.com designates 209.85.217.65 as permitted sender) smtp.mailfrom=gmail.com; dkim=pass header.i=gmail.com; dmarc=pass (p=none) header.from=chief.investment.anz.co.nz@gmail.com
+Received: from mail-vs1-f65.google.com (EHLO mail-vs1-f65.google.com) ([209.85.217.65])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 1548333048
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Tue, 26 Mar 2024 00:07:19 +0000 (UTC)
+Received: by mail-vs1-f65.google.com with SMTP id ada2fe7eead31-476d13e405fso1326109137.0
+        for &lt;writing@voussoir.net&gt;; Mon, 25 Mar 2024 17:07:19 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1711411639; x=1712016439; darn=voussoir.net;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=hANtXU1oMFG4Kkx3tZ6NbcqRGoEtFYDv73agLmF41EI=;
+        b=Mv/V57Im2sMvTyysg4dc2FQe+XymXZk9VpfnizEbOyZQ1q+HCNpgLTQ/2ux2O3W7O2
+         QrvGq7w9rUSHwaTRHtPmhKEd3QUqgOTu3dE1/E1jEQbJVGkyY4FEefIRdr/F84zBGswd
+         mmCMo3LjCmEgvLEpZeOxAPSye3673PE6XGhKsrkHUoFN7LDKdE6VVpqP8gt8Yz1T0Gep
+         lf5KKBY26AIehtpfxv6rkz7zrRIFO/L2eQOkRcP0b3tNqNuW6SY2shZnE5EuyAZBwlei
+         NCJBD69ckBWsFnUT/lN9b2cYwqcqipvACyPK+fNrZcnSgPDa4EBXSeW6pHimAV61xLUU
+         GwEw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1711411639; x=1712016439;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=hANtXU1oMFG4Kkx3tZ6NbcqRGoEtFYDv73agLmF41EI=;
+        b=DbEzixIbpoxZkl0Sfvqh36FSmufxQa0ygaIkIa/v9wHiAkM+q+paf6swvMxy6M0lpB
+         ZhN/dURjJhRmFX3dkkC/05NHmd1jZof2QBrNwY2nsx6vRuQ2kjD1t4yDqlW6whuIxez6
+         KOeKLwEFn96f3BmX3e9uqPXn+/aQ5rIWeBoLuJtXAoeKkxBweRamj983OkifQTQJQc8i
+         8SwztoIfpQBNOviF30LPoX+EVx3lD1ehBr/WTyx5AWyYbVuh03TAMVzYcCj/DVyb96uL
+         yu0xDSnJ6vpGSGurnptGLtBAP3RPyuqsgNFtI8ZvknwR0Bqo3BS6KhJCPdtleZmgHSPH
+         7Xig==
+X-Gm-Message-State: AOJu0Yx8Rnpdm7jYKht+ghEXP8hWcihpRj5a0joeBTK+KLJK3oF4IGS5
+    /MFvhizefWei98lmUW0Un88Ww4htKbusFfaxW2RpSVREWZJvsub/wJ/R/LFJ0DiGxFUDRAaodBr
+    OwNV8bkfpCMgn2cYp24ygNpkxvpfiS+haXVo=
+X-Google-Smtp-Source: AGHT+IHtF4mogZdgSZkihG+IVCHB9h5pHSufiQ7fCVUfa4jQtqa3YBmNHvqeEliFYTGnVlM5GBOJcih1YA73QPB1L5o=
+X-Received: by 2002:a05:6102:9d1:b0:472:a72c:c4ca with SMTP id
+ g17-20020a05610209d100b00472a72cc4camr6822429vsi.34.1711411638912; Mon, 25
+ Mar 2024 17:07:18 -0700 (PDT)
+MIME-Version: 1.0
+From: chief &lt;chief.investment.anz.co.nz@gmail.com&gt;
+Date: Tue, 26 Mar 2024 00:07:08 +0000
+Message-ID: &lt;CAEw9a-iZ2=NYk35jchnH7uvzjrx7Y51xLFY5kOLA+3ovVuUHYg@mail.gmail.com&gt;
+Subject: offer
+To: writing@voussoir.net
+Content-Type: multipart/alternative; boundary=&quot;000000000000cd4ede061485125b&quot;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>--</p>
+        <p>I&#x27;ve been trying to reach you, I have a business proposal for you contact</p>
+        <p>me</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: DHL International&lt;mobilityservices@levisstadium.com&gt;
+        <p><b>Return-Path</b>: &lt;mobilityservices@levisstadium.com&gt;
+        <p><b>To</b>: writing@voussoir.net
+        <p><b>Subject</b>: DHL International Shipping Notification Arrival
+        <p><b>Date</b>: 25 Mar 2024 14:41:18 -0400
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=6.09 required=5 tests=HTML_ENTITY_ASCII,HTML_MESSAGE,MIME_HTML_ONLY,RCVD_IN_VALIDITY_RPBL,SPF_HELO_SOFTFAIL,TVD_RCVD_IP,TVD_RCVD_IP4,T_HTML_ATTACH,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION,PM_DMARC autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PM-DMARC: 0.3;
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.49;EffectiveIp=5.206.227.133,SpamProbability=0.45
+Return-Path: &lt;mobilityservices@levisstadium.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=hardfail (domain of levisstadium.com does not designate 5.206.227.133 as permitted sender) smtp.mailfrom=levisstadium.com; dmarc=fail (p=none) header.from=mobilityservices@levisstadium.com
+Received: from 5.206.227.133 (EHLO flightconnections.com) ([5.206.227.133])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 1209594817
+          for &lt;writing@voussoir.net&gt;;
+          Mon, 25 Mar 2024 19:54:42 +0000 (UTC)
+Received: from levisstadium.com (flightconnections.com [IPv6:::1])
+    by flightconnections.com (Postfix) with ESMTP id 1726413D0E6
+    for &lt;writing@voussoir.net&gt;; Mon, 25 Mar 2024 18:41:18 +0000 (UTC)
+From: DHL International&lt;mobilityservices@levisstadium.com&gt;
+To: writing@voussoir.net
+Subject: DHL International Shipping Notification Arrival
+Date: 25 Mar 2024 14:41:18 -0400
+Message-ID: &lt;20240325144114.A9F9E1B3CCCC8628@levisstadium.com&gt;
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+    boundary=&quot;----=_NextPart_000_0012_19E05AF7.C944F09B&quot;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>DHL Express Courier</p>
+        <p>Tracking info:</p>
+        <p>Dear  writing</p>
+        <p>Your parcel has arrived at our local post office today on the  3/25/2024 2:41:14 p.m.</p>
+        <p>Please Download the attached DHL  AWB that needs to be printed and given to the courier upon arrival.</p>
+        <p>Email:                                    writing@voussoir.net</p>
+        <p>Status of your parcel:             eNotification sent</p>
+        <p>Service:                                  Express Shipping</p>
+        <p>Insurance:                               Yes</p>
+        <p>Doc/Tracking No:                    Secured</p>
+        <p>Kindly Download/Print attached (Lebel) file for Parcel details.</p>
+        <p>It was scanned and sent to you using secured PDF.</p>
+        <p>NOTE:  IF MESSAGE IS FOUND BY ERROR IN YOUR JUNK MAIL KINDLY OPEN AS SAME</p>
+        <p>Excellence. Simply Delivered:</p>
+        <p>International express deliveries; global freight forwarding by air, sea, road and rail</p>
+        <p>THIS IS AN AUTOMATED MESSAGE, PLEASE DO NOT REPLY.</p>
+        <p>2024 © DHL International. All rights reserved</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: ADMINISTRATOR&lt;aimee@ddablue-print.ca&gt;
+        <p><b>Reply-To</b>: auditorhaamed111@gmail.com
+        <p><b>Return-Path</b>: &lt;aimee@ddablue-print.ca&gt;
+        <p><b>To</b>: writing@voussoir.net
+        <p><b>Subject</b>: Dear writing@voussoir.net email member user: Your current number of emails
+        <p><b>Date</b>: Sat, 23 Mar 2024 23:27:24 -0400
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=11.17 required=5 tests=DKIM_ADSP_NXDOMAIN,FREEMAIL_FORGED_REPLYTO,FREEMAIL_REPLYTO_END_DIGIT,HTML_MESSAGE,KHOP_HELO_FCRDNS,RCVD_IN_VALIDITY_RPBL,SPF_HELO_SOFTFAIL,TVD_RCVD_IP,TVD_RCVD_IP4,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 4.47;EffectiveIp=185.236.228.210,SpamProbability=0.65
+Return-Path: &lt;aimee@ddablue-print.ca&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Received: from 185.236.228.210 (EHLO zgautoparts.xyz) ([185.236.228.210])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 2015184986
+          for &lt;writing@voussoir.net&gt;;
+          Sun, 24 Mar 2024 04:34:04 +0000 (UTC)
+Received: from HY-09849.139577 (zgautoparts.xyz [IPv6:::1])
+    by zgautoparts.xyz (Postfix) with ESMTP id DEF5D1C9E9A
+    for &lt;writing@voussoir.net&gt;; Sun, 24 Mar 2024 03:27:24 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=&quot;===============0796974139==&quot;
+MIME-Version: 1.0
+Subject: Dear writing@voussoir.net email member user: Your current number of emails
+ has exceeded 99, 000
+To: writing@voussoir.net
+From: ADMINISTRATOR&lt;aimee@ddablue-print.ca&gt;
+Date: Sat, 23 Mar 2024 23:27:24 -0400
+Reply-To: auditorhaamed111@gmail.com
+Message-Id: &lt;20240324032724.DEF5D1C9E9A@zgautoparts.xyz&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Dear email member user�1A</p>
+        <p>You currently have over 99,000 messages</p>
+        <p>After the number of mailboxes reaches the upper limit, you will not be able to receive mails. It is recommended that you clear your mails as soon as possible. Clean up now</p>
+        <p>Current number of emails  Maximum number of messages</p>
+        <p>99888     100,000</p>
+        <p>Clean up now</p>
+        <p>writing@voussoir.net Mail center</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Zayb Khanna &lt;zaybkhanna9868@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;8mar+bncBCE5FFX65IORBWHG7KXQMGQEXPVX46Y@e-technip.site&gt;
+        <p><b>To</b>: undisclosed-recipients:;
+        <p><b>Bcc</b>: 8mar@e-technip.site
+        <p><b>Subject</b>: Reminder: Website &amp; App Solution...
+        <p><b>Date</b>: Sat, 23 Mar 2024 16:17:40 +0530
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=1.93 required=5 tests=ARC_SIGNED,ARC_VALID,DKIM_ADSP_CUSTOM_MED,DKIM_SIGNED,DKIM_VALID,FREEMAIL_FROM,HTML_MESSAGE,MAILING_LIST_MULTI,RCVD_IN_MSPIKE_H3,RCVD_IN_MSPIKE_WL,SPF_HELO_NONE,PURELYMAIL_IP_REPUTATION,PM_DMARC autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PM-DMARC: 5;Gmail p=none policy exception
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -1.97;EffectiveIp=209.85.216.80,SpamProbability=0.07
+Return-Path: &lt;8mar+bncBCE5FFX65IORBWHG7KXQMGQEXPVX46Y@e-technip.site&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: ccontact@voussoir.net
+X-Pm-Original-To: ccontact@voussoir.net
+Authentication-Results: purelymail.com; dkim=pass header.i=e-technip-site.20230601.gappssmtp.com; dmarc=fail (p=none) header.from=zaybkhanna9868@gmail.com
+Received: from mail-pj1-f80.google.com (EHLO mail-pj1-f80.google.com) ([209.85.216.80])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 495959552
+          for &lt;ccontact@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Sat, 23 Mar 2024 10:48:17 +0000 (UTC)
+Received: by mail-pj1-f80.google.com with SMTP id 98e67ed59e1d1-29de3646c56sf2040201a91.2
+        for &lt;ccontact@voussoir.net&gt;; Sat, 23 Mar 2024 03:48:17 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1711190897; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=FTkeyryFdTve/kO5mWao5ZwSm89VL80NPrGNOYtPtkTkXPkOn2u/9wJKHcHkQvE/p1
+         Z0dDHSSuz4tjeExlhDPbozEcx9vrYnLAZS9qSWdHRgmusQgbUkBoBLTo3FfwbLRIzXPQ
+         c9O5/WyglP5MTROGDFwn94KoUPActctukNxCOKxWkLl/ppB990iG8Lcj50OzFC9qLNxA
+         hJVPNGbqsQnR/y/iHq635eZsgaBQLDpAqCdm0wQ0fJkA+6sfPKQmU3Bx+tAkIrgtiWWr
+         Au1Baflhl6AtxP/4xd5UXMZEteWn7ZmCmTLq1e9PHRLAZF7rfXw2dn+fhSU96pbtqmJ4
+         shEA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=bauVLt/iqUn9MQdPPxzOoJgcNBT/J7O9uoA952/1CJc=;
+        fh=LyX/irvPCarKCsQOTq1N/D3MOgEkf//VNxQw1sbH7vs=;
+        b=xSZ0xFDLbGrCXeCGrpAHQ8RBY1E1VLEq3iON8aW9YwHquWTFMu7K6W5A7tda56VlMi
+         T9dOgT+h5HmGCafVtkqAfTldAPC0y+JbrzdPxn5RddKLrw61HS+9ubejcnjNAOxWl5Ih
+         7lAufUTeU8qnSQiJ+6TtPAgB7Iaz89dCte9fnhxOQY0GPgFJ49PVt2HjPaB1l5hoJJIW
+         N22WdsbJxHEkTHsfg9JciAyxa99atRPEOeeHipCZaofTxBWopffuRC0cjFAQd+7JtxLS
+         OXomda4wB9RRl0nQhorcklVQ1gRilCmVU2A8VE10VRT9RWC/JkT9kBn9Ay/6+QTmqmI5
+         EIiw==;
+        darn=voussoir.net
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=ZqENWClh;
+       spf=pass (google.com: domain of zaybkhanna9868@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=zaybkhanna9868@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=e-technip-site.20230601.gappssmtp.com; s=20230601; t=1711190897; x=1711795697; darn=voussoir.net;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:x-original-authentication-results
+         :x-original-sender:to:subject:message-id:date:from:mime-version:from
+         :to:cc:subject:date:message-id:reply-to;
+        bh=bauVLt/iqUn9MQdPPxzOoJgcNBT/J7O9uoA952/1CJc=;
+        b=ykZ10fds3pBcoGPb137WTYF9YHQboM5saUKGIvCY+ER/WrcYNSs/AfpxRB0AoDtvE3
+         ma2w2nxFM7Cmvp2cGYAqpJkOtXq60RozGjqv2K85fvwqMCQihQ47NrZF9DRRQ5NgecZt
+         +A9RY++z8HyfAhlcN+MaOTq2UhhlH4drZBvoG68/cwxn6hCwYwo5IKn1xjJoVgPwKmts
+         y7B9EynQFt704Cw6cMjr5CpsN4pFkO1YPEMsF/g6Bv00a5luxFuh4UjdUFJaSFO67gL2
+         drHNj0hpHwDKPW9H1BOrdzuEKeNI+oKD3AbI0ULfUwicTlYFAhikxu8/Y94hPhul7G78
+         /FUA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1711190897; x=1711795697;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :x-spam-checked-in-group:list-id:mailing-list:precedence
+         :x-original-authentication-results:x-original-sender:to:subject
+         :message-id:date:from:mime-version:x-beenthere:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=bauVLt/iqUn9MQdPPxzOoJgcNBT/J7O9uoA952/1CJc=;
+        b=sGdwiPuFAMSIHqO6XhqwCxioqaiFNIuaz7Iijv71ZF+iww0gk6FaMlzT+FaMd4oiue
+         SR4Jubs0CbRyQmjMyBvBM1G7Wz//ZgNVA+1iuObOssJNgKDHIiti4VFmFTsNv6bzZXel
+         9MBY7zeEV06ReU2eRbXDkONW5kRVA2WSlymBkrc855gw9x7OR5EaDTOAxp+FsMNlbPEE
+         8xsdJF/HwmyVe6p4C0HmNLm+lmFon1X2tvMCbn7Gz2Ucs30/t7NNLTHH+0HluZTrMRhz
+         oKpOr1hH0biGzwHqBTrxqHFhPtw9R+ENbPBAdLEFEBQVlATrN+xoeMqDfMi7fci20lmU
+         liWA==
+X-Forwarded-Encrypted: i=2; AJvYcCWv0eA5wOWxD7no5f0yxuv8+9QbY2UrVt5IG70qPkiZwqodKXJqJr05SFVabnlR9xGs9024/7uPyM4BtcIINDIv0jWWIoU=
+X-Gm-Message-State: AOJu0YyXr1aqRUHmeqVYJDU1pLxQywqI0y5Iu3u2b1XjE7hdfKDRLtEk
+    4tYSkTq8NlAbQOfS0vA1zEwWRUcZcya0Zfd1mRhlJYx3pEHiACEepgOYyYvl39c=
+X-Google-Smtp-Source: AGHT+IHT5kP02XyBqi9/zJWc6419adu9+bxlYn4cGIAExa+EBlMQhJh0TSz4grd9mdpVLcrL+14Tdg==
+X-Received: by 2002:a17:90a:f305:b0:2a0:3813:773b with SMTP id ca5-20020a17090af30500b002a03813773bmr1841369pjb.9.1711190896795;
+        Sat, 23 Mar 2024 03:48:16 -0700 (PDT)
+X-BeenThere: 8mar@e-technip.site
+Received: by 2002:a17:90b:4b10:b0:2a0:2b14:7b50 with SMTP id
+ lx16-20020a17090b4b1000b002a02b147b50ls1234383pjb.1.-pod-prod-07-us; Sat, 23
+ Mar 2024 03:47:51 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCUbCUDuujcQbiYWMKOtjsRG2/ghX2eEB5yxQHPBQMHEnKNQb/F3Z2dfCiUvWuY/eW2Uq8hhpgrQBYn4Nmeok+einLnb
+X-Received: by 2002:a17:90b:787:b0:2a0:4685:c102 with SMTP id l7-20020a17090b078700b002a04685c102mr1951085pjz.23.1711190871209;
+        Sat, 23 Mar 2024 03:47:51 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1711190871; cv=none;
+        d=google.com; s=arc-20160816;
+        b=tNhzKN9VPS0slSuvW5zhbtNGUocLmj6fgavnAT4nfq8fBiZfRT0IvoCH9UIjkzjnS4
+         5FGpsWM+TSiJgLyK/vNkJ6TCNZM0lQBLgc6M3My+4OmPV6c8RyD8y9GL+2C+gu5jEv25
+         SbHXN922yD0FSxHqEeifjCeC+5BglAwBpGqiOg+/ZLZnE/bkctUmOXqDOFu1lfsjNR75
+         AINmA2rftU8nXdoJimD9OB6O27jbG+vyodbKz/pfVji3I6BZ78tZsBYzyKIvCfNPOuZi
+         Iow9f3zVqu7hzNfXQ/BY9jb7r6ncng6B0NYeldxbJFa/BxkHAE5Re/l95hkNB8xN2Rw1
+         z+Hw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=bauVLt/iqUn9MQdPPxzOoJgcNBT/J7O9uoA952/1CJc=;
+        fh=wgYfL7XScwLlO3o9JLMd3Lu8Z81UGdsWZa5O9kgFk5E=;
+        b=op1eCPEZuPHUqzFcFZFr6EUTJkdOYLXhXEQijLKb1QezsSqhPHpSixphzr5nzrbgoJ
+         bi+uI3wK8ZcdENYPqS+zvnf9UzX1fCgUT18EHjvRncpi1+B1dcA2ZwykS3LglhIxu/u7
+         pqNx512u5i+krd1j5eQrlyJQofpXOpv/ejlLf3VH2LvBKeSlTRyCuCbUipqCTKDCzsIe
+         Ve+y6kvCcDFeK226Y3UlrUdsSXpbdV1ZUl0xlzFFZk5TycOan559GRVzUQVVsHjVn4nw
+         g9WIHk6mAnpV6pT1cetVauHQcGo2k/68wnnAaMUXnJAy9LMAwSz/DfgTlQDkwzTqDYGE
+         y4hw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=ZqENWClh;
+       spf=pass (google.com: domain of zaybkhanna9868@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=zaybkhanna9868@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id k89-20020a17090a4ce200b00298ed12190fsor1641826pjh.6.2024.03.23.03.47.51
+        for &lt;8mar@e-technip.site&gt;
+        (Google Transport Security);
+        Sat, 23 Mar 2024 03:47:51 -0700 (PDT)
+Received-SPF: pass (google.com: domain of zaybkhanna9868@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+X-Forwarded-Encrypted: i=1; AJvYcCUx81oygUakc5R/zGJHnHWFIG+yUYrxIft+8/ucaUwCdi1OKVHkpcCoK5XQxoUcVAK08lpXANYqJE4WccJlBsB6KDGa
+X-Received: by 2002:a17:90a:f40c:b0:29c:761e:3955 with SMTP id
+ ch12-20020a17090af40c00b0029c761e3955mr1704129pjb.17.1711190870474; Sat, 23
+ Mar 2024 03:47:50 -0700 (PDT)
+MIME-Version: 1.0
+From: Zayb Khanna &lt;zaybkhanna9868@gmail.com&gt;
+Date: Sat, 23 Mar 2024 16:17:40 +0530
+Message-ID: &lt;CAJpu3O31UVyOHLOQENaynyTU2gL=Xw+W_K3j+O2bbL3sAeWHbA@mail.gmail.com&gt;
+Subject: Reminder: Website &amp; App Solution...
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary=&quot;000000000000fa4b44061451ab09&quot;
+Bcc: 8mar@e-technip.site
+X-Original-Sender: zaybkhanna9868@gmail.com
+X-Original-Authentication-Results: mx.google.com;       dkim=pass
+ header.i=@gmail.com header.s=20230601 header.b=ZqENWClh;       spf=pass
+ (google.com: domain of zaybkhanna9868@gmail.com designates 209.85.220.41 as
+ permitted sender) smtp.mailfrom=zaybkhanna9868@gmail.com;       dmarc=pass
+ (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Precedence: list
+Mailing-list: list 8mar@e-technip.site; contact 8mar+owners@e-technip.site
+List-ID: &lt;8mar.e-technip.site&gt;
+X-Spam-Checked-In-Group: 8mar@e-technip.site
+X-Google-Group-Id: 271529957316
+List-Post: &lt;https://groups.google.com/a/e-technip.site/group/8mar/post&gt;, &lt;mailto:8mar@e-technip.site&gt;
+List-Help: &lt;https://support.google.com/a/e-technip.site/bin/topic.py?topic=25838&gt;,
+ &lt;mailto:8mar+help@e-technip.site&gt;
+List-Archive: &lt;https://groups.google.com/a/e-technip.site/group/8mar/&gt;
+List-Subscribe: &lt;https://groups.google.com/a/e-technip.site/group/8mar/subscribe&gt;,
+ &lt;mailto:8mar+subscribe@e-technip.site&gt;
+List-Unsubscribe: &lt;mailto:googlegroups-manage+271529957316+unsubscribe@googlegroups.com&gt;,
+ &lt;https://groups.google.com/a/e-technip.site/group/8mar/subscribe&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hello,</p>
+        <p>I hope you are doing well.</p>
+        <p>It&#x27;s been a long time since we last connected. I just wanted to know if you</p>
+        <p>are interested in our services or not. If yes, then please let me know your</p>
+        <p>detailed requirement so that we can discuss that in depth and take it</p>
+        <p>further from there and provide you with the best cutting-edge solution to</p>
+        <p>nail down your business from backend to frontend.</p>
+        <p>I would really appreciate a response from your end.</p>
+        <p>Best Regards,</p>
+        <p>Zayb</p>
+        <p>Hello,</p>
+        <p>We are a Digital Marketing Company from India.</p>
+        <p>We are providing Affordable best Websites and Mobile Apps with extra added</p>
+        <p>features to our clients which beat their competitors in terms of sale.</p>
+        <p>*We are providing:*</p>
+        <p>1.      *PSD Conversion*</p>
+        <p>1.) Responsive Website (Design &amp; Redesign)</p>
+        <p>2.) Wordpress Conversion</p>
+        <p>3.) Joomla Conversion</p>
+        <p>4.) E-Commerce Conversion</p>
+        <p>5.) Magento Conversion</p>
+        <p>2.      *CMS Website Design*</p>
+        <p>1.) WordPress Theme Design &amp; Customization</p>
+        <p>2.) Custom themes, Plugins &amp; Widget Development</p>
+        <p>3.) WordPress CMS Configuration, Development, Customization</p>
+        <p>4.) WORDPRESS Installation &amp; Maintenance</p>
+        <p>5.) WORDPRESS Ecommerce Websites</p>
+        <p>6.) Custom Templates, Modules, Plugins Design &amp; Development</p>
+        <p>3.      *Mobile App Services*</p>
+        <p>1.) Custom Android Application Development</p>
+        <p>2.) Android Enterprise Application Development</p>
+        <p>3.) Android Productivity Application Development</p>
+        <p>4.) Maintenance and Support for Android Apps</p>
+        <p>5.) Android Application Testing</p>
+        <p>If you are interested in our service, please share idea&#x27;s with us (which</p>
+        <p>will remain confidential) with your website URL for healthy communication.</p>
+        <p>I am looking forward to hearing from you soon. Thanks in advance for your</p>
+        <p>consideration.</p>
+        <p>*Thanks*,</p>
+        <p>Zayb</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Diristhi Singh &lt;sdiristhi@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;dirishti14mar+bncBCVLLH6YZ4CBB6PQ6GXQMGQE6UJF65Y@w4sol.co.in&gt;
+        <p><b>To</b>: undisclosed-recipients:;
+        <p><b>Bcc</b>: dirishti3@w4sol.co.in
+        <p><b>Subject</b>: Website Ranking Proposal...
+        <p><b>Date</b>: Thu, 21 Mar 2024 23:41:48 +0530
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=0.72 required=5 tests=ARC_SIGNED,ARC_VALID,DKIM_ADSP_CUSTOM_MED,DKIM_SIGNED,DKIM_VALID,FREEMAIL_FROM,HTML_MESSAGE,MAILING_LIST_MULTI,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,PURELYMAIL_IP_REPUTATION,PM_DMARC autolearn=unavailable autolearn_force=no version=4.0.0
+X-Pm-Spam-PM-DMARC: 5;Gmail p=none policy exception
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -2.18;EffectiveIp=209.85.167.70,SpamProbability=0.05
+Return-Path: &lt;dirishti14mar+bncBCVLLH6YZ4CBB6PQ6GXQMGQE6UJF65Y@w4sol.co.in&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: contact@voussoir.net
+X-Pm-Original-To: contact@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of w4sol.co.in designates 209.85.167.70 as permitted sender) smtp.mailfrom=w4sol.co.in; dkim=pass header.i=w4sol-co-in.20230601.gappssmtp.com; dmarc=fail (p=none) header.from=sdiristhi@gmail.com
+Received: from mail-lf1-f70.google.com (EHLO mail-lf1-f70.google.com) ([209.85.167.70])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 776493289
+          for &lt;contact@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Thu, 21 Mar 2024 18:12:33 +0000 (UTC)
+Received: by mail-lf1-f70.google.com with SMTP id 2adb3069b0e04-513eee2dd2fsf1206337e87.1
+        for &lt;contact@voussoir.net&gt;; Thu, 21 Mar 2024 11:12:33 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1711044752; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=KlnogQaTurdybF2YQbUEFLPDgL++8B0Ejyjzw3KMlPLbO5/6yYLjBblQCnkH1IOEV0
+         JVZkQa2Sm7sdFGxGntSG8K26SNqjOmW4aN6YvzRiLuNFsNNQkOFV2wAtM/Eyx/V6Gfmy
+         63l7YT/2UeoW5wUmkRAe0RX194FoHJ8w/LbRN0uM61gqjiDtdMkQOKfpxhb5ExNZ5Av1
+         jK+7FS6AFh0VkcmBFvmUwt+5oMl/RcLDppbIhPqXlHxO0LWGBjnM7BeymfS/B6bx7Gz2
+         suaSFNweWzMBcdr71FgZ+rKU5SKZUzF9AvWghAq3SNFti49x4nLAIG6cgiMeFCca8bdu
+         6mew==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=ld7HeWNnQwG7KSNJuIh9PPMyua0OEBVDjkXR6VpqoUE=;
+        fh=CvC7hTYEk5fi607yEX2wSptlHDSkDu+95rNNeK43puU=;
+        b=WSv334BkIwukf0N+grDZ5LItROZ764cxnTsKCGlHdVZWKF72EnhoZfT4yHeiZGjJKV
+         XB3wEvXnQRSlOqETINrb8c/Ky43NNp8hVnz4Fv0i1WsH4IHsoPpmOStaz/4JcaMtr4DS
+         CjYe6gHLp3a/q1OmfSkJJlMpSCHUU/X8CHWwuUUNL8EE3vyXJEbzNncO1O0cqIIgrQ/R
+         SjpOgen4wemShC05BkgyeDnJDS0xaaN+aA9402TS4YBgRFTV7+/d2nFhxuO8hC17uMui
+         GiS3o29a2csCwgWQ1HEB9Q5ZSo6DA5C3eHy7WF18stD/PgRO5Aly1CIQnM0KI3i/9Vpw
+         L5eg==;
+        darn=voussoir.net
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=IM9f+pS7;
+       spf=pass (google.com: domain of sdiristhi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sdiristhi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=w4sol-co-in.20230601.gappssmtp.com; s=20230601; t=1711044752; x=1711649552; darn=voussoir.net;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:x-original-authentication-results
+         :x-original-sender:to:subject:message-id:date:from:mime-version:from
+         :to:cc:subject:date:message-id:reply-to;
+        bh=ld7HeWNnQwG7KSNJuIh9PPMyua0OEBVDjkXR6VpqoUE=;
+        b=iYudHx2MTd29Pom7doNdMmbUHZukOqDtqQf/ZecZZcVHJ33XR+ix5N4zc9Tl4B+G5J
+         6Il58wt1H21fUDixkfWMa06Lxkd8ervKd+FP8vpEjpaToW308Fv+HNRXSb6rwbrepqgT
+         PqD5UfS7yX7C0qQn8wRK7J0tMkuBtzPusj3G9eQZmN2xCsoILLnrPKJs2gEMnpuL4jQ4
+         dAwMSk/5ObNsq/OEdP4d0e0LpYLYWQl+xE1boE7+ay8R422Gx8Irnb8xw5821kjp1VCB
+         LfVg9vJK8+MNoDbaQcPVKHZo46/fFWkmFNwfKRu2XkuAZEzS9QqEJerQ6iuAMTDp0RdV
+         UJSw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1711044752; x=1711649552;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :x-spam-checked-in-group:list-id:mailing-list:precedence
+         :x-original-authentication-results:x-original-sender:to:subject
+         :message-id:date:from:mime-version:x-beenthere:x-beenthere
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=ld7HeWNnQwG7KSNJuIh9PPMyua0OEBVDjkXR6VpqoUE=;
+        b=vGCf9qymKZdUcbstFmyhlLTtuLV7R7ljVUGMXOthaSDh2CHBjgC2zfOiucK2E8tHwr
+         q0KwyMXrWFcF7HrsNiZUlnceRAVUb2EAHn9u+0K3TitKFRn16Nw1oXgOlkNdU3EZG/UU
+         TdIULK+tOn4TqbCn+AjUOrWwQGr/p4+awZHDRelVz9Yj4uCqPp/UIyNO3ZaLhBHKXaxh
+         S5f40A1wUNQbwibyrnUU7PaxYj7yLfNxoOgBaxH+RTc02ZvkAbT9Ax9HA/Kuk9TBryYd
+         BaDLiAtNJoqbRtexNzrHLAWBnv8bttKdCsYvKLTCx/fJ++9Wj2R9d3PRH9VGQ/BXYOOt
+         JDJQ==
+X-Forwarded-Encrypted: i=2; AJvYcCVfjcOWmFHwKrD66lhSVFPjZCC2TktcLZm0+ZrKIn+w3GD5OT32aCsd6KKHoTgPZRxnAkLC5CPxEjoL3QXzkJMj8Ia4Xg==
+X-Gm-Message-State: AOJu0Ywfv1kLbWKLGTR8M6toktiUvnPfPDXkb0h0DGrR6+JqmZ7N8b2S
+    eb8rc4Jc9jxXYv76EIltMfG7gqDPoFQhHF3uVXbbOK3/1f+po8tIZTQVNCarG1Y=
+X-Google-Smtp-Source: AGHT+IGEka1Lhw9M2xDX0n4BU6AM2JGR6jIUQcXn2dxbsxLTIVG8jgjrDKKw83hpjUmOqVBE7xoXWQ==
+X-Received: by 2002:a19:8c55:0:b0:515:8625:ae97 with SMTP id i21-20020a198c55000000b005158625ae97mr134878lfj.37.1711044752253;
+        Thu, 21 Mar 2024 11:12:32 -0700 (PDT)
+X-BeenThere: dirishti14mar@w4sol.co.in
+Received: by 2002:a05:6512:39cd:b0:513:a093:d898 with SMTP id
+ k13-20020a05651239cd00b00513a093d898ls385745lfu.0.-pod-prod-01-eu; Thu, 21
+ Mar 2024 11:12:08 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCWGoGjPCErHKMNXGZfBIx62YJg4V9HrnS032fM+ThKtcaHKrtOQGp9CaNbrwxq4FiJRVq8vNTVoOXtXbdZk7ZQSiiDhULzojMyq
+X-Received: by 2002:ac2:5633:0:b0:513:c988:71d4 with SMTP id b19-20020ac25633000000b00513c98871d4mr115209lff.23.1711044727504;
+        Thu, 21 Mar 2024 11:12:07 -0700 (PDT)
+X-BeenThere: dirishti3@w4sol.co.in
+Received: by 2002:a05:6402:3202:b0:568:9c25:e41a with SMTP id
+ g2-20020a056402320200b005689c25e41als962929eda.0.-pod-prod-01-eu; Thu, 21 Mar
+ 2024 11:11:57 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCVhpR+RHrevD3izHRY1E8mtjnrJKFpwey0T4R86CKeSG86U6pEtvgqGYmTv0pRmIVPVTwKlwiMSJxTssdDdzFNqu4E1C34=
+X-Received: by 2002:a17:906:508:b0:a46:bd83:70a7 with SMTP id j8-20020a170906050800b00a46bd8370a7mr159004eja.2.1711044716998;
+        Thu, 21 Mar 2024 11:11:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1711044716; cv=none;
+        d=google.com; s=arc-20160816;
+        b=XASiD1zfV4RwKr5cPKOo/GRdksGK41ohalNNgEJ1adQKBn3m+sWx8H/s6O+DM1A9Ru
+         VvMmkkaqZDQ4ue0kAM1Q5oiZjekodYte0SzVtew3p1oyESIBma+iFNbluAgIPMoFPD2R
+         bz1HZKtqryugtTf+kc3bA3l9KlF9ZIZtvjkPmErt+LnBUNYs8DlZ1Payt8jB/Wgyk1hk
+         6/PhYC3zzVWdKn+ARn/x5txhOteHYJO4NLngLwA7mWqQwJyuGoHctTNkTjrTMDDmIlSc
+         AlqGTehjHHQFdjp4dT7YxbUiHzHgtdTcfUhDq7qdE3Mj4pZs+18x90quSFt+fLWYG/W9
+         mzTQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=ld7HeWNnQwG7KSNJuIh9PPMyua0OEBVDjkXR6VpqoUE=;
+        fh=pHRRNtVHm7FNT2DDvy5CP2ffREYgL/Pjey0mZFR2NHE=;
+        b=SCsbbaUJRr5jK710LfToNhG76/oOnJPegEb3FcaYS3JnUSMSYDxFedXPoSu8C+77mj
+         zzWqM+Ywwa+gybn+K7MSsT8q/mhXIMD6R5k6D46+LyU32lLZBSTM895d2rR9CeDtMHJm
+         eNEIuauZ9fezKpphBYOg3yWZZjiF9/LbLUSGR7VQaC3n8QWJ4GknQhKY2g0skDrXwSvq
+         v4H3OTMMW6ua8YG3Pec3aMY+MhKdoAg+EMksftOaEFo3igDGS7quWbC6bVkn5Ku5hFRZ
+         lKFC+YbNazGvGtFe2A7OcnGr4MmqwmsTLP4Ghxk0O2ItmBeQnUNzBXW1voL0Rt+FHBPo
+         Wn6w==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=IM9f+pS7;
+       spf=pass (google.com: domain of sdiristhi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sdiristhi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id cb9-20020a170906a44900b00a470625867dsor159027ejb.0.2024.03.21.11.11.56
+        for &lt;dirishti3@w4sol.co.in&gt;
+        (Google Transport Security);
+        Thu, 21 Mar 2024 11:11:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sdiristhi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+X-Forwarded-Encrypted: i=1; AJvYcCXlvgfmR0Gp5iao20my2zA2LLfpf82hHrAdld4++GbqVg8QUPkH5mxghoO/tcv0VleWPQUvsJSbIjRlpNAVXBkQ/+y5+A8=
+X-Received: by 2002:a17:906:af0f:b0:a46:8d95:ff7e with SMTP id
+ lx15-20020a170906af0f00b00a468d95ff7emr150383ejb.21.1711044716167; Thu, 21
+ Mar 2024 11:11:56 -0700 (PDT)
+MIME-Version: 1.0
+From: Diristhi Singh &lt;sdiristhi@gmail.com&gt;
+Date: Thu, 21 Mar 2024 23:41:48 +0530
+Message-ID: &lt;CAPCNT3NXXjG_tmaEuhPRTcUx3xn7Y9HCtNAd9+kmUa1+gS7A5g@mail.gmail.com&gt;
+Subject: Website Ranking Proposal...
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary=&quot;0000000000008088d606142fa449&quot;
+Bcc: dirishti3@w4sol.co.in
+X-Original-Sender: sdiristhi@gmail.com
+X-Original-Authentication-Results: mx.google.com;       dkim=pass
+ header.i=@gmail.com header.s=20230601 header.b=IM9f+pS7;       spf=pass
+ (google.com: domain of sdiristhi@gmail.com designates 209.85.220.41 as
+ permitted sender) smtp.mailfrom=sdiristhi@gmail.com;       dmarc=pass (p=NONE
+ sp=QUARANTINE dis=NONE) header.from=gmail.com
+Precedence: list
+Mailing-list: list dirishti14mar@w4sol.co.in; contact dirishti14mar+owners@w4sol.co.in
+List-ID: &lt;dirishti14mar.w4sol.co.in&gt;
+X-Spam-Checked-In-Group: dirishti3@w4sol.co.in
+X-Google-Group-Id: 621968901109
+List-Post: &lt;https://groups.google.com/a/w4sol.co.in/group/dirishti14mar/post&gt;, &lt;mailto:dirishti14mar@w4sol.co.in&gt;
+List-Help: &lt;https://support.google.com/a/w4sol.co.in/bin/topic.py?topic=25838&gt;,
+ &lt;mailto:dirishti14mar+help@w4sol.co.in&gt;
+List-Archive: &lt;https://groups.google.com/a/w4sol.co.in/group/dirishti14mar/&gt;
+List-Subscribe: &lt;https://groups.google.com/a/w4sol.co.in/group/dirishti14mar/subscribe&gt;,
+ &lt;mailto:dirishti14mar+subscribe@w4sol.co.in&gt;
+List-Unsubscribe: &lt;mailto:googlegroups-manage+621968901109+unsubscribe@googlegroups.com&gt;,
+ &lt;https://groups.google.com/a/w4sol.co.in/group/dirishti14mar/subscribe&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi,</p>
+        <p>Would you like to increase the traffic of your website? Would you like to</p>
+        <p>be listed at the top of Google for multiple search phrases (keywords)</p>
+        <p>relevant to your products or services?</p>
+        <p>We provide a complete solution for your online marketing needs.</p>
+        <p>*Our steps and the activities to rank your website include:-*</p>
+        <p>1.      Keywords Research</p>
+        <p>2.      Keywords Optimization</p>
+        <p>3.      Submission to Search Engines and Directories</p>
+        <p>4.      Submission to Article Directories</p>
+        <p>5.      Competition Analysis</p>
+        <p>6.      Optimized Content Creation</p>
+        <p>Contact us for the best quote for your website &amp; we will guarantee to rank</p>
+        <p>your website on the first page of Google.</p>
+        <p>Look forward to hearing from you.</p>
+        <p>Kind Regards,</p>
+        <p>*Dirishti*</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Lee Shau Kee&quot; &lt;cs@lspmi.co.id&gt;
+        <p><b>Reply-To</b>: leeshauke@gmail.com
+        <p><b>Return-Path</b>: &lt;cs@lspmi.co.id&gt;
+        <p><b>To</b>: Recipients &lt;cs@lspmi.co.id&gt;
+        <p><b>Subject</b>: Re:
+        <p><b>Date</b>: Wed, 20 Mar 2024 12:22:11 -0700
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=9.26 required=5 tests=FORGED_SPF_HELO,FREEMAIL_FORGED_REPLYTO,HTML_MESSAGE,LOTS_OF_MONEY,MISSING_MID,MONEY_FREEMAIL_REPTO,RCVD_IN_BL_SPAMCOP_NET,SPF_HELO_PASS,TVD_RCVD_IP,TVD_RCVD_IP4,XFER_LOTSA_MONEY,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.36;EffectiveIp=103.235.73.156,SpamProbability=0.44
+Return-Path: &lt;cs@lspmi.co.id&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: production@voussoir.net
+X-Pm-Original-To: production@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of lspmi.co.id designates 103.235.73.156 as permitted sender) smtp.mailfrom=lspmi.co.id; dmarc=pass (p=quarantine) header.from=cs@lspmi.co.id
+Received: from 103.235.73.156 (EHLO lspmi.co.id) ([103.235.73.156])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 1872313159;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Wed, 20 Mar 2024 21:42:46 +0000 (UTC)
+Received: from [194.169.175.197] (unknown [194.169.175.197])
+    by lspmi.co.id (Postfix) with ESMTPA id 3315C84EC2;
+    Wed, 20 Mar 2024 19:22:16 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=&quot;===============2079725994==&quot;
+MIME-Version: 1.0
+Subject: Re:
+To: Recipients &lt;cs@lspmi.co.id&gt;
+From: &quot;Lee Shau Kee&quot; &lt;cs@lspmi.co.id&gt;
+Date: Wed, 20 Mar 2024 12:22:11 -0700
+Reply-To: leeshauke@gmail.com
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hello,</p>
+        <p>I&#x27;m Lee Shau-kee, a Hong Kong business magnate, investor, and philanthropist. I&#x27;m the chairman and majority owner of Henderson Land Development, a property conglomerate with interests in property, hotels, restaurants and internet services. I gave away 25 percent of my personal wealth to charity and I also pledged to give away the rest of 25% this year. I have decided to donate $2,000,000.00 USD to you. If you are interested in my donation, do contact me for more info. I will also want you to be part of my Charity Foundation once you receive this money so we can join hands together to help the needy. contact us via email:</p>
+        <p>Warm Regard</p>
+        <p>Lee Shau-kee.</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: halley.p &lt;halley.p@qyglobaldata.com&gt;
+        <p><b>Return-Path</b>: &lt;halley.p@qyglobaldata.com&gt;
+        <p><b>Subject</b>: =?utf-8?B?TmV3IFRyZW5kcyBpbiBBc3BhcnRhbWUgTWFya2V0IDIwMjQg5biC?=
+        <p><b>Date</b>: Tue, 19 Mar 2024 15:47:27 +0800
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-0.43 required=5 tests=HTML_MESSAGE,MISSING_HEADERS,RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,SPF_HELO_NONE,T_KAM_HTML_FONT_INVALID,UNPARSEABLE_RELAY,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -1.63;EffectiveIp=115.124.28.2,SpamProbability=0.09
+Return-Path: &lt;halley.p@qyglobaldata.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of qyglobaldata.com designates 115.124.28.2 as permitted sender) smtp.mailfrom=qyglobaldata.com
+Received: from out28-2.mail.aliyun.com (EHLO out28-2.mail.aliyun.com) ([115.124.28.2])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 1145296848
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Tue, 19 Mar 2024 07:47:49 +0000 (UTC)
+X-Alimail-AntiSpam:AC=CONTINUE;BC=0.6980743|0.2398041;CH=green;DM=|AD|false|;DS=CONTINUE|ham_regular_dialog|0.462353-0.0803323-0.457314;FP=13069712057779613840|1|1|31|0|-1|-1|-1;HT=ay29a033018047187;MF=halley.p@qyglobaldata.com;NM=1;PH=DS;RN=245;RT=0;SR=0;TI=SMTPD_---.WqvRKqu_1710834447;
+Received: from SC-202006291339(mailfrom:halley.p@qyglobaldata.com fp:SMTPD_---.WqvRKqu_1710834447)
+          by smtp.aliyun-inc.com;
+          Tue, 19 Mar 2024 15:47:41 +0800
+Date: Tue, 19 Mar 2024 15:47:27 +0800
+From: halley.p &lt;halley.p@qyglobaldata.com&gt;
+Message-ID: &lt;7829B4E6-E731-4E20-913B-460192834AF1@qyglobaldata.com&gt;
+Subject: =?utf-8?B?TmV3IFRyZW5kcyBpbiBBc3BhcnRhbWUgTWFya2V0IDIwMjQg5biC?=
+ =?utf-8?B?5Zy66LCD5p+l?=
+Disposition-Notification-To: halley.p&lt;halley.p@qyglobaldata.com&gt;
+X-Mailer: MailMasterPC/5.0.8.1017 (6.1.7601)
+X-MailMaster-ShowOneRcpt: 1
+X-CUSTOM-MAIL-MASTER-SENT-ID: CE72CD1E-743F-4583-8F7D-25EA7039073C
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;=_mailmaster-65f9430f_0_29_=&quot;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hello.Recently we have published the 2024 version Aspartame market report analyzing the major market players in this industry, which might bring new information to you about the global market.</p>
+        <p>The following manufacturers are covered:</p>
+        <p>Ajinomoto Group</p>
+        <p>NutraSweet</p>
+        <p>Cargill Incorporated</p>
+        <p>Foodchem</p>
+        <p>Daesang</p>
+        <p>Merisant</p>
+        <p>Niutang Chemical</p>
+        <p>Gsweet</p>
+        <p>Hanguang Group</p>
+        <p>Vitasweet</p>
+        <p>Changmao Biochemical Engineering</p>
+        <p>Huaxing</p>
+        <p>Shaoxing Marina Biotechnology (Yamei Aspartame)</p>
+        <p>......</p>
+        <p>(Other manufacturers Information)</p>
+        <p>Segment by Type</p>
+        <p>Food Grade Aspartame</p>
+        <p>Pharma Grade Aspartame</p>
+        <p>Segment by Application</p>
+        <p>Food and Beverage Industry</p>
+        <p>Pharmaceutical Industry</p>
+        <p>Other</p>
+        <p>This report will walk you through the Aspartame market from the following aspects in: Consumption, Sales, Revenue, Price, Cost, Gross Margin, Market size, Market share, Growth Rate, Trends, etc.</p>
+        <p>If you need Sample report and quotation,please contact us!</p>
+        <p>Look forward to hearing from you!</p>
+        <p>Best wishes for 2024!</p>
+        <p>Halley Qi | Sales Manager</p>
+        <p>QY RESEARCH, INC.</p>
+        <p>E-mail: halley@qyresearch.com</p>
+        <p>Phone/WeChat: +86-13602875860(7*24 UTC+8)</p>
+        <p>World Leading Market Research Reports Publisher</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: sally@manlypower.com
+        <p><b>Reply-To</b>: sally &lt;sally@manlypower.com&gt;
+        <p><b>Return-Path</b>: &lt;77f7f666-e4f9-11ee-81d6-5254006286bf@send.manlycell.com&gt;
+        <p><b>To</b>: writing@voussoir.net
+        <p><b>Subject</b>: =?utf-8?q?Best_Time_to_Update_Your_Batteries?=
+        <p><b>Date</b>: Mon, 18 Mar 2024 15:30:55 +0800 (CST)
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=2.81 required=5 tests=DKIM_SIGNED,DKIM_VALID,HTML_IMAGE_ONLY_32,HTML_MESSAGE,MIME_HTML_ONLY,MIME_HTML_ONLY_MULTI,MPART_ALT_DIFF,SPF_HELO_PASS,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.01;EffectiveIp=117.50.6.216,SpamProbability=0.4
+Return-Path: &lt;77f7f666-e4f9-11ee-81d6-5254006286bf@send.manlycell.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of send.manlycell.com designates 117.50.6.216 as permitted sender) smtp.mailfrom=send.manlycell.com; dkim=pass header.i=send.manlycell.com
+Received: from ucmail212.sendcloud.org (EHLO ucmail212.sendcloud.org) ([117.50.6.216])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 1120524342
+          for &lt;writing@voussoir.net&gt;;
+          Mon, 18 Mar 2024 07:31:02 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+ d=send.manlycell.com; i=@send.manlycell.com; q=dns/txt; s=mail;
+ t=1710747060; h=date : from : reply-to : to : message-id : subject :
+ mime-version : content-type : list-unsubscribe : from :
+ list-unsubscribe-post;
+ bh=HRZshnNHvrlDh7ltmC8Eq0dOEqfBVGl2J1lsq9/m8mo=;
+ b=SIo9UD+2IxA0vV3LVD01rX9qTn9zJakzuXXdUrIO7qP1MUJr7ck6B2AztQq68dBbhnojC
+ LZWwaloBiATvRs8ik82ZyVqgCGqqDFX7TC51HpebbAR+06Y+rIu0zT19mwgcOW8bpTew93z
+ lMaNlSf6ucNoZF6cjI4Gu8d7od2N2Ko=
+Received: from sendcloud.api (Unknown [127.0.0.1])         by SendCloud Inbound Server with ESMTPA id 1A0DBC38-D081-463C-B9CC-1B4DC25FEC44.1         envelope-from &lt;sally@manlypower.com&gt; (authenticated bits=0); Mon, 18 Mar 2024 15:30:55 +0800
+Date: Mon, 18 Mar 2024 15:30:55 +0800 (CST)
+From: sally@manlypower.com
+Reply-To: sally &lt;sally@manlypower.com&gt;
+To: writing@voussoir.net
+Message-ID: &lt;1710747055188_107919_94037_7148.sc-10_9_6_181-inbound24@send.manlycell.com&gt;
+Subject: =?utf-8?q?Best_Time_to_Update_Your_Batteries?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary=&quot;----=_Part_15219202_930759810.1710747055175&quot;
+SC-Custom-account_id: 3698
+SC-Custom-send_type: s_type_batch
+SC-Custom-taskid: 61354
+SC-Custom-account: sales08@manlypower.com
+X-SENDCLOUD-UUID: 1710747055188_107919_94037_7148.sc-10_9_6_181-inbound24$writing@voussoir.net
+X-SENDCLOUD-LOG: 1710747055188_107919_94037_7148.sc-10_9_6_181-inbound24$writing@voussoir.net#writing@voussoir.net#278062#107919#25811092#false#false#-1#-1#5666000
+X-SENDCLOUD-LOG-NEW: MTcxMDc0NzA1NTE4OF8xMDc5MTlfOTQwMzdfNzE0OC5zYy0xMF85XzZfMTgxLWluYm91bmQyNCR3cml0aW5nQHZvdXNzb2lyLm5ldCN3cml0aW5nQHZvdXNzb2lyLm5ldCMyNzgwNjIjMTA3OTE5IzI1ODExMDkyI2ZhbHNlI2ZhbHNlIy0xIy0xIzU2NjYwMDA=
+List-Unsubscribe: &lt;mailto:25811092_278062_1710747055188_107919_94037_7148.sc-10_9_6_181-inbound24@send.manlycell.com&gt;, &lt;https://etrack01.com/track/unsubscribe2.do?p=eNp1kM1qwzAQhN9F9CiLXVm_OQXyCD2WIiRZbk38Eyy5IZS-e5WkEHIo7GHY-Zgd9o1rA4pTQihBjaCFBinRGFe1ReusgFY7jcKwHBsEZ51yaLAZ5rBsc8fFy3kdyjB_7L-WLedlWNmcSo3j0iCC5YQKq7nVlpLejzldL6FmEphiHBV5rO_zT1y0vZC8Nz70igfb84hceQgqtJr3na2IVEoBQFWprD4eAVlcJkK_yeuhOWy5LFPjY6y1ixs6siOtsqbSD7f4fLw5Clspnqyc5s6VyylVN9-EC77EzyfoL_2K-DFlMPvJz-PltJzTeuvyQ-9_pQLffwGEG29p&gt;
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hello dear,</p>
+        <p>Manly Battery here, a professional and reliable battery manufacturer exporting high quality Lithium Solar Battery for more than 10 years.</p>
+        <p>Our batteries are perfect for solar energy systems, solar street lights, and other solar equipment. We can provide a whole system of solar energy storage.</p>
+        <p>Moreover, we can also provide for other industrial applications.</p>
+        <p>Let&#x27;s talk about your specific needs.</p>
+        <p>Best regards,</p>
+        <p>Sally</p>
+        <p>SHENZHEN MANLY BATTERY CO,.LTD</p>
+        <p>Website: https://www.manlybattery.com/</p>
+        <p>I will reply within 24 hours (excluding holidays). Due to unstable internet connectin, if you do not receive it, pls send again or send email to following email address: sally@manlycell.com, sally@manlybattery.com. Or contact me on WhatsApp: +86 18682267412. Thank you!</p>
+        <p>点击这里取消订阅</p>
+        <p>click to unsubscribe &lt;https://etrack01.com/track/unsubscribe2.do?p=eNp1kM1qwzAQhN9F9CiLXVlaSTkF8gg9liJkWW1N_BMspSGUvnsVt7Tk0Nuw3zAz7JM0FkhyxjhDg2CUAa3RWl-1Q-edgtZ4g8qKHBsE7zx5tNgMc7ec516qh8s6lGF-3b8v55yXYRVzKjVOaosITjKunJHOOM5ewpjTrQmN0CBISCT2e25wm_FPnCUZqKfe9SBDJzGAiRStS9Q5CKbWME1EAFBVKmuIR0ARl4nxD_Z4aA7nXJapCTHW2cUPPduxlpyt7j9aQj5uhLDV6g7lNPe-XE-p0rwJ34US3-5MP-k3SxhTBrufwjxeT8slrduWT_79V67w-QtNWm8d&gt;</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Mayuri Kashyap &lt;mayurikashyap15@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;mayuri14mar+bncBC7OV7OHUEPBBOH6ZSXQMGQEUB443UQ@w4sol.co.in&gt;
+        <p><b>To</b>: undisclosed-recipients:;
+        <p><b>Bcc</b>: mayuri14mar@w4sol.co.in
+        <p><b>Subject</b>: PPC/ SMO...
+        <p><b>Date</b>: Thu, 14 Mar 2024 23:46:45 +0530
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=1.44 required=5 tests=ARC_SIGNED,ARC_VALID,DKIM_ADSP_CUSTOM_MED,DKIM_SIGNED,DKIM_VALID,FREEMAIL_FROM,HTML_MESSAGE,MAILING_LIST_MULTI,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,SUBJ_ALL_CAPS,PURELYMAIL_IP_REPUTATION,PM_DMARC autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PM-DMARC: 5;Gmail p=none policy exception
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -1.96;EffectiveIp=209.85.208.71,SpamProbability=0.07
+Return-Path: &lt;mayuri14mar+bncBC7OV7OHUEPBBOH6ZSXQMGQEUB443UQ@w4sol.co.in&gt;
+Delivered-To: ethan@dalool.net
+X-Pm-Known-Alias: info@dalool.net
+X-Pm-Original-To: info@dalool.net
+Authentication-Results: purelymail.com; spf=pass (domain of w4sol.co.in designates 209.85.208.71 as permitted sender) smtp.mailfrom=w4sol.co.in; dkim=pass header.i=w4sol-co-in.20230601.gappssmtp.com; dmarc=fail (p=none) header.from=mayurikashyap15@gmail.com
+Received: from mail-ed1-f71.google.com (EHLO mail-ed1-f71.google.com) ([209.85.208.71])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -621587171
+          for &lt;info@dalool.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Thu, 14 Mar 2024 18:17:44 +0000 (UTC)
+Received: by mail-ed1-f71.google.com with SMTP id 4fb4d7f45d1cf-5689f41cf4dsf639834a12.3
+        for &lt;info@dalool.net&gt;; Thu, 14 Mar 2024 11:17:44 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1710440264; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=pUB9vhLy/yAp44uPXiY4niaSCXmw/SNoJ/5jCBWRP7gkZqHND+OaIZ8M8jVCt/a7cL
+         yAraLnlYx0YNKQt/wsF3cCAF3rzupqxOV540Nsrw+BpntBf6FbleeP6NyLdHkthULZ9t
+         fZMziWPVJGw3TIhHuNnDpzPm8YSdLiMPbf27LaZTBGyJmhmtPvQ+04nQMPFY7+N0a0KH
+         qZlWwXQDLfM2fYQao/ZxWL8kFewp1caV+q2Z7ucD8CTSfbfAFzm4zWOtOWg1KENWXFFh
+         9ZKAMvcCdUAL3vlTeCt+Yw6Y1mFAD18yAxGG3XLWKIxNASlArW2CGqjH+eYMWx3P+98k
+         II9g==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=dPF0OdSJ9tQGfIOM2Q80RZcCOmH+4GxxUJMYONQIKjg=;
+        fh=RWwWeHVqOY2Q5vr5+CycQAPEkudzjcNmYBJOqpUTWVw=;
+        b=vRg/SnleI1xkYYrVBu89EcFEm/lV37xd5ieHTJvWWc3L0ydLX0d7xpevOPgzxDFWx1
+         znnSU3oupIDANYwSOXNYWhWu7WuAOcppH1iZSaRcijk3ULmD4AO0fAyOCAYkTyKwfblu
+         A5QO8W6D9qSMhMNFVXBXsIY3OZZCg6rmnLT2b5Opg1QdBuigUAf7xJKmn6Wzc0nmaFHK
+         GCV0fmcGB7Cfz0eDtcczwrYmi7ucljuO+mX6pHXc/hnzgr6IR7JvVDe8E3rGhQDCDZ24
+         5uwfWQYRkzYZYFvXycNuamkc4WluZdNSvXjUUCgNQYvPI2UYCs8L5TumRV2qQawZ6/rJ
+         hkAg==;
+        darn=dalool.net
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Mdy151hw;
+       spf=pass (google.com: domain of mayurikashyap15@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=mayurikashyap15@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=w4sol-co-in.20230601.gappssmtp.com; s=20230601; t=1710440264; x=1711045064; darn=dalool.net;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:x-original-authentication-results
+         :x-original-sender:to:subject:message-id:date:from:mime-version:from
+         :to:cc:subject:date:message-id:reply-to;
+        bh=dPF0OdSJ9tQGfIOM2Q80RZcCOmH+4GxxUJMYONQIKjg=;
+        b=siDVqU2+W4U/mS7C89wyj8d2wuRfZU15T+KtQs39kGxAzFyA3wfuSVU8bOGFjICbGK
+         CcO+AqySVG82KNSnLvLG0HE93klfcRYoh9huvanQCNYA2nJbSSOMXNcgGAq/LdI3llWO
+         gmNdl3l7aQ3EH88/mkPAVPxKIpKLTtrSScD0fN5cxSW2bGqHHSWF4pbpw/s5yGyhdm6b
+         uAA6fMBgbBQWlvctsaXitGsKOAzSqRycufutFKQDG+u2bYeVB0WwoiaAiBVyiN5xoD7i
+         nxLZP2yp1Fd/lDCk1z2dVlWCahl2RhbOL1FngvywLcXAEDDE9qbXykE1qpPXcnzUI6OX
+         VQLA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1710440264; x=1711045064;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :x-spam-checked-in-group:list-id:mailing-list:precedence
+         :x-original-authentication-results:x-original-sender:to:subject
+         :message-id:date:from:mime-version:x-beenthere:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=dPF0OdSJ9tQGfIOM2Q80RZcCOmH+4GxxUJMYONQIKjg=;
+        b=ujzreRftsGFRD+t6i6yJA3JHeqYOor+t+2XiVK8Oh2VxabImxZPhISqOw7FHdjHa1x
+         F60tkqSCyBzKBrzIkTjALe4im567R9SMYHJuTWRSY8Lrt4LuUQPpjugojI6fqHO4MuBc
+         tD2+XDA2AZj2Q188ge40WUP+Kej7q/es0YmKcvnQ6qScqhHZnyrLH+W5Tjk4JNISdRQP
+         v3BdRYJm6QoVlHxC4YkDjvMW9MqMeLldi80v0Hj+4JcZwtTtZc5dEOj5ZEtY80f7L+Vl
+         2Lr88GXjCctJSqK7aM1IYFJjG3f0MTst5DbJFc3w+bhQgva4nec0qdpPzq7GhLCVblJr
+         1L3A==
+X-Forwarded-Encrypted: i=2; AJvYcCWWy1NyXNn78mjOVO/pRkO0trNew+B9ZeWbl8BlXh+VwqfVStr+ecOGIQR6GdodHhyHuFXXKd6YnA5+JXgGGuI=
+X-Gm-Message-State: AOJu0YySbwbiZe5YbGyqSFrGROfl6bivEUZz0vtvf9flcMkAiLx+zZo7
+    0dBkZOfF1OwpbDWTcmqxv2RJWX5MAKoSA0vNS8R/N6tLfaJRKb2NFya0mmjj34U=
+X-Google-Smtp-Source: AGHT+IGSghF6FsoDDmQodnvYMOlERXXH8um+/UeXcqrmx4ZoQSpuIzKsJIQ3ng8tmmYa23be7cFpsQ==
+X-Received: by 2002:aa7:c909:0:b0:565:ebf3:e28a with SMTP id b9-20020aa7c909000000b00565ebf3e28amr1780104edt.31.1710440264056;
+        Thu, 14 Mar 2024 11:17:44 -0700 (PDT)
+X-BeenThere: mayuri14mar@w4sol.co.in
+Received: by 2002:aa7:d38b:0:b0:568:a664:eaa4 with SMTP id x11-20020aa7d38b000000b00568a664eaa4ls301627edq.2.-pod-prod-08-eu;
+ Thu, 14 Mar 2024 11:17:27 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCXz6ZylP7rd6uLwv+rTV3LnsziwyzFfOfW0dliA0R4wMD58ZL45goP/WnIRefpDSXLQn9RbC/mCNRxuMd05CiCzAgS8O/8Spw==
+X-Received: by 2002:a05:6402:538e:b0:568:9d31:2a75 with SMTP id ew14-20020a056402538e00b005689d312a75mr1785529edb.4.1710440246832;
+        Thu, 14 Mar 2024 11:17:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1710440246; cv=none;
+        d=google.com; s=arc-20160816;
+        b=iMzy3CLr0SHOk63YxE4gjSRBnn4/3YGWpyToVawUglsC+C+b6rbvF/VR+oh0Qy17lf
+         1dUOKIFM9AHd1koUiK/lLST4FnfNxHKFc3YUWHL4J6xGKyUbu+Wi0WuLk+DRhrIng7oT
+         GINJ+UGNpQX4NqSWaK1vgZYkn4X2YVzIU3zDLA0sdfVVWav69Rl0GDYm/mN5uyM++1b9
+         e02AGPr4w2ZJKPMFMfSPPGiO9jck6AFsNj/SKux9GcImAohihU/B5KKfjOV3oXJ3f7Fe
+         mh+FlcNY/P7RkZNUssea3UiXYWOu8WDObkBd2c9LCSSuubg3wt7XLol44gel831O4KQP
+         w0Zw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=dPF0OdSJ9tQGfIOM2Q80RZcCOmH+4GxxUJMYONQIKjg=;
+        fh=1wAQqh64hCD8CDxcQlO6LBqa0re29yO/DwfsRR6K4zE=;
+        b=1H2uXSl+IMUDsu+aC9C+IMdbLXuIFnLPo68f5WiRbDTglZHLfLndAsG3Zdq+h9VXdH
+         cWnPE7TLmLBR7aGkWCT24TBcZ4RYUMwEBqMZ3FneZQL+GVP7uRF26bB+4uwvzHpspdTd
+         ckDJgWCdoFedt0R5NEsbqwhdJ26wFNiW7+xX9GvgYogAPaSPUqMQM78rXF/bLjgVoThP
+         C44hg+NTavZRuwbY2d5glFUtnV3G0cU6O8O37KJ+dLK4lA7ZD0aeBqJ64GbZ0xwRmAHx
+         Uv4JXMFDFdFW//cK+8cEAbFl5MXO0uzME7m84+uqTy+KLj1TdaNdUJUp018QS2hH/LNR
+         2Wbw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Mdy151hw;
+       spf=pass (google.com: domain of mayurikashyap15@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=mayurikashyap15@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id t21-20020a50ab55000000b0056836c2c1b4sor608768edc.12.2024.03.14.11.17.26
+        for &lt;mayuri14mar@w4sol.co.in&gt;
+        (Google Transport Security);
+        Thu, 14 Mar 2024 11:17:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mayurikashyap15@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+X-Forwarded-Encrypted: i=1; AJvYcCU1dLdTPqawmPrGJT72F0w8ajQ9m7wMshqkRJMiy3KbIa8ddFMd4tLq1QG5GK0aPHPj6cbdPbhcvXuyYbVXTvlqlO1yR2RbSg==
+X-Received: by 2002:a05:6402:2411:b0:566:b442:16cf with SMTP id
+ t17-20020a056402241100b00566b44216cfmr1869164eda.13.1710440246045; Thu, 14
+ Mar 2024 11:17:26 -0700 (PDT)
+MIME-Version: 1.0
+From: Mayuri Kashyap &lt;mayurikashyap15@gmail.com&gt;
+Date: Thu, 14 Mar 2024 23:46:45 +0530
+Message-ID: &lt;CAHrntkrk03+Lrwp9WAuJ_qjZ1oD3WU97ix_Rsmcfm0_wewc7Ng@mail.gmail.com&gt;
+Subject: PPC/ SMO...
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary=&quot;00000000000046742b0613a2e76b&quot;
+Bcc: mayuri14mar@w4sol.co.in
+X-Original-Sender: mayurikashyap15@gmail.com
+X-Original-Authentication-Results: mx.google.com;       dkim=pass
+ header.i=@gmail.com header.s=20230601 header.b=Mdy151hw;       spf=pass
+ (google.com: domain of mayurikashyap15@gmail.com designates 209.85.220.65 as
+ permitted sender) smtp.mailfrom=mayurikashyap15@gmail.com;       dmarc=pass
+ (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Precedence: list
+Mailing-list: list mayuri14mar@w4sol.co.in; contact mayuri14mar+owners@w4sol.co.in
+List-ID: &lt;mayuri14mar.w4sol.co.in&gt;
+X-Spam-Checked-In-Group: mayuri14mar@w4sol.co.in
+X-Google-Group-Id: 699522716858
+List-Post: &lt;https://groups.google.com/a/w4sol.co.in/group/mayuri14mar/post&gt;, &lt;mailto:mayuri14mar@w4sol.co.in&gt;
+List-Help: &lt;https://support.google.com/a/w4sol.co.in/bin/topic.py?topic=25838&gt;,
+ &lt;mailto:mayuri14mar+help@w4sol.co.in&gt;
+List-Archive: &lt;https://groups.google.com/a/w4sol.co.in/group/mayuri14mar/&gt;
+List-Subscribe: &lt;https://groups.google.com/a/w4sol.co.in/group/mayuri14mar/subscribe&gt;,
+ &lt;mailto:mayuri14mar+subscribe@w4sol.co.in&gt;
+List-Unsubscribe: &lt;mailto:googlegroups-manage+699522716858+unsubscribe@googlegroups.com&gt;,
+ &lt;https://groups.google.com/a/w4sol.co.in/group/mayuri14mar/subscribe&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hello,</p>
+        <p>I am representing a leading SEO Outsourcing company, based in India. We</p>
+        <p>have a team of over 150+ Full time SEO professionals working on over 500+</p>
+        <p>Projects.</p>
+        <p>We primarily work at SEO Reseller Model; having 150 business tie-ups all</p>
+        <p>over the globe.</p>
+        <p>*We are assisting our partners in following verticals:-*</p>
+        <p>• Full SEO Services</p>
+        <p>• PPC/ SMO</p>
+        <p>• SEO Back Office Work</p>
+        <p>• Responsive Website Designing &amp; Programming</p>
+        <p>Email us back about your requirement to get a full SEO Quotation.</p>
+        <p>Feel free to ask, if you have any query. I will be happier to assist you.</p>
+        <p>We are looking for your Positive response.</p>
+        <p>*Kind Regards,*</p>
+        <p>*Mayuri*</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Steve Liu &lt;steve@cnnetworks.net&gt;
+        <p><b>Return-Path</b>: &lt;steve@cnnetworks.net&gt;
+        <p><b>To</b>: writing &lt;writing@voussoir.net&gt;
+        <p><b>Subject</b>: voussoir
+        <p><b>Date</b>: Thu, 14 Mar 2024 03:16:59 +0800
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=0.96 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_MESSAGE,SPF_HELO_PASS,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 1.06;EffectiveIp=209.141.48.41,SpamProbability=0.31
+Return-Path: &lt;steve@cnnetworks.net&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of cnnetworks.net designates 209.141.48.41 as permitted sender) smtp.mailfrom=cnnetworks.net; dkim=pass header.i=cnnetworks.net; dmarc=pass (p=none) header.from=steve@cnnetworks.net
+Received: from mx.cnnetworks.net (EHLO mx.cnnetworks.net) ([209.141.48.41])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 625913981
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Wed, 13 Mar 2024 19:18:13 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=mail; d=cnnetworks.net;
+ h=Date:From:To:Subject:Mime-Version:Message-ID:Content-Type;
+ i=steve@cnnetworks.net;
+ bh=k+psUF3+vNlyVqrIYaB8pC3QpPsLlO6g0xeLBWSG8cc=;
+ b=dHqq2EaH+byH0Yro3dVvaG5rwpoiZXaO3RNyB0Z+LbS8s9TN9m6weN7uYq3nPeeZuW9gH8KW2RAX
+   n0IuzB1xiEMMl1WUSLjuh6sOka2EFEi94yzRPPgPgvtDEZ2G5Ebc2NHdcoGfMC1fWxspuoH9wSuI
+   VK9/ugPLs58PTiJZQh8=
+Date: Thu, 14 Mar 2024 03:16:59 +0800
+From: Steve Liu &lt;steve@cnnetworks.net&gt;
+To: writing &lt;writing@voussoir.net&gt;
+Subject: voussoir
+X-Priority: 3
+X-Has-Attach: no
+X-Mailer: Foxmail 7, 1, 3, 52[cn]
+Mime-Version: 1.0
+Message-ID: &lt;202403140317063025056@cnnetworks.net&gt;
+Content-Type: multipart/alternative;
+    boundary=&quot;=====001_Dragon376672737581_=====&quot;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>(It&#x27;s very urgent, therefore we kindly ask you to forward this email to your CEO. If you believe this has been sent to you in error, please ignore it. Thanks)Dear CEO,This is a formal email. We are the Domain Registration Service company in China. Here I have something to confirm with you. We received an application from Hongshun Ltd on March 14, 2024. They want to request &quot;voussoir&quot; as their internet keyword and China (CN) domain names (voussoir.cn, voussoir.com.cn, voussoir.net.cn, voussoir.org.cn). But after checking it, we find this name conflict with your company name or trademark. In order to deal with this matter better, it&#x27;s necessary to send email to you and confirm whether this company is your distributor in China? Best Regards</p>
+        <p>Steve Liu   Service &amp; Operations Manager</p>
+        <p>China Registry (Head Office)</p>
+        <p>Tel: +86-2161918696</p>
+        <p>Fax: +86-2161918697</p>
+        <p>Mob: +86-13816428671</p>
+        <p>No. 1780 Wuzhong Road, Shanghai 201103, China</p>
+        <p>*****************************************</p>
+        <p>This email contains privileged and confidential information intended for the addressee only. If you are not the intended recipient, please destroy this email and inform the sender immediately. We appreciate you respecting the confidentiality of this information by not disclosing or using the information in this email.</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Pawan Singh &lt;pawansinghwebservices@outlook.com&gt;
+        <p><b>Return-Path</b>: &lt;pawansinghwebservices@outlook.com&gt;
+        <p><b>Subject</b>: First Page On Google
+        <p><b>Date</b>: Wed, 13 Mar 2024 09:14:03 +0000
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-0.17 required=5 tests=ARC_SIGNED,ARC_VALID,DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FORGED_SPF_HELO,FREEMAIL_FROM,HTML_MESSAGE,MISSING_HEADERS,RCVD_IN_MSPIKE_H2,SPF_HELO_PASS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -1.17;EffectiveIp=52.103.64.5,SpamProbability=0.12
+Return-Path: &lt;pawansinghwebservices@outlook.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of outlook.com designates 52.103.64.5 as permitted sender) smtp.mailfrom=outlook.com; dkim=pass header.i=outlook.com; dmarc=pass (p=none) header.from=pawansinghwebservices@outlook.com
+Received: from mail-eastasiaazolkn19012005.outbound.protection.outlook.com (EHLO HK2PR02CU002.outbound.protection.outlook.com) ([52.103.64.5])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 923361811
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.2 cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384);
+          Wed, 13 Mar 2024 09:14:28 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=WMkqsSCaBrE7C/Uiu8jiz0s4vaDSpFio82xB/TMEzBRJAEwwWSS8gkVac3gANFwdez0NjWgaISyV+S+ml+YWiAtZBNW0hVcNML2jei/qqXBkACmJO8wiR1V06VkfUT3CJ5rMaWuKqfpxW50p0GcyQLVLVrXoEhyc1Qq0m660K8N930KAgFwZvEQyWMQktUK/dUO1eKz3SlriME8eXCYtbZC+G/6pODDwYUZfDz5GC+8ObUbjMu77fTnAXTHTOO+lSADKqAdroFde/SMPG9CMp24BiA+fHzs5/pq4yTmrEAiFh6Kk0QTgEnenBH5L6E8qFEVosqbgKfeMdybMfbsRng==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=/S+Mvx8Iey2PrWMYYRUTgru2yRcv79gBNHTVlzLjuL0=;
+ b=jlqEWdU2+lDSaMQ7l54gTIjtntiaYLXftde86Fh+ml5HCGOFyiLoNMQNa253wCjApw9Cmp61F6ph3yy58uJx3U+sGqM22TCZrAVJxmT86fMR13Q4zQN582g5p3eZaolmBzynWplQV8qF/mh7cjG/i951tHroXNxZCdGVFRsrbd6ziufuENz2wCQNGxMa+pFpBcU7FXnwFH2pxOcVdnN16IKzJmoow1akTE/XgBsWDDAXLKUZDMEUArnsWMkXIbSfqgVr5hSvuyf7MsPKdLNafyluavmk363wMZakg6BzScWT9V7L7eTho+lfdQ3/ESUk7ugwkJHoWvYLlDbQjq8+lQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=outlook.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=/S+Mvx8Iey2PrWMYYRUTgru2yRcv79gBNHTVlzLjuL0=;
+ b=X0MkqQY28yWDvDzD1bSjn3vwnNOxMxALnBEGNhlNm2gU5lrAkR/bXFzYsoeP18yOb0IbD1C7/PXqJ57BVWHeBoFoKk7FHoAkX6SrcoiSCzWbAMipmP8P+6zReqIFH9SrZftuQrqbs6LBIQKdLXiqujS+6qpTt4pXpLj6h+8eYGLljSfN+fF+wrs6roFr908C/CzP9oOhyC+fxL/rjCZVlRY9kCWH5LbNOzdvHPfJaT97CO6P2bgrrvaa5tc+99vsWPk++UmNOSy3G1pwZqEndm1VIIhRw/dQGLUuykofZUwRP+m46mDvfTugjCKRo9QFT7PmEKWzfplNkcbeygvONg==
+Received: from SEZPR01MB4825.apcprd01.prod.exchangelabs.com
+ (2603:1096:101:a5::7) by SI2PR01MB4372.apcprd01.prod.exchangelabs.com
+ (2603:1096:4:1b3::14) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7362.36; Wed, 13 Mar
+ 2024 09:14:04 +0000
+Received: from SEZPR01MB4825.apcprd01.prod.exchangelabs.com
+ ([fe80::1250:69b2:9bba:195a]) by SEZPR01MB4825.apcprd01.prod.exchangelabs.com
+ ([fe80::1250:69b2:9bba:195a%7]) with mapi id 15.20.7362.035; Wed, 13 Mar 2024
+ 09:14:03 +0000
+From: Pawan Singh &lt;pawansinghwebservices@outlook.com&gt;
+Subject: First Page On Google
+Thread-Topic: First Page On Google
+Thread-Index: AQHadSbKHlrhUlXAwUOb6TKCQoYD7A==
+Date: Wed, 13 Mar 2024 09:14:03 +0000
+Message-ID:
+ &lt;SEZPR01MB4825119AA93774A6E2177768B02A2@SEZPR01MB4825.apcprd01.prod.exchangelabs.com&gt;
+Accept-Language: en-GB, en-US
+Content-Language: en-GB
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+x-tmn:
+ [5gJmo4xmyvSSlVFJtcoSz55I/9Pk8m35vSf88TgobQhkPrAusL1w1C5sgddXDANGUXZu6Kzqdos=]
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SEZPR01MB4825:EE_|SI2PR01MB4372:EE_
+x-ms-office365-filtering-correlation-id: 13eec52b-3d55-47ed-c2eb-08dc433ded77
+x-ms-exchange-slblob-mailprops:
+ gMiuAN0LASJkqHbdx0eYzpHhNUWrG0aY90QeXZp5/iTuwtG2NLZBY43GD8ZJ5k+fA4r+tI4qCUueuuYG8N5gapCtK/D7ZFK20OB9B54hRVnQWDe8SrRuV7ZXBafXM2Fv2cAeqcqT84OlnDPO5YSRStU05bj/S7z1d0yEHy+24vwaT3msgE0Hxd0Znb6J4ReSBKS7aufVf0Cr4OmJ/7RPlLI40OibFaYbnIZwuLPSAfOAgj1NUQQ/mOtu6+c3p3RXokdn1NCsLxcsXOoM+QQloSugDVQvccPkRfOLZlmlfiv9iHxXJb/DZ3f3+4LPlH9TMXfQhdB3gNbz7iwXvDFc4+z2k4u7fU8ErM1J3bOzuSPuqtOGgViVCFui1rr4dYhqzARMp5I9J1omYP10kPDfwwGNE9m7olCvxwr91kwGxOBOvNCdWta2K9QjglZyhBz7t7GeUCbA38nr6srjdZNgo5i9XXSp2pM/OKDt1oVdmno3VP0UuQYSGrxBsEz0JTzMMXHK6NCNBjZZni6PBan+Sv6R5MoDgkx73JHh4armMk9h+tifeuKTZYBEPSBWZeMsY5Lt6McEBxInq9ye8vF35i9HkYsYm+77PS7n74vHiBv5tZ7r1BKMiQKIHdjLOaZKzTZ7vr5JjoGMlA2gG1XQ67mYopj1iSrZUVf9cq8f3QZWEylZun1v2dX44XyB1u9xfW46+0adeRKXV3p6vGOlyg==
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ QzhOkF37JIAhjwhluBPlHstSjyQE0pJlz9ry66CsmLCLp8exirUMUgURAP9q4uTKjdyZH3/ctNJKncigSePDrBm8pMx0YTs/0zRisrMM8Hht7Mq9kHwxLgOWVfYcE28X4niPbj23dfsbml+xskFELFsgMdr47vxw7YHeFh4IlvsXnkmANp6XEwJWIvuN2dsV9fIkDiJgL2dZNY4ibOkUemzJZPVVTIyUHgIrENRfLBvA7WJpj/hljXHME1PlVWoSZtzJPFuLMllU1V2/SsQ8vJQ+U7O4C4toWn/7mdEPUaq8Q0Q6hGrr5AWV70+HXPjPeFo3HJ5CQYyx1twUCPO1nH7FR+6K5ymd25ojdL4XUInMjMG5HEcsAqzP7WJs/A3BSJB7v0o4zfit06aPxahu/+EEMTVavENb8U6+Ru+keubW9xX+a6nAzfYD1yCYu+09VCHnp1g+PgMY85Yx1r5BwKCVneokxpUpAhyl8+Y0fmfycyhNHXRb32NFvQIUjiDVuB8I21KhrwMn4JP+jG6zCFVzOPwQnQ7cumw17BcS+zkHbsYXlwhQ+wK3FbDBQbPA
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?lxj8jtLtZpwGHDN0GaAWSiRdO3lypuFmeISXrF7h5nVBmGOYXKZEYYZFq6?=
+ =?iso-8859-1?Q?vEXlWxm8XT+RKaxZTzEguJAkpQmNPp6uZ3/LttUUH6VN/X6XuqyZset8bm?=
+ =?iso-8859-1?Q?leLri57iHfkcWWNLnGK8XH+78KPQyN8MpbkIVHjJOO9pr4SMXuX1tvtXbz?=
+ =?iso-8859-1?Q?ldDv7QW8CM4mMSCCZvSWXFJutE/82kDJyX6CYVUirf9Aj0FTOJDhAB890Z?=
+ =?iso-8859-1?Q?Pg+o28Oic43ebkCNd67OaV4iZsQKLvYddbWiVm7D41zmY1GBmrXRd8FNZ2?=
+ =?iso-8859-1?Q?v1WDbqWBN3imZbFxJ/FJ05/UgJdqlDmbLjNGgutO5H1T2dDBBodqMldGMP?=
+ =?iso-8859-1?Q?AeH47y0kCU+cMHNtuRfzdxdMABo3iBuVolVuqQpKfgYBLoPAWyr4nBTlFs?=
+ =?iso-8859-1?Q?DFF1MFIaeHicl30griX/V0Tk/gkR9Rpm52FDk8kq2tqD2cY/FFVwRYSlz3?=
+ =?iso-8859-1?Q?3CvcRV7YqDtNopq4Oia2E/RUOBX34o1icX13nvL/Jo52KuEAi+8OqFJbpc?=
+ =?iso-8859-1?Q?lQ9+2TiPqLLiNS6FdPdLwNJKaU69YflFEUucoQCaOxVGqi69CYqvZVm5Ju?=
+ =?iso-8859-1?Q?kLhH/kUQSk0wMwv+jLnWs3ciWTvyNSZogLXlz4omS9gQLcFdyGmBCe+fvD?=
+ =?iso-8859-1?Q?PV7XHvO8fOvPDk1jAzOTkg98SngkFe2xpgPFpndUnhcVAL8YLNE6M6LP/O?=
+ =?iso-8859-1?Q?1KwWfWosn7YkB8cUrcg401RYVgAaL9a8vjkL1IVm66kth1Qo5KgTVdxk8i?=
+ =?iso-8859-1?Q?jy8P+MrXQ6QfIUDfAIr+Rv8u9ojP71B0WFE4fhKQX1R2s2G+GSIDl/CPjq?=
+ =?iso-8859-1?Q?Gs7y/MR2PKmhOcw6730DqE10iLXxHd9XLNK4O8KtBuwkl/P5gQ3CQB5bVC?=
+ =?iso-8859-1?Q?3OOJALVC6mXUhdrOUVOLJbVjngTM5nxilr0UsqyEOGd6hvoXNP4WMPT0Ad?=
+ =?iso-8859-1?Q?QKOSYzs0KCgpSU6ix9MWyE1pTPeITP1z0HLok9sUFU/g1s2S8aw+GpJy6r?=
+ =?iso-8859-1?Q?mT3OBdfHsL5DSufeYtwxBy7LxK5ZVflHU5HQ1pcCSRCsC1lHst3KisY0Il?=
+ =?iso-8859-1?Q?s/kwnA00qsbD5TES6d2VGCUSNCJ1PQrxqftI6fc66rtbDbXYvwPFnKaurC?=
+ =?iso-8859-1?Q?jnI3rIAS3Rubx6H/alDXlvCjKbByAvvY8Ds4ibXt839mHsLHvcKIG14hnp?=
+ =?iso-8859-1?Q?xCM9HxhQwj/ppBibHSr193Yl0tJSMRlOo4VKAqu2Mq7XNEovYQ3tmgq/Fj?=
+ =?iso-8859-1?Q?NXpN1QSFcoysyN1YkvLCN/PVsrIox9ZnU4LvJaV2nv1bpHDlj1VFuk0AW4?=
+ =?iso-8859-1?Q?9W3VsWA9jOssI0Hw2t0hYdrQEONxRXLfUElJMWqB/oXE93N0XidsIKJ2f7?=
+ =?iso-8859-1?Q?ls3dnS8AG1?=
+Content-Type: multipart/alternative;
+    boundary=&quot;_000_SEZPR01MB4825119AA93774A6E2177768B02A2SEZPR01MB4825apcp_&quot;
+MIME-Version: 1.0
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SEZPR01MB4825.apcprd01.prod.exchangelabs.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 13eec52b-3d55-47ed-c2eb-08dc433ded77
+X-MS-Exchange-CrossTenant-originalarrivaltime: 13 Mar 2024 09:14:03.5349
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SI2PR01MB4372
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hello</p>
+        <p>Greetings!</p>
+        <p>We are a Digital Marketing Agency, We provide High-Quality on-page or off-page SEO services at very affordable price.</p>
+        <p>Do you want to boost traffic or sales on your website?</p>
+        <p>If you are interested, then kindly share these details with us then i will send you SEO analysis report of your website and SEO Proposal &amp; price list with our company details.</p>
+        <p>1. Your Website/URL -:</p>
+        <p>2. Your target area/location -:</p>
+        <p>3. Keywords, WhatsApp Number (if you have one) -:</p>
+        <p>Best Regards,</p>
+        <p>Pawan Singh</p>
+    </article>
+ 
+    <article>
+        <p><b>From</b>: &quot;Gary P&quot; &lt;garyppyx@hqb007.com&gt;
+        <p><b>Reply-To</b>: garyp@hqb007.com
+        <p><b>Return-Path</b>: &lt;garyppmt@hqb007.com&gt;
+        <p><b>To</b>: pypi@voussoir.net
+        <p><b>Subject</b>: following up on my last email from last week - about our electric bicycle
+        <p><b>Date</b>: Tue, 12 Mar 2024 13:39:43 +0100
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=2.68 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_IMAGE_RATIO_04,HTML_MESSAGE,MIME_HTML_ONLY,RCVD_IN_MSPIKE_H4,RCVD_IN_MSPIKE_WL,RCVD_IN_PSBL,SPF_HELO_NEUTRAL,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -0.02;EffectiveIp=217.119.143.81,SpamProbability=0.2
+Return-Path: &lt;garyppmt@hqb007.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: pypi@voussoir.net
+X-Pm-Original-To: pypi@voussoir.net
+Authentication-Results: purelymail.com; dkim=pass header.i=hqb007.com
+Received: from saigong.net (EHLO saigong.net) ([217.119.143.81])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id -2019774351
+          for &lt;pypi@voussoir.net&gt;;
+          Tue, 12 Mar 2024 12:44:02 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mail; d=hqb007.com;
+ h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:Content-Type:Content-Transfer-Encoding;
+ bh=IXvgb2xyHiEZ/8x3IVbqull8UNc=;
+ b=SZ0EnvWIoCwQ/g4BlhOH8yDIzwxKiCRd31iHVcR+1JVjs0wat4zHtQFq05nM4af/hxGy/aeEdSE6
+   Y8daf9K4wlwHhI2WDiuXg0dE8LaLNmhEIPacSDGFKXigYzge4v+09O8Y49ChCdp8n9d7va1ZKefO
+   j8BJMp109y8a/WLTYjE=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mail; d=hqb007.com;
+ b=SqDOykmF9D/St4mmCJXZ2EC+pP/KZzZlBv4/vMr3+zX5ET6nRVxqEidUPO5KplfHf5nhCPgX0jow
+   CTtNs3bs1vvG/NmT3glxEcI4PoUC2zHB7d+VBgYRV/2y728KHvxabKWHyRFh8DOuCvs2GKxd6YDg
+   yFPu1LDlcCjI+3+jCSA=;
+To: pypi@voussoir.net
+Subject: following up on my last email from last week - about our electric bicycle
+Message-ID: &lt;671b4cb86294e51a043472f0d8084256@hqb007.com&gt;
+Date: Tue, 12 Mar 2024 13:39:43 +0100
+From: &quot;Gary P&quot; &lt;garyppyx@hqb007.com&gt;
+Reply-To: garyp@hqb007.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=&quot;UTF-8&quot;
+Content-Transfer-Encoding: 8bit
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi,</p>
+        <p>We are glad to present our cutting-edge foldable electric bike, specifically designed for adults.</p>
+        <p>This bike comes equipped with 4.0 fat tires, which enhance the comfort and stability of your ride, propelling your cycling experience to unprecedented levels.</p>
+        <p>Key features and advantages:</p>
+        <p>4.0 fat tires for all-terrain versatility: our electric bike boasts 20 inch 4.0 fat tires that provide improved grip and traction on a variety of surfaces.</p>
+        <p>whether it&#x27;s off-road trails or urban pavements, these tires ensure a smooth and stable ride by absorbing shocks and bumps with ease.</p>
+        <p>the increased contact area with the ground also means better handling and a safer ride, especially under challenging weather conditions.</p>
+        <p>500w motor for powerful performance: the bike is powered by a high-speed brushless 500w motor,</p>
+        <p>ideal for conquering hills and reaching up to 30mph with an impressive 85n.m torque. this motor ensures a perfect blend of speed and</p>
+        <p>efficiency for your daily commutes or leisurely rides.</p>
+        <p>Long-range 48v 13ah lithium battery: with the capability to travel up to 50km on pedal-assist mode, our e-bike is perfect for long-distance rides.</p>
+        <p>the battery is equipped with a BMS system for enhanced safety and features a quick 4-5 hour charge time, so you&#x27;re always ready to go.</p>
+        <p>CE certification for peace of mind: safety and compliance are our top priorities. our foldable e-bike is CE certified, adhering to the strict European</p>
+        <p>standards for safety and performance, ensuring you receive a product that is both reliable and high-quality.</p>
+        <p>If you are interested in purchasing our ebikes, please provide us with your detailed address. This will allow us to calculate the cost accurately</p>
+        <p>and arrange the delivery of your purchase. Your prompt provision of this information will ensure a smooth transaction and timely dispatch of your ebikes</p>
+        <p>Superior hydraulic disc brakes: our bike is equipped with hydraulic disc brakes that offer exceptional stopping power, reducing braking distance by 50 percent</p>
+        <p>compared to standard mechanical brakes. this means you can ride with confidence, knowing you have the best in class braking technology at your fingertips.</p>
+        <p>Designed for comfort and durability: the carbon steel front fork with rebound and lock functions, combined with a 7-speed gear shift system,</p>
+        <p>provides a customizable and comfortable riding experience. the 6061 aluminum frame and integrated alloy wheel are designed to withstand</p>
+        <p>heavier weights and absorb shocks, ensuring longevity and a consistently smooth ride.</p>
+        <p>We are confident that our new foldable electric bike with 4.0 fat tires will be a compelling addition to your product lineup, attracting customers</p>
+        <p>seeking a premium, versatile, and eco-friendly mode of transportation.</p>
+        <p>If you are interested in purchasing our ebikes, please provide us with your detailed address. This will allow us to calculate the cost accurately and</p>
+        <p>arrange the delivery of your purchase. Your prompt provision of this information will ensure a smooth transaction and timely dispatch of your ebikes.</p>
+        <p>Thank you for choosing to do business with us. we are keen to collaborate with you and bring this exceptional bike to your customers.</p>
+        <p>Thanks,</p>
+        <p>Gary Parker</p>
+        <p>Manufacture of electric bicycle</p>
+        <p>Welcome to our factory.</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Alan&quot; &lt;sales@gonsion.com&gt;
+        <p><b>Reply-To</b>: sales@gonsion.com
+        <p><b>Return-Path</b>: &lt;info12@cesemoty.xyz&gt;
+        <p><b>To</b>: production@voussoir.net
+        <p><b>Subject</b>: Privacy Filter
+        <p><b>Date</b>: Tue, 12 Mar 2024 10:03:50 +0800
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=3.71 required=5 tests=HTML_MESSAGE,MISSING_MID,MIXED_ES,RCVD_IN_VALIDITY_RPBL,SPF_HELO_NONE,TVD_RCVD_IP,TVD_RCVD_IP4,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 1.31;EffectiveIp=111.231.11.127,SpamProbability=0.33
+Return-Path: &lt;info12@cesemoty.xyz&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: production@voussoir.net
+X-Pm-Original-To: production@voussoir.net
+Received: from 111.231.11.127 (EHLO info.cesemoty.xyz) ([111.231.11.127])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 556629341
+          for &lt;production@voussoir.net&gt;;
+          Tue, 12 Mar 2024 02:03:52 +0000 (UTC)
+Received: from DESKTOP-VUJ0SCR (180.158.14.147) by info.cesemoty.xyz id htus0g0e97ci for &lt;production@voussoir.net&gt;; Tue, 12 Mar 2024 10:03:50 +0800 (envelope-from &lt;info12@cesemoty.xyz&gt;)
+From: &quot;Alan&quot; &lt;sales@gonsion.com&gt;
+Subject: Privacy Filter
+To: production@voussoir.net
+Content-Type: multipart/alternative; boundary=&quot;zCqR6RO6aQN3WOp9ExML5UXh323KCg=_2B&quot;
+MIME-Version: 1.0
+Sender: info12@cesemoty.xyz
+Reply-To: sales@gonsion.com
+Date: Tue, 12 Mar 2024 10:03:50 +0800
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Your reader does not support HTML</p>
+        <p>Hello</p>
+        <p>I&#x27;m Alan. It is a touch screen, privacy film manufacturer in China, mainly supplying: Touch Screen and Privacy Filter (used in mobile phones and computers) products, we can supply in large quantities for a long time. You can also customize various products according to your own requirements, do you have purchasing needs?</p>
+        <p>=====================================================================================</p>
+        <p>?????Alan??????????,??????????????????????????????????????????????????????????????????????</p>
+        <p>=====================================================================================</p>
+        <p>??????</p>
+        <p>???? ????? ????. ??? ????????????? ????????? ???????, ?????? ??? ?????????????????? ? ?????, ? ???????? ????????????: ????????? ????? ? ???????? ?????? (???????????? ? ????????? ????????? ? ???????????), ?? ????? ?????????? ? ??????? ??????????? ? ??????? ??????????? ???????. ?? ????? ?????? ????????? ????????? ???????? ? ???????????? ? ?????? ???????????? ????????????, ???? ?? ? ??? ??????????? ? ????????</p>
+        <p>whatsAPP: 08613501725352</p>
+        <p>SKype:alan.zhaoming</p>
+        <p>https://www.panamich.com/privacy_filter/</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Petra Tradler &lt;Petra.Tradler@gmx.de&gt;
+        <p><b>Return-Path</b>: &lt;Petra.Tradler@gmx.de&gt;
+        <p><b>Subject</b>: Re Greetings to you
+        <p><b>Date</b>: Tue, 12 Mar 2024 11:26:10 +0100
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: Yes, score=9.21 required=5 tests=ADVANCE_FEE_4_NEW_FRM_MNY,DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FILL_THIS_FORM,FORM_FRAUD_5,FREEMAIL_FROM,FREEMAIL_REPLY,HTML_MESSAGE,LOTS_OF_MONEY,MIME_HTML_ONLY,MISSING_HEADERS,MONEY_FORM,MONEY_FRAUD_5,SPF_HELO_NONE,T_FILL_THIS_FORM_LOAN,URIBL_DBL_BLOCKED_OPENDNS,XFER_LOTSA_MONEY,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.01;EffectiveIp=82.165.159.14,SpamProbability=0.4
+Return-Path: &lt;Petra.Tradler@gmx.de&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of _spf.gmx.net designates 82.165.159.14 as permitted sender) smtp.mailfrom=gmx.de; dkim=pass header.i=gmx.de; dmarc=pass (p=quarantine) header.from=Petra.Tradler@gmx.de
+Received: from mout-xforward.gmx.net (EHLO mout-xforward.gmx.net) ([82.165.159.14])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 1761397372
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Tue, 12 Mar 2024 10:26:36 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=gmx.de; s=s31663417;
+    t=1710239170; x=1710843970; i=petra.tradler@gmx.de;
+    bh=sLfrWIiq82cmGOK8IhELadmuveWbTSqy2UoAt1feGzw=;
+    h=X-UI-Sender-Class:From:Subject:Date;
+    b=Fy4kE5DEUZVWPx5JwR7IS/lcrZIr5Lv3qFfSHjita1tKQWunouCh+WgV8ZeKVDhe
+     YlOZ/gp4+IE2EsNcuC8u826m6jerEqzXUU+iktmRy4cOGEEPby6cO5bVtiMBjzgWh
+     63BmlqYSCublPXEGzz0HifBQMPbFHW/ZnUPfiQJ9RQ0JaWBvBta24uswo/YlH8t4U
+     ovQ66tBVFSL4sXILBrdbWZi7Q8fF1FGrhVGPf0NcOeF/1KN6kqTX8213CdIzSl9g5
+     s+2H6k52tviGt/9kUdoCA5bVPmPds+CF5KoXfTXhbgTHK0jquUdBh1Rk7LPwtxCwp
+     jrLhU+E5kzOBDTOinw==
+X-UI-Sender-Class: 724b4f7f-cbec-4199-ad4e-598c01a50d3a
+Received: from [45.87.212.61] ([45.87.212.61]) by web-mail.gmx.net
+ (3c-app-gmx-bs42.server.lan [172.19.170.94]) (via HTTP); Tue, 12 Mar 2024
+ 11:26:10 +0100
+MIME-Version: 1.0
+Message-ID: &lt;trinity-cfbb8ac6-675c-4ea1-9b7a-03593cb3586c-1710239170571@3c-app-gmx-bs42&gt;
+From: Petra Tradler &lt;Petra.Tradler@gmx.de&gt;
+Subject: Re Greetings to you
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 12 Mar 2024 11:26:10 +0100
+Importance: normal
+Sensitivity: Normal
+Content-Transfer-Encoding: quoted-printable
+X-Priority: 3
+X-Provags-ID: V03:K1:r5/VKMi4Kp04C1Bf/HHQjFTcLCbW9P4ovCF8gJs8Ec+Asq8L7i0xGsofkmdZiVHPB3p1N
+ etpPjVr3zI5kCPOlWOxK4vRRqUCG/5VE3PdikOp0V2eqerPNaXeIoOiwdY7u+90u5yX5yZIOd/eV
+ BLfjGqvrKQnhMQwEw7OJ5MPOqqacFm+lEX9PCA4cUY2ipkkvNHeaKandegipgtLNWHB4M2UbKHCu
+ c1Lzn8dowP4ICKyUwFSvdmM2ST1CwwWDivS0jAXXfG0wE8UQ0KMX6a3s2bKqm3SliftaUZNf082B
+ l0=
+X-Spam-Flag: YES
+UI-OutboundReport: junk:10;M01:P0:6cu2RXhRc/s=;u5G4xPRdjEAk/IiDkxtiGycmdtUY4
+ Fza9jzrjksQwL1/sdPaPDKeiNrXQ0/rOI+wnrXUSzgYWmtNvMbAL/u+IFIJm3PxyaluJQqwj4
+ xQKS19EeZLUSQgmvj3h0RF70132aokkdzDlkqYodPwX38hQfk8MTZ4LhDGHE/mWLxln2LA4J1
+ oW67k24Z43U64ab8enqG4DGahuKmpobPZ0yrxJQvpRj+N4e6bjgIQ1XMZuXH7E0WRnWW7x7yA
+ V6Ye0T5N5uCo4xyVgK0a0b3Jj7KPw+PwF/zEDq/bYHUuDXUpbPcYiBBGBbw1gTTbbOud2dL68
+ o6WEyDzJsi8DbWTuX5feT3ewx9vFZCzxAlJmxCx+DVfq8x5sxW/2wHVBighjFPzgQ87SaOGqx
+ A89J+wg4oEYE+JQ5JN0QCnlHPkdSzr8lPUtzRuQ1MJlQ4NGe1kyd6Osy8CDqoxCAthjqbKHxj
+ IokLYVyOghr/wNXkIjYfPm3nM62hr3A3keMHxBBp4Mu2z1Pw4UDqLobXcdunlRXdlXuLv9lNX
+ F9PDQ65O4S9ARIWVuj18lfVjApIlAaX2lwoRfG3OC2WecmqQeXuSgNCPDVzsa4yJedc1OCH1B
+ 8i8npnKPTFjsJpuhZ5AwrogbdTZMdNbSj4dpWMUxli9Eb1d0FR1GzgprbNiOxqobja4+4bnsf
+ ViXQ+83vSU4UMzeutOvLl93xqfn7hkfqxs8024fpGQz9vM06mOHvVss4rvhVWiVTU8X3lHlRh
+ l8yJypY1DU/neLTSUUIBoQFrRaXffMF1U9eA0jQVTfkaa9MJ8fMqnKl/IIlv++4s/hVpBMaSU
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>US Department of Treasury</p>
+        <p>Address:1500 Pennsylvania Ave NW, Washington, DC 20220, USA.</p>
+        <p>Formed: September 2, 1789</p>
+        <p>Preceding agency: Board of Treasury</p>
+        <p>Greetings to you.</p>
+        <p>Introduction: My name is Janet Yellen an American economist, Served as the 15th chair-lady of the Federal Reserve from 2014 to 2018, Currently serving as the 78th United States secretary of the treasury since January 26, 2021.</p>
+        <p>This is to let you know about the conclusion of our meeting yesterday with World Bank Director( Anshula Kant ) FBI Director (Christopher A.Wray ) United Nation Secretary General ( Ant?nio Guterres ) and Director of Centers for Disease Control and Prevention ( Rochelle Walensky ) regarding this Pandemic situation arising across the globe which is as a result of Corona Virus (COVID-19).</p>
+        <p>The World Bank and United Nations release the sum of $100,000.000.00 One Hundred Million Dollars) to be shared among the 10 Scam Victims as a Compensation.</p>
+        <p>I was subjected to submit the first 10 names to receive the sum of $10,000.000.00 (Ten Million Dollars Only) from this fund while the second batch will be approved by next week for other payment, Through the help of FBI Director ( Christopher A. Wray ) who gave me your name and email to add so that you will partake in this fund since he narrated to me that you have been a scam victim for several years now and have nothing left so this will serve as an opportunity for you to replace for what you have lost in the past years and be able to survive with your family this time.</p>
+        <p>You are eligible to receive this $10,000.000.00 USD as a compensation but you are strictly warned to stop any further communication with any person or office that claims to have any fund for you because if you lose any money again, we shall not attend to you again.</p>
+        <p>You are to Kindly Re-confirm this information so that I can commence with the documentation process to enable you receive your fund within 48 hours to my private email : baryknight@gmail.com</p>
+        <p>Your Full Name.....</p>
+        <p>Your Address......</p>
+        <p>Your Occupation.....</p>
+        <p>Your Phone Number...</p>
+        <p>Your Age.....</p>
+        <p>Awaiting for your response ASAP.</p>
+        <p>Regards.</p>
+        <p>Janet Yellen</p>
+        <p>United States Secretary of the Treasury</p>
+        <p>baryknight@gmail.com</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;cs06@keensta.com&quot; &lt;cs06@keensta.com&gt;
+        <p><b>Reply-To</b>: cs06@keensta.com
+        <p><b>Return-Path</b>: &lt;Sales.8@logdsmkgds.com&gt;
+        <p><b>To</b>: writing@voussoir.net
+        <p><b>Subject</b>: Do you like us to take care of your cargo move from China?
+        <p><b>Date</b>: Mon, 11 Mar 2024 13:25:09 +0800
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=4.44 required=5 tests=HTML_FONT_FACE_BAD,HTML_MESSAGE,RCVD_IN_SORBS_DUL,SPF_HELO_NONE,TVD_RCVD_IP,TVD_RCVD_IP4,PURELYMAIL_IP_REPUTATION,PM_DMARC autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PM-DMARC: 0.3;
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 4.14;EffectiveIp=113.90.87.104,SpamProbability=0.61
+Return-Path: &lt;Sales.8@logdsmkgds.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; dmarc=fail (p=none) header.from=cs06@keensta.com
+Received: from 113.90.87.104 (HELO logdsmkgds.com) ([113.90.87.104])
+          by smtp.purelymail.com (Purelymail SMTP) with SMTP id -765413257
+          for &lt;writing@voussoir.net&gt;;
+          Mon, 11 Mar 2024 05:53:58 +0000 (UTC)
+Sender: Sales.8@logdsmkgds.com
+Received: from LX-CVXSQF3[127.0.0.1] by DESKTOP-82N140B[127.0.0.1]
+  (SMTPD32); Mon, 11 Mar 2024 13:25:09 +0800
+MIME-Version: 1.0
+Date: Mon, 11 Mar 2024 13:25:09 +0800
+Content-Type: multipart/alternative; charset=UTF-8; boundary=&quot;GpwHEwVuP8bhkJyN=_53kJhEWZB8seDyrt&quot;
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+From: &quot;cs06@keensta.com&quot; &lt;cs06@keensta.com&gt;
+Subject: Do you like us to take care of your cargo move from China?
+To: writing@voussoir.net
+Reply-To: cs06@keensta.com
+Message-ID: &lt;2024030011132500090012@logdsmkgds.com&gt;
+X-Mailer: Foxmail 6, 13, 102, 15 [cn]
+In-Reply-To: &lt;2024030011132500090012@logdsmkgds.com&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hillil dear Friend,</p>
+        <p>l am Rebecca ,from Keensta, China.</p>
+        <p>How are you today?</p>
+        <p>We are a local forwarder in China,</p>
+        <p>may you need us to take care ofyour cargo move from China?</p>
+        <p>In this market, we provide the most competitive rates &amp; service.</p>
+        <p>Rebecca LI</p>
+        <p>We chat:13066827650</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Agustina Beatriz Jara Rodriguez &lt;abjara@ips.gov.py&gt;
+        <p><b>Return-Path</b>: &lt;abjara@ips.gov.py&gt;
+        <p><b>To</b>: Undisclosed recipients:;
+        <p><b>Date</b>: Fri, 8 Mar 2024 10:26:26 +0000
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-0.03 required=5 tests=ARC_SIGNED,ARC_VALID,DKIM_SIGNED,DKIM_VALID,FORGED_SPF_HELO,RCVD_IN_MSPIKE_H2,SPF_HELO_PASS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 0.07;EffectiveIp=52.100.157.203,SpamProbability=0.21
+Return-Path: &lt;abjara@ips.gov.py&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: production@voussoir.net
+X-Pm-Original-To: production@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of ips.gov.py designates 52.100.157.203 as permitted sender) smtp.mailfrom=ips.gov.py; dkim=pass header.i=ipspy.onmicrosoft.com
+Received: from mail-mw2nam10hn2203.outbound.protection.outlook.com (EHLO NAM10-MW2-obe.outbound.protection.outlook.com) ([52.100.157.203])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 554918855
+          for &lt;production@voussoir.net&gt;
+          (version=TLSv1.2 cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384);
+          Fri, 08 Mar 2024 10:41:35 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=TRj2Vk5D9GkOhputb5a1rCaEdE0Fr6WSLMLoy9utCfWMEh8y+5NLXUqcg1Nz/Aiz768PAIOqbInR2F7vN5fSmPtNhlqV6Fh94DeI9TeGz8tmWsmE8ga9Lkg66k+36bQjw2+RXxduQKfEGmPCBLLQh0rw21Y2t2ZOMPvLRHdCefdgccU6Ee1AQwt2TW9b8eLnU2PXWKoNH7Nx9F0lZiqrgzCifE3MtJS5Bwu+FkVscalLo+IOLH0bJ9OwHTFevGvzsg5N/Zz719un9Jr6MBXNpqe+7swu25d7IO0vS6oPyLtMqtVAeygtoLVyiZo6It4r2/u+jxQVJmCi2zRnNQs+FA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=/8kCXW+/lWx1pZURYbbJOdpnEe0p02V2uarTExfyURQ=;
+ b=JaTIr0S7C8oKOsKkOGMJ2gg0zx5XdM2Mx9m447oW/B6RQyEyr50H11JRWuo4Q7AQFN/DakgJrRscrF7qnt2T1GfoqlCRbOgeRvO5cRAQBIvl2vwnvmXgRUiXws/ywElfw4trVxXs6uzo/TEh8u6zpTlYkA8J/sRRoFMOR5+NkMtDThwa/1sptDHdcs7MEb6esauxAylirLO2PU8leuivNurwAIYJeUuTgkiCbhnFS+S8bwx0ox/LKBeRutmE0rb4ESuc05JD6oM3hQhHxlUL/f07xJ65EeRs3JvLicxhXvMccc5VbNpEQjwYMdsL4H/1DxiDw2Zs7yLwFwMj1d8Vew==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass (sender ip is
+ 201.217.50.26) smtp.rcpttodomain=f.8e74e8d87e72bb01e41ef42c9d054f1d.js
+ smtp.mailfrom=ips.gov.py; dmarc=bestguesspass action=none
+ header.from=ips.gov.py; dkim=none (message not signed); arc=none (0)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ipspy.onmicrosoft.com;
+ s=selector2-ipspy-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=/8kCXW+/lWx1pZURYbbJOdpnEe0p02V2uarTExfyURQ=;
+ b=mtJdiiorIdnuP7dPsenwaIHJd51bfiTN9mhglhQL1+3B1HH1nRUKX4BxlXUudMQNFAb1c7Ccc6kLMLrmeFDwUeM4PFWwSH+b2T6sEPOSuMzvRd1SpwEJ3LqFCKlAMeyGU3h5g7YK71fUwtVz69oyUoPCOrf72qHKTE5jNeSTYK4=
+Received: from BN1PR14CA0030.namprd14.prod.outlook.com (2603:10b6:408:e3::35)
+ by CPUP152MB5019.LAMP152.PROD.OUTLOOK.COM (2603:10d6:103:19a::6) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7362.29; Fri, 8 Mar
+ 2024 10:41:30 +0000
+Received: from BN3PEPF0000B36D.namprd21.prod.outlook.com
+ (2603:10b6:408:e3:cafe::47) by BN1PR14CA0030.outlook.office365.com
+ (2603:10b6:408:e3::35) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7362.29 via Frontend
+ Transport; Fri, 8 Mar 2024 10:41:29 +0000
+X-MS-Exchange-Authentication-Results: spf=pass (sender IP is 201.217.50.26)
+ smtp.mailfrom=ips.gov.py; dkim=none (message not signed)
+ header.d=none;dmarc=bestguesspass action=none header.from=ips.gov.py;
+Received-SPF: Pass (protection.outlook.com: domain of ips.gov.py designates
+ 201.217.50.26 as permitted sender) receiver=protection.outlook.com;
+ client-ip=201.217.50.26; helo=mail.ips.gov.py; pr=C
+Received: from mail.ips.gov.py (201.217.50.26) by
+ BN3PEPF0000B36D.mail.protection.outlook.com (10.167.243.164) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.7386.0 via Frontend Transport; Fri, 8 Mar 2024 10:41:29 +0000
+Received: from vs-w12-exch-02.ips.intranet.local (10.20.11.162) by
+ vs-w12-exch-02.ips.intranet.local (10.20.11.162) with Microsoft SMTP Server
+ (TLS) id 15.0.1497.48; Fri, 8 Mar 2024 07:26:26 -0300
+Received: from vs-w12-exch-02.ips.intranet.local ([::1]) by
+ vs-w12-exch-02.ips.intranet.local ([fe80::4499:83ec:2f6e:aad7%14]) with mapi
+ id 15.00.1497.048; Fri, 8 Mar 2024 07:26:26 -0300
+From: Agustina Beatriz Jara Rodriguez &lt;abjara@ips.gov.py&gt;
+Subject:
+Thread-Index: AQHacUMSqEbz9lIeHE6sRVEvJEF0bQ==
+Date: Fri, 8 Mar 2024 10:26:26 +0000
+Message-ID: &lt;a0803f261ef24f178b5071b14dc961be@vs-w12-exch-02.ips.intranet.local&gt;
+Accept-Language: es-ES, es-PY, en-US
+Content-Language: es-ES
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-ms-exchange-transport-fromentityheader: Hosted
+x-originating-ip: [181.214.165.137]
+Content-Type: text/plain; charset=&quot;iso-8859-1&quot;
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+To: Undisclosed recipients:;
+X-EOPAttributedMessage: 0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BN3PEPF0000B36D:EE_|CPUP152MB5019:EE_
+X-MS-Office365-Filtering-Correlation-Id: dcaabc29-b5f6-4cef-35b2-08dc3f5c5077
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+    Z5ci53ugFw7s1w0/BnEDCb+rg83b5OMJVl7z9ZiCbjQKxxfeXrcIIECYi5wKX8JzONlsLo4F3fquMrO5mnGqd/98h8Y//FWm6HuUsW+JisxPCI2EEPE6HYg+OmuUCD75hFih9uSPQYC6h6nFyK8SthbQozL+9sY3+F2LfhWf634slvx5lAIE79OEitrrMD9I+l68B2/L19AZkQFOPZKOgVlvkTos2FY1g3w9vhFyEuosqWJ0LuExuVDrKbylBj3t0HnAysjXF86azbrssvphsDFwGdnA+ci7aAYyUW/krhvN535gGRByHdjWjQrLZmnJJC3A69QyuQoOXaq8YUxuVm53W6NungQrSDM+Zd53ZAu9BLz9iAlJOOKoh4YUGVIK4tsahpu/aVYuUdc6Qq2m/Em30GjezCW2DTklAGqmL64i0cRApN6EJO9fPRcseVIRTrUoJg3A9HqyjzEApXSY9NhaPgyfSMcheDlnRGIxoRI6gFMmqADsBCecaZ7X6yztiwvm75pQAdVtALp94QbGjYlcVJDu35H22xGF5tZ5phNXoMBGzZq/mIFiwevb54TtSp45lc+6ARRZKHPzoMJfQGTdQIDDjL3xFdh8NA6eNN3FaqlLa/3T6I9iexb8TY7Wlq2FHx6l4jnEKMupf1QnC7Ixi3JWJ4yL3t4UFfbBYjXnC4guBbKxCzd0uTh2KpgycEB2IiOfkh4ImzwEDeKpd9RmEKTrs9WEzSkUFaCGio5RDHFFC4n9o8YVHAkTbg7mz2jpCLN7hxavrKiII6x0koBoTapR32AJxYHCC5Kq4POqf/WqrJffl6MEYLqQ3sTmDk0FAQ63CGqxzi28u1SZeA==
+X-Forefront-Antispam-Report:
+    CIP:201.217.50.26;CTRY:PY;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail.ips.gov.py;PTR:mail.ips.gov.py;CAT:NONE;SFS:(13230031)(6430100004)(7416005)(1800799015)(376005)(36860700004)(32650700005)(82310400014)(567454004)(83676001);DIR:OUT;SFP:1501;
+X-OriginatorOrg: ips.gov.py
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Mar 2024 10:41:29.3517
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: dcaabc29-b5f6-4cef-35b2-08dc3f5c5077
+X-MS-Exchange-CrossTenant-Id: 601d630b-0433-4b64-9f43-f0b9b1dcab7f
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=601d630b-0433-4b64-9f43-f0b9b1dcab7f;Ip=[201.217.50.26];Helo=[mail.ips.gov.py]
+X-MS-Exchange-CrossTenant-AuthSource:
+    BN3PEPF0000B36D.namprd21.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CPUP152MB5019
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>I have a project discussion with you. kindly contact my private E-pasts below.</p>
+        <p>E-Mail:    leeshauke@gmail.com</p>
+        <p>for more details.</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Zayb Khanna &lt;zaybkhanna9868@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;8mar+bncBCE5FFX65IORBMWMVOXQMGQEHFHXMNY@e-technip.site&gt;
+        <p><b>To</b>: undisclosed-recipients:;
+        <p><b>Bcc</b>: 8mar@e-technip.site
+        <p><b>Subject</b>: Tailored Solutions for Your Digital Needs (Web &amp; Apps)
+        <p><b>Date</b>: Fri, 8 Mar 2024 15:49:17 +0530
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=2.17 required=5 tests=ARC_SIGNED,ARC_VALID,DKIM_ADSP_CUSTOM_MED,DKIM_SIGNED,DKIM_VALID,FREEMAIL_FROM,HTML_MESSAGE,MAILING_LIST_MULTI,RCVD_IN_MSPIKE_H3,RCVD_IN_MSPIKE_WL,SPF_HELO_NONE,PURELYMAIL_IP_REPUTATION,PM_DMARC autolearn=unavailable autolearn_force=no version=4.0.0
+X-Pm-Spam-PM-DMARC: 5;Gmail p=none policy exception
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -1.73;EffectiveIp=209.85.215.205,SpamProbability=0.08
+Return-Path: &lt;8mar+bncBCE5FFX65IORBMWMVOXQMGQEHFHXMNY@e-technip.site&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: contact@voussoir.net
+X-Pm-Original-To: contact@voussoir.net
+Authentication-Results: purelymail.com; dkim=pass header.i=e-technip-site.20230601.gappssmtp.com; dmarc=fail (p=none) header.from=zaybkhanna9868@gmail.com
+Received: from mail-pg1-f205.google.com (EHLO mail-pg1-f205.google.com) ([209.85.215.205])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 1921152866
+          for &lt;contact@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Fri, 08 Mar 2024 10:19:56 +0000 (UTC)
+Received: by mail-pg1-f205.google.com with SMTP id 41be03b00d2f7-5e4df21f22dsf1584936a12.0
+        for &lt;contact@voussoir.net&gt;; Fri, 08 Mar 2024 02:19:56 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1709893196; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=bmLCSYVLxgXuvPpNW1E3Od667j88g/ZXw4CthHNi33f/4cXU9uydQYIEZsOpY8KW4N
+         Lo1/2NjUWsJwCBrhPH9TWoFxqFX7KDSHuyKfdSbdmGNki9D6SIODSjtRugHVLaDcfvZC
+         YGLxvtxOkZzkHgtvGDO/fiMx8zF1Aey8irG5R2ywhPBOW9Xix+Tyb1xA5I59SoV+VtCG
+         95gxcjf91HNgpte5AqdloviKs2+wdvuRtVIC3gy5EujS1McRB54JUs9VV0lBLZjj9+lU
+         Z6kejipJjdvtI17zp2APSRPGcZR9XHF/XcaZin0gTm1/t3fsPn9RsBFJSSU2Rcz+OTF2
+         n++g==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=znhy14Yr/NJOKkJIpXGSxmxCtoE33cRaOttVXohZ4rc=;
+        fh=ss468nyBTEBga24DGqtbokHccUIhcavBHlernAgVMKw=;
+        b=kXz1DxSIiy/nXJeydxRnMMVNp6kRLsuE7vUjsmaLTHMUntbAI2wyaImxw6dfraRvdU
+         C+kmMGuAAwoAXEpW6q6SYV7MmA+3EqQyuyJrmj2nl1e0LMRQBXsYUkdBKeayGgoszVqr
+         c/iCA4C8Ev+bqksyCc12f5BCa7tNmplFbNDf/ARcsVpP6xa5P3PEJ4UZ+8tqetmQ/QWN
+         o4OnkAXToPrxq5OB6cITQ6jmcMtpskCybLhNDG5h6WN6RZq7CSNMttBQQY0EbEZkffMk
+         i93jr3p0mRWGvx10lDut+e4h5CyW+Te3dC26Q2qjM0og7MVeUalf7zDvccb6rSGxlZZA
+         QZew==;
+        darn=voussoir.net
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=IEe4CwlJ;
+       spf=pass (google.com: domain of zaybkhanna9868@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=zaybkhanna9868@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=e-technip-site.20230601.gappssmtp.com; s=20230601; t=1709893196; x=1710497996; darn=voussoir.net;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:x-original-authentication-results
+         :x-original-sender:to:subject:message-id:date:from:mime-version:from
+         :to:cc:subject:date:message-id:reply-to;
+        bh=znhy14Yr/NJOKkJIpXGSxmxCtoE33cRaOttVXohZ4rc=;
+        b=p9PMtBxLpDSA7o0FBjF6I2l+fGPGhKfVvf3OsVxgRiK86UmT1WZyO3Yysq58AjyCrF
+         6OiY7AGM9FddmWiMUeEPoO2Y2uVZ6u2KdCrnndyT7S5uL8Ho6Cii+A55OhqZXQVep8Y1
+         ISBCJ6E5xKyUa0G/BEAIhFUNTMzj35sHhbwpBypa4iqJmozYCKjzHlIXoFrifsjz+o+X
+         oObf27jzbhkHj/cGMG3ViWpviLGu5VlxTYkhTpqCzkeTQ+yZxRK4mIZh4CiZ9YDKIoc5
+         bVzo5nU7ohYDW1IcBUPI2tiEk20AjUPkhfYnO+NZIXcvRRmvqpBzCQeAX9pRQl2twRNg
+         98Zg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1709893196; x=1710497996;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :x-spam-checked-in-group:list-id:mailing-list:precedence
+         :x-original-authentication-results:x-original-sender:to:subject
+         :message-id:date:from:mime-version:x-beenthere:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=znhy14Yr/NJOKkJIpXGSxmxCtoE33cRaOttVXohZ4rc=;
+        b=OTvOpOldiccQsRQZkc8cnFI2ELJ2jt4sIebmzh2O6r9h7GmC+mpsGNq/kXPV1/lUJh
+         xbWghREpFygSqvwx+eeYXsKLhSzfvXB/Ed4apm3VrqbMk9K4czoAgwjk1psFrm8klA3B
+         rnMUvr8C5dTUkdMlAGwBJl90fUfSRJ2s7hp7ievG9gecUcWNOWp6ZtbACoRexT2qi4rV
+         0FNfNdvDVPS/a5tMBqnm2JLnySy/EdZhN0eq8hhNeqbGkpIq+SwUstnM5vBtO56SCYJH
+         Kf3AzH5cFJXq388aRSNyVQdSg5B+/NiCRYaLylr1gc0kqVq8T3JGX+UWoPWqM+MsuCJC
+         mKsA==
+X-Forwarded-Encrypted: i=2; AJvYcCVeRh27i65yFB2VGEYN/JiGD8IE/00TiaGiaoqd5yLWwk63RGoFVjx3cNXGBXdH1108vRMr9bKH5Gt/WdjV+cFL9rgSJQ==
+X-Gm-Message-State: AOJu0Yyj+bcWR/piaE645Wsue1ykx8Q4JqT+98YOB3mykbwbA4rFaf9B
+    lPIOnf5uH55LXuCZ7anojtJW1OAhYa4aTt2iwkXGsE1SsX4Q1iFLHE3KvOdhd+I=
+X-Google-Smtp-Source: AGHT+IEdSPUpq4AJVNjz5ljVdIWURRQVOhH3M0wfkW3QKVD7aCgzFpc4Wf92b0a/+SeF62qiVcmx3A==
+X-Received: by 2002:a17:902:c405:b0:1dc:b308:c3b6 with SMTP id k5-20020a170902c40500b001dcb308c3b6mr5884071plk.1.1709893195630;
+        Fri, 08 Mar 2024 02:19:55 -0800 (PST)
+X-BeenThere: 8mar@e-technip.site
+Received: by 2002:a17:902:d4cb:b0:1dc:f919:63c7 with SMTP id
+ o11-20020a170902d4cb00b001dcf91963c7ls83658plg.2.-pod-prod-00-us; Fri, 08 Mar
+ 2024 02:19:30 -0800 (PST)
+X-Forwarded-Encrypted: i=2; AJvYcCV/3Rlld91NC06FU3Vxh9ecVaMzO+gf0jHk8xP7HHk2kiJ+ky7Uf+p8mh2/mL2LF6ZGMq+6BImvJPsOigjW890Fgoz4
+X-Received: by 2002:a17:902:fa90:b0:1dc:c161:bce6 with SMTP id lc16-20020a170902fa9000b001dcc161bce6mr4735181plb.15.1709893169866;
+        Fri, 08 Mar 2024 02:19:29 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1709893169; cv=none;
+        d=google.com; s=arc-20160816;
+        b=NGoNwMURBVMDztPYGKFHrpzvYaB+ba+Ik7gGRgSkIK4ewogosyMpcMdfZW5+HTAIjb
+         E1y9XkLfA/8K0mSgw3GYlXgpHYpfRh2muqx2W6wpYWvLFmoRO1FKZ/niae8VUHuCxqA5
+         VHF2xgTzf3P3MJODvzElGS/7HvFpwWQz8wOh+zV4+yUA2M4/DqzqkXLjU1tbZaCTO8p8
+         Ff6beIewQAedSWdOBFtRcMjI4u4EWlz8Q1g7r+5c9tU8D5eWtaSGOJO+JAZGKVGFiAPS
+         JvjsrmNn9B1S2k/YsqjesFVGV6WI/OxQ7kaOhZySSeIXlrVyov+jenztf4zQSjFIZTJp
+         414Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=znhy14Yr/NJOKkJIpXGSxmxCtoE33cRaOttVXohZ4rc=;
+        fh=9jPQJd7DspsTn3qsmQu4qr1c4dzgWEbAnL8zV1KQyAo=;
+        b=Uxf2Ol41+IaRs4OtontAb8PDXwt2OURt75ae796GcXDgCg1UigW6pM2MQpdfKZHBw8
+         T2qAmxLnOBo9t1Z61fl4KRPxLeQPp1Icp2O4KtpgzfSqs7l3sOo6IxK8Du65n/tCHPRj
+         +T4bX11CGNk4tE/mtOUpFXKg2gikR0Mxc1p88PgyIRyB5+sKcBdT1GTSpJ7tA2M0usn4
+         b80tSJMoOQz/hMpQlr7hUrNOR0pRQnc4PpbPAbbDW/FnR+9nr+1jUZC22MQMIql+dNvm
+         JGsJpK/i9s9Aew5A8YjgOHTK4KytY+pqiH9CABVBlwL5kqeu2HxFPDJEV1Mt0XjrUAvU
+         shmw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=IEe4CwlJ;
+       spf=pass (google.com: domain of zaybkhanna9868@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=zaybkhanna9868@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id c33-20020a634e21000000b005dc2368a9f9sor1729999pgb.3.2024.03.08.02.19.29
+        for &lt;8mar@e-technip.site&gt;
+        (Google Transport Security);
+        Fri, 08 Mar 2024 02:19:29 -0800 (PST)
+Received-SPF: pass (google.com: domain of zaybkhanna9868@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+X-Forwarded-Encrypted: i=1; AJvYcCU/udpcKycZpj2d7yzkNMLZR8dzsfq3fQLpJhEonoLihJGCIL7h3rnc8nXjp66yO2DHdSvaAbgWidgt88jzOd6RML96
+X-Received: by 2002:a17:90a:130b:b0:29b:a1de:32d3 with SMTP id
+ h11-20020a17090a130b00b0029ba1de32d3mr4587818pja.17.1709893169154; Fri, 08
+ Mar 2024 02:19:29 -0800 (PST)
+MIME-Version: 1.0
+From: Zayb Khanna &lt;zaybkhanna9868@gmail.com&gt;
+Date: Fri, 8 Mar 2024 15:49:17 +0530
+Message-ID: &lt;CAJpu3O2xZJuiqZEseHDGf3pasrv7k+cPqEt+K=uautf-rHh9MQ@mail.gmail.com&gt;
+Subject: Tailored Solutions for Your Digital Needs (Web &amp; Apps)
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary=&quot;000000000000f3911a06132386d1&quot;
+Bcc: 8mar@e-technip.site
+X-Original-Sender: zaybkhanna9868@gmail.com
+X-Original-Authentication-Results: mx.google.com;       dkim=pass
+ header.i=@gmail.com header.s=20230601 header.b=IEe4CwlJ;       spf=pass
+ (google.com: domain of zaybkhanna9868@gmail.com designates 209.85.220.41 as
+ permitted sender) smtp.mailfrom=zaybkhanna9868@gmail.com;       dmarc=pass
+ (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Precedence: list
+Mailing-list: list 8mar@e-technip.site; contact 8mar+owners@e-technip.site
+List-ID: &lt;8mar.e-technip.site&gt;
+X-Spam-Checked-In-Group: 8mar@e-technip.site
+X-Google-Group-Id: 271529957316
+List-Post: &lt;https://groups.google.com/a/e-technip.site/group/8mar/post&gt;, &lt;mailto:8mar@e-technip.site&gt;
+List-Help: &lt;https://support.google.com/a/e-technip.site/bin/topic.py?topic=25838&gt;,
+ &lt;mailto:8mar+help@e-technip.site&gt;
+List-Archive: &lt;https://groups.google.com/a/e-technip.site/group/8mar/&gt;
+List-Subscribe: &lt;https://groups.google.com/a/e-technip.site/group/8mar/subscribe&gt;,
+ &lt;mailto:8mar+subscribe@e-technip.site&gt;
+List-Unsubscribe: &lt;mailto:googlegroups-manage+271529957316+unsubscribe@googlegroups.com&gt;,
+ &lt;https://groups.google.com/a/e-technip.site/group/8mar/subscribe&gt;
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hi,</p>
+        <p>I hope this message finds you well.</p>
+        <p>We&#x27;re a mobile application development and web designing company with over</p>
+        <p>7 years of experience. Specializing in custom iPhone, Android apps, and</p>
+        <p>websites, we tailor each solution to meet your specific requirements and</p>
+        <p>objectives.</p>
+        <p>*Our services include:*</p>
+        <p>·         Content Management Solutions (CMS)</p>
+        <p>·         E-commerce Web Development</p>
+        <p>·         Logo Design and Graphic Design</p>
+        <p>·         Mobile Apps Development</p>
+        <p>·         Re-Design/New Web Design &amp; Development</p>
+        <p>·         Responsive Website design and Development</p>
+        <p>·         Web Application Developments</p>
+        <p>We prioritize high quality and a customer-oriented approach in all our</p>
+        <p>projects.</p>
+        <p>Please give us the opportunity to serve you. I assure you&#x27;ll be satisfied</p>
+        <p>with our solutions and services.</p>
+        <p>Thank you for considering us.</p>
+        <p>Best Regards,</p>
+        <p>Zayb</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Srivathsava  Surabhi&quot; &lt;ssurabhi@udeconce.onmicrosoft.com&gt;
+        <p><b>Return-Path</b>: &lt;ssurabhi@udeconce.onmicrosoft.com&gt;
+        <p><b>Subject</b>: BUSINESS PROPOSTION
+        <p><b>Date</b>: Wed, 6 Mar 2024 13:52:48 +0000
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=1.51 required=5 tests=ARC_SIGNED,ARC_VALID,DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FORGED_SPF_HELO,FREEMAIL_FROM,HTML_MESSAGE,MISSING_HEADERS,RCVD_IN_BL_SPAMCOP_NET,RCVD_IN_MSPIKE_H2,SPF_HELO_PASS,SUBJ_ALL_CAPS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -1.29;EffectiveIp=40.107.236.100,SpamProbability=0.11
+Return-Path: &lt;ssurabhi@udeconce.onmicrosoft.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of udeconce.onmicrosoft.com designates 40.107.236.100 as permitted sender) smtp.mailfrom=udeconce.onmicrosoft.com; dkim=pass header.i=udeconce.onmicrosoft.com
+Received: from mail-bn8nam11on2100.outbound.protection.outlook.com (EHLO NAM11-BN8-obe.outbound.protection.outlook.com) ([40.107.236.100])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id 2120288344
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.2 cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384);
+          Wed, 06 Mar 2024 13:52:49 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=JPQmfMwF2U//rDbtDuzi+vZqp8W2WpANXy5c2Gq1ktuPOAwWGnnEiKu1F7e5fp/FqvB+BBu/ZPq89SQPgSN0f8yCIn2+j+LDxfGgpzDYHtgTjhgvUZgpUBB1Jh548gxdDITRbKvum7lJ41gJb1C0v86tn32g366iymt1Viif+nC44418J9E6VezoGxZEAP7gsIMyxlbb8xAyXzAfuv30Dh5x40jFbr8JvPZwh1ay9oD6/JM4r+li638fZga4AAGju9B+YznEMLuKBpO8bCSVnM7WapwU6P7GMG/DWS7ZDab3gkoo0CcUx5fjokwPtetrh0HJ9sFutMiVFbwK+76NNQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=x3VgnxLnHoxxiKF+XTL8yCjjmIBvzgYFXRj6/4RX1y0=;
+ b=lK8ka56kFe5lTuzaev+178LURS21bxpoeHUA3LtY2uOVQNA38NLXQdXy/c9GtLd+kERXczjZVMoz7XSGfmtrC/7efWCVcnz1aqjpZbYTXniCC9JmLIWs4yUmjGR0vz9Nr0oP15vZGGtJhcW0RDJCF/lDaIbXA18F+ODWt1S+hVUcEaaVPAyhqw9wisBURIR9RAhoagatsAi+taSJhrKJO+7r5GAsRXsaq7sxqUGJnlKNn9At5t881Z/wv38l0jdi7BbZfX0D83fVfavd9qyZnXkD+AS4xaZZF4hKQpHd1QYSyZaPmeAEs8MZKtP7ckCDACoZnFUFs15kShhIFAflaA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=udeconce.onmicrosoft.com; dmarc=pass action=none
+ header.from=udeconce.onmicrosoft.com; dkim=pass
+ header.d=udeconce.onmicrosoft.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=udeconce.onmicrosoft.com; s=selector2-udeconce-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=x3VgnxLnHoxxiKF+XTL8yCjjmIBvzgYFXRj6/4RX1y0=;
+ b=c9Fkt2s5TV+0UCRvBW4Yf0MbTvVvlUslmmAVmWpZ9eiPVK0Ves93U69vjEyObinhSktXtiTezNxNMwaserdhkUM2eKEWaH07oBLFhowVZrX8KlEXnks6FchjedIHDHYKEJKJhXPwsSa6TfXyhKi9EQCcSQjPX/Ce/gpRIeAnpL8=
+Received: from CPUP152MB5002.LAMP152.PROD.OUTLOOK.COM (2603:10d6:103:16d::8)
+ by RO2P152MB6151.LAMP152.PROD.OUTLOOK.COM (2603:10d6:10:e1::7) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7339.39; Wed, 6 Mar 2024 13:52:48 +0000
+Received: from CPUP152MB5002.LAMP152.PROD.OUTLOOK.COM
+ ([fe80::4c95:60a6:6499:741b]) by CPUP152MB5002.LAMP152.PROD.OUTLOOK.COM
+ ([fe80::4c95:60a6:6499:741b%6]) with mapi id 15.20.7339.035; Wed, 6 Mar 2024
+ 13:52:48 +0000
+From: &quot;Srivathsava  Surabhi&quot; &lt;ssurabhi@udeconce.onmicrosoft.com&gt;
+Subject: BUSINESS PROPOSTION
+Thread-Topic: BUSINESS PROPOSTION
+Thread-Index: AQHab82SR8fLybAONUyP44UZEyMWnQ==
+Date: Wed, 6 Mar 2024 13:52:48 +0000
+Message-ID:
+ &lt;CPUP152MB50027EF1578AD57C2734DE6BFB212@CPUP152MB5002.LAMP152.PROD.OUTLOOK.COM&gt;
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=udeconce.onmicrosoft.com;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: CPUP152MB5002:EE_|RO2P152MB6151:EE_
+x-ms-office365-filtering-correlation-id: e77ee6db-a06c-438b-5875-08dc3de4b527
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ nOzbXKIY8ZOP+5e3hbyclEaM2flKLXGPleteMzJ5zq6i9EXk7pnY6r28vEYDpGzByjcy3rqJeNPVPPp/6IFuRN9oVBcOrbNQL0Oy+RG8bpYhVYyTEAOU79cstAFfBu+y72s2qTowvWj3ogLXpnWKreYwUdltz2p0qsBufs8Dy1qqooWWn5n6aOxvMseHRYLQrUYeUGrpYo9+YtXidCUXcvHRgngJnSFDZNCL+rvbrQ3S7+H4cpvMFmLqHFq9aOA4L/VBDQPeqkF58U/y5bF+cuRnFyTJ/srPGvdPjz+S3aIehzKafZpqTNjDmi18Dr9Ksn9LUimx1PCPu6WMM9ajIm9+dKFpp9/WJBCjrpL8r0R1v6nxntaFXcx2vd4S1/IEU4CzoEZHi2ahHxgCynz1zXF8yBvi1nlLGO7UJtADwvBbH5DGJBygaYJpcRNZ30aU4sq3UGNW4UnF+1KVhxBtWvqs9WrXjzmokoMESy3ieHFppzUMaOyrIqRdEMWACITT/x3f5i7u1mG4Mmu2NNv70AvdvbpmmFncJ13uwXYoTAV8LN1fuldXZVcMdmnuMHXMWwwHqzY1FBKg4m71RYjT7eiyZc44ihxv8k93e0KF/qZ6qj8IMU+IPPVKOTFqh7wB9ScYe/FzOf4RzL9qD5+/DEtb5LdpmAJvprV5fXn+VzA3NGd1WqgjI2vpZgm5SKcQlvPDhnWvWp4J+krra5Uqfg==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CPUP152MB5002.LAMP152.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230031)(376005)(41320700004)(38070700009);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?PZd5AMGQufg6kbG79bEHyawHQhjoSTHN5xY8L4dyCN8kNabf0uIWpmn/jt?=
+ =?iso-8859-1?Q?Tb0snzazqGX5ss6PIyiGSRyE9u7SfzkzUurclZ4M7cFJLwprAOrM2336jj?=
+ =?iso-8859-1?Q?Ubt2FkPr/QqRWfS3lZHujgo6TyfhhyuTBnMtyvwgvA5pRAOq7fZWUNIqdS?=
+ =?iso-8859-1?Q?5bH7H3om/VnwPnRx/Adyd0wVCjDThfR86aGp07oHzfdrIVnLzPFYzDUHja?=
+ =?iso-8859-1?Q?V37a/abywMTVwvoyJS+KeBH/qRXm5BcvP6bNNv+j/EuOzpLCkoiamj9JBM?=
+ =?iso-8859-1?Q?v19sA++UdLLfRQ1IMC1EbKhZtx1Bn1jLEADSXa4B5A8ev+NVpIWlDFePBq?=
+ =?iso-8859-1?Q?+dy0W7jhgbQJ8e9Al2Kf23sdrUrNhTYLbwNIQveWDwGLaBd4icypatkCq4?=
+ =?iso-8859-1?Q?zBLuRQ2eBnHpiEC+F74tvbBd1hFbp79a0mk0IJMwSr455R3hNYgU38BVon?=
+ =?iso-8859-1?Q?GVUPtjDdRV6KJNYwlgvESrXvqTRacy5WFPGylfV1OMpAdWlWBAxoWWkSsK?=
+ =?iso-8859-1?Q?PaZhjIQdHAZdEu2muQ17TWSxFJEz6vrtJInIz7HgM2S/cwu4PrpLNKc0V0?=
+ =?iso-8859-1?Q?MIC7S1CCqlj8STzU7/UuTCz1OWNWJZ1vyw3pxV9bvopno/40hgb/+H6jGM?=
+ =?iso-8859-1?Q?ceyerDN2mn5UrxkKzkWbGlolKKCWbunuq5apcRDFP2MhmfH+3iW6mUH3cx?=
+ =?iso-8859-1?Q?wpTafE4yBOdY+2SPBxXiMmtE0SEqxzupIoogdZzkItFetKhENp22ZR4r8Q?=
+ =?iso-8859-1?Q?+h6kNSk69opBweoOYT8ZvD5CPOikiMzY+PLcCpkD3hJUxIwGErlvmAnkp4?=
+ =?iso-8859-1?Q?zejTEsJVw9IBP/NFcqjSZQTijefBGFsw9wZX/uGntO/kDVZqdshnefiIt/?=
+ =?iso-8859-1?Q?sc+nq2RmSSB+LpoPkcfVoZVAAUF2fQOgioL38SYG8X1o20Db22A9iRKtq2?=
+ =?iso-8859-1?Q?Iz/nybL2gcjsePsr0k48Uy0yiQNOG7ufuU/U5iqRJbeLw7joSUuzG11iGT?=
+ =?iso-8859-1?Q?YHEvzD/BskyXZ8XdjvBwHtTkDr9rfi7vv0HaNm2wQ/EEnw3CTpai6LS6Cz?=
+ =?iso-8859-1?Q?tMgxVM9QpB5NgTs3fPX0ITTgpLY7RHJgBKHvo3mcH205oADZy8+5ilRLwY?=
+ =?iso-8859-1?Q?3yIcoMIYKSzwG+cuLZk30LlebnIL9y1BiV50UK2GsTIY1fW5uyg++Hv1au?=
+ =?iso-8859-1?Q?yCBE30rFVUZahvBEacZPSmC5aam//tukGREdMK0QDa4d8c3AUr5GEGU8gd?=
+ =?iso-8859-1?Q?/FW/XkAsQdCWKoX9jiYLg5ctf/3ud4bCByVhnXlk69bpynYYR0/kw/8hvU?=
+ =?iso-8859-1?Q?gUinLUCX4Glm6SSAjOl39MmE+Ic5CxNaLuNDeGuE6anK4xBDFIRMl/A6wh?=
+ =?iso-8859-1?Q?Rs3kZu2RwT1Xm+ek7NgyVEWUrg+HKe8ImP2lhlBbz/BFAilcUVjKV3kUJ7?=
+ =?iso-8859-1?Q?vMcAzV4L9009S91mvyUqvKrTKY8Y9ZKIfole/87nXlQ3MkPu0id5F1bOLY?=
+ =?iso-8859-1?Q?LYHm1Tr9WihD3kQI1CEA9hLd6J5CRd79w+2eVQzMmD3wxMiGK63tXSPwsv?=
+ =?iso-8859-1?Q?FR4rjNPuaMMh2M/lxUT9JmuY9xzMZy+qkzFMNVLRSVJP6j1RzVSlUge7SN?=
+ =?iso-8859-1?Q?3twstK85ccNdw=3D?=
+Content-Type: multipart/alternative;
+    boundary=&quot;_000_CPUP152MB50027EF1578AD57C2734DE6BFB212CPUP152MB5002LAMP_&quot;
+MIME-Version: 1.0
+X-OriginatorOrg: udeconce.onmicrosoft.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CPUP152MB5002.LAMP152.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: e77ee6db-a06c-438b-5875-08dc3de4b527
+X-MS-Exchange-CrossTenant-originalarrivaltime: 06 Mar 2024 13:52:48.0815
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 56582b9e-8824-49d0-a665-cd328c0e004a
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: LjfhC2ojFdEwko87tKq+mtKjAx8PCc6gY9CKtREnJh3xarKiSfASdh2OuNPG44loH6xmLgIrR5fmaC2I9ATnpg==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: RO2P152MB6151
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hello,</p>
+        <p>We are currently interested in employing your service as a business</p>
+        <p>representative . We look forward to your reply</p>
+        <p>Have a great day ahead.</p>
+        <p>Regards</p>
+        <p>Lee Shing</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: Kenneth Richardo &lt;ricarkenneth259@gmail.com&gt;
+        <p><b>Return-Path</b>: &lt;ricarkenneth259@gmail.com&gt;
+        <p><b>To</b>: undisclosed-recipients:;
+        <p><b>Bcc</b>: writing@voussoir.net
+        <p><b>Subject</b>: Should i include your name as next of kin?
+        <p><b>Date</b>: Wed, 6 Mar 2024 11:36:08 +0100
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=-1.6 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,HK_SCAM,HTML_MESSAGE,RCVD_IN_MSPIKE_H2,SPF_HELO_NONE,UNDISC_MONEY,PURELYMAIL_IP_REPUTATION autolearn=ham autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: -2.5;EffectiveIp=209.85.128.179,SpamProbability=0.03
+Return-Path: &lt;ricarkenneth259@gmail.com&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: writing@voussoir.net
+X-Pm-Original-To: writing@voussoir.net
+Authentication-Results: purelymail.com; spf=pass (domain of _spf.google.com designates 209.85.128.179 as permitted sender) smtp.mailfrom=gmail.com; dkim=pass header.i=gmail.com; dmarc=pass (p=none) header.from=ricarkenneth259@gmail.com
+Received: from mail-yw1-f179.google.com (EHLO mail-yw1-f179.google.com) ([209.85.128.179])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTPS id -1513690149
+          for &lt;writing@voussoir.net&gt;
+          (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+          Wed, 06 Mar 2024 10:36:22 +0000 (UTC)
+Received: by mail-yw1-f179.google.com with SMTP id 00721157ae682-60978e6f9a3so69405137b3.3
+        for &lt;writing@voussoir.net&gt;; Wed, 06 Mar 2024 02:36:22 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1709721381; x=1710326181; darn=voussoir.net;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=zAx8N+TsqEgaSmosHsqQh5fpAfsHrY3ozYnkfyMZk4c=;
+        b=GDat/nbZTagNWK2drYSwuc245S97gow9AnTdBlKCzdhOlbtYkjHI/TOiq++xHgyrNu
+         vdfldBrx/UPjhIc6qAm3mTtJMP5fbe8+E0T+vy0/SSyBMSuxtBbuTV8s6zvfQs9rXRhu
+         EsdIVHQNPAtphPAM8Jt3K51VgEFESm/xxOY2gCwJojev8KzFycWDmROU6UUpdyuEn8GV
+         HZSGp8U5JgzGIV0r9QmZRQTNmSpobb3XuUGinfb81eLvYA9ebkPTrRWnWo+MDJ5utO0x
+         qG5cZzwYvr2iiPxUS9V3BHAduPwi3REEJVfmMyv7mazIre/wy15WQinwQ+gKmWACmluI
+         ld9Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1709721381; x=1710326181;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=zAx8N+TsqEgaSmosHsqQh5fpAfsHrY3ozYnkfyMZk4c=;
+        b=Aqe4C6RUOTZ9DrxWoEjSMl4e+fnq/c7LLvfDcTxHNBr50JUE/9TPskmuvoxVTUXHnl
+         e+tO+5vQ18D2qoUYLtuPYnvbcqO9gz7I430PUQ8J4Xr0b0snh3BLlxLV+MveifYI9qms
+         bQxdqLwyItXffzOUxJ4ZUdNIXdat23yI3ODjNJssWnost4qzWlGr//2bJpqeoR+Fx9Uh
+         Nit5HBXA4pP8xCCW12WwVjxdtFMXw8VSo88ZaYq+WUhQDmL7aEPj0PDoiVQxqYB0jmHd
+         xtH28jPi1nhsar8Kl3bqMVnRmHmw6EnLKXx1ObjG3PobrfGAbhWFztQh1rC/vj07bzWP
+         71Vw==
+X-Forwarded-Encrypted: i=1; AJvYcCUYB66xluwVEGpV6kQzTTZiwURn7oJLVrx4YPnNfUeWXBUglueSi5wduUoqtFhOqXq3KEjMpRNBD62VRmdSAP7Yy0Tojw==
+X-Gm-Message-State: AOJu0Yx4TsykKtGX8/4B37GFR7+HwM4o3t7GqEcYBLpYHsNvARNAyDti
+    qH4lYjayLOOBbW3xZvr/pAtzlbEBye1CNKZa8wUEeDOvUmNUAqhetryWmPCEJ56/lrBtBFkFx9V
+    bXuOofnefw9n5ROViEnLxVk44OZc=
+X-Google-Smtp-Source: AGHT+IFGeo0nRouP7MOq2N5CUqIRUyHpMQqGGiGLD9/aOrCfH/cObunigJC7HXRme9IiXgMM76pesfHskb3iSIxYzPA=
+X-Received: by 2002:a05:690c:82:b0:609:8375:6eed with SMTP id
+ be2-20020a05690c008200b0060983756eedmr16057747ywb.17.1709721381567; Wed, 06
+ Mar 2024 02:36:21 -0800 (PST)
+MIME-Version: 1.0
+From: Kenneth Richardo &lt;ricarkenneth259@gmail.com&gt;
+Date: Wed, 6 Mar 2024 11:36:08 +0100
+Message-ID: &lt;CAN0do106jazTtqzKYJuUykBCmS+TD=FwF_QqGvmTSmhWZaPN=A@mail.gmail.com&gt;
+Subject: Should i include your name as next of kin?
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary=&quot;0000000000009d02ac0612fb87cc&quot;
+Bcc: writing@voussoir.net
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hello,</p>
+        <p>I would like to present a private proposition to you that could benefit</p>
+        <p>both of us regarding a probate file at my office. I will provide the</p>
+        <p>details once you acknowledge this email. Please respond at your earliest</p>
+        <p>convenience for complete information.</p>
+        <p>Kind regards,</p>
+        <p>Kenneth</p>
+    </article>
+
+    <article>
+        <p><b>From</b>: &quot;Jeremy Dyson&quot; &lt;ebikejt@lj168.net&gt;
+        <p><b>Reply-To</b>: jeremydyson@lj168.net
+        <p><b>Return-Path</b>: &lt;ebikenn@lj168.net&gt;
+        <p><b>To</b>: pypi@voussoir.net
+        <p><b>Subject</b>: Mountain E-bike is here
+        <p><b>Date</b>: Tue, 05 Mar 2024 08:14:51 +0100
+        <details>
+        <summary>Headers</summary>
+        <pre>
+X-Spam-Status: No, score=4.82 required=5 tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,HTML_IMAGE_RATIO_06,HTML_MESSAGE,MIME_HTML_ONLY,RCVD_IN_MSPIKE_BL,RCVD_IN_MSPIKE_L5,SPF_HELO_NEUTRAL,URIBL_DBL_BLOCKED_OPENDNS,PURELYMAIL_IP_REPUTATION autolearn=no autolearn_force=no version=4.0.0
+X-Pm-Spam-PURELYMAIL-IP-REPUTATION: 2.32;EffectiveIp=185.218.100.108,SpamProbability=0.43
+Return-Path: &lt;ebikenn@lj168.net&gt;
+Delivered-To: ethan@voussoir.net
+X-Pm-Known-Alias: pypi@voussoir.net
+X-Pm-Original-To: pypi@voussoir.net
+Authentication-Results: purelymail.com; dkim=pass header.i=lj168.net; dmarc=pass (p=none) header.from=ebikejt@lj168.net
+Received: from paavniexports.com (EHLO paavniexports.com) ([185.218.100.108])
+          by smtp.purelymail.com (Purelymail SMTP) with ESMTP id 465841236
+          for &lt;pypi@voussoir.net&gt;;
+          Tue, 05 Mar 2024 09:09:45 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mail; d=lj168.net;
+ h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:Content-Type:Content-Transfer-Encoding;
+ bh=95CHGiY2HLNxZ+bPt5ms4EkBJhI=;
+ b=wR75L/Huj9Hrpd+N7sUUG7YVV500phUPqTCoJ1fKR1NhqedQkdTKDCZP1qD4zFfQutjVSXxoyfu4
+   38vuvwW5i2nAlfUF8t5Ki+jz1p3K254zBzLql7EiOrk+sIUJeu0TVWM7F8WBQHMO1zCPVzzoomQ0
+   gROdmWGRYoUWlaxdD/Q=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mail; d=lj168.net;
+ b=LuQNLeogktmFBVRswZEjaL2RYYedn1FGMNeZie4J6UdcLo2EWD0WuyJApI9SAwKkORiUvcJgykom
+   9+XarnXUszSrAQF7HKp63oOIVs2Xqr1+SvMptL5ztVayz5uJF0fJJ/ZWAL3jdho4GT+x1V/PbIcJ
+   v8ITMeBdCkp8u6f741E=;
+To: pypi@voussoir.net
+Subject: Mountain E-bike is here
+Message-ID: &lt;dfd1a37a46f8534f05b67d857793d2eb@lj168.net&gt;
+Date: Tue, 05 Mar 2024 08:14:51 +0100
+From: &quot;Jeremy Dyson&quot; &lt;ebikejt@lj168.net&gt;
+Reply-To: jeremydyson@lj168.net
+MIME-Version: 1.0
+Content-Type: text/html; charset=&quot;UTF-8&quot;
+Content-Transfer-Encoding: 8bit
+        </pre>
+        </details>
+
+        <hr/>
+
+        <p>Hello,</p>
+        <p>We are delighted to showcase our premier innovation in cycling technology: the 26-inch Mountain E-bike,</p>
+        <p>crafted with precision by our team of experts to transform your riding experience.</p>
+        <p>As a professional e-bike manufacturer with years of industry expertise, we are deeply committed to quality and excellence.</p>
+        <p>Our state-of-the-art facility is dedicated to producing superior e-bikes that blend cutting-edge technology with exceptional reliability.</p>
+        <p>Each model is a testament to our passion for innovation and our dedication to providing cyclists with the tools they need to explore new horizons.</p>
+        <p>Our latest creation is a testament to our unwavering commitment to excellence.</p>
+        <p>It features a detachable 36V 13Ah battery that offers a substantial travel range of 35-55 miles on a single charge at a pedal-assist setting that conserves energy.</p>
+        <p>Equipped with a robust 350W brushless geared motor, this e-bike reaches speeds up to 20MPH, offering the perfect blend of power and endurance for any journey,</p>
+        <p>whether it be your daily commute or a thrilling mountain trail.</p>
+        <p>Should you be interested in acquiring one or multiple e-bikes from our collection, please furnish us with your shipping address, and we will make arrangements for shipment.</p>
+        <p>Housed in Germany, our warehouse enables expedited delivery to all European destinations within a span of 3-7 days.</p>
+        <p>Should you be interested in acquiring one or multiple e-bikes from our collection, please furnish us with your shipping address, and we will make arrangements for shipment.</p>
+        <p>Housed in Germany, our warehouse enables expedited delivery to all European destinations within a span of 3-7 days.</p>
+        <p>With options to engage either throttle or pedal assist modes that come in six levels of power assistance, our e-bike is designed to cater to your unique cycling style.</p>
+        <p>Transitioning between modes is seamless, allowing you to effortlessly tap into the extra power when needed, such as when maneuvering through bustling streets or ascending steep terrain.</p>
+        <p>Our e-bike showcases a detailed LCD display for monitoring gear position, speed, and mileage, providing you with intelligent feedback as you ride.</p>
+        <p>The bike&#x27;s backbone is built from high-strength carbon steel and aluminum alloy, ensuring a ride that is both stable and agile.</p>
+        <p>A versatile 21-speed transmission system, reliable disc brakes for safety, and durable double-walled rims are just a few of the features that make our e-bike a standout</p>
+        <p>choice for both novice and seasoned riders.</p>
+        <p>To ensure good maintenance, our e-bikes come with intuitively designed connectors for all electrical components, making replacements straightforward and user-friendly.</p>
+        <p>This innovative approach eliminates the need for complicated wiring work, allowing for quick and easy component changes.</p>
+        <p>Upon delivery, you&#x27;ll find your e-bike 85 percent pre-assembled, with only a few simple steps left to complete before you can begin your riding adventure.</p>
+        <p>To further assist you, we&#x27;ve provided a helpful assembly video on the product page. Rest assured, your purchase is also protected by a one-year service warranty</p>
+        <p>covering the electric motor, battery, and more, ensuring your peace of mind.</p>
+        <p>Embark on an unparalleled journey with our sophisticated 26-inch Mountain E-bike and discover the fusion of power, flexibility, and convenience that awaits.</p>
+        <p>If this exceptional product piques your interest, please provide us with your shipping address, and we will ensure your e-bike is dispatched swiftly.</p>
+        <p>Our efficient distribution network based in Germany guarantees that your order will arrive at your doorstep within 3-7 days across Europe.</p>
+        <p>We eagerly await the opportunity to serve you and are confident that our e-bike will exceed your expectations, providing you with an unrivaled cycling experience.</p>
+        <p>For any further inquiries or special requests, do not hesitate to contact us. We are here to support you on your electric biking journey.</p>
+        <p>With warmest regards and anticipation for your exploration,</p>
+        <p>Thanks,</p>
+        <p>Jeremy Dyson</p>
+        <p>From our ebike factory</p>
+    </article>
+
+    <article>
         <p><b>From</b>: Calvin Sloan &lt;calvin@webtechresearch.com&gt;
         <p><b>Return-Path</b>: &lt;calvin@webtechresearch.com&gt;
         <p><b>To</b>: Contact &lt;contact@voussoir.net&gt;
