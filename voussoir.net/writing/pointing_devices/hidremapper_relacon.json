@@ -1,0 +1,148 @@
+{
+    "version": 3,
+    "unmapped_passthrough": true,
+    "partial_scroll_timeout": 1000000,
+    "interval_override": 0,
+    "mappings": [
+        {
+            "target_usage": "0xfff10001",
+            "source_usage": "0x000c00b5",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": true
+        },
+        {
+            "target_usage": "0x00010038",
+            "source_usage": "0x00010031",
+            "scaling": -40,
+            "layer": 1,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000c0238",
+            "source_usage": "0x00010030",
+            "scaling": 40,
+            "layer": 1,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e0",
+            "source_usage": "0x00090004",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007004b",
+            "source_usage": "0x00090004",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e0",
+            "source_usage": "0x00090005",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007004e",
+            "source_usage": "0x00090005",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e0",
+            "source_usage": "0x000c00e9",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e2",
+            "source_usage": "0x000c00e9",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007002b",
+            "source_usage": "0x000c00e9",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00070028",
+            "source_usage": "0x000c00cd",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e0",
+            "source_usage": "0x000c00ea",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007001a",
+            "source_usage": "0x000c00ea",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00090004",
+            "source_usage": "0x000c00b6",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x00010038",
+            "source_usage": "0x00010038",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000c0238",
+            "source_usage": "0x000c0238",
+            "scaling": 1000,
+            "layer": 0,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e0",
+            "source_usage": "0x00090004",
+            "scaling": 1000,
+            "layer": 1,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007004b",
+            "source_usage": "0x00090004",
+            "scaling": 1000,
+            "layer": 1,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x000700e0",
+            "source_usage": "0x00090005",
+            "scaling": 1000,
+            "layer": 1,
+            "sticky": false
+        },
+        {
+            "target_usage": "0x0007004e",
+            "source_usage": "0x00090005",
+            "scaling": 1000,
+            "layer": 1,
+            "sticky": false
+        }
+    ]
+}
