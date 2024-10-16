@@ -48,7 +48,7 @@ article address
 {
     font-style: normal;
 }
-@media not print
+@media screen
 {
     article
     {
@@ -80,6 +80,16 @@ article address
     }
 }
 
+@media print
+{
+    a::after
+    {
+        display: inline-block;
+        content: " <" attr(href) ">";
+        text-decoration: none;
+        color: var(--color_maintext);
+    }
+}
 h1, h2, h3, h4, h5
 {
     padding: 8px;
@@ -123,7 +133,8 @@ article *
     border-radius: 8px;
 }
 
-article > audio
+article > audio,
+article > p > audio
 {
     width: 100%;
 }
