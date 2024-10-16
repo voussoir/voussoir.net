@@ -55,7 +55,17 @@ And in both cases made a lot of people happy with results I'm very proud of. Bei
 
 > [/u/Thylek--Shran](https://old.reddit.com/r/photography/comments/xufnvu/why_do_you_take_photographs_what_do_you_actually/iqvoosz/)
 
-There is a John Waters movie called [Pecker](<https://en.wikipedia.org/wiki/Pecker_(film)>) about young John Connor, having defeated the T-1000, living in Baltimore and taking pictures of his modest, low class friends and family. I am jealous of his confidence. I would like to be the kind of person that carries the camera everywhere, but I am still too shy and embarrassed.
+-
+
+> I have "lost years" from my twenties... not really lost of course but I looked so derisively upon the idiots with their selfie sticks, as I wandered around with my DSLR taking interestingly angled shots with absolutely no one I knew in them. It's a fun hobby but in hindsight I think I had my priorities backwards.
+
+> [afavour](https://news.ycombinator.com/item?id=38517565)
+
+There is a John Waters movie called [Pecker](<https://en.wikipedia.org/wiki/Pecker_(film)>) about young John Connor, having defeated the T-1000, living in Baltimore and taking pictures of his modest, low class friends and family.
+
+![](pecker.jpg)
+
+I am jealous of his confidence. I would like to be the kind of person that carries the camera everywhere, but I am still too shy and embarrassed.
 
 The embarrassment issue continues to be difficult for me to reason about. When I look at an album of family pictures or videos spanning decades back -- pictures of people in their living rooms, kitchens, backyards, schools, clubs, and events -- I don't ask myself what makes it valuable. But if I try to place myself in that photographer's shoes and imagine that moment as if it were the present... it makes me shiver with embarrassment. "Hey everyone, look over here, this is a valuable moment that needs to be captured and memorialized forever", the snap of the shutter says, loudly. "You're going to die some day so I need to get pictures of you standing around while I still have a chance". I'm not sure I could bring myself to do it.
 
