@@ -1,6 +1,9 @@
+import dateutil.parser
 import boto3
+import datetime
 import io
 import jinja2
+import kkroening_ffmpeg
 import PIL.Image
 import sys
 import textwrap
@@ -47,6 +50,139 @@ def webpath(path, anchor=None):
         path += '#' + anchor.lstrip('#')
     return path
 
+def to_object(etq_photo, etq_album=None):
+    if etq_photo.simple_mimetype == 'image':
+        return Photo(etq_photo, etq_album)
+    elif etq_photo.simple_mimetype == 'audio':
+        return Audio(etq_photo, etq_album)
+    elif etq_photo.simple_mimetype == 'video':
+        return Video(etq_photo, etq_album)
+
+class Album:
+    def __init__(self, etq_album):
+        self.etq_album = etq_album
+        self.article_id = self.etq_album.title
+        self.photos = list(self.etq_album.get_photos())
+        self.photos.sort(key=lambda p: p.real_path.normcase)
+        self.photos = [p for p in self.photos if p.has_tag(PUBLISH_TAGNAME)]
+        self.photos = [to_object(etq_photo=photo, etq_album=self.etq_album) for photo in self.photos]
+        self.photos.sort(key=lambda p: p.sort_date)
+        # for photo in self.photos:
+        #     print(photo.etq_photo.real_path.normcase, photo.sort_date)
+        self.web_url = f'{PHOTOGRAPHY_WEBROOT}/{self.article_id}'
+        self.sort_date = self.photos[0].sort_date
+        self.exposure_time = sum(p.exposure_time for p in self.photos)
+
+    def prepare(self):
+        for photo in self.photos:
+            photo.prepare()
+
+    def render_web(self, index=None, is_root=False, totalcount=None):
+        headliners = [p for p in self.photos if p.etq_photo.has_tag(HEADLINER_TAGNAME)]
+
+        return jinja2.Template('''
+        <article id="{{article_id}}" class="album">
+        <h1><a href="{{web_url}}">{{article_id}}</a></h1>
+        <div class="albumphotos">
+            {% for photo in headliners %}
+            {{photo.render_web(is_root=1)}}
+            {% endfor %}
+
+            <div class="album_tinies">
+            {% for photo in photos %}
+            {{photo.render_tiny()}}
+            {% endfor %}
+            </div>
+        </div>
+        </article>
+        ''').render(
+            article_id=self.article_id,
+            web_url=self.web_url,
+            photos=self.photos,
+            headliners=headliners,
+        )
+
+    def render_atom(self):
+        photos = []
+        for photo in self.photos:
+            # line = f'<article><a href="{photo.anchor_url}"><img src="{photo.small_url}" loading="lazy"/></a>'.replace('\\', '/')
+            line = photo.render_atom_cdata()
+            photos.append(line)
+        photos = '\n'.join(photos)
+
+        return f'''
+        <id>{self.article_id}</id>
+        <title>{self.article_id}</title>
+        <link rel="alternate" type="text/html" href="{self.web_url}"/>
+        <updated>{self.sort_date.isoformat()}</updated>
+        <content type="html">
+        <![CDATA[
+        {photos}
+        ]]>
+        </content>
+        '''
+
+class Audio:
+    def __init__(self, etq_photo, etq_album=None):
+        self.etq_photo = etq_photo
+        self.article_id = self.etq_photo.real_path.replace_extension('').basename
+
+        if etq_album is None:
+            parent_key = 'photography'
+        else:
+            parent_key = f'photography/{etq_album.title}'
+
+        self.s3_key = f'{parent_key}/{self.etq_photo.real_path.basename}'
+
+        self.s3_exists = self.s3_key in S3_EXISTING_FILES;
+        self.big_url = f'{S3_WEBROOT}/{self.s3_key}'
+        self.anchor_url = f'{DOMAIN_WEBROOT}/{parent_key}#{self.article_id}'
+
+        probe = kkroening_ffmpeg.probe(self.etq_photo.real_path.absolute_path)
+        self.sort_date = datetime.datetime.strptime(self.article_id.split(' ')[0], '%Y-%m-%d_%H-%M-%S').astimezone()
+        # print(self.article_id, self.sort_date)
+        self.exposure_time = 0
+
+    def prepare(self):
+        if not self.s3_exists:
+            self.s3_upload()
+
+    def render_atom(self):
+        return f'''
+        <id>{self.article_id}</id>
+        <title>{self.article_id}</title>
+        <link rel="alternate" type="text/html" href="{self.anchor_url}"/>
+        <updated>{self.sort_date.isoformat()}</updated>
+        <content type="html">
+        <![CDATA[
+        {self.render_atom_cdata()}
+        ]]>
+        </content>
+        '''
+
+    def render_atom_cdata(self):
+        return f'<span><audio controls preload="metadata" src="{self.big_url}"></audio></span>'
+
+    def render_tiny(self):
+        return ''
+
+    def render_web(self, index=None, is_root=False, totalcount=None):
+        if totalcount is not None:
+            number_tag = f'<span class="number_tag">#{index}/{totalcount}</a>'
+        else:
+            number_tag = ''
+
+        return f'''
+        <article id="{self.article_id}" class="audiograph">
+        <audio controls preload="metadata" src="{self.big_url}"></audio>
+        </article>
+        '''
+
+    def s3_upload(self):
+        log.info('Uploading %s as %s', self.etq_photo.real_path.absolute_path, self.s3_key)
+        bucket.upload_fileobj(self.etq_photo.real_path.open('rb'), self.s3_key)
+        self.s3_exists = True
+
 class Photo:
     def __init__(self, etq_photo, etq_album=None):
         self.etq_photo = etq_photo
@@ -64,28 +200,61 @@ class Photo:
         self.color_class = 'monochrome' if self.etq_photo.has_tag('monochrome') else ''
 
         self.s3_exists = self.s3_key in S3_EXISTING_FILES;
-        self.img_url = f'{S3_WEBROOT}/{self.s3_key}'
+        self.big_url = f'{S3_WEBROOT}/{self.s3_key}'
         self.small_url = f'{S3_WEBROOT}/{self.small_key}'
         self.tiny_url = f'{S3_WEBROOT}/{self.tiny_key}'
         self.anchor_url = f'{DOMAIN_WEBROOT}/{parent_key}#{self.article_id}'
-        self.published = imagetools.get_exif_datetime(self.etq_photo.real_path)
+        self.sort_date = imagetools.get_exif_datetime(self.etq_photo.real_path).astimezone()
+        # print(self.article_id, self.sort_date)
         self.exposure_time = imagetools.exifread(self.etq_photo.real_path)['EXIF ExposureTime'].values[0].decimal()
 
-    def prepare(self):
-        if not self.s3_exists:
-            self.s3_upload()
-
-    def make_thumbnail(self, size):
+    def make_thumbnail(self, size) -> io.BytesIO:
         image = PIL.Image.open(self.etq_photo.real_path.absolute_path)
         icc = image.info.get('icc_profile')
-        (image_width, image_height) = image.size
         exif = image.getexif()
+        (image_width, image_height) = image.size
         (width, height) = imagetools.fit_into_bounds(image_width, image_height, size, size)
         image = image.resize((width, height), PIL.Image.LANCZOS)
         bio = io.BytesIO()
         image.save(bio, format='jpeg', quality=75, exif=exif, icc_profile=icc)
         bio.seek(0)
         return bio
+
+    def prepare(self):
+        if not self.s3_exists:
+            self.s3_upload()
+
+    def render_atom(self):
+        return f'''
+        <id>{self.article_id}</id>
+        <title>{self.article_id}</title>
+        <link rel="alternate" type="text/html" href="{self.anchor_url}"/>
+        <updated>{self.sort_date.isoformat()}</updated>
+        <content type="html">
+        <![CDATA[
+        {self.render_atom_cdata()}
+        ]]>
+        </content>
+        '''
+
+    def render_atom_cdata(self):
+        return f'<a href="{self.big_url}"><img src="{self.small_url}"/></a>'
+
+    def render_tiny(self):
+        return f'<a class="tiny_thumbnail {self.color_class}" href="{self.anchor_url}"><img src="{self.tiny_url}" loading="lazy"/></a>'
+
+    def render_web(self, index=None, is_root=False, totalcount=None):
+        if totalcount is not None:
+            number_tag = f'<span class="number_tag">#{index}/{totalcount}</a>'
+        else:
+            number_tag = ''
+
+        return f'''
+        <article id="{self.article_id}" class="photograph {self.color_class}">
+        <a href="{self.big_url}" target="_blank"><img src="{self.small_url}" loading="lazy"/></a>
+        {number_tag}
+        </article>
+        '''
 
     def s3_upload(self):
         log.info('Uploading %s as %s', self.etq_photo.real_path.absolute_path, self.s3_key)
@@ -94,102 +263,120 @@ class Photo:
         bucket.upload_fileobj(self.etq_photo.real_path.open('rb'), self.s3_key)
         self.s3_exists = True
 
-    def render_web(self, index=None, totalcount=None):
-        if totalcount is not None:
-            number_tag = f'<span class="number_tag">#{index}/{totalcount}</a>'
-        else:
-            number_tag = ''
+class Video:
+    def __init__(self, etq_photo, etq_album=None):
+        self.etq_photo = etq_photo
+        self.article_id = self.etq_photo.real_path.replace_extension('').basename
 
-        return f'''
-        <article id="{self.article_id}" class="photograph {self.color_class}">
-        <a href="{self.img_url}" target="_blank"><img src="{self.small_url}" loading="lazy"/></a>
-        {number_tag}
-        </article>
-        '''
+        if etq_album is None:
+            parent_key = 'photography'
+        else:
+            parent_key = f'photography/{etq_album.title}'
+
+        self.s3_key = f'{parent_key}/{self.etq_photo.real_path.basename}'
+        self.small_key = f'{parent_key}/small_{self.etq_photo.real_path.replace_extension("jpg").basename}'
+        self.tiny_key = f'{parent_key}/tiny_{self.etq_photo.real_path.replace_extension("jpg").basename}'
+
+        self.color_class = 'monochrome' if self.etq_photo.has_tag('monochrome') else ''
+
+        self.s3_exists = self.s3_key in S3_EXISTING_FILES;
+        self.big_url = f'{S3_WEBROOT}/{self.s3_key}'
+        self.small_url = f'{S3_WEBROOT}/{self.small_key}'
+        self.tiny_url = f'{S3_WEBROOT}/{self.tiny_key}'
+        self.anchor_url = f'{DOMAIN_WEBROOT}/{parent_key}#{self.article_id}'
+
+        # probe = kkroening_ffmpeg.probe(self.etq_photo.real_path.absolute_path)
+        # if 'creation_time' in probe['format']['tags']:
+        #     self.sort_date = dateutil.parser.isoparse(probe['format']['tags']['creation_time']).astimezone()
+        # else:
+        self.sort_date = datetime.datetime.strptime(self.article_id.split(' ')[0], '%Y-%m-%d_%H-%M-%S').astimezone()
+        # print(self.article_id, self.sort_date)
+        self.exposure_time = 0
+
+    def make_thumbnail(self, size) -> io.BytesIO:
+        probe = kkroening_ffmpeg.probe(self.etq_photo.real_path.absolute_path)
+        video_stream = next(stream for stream in probe['streams'] if stream['codec_type'] == 'video')
+        video_width = int(video_stream['width'])
+        video_height = int(video_stream['height'])
+
+        command = kkroening_ffmpeg.input(self.etq_photo.real_path.absolute_path, ss=10)
+        # command = command.filter('scale', size[0], size[1])
+        command = command.output('pipe:', vcodec='bmp', format='image2pipe', vframes=1)
+        (out, trash) = command.run(capture_stdout=True, capture_stderr=True)
+        bio = io.BytesIO(out)
+        image = PIL.Image.open(bio)
+        (width, height) = imagetools.fit_into_bounds(video_width, video_height, size, size)
+        image = image.resize((width, height), PIL.Image.LANCZOS)
+        bio = io.BytesIO(out)
+        image.save(bio, format='jpeg', quality=75)
+        bio.seek(0)
+        return bio
+
+    def prepare(self):
+        if not self.s3_exists:
+            self.s3_upload()
 
     def render_atom(self):
         return f'''
         <id>{self.article_id}</id>
         <title>{self.article_id}</title>
         <link rel="alternate" type="text/html" href="{self.anchor_url}"/>
-        <updated>{self.published.isoformat()}</updated>
+        <updated>{self.sort_date.isoformat()}</updated>
         <content type="html">
         <![CDATA[
-        <a href="{self.img_url}"><img src="{self.small_url}"/></a>
+        {self.render_atom_cdata()}
         ]]>
         </content>
         '''
 
-class Album:
-    def __init__(self, etq_album):
-        self.etq_album = etq_album
-        self.article_id = self.etq_album.title
-        self.photos = list(self.etq_album.get_photos())
-        self.photos = [p for p in self.photos if p.has_tag(PUBLISH_TAGNAME)]
-        self.photos = [Photo(etq_photo=photo, etq_album=self.etq_album) for photo in self.photos]
-        self.photos.sort(key=lambda p: p.published)
-        # self.link = webpath(path)
-        self.web_url = f'{PHOTOGRAPHY_WEBROOT}/{self.article_id}'
-        self.published = self.photos[0].published
-        self.exposure_time = sum(p.exposure_time for p in self.photos)
+    def render_atom_cdata(self):
+        return f'<span><video controls preload="none" poster="{self.small_url}" src="{self.big_url}"></video></span>'
 
-    def prepare(self):
-        for photo in self.photos:
-            photo.prepare()
+    def render_tiny(self):
+        return f'<a class="tiny_thumbnail {self.color_class}" href="{self.anchor_url}"><img src="{self.tiny_url}" loading="lazy"/></a>'
 
-    def render_web(self, index=None, totalcount=None):
-        headliners = [p for p in self.photos if p.etq_photo.has_tag(HEADLINER_TAGNAME)]
+    def render_web(self, index=None, is_root=False, totalcount=None):
+        if totalcount is not None:
+            number_tag = f'<span class="number_tag">#{index}/{totalcount}</a>'
+        else:
+            number_tag = ''
 
-        return jinja2.Template('''
-        <article id="{{article_id}}" class="album">
-        <h1><a href="{{web_url}}">{{article_id}}</a></h1>
-        <div class="albumphotos">
-            {% for photo in headliners %}
-            {{photo.render_web()}}
-            {% endfor %}
-
-            <div class="album_tinies">
-            {% for photo in photos %}
-            <a class="tiny_thumbnail {{photo.color_class}}" href="{{photo.anchor_url}}"><img src="{{photo.tiny_url}}" loading="lazy"/></a>
-            {% endfor %}
-            </div>
-        </div>
-        </article>
-        ''').render(
-            article_id=self.article_id,
-            web_url=self.web_url,
-            photos=self.photos,
-            headliners=headliners,
-        )
-
-    def render_atom(self):
-        photos = []
-        for photo in self.photos:
-            line = f'<article><a href="{photo.anchor_url}"><img src="{photo.small_url}" loading="lazy"/></a>'.replace('\\', '/')
-            photos.append(line)
-        photos = '\n'.join(photos)
+        if is_root:
+            download_tag = ''
+        else:
+            download_tag = f'''<p class="download_tag"><a download="{self.etq_photo.real_path.basename}" href="{self.big_url}">{self.etq_photo.real_path.basename}</a> ({number_tag})</p>'''
 
         return f'''
-        <id>{self.article_id}</id>
-        <title>{self.article_id}</title>
-        <link rel="alternate" type="text/html" href="{self.web_url}"/>
-        <updated>{self.published.isoformat()}</updated>
-        <content type="html">
-        <![CDATA[
-        {photos}
-        ]]>
-        </content>
+        <article id="{self.article_id}" class="videograph {self.color_class}">
+        {download_tag}
+        <video controls preload="none" poster="{self.small_url}" src="{self.big_url}"></video>
+        </article>
         '''
 
-def write(path, content):
-    '''
-    open() and write the file, with validation that it is in the writing dir.
-    '''
-    path = pathclass.Path(path)
-    if path not in PHOTOGRAPHY_ROOTDIR:
-        raise ValueError(path)
-    print(path.absolute_path)
-    path.write('w', content, encoding='utf-8')
+    def s3_upload(self):
+        log.info('Uploading %s as %s', self.etq_photo.real_path.absolute_path, self.s3_key)
+        bucket.upload_fileobj(self.make_thumbnail(SIZE_SMALL), self.small_key)
+        bucket.upload_fileobj(self.make_thumbnail(SIZE_TINY), self.tiny_key)
+        bucket.upload_fileobj(self.etq_photo.real_path.open('rb'), self.s3_key)
+        self.s3_exists = True
+
+def make_atom(items):
+    atom = jinja2.Template('''
+    <?xml version="1.0" encoding="utf-8"?>
+    <feed xmlns="http://www.w3.org/2005/Atom">
+        <title>voussoir.net/photography</title>
+        <link href="https://voussoir.net/photography"/>
+        <id>voussoir.net/photography</id>
+
+        {% for item in items %}
+        <entry>
+            {{item.render_atom()}}
+        </entry>
+        {% endfor %}
+    </feed>
+    '''.strip()).render(items=items)
+    atom = textwrap.dedent(atom)
+    return atom
 
 def make_webpage(items, is_root, doctitle):
     rss_link = f'{PHOTOGRAPHY_WEBROOT}/{ATOM_FILE.basename}' if is_root else None
@@ -274,7 +461,7 @@ def make_webpage(items, is_root, doctitle):
     }
     body.noscrollbar
     {
-        scrollbar-width: none;
+        scrollbar-width: 0;
     }
 
     a
@@ -311,6 +498,8 @@ def make_webpage(items, is_root, doctitle):
 
     .album,
     .photograph,
+    .videograph,
+    .audiograph,
     .album_tinies
     {
         position: relative;
@@ -337,10 +526,36 @@ def make_webpage(items, is_root, doctitle):
     {
         display: block;
         max-height: 92vh;
-        border-radius: var(--img_borderradius);
         border: 1.25vh solid var(--color_bodybg);
+        border-radius: var(--img_borderradius);
         filter: hue-rotate(var(--img_huerotate)) saturate(var(--img_saturate)) blur(var(--img_blur));
         mix-blend-mode: var(--img_mixblendmode);
+    }
+    .videograph
+    {
+        width: fit-content;
+        background-color: var(--color_bodybg);
+        padding: 1.25vh;
+        border-radius: calc(1.5 * var(--img_borderradius));
+    }
+    .videograph video
+    {
+        display: block;
+        max-height: 92vh;
+        border-radius: var(--img_borderradius);
+        filter: hue-rotate(var(--img_huerotate)) saturate(var(--img_saturate)) blur(var(--img_blur));
+        mix-blend-mode: var(--img_mixblendmode);
+    }
+    .audiograph
+    {
+        width: 100%;
+        background-color: var(--color_bodybg);
+        padding: 1.25vh;
+        border-radius: calc(1.5 * var(--img_borderradius));
+    }
+    .audiograph audio
+    {
+        width: 100%;
     }
     .photograph.monochrome img,
     .tiny_thumbnail.monochrome img
@@ -361,6 +576,11 @@ def make_webpage(items, is_root, doctitle):
         border-radius: 4px;
         font-weight: bold;
         opacity: 50%;
+    }
+    .videograph .download_tag
+    {
+        text-align: right;
+        padding: 8px;
     }
     .album .album_tinies
     {
@@ -384,7 +604,8 @@ def make_webpage(items, is_root, doctitle):
 
     @media not print
     {
-        .photograph img
+        .photograph img,
+        .videograph video
         {
             box-shadow: #000 0px 0px 40px -10px;
         }
@@ -455,7 +676,7 @@ def make_webpage(items, is_root, doctitle):
     {% endif %}
 
     {% for item in items %}
-    {{item.render_web(index=loop.index, totalcount=none if is_root else (items|length))}}
+    {{item.render_web(index=loop.index, is_root=is_root, totalcount=none if is_root else (items|length))}}
     {% endfor %}
 
     <footer>
@@ -521,7 +742,7 @@ def make_webpage(items, is_root, doctitle):
         }
     }
 
-    const SCROLL_STOPS = Array.from(document.querySelectorAll("article.photograph img, .album_tinies"));
+    const SCROLL_STOPS = Array.from(document.querySelectorAll("article.photograph img, article.videograph video, .album_tinies"));
     function get_center_stop()
     {
         let center_x = window.innerWidth / 2;
@@ -728,41 +949,18 @@ def make_webpage(items, is_root, doctitle):
     html = textwrap.dedent(html)
     return html
 
-def write_atom(items):
-    atom = jinja2.Template('''
-    <?xml version="1.0" encoding="utf-8"?>
-    <feed xmlns="http://www.w3.org/2005/Atom">
-        <title>voussoir.net/photography</title>
-        <link href="https://voussoir.net/photography"/>
-        <id>voussoir.net/photography</id>
-
-        {% for item in items %}
-        <entry>
-            {{item.render_atom()}}
-        </entry>
-        {% endfor %}
-    </feed>
-    '''.strip()).render(items=items)
-    atom = textwrap.dedent(atom)
-    write(ATOM_FILE, atom)
-
-# write_directory_index(PHOTOGRAPHY_ROOTDIR)
-# for directory in PHOTOGRAPHY_ROOTDIR.walk_directories():
-#     write_directory_index(directory)
-
 @vlogging.main_decorator
 def main(argv):
     singlephotos = list(pdb.search(tag_mays=[PUBLISH_TAGNAME], has_albums=False, yield_albums=False, yield_photos=True).results)
     singlephotos += list(pdb.search(tag_mays=['voussoir_net_publish_single'], yield_albums=False, yield_photos=True).results)
-    singlephotos = [Photo(p) for p in singlephotos]
-    singlephotos.sort(key=lambda i: i.published, reverse=True)
+    singlephotos = [to_object(p) for p in singlephotos]
 
     albums = list(pdb.search(tag_musts=[PUBLISH_TAGNAME], tag_forbids=['voussoir_net_publish_single'], has_albums=True, yield_albums=True, yield_photos=False).results)
+    albums = [a for a in albums if 'no_publish' not in a.description]
     albums = [Album(a) for a in albums]
-    albums.sort(key=lambda i: i.published, reverse=True)
 
     items = singlephotos + albums
-    items.sort(key=lambda i: i.published, reverse=True)
+    items.sort(key=lambda i: i.sort_date, reverse=True)
 
     for item in items:
         item.prepare()
@@ -778,7 +976,7 @@ def main(argv):
         log.info('Writing %s', album_file.absolute_path)
         album_file.write('w', album_html)
 
-    write_atom(items)
+    ATOM_FILE.write('w', make_atom(items))
 
     return 0
 
