@@ -69,3 +69,4 @@ Date | Game | What did he see
 2022-06-17 | [Mage Night Apocalypse](https://youtu.be/3EXAvj1A3pc?t=5m09s), [again](https://youtu.be/3EXAvj1A3pc?t=15m40s), [again](https://youtu.be/3EXAvj1A3pc?t=1h11m45s) | Levelling up without clicking anything; winged, amorphous, armored blob thing; airship takes off and crash lands with no airtime in the middle
 2022-10-30 | [Killing Time](https://youtu.be/aV60gwgq1yc?t=6m30s) | Game provides in-universe reasoning for the weapons and ammunition found scattered throughout game world
 2023-06-19 | [The Legend of Kyrandia 2](https://youtu.be/fh8-BxnHY3Y?t=11m13s) | Enforced puns
+2025-04-12 | [Sabotain (almost, but it's rare, never on this scale)](https://www.youtube.com/watch?v=BexociR5dzs&t=14m40s) | Camera rotates around speaking npc
