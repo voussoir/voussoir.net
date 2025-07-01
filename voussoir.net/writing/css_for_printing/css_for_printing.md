@@ -366,7 +366,7 @@ function render_pages()
     {
         // I usually pick this threshold by experimentation but you can probably
         // do something more rigorously correct.
-        if (tbody.offsetTop + tbody.offsetParent.offsetTop > 900)
+        if (tbody.offsetHeight + tbody.offsetParent.offsetTop > 900)
         {
             page = new_page();
             tbody = page.query("table tbody");
