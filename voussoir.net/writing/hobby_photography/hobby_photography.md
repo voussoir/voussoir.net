@@ -61,6 +61,22 @@ And in both cases made a lot of people happy with results I'm very proud of. Bei
 
 > [afavour](https://news.ycombinator.com/item?id=38517565)
 
+-
+
+> Ask people if they're around. I used to have a selfie stick with a built in tripod and Bluetooth remote, but I can't be bothered to carry it around everywhere.
+
+> There's a million photos just like the ones you took of national monuments, nature, etc etc. They're nice shots but not memorable. The photos you bother to look back on are the ones that have the people you care about, including yourself. Or the ordinary places and daily habits you didn't think to take pics of, like my old college flatmates and our dingy apartment. Wish I had some photos of it to remember the simpler times lol.
+
+> [/u/Embolisms](https://old.reddit.com/r/solotravel/comments/qe2j6e/how_do_you_take_pictures_of_yourself_when_you/hhqs298/)
+
+> > Yeah I remember about 20 years ago my parents found some of their slides and videos from when they were travelling in the 70s and there were a lot of photos and videos of scenic things, but neither of them could remember what country a lot of them were taken in let alone the significance of whatever it was, but every one with either of them in it bought back a ton of memories. I decided then that I'd always try and get someone in my photos even if it was just a selfie (although I don't think we said selfies yet). At least now we can take photos of both without wasting resources, but I won't waste much time trying to get the perfect shot of a landscape or monument because I know I can pretty much always find a better picture of it online anyway and the easiest way to make my photo of the same thing unique is to take a selfie with it.
+
+> > [/u/Aodaliyan](https://old.reddit.com/r/solotravel/comments/qe2j6e/how_do_you_take_pictures_of_yourself_when_you/hhr96bv/)
+
+> > > I had to explain to my family that no one wants to see your pictures of places you've been. They want to see pictures of you in those places
+
+> > > [/u/yayitsme1](https://old.reddit.com/r/solotravel/comments/qe2j6e/how_do_you_take_pictures_of_yourself_when_you/hhrg84h/)
+
 There is a John Waters movie called [Pecker](<https://en.wikipedia.org/wiki/Pecker_(film)>) about young John Connor, having defeated the T-1000, living in Baltimore and taking pictures of his modest, low class friends and family.
 
 ![](pecker.jpg)
@@ -96,6 +112,8 @@ That's a lot of excuses. I am left with the fact that I produce work in mediums 
 See also: https://internetkhole.com
 
 See also: https://www.chronophoto.app/game.html
+
+See also: https://ben-mini.github.io/2024/img-0416
 
 ## how
 
