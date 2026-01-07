@@ -267,6 +267,10 @@ class Video:
     def __init__(self, etq_photo, etq_album=None):
         self.etq_photo = etq_photo
         self.article_id = self.etq_photo.real_path.replace_extension('').basename
+        self.stream_file = self.etq_photo.real_path.replace_extension('stream').add_extension('mp4')
+
+        if not self.stream_file.is_file:
+            self.stream_file = etq_photo.real_path
 
         if etq_album is None:
             parent_key = 'photography'
@@ -276,11 +280,18 @@ class Video:
         self.s3_key = f'{parent_key}/{self.etq_photo.real_path.basename}'
         self.small_key = f'{parent_key}/small_{self.etq_photo.real_path.replace_extension("jpg").basename}'
         self.tiny_key = f'{parent_key}/tiny_{self.etq_photo.real_path.replace_extension("jpg").basename}'
+        self.stream_key = f'{parent_key}/{self.stream_file.basename}'
 
         self.color_class = 'monochrome' if self.etq_photo.has_tag('monochrome') else ''
 
         self.s3_exists = self.s3_key in S3_EXISTING_FILES;
+        self.big_exists = self.s3_key in S3_EXISTING_FILES;
+        self.stream_exists = self.stream_key in S3_EXISTING_FILES;
+        self.small_exists = self.small_key in S3_EXISTING_FILES;
+        self.tiny_exists = self.tiny_key in S3_EXISTING_FILES;
+
         self.big_url = f'{S3_WEBROOT}/{self.s3_key}'
+        self.stream_url = f'{S3_WEBROOT}/{self.stream_key}'
         self.small_url = f'{S3_WEBROOT}/{self.small_key}'
         self.tiny_url = f'{S3_WEBROOT}/{self.tiny_key}'
         self.anchor_url = f'{DOMAIN_WEBROOT}/{parent_key}#{self.article_id}'
@@ -294,27 +305,35 @@ class Video:
         self.exposure_time = 0
 
     def make_thumbnail(self, size) -> io.BytesIO:
-        probe = kkroening_ffmpeg.probe(self.etq_photo.real_path.absolute_path)
-        video_stream = next(stream for stream in probe['streams'] if stream['codec_type'] == 'video')
-        video_width = int(video_stream['width'])
-        video_height = int(video_stream['height'])
+        if self.etq_photo.has_thumbnail:
+            bio = io.BytesIO(self.etq_photo.get_thumbnail())
+            image = PIL.Image.open(bio)
+            (width, height) = imagetools.fit_into_bounds(image.size[0], image.size[1], size, size)
+            image = image.resize((width, height), PIL.Image.LANCZOS)
+            bio = io.BytesIO()
+            image.save(bio, format='jpeg', quality=75)
+            bio.seek(0)
+        else:
+            probe = kkroening_ffmpeg.probe(self.etq_photo.real_path.absolute_path)
+            video_stream = next(stream for stream in probe['streams'] if stream['codec_type'] == 'video')
+            video_width = int(video_stream['width'])
+            video_height = int(video_stream['height'])
 
-        command = kkroening_ffmpeg.input(self.etq_photo.real_path.absolute_path, ss=10)
-        # command = command.filter('scale', size[0], size[1])
-        command = command.output('pipe:', vcodec='bmp', format='image2pipe', vframes=1)
-        (out, trash) = command.run(capture_stdout=True, capture_stderr=True)
-        bio = io.BytesIO(out)
-        image = PIL.Image.open(bio)
-        (width, height) = imagetools.fit_into_bounds(video_width, video_height, size, size)
-        image = image.resize((width, height), PIL.Image.LANCZOS)
-        bio = io.BytesIO(out)
-        image.save(bio, format='jpeg', quality=75)
-        bio.seek(0)
+            command = kkroening_ffmpeg.input(self.etq_photo.real_path.absolute_path, ss=10)
+            # command = command.filter('scale', size[0], size[1])
+            command = command.output('pipe:', vcodec='bmp', format='image2pipe', vframes=1)
+            (out, trash) = command.run(capture_stdout=True, capture_stderr=True)
+            bio = io.BytesIO(out)
+            image = PIL.Image.open(bio)
+            (width, height) = imagetools.fit_into_bounds(video_width, video_height, size, size)
+            image = image.resize((width, height), PIL.Image.LANCZOS)
+            bio = io.BytesIO(out)
+            image.save(bio, format='jpeg', quality=75)
+            bio.seek(0)
         return bio
 
     def prepare(self):
-        if not self.s3_exists:
-            self.s3_upload()
+        self.s3_upload()
 
     def render_atom(self):
         return f'''
@@ -349,15 +368,25 @@ class Video:
         return f'''
         <article id="{self.article_id}" class="videograph {self.color_class}">
         {download_tag}
-        <video controls preload="none" poster="{self.small_url}" src="{self.big_url}"></video>
+        <video controls preload="none" poster="{self.small_url}" src="{self.stream_url}"></video>
         </article>
         '''
 
     def s3_upload(self):
         log.info('Uploading %s as %s', self.etq_photo.real_path.absolute_path, self.s3_key)
-        bucket.upload_fileobj(self.make_thumbnail(SIZE_SMALL), self.small_key)
-        bucket.upload_fileobj(self.make_thumbnail(SIZE_TINY), self.tiny_key)
-        bucket.upload_fileobj(self.etq_photo.real_path.open('rb'), self.s3_key)
+
+        if (not self.small_exists) or '2025-06-28' in self.etq_photo.real_path.basename:
+            bucket.upload_fileobj(self.make_thumbnail(SIZE_SMALL), self.small_key)
+
+        if (not self.small_exists) or '2025-06-28' in self.etq_photo.real_path.basename:
+            bucket.upload_fileobj(self.make_thumbnail(SIZE_TINY), self.tiny_key)
+
+        if self.stream_key != self.s3_key and not self.stream_exists:
+            bucket.upload_fileobj(self.stream_file.open('rb'), self.stream_key)
+
+        if not self.big_exists:
+            bucket.upload_fileobj(self.etq_photo.real_path.open('rb'), self.s3_key)
+
         self.s3_exists = True
 
 def make_atom(items):
@@ -378,9 +407,9 @@ def make_atom(items):
     atom = textwrap.dedent(atom)
     return atom
 
-def make_webpage(items, is_root, doctitle):
+def make_webpage(this_id, items, is_root, doctitle):
     rss_link = f'{PHOTOGRAPHY_WEBROOT}/{ATOM_FILE.basename}' if is_root else None
-    back_link = None if is_root else PHOTOGRAPHY_WEBROOT
+    back_link = None if is_root else (PHOTOGRAPHY_WEBROOT + '#' + this_id)
     sort_reverse = is_root
 
     html = jinja2.Template('''
@@ -489,7 +518,8 @@ def make_webpage(items, is_root, doctitle):
         margin-right: auto;
         text-align: end;
     }
-    header > *
+    header > *,
+    .back_link
     {
         display: inline-block;
         padding: 16px;
@@ -667,7 +697,7 @@ def make_webpage(items, is_root, doctitle):
     {% endif %}
 
     {%- if back_link -%}
-    <a href="{{back_link}}">Back</a>
+    <a class="back_link" href="{{back_link}}">Back</a>
     {%- endif -%}
     </header>
 
@@ -684,6 +714,9 @@ def make_webpage(items, is_root, doctitle):
         <p>Contact me: photography@voussoir.net</p>
         <p>These photos took {{items|sum(attribute='exposure_time')|round(4)}} seconds to make.</p>
         <p><button id="new_perspective_button" onclick="return new_perspective_button_onclick(event);">👁️ Try a different perspective</button></p>
+        {%- if back_link -%}
+        <p><a class="back_link" href="{{back_link}}">Back to homepage</a></p>
+        {%- endif -%}
     </footer>
 
     <form id="a_new_perspective" class="hidden">
@@ -966,12 +999,12 @@ def main(argv):
         item.prepare()
 
     log.info('Writing homepage')
-    homepage_html = make_webpage(items, is_root=True, doctitle='photography')
+    homepage_html = make_webpage(None, items, is_root=True, doctitle='photography')
     homepage_file = PHOTOGRAPHY_ROOTDIR.with_child('photography.html')
     homepage_file.write('w', homepage_html)
 
     for album in albums:
-        album_html = make_webpage(album.photos, is_root=False, doctitle=album.article_id)
+        album_html = make_webpage(album.article_id, album.photos, is_root=False, doctitle=album.article_id)
         album_file = PHOTOGRAPHY_ROOTDIR.with_child(album.article_id).replace_extension('html')
         log.info('Writing %s', album_file.absolute_path)
         album_file.write('w', album_html)
