@@ -716,8 +716,10 @@ def make_webpage(this_id, items, is_root, doctitle):
     <footer>
         <p>Ethan Dalool</p>
         <p>Contact me: photography@voussoir.net</p>
+        {%- if items|sum(attribute='exposure_time')|round(4) > 0 -%}
         <p>These photos took {{items|sum(attribute='exposure_time')|round(4)}} seconds to make.</p>
         <p><button id="new_perspective_button" onclick="return new_perspective_button_onclick(event);">👁️ Try a different perspective</button></p>
+        {%- endif -%}
         {%- if back_link -%}
         <p><a class="back_link" href="{{back_link}}">Back to homepage</a></p>
         {%- endif -%}
