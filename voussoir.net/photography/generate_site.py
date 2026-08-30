@@ -30,7 +30,6 @@ s3 = boto3.resource('s3',
 
 bucket = s3.Bucket('voussoir')
 
-S3_EXISTING_FILES = set(item.key for item in bucket.objects.filter(Prefix="photography/"))
 PUBLISH_TAGNAME = 'voussoir_net_publish'
 HEADLINER_TAGNAME = 'voussoir_net_headliner'
 PHOTOGRAPHY_ROOTDIR = pathclass.Path(__file__).parent
@@ -990,6 +989,11 @@ def make_webpage(this_id, items, is_root, doctitle):
 
 @vlogging.main_decorator
 def main(argv):
+    global S3_EXISTING_FILES
+
+    log.info('Getting existing S3 files.')
+    S3_EXISTING_FILES = set(item.key for item in bucket.objects.filter(Prefix="photography/"))
+
     singlephotos = list(pdb.search(tag_mays=[PUBLISH_TAGNAME], has_albums=False, yield_albums=False, yield_photos=True).results)
     singlephotos += list(pdb.search(tag_mays=['voussoir_net_publish_single'], yield_albums=False, yield_photos=True).results)
     singlephotos = [to_object(p) for p in singlephotos]
