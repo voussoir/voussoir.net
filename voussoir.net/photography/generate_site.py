@@ -20,7 +20,7 @@ from voussoirkit import vlogging
 
 log = vlogging.get_logger(__name__, 'photography_generate')
 
-pdb = etiquette.photodb.PhotoDB('D:\\Documents\\Photos\\_etiquette')
+pdb = etiquette.photodb.PhotoDB('M:\\Private\\Photos\\_etiquette')
 
 s3 = boto3.resource('s3',
   endpoint_url = f'https://{r2_credentials.get_account_id()}.r2.cloudflarestorage.com',
