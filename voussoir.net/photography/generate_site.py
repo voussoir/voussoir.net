@@ -182,7 +182,7 @@ class Audio:
         '''
 
     def s3_upload(self):
-        log.info('Uploading %s as %s', self.etq_photo.real_path.absolute_path, self.s3_key)
+        log.info('Uploading %s.', self.s3_key)
         bucket.upload_fileobj(self.etq_photo.real_path.open('rb'), self.s3_key)
         self.s3_exists = True
 
@@ -196,6 +196,10 @@ class Photo:
         else:
             parent_key = f'photography/{etq_album.title}'
 
+        # The use of small_ and tiny_ as filename prefixes instead of postfixes
+        # is intentional, so that if anybody downloads them, they should realize
+        # more easily that they have downloaded the thumbnail instead of the
+        # full size image.
         self.s3_key = f'{parent_key}/{self.etq_photo.real_path.basename}'
         self.small_key = f'{parent_key}/small_{self.etq_photo.real_path.basename}'
         self.tiny_key = f'{parent_key}/tiny_{self.etq_photo.real_path.basename}'
@@ -260,9 +264,11 @@ class Photo:
         '''
 
     def s3_upload(self):
-        log.info('Uploading %s as %s', self.etq_photo.real_path.absolute_path, self.s3_key)
+        log.info('Uploading %s.', self.small_key)
         bucket.upload_fileobj(self.make_thumbnail(SIZE_SMALL), self.small_key)
+        log.info('Uploading %s.', self.tiny_key)
         bucket.upload_fileobj(self.make_thumbnail(SIZE_TINY), self.tiny_key)
+        log.info('Uploading %s.', self.s3_key)
         bucket.upload_fileobj(self.etq_photo.real_path.open('rb'), self.s3_key)
         self.s3_exists = True
 
@@ -280,6 +286,10 @@ class Video:
         else:
             parent_key = f'photography/{etq_album.title}'
 
+        # The use of small_ and tiny_ as filename prefixes instead of postfixes
+        # is intentional, so that if anybody downloads them, they should realize
+        # more easily that they have downloaded the thumbnail instead of the
+        # full size image.
         self.s3_key = f'{parent_key}/{self.etq_photo.real_path.basename}'
         self.small_key = f'{parent_key}/small_{self.etq_photo.real_path.replace_extension("jpg").basename}'
         self.tiny_key = f'{parent_key}/tiny_{self.etq_photo.real_path.replace_extension("jpg").basename}'
@@ -376,18 +386,20 @@ class Video:
         '''
 
     def s3_upload(self):
-        log.info('Uploading %s as %s', self.etq_photo.real_path.absolute_path, self.s3_key)
-
-        if (not self.small_exists) or '2025-06-28' in self.etq_photo.real_path.basename:
+        if True or not self.small_exists:
+            log.info('Uploading %s.', self.small_key)
             bucket.upload_fileobj(self.make_thumbnail(SIZE_SMALL), self.small_key)
 
-        if (not self.small_exists) or '2025-06-28' in self.etq_photo.real_path.basename:
+        if True or not self.tiny_exists:
+            log.info('Uploading %s.', self.tiny_key)
             bucket.upload_fileobj(self.make_thumbnail(SIZE_TINY), self.tiny_key)
 
         if self.stream_key != self.s3_key and not self.stream_exists:
+            log.info('Uploading %s.', self.stream_key)
             bucket.upload_fileobj(self.stream_file.open('rb'), self.stream_key)
 
         if not self.big_exists:
+            log.info('Uploading %s.', self.s3_key)
             bucket.upload_fileobj(self.etq_photo.real_path.open('rb'), self.s3_key)
 
         self.s3_exists = True
