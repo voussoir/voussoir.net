@@ -79,6 +79,7 @@ class Album:
 
     def render_web(self, index=None, is_root=False, totalcount=None):
         headliners = [p for p in self.photos if p.etq_photo.has_tag(HEADLINER_TAGNAME)]
+        non_headliners = [p for p in self.photos if not p.etq_photo.has_tag(HEADLINER_TAGNAME)]
 
         return jinja2.Template('''
         <article id="{{article_id}}" class="album">
@@ -88,11 +89,13 @@ class Album:
             {{photo.render_web(is_root=1)}}
             {% endfor %}
 
+            {% if non_headliners %}
             <div class="album_tinies">
             {% for photo in photos %}
             {{photo.render_tiny()}}
             {% endfor %}
             </div>
+            {% endif %}
         </div>
         </article>
         ''').render(
@@ -100,6 +103,7 @@ class Album:
             web_url=self.web_url,
             photos=self.photos,
             headliners=headliners,
+            non_headliners=non_headliners,
         )
 
     def render_atom(self):
