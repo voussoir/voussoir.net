@@ -1,0 +1,3 @@
+open voussoir@ovh
+put *.html voussoir.net/voussoir.net/spam/
+exit
