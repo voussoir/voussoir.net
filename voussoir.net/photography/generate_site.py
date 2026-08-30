@@ -313,7 +313,10 @@ class Video:
         # if 'creation_time' in probe['format']['tags']:
         #     self.sort_date = dateutil.parser.isoparse(probe['format']['tags']['creation_time']).astimezone()
         # else:
-        self.sort_date = datetime.datetime.strptime(self.article_id.split(' ')[0], '%Y-%m-%d_%H-%M-%S').astimezone()
+        try:
+            self.sort_date = datetime.datetime.strptime(self.article_id.split(' ')[0], '%Y-%m-%d_%H-%M-%S').astimezone()
+        except ValueError:
+            self.sort_date = datetime.datetime.strptime(self.article_id.split(' ')[0], '%Y-%m-%d').astimezone()
         # print(self.article_id, self.sort_date)
         self.exposure_time = 0
 
