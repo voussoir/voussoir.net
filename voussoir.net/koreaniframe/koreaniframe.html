@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>korean</title>
+    <link rel="icon" href="/koreaniframe/favicon.png" type="image/png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root
+{
+    --color_background_primary: #0e0e0d;
+    --color_text_primary: #ccc;
+    --color_text_highlight: #efcc2b;
+    --color_inlinecodebg: rgba(255, 255, 255, 0.15);
+}
+
+*
+{
+    font-family: Verdana, sans-serif;
+    color: var(--color_text_primary);
+    word-break: break-word;
+}
+
+html
+{
+    position: relative;
+    /*height: 100vh;*/
+    box-sizing: border-box;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body
+{
+    position: relative;
+    min-height: 100%;
+    background-color: var(--color_background_primary);
+    margin: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-row-gap: 8px;
+}
+
+code { font-family: monospace; }
+
+#search_holder
+{
+    justify-self: stretch;
+    /*width: 98%;*/
+    max-width:400px;
+    margin: auto;
+    padding: 32px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr max-content;
+}
+#search_input, #search_button
+{
+    font-size:16pt;
+}
+#search_input
+{
+    width: 100%;
+    border: 1px solid #444;
+    background-color: var(--color_background_primary);
+}
+#search_button
+{
+    background-color: var(--color_background_primary);
+    border: 1px solid #444;
+    /*color: var(--color_text_highlight);*/
+}
+
+details
+{
+    min-width: 0;
+    justify-self: stretch;
+}
+details[open]
+{
+    height: 95vh;
+}
+summary
+{
+    position: relative;
+    font-size: 16pt;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+summary a
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size:12pt;
+}
+iframe
+{
+    justify-self: stretch;
+    display: block;
+    min-width: 0;
+    height: 90vh;
+    border: 1px solid #444;
+    box-sizing: border-box;
+}
+
+#whatisthis_button
+{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#whatisthis_dialog
+{
+    border: 1px solid var(--color_text_highlight);
+    background-color: var(--color_background_primary);
+    width: 90%;
+    max-width: 32em;
+    border-radius: 8px;
+    padding:8px;
+}
+</style>
+</head>
+
+<body>
+    <div id="search_holder">
+        <input type="text" id="search_input" onblur="return set_query_from_input();"/><!--
+        --><button id="search_button" onclick="return set_query_from_input();">검색</button>
+    </div>
+
+   <details id="details_koendict" data-urltemplate="https://korean.dict.naver.com/koendict/#/search?query={query}">
+        <summary><span>한영사전</span><a>🔗</a></summary>
+    </details>
+
+    <details id="details_kokodict" data-urltemplate="https://ko.dict.naver.com/#/search?query={query}">
+        <summary><span>국어사전</span><a>🔗</a></summary>
+    </details>
+
+    <details id="details_hanjadict" data-urltemplate="https://hanja.dict.naver.com/search/?mflag=1&query={query}">
+        <summary><span>한자사전</span><a>🔗</a></summary>
+    </details>
+
+    <details id="details_images" data-urltemplate="https://www.bing.com/images/search?q={query}">
+        <summary><span>이미지</span><a>🔗</a></summary>
+    </details>
+
+    <details id="details_papago" data-urltemplate="https://papago.naver.com/?sl=ko&tl=en&text={query}">
+        <summary><span>파파고</span><a>🔗</a></summary>
+    </details>
+
+    <button id="whatisthis_button" popovertarget="whatisthis_dialog">?</button>
+    <dialog id="whatisthis_dialog" popover>
+        <h2>이거 뭔대?</h2>
+        <p>This page provides iframes to a few of Naver's dictionaries so that I can cross-reference them without opening multiple tabs or going back and forth.</p>
+        <p>The image search frame is Bing because both Naver and Google block iframes on their search domain. ㅠㅠ</p>
+        <p>My Anki cards contain a link to this page so I can research a word while studying.</p>
+    </dialog>
+</body>
+
+<script type="text/javascript">
+let QUERY;
+
+function set_query_from_input()
+{
+    const input = document.getElementById("search_input");
+    const new_query = input.value.trim();
+    // Added the 100ms timeout because if I blur immediately or with a zero
+    // timeout, the word currently being composed in the IME becomes duplicated
+    // in the input box on Android.
+    setTimeout(() => {input.blur()}, 100);
+    set_query(new_query);
+}
+
+function set_query(new_query)
+{
+    new_query = (new_query || "").trim();
+    if (new_query === QUERY)
+    {
+        return;
+    }
+    console.log("New query: " + QUERY);
+    const input = document.getElementById("search_input");
+    QUERY = new_query;
+    input.value = QUERY;
+    if (QUERY !== "")
+    {
+        document.title = QUERY;
+    }
+    else
+    {
+        document.title = "korean";
+    }
+    const params = new URLSearchParams();
+    params.set("q", QUERY);
+    const newurl = window.location.origin + window.location.pathname + "?" + params.toString();
+    window.history.replaceState(null, document.title, newurl);
+    for (const details of Array.from(document.getElementsByTagName("details")))
+    {
+        details.dataset.url = details.dataset.urltemplate.replace("{query}", QUERY);
+        const anchor = details.querySelector("summary a");
+        anchor.href = details.dataset.url;
+        make_iframe(details);
+    }
+    reset_iframes();
+}
+
+function reset_iframes()
+{
+    for (const iframe of Array.from(document.getElementsByTagName("iframe")))
+    {
+        if (iframe.closest("details").dataset.persistent)
+        {
+            continue;
+        }
+        iframe.remove();
+    }
+    for (const details of Array.from(document.getElementsByTagName("details")))
+    {
+        make_iframe(details);
+    }
+}
+
+function make_iframe(details)
+{
+    if (! details.open)
+    {
+        return;
+    }
+    if (details.getElementsByTagName("iframe").length > 0)
+    {
+        return;
+    }
+    if (QUERY === "")
+    {
+        return;
+    }
+
+    const iframe = document.createElement("iframe");
+    iframe.src = details.dataset.url;
+    details.append(iframe);
+}
+
+function bind_box_to_button(box, button, ctrl_enter)
+{
+    /*
+    Bind a textbox to a button so that pressing Enter within the textbox is the
+    same as clicking the button.
+
+    If `ctrl_enter` is true, then you must press ctrl+Enter to trigger the
+    button, which is important for textareas.
+
+    Thanks Yaroslav Yakovlev
+    http://stackoverflow.com/a/9343095
+    */
+    const bound_box_hook = function(event)
+    {
+        if (event.key !== "Enter")
+            {return;}
+
+        ctrl_success = !ctrl_enter || (event.ctrlKey);
+
+        if (! ctrl_success)
+            {return;}
+
+        button.click();
+    }
+    box.addEventListener("keyup", bound_box_hook);
+}
+
+function details_ontoggle(event)
+{
+    make_iframe(event.target.closest("details"));
+}
+
+function on_pageload()
+{
+    const params = new URLSearchParams(window.location.search);
+    set_query(params.get("q"));
+
+    const input = document.getElementById("search_input");
+    const button = document.getElementById("search_button");
+    bind_box_to_button(input, button);
+    for (const details of document.getElementsByTagName("details"))
+    {
+        details.addEventListener("toggle", details_ontoggle);
+    }
+}
+document.addEventListener("DOMContentLoaded", on_pageload);
+</script>
+
+</html>
