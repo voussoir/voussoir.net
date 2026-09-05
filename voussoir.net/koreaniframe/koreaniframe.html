@@ -186,9 +186,9 @@ function set_query(new_query)
     {
         return;
     }
+    QUERY = new_query;
     console.log("New query: " + QUERY);
     const input = document.getElementById("search_input");
-    QUERY = new_query;
     input.value = QUERY;
     if (QUERY !== "")
     {
