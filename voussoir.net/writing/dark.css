@@ -163,6 +163,11 @@ table
 {
     border-collapse: collapse;
     font-size: 1em;
+    margin: auto;
+}
+p.table_holder
+{
+    overflow-x: auto;
 }
 table, table th, table td
 {

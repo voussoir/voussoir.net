@@ -677,6 +677,15 @@ def set_img_lazyload(soup):
         if not img.get('loading'):
             img['loading'] = 'lazy'
 
+def lift_table(soup):
+    tables = soup.select('article > table')
+    for table in tables:
+        p = soup.new_tag('p')
+        p['class'] = 'table_holder'
+        table.insert_before(p)
+        table.extract()
+        p.append(table)
+
 # FINAL MARKDOWNS
 ################################################################################
 def markdown(
@@ -718,6 +727,7 @@ def markdown(
     fix_reddit_links(soup)
     inject_footnotes(soup)
     set_img_lazyload(soup)
+    lift_table(soup)
 
     if do_embed_images:
         embed_images(soup, cache=image_cache)
