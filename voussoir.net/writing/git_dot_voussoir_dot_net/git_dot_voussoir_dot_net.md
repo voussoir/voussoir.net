@@ -1,3 +1,5 @@
+[tag:git]
+
 git.voussoir.net
 ================
 
