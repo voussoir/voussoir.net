@@ -374,14 +374,8 @@ Here is my card template:
 Front:
 
 ```
-<div class="frontface" lang="ko"><a href="https://voussoir.net/koreaniframe?q={{Korean}}">{{Korean}}</a>{{#Hint}} (<span class="hint">{{Hint}}</span>){{/Hint}}</div>
-
-<div id="otherlinks">
-<!--<a id="endictlink" href="https://korean.dict.naver.com/koendict/#/search?query={{Korean}}">dict</a>-->
-<!--<a id="kodictlink" href="https://ko.dict.naver.com/#/search?query={{Korean}}">사전</a>-->
-<a id="imglink" href="https://m.search.
-naver.com/search.naver?where=m_image&query={{Korean}}">img</a>
-<!--<a id="voussoirlink" href="https://voussoir.net/koreaniframe?q={{Korean}}">사전</a>-->
+<div class="frontface" lang="ko">
+<div><a href="https://voussoir.net/koreaniframe?q={{Korean}}">{{Korean}}</a>{{#Hint}} <span class="hint">({{Hint}})</span>{{/Hint}}</div>
 </div>
 ```
 
@@ -396,11 +390,18 @@ Back:
 <div lang="en">{{English}}</div>
 {{#Pronunciation}}<div lang="ko">[{{Pronunciation}}]</div>{{/Pronunciation}}
 
-<div lang="ko" id="hanja" data-hanja="{{Hanja}}"><a href="https://hanja.dict.naver.com/search/?mflag=1&query={{Hanja}}">{{Hanja}}</a>
+<div id="upperleft">
+<div lang="ko" id="hanja" data-hanja="{{Hanja}}"><a href="https://hanja.dict.naver.com/search/?mflag=1&query={{Hanja}}">{{Hanja}}</a></div>
+</div>
+
+<div id="upperright">
+<a id="imglink" href="https://m.search.
+naver.com/search.naver?where=m_image&query={{Korean}}">img</a>
 </div>
 
 <div id="bottomstuff" lang="ko">
-{{#KDef}}<div>{{KDef}}<div>{{/KDef}}
+{{#Tags}}<div id="ankitags">{{Tags}}</div>{{/Tags}}
+{{#KDef}}<div>{{KDef}}</div>{{/KDef}}
 {{#Sentence}}<div>"{{Sentence}}"<div>{{/Sentence}}
 </div>
 
@@ -410,21 +411,19 @@ Back:
 Styling:
 
 ```
-*
-{ xoutline: 1px solid red; }
+.card { xoutline: 1px solid white; }
+.card > #qa { xoutline: 1px solid red; }
+.card > #qa > .frontface { xoutline: 1px solid blue; }
+.card > #qa > .backface { xoutline: 1px solid purple; }
+.card > #qa > * > * { xoutline: 1px solid green; }
 
-*
-{ font-family: "Noto Sans KR Regular", "Noto Sans", "Noto", "Arial", "sans serif"; }
+* { font-family: "Noto Sans KR Regular", "Noto Sans", "Noto", "Arial", "sans serif"; }
 
-html
-{ overflow: hidden; }
-
-body
+a
 {
-    position: absolute;
-    bottom: 0; right: 0; left: 0; top: 0;
-    margin: 0;
-    padding: 0;
+    position: relative;
+    color: inherit;
+    text-decoration: none;
 }
 
 .card
@@ -436,31 +435,36 @@ body
     align-items: center;
     text-align: center;
     user-select: none;
+    margin: 1px;
+}
+
+.frontface,
+.backface
+{
+    max-width: 95%;
+    margin: auto;
+    text-wrap: pretty;
 }
 
 .frontface
 {
     font-size: 1.5em;
 }
-.frontface,
-.backface
-{
-    max-width: 95%;
-    margin: auto;
-}
 
-a
-{
-    position: relative;
-    color: inherit;
-    text-decoration: none;
-}
 
-#hanja
+#upperleft
 {
     position: absolute;
     top: 4px;
     left: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+#hanja
+{
     font-size: 1em;
     color: #ccc;
 }
@@ -469,10 +473,11 @@ a
     display: none;
 }
 
-#otherlinks
+#upperright
 {
     position: absolute;
-    top: 20px; right: 4px;
+    top: 4px;
+    right: 4px;
     display:flex;
     flex-direction: column;
     color: #ccc;
@@ -485,6 +490,19 @@ a
     display:flex;
     flex-direction: column;
     justify-content: end;
+    color: #ccc;
+}
+
+#ankitags
+{
+    font-style: italic;
+    font-size: 0.8em;
+    width: 1px;
+    margin:auto;
+    text-align: center;
+    overflow-wrap: normal;
+    display: flex;
+    justify-content: center;
     color: #ccc;
 }
 ```
