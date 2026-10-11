@@ -284,7 +284,7 @@ I do 99.9% of my Anki on my phone with AnkiDroid, including the adding and editi
 
 [![](thumbs/2026-09-20_19-19-35.jpg)](https://files.voussoir.net/writing/korean_progress_2026/2026-09-20_19-19-35.jpg)
 
-![](thumbs/controller_mapping.jpg)
+![](controller_mapping.svg)
 
 My Anki notes contain these fields:
 
