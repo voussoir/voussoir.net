@@ -3,6 +3,468 @@
 Slamming and blasting
 =====================
 
+[Google pushes Chrome on Windows 11, gets away with what Microsoft is slammed for](https://www.windowslatest.com/2026/10/18/google-now-wants-windows-11-users-to-ditch-edge-for-chrome-and-gets-away-with-what-microsoft-is-slammed-for/)
+
+[1991 Federal Panel Blasted Vaccine Unavailability That Led to a Measles Epidemic](https://www.techdirt.com/2026/10/13/in-1991-federal-panel-blasts-vaccine-unavailability-that-led-to-a-measles-epidemic/)
+
+[GitHub Slams the Brakes on Private Vulnerability Reports](https://devops.com/github-slams-the-brakes-on-private-vulnerability-reports/)
+
+[Siemens Slams the Door Shut on Promising Open-Source Radioss Project](https://www.phoronix.com/news/Siemens-Ends-OpenRadioss)
+
+[Peter Thiel slams pope's AI encyclical as gift to Chinese Communist Party](https://www.politico.com/news/2026/09/24/peter-thiel-slams-popes-ai-encyclical-as-gift-to-chinese-communist-party-01091850)
+
+[Privacy group slams EU for changing the data rules to cater to AI](https://www.theregister.com/legal/2026/09/22/privacy-group-slams-eu-for-changing-the-data-rules-to-cater-to-ai/5298175)
+
+[Michael Burry slams OpenAI, Anthropic for 'self-serving' calls to slow AI](https://nypost.com/2026/09/14/business/big-short-trader-michael-burry-slams-openai-anthropic-for-self-serving-calls-to-slow-ai/)
+
+[China state newspaper blasts Anthropic's calls to slow AI as 'Cold War' tactic](https://www.reuters.com/world/china/china-state-newspaper-blasts-anthropics-calls-slow-ai-cold-war-tactic-2026-09-14/)
+
+[Altimeter's Gerstner blasts researchers voicing AI extinction warnings](https://www.cnbc.com/2026/09/11/altimeters-gerstner-blasts-researchers-voicing-ai-extinction-warnings.html)
+
+[China slams US claims of 'industrial-scale' AI theft](https://www.aljazeera.com/news/2026/9/9/china-slams-us-claims-of-industrial-scale-ai-theft)
+
+[Dolly Parton's Sister Slams "Endless Garbage": AI, Social Media Misinformation](https://deadline.com/2026/09/dolly-parton-stella-ai-social-media-1237068956/)
+
+[US officials slam Indian-origin entrepreneur Ankit Gupta over H-1B comments](https://timesofindia.indiatimes.com/world/us/its-your-sense-of-entitlement-us-officials-slam-indian-origin-entrepreneur-ankit-gupta-over-h-1b-comments/articleshow/133568680.cms)
+
+[Pavel Durov Slams France's Ongoing Telegram Prosecution](https://reclaimthenet.org/pavel-durov-slams-frances-ongoing-telegram-prosecution)
+
+[Legal Experts Slam IDF for Over-Warning Gazans (2015)](https://www.israelnationalnews.com/news/196506)
+
+[National Police Union Blasts Flock CEO for Turning Against Police](https://ipvm.com/reports/union-who-flock)
+
+[Texas slams on the brakes for 1,800 data centers](https://www.tomshardware.com/tech-industry/data-centers/texas-slams-on-the-breaks-for-1-800-data-centers-power-grid-requirements-are-five-times-higher-than-peak-record-demand-474-gigawatts-of-power-requests-are-now-subject-to-new-moratorium)
+
+[Investors Slam SEC Plan to Remove Best-Price Rule](https://www.wsj.com/finance/regulation/investors-slam-sec-plan-to-remove-best-price-rule-8f2c1cc3)
+
+[Mark Zuckerberg Blasts Centralization of A.I. Power](https://www.nytimes.com/2026/07/28/technology/mark-zuckerberg-meta-ai.html)
+
+[Data-centre reality check could slam brakes on AI earnings boom](https://www.reuters.com/commentary/reuters-open-interest/data-centre-reality-check-could-slam-brakes-ai-earnings-boom-joachim-klement-2026-08-05/)
+
+[AI stock sell-off slams hedge funds as Whale Rock loses 21.7% in July](https://www.bloomberg.com/news/articles/2026-08-04/whale-rock-sank-22-as-ai-selloff-crippled-hedge-fund-returns)
+
+[Trump blasts Exxon, Chevron for making 'too much money,' demands lower prices](https://www.reuters.com/business/energy/trump-demands-lower-gas-prices-oil-companies-chides-chevron-ceo-2026-08-03/)
+
+[Romania blasts rocks to reroute cooling Danube water to nuclear reactor](https://www.reuters.com/business/energy/hungarys-nuclear-plant-shutdown-due-low-danube-gets-reprieve-until-later-week-2026-08-03/)
+
+['The Odyssey' Translator Emily Wilson Slams Nolan's 'Abysmal' Screenplay](https://variety.com/2026/film/news/odyssey-translator-emily-wilson-slams-christopher-nolan-bad-writing-1236821915/)
+
+[AMD EPYC 9006 Venice Announced and Looks Poised to Be a Grand Slam](https://www.phoronix.com/review/amd-epyc-9006-venice)
+
+[Nadella Blasts AI Industry's Double Standard](https://finance.biggo.com/news/438f299b-ca23-468d-b37d-0ffe09a4ca55)
+
+[Nvidia CEO blasts bosses using AI as a layoff excuse: 'We're scaring people'](https://finance.yahoo.com/sectors/technology/articles/nvidia-ceo-blasts-bosses-using-070000315.html)
+
+[UEFA slams FIFA's 'unprecedented, unjustifiable' Balogun decision](https://www.reuters.com/sports/soccer/uefa-slams-fifas-unprecedented-incomprehensible-unjustifiable-balogun-decision-2026-07-06/)
+
+[White House deletes web pages about energy conservation as heatwave slams US](https://www.theverge.com/policy/961449/white-house-mamdani-heatwave-deletion)
+
+[Plane slams into Beijing's tallest building, sends debris raining down [video]](https://www.youtube.com/watch?v=YNJYR_HE8uo)
+
+[NYT slams Microsoft for building copyright-infringing supercomputer for OpenAI](https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged/)
+
+[LeCun blasts Musk's xAI as 'failure,' labs are risking a 'big bubble explosion'](https://www.cnbc.com/2026/06/18/yann-lecun-elon-musk-xai-failure-ai-labs-bubble-risk.html)
+
+[Vance slams Israeli 'freakout' over Iran deal](https://www.timesofisrael.com/liveblog-june-18-2026/)
+
+[Android's head of security slams Google's door](https://www.lesnumeriques.com/societe-numerique/la-direction-a-perdu-toute-boussole-morale-le-chef-de-la-securite-d-android-claque-la-porte-de-google-n257431.html)
+
+[MPs and peers slam YouTube over tube ads blaming parents for kids' screen time](https://www.dailymail.com/news/article-15886603/MPs-peers-anger-YouTube-firm-plasters-Westminster-tube-station-adverts-telling-parents-responsibility-restrict-screen-time.html)
+
+[Amazon engineers in Seattle slam employer for building AI data centers](https://www.cnbc.com/2026/06/03/amazon-engineers-in-seattle-slam-employer-for-ai-data-amid-layoffs.html)
+
+[Steve Ballmer blasts Aspiration co-founder's bid for leniency in sentencing](https://www.latimes.com/sports/story/2026-04-23/steve-ballmer-delivers-rebuke-to-aspiration-exec-joe-sanberg-light-sentence)
+
+[Why New York's push to regulate e-bikes just slammed on the brakes](https://electrek.co/2026/05/25/why-new-yorks-push-to-regulate-e-bikes-just-slammed-on-the-brakes/)
+
+[Red Hat blasts RHEL 10.1 into orbit aboard Voyager's micro datacenter](https://www.theregister.com/off-prem/2026/05/12/red-hat-gives-rhel-101-the-boot-into-orbit/5238373)
+
+[Apple Slammed in Calif. Federal Court over AirTag's Alleged Use in Stalking](https://www.law.com/therecorder/2026/05/04/apple-slammed-in-calif-federal-court-with-lawsuits-over-airtags-alleged-use-in-stalking-/)
+
+[OpenAI locks GPT-5.5-Cyber behind velvet rope despite slamming Anthropic](https://www.theregister.com/2026/05/01/openai_locks_gpt55cyber_behind_velvet/)
+
+[Jeff Bezos' Blue Origin blasts customer's satellite into wrong place](https://nypost.com/2026/04/20/business/jeff-bezos-blue-origin-blasts-satellite-into-wrong-place/)
+
+[Pope says he has 'no fear of Trump administration' after president slams him](https://www.cnn.com/2026/04/12/politics/trump-pope-leo-criticism-hnk-intl)
+
+[AI replacing radiologists: Docs slam Nvidia, Anthropic CEOs for false info](https://timesofindia.indiatimes.com/technology/tech-news/as-ceo-of-americas-largest-public-hospital-system-says-ai-can-replace-radiologists-doctors-slam-nvidia-and-anthropic-ceo-for-spreading-false-information/articleshow/130068296.cms)
+
+['Hacks' Star Hannah Einbinder Blasts AI Creators as 'Losers'](https://variety.com/2026/tv/news/hannah-einbinder-ai-creators-losers-1236706302/)
+
+[Amazon's Rural Delivery Push Slams into Walmart](https://www.bloomberg.com/graphics/2026-amazon-walmart-rural-expansion/)
+
+[Security vendor slams supplier for delayed notice after staff data exposed](https://www.theregister.com/2026/03/24/hackerone_supplier_breach/)
+
+[Audit slams California school officials' ties to Chinese boarding school](https://www.politico.com/news/2026/03/23/val-verde-california-schools-china-ties-00838405)
+
+[Punching, Slamming, Screaming: A Chef's Past Abuse Haunts Noma](https://www.nytimes.com/2026/03/07/dining/rene-redzepi-noma-abuse-allegations.html)
+
+[Dow, S&P 500, Nasdaq futures slammed as oil prices surge to over $100 a barrel](https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-slammed-as-oil-prices-surge-to-over-100-a-barrel-224103058.html)
+
+['Horrifying': Hollywood blasts Trump's role in studio sale](https://www.politico.com/news/2026/02/27/horrifying-hollywood-blasts-trumps-role-in-studio-sale-00802771)
+
+[Microsoft CEO slams AI slop after dismissing its importance](https://www.theregister.com/2026/02/25/microsoft_boss_on_ai_content/)
+
+[Tech Influencers Slam Hacker News Toxicity After OpenAI Hire Attacks](https://x.com/i/trending/2025399179196203524)
+
+[LibreOffice blasts OnlyOffice for working with Microsoft to lock users in](https://www.neowin.net/news/libreoffice-blasts-fake-open-source-onlyoffice-for-working-with-microsoft-to-lock-users-in/)
+
+[OpenClaw creator slams Europe's regulations as he moves to the US](https://www.businessinsider.com/openclaw-creator-slams-europe-regulations-move-us-openai-2026-2)
+
+[Planned US-funded baby vaccine trial in Guinea-Bissau blasted by WHO](https://www.bbc.com/news/articles/c78j5k2gk02o)
+
+[WHO slams US-funded newborn vaccine trial as "unethical"](https://arstechnica.com/health/2026/02/who-slams-us-funded-newborn-vaccine-trial-as-unethical/)
+
+[Disney Blasts ByteDance with Cease and Desist Letter over Seedance 2.0 AI Model](https://deadline.com/2026/02/disney-bytedance-cease-and-desist-letter-seedance-ai-video-1236719549/)
+
+[LibreOffice blasts Microsoft for putting "commercial interests" over everything](https://www.neowin.net/news/libreoffice-blasts-microsoft-for-putting-commercial-interests-over-everything/)
+
+[Sen. Bernie Sanders slams Mehmet Oz for praising robot ultrasounds in Alabama](https://thehill.com/homenews/senate/5693814-sanders-oz-robots-ultrasounds-alabama/)
+
+[UN chief's last annual speech slams world leaders for lack of cooperation](https://www.aljazeera.com/news/2026/1/15/uns-guterres-slams-world-leaders-putting-intl-cooperation-on-deathwatch)
+
+[Minneapolis Mayor Blasts Kristi Noem's BS ICE Shoots Kills Woman in Minnesota](https://www.thedailypoliticususa.com/p/minneapolis-mayor-blasts-kristi-noems)
+
+[CEO blasts companies with billions in funding but zero revenue](https://fortune.com/2025/12/24/databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular/)
+
+[Europe slams visa bans after US takes fresh swing at allies over 'censorship'](https://www.reuters.com/world/europe/france-condemns-us-visa-ban-imposed-ex-eu-commissioner-breton-2025-12-24/)
+
+[Wyoming Blasted by 123 MPH Winds on Wednesday and More Wind to Come](https://cowboystatedaily.com/2025/12/17/wyoming-blasted-by-123-mph-winds-and-fierce-mountain-snowstorm/)
+
+[Black Hole Recorded Blasting Winds at More Than 20% the Speed of Light](https://www.esa.int/Science_Exploration/Space_Science/XMM-Newton/Flaring_black_hole_whips_up_ultra-fast_winds)
+
+[National Security Strategy Document Revives Monroe Doctrine, Slams Europe](https://www.reuters.com/business/finance/trump-strategy-document-revives-monroe-doctrine-slams-europe-2025-12-05/)
+
+[Trump’s security strategy slams European allies, asserts US power in West. Hemi.](https://apnews.com/article/trump-security-strategy-europe-russia-america-first-068488ca7e6d1c92ccaddd1649958218)
+
+[Michael Burry slams Tesla valuation, warns of 'ridiculous' dilution](https://electrek.co/2025/12/01/the-big-short-michael-burry-slams-tesla-tsla/)
+
+[Report blasts UK Ministry of Defence over Afghan data-handling failures](https://www.theregister.com/2025/11/14/pac_mod_afghan_report/)
+
+[US slams EU's proposed space law as 'unacceptable'](https://www.politico.eu/article/us-slams-eus-proposed-space-law-as-unacceptable/)
+
+['Soul-Crushing': Students Slam Harvard's Grade Inflation Report](https://www.thecrimson.com/article/2025/10/30/students-react-grading-report/)
+
+[Security Community Slams MIT-Linked Report Claiming AI Powers 80% of Ransomware](https://socket.dev/blog/security-community-slams-mit-linked-report-claiming-ai-powers-80-of-ransomware)
+
+[Results from Blasting Yeast with UV Light](https://chillphysicsenjoyer.substack.com/p/results-from-blasting-yeast-with)
+
+[Links Between Sky Transients, Nuclear Blasts, Unidentified Anomalous Phenomena](https://uapf.substack.com/p/cosmic-flashes-from-the-cold-war)
+
+[Rocket launches are blasting a new hole in our ozone layer](https://newatlas.com/environment/rocket-launch-hole-ozone-layer/)
+
+[Noam Chomsky Slams ŽIžek and Lacan: Empty 'Posturing' (2013)](https://www.openculture.com/2013/06/noam_chomsky_slams_zizek_and_lacan_empty_posturing.html)
+
+['AI is tearing companies apart': CEO slams Fortune 500 leaders mismanaging tech](https://venturebeat.com/ai/ai-is-tearing-companies-apart-writer-ai-ceo-slams-fortune-500-leaders-for)
+
+[Why Canada Blasted a Hole Outside Its Parliament [video]](https://www.youtube.com/watch?v=IxFcNOmND00)
+
+[Pentagon retreats from climate fight even as heat and storms slam troops](https://floodlightnews.org/pentagon-rolls-back-climate-action-as-troops-face-extreme-weather/)
+
+[White House slams Trump's perceived Nobel peace prize snub](https://www.theguardian.com/us-news/2025/oct/10/trump-nobel-peace-prize-reaction)
+
+[Space Shuttle war of words takes off as senator blasts 'woke Smithsonian'](https://www.theregister.com/2025/10/09/cornyn_smithsonian_shuttle_comments/)
+
+[Germany slams brakes on EU's Chat Control device-scanning snoopfest](https://www.theregister.com/2025/10/08/germany_chat_control_opposition/)
+
+[Europe makes anti-drone rocket for Ukraine that blasts cloud of steel balls](https://www.businessinsider.com/ukraine-drone-rocket-70mm-shahed-thales-2025-10)
+
+['Human intelligence problem': Labor senator slams Deloitte's AI bungle](https://www.afr.com/companies/professional-services/human-intelligence-problem-labor-senator-slams-deloitte-s-ai-bungle-20251006-p5n0ch)
+
+[Cyber-attackers slammed the brakes on Jaguar Land Rover's manufacturing](https://techxplore.com/news/2025-09-cyber-slammed-jaguar-rover-uk.html)
+
+[Critics slam OpenAI's parental controls while users rage, "Treat us like adults"](https://arstechnica.com/tech-policy/2025/09/critics-slam-openais-parental-controls-while-users-rage-treat-us-like-adults/)
+
+[Senator blasts Microsoft for making default Windows vulnerable to Kerberoasting](https://arstechnica.com/security/2025/09/senator-blasts-microsoft-for-making-default-windows-vulnerable-to-kerberoasting/)
+
+[Tesla's change in bylaws to limit shareholder lawsuits slammed by NY officials](https://www.cnbc.com/2025/07/16/tesla-change-to-limit-shareholder-suits-slammed-by-new-york-officials.html)
+
+[Vivaldi slams Google, Microsoft for shoving AI into browsers, vows to stay clear](https://www.neowin.net/news/vivaldi-slams-google-and-microsoft-for-cramming-ai-into-browsers-says-it-wont-follow/)
+
+[Former Meta exec blasts Bay Area tech culture](https://www.sfgate.com/tech/article/meta-nick-clegg-blasts-tech-culture-21015377.php)
+
+[Google President Praised MAGA Speech Slamming 'Climate Extremist Agenda'](https://www.desmog.com/2025/08/19/google-president-praised-maga-speech-slamming-climate-extremist-agenda/)
+
+[Linus Torvalds blasts kernel dev for making the world worse with garbage patches](https://www.zdnet.com/article/linus-torvalds-blasts-kernel-dev-for-making-the-world-worse-with-garbage-patches/)
+
+[Perrier scandal bubbles up as French parliament slams cover-up](https://www.france24.com/en/live-news/20250519-perrier-scandal-bubbles-up-as-french-parliament-slams-cover-up)
+
+[Microsoft employee slammed for time spent on breaks and grabbing snacks](https://nypost.com/2025/08/04/lifestyle/microsoft-employee-slammed-for-time-spent-on-breaks-and-grabbing-snacks-pretending-to-work-is-more-stressful-than-actually-working/)
+
+[Switzerland Slammed with 39% Tariff Rate in US Trade Blitz](https://www.swissinfo.ch/eng/switzerland-slammed-with-39%25-tariff-rate-in-us-trade-blitz/89768316)
+
+[Apple slams DOJ lawsuit: 'threatens the principles that set iPhone apart'](https://9to5mac.com/2025/07/29/apple-doj-lawsuit-answer-iphone/)
+
+[Quant hedge funds are getting slammed and scrambling for answers](https://www.businessinsider.com/quant-hedge-funds-losses-summer-cubist-qube-man-group-2025-7)
+
+[LibreOffice slams Microsoft for locking in Office users w/ complex file formats](https://www.neowin.net/news/libreoffice-calls-out-microsoft-for-using-complex-file-formats-to-lock-in-office-users/)
+
+[Software-defined radio can derail a US train by slamming the brakes on remotely](https://www.theregister.com/2025/07/14/train_brakes_flaw/)
+
+[Krafton slams ex-Subnautica 2 execs – who now say they're suing](https://www.theverge.com/news/704606/subnautica-2-delay-krafton-unknown-worlds-bonus)
+
+[US economy blasts through expectations to add 147,000 jobs](https://www.ft.com/content/80ba96d3-55c4-4bfe-97b3-309e26c64593)
+
+[ICEBlock climbs to the top of the App Store charts after officials slam it](https://www.engadget.com/social-media/iceblock-climbs-to-the-top-of-the-app-store-charts-after-officials-slam-it-004319963.html)
+
+[Sam Altman Slams Meta's AI Talent Poaching: 'Missionaries Will Beat Mercenaries'](https://www.wired.com/story/sam-altman-meta-ai-talent-poaching-spree-leaked-messages/)
+
+[Nintendo Switch 2 Slammed for Poor Display–120 Hz with 30 FPS Response Times](https://www.techpowerup.com/338352/nintendo-switch-2-slammed-for-poor-display-120-hz-with-30-fps-response-times)
+
+[Billionaire slams 'Tesla Cultists' for praising Robotaxi, despite Waymo's lead](https://www.neowin.net/news/billionaire-slams-tesla-cultists-for-praising-robotaxi-says-its-5-years-behind-waymo/)
+
+[FourKites CEO Manipulates My Words to Unfairly Slam Project44 Movement Platform](https://www.freightwaves.com/news/fourkites-ceo-manipulates-my-words-to-unfairly-slam-project44s-movement-platform)
+
+[EC slams online bazaar AliExpress for dodging obligation to stop dodgy traders](https://www.theregister.com/2025/06/19/ec_aliexpress_investigation_finds_failings/)
+
+['Failed vision': S.F. citizen body slams city, police for lack on Vision Zero](https://www.sfchronicle.com/sf/article/vision-zero-failure-jury-20381664.php)
+
+["We're done" – government organization slams Microsoft Teams, drops Windows](https://www.techradar.com/pro/were-done-major-government-organization-slams-microsoft-teams)
+
+[Dropbox CEO slams RTO mandates, compares them to outdated malls and theaters](https://www.techspot.com/news/108227-dropbox-ceo-slams-return-office-mandates-compares-them.html)
+
+[OpenAI slams court order to save all ChatGPT logs, including deleted chats](https://simonwillison.net/2025/Jun/5/openai-court-order/)
+
+[Barnier slams 'authoritarian drift' in Brussels under Ursula von der Leyen](https://www.politico.eu/article/michel-barnier-authoritarian-drift-ursula-von-der-leyen-france-eu/)
+
+[Magnus Carlsen slams table after shock loss to Gukesh Dommaraju in Norway](https://www.theguardian.com/sport/2025/jun/01/magnus-carlsen-punches-table-norway-chess-gukesh)
+
+[Air Canada pilot slams air traffic controller shortage to passengers on flight](https://www.cbc.ca/news/canada/british-columbia/air-canada-pilot-air-traffic-controller-shortage-1.7544484)
+
+[China blasts new US rule banning use of Huawei's Ascend advanced computer chips](https://apnews.com/article/china-trade-tariffs-steel-huawei-c7c1c82ac65f1b82024a7b07e8505c37)
+
+[Judge slams lawyers for 'bogus AI-generated research'](https://www.theverge.com/news/666443/judge-slams-lawyers-ai-bogus-research)
+
+[Palantir CEO Slams Europe's AI Ambitions](https://www.businessinsider.com/palantir-ceo-takes-swipe-at-europe-given-up-on-ai-2025-5)
+
+[US lawmakers slam UK encryption backdoor order to Apple](https://www.techradar.com/computing/cyber-security/us-lawmakers-slam-uk-encryption-backdoor-order-to-apple-warning-against-systemic-vulnerabilities)
+
+[CISA slammed for role in censorship industrial complex faces possible $500M cut](https://www.theregister.com/2025/05/06/cisa_budget_cuts/)
+
+['Stop the Tall Tales': Nvidia Blasts Anthropic over China Export Rules](https://www.implicator.ai/stop-the-tall-tales-nvidia-blasts-anthropic-over-china-export-rules/)
+
+[Vercel Slams LaLiga Piracy Blocks as "Unaccountable Internet Censorship"](https://torrentfreak.com/vercel-slams-laliga-piracy-blocks-as-unaccountable-internet-censorship-250422/)
+
+[Ref Butts and Slam Dunks: What It's Like Photographing an NBA Game](https://petapixel.com/2025/04/09/ref-butts-and-slam-dunks-what-its-like-photographing-an-nba-game/)
+
+[Trump's antitrust agency blasts EU digital rules as 'taxes on American firms'](https://www.politico.eu/article/trumps-antitrust-agency-chief-blasts-eu-digital-rules-as-taxes-on-american-firms/)
+
+[Executive order slams Smithsonian for recognizing race is not biological reality](https://arstechnica.com/science/2025/03/trump-annoyed-the-smithsonian-isnt-promoting-discredited-racial-ideas/)
+
+[Blasting Past WebP - An analysis of the NSO BLASTPASS iMessage exploit](https://googleprojectzero.blogspot.com/2025/03/blasting-past-webp.html)
+
+[Man tests if Tesla on Autopilot will slam through foam wall](https://www.popsci.com/technology/mark-rober-tesla-foam-wall-video/)
+
+[EU slams the door on US in defense plan](https://www.politico.eu/article/eu-freeze-us-multi-billion-defense-plan-arm-makers/)
+
+[Steve Wozniak blasts Musk's DOGE over 'sledgehammer' approach to govt layoffs](https://www.cnbc.com/2025/03/05/apple-co-founder-steve-wozniak-donald-trump-and-elon-musk-are-bullies.html)
+
+['A blatant violation of the law': Judge blasts Trump's firing of NLRB member](https://www.nbcnews.com/politics/trump-administration/judge-trump-reinstate-national-labor-relations-board-member-wilcox-rcna195220)
+
+['Craven. He's Fearful of Trump': Baron Slams Bezos' Censorship of Post Opinion](https://zeteo.com/p/jeff-bezos-washington-post-opinion-marty-baron-reaction-trump)
+
+[Bay Area tech company Chegg, down over $2B in value, slams Google for woes](https://www.sfgate.com/tech/article/chegg-slams-google-for-woes-20187781.php)
+
+[AI Video of Trump Sucking Musk's Toes Blasted on Government Office TVs](https://www.404media.co/ai-video-of-trump-sucking-musks-toes-blasted-on-government-office-tvs/)
+
+[Germany's Habeck slams 'tech oligarch' Musk, calls for a European X](https://www.politico.eu/article/germanys-habeck-rails-against-musk-as-a-tech-oligarch-calls-for-european-alternative-to-x/)
+
+[JPMorgan's Jamie Dimon slams anti-RTO petition](https://nypost.com/2025/02/13/business/jpmorgans-jamie-dimon-slams-f-g-anti-rto-petition-dont-waste-time-on-it/)
+
+[Aukus blasts holes in LockBit's bulletproof hosting provider](https://www.theregister.com/2025/02/11/aukus_zservers_lockbit_sanctions/)
+
+[Snowden slams Nvidia RTX 5080 as 'a monopolistic crime against the consumer'](https://www.pcgamer.com/hardware/nsa-whistleblower-edward-snowden-slams-nvidia-rtx-5080-as-a-monopolistic-crime-against-the-consumer/)
+
+[Wall Street Journal slams Trump's tariff plans: 'Dumbest trade war in history'](https://thehill.com/business/5121142-wall-street-journal-slams-trumps-tariff-plans-the-dumbest-trade-war-in-history/)
+
+[HPE's $14B Juniper takeover slams into Dept of Justice roadblock](https://www.theregister.com/2025/01/30/hpes_acquisition_juniper/)
+
+[Privacy advocates slam UK ID digital wallet proposal](https://www.techradar.com/computing/cyber-security/big-brother-in-your-pocket-privacy-advocates-slam-uk-id-digital-wallet-proposal)
+
+[Trump Blasts EU Regulators for Targeting Apple, Google, Meta](https://www.bloomberg.com/news/articles/2025-01-23/trump-blasts-eu-regulators-for-targeting-apple-google-meta)
+
+[FIDE Slams Freestyle Chess, Threatens Legal Action](https://www.chess.com/news/view/fide-issues-statement-on-freestyle-chess)
+
+[Nvidia blasts Biden's new AI restrictions as 'misguided', praises Trump approach](https://www.tomshardware.com/pc-components/gpus/nvidia-blasts-bidens-new-ai-restrictions-as-misguided-gpu-giant-praises-trumps-hands-off-approach-to-tech-industry)
+
+[Gov. Gavin Newsom slams Trump's disinformation about California wildfires](https://www.nbcnews.com/politics/donald-trump/newsom-slams-trump-disinformation-california-wildfires-rcna187301)
+
+[Nvidia Slams Biden for Trying to 'Preempt' Trump with Policy](https://www.removepaywall.com/search?url=https://www.bloomberg.com/news/articles/2025-01-10/nvidia-slams-biden-for-trying-to-preempt-trump-with-chip-rules?embedded-checkout=true)
+
+[Indians slam MAGA 'war' over H-1B skilled-worker visas as 'racist'](https://www.washingtonpost.com/world/2025/01/07/india-maga-h1b-visa-america/)
+
+[U.K. leader Starmer slams 'lies and misinformation' after Musk attacks](https://www.npr.org/2025/01/07/g-s1-41296/starmer-attacks-elon-musk)
+
+[Google Slams Microsoft's Bing for 'Spoofing' Google Search](https://www.theinformation.com/briefings/google-slams-microsofts-bing-for-spoofing-google-search?rc=gtdonx)
+
+[Fiber Broadband chief slams Starlink as a 'cop out' for BEAD](https://www.fierce-network.com/broadband/fiber-broadband-chief-slams-starlink-cop-out-bead)
+
+[Senators slam automakers for selling data and blocking the right to repair](https://www.theverge.com/2024/12/20/24325236/car-right-to-repair-data-collect-senator-letter)
+
+[Elon Musk slams SEC as agency threatens charges in Twitter stock probe](https://arstechnica.com/tech-policy/2024/12/elon-musk-slams-sec-as-agency-threatens-charges-in-twitter-stock-probe/)
+
+[China gorging on silicon before Uncle Sam slams the door](https://www.theregister.com/2024/12/11/china_stockpiling_chips/)
+
+['Self-driving' Tesla blasts through stop sign, sparks autonomous-driving lawsuit](https://www.oregonlive.com/commuting/2024/11/self-driving-tesla-blasts-through-stop-sign-sparks-one-of-oregons-1st-autonomous-driving-lawsuits.html)
+
+[GCHQ cyber-chief slams security outfits peddling 'medieval witchcraft' (2017)](https://www.theregister.com/2017/02/03/security_threat_solutions/)
+
+[Taiwan gets slammed with 15,000 cyber attacks per second – 4X more than average](https://www.tomshardware.com/networking/taiwan-gets-slammed-with-15-000-cyber-attacks-per-second-minister-notes-figure-is-4x-more-than-average)
+
+[Trump Team Targets Auto Mileage Rules He Blasted as 'EV Mandate'](https://www.bloomberg.com/news/articles/2024-11-19/trump-team-targets-auto-mileage-rules-he-blasted-as-ev-mandate)
+
+[Trump Voters in Focus Group Slam Elon Musk's Growing Influence](https://www.mediaite.com/politics/trump-voters-in-focus-group-slam-elon-musks-growing-influence-i-didnt-vote-for-him/)
+
+[ERP rollout at Europe's largest local council slammed](https://www.theregister.com/2024/11/08/birmingham_oracle_erp_rollout/)
+
+['Naked greed': Zoho's Sridhar Vembu blasts rival Freshworks for layoffs](https://www.business-standard.com/companies/news/naked-greed-zoho-s-sridhar-vembu-blasts-rival-freshworks-for-layoffs-124110800665_1.html)
+
+[Europe's largest local authority slammed for 'poorest' ERP rollout](https://www.theregister.com/2024/11/08/birmingham_oracle_erp_rollout/)
+
+[Harris slams Speaker Mike Johnson for saying the GOP may repeal CHIPS Act](https://www.nbcnews.com/politics/kamala-harris/harris-slams-mike-johnson-gop-repeal-chips-act-rcna178513)
+
+[Linus Torvalds slams AI as '90% marketing and 10% reality'](https://www.techradar.com/pro/linus-torvalds-slams-ai-as-90-percent-marketing-and-10-percent-reality)
+
+[American innovation got slammed by the “temporary” end of a key tax incentive](https://www.gsb.stanford.edu/insights/american-innovation-got-slammed-temporary-end-key-tax-incentive)
+
+[Judge slams Florida for censoring political ad](https://arstechnica.com/tech-policy/2024/10/judge-slams-florida-for-censoring-political-ad-its-the-first-amendment-stupid/)
+
+[Salesforce CEO Marc Benioff blasts Microsoft's Copilot: 'It just doesn't work'](https://fortune.com/2024/10/17/salesforce-ceo-marc-benioff-blasts-microsoft-ai-copilot/)
+
+[Venture Capital Slammed by Fed Tightening: Exits Blocked After IPO/SPAC Collapse](https://wolfstreet.com/2024/10/14/venture-capital-slammed-by-fed-tightening-exits-blocked-after-ipos-spacs-collapsed-distributions-at-financial-crisis-lows/)
+
+['Severe' geomagnetic storm to slam Earth Thursday, auroras possible in CA and AL](https://www.livescience.com/space/the-sun/severe-geomagnetic-storm-to-slam-earth-thursday-with-auroras-possible-as-far-south-as-california-and-alabama)
+
+[Seawolf-Class Submarine Slammed into Underwater Mountain Near China](https://nationalinterest.org/blog/buzz/seawolf-class-submarine-slammed-underwater-mountain-near-china-210772)
+
+[UK government's bank data sharing plan slammed as 'financial snoopers' charter'](https://www.theregister.com/2024/09/26/uk_benefits_bank_accounts/)
+
+[Biggest ever seen black hole jets; blasting plasma well beyond their own galaxy](https://phys.org/news/2024-09-astronomers-biggest-black-hole-jets.html)
+
+[Snowflake slams 'more MFA' button again – months after breaches](https://www.theregister.com/2024/09/16/snowflake_mfa_default/)
+
+[Yann LeCun slams California's SB 1047 as Geoffrey Hinton backs new regulations](https://venturebeat.com/ai/ai-safety-showdown-yann-lecun-slams-californias-sb-1047-as-geoffrey-hinton-backs-new-regulations/)
+
+[EU consumer groups slam 'manipulative' video game spending tactics](https://www.france24.com/en/live-news/20240912-eu-consumer-groups-slam-manipulative-video-game-spending-tactics)
+
+[Swiss BMW Driver Slammed with $116,000 Tailgating Fine Because He's Rich](https://www.thedrive.com/news/swiss-bmw-driver-slammed-with-116000-tailgating-fine-because-hes-rich)
+
+[Show HN: Unitree Go2 ROS2 Simulation – Added Sensors for Slam and Navigation](https://github.com/anujjain-dev/unitree-go2-ros2)
+
+[German warship blasts Darth Vader anthem in heart of London. 'No deeper message'](https://apnews.com/article/germany-darth-vader-london-thames-navy-theme-85e889136c6a586bbe42c9a0eb358a35)
+
+[Scientists slam 'indefensible' axing of NASA's $450M VIPER moon rover](https://www.theguardian.com/science/article/2024/aug/10/scientists-slam-indefensible-axing-of-nasas-450m-viper-moon-rover)
+
+[Driver dies after Tesla Cybertruck slams into culvert](https://www.khou.com/article/news/local/cyber-truck-deadly-fire-fisher-road-baytown-texas/285-1b631e4f-7b1b-4645-9050-0cb839aa104a)
+
+[Agile Manifesto co-author blasts failure rates, talks up 'reimagining' project](https://www.theregister.com/2024/07/16/jon_kern/)
+
+[Russia Slams Google's 'Censorship' yet Deleting 5.6M VPN Links Is Just Fine](https://torrentfreak.com/russia-slams-google-censorship-yet-deleting-5-6m-vpn-links-is-just-fine-240718/)
+
+[Microsoft DEI Lead Blasts Company in Internal Email After Team Is Laid Off](https://www.ign.com/articles/microsoft-dei-lead-blasts-company-in-internal-email-after-team-is-reportedly-laid-off)
+
+[Agile Manifesto co-author blasts failure rates report](https://www.theregister.com/2024/07/16/jon_kern/)
+
+[UK cyber-boss slams China's bug-hoarding laws](https://www.theregister.com/2024/07/15/asia_technology_news_weekly_roundup/)
+
+[FTC Slams Middlemen for High Drug Prices](https://www.nytimes.com/2024/07/09/health/ftc-pharmacy-benefit-managers-drug-prices.html)
+
+[Extreme Solar Blasts and Weak Magnetic Fields Threaten Life on Earth](https://dailygalaxy.com/2024/07/extreme-solar-blasts-threaten-life-earth/)
+
+[Market for Carbon Credits Faces Fresh Blow as Offsets Slammed](https://www.bloomberg.com/news/articles/2024-07-02/carbon-credits-face-fresh-blowback-as-ngos-unite-to-slam-offsets)
+
+[Boeing blasted by US regulator for revealing panel blowout details to media](https://www.theguardian.com/business/article/2024/jun/27/boeing-regulator-panel-blowout-details)
+
+[New York Slams the Brakes on the Enshittification of Restaurant Reservations](https://gizmodo.com/new-york-restaurant-reservations-resy-resellers-piracy-1851545150)
+
+[Tesla in self-drive mode slams into police car in Orange County](https://ktla.com/news/local-news/tesla-in-self-drive-mode-slams-into-police-car-in-orange-county/)
+
+[Why Switzerland has again slammed the door on Spanish judge García-Castellón](https://www.elnacional.cat/en/politics/why-switzerland-slams-door-spanish-judge-garcia-castellon_1235613_102.html)
+
+[Adobe employees slam the company over AI controversy: 'Avoid becoming like IBM'](https://archive.is/2024.06.13-185505/https://www.businessinsider.com/adobe-employees-slam-company-over-ai-controversy-2024-6)
+
+[Door slammed on last remaining easy Windows 11 local account setup workaround](https://www.tomshardware.com/software/windows/door-slammed-on-last-remaining-easy-windows-11-local-account-setup-workaround)
+
+[Can Trump Slam the Brakes on Electric Vehicles?](https://www.nytimes.com/2024/05/27/climate/trump-electric-vehicles.html)
+
+[OpenAI's former superalignment leader blasts company](https://venturebeat.com/ai/openais-former-superalignment-leader-blasts-company-safety-culture-and-processes-have-taken-a-backseat/)
+
+['Tesla Is Not a Family Business': New York Official Blasts Musk's Pay Package](https://insideevs.com/news/720808/nyc-comptroller-brad-lander-tesla-shareholder-vote/)
+
+[Elon Musk slams Meta-owned WhatsApp for exporting user data](https://www.pgurus.com/elon-musk-slams-meta-owned-whatsapp-for-exporting-user-data/)
+
+[Tesla shareholder group opposes Musk's $46B pay, slams board "dysfunction"](https://arstechnica.com/tech-policy/2024/05/tesla-shareholder-group-opposes-musks-46b-pay-slams-board-dysfunction/)
+
+[Sony Music slams tech giants for unauthorised use of stars' songs](https://www.bbc.com/news/articles/c0434yx8vgxo)
+
+[State Lawmakers Slam Cannabis Contract with Private Equity Firm](https://www.thecity.nyc/2024/05/08/state-senator-cannabis-contract-private-equity/)
+
+[Google blasted for AI that refuses to say how many Jews were killed by the Nazis](https://nypost.com/2024/05/11/tech/googles-ai-refuses-to-say-how-many-jews-were-killed-by-nazis/)
+
+[Letter from 14 senators slamming TSA facial recognition in airports](https://www.theverge.com/2024/5/3/24148346/tsa-facial-recognition-airports-us-senators-oversight)
+
+[Economist Slams Elon Musk for Making Tesla a "Tech-Bubble" Meme Stock](https://futurism.com/the-byte/economist-slams-elon-musk-meme-stock)
+
+[OpenAI Slams Musk's 'Revisionist History' in Bid to Toss Lawsuit](https://www.bloomberg.com/news/articles/2024-04-20/openai-slams-musk-s-revisionist-history-in-bid-to-toss-lawsuit)
+
+[US Olympians slam Nike for skimpy women's track kit](https://www.theguardian.com/sport/2024/apr/13/nike-olympic-track-and-field-uniforms-women-sexism)
+
+[Paintball-blasting home security camera redefines 'enter at own risk'](https://newatlas.com/technology/paintball-security-paintcam-eve/)
+
+[Deutsche Telekom, Airbus slam plan allowing Big Tech access to EU cloud data](https://www.reuters.com/technology/deutsche-telekom-airbus-slam-plan-allowing-big-tech-access-eu-cloud-data-2024-04-10/)
+
+[US Slams Strikes on Russia Oil Refineries as Risk to Oil Markets](https://www.bloomberg.com/news/articles/2024-04-09/us-slams-strikes-on-russia-oil-refineries-as-risk-to-oil-markets)
+
+[Notepad++ dev slams Google-clogging notepad.plus 'parasite'](https://www.theregister.com/2024/04/09/notepad_google_search_spam/)
+
+[Cyber Safety Review Board slams Microsoft security failures](https://www.techtarget.com/searchsecurity/news/366577765/Cyber-Safety-Review-Board-slams-Microsoft-security-failureshttps://www.techtarget.com/searchsecurity/news/366577765/Cyber-Safety-Review-Board-slams-Microsoft-security-failures)
+
+[Artists Slam AI Developers for Using Music Without Permission](https://www.forbes.com/sites/maryroeloffs/2024/04/02/artists-slam-ai-developers-for-using-music-without-permission-in-letter-signed-by-kacey-musgraves-billie-eilish-and-more/)
+
+[Russia's Backdoor to the Global Banking System Is Slamming Shut](https://www.wsj.com/finance/banking/russias-backdoor-to-the-global-banking-system-is-slamming-shut-49bf5c53)
+
+[Apple slams DOJ case as misguided attempt to turn iPhone into Android](https://techcrunch.com/2024/03/21/apple-slams-doj-case-as-misguided-attempt-to-turn-iphone-into-android/)
+
+[Dwarf Fortress creator blasts execs behind brutal industry layoffs](https://www.pcgamer.com/games/sim/dwarf-fortress-creator-blasts-execs-behind-brutal-industry-layoffs-they-can-all-eat-s-i-think-theyre-horrible-greedy-greedy-people/)
+
+[With Cyberattack Fix Weeks Away, Health Providers Slam United](https://www.nytimes.com/2024/03/08/health/united-healthcare-cyberattack.html)
+
+[Epic Games blasts Apple demand for $73M in legal fees](https://www.reuters.com/legal/litigation/epic-games-blasts-apple-demand-73-million-legal-fees-2024-02-20/)
+
+[Intuitive Machines launch: SpaceX blasts private firm's lunar lander into orbit [video]](https://www.bbc.com/news/av/science-environment-68303377)
+
+[Marlee Matlin slams CBS who failed to show ASL performers at Super Bowl](https://www.nbcnews.com/news/us-news/marlee-matlin-slams-cbs-network-failed-show-asl-performers-super-bowl-rcna138411)
+
+[Lael Brainard slams food companies for shrinkflation as WH attacks price gouging](https://www.cnbc.com/2024/02/13/feds-lael-brainard-shrinkflation-white-house-battle.html)
+
+[Court Slams Brakes on DMCA Subpoena Use to Expose Alleged Movie Pirates](https://torrentfreak.com/court-slams-brakes-on-dmca-subpoena-use-to-expose-alleged-movie-pirates-240201/)
+
+[Mozilla slams Microsoft for using dark patterns to drive Windows users to Edge](https://www.theregister.com/2024/02/02/mozilla_slams_microsoft_dark_patterns/)
+
+[Federal Appeals Court Slams FBI's Actions in Security Deposit Box Raid](https://ij.org/press-release/federal-appeals-court-slams-fbis-actions-in-security-deposit-box-raid/)
+
+[Costly and 'unnecessarily complex': Report blasts CA water conservation plan](https://www.latimes.com/environment/story/2024-01-17/review-criticizes-proposed-california-water-saving-rules)
+
+[DPD chatbot blasts courier company, swears, and dabbles in awful poetry](https://www.theregister.com/2024/01/23/dpd_chatbot_goes_rogue/)
+
+[Bill Ackman Slams Harvard Endowment, Forms Think Tank to Probe Higher Education](https://finance.yahoo.com/news/bill-ackman-forming-think-tank-134850849.html)
+
+[Kelly Carlin Slams AI-Generated George Carlin Comedy Special](https://www.hollywoodreporter.com/news/general-news/kelly-carlin-george-carlin-ai-comedy-special-1235785324/)
+
+[Cory Doctorow Blasts AI as a Fraud-Filled Bubble](https://futurism.com/cory-doctorow-blasts-ai-fraud-bubble)
+
+[Republicans slam broadband discounts for poor people, threaten to kill program](https://arstechnica.com/tech-policy/2023/12/republicans-slam-broadband-discounts-for-poor-people-threaten-to-kill-program/)
+
+[UK's James Cleverly blasts Meta's encryption push](https://www.politico.eu/article/uk-home-secretary-blasts-metas-encryption-push/)
+
+[Are young people poised to slam the brake on endless economic growth?](https://www.theguardian.com/business/2023/dec/02/are-young-people-poised-to-slam-the-brake-on-endless-economic-growth)
+
+[UK watchdog slams the brakes on Adobe's $20B bid for Figma](https://www.theverge.com/2023/11/28/23979260/adobe-figma-bid-uk-watchdog-cma-provisional-findings-merger)
+
+[AI Startup Cohere's CEO Slams Effective Altruism in Wake of OpenAI Drama](https://www.bloomberg.com/news/articles/2023-11-22/ai-startup-cohere-s-ceo-slams-effective-altruism-in-wake-of-openai-drama)
+
+[White House blasts Elon Musk for promoting 'Antisemitic and racist hate'](https://www.cnbc.com/2023/11/17/white-house-blasts-elon-musk-for-promoting-antisemitic-racist-hate.html)
+
 [Patent Community Slams USPTO's Rush to Retire Software Systems](https://ipwatchdog.com/2023/11/05/patent-community-slams-usptos-rush-retire-old-software-systems-despite-patent-center-problems/id=169221/)
 
 [Apple slams Android as a 'massive tracking device' in internal slides](https://www.theregister.com/2023/11/03/google_trial_apple/)
@@ -2309,4 +2771,4 @@ Slamming and blasting
 
 <center><video src="iISlvGCrD5Y.mp4" controls></video></center>
 
-`sqlite3 hnarchive.db "select ('[' || title || '](' || url || ')') FROM items WHERE type='story' and (title LIKE '%blast%' or REPLACE(lower(title), 'islam', '') LIKE '%slam%') AND NOT title LIKE '%blaster%' AND NOT title LIKE '%blastoma%' ORDER BY time DESC"`
+`sqlite3 hnarchive.db "select ('[' || title || '](' || url || ')') FROM items WHERE type='story' AND lower(title) REGEXP '\b(slam|slams|slammed|slamming|bodyslams|blasts|blasting|blasted)\b' ORDER BY time DESC"`
