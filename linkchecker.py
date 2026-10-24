@@ -183,7 +183,7 @@ def linkchecker_argparse(args):
     linkchecker(do_external=not args.internal)
     return 0
 
-@vlogging.main_decorator
+@vlogging.main_decorator(log=log)
 def main(argv):
     parser = argparse.ArgumentParser(
         description='''

@@ -287,7 +287,7 @@ def columbus_ingest_argparse(args):
     else:
         return columbus_ingest()
 
-@vlogging.main_decorator
+@vlogging.main_decorator(log=log)
 def main(argv):
     parser = argparse.ArgumentParser(
         description='''

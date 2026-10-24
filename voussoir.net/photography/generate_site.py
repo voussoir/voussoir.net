@@ -1002,7 +1002,7 @@ def make_webpage(this_id, items, is_root, doctitle):
     html = textwrap.dedent(html)
     return html
 
-@vlogging.main_decorator
+@vlogging.main_decorator(log=log)
 def main(argv):
     global S3_EXISTING_FILES
 
