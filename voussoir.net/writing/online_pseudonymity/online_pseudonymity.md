@@ -39,6 +39,15 @@ Anyway, as far as I can remember, this rule never came with a qualifier like "do
 
 > [mrspeaker](https://news.ycombinator.com/item?id=6870798)
 
+-
+
+> No, the magic of the early web was that people treated their online identities as a secret alternative life, rather than a resume for recruiters, friends, potential partners, and other real-world acquaintances to look at.
+
+> The Internet of today is little more than a (distorted) mirror of people's offline lives. That's why the problems of today's Internet are the same as the problems of the real world. By contrast, the Internet of the 90s was an exciting world of its own, with rules that were dramatically different from those of everyday life.
+
+> [p-e-w](https://news.ycombinator.com/item?id=38597187)
+
+
 Here I go again quoting HN users for general purpose life advice. Probably not the best idea.
 
 I generally try to approach problems with a long-term perspective. I prefer things that are high-effort, long-lasting, and deliberate. That's one of the reasons I'd rather maintain my own website than play on any company's [platform](/writing/cancel_this_album). The word "platform" is used so much these days it makes me sick. They spring up, screw people over for a while, then shut down. I'm not going to entrust them with anything I care about.
