@@ -3,6 +3,284 @@ Cyborgs on HN
 
 This page collects comments which make unnecessary or tenuous analogies to computers, programming, dollar-sign $variables, sed's/replace/syntax/g, mathematics, AI/machine learning, and cryptography in discussions that aren't about those things.
 
+> It depends. Traffic lights are just mutexes.
+
+-
+
+> My current strategy for how much total I'll pay for a coffee is FlOOR(price+.50) + 1
+
+-
+
+> Years ago, I picked cell carrier because of this. When I ran out, it switched to O(200kbps), which is fine for email, basic web search, etc.
+
+-
+
+> s/Predictions/Ketamine-and-adderall-fueled ramblings
+
+-
+
+> Effectively ground truth and often coming up with solutions that would be absolutely ridiculous for a human to find within a reasonable time limit.
+
+> > I'd love if anyone could provide examples of such AND("ground truth", "absolutely ridiculous") solutions!
+
+-
+
+> You'll find no shortage of people who'll say "Hey man! What happened? I never hear from you any more!"
+
+> To which I'd love to respond with s/any more/ever/
+
+-
+
+> For the love of $diety, complete a UI transition across the OS, get things in order, stop shoveling things onto people, don't return ads and internet search results from start-menu searches and just make great products.
+
+-
+
+> Please state units. In en_GB (at least) "pulling your meat" is ... ambiguous.
+
+-
+
+> Also a recent episode of Lazarus. Though s/pre-information-age/cult
+
+-
+
+> \> "Stores should only provide DRM, and anything else that they do must be optional."
+
+> Why would I buy at ${store} then? If a store has features, while piracy does not have them, I have an incentive to buy at the store. If a store only has DRM, while piracy does not, I will be incentivised to use piracy.
+
+-
+
+> It is, $job's outlook install still "top posts" by default, just like always.
+
+-
+
+> The experience as CEO of a company with 10e2-10e3 headcount is a lot different than the experience with 10e4-10e6 headcount.
+
+-
+
+> Females have a hardware accelerator telling them no one cares about photos of their objects. Stupid pyramids, stupid tree, stupid book, stupid new car, stupid meal, stupid stars.
+
+> Men are missing this chipset.
+
+-
+
+> But if I upload my stuff into it, my stuff doesn't take his 100 GB, but counts against my quota, unless I modify the files to say that $GROUP_LEADER now owns those files.
+
+-
+
+> If $YOU're thinking the coding world is awfully cowboy maybe that's a sign that $YOU need to up your game with the already-existing and well-documented best practices in our industry.
+
+-
+
+> The Constitution doesn't really account for the possibility that 1/3 of the Senate would disagree with an ignored court order. So hard to say where it goes from there.
+
+> > This sounds kind of like a majority attack with blockchains. If most of the government officials are against a court order, seems like it just won't happen i.e. even steps 3 and 4.
+
+-
+
+> \>pot into which foodstuffs are placed and cooked, continuously. The pot is never or rarely emptied all the way, and ingredients and liquid are replenished as necessary.\[1\]\[3\] Such foods can continue cooking for decades or longer if properly maintained.
+
+> So, basically, the code base I’ve been working on is a perpetual stew, maintained for decades
+
+-
+
+> \> I personally hope we can all get on the same team with AI and treat its advancement as scientific research for the betterment of humanity.
+
+> s/AI/capital/.
+
+-
+
+>  think you can s//g that in various ways, and it would be true:
+
+> * Music, musicians
+
+> * Publishing/journals, academics
+
+> * (and more that I can't think of right now)
+
+-
+
+> Thank $DEITY we don't have to care about IE compatibility any more.
+
+-
+
+> My favourite outcome is that 'chocolate' is reduced to '#c0c0a0'
+
+> > 'shiny' gives pitch black, and 'obscure' gives blue sky color.
+
+> > > I think the point was that chocolate -> cocoa :)
+
+> > > > Yes, that's nearly semantic f(x)=x, I added that we could also find an x such as f(x)=1/x and f(1/x)=x.
+
+-
+
+> 3\. Blocked I18n (not just UN) food & water aid
+
+-
+
+> Unfortunately for our collective sanity, Trump's promises have the predictive power of /dev/random
+
+-
+
+> My favorite head scratcher is the US penny. It would be so much easier on all involved if we rounded so everything was MOD5 friendly, and just eliminated the penny.
+
+-
+
+> The author recommends asking people what their favorite of a category is, which is funny, because that category of question (provide superlative from set) stun locks me instantly in conversation, because I feel like I have to provide a defensibly true answer for this subjective question, and I don't index things in sets like that in the first place.
+
+-
+
+> I love this strategy until I run into someone else who's read it. Then it's just two people wait()ing each other.
+
+-
+
+> I don't know why, but I wish the author had done an sed s/scheme/concept
+
+-
+
+> I've noticed weird little detours in areas where I'm familiar with but engaged navigation merely for an ETA. To me those little detours that don't save time or avoid construction suggest I'm being used to probe those side streets. It's like being a human ICMP packet.
+
+-
+
+> "America" is the only name the country has. Other countries are also called "United States of $FOO", so the USA does not own title to "United States" in the same way no one owns "Democratic Republic" as the name of their country.
+
+> > America being the name of the country isn't a problem, the problem is the people from this country calling Americans "latinos". Or Native-Americans, or Whatever-Americans because the only Americans are themselves.
+
+> > > The main reason people call themselves $HYPHENATION-americans is because they want some free stuff from the government for their particular $HYPHENATION
+
+-
+
+> Trusting any single actor with your data is a bad idea, no matter if it's Oracle, Cloudflare or $CurrentInternetDarling.
+
+-
+
+> No, $PRODUCT will not change how $SERVICE behaves. Can we move on from this stuff?
+
+-
+
+> If you send me $20k of bitcoin and a UUID, I will run 'crypto.randomUUID()', and if I get the same UUID as you I'll send back $40k.
+
+-
+
+> If it helps think about AI as meat (or sugar). You put "only locally grown beef\^W AI", or "does not contain any meat\^W genAI" not because you are low tech, but because these are your customer preferences
+
+> *shrug* Not everyone chooses to write in sterile $DAYJOB-approved language when explaining in detail the root of their frustration with the absolutely bullshit garbage pile they have to build upon for their non-corporate side project.
+
+-
+
+> I buy more $CONSUMABLE whenever I take the last unit of $CONSUMABLE out of storage. If I don't order online or add it to the grocery list right away, I put the old empty (second-to last) container in a place where it is likely to prompt me to resupply in a timely manner, which is often different from the place where $CONSUMABLE is consumed. Otherwise there's the risk that the “special sentinel” is always encountered at a place or time where resupplying is inconvenient, and so it might run empty before you get around to it, despite its “special” nature. This approach also has the benefit that you don't have to switch from your favorite variety of $CONSUMABLE.
+
+-
+
+> This is exactly why I contribute to OSM and add/remove/fix my favorite restaurants, bars etc. in the city I live in. I feel like I'm doing three nice things at a time: helping local companies, making travel better for tourists, and sticking it to $the_man
+
+-
+
+> Next time don't store the old shoes - rotate wearing them so at the end of (shoe_lifetime * number_of_pairs) years you'll have a number of pairs of evenly-worn shoes :)
+
+-
+
+> Yup, my bad here, my brain had a segfault. I was thinking of Occam's Razor. Updated my original post, laughing at the irony now.
+
+-
+
+> Email such concerns to moderators at hn@ycombinator.com. "Dang" or "@dang" in comments is a no-op:
+
+-
+
+> It's in Google's interest that coming generations will find any URL as weird as we find an IPv6 address. Everybody should use their search^W profit generation engine.
+
+-
+
+> If the article isn't about AI images, they often signal one more of the things WordArt used to:
+
+> 1. Cluelessness (using $HOT_NEW_THING out of FOMO)
+
+> But nowadays it seems there are always faustian bargains. They are carefully calculated to balance evil\^h\^h\^h\^h business interests vs convenience
+
+-
+
+> if( $Voters_Apathetic && ( $Political_Donations_From_Monopolists > $Political_Donations_From_Antimonopolists ) ) then { ...
+
+-
+
+> To be honest with you, anyone I know who is wealthy enough to own a plane is already set up with a mountain of LLCs to own shit anonymously. This legislation is a NoOp
+
+-
+
+> Major accident like this, millions or maybe billions of dollars lost, but $DEITY forbid that we spend $1000/month (20 * what, $50 for unlimited data?) on keeping the crew happy.
+
+-
+
+> The iPhone was released seventeen years ago. It's not awesome new tech, it's the appliance that I carry around so that $PEOPLE_IMPORTANT_TO_ME can get hold of me, and I can check the weather.
+
+-
+
+> \> Does anyone who works on Windows read HN?
+
+> I do.
+
+> However, { #include https://news.ycombinator.com/item?id=39950708 }
+
+-
+
+> To use a metaphor more appropriate to this site, US legal system is the smelliest, most hack-and-bodge-filled legacy codebase most people will ever interact with.
+
+-
+
+> The way I describe Reddit to people is that you have zero clue if you're arguing with a 13 year old who discovered $x concept this week.
+
+-
+
+> After that, deepfaking $WorldLeader$ doing something embarrassing is probably #2 or #3. Just in time for the US elections...
+
+-
+
+> all that matters is attracting $USER to $PLATFORM at a rate which minimizes $COST_OF_CONTENT_PRODUCTION to a point where it is below $INCOME_PER_USER. none of these "news outlets" have any integrity, they might back off of AI but they've already demonstrated that they'll publish anything that drives viewership. This also calls into question the legitimacy of human-written content published by these "news outlets" because whatever ideals journalism may have aspired to in the past no longer exist (if they ever even existed in the past).
+
+-
+
+> It's the only thing MS\^H\^H Bing has that offers a prayer of beating Google at something. Expect saturation.
+
+-
+
+> One could also care and value autonomous manufacturing processes that don't need to start with:
+
+> import * from "world@latest"
+
+-
+
+> For anybody that's curious, the IP-Foo [0] browser extension puts a little 4/6 icon in the address bar to make it clear at a glance which dialect you're speaking for $currentWebPage
+
+-
+
+> (1) If it's an important-enough part of their self-image, people tend to say that they were born in $State, graduated from $College, were in [$Fraternity|$Sorority], attend $Church, are a fan of $Sports_Team, etc.
+
+> (2) If's a prestigious-enough past association, people tend to mention that they knew $Senator back in high school, have met $Governor at a few ($VIP-type) charity events, etc.
+
+> > Do you write bash or PowerShell a lot?
+
+> > > No, but I write a fair amount of 'switch( expression ) { case 1: ...'-type code in other languages. Even if sub-optimal short-term, it's often much easier to understand and maintain long-term.
+
+-
+
+> Along these same lines, it is common at my organization for people to gleefully say "welcome to ${ORG}!" or "It's the ${ORG} way!" in response to some failure that comes down to managerial knee-jerk or some fundamentally broken process.
+
+-
+
+> "Hi $COLLEAGUE. I'm having a problem with $TASK: I'm trying to accomplish $GOAL but I keep seeing $ERROR. I've tried $WORKAROUNDS, but none of them have fixed the problem. I think it will be fastest if I can demo this for you; do you have 10 minutes so I can walk you through it interactively?"
+
+-
+
+> \> The technique had a technical name, "glossopharyngeal breathing". You trap air in your mouth and throat cavity by flattening the tongue and opening the throat, as if you're saying "ahh" for the doctor. With your mouth closed, the throat muscle pushes the air down past the vocal cords and into the lungs. Paul called it "frog-breathing".
+
+> So, to state it in computing terms, this wasn't a fix for not being able to breathe, it was a workaround. But it seems to have worked really well: at 40, he was "able to spend most of his day outside the machine that still kept him alive".
+
+> One of the top things that I want in a job is coworkers who care obsessively.
+
+> > s/obsessively/pragmatically/
+
+-
+
 > Agreed, but that's a two part issue.
 
 > \#1 - The modern web has a much lower ratio of citizenCreators : consumers than the early web.
@@ -27,7 +305,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> Also, what is with this misconception: "When twins aren’t being regarded as carbon copies, they are slotted (or slot themselves) into opposing roles." Dude, any vector can be projected onto another one, with an orthogonal ("opposing") component left over.
+> Also, what is with this misconception: "When twins aren't being regarded as carbon copies, they are slotted (or slot themselves) into opposing roles." Dude, any vector can be projected onto another one, with an orthogonal ("opposing") component left over.
 
 -
 
@@ -85,7 +363,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> At $DAY_JOB we recently scuttled most development efforts for a week for our teams. Our nightly backup job that sanitizes PHI ballooned overtime to, say, 20GB+1Byte and ran out of disk space. Because we are running Kubernetes on Fargate we don’t need a full time operations guy, right?
+> At $DAY_JOB we recently scuttled most development efforts for a week for our teams. Our nightly backup job that sanitizes PHI ballooned overtime to, say, 20GB+1Byte and ran out of disk space. Because we are running Kubernetes on Fargate we don't need a full time operations guy, right?
 
 -
 
@@ -103,7 +381,7 @@ This page collects comments which make unnecessary or tenuous analogies to compu
 
 -
 
-> Addendum: don’t rely on your git/wiki/document-system for tracking the timestamp. "This was accurate on $DATE" has a very different meaning than "this document was last edited on $DATE". It might be 2 years out of date but someone fixed a typo last week.
+> Addendum: don't rely on your git/wiki/document-system for tracking the timestamp. "This was accurate on $DATE" has a very different meaning than "this document was last edited on $DATE". It might be 2 years out of date but someone fixed a typo last week.
 
 -
 
