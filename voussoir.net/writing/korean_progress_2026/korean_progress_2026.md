@@ -81,6 +81,8 @@ My primary reading resource has been fairy tales (전래동화). I said I've nev
 
 When you put this all together, my study regimen so far has been fairy tales, a single defunct podcast, and branching through the dictionary to find more words? It's no surprise I'm not an expert yet. But somehow it seems like my results are coming along ok, considering.
 
+I have had some difficulty finding youtube channels that are of an appropriate difficulty level and are enjoyable to watch. One channel I've found recently is [태웅쌤 - Comprehensible Input Korean](https://www.youtube.com/@ComprehensibleInputKorean). He plays video games and describes / narrates what he's doing using easy sentences, but again not baby talk. I think video games are good idea as a source of comprehensible input since he can point to things on screen and describe what's happening without having to give any English translations.
+
 ## What I'm doing right now
 
 At the moment, I'm in the mood to absolutely cram vocabulary. I have much more to say specifically about Anki in a few minutes, but basically, I am trying to do 100 new words per day and am averaging 600-1000 reviews per day, which takes me between 60-90 minutes. On the Anki forums, people recommend 20 new words per day as a starting point and say that, depending on your parameters, you can expect to do 7x to 10x your New quantity per day in reviews. Some of that information comes from the days before FSRS but it's a general guideline. Looking at my historical Anki heatmap, it seems I was probably living by those guidelines since I seldom did over 200 reviews back in the day.
@@ -113,154 +115,198 @@ Here's my Anki stats from this time period. I wrote a quick and dirty, non-optim
 
 date|total cards|new|learning|relearning|young|mature|studied today|mature retention|new studied
   -:|         -:| -:|      -:|        -:|   -:|    -:|           -:|              -:|         -:
-2026-05-14 (목)|6754|6604|29|0|121|0|0|0/0 (n/a)|0
-2026-05-15 (금)|6754|6510|21|0|223|0|452|0/0 (n/a)|94
-2026-05-16 (토)|6755|6511|21|0|223|0|4|0/0 (n/a)|0
-2026-05-17 (일)|6755|6493|19|0|243|0|82|0/0 (n/a)|18
-2026-05-18 (월)|6761|6191|109|2|456|3|1026|0/0 (n/a)|308
-2026-05-19 (화)|6761|6191|107|2|458|3|713|0/0 (n/a)|303
-2026-05-20 (수)|6763|6193|107|2|458|3|641|0/0 (n/a)|176
-2026-05-21 (목)|6767|6197|107|2|458|3|1040|0/0 (n/a)|232
-2026-05-22 (금)|6767|6197|107|2|458|3|230|0/0 (n/a)|102
-2026-05-23 (토)|6767|6197|107|2|458|3|10|0/0 (n/a)|0
-2026-05-24 (일)|6768|6198|107|2|458|3|582|0/0 (n/a)|154
-2026-05-25 (월)|6768|6198|107|2|458|3|35|0/0 (n/a)|0
-2026-05-26 (화)|6772|6202|107|2|458|3|182|0/0 (n/a)|15
-2026-05-27 (수)|6772|6202|107|2|458|3|112|0/0 (n/a)|11
-2026-05-28 (목)|6777|6207|107|2|458|3|348|0/0 (n/a)|100
-2026-05-29 (금)|6779|6209|107|2|458|3|42|0/0 (n/a)|0
-2026-05-30 (토)|6783|6213|107|2|458|3|625|0/0 (n/a)|174
-2026-05-31 (일)|6794|6224|107|2|458|3|440|0/0 (n/a)|64
-2026-06-01 (월)|6799|6229|107|2|458|3|838|0/0 (n/a)|213
-2026-06-02 (화)|6800|6230|107|2|458|3|202|0/0 (n/a)|0
-2026-06-03 (수)|6803|6233|107|2|458|3|165|0/0 (n/a)|2
-2026-06-04 (목)|6803|6233|9|55|435|71|463|0/0 (n/a)|0
-2026-06-05 (금)|6807|6235|1|3|477|91|182|0/0 (n/a)|2
-2026-06-06 (토)|6831|6162|13|0|470|186|664|0/0 (n/a)|99
-2026-06-07 (일)|6845|5918|0|0|741|186|935|0/0 (n/a)|258
-2026-06-08 (월)|6850|5914|8|6|728|194|376|0/0 (n/a)|9
-2026-06-09 (화)|6852|5818|0|0|759|275|577|0/0 (n/a)|99
-2026-06-10 (수)|6862|5629|0|0|842|391|1055|0/0 (n/a)|200
-2026-06-11 (목)|6868|5506|13|0|867|482|815|0/0 (n/a)|129
-2026-06-12 (금)|6887|5522|3|12|856|494|348|0/0 (n/a)|4
-2026-06-13 (토)|6899|5484|6|1|898|510|427|0/0 (n/a)|50
-2026-06-14 (일)|6909|5444|0|0|914|551|486|0/0 (n/a)|50
-2026-06-15 (월)|6934|5419|0|0|933|582|390|0/0 (n/a)|50
-2026-06-16 (화)|6952|5382|5|0|957|608|415|0/0 (n/a)|55
-2026-06-17 (수)|6972|5352|15|0|970|635|320|0/0 (n/a)|50
-2026-06-18 (목)|6991|5269|4|0|1026|692|507|0/0 (n/a)|102
-2026-06-19 (금)|6996|5198|44|0|1020|734|387|0/0 (n/a)|76
-2026-06-20 (토)|6996|5198|10|17|1026|745|210|0/0 (n/a)|0
-2026-06-21 (일)|7034|5036|29|0|1130|839|783|0/0 (n/a)|200
-2026-06-22 (월)|7062|4964|24|0|1172|902|668|0/0 (n/a)|100
-2026-06-23 (화)|7069|4871|28|0|1210|960|583|0/0 (n/a)|100
-2026-06-24 (수)|7089|4790|18|0|1241|1040|610|0/0 (n/a)|101
-2026-06-25 (목)|7094|4696|65|2|1220|1111|520|0/0 (n/a)|100
-2026-06-26 (금)|7097|4696|44|2|1244|1111|88|0/0 (n/a)|3
-2026-06-27 (토)|7119|4618|25|0|1263|1213|904|2/2 (100.0%)|100
-2026-06-28 (일)|7147|4535|8|0|1329|1275|663|1/1 (100.0%)|111
-2026-06-29 (월)|7167|4456|24|0|1367|1320|618|2/3 (66.7%)|100
-2026-06-30 (화)|7169|4357|63|4|1380|1365|572|1/1 (100.0%)|101
-2026-07-01 (수)|7181|4269|38|1|1465|1408|712|4/4 (100.0%)|100
-2026-07-02 (목)|7181|4268|10|9|1484|1410|537|6/7 (85.7%)|1
-2026-07-03 (금)|7184|4171|28|0|1530|1455|628|6/6 (100.0%)|100
-2026-07-04 (토)|7208|4095|68|4|1554|1487|635|6/9 (66.7%)|100
-2026-07-05 (일)|7321|4108|15|0|1663|1535|867|6/9 (66.7%)|100
-2026-07-06 (월)|7332|4019|36|0|1701|1576|746|14/19 (73.7%)|100
-2026-07-07 (화)|7346|3933|30|0|1769|1614|796|18/20 (90.0%)|100
-2026-07-08 (수)|7351|3938|9|24|1758|1622|355|9/11 (81.8%)|0
-2026-07-09 (목)|7352|3939|1|17|1766|1629|429|27/31 (87.1%)|0
-2026-07-10 (금)|7352|3939|0|24|1757|1632|139|7/8 (87.5%)|0
-2026-07-11 (토)|7376|3853|31|0|1811|1681|1357|80/97 (82.5%)|110
-2026-07-12 (일)|7394|3771|16|0|1897|1710|887|41/51 (80.4%)|101
-2026-07-13 (월)|7394|3671|71|14|1892|1746|742|44/52 (84.6%)|100
-2026-07-14 (화)|7406|3680|24|26|1933|1743|484|28/35 (80.0%)|3
-2026-07-15 (수)|7407|3681|1|23|1958|1744|571|30/37 (81.1%)|0
-2026-07-16 (목)|7413|3685|1|9|1970|1748|438|35/40 (87.5%)|2
-2026-07-17 (금)|7414|3586|73|3|1981|1771|1098|116/137 (84.7%)|100
-2026-07-18 (토)|7458|3530|23|0|2086|1819|847|58/66 (87.9%)|100
-2026-07-19 (일)|7463|3535|5|19|2079|1825|433|34/37 (91.9%)|0
-2026-07-20 (월)|7478|3450|22|0|2139|1867|1007|88/96 (91.7%)|100
-2026-07-21 (화)|7492|3353|36|0|2196|1907|895|52/59 (88.1%)|111
-2026-07-22 (수)|7492|3352|14|18|2200|1908|331|16/22 (72.7%)|1
-2026-07-23 (목)|7507|3367|1|5|2226|1908|293|19/21 (90.5%)|0
-2026-07-24 (금)|7515|3375|0|27|2206|1907|469|30/40 (75.0%)|0
-2026-07-25 (토)|7538|3249|21|0|2270|1998|2069|383/408 (93.9%)|149
-2026-07-26 (일)|7599|3161|7|0|2304|2127|1194|52/57 (91.2%)|149
-2026-07-27 (월)|7606|3068|45|3|2327|2163|814|41/42 (97.6%)|100
-2026-07-28 (화)|7609|2971|52|7|2353|2226|1024|39/42 (92.9%)|100
-2026-07-29 (수)|7615|2878|60|0|2422|2255|999|34/37 (91.9%)|100
-2026-07-30 (목)|7621|2884|34|8|2442|2253|306|6/9 (66.7%)|0
-2026-07-31 (금)|7624|2787|38|5|2464|2330|1447|57/62 (91.9%)|100
-2026-08-01 (토)|7633|2796|12|1|2494|2330|189|2/2 (100.0%)|0
-2026-08-02 (일)|7673|2667|3|0|2585|2418|1724|51/57 (89.5%)|170
-2026-08-03 (월)|7674|2668|0|1|2587|2418|28|2/2 (100.0%)|0
-2026-08-04 (화)|7680|2629|12|6|2601|2432|537|15/16 (93.8%)|45
-2026-08-05 (수)|7682|2630|0|27|2598|2427|562|23/29 (79.3%)|1
-2026-08-06 (목)|7695|2643|0|17|2613|2422|796|40/48 (83.3%)|0
-2026-08-07 (금)|7699|2646|0|11|2619|2423|825|39/44 (88.6%)|1
-2026-08-08 (토)|7701|2648|0|0|2629|2424|68|3/3 (100.0%)|0
-2026-08-09 (일)|7713|2560|42|1|2635|2475|1548|63/67 (94.0%)|100
-2026-08-10 (월)|7716|2538|19|19|2640|2500|559|22/24 (91.7%)|25
-2026-08-11 (화)|7718|2470|35|26|2637|2550|674|25/29 (86.2%)|70
-2026-08-12 (수)|7720|2472|0|4|2662|2582|895|31/34 (91.2%)|0
-2026-08-13 (목)|7736|2488|1|4|2634|2609|686|31/34 (91.2%)|0
-2026-08-14 (금)|7737|2489|0|13|2622|2613|95|6/6 (100.0%)|0
-2026-08-15 (토)|7738|2490|0|18|2592|2638|1125|57/63 (90.5%)|0
-2026-08-16 (일)|7740|2470|0|8|2603|2659|408|30/35 (85.7%)|22
-2026-08-17 (월)|7755|2385|39|0|2618|2713|1338|80/96 (83.3%)|100
-2026-08-18 (화)|7757|2287|68|4|2634|2764|867|59/65 (90.8%)|100
-2026-08-19 (수)|7759|2262|40|1|2685|2771|204|0/1 (0.0%)|27
-2026-08-20 (목)|7766|2268|15|9|2705|2769|91|0/2 (0.0%)|1
-2026-08-21 (금)|7766|2268|4|6|2718|2770|223|14/16 (87.5%)|0
-2026-08-22 (토)|7766|2268|0|3|2723|2772|93|3/3 (100.0%)|0
-2026-08-23 (일)|7789|2291|0|5|2706|2787|596|43/47 (91.5%)|0
-2026-08-24 (월)|7795|2297|0|2|2690|2806|382|31/33 (93.9%)|0
-2026-08-25 (화)|7804|2306|0|0|2674|2824|358|48/51 (94.1%)|0
-2026-08-26 (수)|7809|2311|0|75|2572|2851|561|94/97 (96.9%)|0
-2026-08-27 (목)|7811|2313|0|15|2630|2853|115|8/9 (88.9%)|0
-2026-08-28 (금)|7811|2313|0|2|2636|2860|166|37/37 (100.0%)|0
-2026-08-29 (토)|7831|2333|0|11|2623|2864|109|24/26 (92.3%)|0
-2026-08-30 (일)|7836|2338|0|66|2502|2930|920|145/156 (92.9%)|0
-2026-08-31 (월)|7842|2344|0|8|2514|2976|722|98/107 (91.6%)|0
-2026-09-01 (화)|7845|2345|0|18|2454|3028|711|132/140 (94.3%)|2
-2026-09-02 (수)|7851|2349|0|15|2437|3050|256|54/60 (90.0%)|2
-2026-09-03 (목)|7854|2352|0|4|2439|3059|138|32/35 (91.4%)|0
-2026-09-04 (금)|7854|2352|0|11|2407|3084|158|30/32 (93.8%)|0
-2026-09-05 (토)|7860|2358|0|0|2399|3103|151|27/27 (100.0%)|0
-2026-09-06 (일)|7868|2366|0|21|2345|3136|882|126/129 (97.7%)|0
-2026-09-07 (월)|7875|2273|62|3|2314|3223|1577|274/290 (94.5%)|100
-2026-09-08 (화)|7879|2174|53|6|2392|3254|689|62/67 (92.5%)|103
-2026-09-09 (수)|7882|2077|75|25|2423|3282|819|63/67 (94.0%)|100
-2026-09-10 (목)|7886|2078|73|15|2438|3282|35|0/0 (n/a)|3
-2026-09-11 (금)|7892|2084|35|2|2490|3281|126|0/1 (0.0%)|0
-2026-09-12 (토)|7909|2101|1|12|2500|3295|755|60/63 (95.2%)|0
-2026-09-13 (일)|7918|2110|0|7|2506|3295|118|14/14 (100.0%)|0
-2026-09-14 (월)|7927|2119|0|7|2501|3300|117|17/17 (100.0%)|0
-2026-09-15 (화)|7935|2127|0|15|2476|3317|654|83/87 (95.4%)|0
-2026-09-16 (수)|7940|2132|0|12|2475|3321|133|19/20 (95.0%)|0
-2026-09-17 (목)|7944|2136|0|19|2455|3334|417|54/59 (91.5%)|0
-2026-09-18 (금)|7944|2136|0|11|2462|3335|52|8/9 (88.9%)|0
-2026-09-19 (토)|7944|2136|2|159|2258|3389|1024|187/199 (94.0%)|0
-2026-09-20 (일)|7960|1952|76|15|2397|3520|2026|225/239 (94.1%)|200
-2026-09-21 (월)|7960|1752|122|9|2474|3603|1086|65/68 (95.6%)|200
-2026-09-22 (화)|7961|1553|180|70|2479|3679|1102|66/68 (97.1%)|200
-2026-09-23 (수)|7961|1553|79|74|2575|3680|767|35/39 (89.7%)|0
-2026-09-24 (목)|7963|1408|115|54|2636|3750|1422|93/100 (93.0%)|147
-2026-09-25 (금)|7970|1415|98|17|2690|3750|85|0/0 (n/a)|0
-2026-09-26 (토)|7971|1416|51|98|2649|3757|727|58/66 (87.9%)|0
-2026-09-27 (일)|7982|1427|3|18|2757|3777|1380|105/116 (90.5%)|0
-2026-09-28 (월)|7988|1390|22|15|2760|3801|912|78/83 (94.0%)|43
-2026-09-29 (화)|7992|1194|97|6|2837|3858|1055|53/62 (85.5%)|200
-2026-09-30 (수)|7994|1194|42|23|2877|3858|275|6/7 (85.7%)|2
-2026-10-01 (목)|8001|1201|14|48|2880|3858|598|37/40 (92.5%)|0
-2026-10-02 (금)|8002|1202|7|10|2925|3858|67|0/0 (n/a)|0
-2026-10-03 (토)|8002|1202|0|66|2858|3876|1746|143/157 (91.1%)|0
-2026-10-04 (일)|8013|1013|142|4|2907|3947|1252|96/103 (93.2%)|200
+2026-05-14 (목)|6743|6593|29|0|121|0|0|0/0 (n/a)|0
+2026-05-15 (금)|6743|6499|21|0|223|0|452|0/0 (n/a)|94
+2026-05-16 (토)|6744|6500|21|0|223|0|4|0/0 (n/a)|0
+2026-05-17 (일)|6744|6482|19|0|243|0|82|0/0 (n/a)|18
+2026-05-18 (월)|6750|6180|109|2|456|3|1026|0/0 (n/a)|308
+2026-05-19 (화)|6750|6180|107|2|458|3|713|0/0 (n/a)|303
+2026-05-20 (수)|6752|6182|107|2|458|3|641|0/0 (n/a)|176
+2026-05-21 (목)|6756|6186|107|2|458|3|1040|0/0 (n/a)|232
+2026-05-22 (금)|6756|6186|107|2|458|3|230|0/0 (n/a)|102
+2026-05-23 (토)|6756|6186|107|2|458|3|10|0/0 (n/a)|0
+2026-05-24 (일)|6757|6187|107|2|458|3|582|0/0 (n/a)|154
+2026-05-25 (월)|6757|6187|107|2|458|3|35|0/0 (n/a)|0
+2026-05-26 (화)|6761|6191|107|2|458|3|182|0/0 (n/a)|15
+2026-05-27 (수)|6761|6191|107|2|458|3|112|0/0 (n/a)|11
+2026-05-28 (목)|6766|6196|107|2|458|3|348|0/0 (n/a)|100
+2026-05-29 (금)|6768|6198|107|2|458|3|42|0/0 (n/a)|0
+2026-05-30 (토)|6772|6202|107|2|458|3|625|0/0 (n/a)|174
+2026-05-31 (일)|6783|6213|107|2|458|3|440|0/0 (n/a)|64
+2026-06-01 (월)|6788|6218|107|2|458|3|838|0/0 (n/a)|213
+2026-06-02 (화)|6789|6219|107|2|458|3|202|0/0 (n/a)|0
+2026-06-03 (수)|6792|6222|107|2|458|3|165|0/0 (n/a)|2
+2026-06-04 (목)|6792|6222|9|55|435|71|463|0/0 (n/a)|0
+2026-06-05 (금)|6796|6224|1|3|477|91|182|0/0 (n/a)|2
+2026-06-06 (토)|6820|6151|13|0|470|186|664|0/0 (n/a)|99
+2026-06-07 (일)|6834|5907|0|0|741|186|935|0/0 (n/a)|258
+2026-06-08 (월)|6839|5903|8|6|728|194|376|0/0 (n/a)|9
+2026-06-09 (화)|6841|5807|0|0|759|275|577|0/0 (n/a)|99
+2026-06-10 (수)|6851|5619|0|0|841|391|1055|0/0 (n/a)|200
+2026-06-11 (목)|6857|5496|13|0|866|482|815|0/0 (n/a)|129
+2026-06-12 (금)|6876|5512|3|12|855|494|348|0/0 (n/a)|4
+2026-06-13 (토)|6888|5474|6|1|897|510|427|0/0 (n/a)|50
+2026-06-14 (일)|6898|5434|0|0|913|551|486|0/0 (n/a)|50
+2026-06-15 (월)|6922|5408|0|0|932|582|390|0/0 (n/a)|50
+2026-06-16 (화)|6940|5371|5|0|956|608|415|0/0 (n/a)|55
+2026-06-17 (수)|6960|5341|15|0|969|635|320|0/0 (n/a)|50
+2026-06-18 (목)|6979|5258|4|0|1025|692|507|0/0 (n/a)|102
+2026-06-19 (금)|6984|5187|44|0|1019|734|387|0/0 (n/a)|76
+2026-06-20 (토)|6984|5187|10|17|1025|745|210|0/0 (n/a)|0
+2026-06-21 (일)|7020|5023|29|0|1129|839|783|0/0 (n/a)|200
+2026-06-22 (월)|7048|4951|24|0|1171|902|668|0/0 (n/a)|100
+2026-06-23 (화)|7055|4858|28|0|1209|960|583|0/0 (n/a)|100
+2026-06-24 (수)|7075|4777|18|0|1240|1040|610|0/0 (n/a)|101
+2026-06-25 (목)|7080|4683|65|2|1219|1111|520|0/0 (n/a)|100
+2026-06-26 (금)|7083|4683|44|2|1243|1111|88|0/0 (n/a)|3
+2026-06-27 (토)|7105|4605|25|0|1262|1213|904|2/2 (100.0%)|100
+2026-06-28 (일)|7133|4522|8|0|1328|1275|663|1/1 (100.0%)|111
+2026-06-29 (월)|7153|4443|24|0|1366|1320|618|2/3 (66.7%)|100
+2026-06-30 (화)|7155|4345|62|4|1379|1365|572|1/1 (100.0%)|101
+2026-07-01 (수)|7167|4257|38|1|1463|1408|712|4/4 (100.0%)|100
+2026-07-02 (목)|7167|4256|10|9|1482|1410|537|6/7 (85.7%)|1
+2026-07-03 (금)|7170|4159|28|0|1528|1455|628|6/6 (100.0%)|100
+2026-07-04 (토)|7194|4083|68|4|1552|1487|635|7/9 (77.8%)|100
+2026-07-05 (일)|7236|4025|15|0|1661|1535|867|8/9 (88.9%)|100
+2026-07-06 (월)|7247|3936|36|0|1699|1576|746|16/19 (84.2%)|100
+2026-07-07 (화)|7261|3850|30|0|1767|1614|796|18/20 (90.0%)|100
+2026-07-08 (수)|7266|3855|9|24|1756|1622|355|9/11 (81.8%)|0
+2026-07-09 (목)|7267|3856|1|17|1764|1629|429|27/31 (87.1%)|0
+2026-07-10 (금)|7267|3856|0|24|1755|1632|139|7/8 (87.5%)|0
+2026-07-11 (토)|7291|3770|31|0|1809|1681|1357|84/97 (86.6%)|110
+2026-07-12 (일)|7309|3688|16|0|1895|1710|887|43/51 (84.3%)|101
+2026-07-13 (월)|7309|3588|71|14|1890|1746|742|45/52 (86.5%)|100
+2026-07-14 (화)|7321|3597|24|26|1931|1743|484|31/35 (88.6%)|3
+2026-07-15 (수)|7322|3598|1|23|1956|1744|571|34/37 (91.9%)|0
+2026-07-16 (목)|7328|3602|1|9|1968|1748|438|35/40 (87.5%)|2
+2026-07-17 (금)|7329|3503|73|3|1979|1771|1098|125/137 (91.2%)|100
+2026-07-18 (토)|7373|3447|23|0|2084|1819|847|60/66 (90.9%)|100
+2026-07-19 (일)|7378|3452|5|19|2077|1825|433|35/37 (94.6%)|0
+2026-07-20 (월)|7393|3367|22|0|2137|1867|1007|90/96 (93.8%)|100
+2026-07-21 (화)|7407|3270|36|0|2194|1907|895|53/59 (89.8%)|111
+2026-07-22 (수)|7407|3269|14|18|2198|1908|331|19/22 (86.4%)|1
+2026-07-23 (목)|7422|3284|1|5|2224|1908|293|19/21 (90.5%)|0
+2026-07-24 (금)|7430|3292|0|27|2204|1907|469|33/40 (82.5%)|0
+2026-07-25 (토)|7453|3166|21|0|2268|1998|2069|389/408 (95.3%)|149
+2026-07-26 (일)|7514|3078|7|0|2302|2127|1194|53/57 (93.0%)|149
+2026-07-27 (월)|7521|2985|45|3|2325|2163|814|41/42 (97.6%)|100
+2026-07-28 (화)|7524|2888|52|7|2351|2226|1024|39/42 (92.9%)|100
+2026-07-29 (수)|7530|2795|60|0|2420|2255|999|35/37 (94.6%)|100
+2026-07-30 (목)|7536|2801|34|8|2440|2253|306|6/9 (66.7%)|0
+2026-07-31 (금)|7539|2704|38|5|2462|2330|1447|57/62 (91.9%)|100
+2026-08-01 (토)|7548|2713|12|1|2492|2330|189|2/2 (100.0%)|0
+2026-08-02 (일)|7588|2584|3|0|2583|2418|1724|52/57 (91.2%)|170
+2026-08-03 (월)|7589|2585|0|1|2585|2418|28|2/2 (100.0%)|0
+2026-08-04 (화)|7595|2546|12|6|2599|2432|537|15/16 (93.8%)|45
+2026-08-05 (수)|7597|2547|0|27|2596|2427|562|23/29 (79.3%)|1
+2026-08-06 (목)|7610|2560|0|17|2611|2422|796|41/48 (85.4%)|0
+2026-08-07 (금)|7614|2563|0|11|2617|2423|825|39/44 (88.6%)|1
+2026-08-08 (토)|7616|2565|0|0|2627|2424|68|3/3 (100.0%)|0
+2026-08-09 (일)|7628|2477|42|1|2633|2475|1548|63/67 (94.0%)|100
+2026-08-10 (월)|7631|2455|19|19|2638|2500|559|22/24 (91.7%)|25
+2026-08-11 (화)|7633|2387|35|26|2635|2550|674|25/29 (86.2%)|70
+2026-08-12 (수)|7635|2389|0|4|2660|2582|895|31/34 (91.2%)|0
+2026-08-13 (목)|7651|2405|1|4|2632|2609|686|31/34 (91.2%)|0
+2026-08-14 (금)|7652|2406|0|13|2620|2613|95|6/6 (100.0%)|0
+2026-08-15 (토)|7653|2407|0|18|2590|2638|1125|57/63 (90.5%)|0
+2026-08-16 (일)|7655|2387|0|8|2601|2659|408|30/35 (85.7%)|22
+2026-08-17 (월)|7670|2302|39|0|2616|2713|1338|80/96 (83.3%)|100
+2026-08-18 (화)|7672|2204|68|4|2632|2764|867|59/65 (90.8%)|100
+2026-08-19 (수)|7674|2179|40|1|2683|2771|204|0/1 (0.0%)|27
+2026-08-20 (목)|7681|2185|15|9|2703|2769|91|0/2 (0.0%)|1
+2026-08-21 (금)|7681|2185|4|6|2716|2770|223|14/16 (87.5%)|0
+2026-08-22 (토)|7681|2185|0|3|2721|2772|93|3/3 (100.0%)|0
+2026-08-23 (일)|7703|2207|0|5|2704|2787|596|43/47 (91.5%)|0
+2026-08-24 (월)|7708|2212|0|2|2688|2806|382|31/33 (93.9%)|0
+2026-08-25 (화)|7717|2221|0|0|2672|2824|358|48/51 (94.1%)|0
+2026-08-26 (수)|7722|2226|0|75|2570|2851|561|94/97 (96.9%)|0
+2026-08-27 (목)|7724|2228|0|15|2628|2853|115|8/9 (88.9%)|0
+2026-08-28 (금)|7724|2228|0|2|2634|2860|166|37/37 (100.0%)|0
+2026-08-29 (토)|7743|2247|0|11|2621|2864|109|24/26 (92.3%)|0
+2026-08-30 (일)|7748|2252|0|66|2500|2930|920|145/156 (92.9%)|0
+2026-08-31 (월)|7754|2258|0|8|2512|2976|722|98/107 (91.6%)|0
+2026-09-01 (화)|7757|2259|0|18|2452|3028|711|132/140 (94.3%)|2
+2026-09-02 (수)|7763|2263|0|15|2435|3050|256|54/60 (90.0%)|2
+2026-09-03 (목)|7766|2266|0|4|2437|3059|138|32/35 (91.4%)|0
+2026-09-04 (금)|7766|2266|0|11|2405|3084|158|30/32 (93.8%)|0
+2026-09-05 (토)|7772|2272|0|0|2397|3103|151|27/27 (100.0%)|0
+2026-09-06 (일)|7780|2280|0|21|2343|3136|882|126/129 (97.7%)|0
+2026-09-07 (월)|7787|2187|62|3|2312|3223|1577|274/290 (94.5%)|100
+2026-09-08 (화)|7791|2088|53|6|2390|3254|689|62/67 (92.5%)|103
+2026-09-09 (수)|7794|1991|75|25|2421|3282|819|63/67 (94.0%)|100
+2026-09-10 (목)|7798|1992|73|15|2436|3282|35|0/0 (n/a)|3
+2026-09-11 (금)|7804|1998|35|2|2488|3281|126|0/1 (0.0%)|0
+2026-09-12 (토)|7821|2015|1|12|2498|3295|755|60/63 (95.2%)|0
+2026-09-13 (일)|7830|2024|0|7|2504|3295|118|14/14 (100.0%)|0
+2026-09-14 (월)|7839|2033|0|7|2499|3300|117|17/17 (100.0%)|0
+2026-09-15 (화)|7847|2041|0|15|2474|3317|654|83/87 (95.4%)|0
+2026-09-16 (수)|7852|2046|0|12|2473|3321|133|19/20 (95.0%)|0
+2026-09-17 (목)|7856|2050|0|19|2453|3334|417|54/59 (91.5%)|0
+2026-09-18 (금)|7856|2050|0|11|2460|3335|52|8/9 (88.9%)|0
+2026-09-19 (토)|7856|2050|2|159|2256|3389|1024|187/199 (94.0%)|0
+2026-09-20 (일)|7872|1866|76|15|2395|3520|2026|225/239 (94.1%)|200
+2026-09-21 (월)|7872|1666|122|9|2472|3603|1086|65/68 (95.6%)|200
+2026-09-22 (화)|7873|1467|180|70|2477|3679|1102|67/68 (98.5%)|200
+2026-09-23 (수)|7873|1467|79|74|2573|3680|767|35/39 (89.7%)|0
+2026-09-24 (목)|7875|1322|115|54|2634|3750|1422|93/100 (93.0%)|147
+2026-09-25 (금)|7882|1329|98|17|2688|3750|85|0/0 (n/a)|0
+2026-09-26 (토)|7883|1330|51|98|2647|3757|727|61/66 (92.4%)|0
+2026-09-27 (일)|7894|1341|3|18|2755|3777|1380|107/116 (92.2%)|0
+2026-09-28 (월)|7900|1304|22|15|2758|3801|912|79/83 (95.2%)|43
+2026-09-29 (화)|7904|1108|97|6|2835|3858|1055|54/62 (87.1%)|200
+2026-09-30 (수)|7906|1108|42|23|2875|3858|275|6/7 (85.7%)|2
+2026-10-01 (목)|7913|1115|14|48|2878|3858|598|38/40 (95.0%)|0
+2026-10-02 (금)|7914|1116|7|10|2923|3858|67|0/0 (n/a)|0
+2026-10-03 (토)|7914|1116|0|66|2856|3876|1746|144/157 (91.7%)|0
+2026-10-04 (일)|7925|927|139|4|2908|3947|1255|96/103 (93.2%)|200
 
 <p><center>* * *</center></p>
 
-I have had some difficulty finding youtube channels that are of an appropriate difficulty level and are enjoyable to watch. One channel I've found recently is [태웅쌤 - Comprehensible Input Korean](https://www.youtube.com/@ComprehensibleInputKorean). He plays video games and describes / narrates what he's doing using easy sentences, but again not baby talk. I think video games are good idea as a source of comprehensible input since he can point to things on screen and describe what's happening without having to give any English translations.
+Update: I finished getting all the new cards into rotation, though I'm adding more every day, and there are still basic words to learn. Cards #8122 and #8123 are 윗옷 and 아래옷, tops and bottoms (i.e., shirt and pants). Though to be fair I already had the hanja equivalents 상의 and 하의 as cards #2611 and #2612.
+
+date|total cards|new|learning|relearning|young|mature|studied today|mature retention|new studied
+  -:|         -:| -:|      -:|        -:|   -:|    -:|           -:|              -:|         -:
+2026-10-05 (월)|7925|927|39|2|3011|3946|260|1/2 (50.0%)|0
+2026-10-06 (화)|7928|929|2|19|2999|3979|964|65/69 (94.2%)|1
+2026-10-07 (수)|7929|929|0|15|2984|4001|1148|90/98 (91.8%)|1
+2026-10-08 (목)|7934|933|0|10|2983|4008|381|29/32 (90.6%)|1
+2026-10-09 (금)|7937|761|135|8|2956|4077|1243|74/78 (94.9%)|175
+2026-10-10 (토)|7937|761|49|7|3041|4079|376|11/13 (84.6%)|0
+2026-10-11 (일)|7937|761|7|28|3051|4090|932|71/76 (93.4%)|0
+2026-10-12 (월)|7937|761|2|62|3018|4094|907|82/96 (85.4%)|0
+2026-10-13 (화)|7957|581|65|4|3136|4171|1471|95/101 (94.1%)|200
+2026-10-14 (수)|7959|583|41|3|3161|4171|151|1/1 (100.0%)|0
+2026-10-15 (목)|7960|583|17|17|3170|4173|338|20/21 (95.2%)|1
+2026-10-16 (금)|7963|586|9|12|3182|4174|206|15/15 (100.0%)|0
+2026-10-17 (토)|7966|588|0|5|3198|4175|186|14/16 (87.5%)|1
+2026-10-18 (일)|7969|2|284|6|3333|4344|3718|253/286 (88.5%)|589
+2026-10-19 (월)|7969|2|99|53|3455|4360|1568|56/64 (87.5%)|0
+2026-10-20 (화)|7977|2|44|15|3529|4387|1430|98/106 (92.5%)|8
+2026-10-21 (수)|8013|2|5|5|3592|4409|1247|32/38 (84.2%)|36
+2026-10-22 (목)|8025|3|3|1|3606|4412|58|1/1 (100.0%)|11
+2026-10-23 (금)|8034|2|0|3|3617|4412|80|1/1 (100.0%)|10
+2026-10-24 (토)|8039|0|0|62|3573|4404|573|44/48 (91.7%)|7
+2026-10-25 (일)|8044|0|0|57|3604|4383|1394|121/126 (96.0%)|5
+2026-10-26 (월)|8066|0|0|14|3700|4352|1133|146/154 (94.8%)|22
+2026-10-27 (화)|8106|3|1|46|3752|4304|1917|179/190 (94.2%)|37
+
+I would like to spend a little more time acknowledging some of the traps we can fall into in language learning. It is easy to waste time with a false sense of productivity that is actually procrastination, where you learn "about" the language without actually learning the language. That is, diving into deep cultural trivia, word etymologies, archaic terms (but I'll blame the fairy tales for that one), picking apart hanja, and learning the technical linguistic names for different parts of speech, to name a few.
+
+It is easy to spend too much time doing Anki. There are days where I finish all of my scheduled reviews, and I run a filtered deck to do more, instead of doing something else. Partly this is because Anki becomes a safe space or a comfort zone. Rather than going out and seeking new material, new videos, new articles, new challenges, I can just hit the "more" button and keep doing Anki. And partly it's because Anki provides those sweet, sweet statistics. It is fun to see the review count going up, the "estimated total knowledge" going up, the number of mature cards going up, and the number of new cards going down. It is fun to have an [sqlite](/writing/sqlite_what_a_hunk) database that I can query and make charts. And this is only with the basic arrangement -- I am not even referring to the severe gamification mods you can see across /r/Anki. Reading a catlab article doesn't give me a score at the end. 
+
+I came across the word [환갑](https://korean.dict.naver.com/koendict/#/entry/koen/c6cb3b89dd2948669166bcdea760651d) which means your sixtieth birthday. Why is there a special name for that? The 환(還) means "return" and 갑(甲) is standing in for 갑자(甲子), which is the first in the cycle of sixty [간지(干支)](https://ko.wikipedia.org/wiki/%EA%B0%84%EC%A7%80), derived from ten 천간(天干) and twelve 지지(地支) and from there leads to associations with the sun, moon, seasons, color, direction, animals, elements, etc. When you turn sixty years old, the 간지 for that year is the same as the one when you were born.
+
+[![](육십갑자_간지.svg)](https://commons.wikimedia.org/wiki/File:%EC%9C%A1%EC%8B%AD%EA%B0%91%EC%9E%90_%EA%B0%84%EC%A7%80_%ED%95%9C%EA%B5%AD%EC%96%B4.svg)
+
+On the [Korean flag](https://en.wikipedia.org/wiki/Flag_of_South_Korea), you can see four sets of lines. What are those? They are four of the [팔괘](https://ko.wikipedia.org/wiki/%ED%8C%94%EA%B4%98) ([eight trigrams](https://en.wikipedia.org/wiki/Bagua)), which come from Chinese philosophy. The selected four are ☰ (하늘, sky) ☵ (물, water) ☲ (불, fire) ☷ (땅, earth). And yes, I've made cards for all eight so I can recognize them on sight.
+
+![](korean_flag.svg)
+
+I came across the word 신문고, which is a system by which the public can send complaints to the government. Nowadays, that takes the form of [a website](https://www.epeople.go.kr/index.jsp), but the 고(鼓) here means "drum", because it was originally a drum outside the king's palace that the citizens could strike.
+
+![](logo_epeople.svg)
+
+Back to the topic at hand... or have we never left? This is what it looks like to procrastinate by learning. This is learning about the language without learning the language. This information will not help my listening comprehension. I literally got the 팔괘 into my Anki before 윗옷. I made it very clear earlier that I already know I'm guilty of this, and that I'm willing to "waste" some time learning words I don't really need. But yeah, my reading vocabulary is high enough now, and it's time for me to focus on listening comprehension so I can actually talk to people.
 
 ## Change of pace
 
@@ -529,7 +575,7 @@ I always come home with notecards and new words that I should add to my Anki whe
 
 [![](thumbs/2026-10-05_19-34-12.jpg)](https://files.voussoir.net/writing/korean_progress_2026/2026-10-05_19-34-12.jpg)
 
-There have been some days at the meetups where the conversation is largely dominated by a particularly talkative person with a particularly low Korean level -- sometimes I mean not even knowing the famously-easy-to-learn alphabet -- who spends the entire time talking in English. I'm not referring to one specific person, this is an archetype that I've seen a few times. Usually, the rest of the group is very excited to teach this person the basic yes/no/please/thank you, and then I am sitting there not learning anything for the better part of hour. Those days are frustrating to me. I would be 100% more fine with this if they wanted to just sit and listen, which is what I do when two native speakers are having a conversation at my table. Why would I interrupt free in-person native listening practice to ask an ignorant question in English? Of course I'll stay silent. This practice harkens back to an ancient tradition from my culture called "lurk more".
+There have been some days at the meetups where the conversation is largely dominated by a particularly talkative person with a particularly low Korean level -- sometimes I mean not even knowing the famously-easy-to-learn alphabet -- who spends the entire time talking in English. I'm not referring to one specific person, this is an archetype that I've seen a few times. Usually, the rest of the group is very excited to teach this person the basic yes/no/please/thank you, and then I am sitting there not learning anything for the better part of hour. Those days are frustrating to me. I would be 100% more fine with this if they wanted to just sit and listen, which is what I do when two native speakers are having a conversation at my table. Why would I interrupt free in-person native listening practice to ask an ignorant question in English? Of course I'll stay silent. This harkens back to an ancient tradition from my culture called "lurk more".
 
 There are other days where the tide shifts, and I am at a table outnumbered by 원어민 and I can't keep up with what they're saying. So, I don't mean to be insulting, but to describe my feelings because that's the whole point of this website; and to say that if you try a meetup and it doesn't seem to be quite what you were looking for, you probably should keep going for a while to see what happens on a different day.
 
@@ -537,11 +583,31 @@ Based on my positive experiences so far, and the fact that these groups are stil
 
 ## So this is how they get me
 
-During the past several years' boom of so-called AI and more-aptly-called LLMs, I have completely avoided using them, mainly because they are surrounded by so much bad marketing that I don't want to endorse, and because I like to go against the mainstream.
+During the past several years' boom of so-called AI and more-aptly-called LLMs and even-more-aptly-called text generators, I have completely avoided using them. Mainly because they are surrounded by so much bad marketing that I don't want to endorse, and because I like to go against the mainstream.
 
 But... they're pretty good for asking language questions. So that's how they've got me after all.
 
-I saw one of the guys at language exchange asking the computer to provide expressions using a word or grammar pattern, translate the answer between both languages, and rephrase a given sentence into a more natural / idiomatic form or other variations. So, I'm sold on it after all. I gave mine the instruction to never use romanizations (which makes the answer *so* much more pleasant to read, even if the information is just coming from Wikipedia), to provide the relevant hanja for advanced vocabulary, and to not do any of that "you're absolutely right!" type stuff. I have caught the computer making factual errors more than a few times, so you probably shouldn't ask questions that are too high above your ability to comprehend the answer.
+I saw one of the guys at language exchange asking the computer to provide expressions using a word or grammar pattern, translate the answer between both languages, and rephrase a given sentence into a more natural / idiomatic form or other variations. So, I'm sold on it. I gave mine the instruction to never use romanizations (which makes the answer so much more pleasant to read, even if the information is just coming from Wikipedia), to provide the relevant hanja for advanced vocabulary, and to not do any of that "you're absolutely right!" type stuff.
+
+At first, I was using Gemini. It seemed mostly good, but I caught it making factual errors more than a few times. So in general, it is important not to ask questions that are too high above your ability to comprehend the answer. On October 9 (coincidentally, [한글날](https://en.wikipedia.org/wiki/Hangul_Day)), Google reduced the power of the free tier, and it's pretty much dumb as rocks now, so I bailed and have switched to Kagi. Kagi just frontends for various providers, the default currently being Deepseek.
+
+Deepseek seems to be quite skilled with Korean, and honestly I am not finding factual errors in its answers, only the occasional formatting mistake. It does a significantly better job at providing the correct hanja than Gemini, which I attribute to the fact that Deepseek is Chinese. At first, it was struggling to do the formatting the way I wanted. By reading the thought log, I was able to figure out where it was getting stuck, and through some iteration I have come up with a saved instruction that gets it to generate pretty good vocabulary word lists and, overall, provide answers that I like. This might change by tomorrow, but as of right now, here are my saved instructions:
+
+> Please use a professional tone of voice. Prioritize informational delivery over flowery prose. Write as if you are publishing an encyclopedia, not a blog article. Do not add conversational filler. Do not use the "it's not X, it's Y" sentence pattern. If I make an incorrect claim or a misspelling, please correct me without hesitation at the beginning of your response. It is ok for you to say "I don't know" when you have insufficient information.
+
+> When I ask a question relating to the Korean language, you must never include romanized Korean words, or English transliteration of Korean words in your response. I can read and write 한글.
+
+> When you use advanced or technical 한자어 in your prose, please include the word's corresponding 한자, in 정체자, in parentheses immediately after the word's first occurrence. Format it like this: "육십갑자 (六十甲子)". Always provide this gloss for 사자성어. Omit this gloss for words that would be considered basic, everyday vocabulary.
+
+> Whenever I ask you for a list of Korean vocabulary, please use this template as a starting guide: the heading for the table should be written in both Korean and English. The table should have at least three columns, being 표제어, 한자, and English. The 표제어 column must always be filled and contain the primary Korean word being defined, written in 한글. The 표제어 cell should be a hyperlink, following exactly this form, replacing both occurrences of XXX with the entry word, keeping the angle brackets, and applying no URL-encoding:
+> ```
+> [XXX](<https://voussoir.net/koreaniframe?q=XXX>)
+> ```
+> If the word is 순우리말, or is wholly 외래어, or is of unclear etymological origin, place an em-dash (—) in the 한자 column. If the word is 한자어, then the 한자 column must contain the corresponding 한자. If the word is 혼종어, the 한자 column should contain mixed script with both 한글 and 한자. For example, if the 표제어 is 옷장, then the 한자 column would contain 옷欌. Do not provide the origin for 외래어. Depending on the context of the question and the vocabulary being provided, you may add more columns beside these standard three. Sometimes, Korean has both a 순우리말 word and a 한자어 word for the same concept, such as 이빨 and 치아 both meaning "tooth", and these should be written as two separate rows in the table. Please break up separate tables by category. Do not repeat back these formatting instructions to me.
+
+That produces answers like [this](kagi_counters.html) and [this](kagi_환갑.html) and [this](kagi_신문고.html). Those three chats together cost a total of $0.071, meaning seven cents. On the International Scale of Frivolous Spending, that's worth about half a sip of your sugary coffee.
+
+I am as disgusted as anyone by the people who use this technology to create and disseminate more junk into the world. To no extent am I interested in letting it think or speak for me. But for gathering information and presenting it in the format of my choice, it really is too good to ignore.
 
 Give it a try, I guess.
 
@@ -549,9 +615,13 @@ Give it a try, I guess.
 
 People often wonder how many words an average adult knows in their native language. They also wonder, more anxiously, what is a reasonable minimum number of words to be conversationally fluent in a new language. These are interesting trivia in their own right, of course, but the true combinatorial explosion of fluent language is in phrases, expressions, and idiomatic speech. It is not enough to use grammatically correct verb conjugations to sound normal. At language exchange, all of the English learners I've met are out of the basic vocabulary/grammar phase; they're learning expressions. 표현.
 
-With such an infinity of examples available, it is hard to pick a representative few to write about here. But take for example "put down", which can mean literally placing an object somewhere, or insulting/mocking someone, or euthanizing an animal, or writing into a form/document, or making a down payment on a purchase, or making a bet at the poker table, or... Even though each of these figurative meanings is pretty easy to trace back to the literal meaning, they still take on a value of their own. I know for sure that my flashcards for verbs do not capture this much nuance.
+First, we can start by looking at basic word pairs. Even if you know the dictionary definition of each word individually, pairing words together immediately exponentiates their possible meaning as a phrase. With such an infinity of examples available, it is hard to pick a representative few to write about here. But take for example the phrase "put down", which can mean literally placing an object somewhere, or insulting/mocking someone, or euthanizing an animal, or writing into a form/document, or making a down payment on a purchase, or making a bet at the poker table, or... Even though each of these figurative meanings is pretty easy to trace back to the literal meaning, they still take on a value of their own. I know for sure that my flashcards for verbs do not capture this much nuance.
 
-Then you have expressions like "all bark and no bite", the meaning of which seems not too hard to intuit, but it's a set phrase you wouldn't just make up one day. You **must** hear it from someone else first. How about "all hat and no cattle", which is similar in meaning but evokes the cultural context of cowboys and surely must be regional in usage. I have not reached the level of learning many Korean 표현 quite yet, and certainly not with that level of integrated social context. Maybe the best 표현 I can give you so far is "빈 수레가 요란하다".
+Then you have well-known expressions like "all bark and no bite", the meaning of which seems not too hard to intuit, but it's a set phrase you wouldn't just make up one day. You **must** hear it from someone else first. How about "all hat and no cattle", which is similar in meaning but evokes the cultural context of cowboys and surely must be regional in usage. I have not reached the level of learning many Korean 표현 quite yet, and certainly not with that level of integrated social context. Maybe the best 표현 I can give you so far is "빈 수레가 요란하다".
+
+And finally, if you just take some time to pay attention to the next conversation you have in your native language, you'll notice that real spoken conversation is *extremely* sloppy and complicated compared to the neat grammar patterns we read about in our lessons. I have started listening more carefully to English and it's like I can't believe I even know how this works.
+
+Matt did [a video on set phrases](https://www.youtube.com/watch?v=y8JK8W8dBxk "Language Isn't Math") that I think back to pretty often. The point is, you really must not attempt to translate your thoughts from one language to another, you just have to learn how they say it. And the only way to do that is to keep listening.
 
 It is overwhelming to think of how much cumulative experience with phrases, idioms, and movie/song/cultural references there is in one's life. There is too much that you just won't find in a dictionary, and I don't just mean that euphemistically. You have a limited number of hours in the day, and every hour you spend ingesting one form of input is an hour that you are not ingesting another. I should think it impossible to fully "catch up" in a second language, and the goalposts when learning a language must be set with this understood. For what it's worth, this is not even a language phenomenon at all, really, because it's the same for your career and hobbies and community subcultures -- you can only be in one place at a time.
 
@@ -569,9 +639,19 @@ Take for example the concept of honorifics. Most monolingual English speakers, o
 
 When people talk about the differences between two languages, I often think of [this XKCD comic](https://xkcd.com/203/) where he describes "sleep" as "go comatose for a few hours, hallucinate vividly, and then maybe suffer amnesia about the whole experience". You can make anything sound weird by putting more words to it. So I think what happens is people seek explanations for how their target language works, and they put a whole lot of words into these explanations, and it psyches them out into thinking that the target language is so crazy different from their native language, only because they've never put so many words into explaining their native language.
 
-People often say that Korean and English are "backward" because English uses SVO and Korean uses SOV word order. In Korean, it's "I pizza eat". 나는 피자를 먹는다. I feel that for basic sentences, the difference is quite trivial and really does not come across as weird at all, after a moment. It's kind of like when you watch a black and white movie, and it barely takes a minute to get used to it despite, superficially, the huge difference between black and white film and our own color vision.
+People often say that Korean and English are "backward" because English uses [SVO](https://en.wikipedia.org/wiki/Subject%E2%80%93verb%E2%80%93object_word_order) and Korean uses [SOV](https://en.wikipedia.org/wiki/Subject%E2%80%93object%E2%80%93verb_word_order) word order. In Korean, it's "I pizza eat". 나는 피자를 먹는다. I feel that for basic sentences, the difference is quite trivial and really does not come across as weird at all, after a moment. It's kind of like when you watch a black and white movie, and it barely takes a minute to get used to it despite, superficially, the huge difference between black and white film and our own color vision.
 
-The larger and more daunting task is the ordering of entire phrases. It is not just a grammatical problem -- thinking about this has made me even more aware and self-conscious of sentence- and conversation-level ordering of information. Depending on how you deliver an opinion, story, or question, you can prime the listener's understanding of your context, intentions, and emotional state, and convey the relative importance of each part. And crucially, you can hit them with a joke. We often start sentences with a disclaimer like "I know this is going to sound weird, but..." because we anticipate how people will react to what we're going to say and we try to deliver it appropriately.
+And really, English word order is quite flexible within some rules. It is not terribly uncommmon for a subject to come at the end of a sentence, says I. Nor the verb, he added. Noticeably strange, [Yoda-speak](https://en.wikipedia.org/wiki/Object%E2%80%93subject%E2%80%93verb_word_order) is, but incomprehensible it is not. Creative use of word order is more often left to poetry, or reads as archaic, but I don't think people consider it a stumbling block to comprehension. Korean, likewise, doesn't actually mind too much if you happen to put your subject, object, or time and place at the end, or omit an implied verb.
+
+> 효진: 되게 좋아하거든요, 저도. 김치찌개에 면 넣어서 먹는 거를.
+
+-
+
+> 효진: 보통 대학생들은, 특히 시험 기간이 되면, 도서관에서 공부하잖아요, 학교 도서관에서.
+
+This kind of thing happens more in speech than in writing, because if you forgot to say a word, or want to add more clarity, you have to just say it at the end, whereas in writing you'd go back and edit it.
+
+So, Korean and English are not backward just due to SVO/SOV. The larger and more daunting task is the ordering of entire phrases. It is not just a grammatical problem -- thinking about this has made me even more aware and self-conscious of sentence- and conversation-level ordering of information. Depending on how you deliver an opinion, story, or question, you can prime the listener's understanding of your context, intentions, and emotional state, and convey the relative importance of each part. And crucially, you can hit them with a joke. We often start sentences with a disclaimer like "I know this is going to sound weird, but..." because we anticipate how people will react to what we're going to say and we try to deliver it appropriately.
 
 Especially in speech, being strictly linear, the order of your words slowly reveals your thought to the listener, and you have to appreciate your level of control over that reveal, like a magician. When I am trying to construct a Korean sentence, I find myself thinking "wait, I don't want to say that word yet, I want to save that for later", but I can't because it's supposed to come first.
 
