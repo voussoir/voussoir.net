@@ -136,7 +136,7 @@ For the controller I chose the 24-pin [Elite-C V4](https://keeb.io/products/elit
 
 ## Designing the switchplate
 
-The switchplate is made by taking the output of keyboard-layout-editor and pasting it into [builder.swillkb](http://builder.swillkb.com). I chose an 8mm edge padding, 8mm edge radius, and a couple of 2.1mm holes so I can use 2M screws.
+The switchplate is made by taking the output of keyboard-layout-editor and pasting it into [builder.swillkb](http://builder.swillkb.com). I chose an 8mm edge padding, 8mm edge radius, and a couple of 2.1mm holes so I can use M2 screws.
 
 If I were to do this again, I'd give myself a little more padding between the screw holes and the edge of the plate, and I'd add more intermediate screw holes. My switchplate has a very slight bend to it and I don't have any means of making it perfectly flat, so a few extra screws would help me get the plate to sit more flush against the base.
 
